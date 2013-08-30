@@ -1,0 +1,144 @@
+body, html {
+  font-family: Merriweather, Cambria, "Times New Roman", Times, serif;
+  /*font-family: "Open Sans", Trebuchet, Tahoma, sans-serif;*/
+  color: #333;
+  margin: 24px;
+  margin-top: 4px;
+  font-size: 12pt;
+}
+
+h1,h2,h3,h4,h5,h6, .masthead, .figure {
+  font-family: Calibri, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  color: #3a5b92;
+  margin-top: 0.5em;
+}
+
+a:link, a:visited {
+  color: #3A5B92;
+}
+a:hover,a:active {
+  color: #ff0000;
+}
+
+#poititle {
+  line-height: 8em;
+}
+
+#title, #pretitle, #posttitle, #titlemeta {
+  font-family: Calibri, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 12pt;
+  text-align: center;
+  color: #aaa;
+}
+
+#pretitle {
+  padding-top: 2em;
+}
+
+#title {
+  font-size: 24pt;
+  line-height: 1.5em;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  color: #444;
+}
+
+.subtitle {
+  font-size: 18pt;
+}
+
+.titleblock {
+  border: 0px;
+  text-align: right;
+}
+.titleblock td {
+  border: 0px;
+  /*background-color: #fff;*/
+  text-align: right;
+}
+.tableblock {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#posttitle {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+#titlemeta {
+  text-align: right;
+}
+
+#docmetadata {
+  padding-bottom: 2em;
+}
+
+#license {
+  font-size: 9pt;
+}
+
+dt, .abbrev {
+  font-weight: bold;
+}
+
+.figure {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+/*table {
+  display: block;
+  width: 80%;
+}*/
+th, td {
+  border: 1px solid #c0befe; /*#505050*/
+  background-color: #f5f5fe;
+}
+th {
+  background-color: #dfdefe;
+}
+td {
+  padding-left: 1em;
+  padding-right: 1em;
+  /*padding-bottom: 0.5em;*/
+}
+.tabletitle {
+  font-size: 115%;
+  padding-top: 1em;
+  font-weight: bold;
+}
+
+.header-section-number {
+  padding-right: 1em;
+  border-color: #cbcbfe;
+}
+
+li {
+  /*padding-bottom: 1em;*/
+}
+
+.grayout {
+  background-color: #bbb;
+}
+
+.reftitle {
+  font-weight: bold;
+  font-size: 115%;
+}
+
+.nav li {
+  padding-bottom: 0;
+}
+
+.admonitionblock td {
+  border: 0px;
+  background-color: #fff;
+}
+.admonitionblock .title {
+  color: #cc0000;
+}
