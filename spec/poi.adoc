@@ -166,14 +166,14 @@ Here is an example of a simple POI serialized in XML:
   <label term="primary">
     <value>Boston</value>
   </label>
-  <description>
+  <description href="http://en.wikipedia.org/wiki/Boston">
     <value>Boston is the capital of and largest city in Massachusetts, and is one of the oldest
       cities in the United States. The largest city in New England, Boston is regarded as the
       unofficial "Capital of New England" for its economic and cultural impact on the entire
       New England region. The city proper had a population of 617,594 according to the 2010
       U.S. Census.
     </value>
-    <author id="http://en.wikipedia.org" term="publisher" href="http://en.wikipedia.org/wiki/Boston" type="text/plain">
+    <author id="http://en.wikipedia.org" term="publisher" type="text/plain">
       <value>Wikipedia</value>
     </author>
   </description>
