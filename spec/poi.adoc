@@ -260,7 +260,7 @@ In many cases, POI information is nested in a heirarchical system. Any property 
 [[poisconceptual]]
 === POIS
 
-Multiple POIs may be grouped into a POIS object, which serves only as a container object such that a group of POIs can inherit proerties - for example authorship, licensing or categorization. The POIS object is expected to be useful only as a dynamic aggregation mechanism when information is being shared between systems. It is not expected to be of any particular use as a way to permanently model POI information in a database.
+Multiple POIs may be grouped into a POIS object, which serves only as a container object such that a group of POIs can inherit properties - for example authorship, licensing or categorization. The POIS object is expected to be useful only as a dynamic aggregation mechanism when information is being shared between systems. It is not expected to be of any particular use as a way to permanently model POI information in a database.
 
 Following sections provide additional detail on the properties described above.
 
