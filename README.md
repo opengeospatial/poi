@@ -15,9 +15,6 @@ If you are making a more substantial set of changes please create a branch to wo
 stay with the branches they are made on, so if you make more changes based on feedback that can all get 
 pulled in when ready. Note you can create new branches as well as new files completely through the web.
 
-For more on markdown there is a great [cheat sheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-And note you can hit 'preview' at any time in edit mode to see if you got things right. 
-
 Here are some technical resources to get you going with Git, GitHub, and asciidoc:
 -  [Git cheat sheet] (http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html) 
 -  [Git cheat sheet] (http://cheat.errtheblog.com/s/git)
