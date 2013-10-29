@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:gn="http://www.geonames.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
+<gn:Feature rdf:about="http://sws.geonames.org/4956245/">
+<rdfs:isDefinedBy rdf:resource="http://sws.geonames.org/4956245/about.rdf"/>
+<gn:name>World Trade Center Heliport</gn:name>
+<gn:featureClass rdf:resource="http://www.geonames.org/ontology#S"/>
+<gn:featureCode rdf:resource="http://www.geonames.org/ontology#S.AIRH"/>
+<gn:countryCode>US</gn:countryCode>
+<wgs84_pos:lat>42.34926</wgs84_pos:lat>
+<wgs84_pos:long>-71.04311</wgs84_pos:long>
+<wgs84_pos:alt>4</wgs84_pos:alt>
+<gn:parentFeature rdf:resource="http://sws.geonames.org/4952349/"/>
+<gn:parentCountry rdf:resource="http://sws.geonames.org/6252001/"/>
+<gn:parentADM1 rdf:resource="http://sws.geonames.org/6254926/"/>
+<gn:parentADM2 rdf:resource="http://sws.geonames.org/4952349/"/>
+<gn:nearbyFeatures rdf:resource="http://sws.geonames.org/4956245/nearby.rdf"/>
+<gn:locationMap rdf:resource="http://www.geonames.org/4956245/world-trade-center-heliport.html"/>
+</gn:Feature>
+<foaf:Document rdf:about="http://sws.geonames.org/4956245/about.rdf">
+<foaf:primaryTopic rdf:resource="http://sws.geonames.org/4956245/"/>
+<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+<cc:attributionURL rdf:resource="http://sws.geonames.org/4956245/"/>
+<cc:attributionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeoNames</cc:attributionName>
+<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-01-15</dcterms:created>
+<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-03-10</dcterms:modified>
+</foaf:Document>
+</rdf:RDF>
