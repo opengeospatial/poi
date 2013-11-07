@@ -5,7 +5,9 @@
 		<description>
 			<value>This is a big mall</value>
 		</description>
-		<category scheme="http://naics.com" term="65120202">Shopping center, super regional (more than 1,000,000 sq ft)</category>
+		<category scheme="http://naics.com" term="65120202">
+			<value>Shopping center, super regional (more than 1,000,000 sq ft)</value>
+		</category>
 		<time term="start" type="text/plain">
 			<value>1997-05-30</value>
 		</time>
@@ -34,7 +36,9 @@
 		<description>
 			<value>This is a store inside the Mall of US</value>
 		</description>
-		<category scheme="http://naics.com" term="561100">Men's and boys' clothing stores</category>
+		<category scheme="http://naics.com" term="561100">
+			<value>Men's and boys' clothing stores</value>
+		</category>
 		<time term="start" type="text/plain">
 			<value>2011-10-21</value>
 		</time>
