@@ -1,0 +1,5 @@
+"Positional Accuracy Code"|"Description"
+1|"Positioned to the address or location"
+2|"Positioned to an adjacent address or location"
+3|"Positioned to the road within the address or location"
+4|"Positioned within the geographical locality"
