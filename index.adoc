@@ -1,0 +1,17 @@
+= OGC® GeoPackage Encoding Standard (OGC 12-128r9) =
+By:_GeoPackage_Standards_Working_Group_(SWG);Editor:_Paul_Daisey
+v0.9.13, 2013
+:doctype: book
+:numbered:
+:toc2:
+:toclevels: 3
+:appendix-caption: Annex
+:requirement-caption: Requirement
+:icons: font
+:source-highlighter: coderay
+
+:numbered!:
+
+:numbered:
+
+include::spec/poi.adoc[]
