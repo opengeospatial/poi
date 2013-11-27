@@ -7,4 +7,4 @@ branches:
 script: rake travis
 env:
   global:
-    secure: "jx+jVN8VwNIOHbe9nabcBL1pAsnKwRDJ5IlgMf0Prfww0IhWiX5uXfyUlXNJnYFSr6Gg9qry/8lBrqjvgNoZlQFgeKQ+66OQamNx6WpCyyN/fQ93fQc+A7ho7DhrCt4MuonXlLin5tmcLGGDlUc0TB3DiuREYvmmc09LooBG5gA="
+    secure: "QZAqhZVmt9+BxNCA3qzp1WZkw0Jra9OFtbXnrVlnjm1USwLlhL0SmbLq1AKAfe93Nd6coZ6Lcxby3aw2ANE0uNXy9ZqVHQbbzMN7wpBsxIhnrJKPAyRMrhWXjfwjsrdNQS/TkW4IUsj4h3oDNyl0t416swd8rZ+hdO7Wo737OYs="
