@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="generator" content="Asciidoctor 0.1.4">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OGC® GeoPackage Encoding Standard (OGC 12-128r9)</title>
+<title>OGC® Points of Interest Encoding Standard (OGC 12-128r9)</title>
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
@@ -452,9 +452,9 @@ span.line-numbers { border-right: 1px solid #E5E5E5; color: #999; display: inlin
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>OGC® GeoPackage Encoding Standard (OGC 12-128r9)</h1>
-<span id="author" class="author">By: GeoPackage Standards Working Group (SWG)</span><br><span id="author2" class="author">Editor: Paul Daisey</span><br>
-<span id="revnumber">version 0.9.13,</span>
+<h1>OGC® Points of Interest Encoding Standard (OGC 12-128r9)</h1>
+<span id="author" class="author">By: Points of Interest Standards Working Group (SWG)</span><br><span id="author2" class="author">Editor: Raj Singh</span><br>
+<span id="revnumber">version 0.1.0,</span>
 <span id="revdate">2013</span>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -1075,7 +1075,7 @@ a POI shall have a globally unique identification property in the format of a UR
 <p>More formally, the core data model consists of the <a href="#poitype">POIType</a> entity derived from, and having child entities derived from an abstract <a href="#poibasetype">POIBaseType</a> entity. This common POIBaseType allows the authorship, modification, and source of POIs to be attributed at the POI level, at the child entity level, and at a group level through the POIS grouping entity. Child entities are constructed from primitive datatypes, <a href="#poibasetype">POIBaseType</a> entities or <a href="#poitermtype">POITermType</a> entities.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="graphics/model.png" alt="UML model of the POI core data model"></span></p>
+<p><span class="image"><img src="model.png" alt="UML model of the POI core data model"></span></p>
 </div>
 <div class="paragraph">
 <p>The classes of the core data model are described in more detail below.</p>
@@ -1930,7 +1930,7 @@ Serializations shall support the encoding of all mandatory and optional paramete
 of the intersections of their boundaries, interiors and exteriors. Points have a dimension of zero, curves one and surfaces two.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="graphics/core-spatialoperators-20111216.jpg" alt="Diagram of the 8 allowed term attributes of the relationship element"></span></p>
+<p><span class="image"><img src="core-spatialoperators-20111216.jpg" alt="Diagram of the 8 allowed term attributes of the relationship element"></span></p>
 </div>
 <div class="paragraph">
 <p>SQL/MM also supports the 19107 operator equals, which tests if two geometries are spatially equal. More formally, their symmetric difference <em>must</em> be empty. SQL/MM then adds seven semantic operators to test the relationship between geometries a and b. These relationships are expressed in terms of the boundary, interior and exterior intersections to avoid ambiguities.</p>
@@ -2782,8 +2782,8 @@ Definition Language (XSD) 1.1 Part 2: Datatypes.</a> 30 January 2009. W3C Workin
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 0.9.13<br>
-Last updated 2013-11-27 04:46:21 UTC
+Version 0.1.0<br>
+Last updated 2013-11-27 04:48:22 UTC
 </div>
 </div>
 </body>
