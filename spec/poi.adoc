@@ -271,7 +271,7 @@ The Point of Interest data model consists of a *<<poi>>* entity and a *<<pois>>*
 
 More formally, the core data model consists of the <<poitype>> entity derived from, and having child entities derived from an abstract <<poibasetype>> entity. This common POIBaseType allows the authorship, modification, and source of POIs to be attributed at the POI level, at the child entity level, and at a group level through the POIS grouping entity. Child entities are constructed from primitive datatypes, <<poibasetype>> entities or <<poitermtype>> entities.
 	
-image:graphics/model.png[UML model of the POI core data model]
+image:model.png[UML model of the POI core data model]
 
 The classes of the core data model are described in more detail below.
 
@@ -633,7 +633,7 @@ Each targetPOI property _must_ be a URI that defines a link to another POI, and 
 <<ISO13249-3>> (SQL/MM Spatial) supports the general purpose relates operator from <<ISO19107>>, which tests if two geometries (a and b) are related by testing the dimension
 of the intersections of their boundaries, interiors and exteriors. Points have a dimension of zero, curves one and surfaces two.
 
-image:graphics/core-spatialoperators-20111216.jpg[Diagram of the 8 allowed term attributes of the relationship element]
+image:core-spatialoperators-20111216.jpg[Diagram of the 8 allowed term attributes of the relationship element]
 
 SQL/MM also supports the 19107 operator equals, which tests if two geometries are spatially equal. More formally, their symmetric difference _must_ be empty. SQL/MM then adds seven semantic operators to test the relationship between geometries a and b. These relationships are expressed in terms of the boundary, interior and exterior intersections to avoid ambiguities.
 
