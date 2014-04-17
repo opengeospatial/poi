@@ -23,48 +23,49 @@ http://earth-info.nga.mil/gns/html/gis_countryfiles.html
 from Google Maps Javascript API v3:
 https://developers.google.com/maps/documentation/javascript/places#place_details
 
-Place Details Results
+**Place Details Results**
 
 A successful getDetails() call returns a PlaceResult object with the following properties:
 
-address_components: The collection of address components for this Place's location. See the Geocoding service's Address Component Types section for more details.
-formatted_address: The Place's full address.
-formatted_phone_number: The Place's phone number, formatted according to the number's regional convention.
-geometry: The Place's geometry-related information. This includes:
-location provides the latitude and longitude of the Place.
-viewport defines the preferred viewport on the map when viewing this Place.
-html_attributions: Attribution text to be displayed for this Place result.
-icon: URL to an image resource that can be used to represent this Place's type.
-id: contains a unique identifier denoting this place. This identifier may not be used to retrieve information about this place, but can be used to consolidate data about this Place, and to verify the identity of a Place across separate searches. As ids can occasionally change, it's recommended that the stored id for a Place be compared with the id returned in later Details requests for the same Place, and updated if necessary.
-international_phone_number contains the Place's phone number in international format. International format includes the country code, and is prefixed with the plus (+) sign. For example, the international_phone_number for Google's Sydney, Australia office is +61 2 9374 4000.
-name: The Place's name.
-utc_offset contains the number of minutes this Place’s current timezone is offset from UTC. For example, for Places in Sydney, Australia during daylight saving time this would be 660 (+11 hours from UTC), and for Places in California outside of daylight saving time this would be -480 (-8 hours from UTC).
-opening_hours contains the following information:
-open_now is a boolean value indicating if the Place is open at the current time.
-periods[] is an array of opening periods covering seven days, starting from Sunday, in chronological order. Each period contains:
-open contains a pair of day and time objects describing when the Place opens:
-day a number from 0–6, corresponding to the days of the week, starting on Sunday. For example, 2 means Tuesday.
-time may contain a time of day in 24-hour hhmm format (values are in the range 0000–2359). The time will be reported in the Place’s timezone.
-close may contain a pair of day and time objects describing when the Place closes. Note: If a Place is always open, the close section will be missing from the response. Applications can rely on always-open being represented as an open period containing day with value 0 and time with value 0000, and no close.
-photos[]: an array of PlacePhoto objects. A PlacePhoto can be used to obtain a photo with the getUrl() method, or you can inspect the object for the following values:
-height: the maximum height of the image, in pixels.
-width: the maximum width of the image, in pixels.
-html_attributions: Attribution text to be displayed with this Place photo.
-rating: The Place's rating, from 0.0 to 5.0, based on user reviews.
-reference contains a token that can be used to query the Details service in future. This token may differ from the reference used in the request to the Details service. It is recommended that stored references for Places be regularly updated. Although this token uniquely identifies the Place, the converse is not true: a Place may have many valid reference tokens.
-reviews an array of up to five reviews. Each review consists of several components:
-aspects[] contains an array of PlaceAspectRating objects, each of which provides a rating of a single attribute of the establishment. The first object in the array is considered the primary aspect. Each PlaceAspectRating is defined as:
-type the name of the aspect that is being rated. The following types are supported: appeal, atmosphere, decor, facilities, food, overall, quality and service.
-rating the user's rating for this particular aspect, from 0 to 3.
-author_name the name of the user who submitted the review. Anonymous reviews are attributed to "A Google user". If a language parameter was set, then the phrase "A Google user" will return a localized string.
-author_url the URL to the users Google+ profile, if available.
-language an IETF language code indicating the language used in the user's review. This field contains the main language tag only, and not the secondary tag indicating country or region. For example, all the English reviews are tagged as 'en', and not 'en-AU' or 'en-UK' and so on.
-rating the user's overall rating for this Place. This is a whole number, ranging from 1 to 5.
-text the user's review. When reviewing a location with Google Places, text reviews are considered optional; therefore, this field may by empty.
-types: An array of types for this Place (e.g., ["political", "locality"] or ["restaurant", "establishment"]).
-url: URL of the associated Google Place Page.
-vicinity: A simplified address for the Place, including the street name, street number, and locality, but not the province/state, postal code, or country. For example, Google's Sydney, Australia office has a vicinity value of 5/48 Pirrama Road, Pyrmont. The vicinity property is only returned for a Nearby Search.
-website lists the authoritative website for this Place, such as a business' homepage.
+- address_components: The collection of address components for this Place's location. See the Geocoding service's Address Component Types section for more details.
+- formatted_address: The Place's full address.
+- formatted_phone_number: The Place's phone number, formatted according to the number's regional convention.
+- geometry: The Place's geometry-related information. This includes:
+  - location provides the latitude and longitude of the Place.
+  - viewport defines the preferred viewport on the map when viewing this Place.
+- html_attributions: Attribution text to be displayed for this Place result.
+- icon: URL to an image resource that can be used to represent this Place's type.
+- id: contains a unique identifier denoting this place. This identifier may not be used to retrieve information about this place, but can be used to consolidate data about this Place, and to verify the identity of a Place across separate searches. As ids can occasionally change, it's recommended that the stored id for a Place be compared with the id returned in later Details requests for the same Place, and updated if necessary.
+- international_phone_number contains the Place's phone number in international format. International format includes the country code, and is prefixed with the plus (+) sign. For example, the international_phone_number for Google's Sydney, Australia office is +61 2 9374 4000.
+- name: The Place's name.
+- utc_offset contains the number of minutes this Place’s current timezone is offset from UTC. For example, for Places in Sydney, Australia during daylight saving time this would be 660 (+11 hours from UTC), and for Places in California outside of daylight saving time this would be -480 (-8 hours from UTC).
+- opening_hours contains the following information:
+  - open_now is a boolean value indicating if the Place is open at the current time.
+  - periods[] is an array of opening periods covering seven days, starting from Sunday, in chronological order. Each period contains:
+    - open contains a pair of day and time objects describing when the Place opens:
+      - day a number from 0–6, corresponding to the days of the week, starting on Sunday. For example, 2 means Tuesday.
+      - time may contain a time of day in 24-hour hhmm format (values are in the range 0000–2359). The time will be reported in the Place’s timezone.
+    - close may contain a pair of day and time objects describing when the Place closes. Note: If a Place is always open, the close section will be missing from the response. Applications can rely on always-open being represented as an open period containing day with value 0 and time with value 0000, and no close.
+- photos[]: an array of PlacePhoto objects. A PlacePhoto can be used to obtain a photo with the getUrl() method, or you can inspect the object for the following values:
+  - height: the maximum height of the image, in pixels.
+  - width: the maximum width of the image, in pixels.
+  - html_attributions: Attribution text to be displayed with this Place photo.
+- rating: The Place's rating, from 0.0 to 5.0, based on user reviews.
+- reference contains a token that can be used to query the Details service in future. This token may differ from the reference used in the request to the Details service. It is recommended that stored references for Places be regularly updated. Although this token uniquely identifies the Place, the converse is not true: a Place may have many valid reference tokens.
+- reviews an array of up to five reviews. Each review consists of several components:
+  - aspects[] contains an array of PlaceAspectRating objects, each of which provides a rating of a single attribute of the establishment. The first object in the array is considered the primary aspect. Each PlaceAspectRating is defined as:
+    - type the name of the aspect that is being rated. The following types are supported: appeal, atmosphere, decor, facilities, food, overall, quality and service.
+    - rating the user's rating for this particular aspect, from 0 to 3.
+  - author_name the name of the user who submitted the review. Anonymous reviews are attributed to "A Google user". If a language parameter was set, then the phrase "A Google user" will return a localized string.
+  - author_url the URL to the users Google+ profile, if available.
+  - language an IETF language code indicating the language used in the user's review. This field contains the main language tag only, and not the secondary tag indicating country or region. For example, all the English reviews are tagged as 'en', and not 'en-AU' or 'en-UK' and so on.
+  - rating the user's overall rating for this Place. This is a whole number, ranging from 1 to 5.
+  - text the user's review. When reviewing a location with Google Places, text reviews are considered optional; therefore, this field may by empty.
+- types: An array of types for this Place (e.g., ["political", "locality"] or ["restaurant", "establishment"]).
+- url: URL of the associated Google Place Page.
+- vicinity: A simplified address for the Place, including the street name, street number, and locality, but not the province/state, postal code, or country. For example, Google's Sydney, Australia office has a vicinity value of 5/48 Pirrama Road, Pyrmont. The vicinity property is only returned for a Nearby Search.
+- website lists the authoritative website for this Place, such as a business' homepage.
+
 
 
 ## OSUK POI Example
