@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pois>
+	<poi id="http://www.example.com/a">
+		<label>Mall of US</label>
+		<description>
+			<value>This is a big mall</value>
+		</description>
+		<category scheme="http://naics.com" term="65120202">
+			<value>Shopping center, super regional (more than 1,000,000 sq ft)</value>
+		</category>
+		<time term="start" type="text/plain">
+			<value>1997-05-30</value>
+		</time>
+		<link href="http://mallofus.example.com" term="related" />
+		<location>
+			<point term="centroid">
+				<Point>
+					<posList>x1 y1 z1</posList>
+				</Point>
+			</point>
+			<point term="entrance">
+				<Point>
+					<posList>x2 y2 z2</posList>
+				</Point>
+			</point>
+			<point term="emergency_entrance">
+				<Point>
+					<posList>x6 y6 z6</posList>
+				</Point>
+			</point>
+			<relationship term="contains" targetPOI="http://www.example.com/b"/>
+		</location>
+	</poi>
+	<poi id="http://www.example.com/b">
+		<label>Clothes for guys</label>
+		<description>
+			<value>This is a store inside the Mall of US</value>
+		</description>
+		<category scheme="http://naics.com" term="561100">
+			<value>Men's and boys' clothing stores</value>
+		</category>
+		<time term="start" type="text/plain">
+			<value>2011-10-21</value>
+		</time>
+		<link href="http://clothesforguys.example.com" term="related" />
+		<location>
+			<point term="centroid">
+				<Point>
+					<posList>x3 y3 z3</posList>
+				</Point>
+			</point>
+			<point term="entrance">
+				<Point>
+					<posList>x4 y4 z4</posList>
+				</Point>
+			</point>
+			<relationship term="within" targetPOI="http://www.example.com/a"/>
+		</location>
+	</poi>
+</pois>

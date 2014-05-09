@@ -1,0 +1,2897 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache/xx-xxxrn-cache.manifest">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
+		<title>
+			OGC® Points of Interest Conceptual Model (OGC 14-xxx)
+		</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+		<![endif]-->
+		<link rel="stylesheet" href="css/ogcdoc.css" type="text/css" >
+		<link rel="stylesheet" href="css/styles/mono-blue.css">
+		<script src="js/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/gen_toc.js"></script>
+	</head>
+	<body>
+	
+	<header id="header" itemscope itemtype="http://schema.org/CreativeWork">
+	<p class="prefacehead" itemprop="sourceOrganization" itemprop="publisher">Open Geospatial Consortium</p>
+	<p>Submission Date: <time itemprop="dateModified" datetime="2014-01-01" class="editme" >yyyy-dd-mm</time></p>
+	<p>Approval Date: <time itemprop="datePublished" datetime="2014-01-01" class="editme">yyyy-dd-mm</time></p>
+	<p>Publication Date: <time itemprop="datePublished" datetime="2014-01-01" class="editme" >yyyy-dd-mm</time></p>
+	<p>Public Comment URL: <span itemprop="discussionUrl" class="editme" >http://github.com/opengeospatial/swgrepoissues</span></p>
+	<p>External identifier of this OGC<sup>®</sup> document: <span itemprop="url" class="editme" >&lt;<a href="http://www.opengis.net/def/doc-type/standard/1.0" >http://www.opengis.net/def/doc-type/standard/1.0</a>&gt;</span></p>
+	<p>Internal reference number of this OGC<sup>®</sup> document: <span class="editme" >&lt;YY-nnnrx&gt;</span></p>
+	<p>Version: <span itemprop="version" class="editme" >&lt;n.n&gt;</span></p>
+	<p>Category: OGC<sup>®</sup> <span class="editme" >&lt;Implementation / Abstract Specification / Best Practice&gt;</span></p>
+	<p>Editor: <span itemprop="editor">Ashley Holt</span>, <span itemprop="editor">Peter Controneo</span></p>
+	<p class="title" itemprop="name">
+		OGC<sup>®</sup> Points of Interest Conceptual Model
+	</p>
+
+	<p class="prefacehead" style="text-align:center;">
+		Copyright notice
+	</p>
+	<p style="text-align:center;">
+		Copyright © <span itemprop="copyrightYear">2014</span> <span itemprop="copyrightHolder">Open Geospatial Consortium</span><br>
+		To obtain additional rights of use, visit <a href="http://www.opengeospatial.org/legal/">http://www.opengeospatial.org/legal/</a>.
+	</p>
+	<p style="text-align:center;">
+		<a href="http://www.w3.org/">W3C</a> (<a href="http://www.csail.mit.edu/">MIT</a>, <a href="http://www.ercim.eu/">ERCIM</a>, <a href="http://www.keio.ac.jp/">Keio</a>) holds copyright in the <a href="http://www.w3.org/TR/2011/WD-poi-core-20110512/">Points of Interest Core Working Draft</a> ("POI-WD"). As the Points of Interest Working Group closed in September, 2012, W3C has ceased work on POI-WD. Accordingly, W3C licenses the text of POI-WD, dated 12 May, 2011, to OGC royalty-free, permitting uses including reproduction, distribution, and creation of derivative works.
+	</p>
+	<p class="prefacehead" style="text-align:center;">
+		Warning
+	</p>
+	<div class="docwarning">
+		<p style="text-align:left;">
+			This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.
+		</p>
+		<p>
+			Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
+		</p>
+	</div><!--end doc warning-->
+	
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					Document type:
+				</td>
+				<td>
+					OGC<sup>®</sup> Standard
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Document subtype:
+				</td>
+				<td>
+					if applicable
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Document stage:
+				</td>
+				<td>
+					Draft
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Document language:
+				</td>
+				<td>
+					English
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</header>
+	
+	<div id="license">
+		<p class="prefacehead">License Agreement</p>
+		<p>
+			Permission is hereby granted by the Open Geospatial Consortium, (“Licensor”), free of charge and subject to the terms set forth below, to any person obtaining a copy of this Intellectual Property and any associated documentation, to deal in the Intellectual Property without restriction (except as set forth below), including without limitation the rights to implement, use, copy, modify, merge, publish, distribute, and/or sublicense copies of the Intellectual Property, and to permit persons to whom the Intellectual Property is furnished to do so, provided that all copyright notices on the intellectual property are retained intact and that each person to whom the Intellectual Property is furnished agrees to the terms of this Agreement.
+		</p>
+		<p>
+			If you modify the Intellectual Property, all copies of the modified Intellectual Property must include, in addition to the above copyright notice, a notice that the Intellectual Property includes modifications that have not been approved or adopted by LICENSOR.
+		</p>
+		<p>
+			THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
+		</p>
+		<p>
+			THE INTELLECTUAL PROPERTY IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER’S OWN RISK. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR PERFORMANCE OF THIS INTELLECTUAL PROPERTY.
+		</p>
+		<p>
+			This license is effective until terminated. You may terminate it at any time by destroying the Intellectual Property together with all copies in any form. The license will also terminate if you fail to comply with any term or condition of this Agreement. Except as provided in the following sentence, no such termination of this license shall require the termination of any third party end-user sublicense to the Intellectual Property which is in force as of the date of notice of such termination. In addition, should the Intellectual Property, or the operation of the Intellectual Property, infringe, or in LICENSOR’s sole opinion be likely to infringe, any patent, copyright, trademark or other right of a third party, you agree that LICENSOR, in its sole discretion, may terminate this license without any compensation or liability to you, your licensees or any other party. You agree upon termination of any kind to destroy or cause to be destroyed the Intellectual Property together with all copies in any form, whether held by you or by any third party.
+		</p>
+		<p>
+			Except as contained in this notice, the name of LICENSOR or of any other holder of a copyright in all or part of the Intellectual Property shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Intellectual Property without prior written authorization of LICENSOR or such copyright holder. LICENSOR is and shall at all times be the sole entity that may authorize you or any third party to use certification marks, trademarks or other special designations to indicate compliance with any LICENSOR standards or specifications. This Agreement is governed by the laws of the Commonwealth of Massachusetts. The application to this Agreement of the United Nations Convention on Contracts for the International Sale of Goods is hereby expressly excluded. In the event any provision of this Agreement shall be deemed unenforceable, void or invalid, such provision shall be modified so as to make it valid and enforceable, and as so modified the entire Agreement shall remain in full force and effect. No decision, action or inaction by LICENSOR shall be construed to be a waiver of any rights or remedies available to it.
+		</p>
+	</div><!-- end license -->
+		
+		<main class="all-headings">
+		
+		<div id="prefatory">
+			<section id="abstract">
+				<header>
+					<h1>Abstract</h1>
+				</header>
+				<p class="editme" >&lt;Insert Abstract Text here&gt;</p>
+			</section>
+
+			<section id="keywords">
+				<header>
+					<h1>Keywords</h1>
+				</header>
+				<p>The following are keywords to be used by search engines and document catalogues.</p>
+				<p>
+					<span class="keyword" itemprop="keywords">ogcdoc</span>, 
+					<span class="keyword" itemprop="keywords">OGC document</span>, 
+					<span class="keyword" itemprop="keywords">poi</span>, 
+					<span class="keyword" itemprop="keywords">gazetteer</span>, 
+					<span class="keyword" itemprop="keywords">pointsofinterest</span>, 
+					<span class="keyword" itemprop="keywords">placesofinterest</span>
+				</p>
+				<p>
+				<span class="editmemore">Also include these in a meta tag in the html head:<br />
+				&lt;meta name="keywords" content="ogcdoc, OGC document"&gt;</span>
+				</p>
+			</section>
+			
+			<section id="preface">
+				<header>
+					<h1>Preface</h1>
+					<p>
+						<span class="editmemore">&lt;Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.&gt;</span>
+					</p>
+					<p>
+						Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+					</p>
+					<p>
+						<em>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</em>
+					</p>
+				</header>
+			</section>
+
+			<section id="submittingorgs" itemscope itemtype="http://schema.org/Organization">
+				<header>
+					<h1>Submitting organizations</h1>
+				</header>
+				<p>
+					The following organizations submitted this Document to the Open Geospatial Consortium (OGC):
+				</p>
+				<dl>
+					<dt></dt>
+					<dd itemprop="name" class="editme">&lt;Organization A&gt;</dd>
+					<dd itemprop="name" class="editme">&lt;Organization B&gt;</dd>
+				</dl>
+			</section>
+			
+			<section id="submitters" itemscope itemtype="http://schema.org/Person">
+				<header>
+					<h1>Submitters</h1>
+				</header>
+				<p>
+					All questions regarding this submission should be directed to the editor or the submitters:
+				</p>
+				<table class="small">
+					<tr class="odd" >
+						<th>
+							<strong>Name</strong>
+						</th>
+						<th>
+							<strong>Affiliation</strong>
+						</th>
+					</tr>
+					<tr class="even" >
+						<td>
+							<p itemprop="name">&nbsp;</p>
+						</td>
+						<td>
+							<p itemprop="affiliation">&nbsp;</p>
+						</td>
+					</tr>
+					<tr class="odd" >
+						<td>
+							<p itemprop="name">&nbsp;</p>
+						</td>
+						<td>
+							<p itemprop="affiliation">&nbsp;</p>
+						</td>
+					</tr>
+				</table>
+			</section>
+		</div><!-- end prefatory-->
+		
+		<div id="clauses">
+			<section id="scope">
+				<h1 id="Scope">Scope</h1>
+				<p>
+					<span class="editmemore">&lt;Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document. &gt;</span>
+				</p>
+				<p>This document describes a data model and XML syntax for representing information about points of interest (POI).</p>
+				<p>In the most broad terms, a "point of interest" is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three dimensional model of a building with names in various languages, information about open and closed hours, and a civic address. POI data has many uses including navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers.</p>
+				<p>POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.</p>
+				<p>To achieve these goals, this document describes a generic data model that may be instantiated in a variety of serializations, including XML, JSON and RDF.</p>
+				<p>Here is an example of a simple POI serialized in XML:</p>
+				<pre>
+					<code>
+&lt;?xml version="1.0" encoding="UTF-8"  standalone="yes"?&gt;
+&lt;poi id=&quot;http://www.rajsingh.org/pois/45343489&quot;&gt;
+&lt;label term=&quot;primary&quot;&gt;
+&lt;value&gt;Boston&lt;/value&gt;
+&lt;/label&gt;
+&lt;description term=&quot;source&quot; href=&quot;http://en.wikipedia.org/wiki/Boston&quot;&gt;
+&lt;value&gt;Boston is the capital of and largest city in Massachusetts, and is one of the oldest
+  cities in the United States. The largest city in New England, Boston is regarded as the
+  unofficial &quot;Capital of New England&quot; for its economic and cultural impact on the entire
+  New England region. The city proper had a population of 617,594 according to the 2010
+  U.S. Census.
+&lt;/value&gt;
+&lt;author id=&quot;http://en.wikipedia.org&quot; term=&quot;publisher&quot; type=&quot;text/plain&quot;&gt;
+  &lt;value&gt;Wikipedia&lt;/value&gt;
+&lt;/author&gt;
+&lt;/description&gt;
+&lt;category term=&quot;city&quot; scheme=&quot;http://www.usgs.gov/placetypes&quot;&gt;
+&lt;value&gt;seat of a first-order administrative division&lt;/value&gt;
+&lt;/category&gt;
+&lt;link term=&quot;canonical&quot; href=&quot;http://www.rajsingh.org/pois/45343489.xml&quot; <br>	type=&quot;text/xml&quot; scheme=&quot;http://www.iana.org/assignments/link-relations/link-relations.xml&quot;/&gt;
+&lt;link term=&quot;related&quot; href=&quot;http://en.wikipedia.org/wiki/Boston&quot; <br>	type=&quot;text/html&quot; scheme=&quot;http://www.iana.org/assignments/link-relations/link-relations.xml&quot;/&gt;
+&lt;link term=&quot;related&quot; href=&quot;http://www.geonames.org/maps/google_42.358_-71.06.html&quot; <br>	type=&quot;text/html&quot; scheme=&quot;http://www.iana.org/assignments/link-relations/link-relations.xml&quot;/&gt;
+&lt;location&gt;
+&lt;point term=&quot;centroid&quot;&gt;
+  &lt;Point srsName=&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;&gt;
+	&lt;posList&gt;42.358 -71.06&lt;/posList&gt;
+  &lt;/Point&gt;
+&lt;/point&gt;
+&lt;/location&gt;
+&lt;/poi&gt;
+					</code>
+				</pre>
+			</section>
+
+			<section id="conformance">
+				<header>
+					<h1 id="Conformance">Conformance</h1>
+				</header>
+				<p>
+					This standard defines <span class="editme">XXXX</span>.
+				</p>
+				<p>
+					Requirements for N standardization target types are considered:
+				</p>
+				<ul>
+					<li>
+						<span class="editme">AAAA</span>
+					</li>
+					<li>
+						<span class="editme">BBBB</span>
+					</li>
+				</ul>
+				<p>
+					Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the <a href="http://cite.opengeospatial.org">OGC Compliance Testing web site</a>.
+				</p>
+				<p>
+					In order to conform to this OGC™ interface standard, a software implementation shall choose to implement:
+				</p>
+				<p>
+					a) Any one of the conformance levels specified in Annex B (normative).
+				</p>
+				<p>
+					b) Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).
+				</p>
+				<p>
+					All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.
+				</p>
+			</section><!-- end conformance-->
+
+			<section id="references" >
+				<h1 id="References">References</h1>
+				<p>
+					The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
+				</p>
+				<p>
+					<span class="editme" >&lt;Insert References here. If there are no references, state “There are no normative references”.&gt;</span>
+				</p>
+			</section><!-- end references -->
+
+		<section id="terms">
+			<h1 id="Terms">Terms and Definitions</h1>
+			<p>
+				This document uses the terms defined in Sub-clause 5.3 of [OGC 06-121r8], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
+			</p>
+			<p>
+				For the purposes of this document, the following additional terms and definitions apply.
+			</p>
+			<dl>
+				<dt>
+					Location
+				</dt>
+				<dd>
+					The term location is used to refer to an identifiable geographic place <a href="#ISO19112">[ISO19112]</a>. Typically a location is a physically fixed point, typically on the surface of the Earth, though locations can be relative to other, non-earth centric coordinate reference systems. Locations can be a single point, a centroid, a minimum bounding rectangle, or a set of vectors. A location should be persistent over time and does not change. Multiple POIs <em>may</em> share the same location. When a POI physically moves it is understood to have acquired a new location.
+				</dd>
+				<dt>
+					Points of Interest
+				</dt>
+				<dd>
+					Unlike the term location, the term POI is a human construct. POIs typically describe a location where one can find a place, product or service, typically identified by name rather than by address and characterized by type, which <em>may</em> be used as a reference point or a target in a location based service request, e.g., as the destination of a route. For the purposes of this document, the term POI does not exclude the labeling, identification, and tracking of persons and other physical objects that have no permanent location.
+				</dd>
+				<dt>
+					Places
+				</dt>
+				<dd>
+					A place is also a human construct which typically has a coarse level of spatial granularity. Places are generally larger scale administrative constructs, either informally or formally defined. Countries, states, counties, districts, neighborhoods and postal codes or telephone area codes are all places. Places are also informally or colloquially defined, such as the Home Counties in the United Kingdom and the Bay Area in the United States. + Places have spatial relationships; with parents, children, adjacencies and contained by semantics. Places have the same attribute set as POIs, although often with differing interpretations based on scale; for example, the address of a Place or its URI might refer to the address of the administrative or governing body of the place. + A place typically contains multiple POIs and can also be coterminous with a POI. In the former case, a place, such as a city or a neighborhood, will contain multiple POIs. In the latter case, a place and a POI will occupy the same position and extent, such as in the case of Yellowstone National Park, which is both a Place and a POI. For the purposes of this document no distinction will be made between a place and a POI.
+				</dd>
+				<dt>
+					Coordinate
+				</dt>
+				<dd>
+					The term coordinate refers to one of a sequence of n numbers designating the position of a point in n-dimensional space <a href="#ISO19111">[ISO19111]</a>.
+				</dd>
+				<dt>
+					Coordinate Reference System
+				</dt>
+				<dd>
+					The term coordinate reference system refers to a coordinate system that is related to an object by a datum <a href="#ISO19111">[ISO19111]</a>.
+				</dd>
+				<dt>
+					Coordinate System
+				</dt>
+				<dd>
+					The term coordinate system refers to a set of mathematical rules for specifying how coordinates are to be assigned to points <a href="#ISO19111">[ISO19111]</a>.
+				</dd>
+				<dt>
+					Datum
+				</dt>
+				<dd>
+					The term datum refers to a parameter or set of parameters that define the position of the origin, the scale, and the orientation of a coordinate system <a href="#ISO19111">[ISO19111]</a>.
+				</dd>
+				<dt>
+					Geolocation
+				</dt>
+				<dd>
+					The term geolocation refers to the identification of the real world geographic location of an object.
+				</dd>
+				<dt>
+					Point
+				</dt>
+				<dd>
+					The term point refers to a 0-dimensional geometric primitive, representing a position <a href="#ISO19107">[ISO19107]</a>.
+				</dd>
+				<dt>
+					Position
+				</dt>
+				<dd>
+					The term position refers to a data type that describes a point or geometry potentially occupied by an object or person <a href="#ISO19133">[ISO19133]</a>.
+				</dd>
+				<dt>
+					Route
+				</dt>
+				<dd>
+					The term route refers to a sequence of links and / or partial links that describe a path, usually between two positions, within a network <a href="#ISO19133">[ISO19133]</a>.
+				</dd>
+				<dt>
+					Coordinate Set
+				</dt>
+				<dd>
+					The term coordinate set refers to the individual parts of a coordinate. This is often a simple coordinate pair of latitude and longitude values, but based on the coordinate system used, <em>may</em> be other values, see <a href="#coordinate_reference_systems">[coordinate_reference_systems]</a>.
+				</dd>
+			</dl>
+		</section>
+		
+		<section id="conventions">
+			<h1 id="Conventions">Conventions</h1>
+			<p>
+				This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
+			</p>
+			<p>
+				The key words "<em>must</em>", "<em>must not</em>", "<em>required</em>", "<em>shall</em>", "<em>shall not</em>", "<em>should</em>", "<em>should not</em>", "<em>recommended</em>", "<em>may</em>", and "<em>optional</em>" in this document are to be interpreted as described in <a href="#RFC2119">[RFC2119]</a>.
+			</p>
+		</section>
+		
+		<section>
+			<h1 id="conceptualcomponents">
+				Major Conceptual Components
+			</h1>
+					<h2 id="poiconceptual">POI</h2>
+					<p>
+						A POI is defined as having the following conceptual properties:
+					</p>
+						<ul>
+							<li>a globally unique ID</li>
+							<li>labels</li>
+							<li>descriptions</li>
+							<li>location</li>
+							<li>tags/keywords/categories</li>
+							<li>links to related information</li>
+							<li>time</li>
+							<li>authors</li>
+							<li>rights</li>
+							<li>metadata</li>
+						</ul>
+						<p>
+						While a POI may be near meaningless without a label and location, from a computational perspective there are use cases in which any of these properties should be optional. Therefore, the only mandatory characteristic of a POI is that it have a globally unique identification property in the format of a URI.
+					</p>
+				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+					<div class="requirementlabel"></div>
+					<div class="requirementuri">
+						<a href="http://www.opengis.net/spec/poi/1.0/req/core/GUID">http://www.opengis.net/spec/poi/1.0/req/core/GUID</a>
+					</div>
+					<div class="requirementtext" itemprop="description">
+						a POI shall have a globally unique identification property in the format of a URI.
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="labelsdescriptionsconceptual">
+						Labels and Descriptions
+					</h2>
+					<p>
+						Labels (place names) and descriptions are largely self-explanatory properties. A place may have multiple labels, as it may be known differently by different people, in different languages or in different times or contexts. Multiple descriptions are important for the same reasons.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="locationconceptual">
+						Location
+					</h2>
+					<p>
+						The most common way of expressing the location of a POI is as a point defined by latitude and longitude coordinates in decimal degrees. This specification enhances that basic definition, allowing a POI’s location to be determined by either a point, line, polygon or civic address. A POI may also use more than one location definition property to more clearly specify multiple locational concepts, such as a building’s address, boundary, centroid, and entrance. A POI is most useful when its location is well-known, but this is not always possible, so the model supports the ability to express location relative to other POIs. This feature may be used alone, or in addition to, an absolute location.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="categoriesconceptual">
+						Categories
+					</h2>
+					<p>
+						Tagging, or categorizing a POI is a common practice in wide use by personal navigation systems, government gazetteers such as the USGS Geographic Names Information System, and businesses like Yelp!. Therefore the POI specification supports structured categorization, where the identifying term comes from a dictionary - or registry of terms - and it also supports "free" tagging, where the identifying term is simply that - a word or phrase with no reference to a structured information model.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="linksconceptual">
+						Links
+					</h2>
+					<p>
+						Links to related information allow a POI reference content that may exist in external repositories, such as images, web pages, maps, reviews, 3D models, and even other POI data repositories.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="timeconceptual">
+						Time
+					</h2>
+					<p>
+						Time plays an important role as no place stays the same forever. A POI may have a start time and/or an end time. The POI data record (and also all its child properties) may also have start, end and last updated time stamps.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="authorsrightsconceptual">
+						Authors and Rights
+					</h2>
+					<p>
+						Identifying authors and licensing terms are important aspects of any information sharing system. These two are so important that they are separated from any more universal metadata definition system used by the following mechanism.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="metadataconceptual">
+						Metadata
+					</h2>
+					<p>
+						Metadata and provenance is a such a broad, generic area of work that one approach could not work for all POIs. Therefore, if a POI contains metadata it must also define the metadata information model it uses.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="inheritanceconceptual">
+						Property Inheritance
+					</h2>
+					<p>
+						In many cases, POI information is nested in a heirarchical system. Any property of a POI applies to all its child properties, unless that property is re-defined in the child. For example, if a POI has an author property of "A", and the POI has a description property of "D", the author of D is A, unless D has an author property itself. Then the author of D is whatever D defines it to be. One useful feature of inheritance is that if only one property of a POI has a different author, it is easy to express that fact precisely without adding a lot of duplicative author information to every property in the POI.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="poisconceptual">
+						POIS
+					</h2>
+					<p>
+						Multiple POIs may be grouped into a POIS object, which serves only as a container object such that a group of POIs can inherit properties - for example authorship, licensing or categorization. The POIS object is expected to be useful only as a dynamic aggregation mechanism when information is being shared between systems. It is not expected to be of any particular use as a way to permanently model POI information in a database.
+					</p>
+					<p>
+						Following sections provide additional detail on the properties described above.
+					</p>
+				</div>
+		</section>
+		<div class="sect1">
+			<h2 id="uml">
+				UML Model
+			</h2>
+			<div class="sectionbody">
+				<p>
+					The Point of Interest data model consists of a <strong><a href="#poi">POI</a></strong> entity and a <strong><a href="#pois">POIS</a></strong> grouping entity. Each POI has a number of properties for capturing descriptive information along with a Location entity describing its location. In order to maximize the flexibility with which POI, POIs and their sub-entities can be described, each inherit its properties from a single common entity. In practical terms, this allows properties such as update time, authorship, links and other categorizations to be described at multiple levels of granularity within the data model.
+				</p>
+				<p>
+					More formally, the core data model consists of the <a href="#poitype">POIType</a> entity derived from, and having child entities derived from an abstract <a href="#poibasetype">POIBaseType</a> entity. This common POIBaseType allows the authorship, modification, and source of POIs to be attributed at the POI level, at the child entity level, and at a group level through the POIS grouping entity. Child entities are constructed from primitive datatypes, <a href="#poibasetype">POIBaseType</a> entities or <a href="#poitermtype">POITermType</a> entities.
+				</p>
+				<p>
+					<span class="image"><img src="graphics/poi_model.svg" alt="UML model of the POI core data model"></span>
+				</p>
+				<p>
+					The classes of the core data model are described in more detail below.
+				</p>
+			</div>
+		</div>
+		<div class="sect1">
+			<h1 id="pois">
+				POIS
+			</h1>
+			<div class="requirement">
+				<div class="requirementlabel"></div>
+				<div class="requirementuri">
+					<a href="http://www.opengis.net/spec/poi/1.0/req/core/POISClass">http://www.opengis.net/spec/poi/1.0/req/core/POISClass</a>
+				</div>
+				<div class="requirementtext">
+					Serializations shall support the encoding of all mandatory and optional parameters of the POIS Class and meet all of the tabulated constraints and notes.
+				</div>
+			</div>
+			<div class="sectionbody">
+				<p>
+					POIS extends <a href="#poitype">POIType</a> and adds the properties in the table below.
+				</p>
+				<table style="width:65%;">
+					<colgroup>
+						<col style="width:40%;">
+						<col style="width:40%;">
+						<col style="width:20%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>
+								Name
+							</th>
+							<th>
+								Type
+							</th>
+							<th>
+								Multiplicity
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								poi
+							</td>
+							<td>
+								<a href="#poi">POI</a>
+							</td>
+							<td>
+								0..*
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="sect1">
+			<h1 id="poi">
+				POI
+			</h1>
+			<div class="sectionbody">
+			<div class="requirement">
+				<div class="requirementlabel"></div>
+				<div class="requirementuri">
+					<a href="http://www.opengis.net/spec/poi/1.0/req/core/POIClass">http://www.opengis.net/spec/poi/1.0/req/core/POIClass</a>
+				</div>
+				<div class="requirementtext">
+					Serializations shall support the encoding of all mandatory and optional parameters of the POI Class and meet all of the tabulated constraints and notes. 
+				</div>
+			</div>
+			</div>
+				<p>
+					POI extends <a href="#poitype">POIType</a> and adds the properties in the table below.
+				</p>
+				<table style="width:65%;">
+					<colgroup>
+						<col style="width:40%;">
+						<col style="width:40%;">
+						<col style="width:20%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>
+								Name
+							</th>
+							<th>
+								Type
+							</th>
+							<th>
+								Multiplicity
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								location
+							</td>
+							<td>
+								<a href="#location">Location</a>
+							</td>
+							<td>
+								1
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sect2">
+					<h2 id="location">Location</h2>
+					<p>
+						Location is of type <a href="#poibasetype">POIBaseType</a> and provides a flexible description of the geographic location of a POI. A Location can be represented in a variety of ways, such as the geodetic coordinates for the center of the POI, the civic address, line, bounding box, polygon, or undetermined. A location is a <em>mandatory</em> part of a POI and has child properties describing the geometry, civic address or spatially related POIs.
+					</p>
+					<table style="width:65%;">
+						<colgroup>
+							<col style="width:40%;">
+							<col style="width:40%;">
+							<col style="width:20%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									Name
+								</th>
+								<th>
+									Type
+								</th>
+								<th>
+									Multiplicity
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="#point">point</a>
+								</td>
+								<td>
+									<a href="#gml_ce_geometry">GML_CE_Geometry</a>
+								</td>
+								<td>
+									0..*
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#line">line</a>
+								</td>
+								<td>
+									<a href="#gml_ce_geometry">GML_CE_Geometry</a>
+								</td>
+								<td>
+									0..*
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#polygon">polygon</a>
+								</td>
+								<td>
+									<a href="#gml_ce_geometry">GML_CE_Geometry</a>
+								</td>
+								<td>
+									0..*
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#address">address</a>
+								</td>
+								<td>
+									<a href="#poibasetype">POIBaseType</a>
+								</td>
+								<td>
+									0..*
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#relationship">relationship</a>
+								</td>
+								<td>
+									<a href="#relationshiptype">Relationship</a>
+								</td>
+								<td>
+									0..*
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#undetermined">undetermined</a>
+								</td>
+								<td>
+									null
+								</td>
+								<td>
+									0..1
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="sect3">
+						<h3 id="point">
+							point
+						</h3>
+						<p>
+							The Point entity is derived from <a href="#poitermtype">POITermType</a> and adds a single Point entity of type <a href="#gml_ce_geometry">GML_CE_Geometry</a>. It describes a single coordinate set, the interpretation of which is influenced by the CRS attribute.
+						</p>
+						<p>
+							The Point entity locates the centroid of the POI and is the most common way of specifying a location. For most places, such as cities, businesses, tourist sites, or events, a center location can be useful for many types of software applications where additional detail is unnecessary, such as driving directions or computing rough distances. Therefore, even if the POI is also specified with a polygon or a line, it is good practice to include a center point.
+						</p>
+						<table style="width:65%;">
+							<colgroup>
+								<col style="width:40%;">
+								<col style="width:40%;">
+								<col style="width:20%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Type</th>
+									<th>Multiplicity</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Point</td>
+									<td><a href="#gml_ce_geometry">GML_CE_Geometry</a></td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							It is <em>recommended</em> to use the term property to discriminate between different Point entity categories.
+						</p>
+						<p>
+							<strong>Recommended Terms</strong>
+						</p>
+						<table style="width:65%;">
+							<colgroup>
+								<col style="width:50%;">
+								<col style="width:50%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>
+										Name
+									</th>
+									<th>
+										Details
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>center</td>
+									<td>The centroid of the Location</td>
+								</tr>
+								<tr>
+									<td>navigation point</td>
+									<td>Generic navigation point</td>
+								</tr>
+								<tr>
+									<td>entrance</td>
+									<td>Navigation poin to the entrance</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="sect3">
+						<h3 id="line">line</h3>
+						<p>
+							The Line entity is derived from <a href="#poitermtype">POITermType</a> and adds a single LineString entity of type <a href="#gml_ce_geometry">GML_CE_Geometry</a>. It describes a list of two or more coordinate sets, the interpretation of which is influenced by the CRS attribute.
+						</p>
+						<table style="width:65%;">
+							<colgroup>
+								<col style="width:40%;">
+								<col style="width:40%;">
+								<col style="width:20%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>
+										Name
+									</th>
+									<th>
+										Type
+									</th>
+									<th>
+										Multiplicity
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>LineString</td>
+									<td><a href="#gml_ce_geometry">GML_CE_Geometry</a></td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							A Line entity can be used to describe a linear feature, such as a road, a bike route, a river, etc.
+						</p>
+					</div>
+					<div class="sect3">
+						<h3 id="polygon">polygon</h3>
+						<p>
+							The Polygon entity is derived from <a href="#poitermtype">POITermType</a> and adds a single SimplePolygon entity of type <a href="#gml_ce_geometry">GML_CE_Geometry</a>. It describes a list of three or more coordinate sets, the interpretation of which is influenced by the CRS attribute. The last coordinate does not have to repeat the first coordinate in this simplified encoding, so only three control points are <em>required</em> to specify a simple polygon.
+						</p>
+						<table style="width:65%;">
+							<colgroup>
+								<col style="width:40%;">
+								<col style="width:40%;">
+								<col style="width:20%;">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>
+										Name
+									</th>
+									<th>
+										Type
+									</th>
+									<th>
+										Multiplicity
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>SimplePolygon</td>
+									<td><a href="#gml_ce_geometry">GML_CE_Geometry</a></td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="sect3">
+						<h3 id="address">address</h3>
+						<p>
+							The Address entity is of type POIBaseType and describes a civic address such as a mailing address or a street address. It’s value is determined by the type property, and should be either vCard (text/directory) or free text (text/plain).
+						</p>
+					</div>
+					<div class="sect3">
+						<h3 id="relationship">relationship</h3>
+						<p>
+							relationship is a <a href="#relationshiptype">Relationship</a> property that describes the spatial relationship between this POI and another.
+						</p>
+					</div>
+					<div class="sect3">
+						<h3 id="undetermined">undetermined</h3>
+						<p>
+							An undetermined property represents a location that is as of yet unknown or unspecified. This can be used to describe a POI prior to the final location being resolved. The undetermined entity has no properties.
+						</p>
+						<p>
+							If a Location neither includes a geometry nor an address, then it <em>must</em> include the undetermined property.
+						</p>
+					</div>
+				</div>
+		</div>
+		<div class="sect1">
+			<h2 id="poitype">POIType</h2>
+			<div class="sectionbody">
+				
+			<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+				<div class="requirementlabel"></div>
+				<div class="requirementuri" itemprop="uri">
+					<a href="http://www.opengis.net/spec/poi/1.0/req/core/POIType">http://www.opengis.net/spec/poi/1.0/req/core/POIType</a>
+				</div>
+				<div class="requirementtext" itemprop="description">
+					Serializations shall support the encoding of all mandatory and optional parameters of the POIType Class and meet all of the tabulated constraints and notes.
+				</div>
+			</div> <!-- end requirement -->
+
+				<p>
+					POIType extends <a href="#poibasetype">POIBaseType</a> and adds the properties in the table below. It adds properties for describing, labeling, categorizing and indicating the time span of a POI or group of POIs. <a href="#poitype">POIType</a> also includes child classes for linking to other POIs, external web resources or metadata.
+				</p>
+				<table style="width:65%;">
+					<colgroup>
+						<col style="width:40%;">
+						<col style="width:40%;">
+						<col style="width:20%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>
+								Name
+							</th>
+							<th>
+								Type
+							</th>
+							<th>
+								Multiplicity
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a href="#label">label</a>
+							</td>
+							<td>
+								<a href="#poitermtype">POITermType</a>
+							</td>
+							<td>
+								0..*
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#description">description</a>
+							</td>
+							<td>
+								<a href="#poibasetype">POIBaseType</a>
+							</td>
+							<td>
+								0..*
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#category">category</a>
+							</td>
+							<td>
+								<a href="#poitermtype">POITermType</a>
+							</td>
+							<td>
+								0..*
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#link">link</a>
+							</td>
+							<td>
+								<a href="#poitermtype">POITermType</a>
+							</td>
+							<td>
+								0..*
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#time">time</a>
+							</td>
+							<td>
+								<a href="#poitermtype">POITermType</a>
+							</td>
+							<td>
+								0..*
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#metadata">Metadata</a>
+							</td>
+							<td>
+								string
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sect2">
+					<h2 id="label">label</h2>
+					<p>
+						A human-readable name. Multiple names are used for synonyms, and for multiple languages.
+					</p>
+					<p>
+						The label entity is of type <a href="#poitermtype">POITermType</a> and specifies any number of human-readable names. The language of label <em>may</em> be indicated using the lang property. Multiple labels <em>may</em> be discriminated with the term property (e.g. primary, colloquial, etc.). The first label encountered per language is considered the primary label for that language.
+					</p>
+					<p>
+						It is <em>recommended</em> to use the term property to discriminate between different categories of label entities.
+					</p>
+					<table id="labelrelations" style="width:65%;">
+						<caption>
+							Table 1. Label Relations
+						</caption>
+						<colgroup>
+							<col style="width:25%;">
+							<col style="width:75%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									Name
+								</th>
+								<th>
+									Definition
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									primary
+								</td>
+								<td>
+									The primary label
+								</td>
+							</tr>
+							<tr>
+								<td>
+									note
+								</td>
+								<td>
+									An annotation label
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="sect2">
+					<h2 id="description">description</h2>
+					<p>
+						A human-readable narrative description that can be discrimintated with the language attribute. <a href="#description">description</a> is of type <a href="#poitermtype">POITermType</a> and specifies a human readable description. The language the description is in <em>may</em> be indicated using the lang property. The first description encountered per language is considered the primary description for that language.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="category">category</h2>
+					<p>
+						The category property classifies the POI using keywords. Category is adopted from the atom:category object <a href="#RFC4087">[RFC4087]</a>, and works in much the same way. A category should specify the type of POI, such as city, restaurant, etc. The category’s value property is the keyword, or tag. The <a href="#term">term</a>, if specified, is the classification scheme to which the value belongs. To emulate a "folksonomy" or "free tagging", the term <em>shall</em> be "free". This tagging system <em>may</em> be more formally structured using the scheme property to specify a dictionary of terms or a web resource containing definitions of the terms and values.
+					</p>
+					<p>
+						Multiple categories are allowed to accommodate the fact that POIs may be more than one thing. For example, a casino might be a gambling hall, a restaurant, and a concert venue. A grocery store may also be a bank and a pharmacy.
+					</p>
+					<p>
+						The href property <em>may</em> be used to provide a resolvable link to a more comprehensive definition of the category.
+					</p>
+					<p>
+						It is <em>recommended</em> to utilize the value property when describing human readable categorical descriptions.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="link">link</h2>
+					<p>
+						A link to another POI, or any other web resource. The link entity is of type <a href="#poitermtype">POITermType</a> and adopted from the atom:link object <a href="#RFC4087">[RFC4087]</a> which works in much the same way. A link is a generic way to define a relationship between the POI and other Web-accessible resources.
+					</p>
+					<p>
+						Links are a powerful way to describe a host of relationships. One could argue that just as Web pages obtain most of their value by the links between them, a POI’s value is directly related to the number of links between it and others. Links in POIs are perhaps even more important than links in Web pages or Atom feeds, as POIs are inherently place-based objects with natural relationships in space and time that should be expressed. Those spatial relationships are mostly covered by the <a href="#relationship">relationship</a> property, which is in many ways a specialization of the generic Link. But there are many more semi-spatial and non-spatial relationships that can be expressed using link.
+					</p>
+					<p>
+						This specification proposes a number of best practices for defining links. Key relations from the IANA registry are listed below in italics. Those relations in bold are defined only in this specification.
+					</p>
+					<table id="linkrelations" style="width:65%;">
+						<caption>
+							Table 2. Link Relations
+						</caption>
+						<colgroup>
+							<col style="width:25%;">
+							<col style="width:75%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									Name
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<em>alternate</em>
+								</td>
+								<td>
+									an identical POI. Often used as a permalink
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<em>canonical</em>
+								</td>
+								<td>
+									the preferred version of a set of POIs with highly similar content. For example, there could be many different perceptions of a neighborhood boundary POI, but the city’s neighborhood map could be the canonical version of this POI.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<em>describedby</em>
+								</td>
+								<td>
+									more information about this POI
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<em>edit</em>
+								</td>
+								<td>
+									a resource that can be used to edit the POI’s context
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<em>enclosure</em>
+								</td>
+								<td>
+									a related resource that is potentially large and might require special handling
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<em>icon</em>
+								</td>
+								<td>
+									fill in here
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<em>latest-version</em>
+								</td>
+								<td>
+									points to a resource containing the latest version
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<em>rights</em>
+								</td>
+								<td>
+									a license or other type of intellectual property right for this POI
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<em>related</em>
+								</td>
+								<td>
+									a related resource
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<em>search</em>
+								</td>
+								<td>
+									a resource that can be used to search through the link’s context and related resources
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong><em>parent</em></strong>
+								</td>
+								<td>
+									a parent POI, often the enclosing geographic entity, or the entity this POI in under the domain of (such as a field office-corporate headquarters relationship)
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong><em>child</em></strong>
+								</td>
+								<td>
+									a child POI, often a geography entity enclosed or under the domain of this POI
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong><em>historic</em></strong>
+								</td>
+								<td>
+									links to a POI or other web resource that describes this place at a previous point in time
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong><em>future</em></strong>
+								</td>
+								<td>
+									links to a POI or other web resource that describes this place at a later point in time
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="sect2">
+					<h2 id="time">time</h2>
+					<p>
+						A POI exists within a certain context. Time is one of those contexts. The POI may have a known time when it came into being, and can therefore have a start date. The POI might no longer exist at a known point in time (in the future or in the past), and will therefore have an end date. There can be even more complex cases, where a POI exists on a regularly scheduled sequence of times. This data model supports that case by allowing one to set the MIME type (type property) to <code>text/calendar</code>, and specify the time period using the iCalendar specification <a href="#RFC5545">[RFC5545]</a>.
+					</p>
+					<p>
+						When the MIME type attribute is undetermined or <code>text/plain</code>, the content of the value property is assumed to be in the dateTime format <a href="#ISO8601">[ISO8601]</a>. When the MIME type attribute is <code>text/calendar</code>, the value content is expected to conform to the iCalendar specification <a href="#RFC5545">[RFC5545]</a>.
+					</p>
+					<table id="timerelations" style="width:65%;">
+						<caption>
+							Table 3. Time Relations
+						</caption>
+						<colgroup>
+							<col style="width:25%;">
+							<col style="width:75%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									Name
+								</th>
+								<th>
+									Definition
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									start
+								</td>
+								<td>
+									Time when the POI came into being
+								</td>
+							</tr>
+							<tr>
+								<td>
+									end
+								</td>
+								<td>
+									Time when the POI ceased to exist
+								</td>
+							</tr>
+							<tr>
+								<td>
+									instant
+								</td>
+								<td>
+									A single time when an event happened
+								</td>
+							</tr>
+							<tr>
+								<td>
+									open
+								</td>
+								<td>
+									A recuring time period when a POI is open
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="sect2">
+					<h2 id="metadata">Metadata</h2>
+					<p>
+						Dublin Core or <a href="#ISO19115">[ISO19115]</a> metadata.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="sect1">
+			<h2 id="poibasetype">POIBaseType</h2>
+			<div class="sectionbody">
+				<p>
+					POIBaseType is the common base for most other core POI classes. It provides properties related to unique ids, source, authorship, rights, and modification times for creation, deletion and updating.
+				</p>
+				<p>
+					This base type allows the POI class, POIS grouping class and most child classes to carry distinct information about their provenance, source and history.
+				</p>
+				
+				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+					<div class="requirementlabel"></div>
+					<div class="requirementtext" itemprop="description">
+						Serializations shall support the encoding of all mandatory and optional parameters of the POIBaseType Class and meet all of the tabulated constraints and notes.
+					</div>
+					<div class="requirementuri" itemprop="uri">
+						<a href="http://www.opengis.net/spec/poi/1.0/req/core/POIBaseType">http://www.opengis.net/spec/poi/1.0/req/core/POIBaseType</a>
+					</div>
+				</div> <!-- end requirement -->
+
+				<table style="width:65%;">
+					<colgroup>
+						<col style="width:40%;">
+						<col style="width:40%;">
+						<col style="width:20%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>
+								Name
+							</th>
+							<th>
+								Type
+							</th>
+							<th>
+								Multiplicity
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a href="#id">id</a>
+							</td>
+							<td>
+								string
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#href">href</a>
+							</td>
+							<td>
+								URI
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#value">value</a>
+							</td>
+							<td>
+								string
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#base">base</a>
+							</td>
+							<td>
+								URI
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#type">type</a>
+							</td>
+							<td>
+								string
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#lang">lang</a>
+							</td>
+							<td>
+								string
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#created">created</a>
+							</td>
+							<td>
+								dateTime
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#updated">updated</a>
+							</td>
+							<td>
+								dateTime
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#deleted">deleted</a>
+							</td>
+							<td>
+								dateTime
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#author">author</a>
+							</td>
+							<td>
+								<a href="#poitermtype">POITermType</a>
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#rights">rights</a>
+							</td>
+							<td>
+								<a href="#poitermtype">POITermType</a>
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sect2">
+					<h2 id="id">id</h2>
+					<p>
+						A unique identifier for this location. Can be a URI fragment. Refer to xml:base <a href="#XMLBASE">[XMLBASE]</a> for more information on usage.
+					</p>
+					<p>
+						The id property is <em>mandatory</em> for the <a href="#poi">POI</a> object. It is <em>recommended</em> that id be a URL - preferably a deferenceable URL - or that a URL can be constructed by appending id to base URI.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="href">href</h2>
+					<p>
+						The href property <em>may</em> serve as an absolute reference to retrieve the POI information when the <a href="#id">id</a> and base do not combine to form a deferenceable URL.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="value">value</h2>
+					<p>
+						The value property is the <em>recommended</em> location for arbitrary strings (e.g. label, description, etc.). Many entities derived from <a href="#poibasetype">POIBaseType</a> will not require this property (e.g. <a href="#link">link</a>, <a href="#rights">rights</a>, geometry properties).
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="base">base</h2>
+					<p>
+						XML base when id is not absolute. Refer to xml:base <a href="#XMLBASE">[XMLBASE]</a> for more information on usage.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="type">type</h2>
+					<p>
+						MIME type as specified in <a href="#RFC2046">[RFC2046]</a>.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="lang">lang</h2>
+					<p>
+						Language type as specified in <a href="#RFC3066">[RFC3066]</a>.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="created">created</h2>
+					<p>
+						This property is for capturing the time at which the POI record was created in the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#poitype">POIType</a> <a href="#time">time</a> property.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="updated">updated</h2>
+					<p>
+						Time this POI information was last changed <a href="#ISO8601">[ISO8601]</a> also refer to atom:updated <a href="#RFC4087">[RFC4087]</a>. This property is for capturing the time at which the POI record was updated in the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#poitype">POIType</a> <a href="#time">time</a> property.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="deleted">deleted</h2>
+					<p>
+						This property is for capturing the time at which the POI record was deleted from the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#poitype">POIType</a> <a href="#time">time</a> property.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="author">author</h2>
+					<p>
+						When in an author property, <a href="#value">value</a> specifies the author’s identification information, which should at minimum be the author’s name. When the <a href="#type">type</a> (MIME type) property (MIME type) is undetermined or <code>text/plain</code>, the content of the value property is assumed to be free text. When the <a href="#type">type</a> property is <code>text/vcard</code>, <a href="#value">value</a> should be encoded in VCard format <a href="#RFC6350">[RFC6350]</a>.
+					</p>
+					<p>
+						Multiple authors can be specified by nesting author properties, and their authorship role <em>may</em> be discriminated with the <a href="#term">term</a> property (e.g. primary, publisher, editor, etc.).
+					</p>
+					<table id="authorrelations" style="width:65%;">
+						<caption>
+							Table 4. Author Relations
+						</caption>
+						<colgroup>
+							<col style="width:25%;">
+							<col style="width:75%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									Name
+								</th>
+								<th>
+									Definition
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<code>primary</code>
+								</td>
+								<td>
+									Primary author
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code>secondary</code>
+								</td>
+								<td>
+									Secondary author
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code>contributor</code>
+								</td>
+								<td>
+									A contributing author
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code>editor</code>
+								</td>
+								<td>
+									Editor
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<code>publisher</code>
+								</td>
+								<td>
+									Publisher
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="sect2">
+					<h2 id="rights">rights</h2>
+					<p>
+						The rights entity is of type <a href="#poitermtype">POITermType</a> and specifies rights such as license restrictions, trademarks, and copyright. The language the rights are in <em>may</em> be indicated using the lang property. Multiple rightss <em>may</em> be discriminated with the term property (e.g. common, opensource, etc.). The first right encountered per language is considered the primary right for that language.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="sect1">
+			<h2 id="poitermtype">POITermType</h2>
+			<div class="sectionbody">
+				<p>
+					The POITermType entity is an abstract class that extends POIBaseType and adds properties to provide formal structure. The <a href="#category">category</a>, <a href="#link">link</a>, <a href="#label">label</a>, <a href="#author">author</a>, <a href="#rights">rights</a> and <a href="#time">time</a> properties in addition to the geometry elements <a href="#point">point</a>, <a href="#line">line</a> and <a href="#polygon">polygon</a> entities are all instances of <a href="#poitermtype">POITermType</a>.
+				</p>
+				
+				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+					<div class="requirementlabel"></div>
+					<div class="requirementtext" itemprop="description">
+						Serializations shall support the encoding of all mandatory and optional parameters of this class and meet all of the tabulated constraints and notes.
+					</div>
+					<div class="requirementuri" itemprop="uri">
+						<a href="http://www.opengis.net/spec/poi/1.0/req/core/POITermType">http://www.opengis.net/spec/poi/1.0/req/core/POITermType</a>
+					</div>
+				</div> <!-- end requirement -->
+				
+				<table style="width:65%;">
+					<colgroup>
+						<col style="width:40%;">
+						<col style="width:40%;">
+						<col style="width:20%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>
+								Name
+							</th>
+							<th>
+								Type
+							</th>
+							<th>
+								Multiplicity
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a href="#term">term</a>
+							</td>
+							<td>
+								string
+							</td>
+							<td>
+								1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#scheme">scheme</a>
+							</td>
+							<td>
+								URI
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sect2">
+					<h2 id="term">term</h2>
+					<p>
+						A machine-readable character string to designate any number of discrete choices.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="scheme">scheme</h2>
+					<p>
+						An absolute reference to the schema enumerating the discrete choices in term.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="sect1">
+			<h2 id="relationshiptype">Relationship</h2>
+			<div class="sectionbody">
+				<p>
+					Relationship is derived from <a href="#poitermtype">POITermType</a> and adds a targetPOI property to describes the spatial relationship between this POI and another. It establishes 1-to-1 or 1-to-many relationships between POIs.
+				</p>
+				<table style="width:65%;">
+					<colgroup>
+						<col style="width:40%;">
+						<col style="width:40%;">
+						<col style="width:20%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>
+								Name
+							</th>
+							<th>
+								Type
+							</th>
+							<th>
+								Multiplicity
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a href="#targetpoi">targetPOI</a>
+							</td>
+							<td>
+								URI
+							</td>
+							<td>
+								1
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sect2">
+					<h2 id="targetpoi">targetPOI</h2>
+					<p>
+						Each targetPOI property <em>must</em> be a URI that defines a link to another POI, and the Relationship’s <a href="#term">term</a> <em>must</em> be assigned one of 8 keywords that describe the geo-spatial relationship to the POI indicated by the targetPOI property.
+					</p>
+					<p>
+						<a href="#ISO13249-3">[ISO13249-3]</a> (SQL/MM Spatial) supports the general purpose relates operator from <a href="#ISO19107">[ISO19107]</a>, which tests if two geometries (a and b) are related by testing the dimension of the intersections of their boundaries, interiors and exteriors. Points have a dimension of zero, curves one and surfaces two.
+					</p>
+					<p>
+						<span class="image"><img src="core-spatialoperators-20111216.jpg" alt="Diagram of the 8 allowed term attributes of the relationship element"></span>
+					</p>
+					<p>
+						SQL/MM also supports the 19107 operator equals, which tests if two geometries are spatially equal. More formally, their symmetric difference <em>must</em> be empty. SQL/MM then adds seven semantic operators to test the relationship between geometries a and b. These relationships are expressed in terms of the boundary, interior and exterior intersections to avoid ambiguities.
+					</p>
+					<table id="relationshiprelations" style="width:65%;">
+						<caption>
+							Table 5. Relationship Relations
+						</caption>
+						<colgroup>
+							<col style="width:25%;">
+							<col style="width:75%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>
+									Name
+								</th>
+								<th>
+									Definition
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									equals
+								</td>
+								<td>
+									A equals B tests if the geometries are spatially equal. More formally, their symmetric difference <em>must</em> be empty. The test for equivalence may be limited to the resolution of the coordinate system or the accuracy of the data.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									disjoint
+								</td>
+								<td>
+									A disjoint B tests if A and B have NO points in common.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									intersects
+								</td>
+								<td>
+									A intersects B tests if A and B have ANY points in common.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									crosses
+								</td>
+								<td>
+									A crosses B if their interiors intersect with a dimension less that the larger of the dimension of A or B and the intersection of the interior of a with the exterior of B is not null (so for two lines, the intersection has to be at a finite number of points). Surfaces cannot cross anything. Points cannot be crossed by anything.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									overlaps
+								</td>
+								<td>
+									A overlaps B tests if part of their respective interiors intersect, and if this intersection is the same dimension as the interiors of the original geometries. (This last bit rules out crosses). Some of their interior <em>must</em> intersect with the exterior of the other one and vice versa (i.e., one cannot be within the other). This bit rules out within and contains. Overlap only applies if the two geometries are of the same dimension.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									within
+								</td>
+								<td>
+									A within B if their intersection equals A. e.g. a POI describing a store may state that it is contained within a shopping mall.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									contains
+								</td>
+								<td>
+									A contains B is equivalent to B within A. e.g. a POI describing a mall may state that it contains POIs for each store that is within the mall.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									touches
+								</td>
+								<td>
+									A touches B means one’s boundary intersects with the other’s interior or boundary. Interiors cannot intersect. Points cannot touch. e.g. a POI representing a store within a mall may state that it is next door to another POI which represents the store next door.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="sect1">
+			<h2 id="gml_ce_geometry">GML_CE_Geometry</h2>
+			<div class="sectionbody">
+				<p>
+					The GML_CE_Geometry is the base entity from which all geometry entities are derived. It combines a coordinate system description with a set of coordinates.
+				</p>
+				<table style="width:65%;">
+					<colgroup>
+						<col style="width:40%;">
+						<col style="width:40%;">
+						<col style="width:20%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>
+								Name
+							</th>
+							<th>
+								Type
+							</th>
+							<th>
+								Multiplicity
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a href="#srsName">[srsName]</a>
+							</td>
+							<td>
+								URI
+							</td>
+							<td>
+								0..1
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#poslist">PosList</a>
+							</td>
+							<td>
+								string
+							</td>
+							<td>
+								1
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sect2">
+					<h2 id="poslist">
+						11.1. PosList
+					</h2>
+					<p>
+						A coordinate set whose format is determined by the geometry type - Point, LineString, or SimplePolygon.
+					</p>
+				</div>
+				<div class="sect2">
+					<h2 id="srsname">Coordinate Reference Systems</h2>
+					<p>
+						In all of the entities that specify geodetic coordinates, an srsName property is included in order to indicate the coordinate reference system (CRS) being used. The srsName value is a URI <a href="#RFC3986">[RFC3986]</a> indicating the CRS used and is <a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a> by default. This default is the URI for the World Geodetic System 84 (WGS84) in 2 dimensions, latitude and longitude. Other CRS URNs are allowed. In particular, the URI <a href="http://www.opengis.net/def/crs/EPSG/0/4979">http://www.opengis.net/def/crs/EPSG/0/4979</a> indicates WGS84 in 3 dimensions, latitude, longitude and elevation in meters above sea level. The CRS used influences the interpretation of the coordinate set.
+					</p>
+					<p>
+						The default CRS refers to WGS84 geographic longitude and latitude expressed in decimal degrees, namely EPSG 4326, without the degrees symbol, "°". The values of latitude and longitude are bounded by ±90° and ±180° respectively. Positive latitudes are north of the equator, negative latitudes are south of the equator. Positive longitudes are east of the Prime Meridian, negative longitudes are west of the Prime Meridian. Latitude and longitude are expressed in that sequence, namely latitude before longitude.
+					</p>
+					<p>
+						Implementations are required to support the following CRS based on WGS 84 NIMA.TR8350.2-3e <a href="#NIMA-TR8350-2">[NIMA-TR8350-2]</a>. These are identified using the European Petroleum Survey Group (EPSG) Geodetic Parameter Dataset, as formalized by the Open Geospatial Consortium (OGC):
+					</p>
+					<div>
+						<ul>
+							<li><a href="http://www.opengis.net/def/crs/EPSG/0/4326:">http://www.opengis.net/def/crs/EPSG/0/4326:</a> 2 dimensional WGS 84, latitude, and longitude</li>
+							<li><a href="http://www.opengis.net/def/crs/EPSG/0/4979:">http://www.opengis.net/def/crs/EPSG/0/4979:</a> 3 dimensional WGS 84, latitude, longitude, altitude</li>
+						</ul>
+					</div>
+					<p>
+						The most recent version of the EPSG Geodetic Parameter Dataset should be used. A CRS must be specified using the above URI notation only, implementations do not need to support user-defined CRSs. This specification does not assign responsibilities for coordinate transformations from and to other Coordinate Reference Systems.
+					</p>
+					<p class="notice">The term coordinate set as used throughout this document refers to coordinates as influenced by the rules laid out above.</p>
+				</div>
+			</div>
+		</div>
+
+	</div><!-- end clauses-->
+	</main>
+	
+	<!-- Annexes-->
+	<div id="annexes">
+		<section id="annexconformanceats">
+			<h1 id="Annexconformanceats">
+				Conformance Class Abstract Test Suite (Normative)
+			</h1>
+		</section>
+
+		<section>
+			<h1 id="usecases">Use Cases</h1>
+			<div class="sectionbody">
+				<div class="sect2">
+					<h2 id="generic-points-of-interest-use-cases">Generic Points of Interest Use Cases</h2>
+					<div class="olist arabic">
+						<ol class="arabic">
+							<li>
+								<p>
+									<a href="http://www.w3.org/2010/POI/wiki/A_very_minimal_POI_%28a_city%29">a very minimal POI (a city)</a>
+								</p></li>
+							<li>
+								<p>
+									a city
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												<a href="http://www.w3.org/2010/POI/wiki/In_the_US">in the US</a>
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<a href="http://www.w3.org/2010/POI/wiki/A_place_with_many_links_to_other_information_about_that_place">a place with many links to other information about that place</a>
+								</p></li>
+							<li>
+								<p>
+									a country
+								</p></li>
+							<li>
+								<p>
+									<a href="http://www.w3.org/2010/POI/wiki/An_airport">an airport</a>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												extension: links to airlines serving the airport?
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									a museum
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												links to items in the collection?
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<a href="http://www.w3.org/2010/POI/wiki/A_UNESCO_World_Heritage_site">a UNESCO World Heritage site</a>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												<a href="http://whc.unesco.org/en/list">reference</a>
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									Boston Freedom Trail
+								</p></li>
+							<li>
+								<p>
+									a bike route
+								</p></li>
+							<li>
+								<p>
+									restaurant in NYC
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												extensions: opening/closing hours, menu, ratings, reviews
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									Navteq examples
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												<a href="http://www.w3.org/2010/POI/wiki/NVTPOI_03_01_5800_001">NVTPOI_03_01_5800_001</a>
+											</p>
+										</li>
+										<li>
+											<p>
+												<a href="http://www.w3.org/2010/POI/wiki/NVTPOI_03_ZAF_9517_001">NVTPOI_03_ZAF_9517_001</a>
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									Representing Change
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												<a href="http://www.w3.org/2010/POI/wiki/A_change_of_address">a change of address</a>
+											</p>
+										</li>
+										<li>
+											<p>
+												<a href="http://www.w3.org/2010/POI/wiki/A_building_changes_shape_and_goes_from_being_an_Indian_restaurant_to_an_Italian_one">a building changes shape and goes from being an Indian restaurant to an Italian one</a>
+											</p>
+										</li>
+									</ul>
+								</div></li>
+						</ol>
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="check-in-services">
+						13.2. Check in services
+					</h2>
+					<div>
+						<ul>
+							<li>
+								<p>
+									TBD
+								</p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="ar-use-cases">
+						13.3. AR Use Cases
+					</h2>
+					<p>
+						<a href="http://www.perey.com/ARStandards/Three_Use_Cases.pdf">Three Use Cases for AR Standards Discussion</a>
+					</p>
+					<div class="listingblock">
+						<div class="content">
+							<pre>
+  This file captures contributions of the participants of International AR Standards Meeting conducted Oct 11-12 in Seoul.
+  Added to this wiki page Oct 26, 2010
+</pre>
+						</div>
+					</div>
+					<p>
+						<a href="http://www.w3.org/2010/POI/wiki/File:DERI_-_Linked_AR_proof-of-concept_1_pager.pdf">DERI Linked AR PoC</a>
+					</p>
+					<div class="listingblock">
+						<div class="content">
+							<pre>
+ This file describes use case where all manner of historical content is related to relevant locations and viewed through a mobile AR browser.
+ Added to this wiki page on Oct 28, 2010
+</pre>
+						</div>
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="search">
+						13.4. Search
+					</h2>
+					<div class="olist arabic">
+						<ol class="arabic">
+							<li>
+								<p>
+									<strong>What is there to do here?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Categories, Tags, Time, Events
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Where is a 4 star Italian restaurant near me that is still open?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Categories, Tags, Time, Events
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Where can I find a new battery for my phone?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Brand associations, inventory
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>What movies are playing now near me?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Categories, Time, Event
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Where is the cheapest available parking near the theater?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Categories, Historical pricing info
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>What shoes stores are in this mall?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Categories, Local group associations
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>How much is the entrance fee for the museum?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Categories, Pricing info
+											</p>
+										</li>
+									</ul>
+								</div></li>
+						</ol>
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="location-based-advertising">
+						13.5. Location-Based Advertising
+					</h2>
+					<div class="olist arabic">
+						<ol class="arabic">
+							<li>
+								<p>
+									<strong>What special offers are around here?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Location-based Advertising, Offer System
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>What are the specials at nearby restaurants?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Location-based Advertising, Offer System
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Let me know of any shoe sales I might pass as I walk around the city shopping.</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User, Interconnected systems
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, Location-based Advertising, Offer System
+											</p>
+										</li>
+									</ul>
+								</div></li>
+						</ol>
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="destination-selection">
+						13.6. Destination Selection
+					</h2>
+					<div class="olist arabic">
+						<ol class="arabic">
+							<li>
+								<p>
+									<strong>Take me to this café…</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: POI attribute search, location, route calc
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Take me to the place with this phone number…</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: POI attribute search, location, route calc
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Take me on a scenic wine tour</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: POI group associations, POIs, tags, route calc
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Take me to the office of my next appointment</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Calendar, Contacts, locations, route calc
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>If I want to go to Macy’s in this mall at what entrance should I park?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: POI group associations, location, location associations, route calc
+											</p>
+										</li>
+									</ul>
+								</div></li>
+						</ol>
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="b2b">
+						13.7. B2B
+					</h2>
+					<div class="olist arabic">
+						<ol class="arabic">
+							<li>
+								<p>
+									<strong>Associate together these similar business by categories and associations</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: Interconnected systems
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: POI group associations, POIs, categories, tags
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Convert these POI listings descriptions to 12 major languages</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: Interconnected systems
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: POIs, translation service
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Share this specific set of Yellow Pages with this business partner</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: Interconnected systems
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: POIs, source identification, tags, fullfillment services, distribution services
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Sweep these web sites and normalize the data to a standard exchange format</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: Interconnected systems
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: web scraping, standard format, language/tag processing service
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Accurately geolocate these places of business</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: Interconnected systems
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: locations, geocoding service, map
+											</p>
+										</li>
+									</ul>
+								</div></li>
+						</ol>
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="informational">
+						13.8. Informational
+					</h2>
+					<div class="olist arabic">
+						<ol class="arabic">
+							<li>
+								<p>
+									<strong>What is the history of this building?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, Building cartography, POIs+Locations, Historical data
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>What is the name of this neighborhood?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User, Interconnected systems
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, area cartography, Named areas
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Tell me about this house…</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User, Interconnected systems
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, Building cartography, POIs+Locations, Real estate data
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>What kind of businesses are in this building?</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User, Interconnected systems
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, Building cartography, POIs+Locations, Building to POI associations
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Take me on a tour…</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POI group associations, POIs, tags, route calc
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>I want to leave a trail of my experiences for others to find and enjoy</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, route calc, social data servcies
+											</p>
+										</li>
+									</ul>
+								</div></li>
+						</ol>
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="augmented-reality">
+						13.9. Augmented Reality
+					</h2>
+					<div class="olist arabic">
+						<ol class="arabic">
+							<li>
+								<p>
+									<strong>Guide</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												A system which leads the user through a process involving real world
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Create</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												A system with which the user attaches/contributes a digital content “object” to or in the real world
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									<strong>Play</strong>
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												A system which supports bi-directional interaction between users and the real world
+											</p>
+										</li>
+									</ul>
+								</div></li>
+						</ol>
+					</div>
+				</div>
+				<div class="sect2">
+					<h2 id="bookmarking---sharing">
+						13.10. Bookmarking &amp; Sharing
+					</h2>
+					<div class="olist arabic">
+						<ol class="arabic">
+							<li>
+								<p>
+									I like it
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona&nbsp;: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, user prererence info
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									I recommend you visit here
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona&nbsp;: End-User, messaging system and receiver (SMS, mail, twitter, facebook ..)
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, geo hyperlink
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									I want to comments on here
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona&nbsp;: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, tags, User’s comments
+											</p>
+										</li>
+									</ul>
+								</div></li>
+							<li>
+								<p>
+									I will remember it (I will bookmark here)
+								</p>
+								<div>
+									<ul>
+										<li>
+											<p>
+												Persona&nbsp;: End-User
+											</p>
+										</li>
+										<li>
+											<p>
+												Elements: Geo-spatial proximity, POIs+Locations, tags, User’s bookmark storage
+											</p>
+										</li>
+									</ul>
+								</div></li>
+						</ol>
+					</div>
+				</div>
+
+		</section>
+		
+		<section>
+			<h1 id="revisionhistory">Revision history</h1>
+			<p>&nbsp;</p>
+			<table>
+				<tbody>
+					<tr class="odd">
+						<td style="text-align:left;">
+							<p>
+								Date
+							</p>
+						</td>
+						<td style="text-align:left;">
+							<p>
+								Release
+							</p>
+						</td>
+						<td style="text-align:left;">
+							<p>
+								Author
+							</p>
+						</td>
+						<td style="text-align:left;">
+							<p>
+								Paragraph modified
+							</p>
+						</td>
+						<td style="text-align:left;">
+							<p>
+								Description
+							</p>
+						</td>
+					</tr>
+					<tr class="even">
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+					</tr>
+					<tr class="odd">
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+					</tr>
+					<tr class="even">
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+						<td style="text-align:left;">
+							<p>&nbsp;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>&nbsp;
+				
+			</p>
+		</section>
+		<section>
+			<header>
+				<h1 id="Bibliography">Bibliography</h1>
+			</header>
+
+			<ul class="bibliography">
+				<li>
+					<p>
+						<a id="BCP47" name="BCP47"></a>[BCP47] A. Phillips; M. Davis. <a href="http://tools.ietf.org/html/bcp47">Tags for Identifying Languages</a> September 2009. IETF Best Current Practice.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="IRI" name="IRI"></a>[IRI] M. Duerst, M. Suignard. <a href="http://www.ietf.org/rfc/rfc3987.txt">Internationalized Resource Identifiers (IRI).</a> January 2005. Internet RFC 3987.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="ISO13249-3" name="ISO13249-3"></a>[ISO13249-3] <a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=53698">Information technology — Database languages — SQL multimedia and application packages — Part 3: Spatial. International Organization for Standardization. ISO13249-3:2011. 2011</a>.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="ISO19107" name="ISO19107"></a>[ISO19107] <a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=26012">Geographic information — Spatial schema. International Organization for Standardization. 2003. ISO 19107:2003</a>.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="ISO19111" name="ISO19111"></a>[ISO19111] <a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=41126">Geographic information — Spatial referencing by coordinates. International Organization for Standardization. 2007. ISO 19115:2007</a>.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="ISO19112" name="ISO19112"></a>[ISO19112] <a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=26017">Geographic information. Spatial referencing by geographic identifiers. International Organization for Standardization. 2003. ISO 19112:2003</a>.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="ISO19115" name="ISO19115"></a>[ISO19115] <a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=26020">Geographic information — Metadata. International Organization for Standardization. 2003. ISO 19115:2003</a>.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="ISO19133" name="ISO19133"></a>[ISO19133] Geographic information — Location-based services — Tracking and navigation. International Organization for Standardization. 2005. ISO 19133:2005.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="ISO8601" name="ISO8601"></a>[ISO8601] Representation of dates and times. International Organization for Standardization. 2004. ISO 8601:2004.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="NIMA-TR8350-2" name="NIMA-TR8350-2"></a>[NIMA-TR8350-2] US National Imagery and Mapping Agency, "Department of Defense (DoD) World Geodetic System 1984 (WGS 84), Third Edition", NIMA TR8350.2, January 2000.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="RFC2046" name="RFC2046"></a>[RFC2046] N. Freed; N. Borenstein. <a href="http://www.ietf.org/rfc/rfc2046.txt">Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types.</a> November 1996. Internet RFC 2046.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="RFC2119" name="RFC2119"></a>[RFC2119] S. Bradner. <a href="http://www.ietf.org/rfc/rfc2119.txt">Key words for use in RFCs to Indicate Requirement Levels.</a> March 1997. Internet RFC 2119.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="RFC3986" name="RFC3986"></a>[RFC3986] T. Berners-Lee; R. Fielding; L. Masinter. <a href="http://www.ietf.org/rfc/rfc3986.txt">Uniform Resource Identifier (URI): Generic Syntax.</a> January 2005. Internet RFC 3986.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="RFC4087" name="RFC4087"></a>[RFC4087] M. Nottingham, R. Sayre. <a href="http://www.ietf.org/rfc/rfc4087.txt">The Atom Syndication Format.</a>. IETF RFC 4087 December 2005.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="RFC5545" name="RFC5545"></a>[RFC5545] B. Desruisseaux. <a href="http://www.rfc-editor.org/rfc/rfc5545.txt">Internet Calendaring and Scheduling Core Object Specification (iCalendar).</a> September 2009. Internet RFC 5545.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="RFC6350" name="RFC6350"></a>[RFC6350] S. Perreault. <a href="http://tools.ietf.org/html/rfc6350">vCard Format Specification</a>. IETF RFC 6350 August 2011.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="RFC3066" name="RFC3066"></a>[RFC3066] H. Alvestrand. <a href="http://www.ietf.org/rfc/rfc3066.txt">Tags for the Identification of Languages</a>. IETF RFC 3066 January 2001.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="XML11" name="XML11"></a>[XML11] Eve Maler; et al. <a href="http://www.w3.org/TR/2006/REC-xml11-20060816">Extensible Markup Language (XML) 1.1 (Second Edition).</a> 16 August 2006. W3C Recommendation.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="XMLBASE" name="XMLBASE"></a>[XMLBASE] Jonathan Marsh, Richard Tobin. <a href="http://www.w3.org/TR/2009/REC-xmlbase-20090128/">XML Base (Second Edition).</a> 28 January 2009. W3C Recommendation.
+					</p>
+				</li>
+				<li>
+					<p>
+						<a id="XMLSCHEMA11-2" name="XMLSCHEMA11-2"></a>[XMLSCHEMA11-2] Henry S. Thompson; et al. <a href="http://www.w3.org/TR/2009/WD-xmlschema11-2-20090130">W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes.</a> 30 January 2009. W3C Working Draft. (Work in progress.)
+					</p>
+				</li>
+			</ul>
+		</section><!-- end bibliography -->
+	</div><!-- end Annexes -->
+	<div id="footer">
+		<div id="footer-text"></div>
+	</div>
+	</body>
+</html>

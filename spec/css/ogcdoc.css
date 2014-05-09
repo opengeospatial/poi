@@ -1,0 +1,367 @@
+body {
+	margin: 2em;
+	font: 12pt Cambria, "Times New Roman", Times, serif;
+	color: #222;
+}
+
+h1 {
+	padding-top: 2em;
+	font-size: 170%;
+}
+
+dl.term {
+	padding: 0.5em;
+}
+dt.term {
+	float: left;
+	clear: left;
+	width: 190px;
+	text-align: right;
+	font-weight: bold;
+}
+dt.term:after {
+	content: ":";
+}
+dd.term {
+	margin: 0 0 0 200px;
+	padding: 0 0 0.5em 0;
+}
+
+.editme {
+	color: #00ff00;
+}
+
+.editmemore {
+	color: #008f51;
+}
+
+#header {
+	text-align: right;
+}
+
+.title {
+	font-size: 145%;
+	font-weight: bold;
+	text-align: center;
+	padding: 3em 0 3em 0;
+}
+
+.requirement {
+	background-color: #fedcdc;
+	padding: 1em;
+	border-radius: 1em;
+	border: 4px solid #ff0000;
+}
+
+.requirementlabel {
+	font-weight: bold;
+}
+
+.requirementlabel:after {
+	content: "Requirement " counter(req) ": ";
+	counter-increment: req;
+}
+
+.keyword {
+	background-color: #daeef3;
+	border-radius: 0.5em;
+	padding: 0.25em;
+}
+
+.prefacehead {
+	font-size: 125%;
+	font-weight: bold;
+}
+
+/* auto numbering headings */
+main {
+	counter-reset: o req;
+}
+main H1:before {
+	content: counter(o) ". ";
+	counter-increment: o;
+}
+main H1 { counter-reset: oo; }
+
+main H2:before {
+	content: counter(o) "." counter(oo) " ";
+	counter-increment: oo;
+}
+main H2 { counter-reset: ooo; }
+
+main H3:before {
+	content: counter(o) "." counter(oo) "." counter(ooo) " ";
+	counter-increment: ooo;
+}
+main H3 { counter-reset: oooo; }
+
+main H4:before {
+	content: counter(o) "." counter(oo) "." counter(ooo) "." counter(oooo) " ";
+	counter-increment: oooo;
+}
+main H4 { counter-reset: ooooo; }
+
+main H5:before {
+	content: counter(o) "." counter(oo) "." counter(ooo) "." counter(oooo) "." counter(ooooo) " ";
+	counter-increment: ooooo;
+}
+main H5 { counter-reset: oooooo; }
+
+main H6:before {
+	content: counter(o) "." counter(oo) "." counter(ooo) "." counter(oooo) "." counter(ooooo) "." counter(oooooo) " ";
+	counter-increment: oooooo;
+}
+
+#annexes {
+	counter-reset: o;
+}
+#annexes H1:before {
+	content: "Annex " counter(o, upper-alpha) ": ";
+	counter-increment: o;
+}
+#annexes H1 { counter-reset: oo; }
+
+#annexes H2:before {
+	content: counter(o, upper-alpha) "." counter(oo) " ";
+	counter-increment: oo;
+}
+#annexes H2 { counter-reset: ooo; }
+
+#annexes H3:before {
+	content: counter(o, upper-alpha) "." counter(oo) "." counter(ooo) " ";
+	counter-increment: ooo;
+}
+#annexes H3 { counter-reset: oooo; }
+
+#annexes H4:before {
+	content: counter(o, upper-alpha) "." counter(oo) "." counter(ooo) "." counter(oooo) " ";
+	counter-increment: oooo;
+}
+#annexes H4 { counter-reset: ooooo; }
+
+#annexes H5:before {
+	content: counter(o, upper-alpha) "." counter(oo) "." counter(ooo) "." counter(oooo) "." counter(ooooo) " ";
+	counter-increment: ooooo;
+}
+#annexes H5 { counter-reset: oooooo; }
+
+#annexes H6:before {
+	content: counter(o, upper-alpha) "." counter(oo) "." counter(ooo) "." counter(oooo) "." counter(ooooo) "." counter(oooooo) " ";
+	counter-increment: oooooo;
+}
+
+#prefatory {
+	counter-reset: o;
+}
+#prefatory H1:before {
+	content: counter(o, lower-roman) ". ";
+	counter-increment: o;
+}
+#prefatory H1 { counter-reset: oo; }
+
+#prefatory H2:before {
+	content: counter(o, lower-roman) "." counter(oo) " ";
+	counter-increment: oo;
+}
+#prefatory H2 { counter-reset: ooo; }
+
+#prefatory H3:before {
+	content: counter(o, lower-roman) "." counter(oo) "." counter(ooo) " ";
+	counter-increment: ooo;
+}
+#prefatory H3 { counter-reset: oooo; }
+
+#prefatory H4:before {
+	content: counter(o, lower-roman) "." counter(oo) "." counter(ooo) "." counter(oooo) " ";
+	counter-increment: oooo;
+}
+#prefatory H4 { counter-reset: ooooo; }
+
+#prefatory H5:before {
+	content: counter(o, lower-roman) "." counter(oo) "." counter(ooo) "." counter(oooo) "." counter(ooooo) " ";
+	counter-increment: ooooo;
+}
+#prefatory H5 { counter-reset: oooooo; }
+
+#prefatory H6:before {
+	content: counter(o, lower-roman) "." counter(oo) "." counter(ooo) "." counter(oooo) "." counter(ooooo) "." counter(oooooo) " ";
+	counter-increment: oooooo;
+}
+
+/*  Not sure of this. VV  It was not valid css so I commented it out */
+/*P.annextitle {counter
+}
+*/
+/*  Not sure of this. ^^ It was not valid css so I commented it out */
+
+
+/* END auto numbering headings */
+
+/* table formatting */
+td, th {
+	vertical-align: top;
+	background-color: #daeef3;
+	padding: 0.5em;
+	border: 0;
+}
+th {
+	background-color: #93c0d6;
+}
+td {
+	font-size: 85%;
+}
+th:first-child {
+	border-radius: 1em 0 0 0;
+}
+th:last-child {
+	border-radius: 0 1em 0 0;
+}
+th:only-child {
+	border-radius: 1em 1em 0 0;
+}
+tr:first-child {
+	border-radius: 0 0 0 1em;
+}
+tr:last-child {
+	border-radius: 0 1em 0 0;
+}
+tr:only-child {
+	border-radius: 1em 1em 0 0;
+}
+tr:last-child td:first-child {
+	border-radius: 0 0 0 1em;
+}
+tr:last-child td:last-child {
+	border-radius: 0 0 1em 0;
+}
+/* END table formatting */
+
+code {
+	border-radius: 1em;
+}
+
+figure {
+	text-align: center;
+}
+img {
+	text-align: center;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+
+table.small {
+	width: 50%; ;
+}
+
+#license {
+	font-style: italic;
+	font-size: smaller;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: grey;
+}
+.notice:before {
+	content: "note";
+	font: bold small sans-serif;
+	padding: 0.5em;
+	padding-top: 0.5em;
+	padding-right-value: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left-value: 0.5em;
+	padding-left-ltr-source: physical;
+	padding-left-rtl-source: physical;
+	padding-right-ltr-source: physical;
+	padding-right-rtl-source: physical;
+	background: none repeat scroll 0% 0% #FFF;
+	position: absolute;
+	top: 0px;
+	margin: -1px 0px 0px -4em;
+	margin-top: -1px;
+	margin-right-value: 0px;
+	margin-bottom: 0px;
+	margin-left-value: -4em;
+	margin-left-ltr-source: physical;
+	margin-left-rtl-source: physical;
+	margin-right-ltr-source: physical;
+	margin-right-rtl-source: physical;
+	border: thin solid;
+	background-color: #FFFFCB;
+	border-radius: 0px 0.5em 0px 0px;
+}
+.notice {
+	border: thin solid;
+	border-top-width: thin;
+	border-right-width-value: thin;
+	border-right-width-ltr-source: physical;
+	border-right-width-rtl-source: physical;
+	border-bottom-width: thin;
+	border-left-width-value: thin;
+	border-left-width-ltr-source: physical;
+	border-left-width-rtl-source: physical;
+	border-top-style: solid;
+	border-right-style-value: solid;
+	border-right-style-ltr-source: physical;
+	border-right-style-rtl-source: physical;
+	border-bottom-style: solid;
+	border-left-style-value: solid;
+	border-left-style-ltr-source: physical;
+	border-left-style-rtl-source: physical;
+	border-top-color: -moz-use-text-color;
+	border-right-color-value: -moz-use-text-color;
+	border-right-color-ltr-source: physical;
+	border-right-color-rtl-source: physical;
+	border-bottom-color: -moz-use-text-color;
+	border-left-color-value: -moz-use-text-color;
+	border-left-color-ltr-source: physical;
+	border-left-color-rtl-source: physical;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image-source: none;
+	border-image-slice: 100% 100% 100% 100%;
+	border-image-width: 1 1 1 1;
+	border-image-outset: 0 0 0 0;
+	border-image-repeat: stretch stretch;
+	margin-left: 12em;
+	margin-left-value: 12em;
+	margin-left-ltr-source: physical;
+	margin-left-rtl-source: physical;
+	margin-right: 12em;
+	margin-right-value: 8em;
+	background-color: #FFFFCB;
+	position: relative;
+	padding: 5px;
+}
+.warning:before {
+	content: '\26A0 Warning! ';
+	font-weight: bolder;
+}
+.warning {
+	background-color: rgba(231, 255, 0, 1);
+	border: medium double #F00;
+	border-radius: 1em 1em 1em 1em;
+	margin: 1em;
+	padding: 1em;
+}
+.docwarning {
+	border: 1px solid red;
+	border-radius: 1em 1em 1em 1em;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+.table-of-contents {
+	float: left;
+	width: 100%;
+	/*background: #eee;*/
+	padding: 0.5em;
+}
+.table-of-contents a {
+	text-decoration: none;
+}
+.table-of-contents a:hover,
+.table-of-contents a:active {
+	text-decoration: underline;
+}
