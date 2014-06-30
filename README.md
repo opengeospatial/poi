@@ -3,11 +3,11 @@ Points of Interest (POI) Encoding Specification
 
 This is an experiment in using GitHub to create specifications. 
 
-The abstract specification is in the [spec/poi.adoc] (spec/poi.adoc) file. 
+The abstract specification is in the [spec/poi-core.html] (spec/poi-core.html) file. 
 
 To contribute find an issue in the [tracker] (https://github.com/opengeospatial/poi/issues) and make a pull request. 
 
-If you are a github newbie then just hit 'edit' on the [poi.adoc page] (https://github.com/opengeospatial/poi/blob/master/spec/poi.adoc).
+If you are a github newbie then just hit 'edit' on the [poi-core.html page] (https://github.com/opengeospatial/poi/blob/master/spec/poi-core.html).
 This will automatically 'fork' the repository in to your own copy. After editing there you can create 
 a 'pull request' from your fork to submit the work for review and merging.
 
