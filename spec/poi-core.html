@@ -209,7 +209,7 @@
 			</section>
 		</div><!-- end prefatory-->
 		
-		<div id="clauses">
+		<div id="main">
 			<section id="scope">
 				<h1 id="Scope">Scope</h1>
 				<p>
@@ -397,8 +397,29 @@
 		
 		<section>
 			<h1 id="conceptualcomponents">
-				Major Conceptual Components
+				POI Conceptual Model
 			</h1>
+					<h2 id="overview">Overview</h2>
+			<div class="sectionbody">
+				<p>		
+					This clause specifies the underlying POI conceptual model for which an encoding can be created. It defines the mandatory requirements for  encoding and the necessary semantics of how that encoding should be interpreted.
+				</p>
+			</div>	
+					<h2 id="poiconceptual">Core Conceptual Model</h2>
+			<div class="sectionbody">
+				<p>
+					The Point of Interest data model consists of a <strong><a href="#poi">POI</a></strong> entity and a <strong><a href="#pois">POIS</a></strong> grouping entity. Each POI has a number of properties described in the <strong><a href="#poiproperties">POIProperties</a></strong> entity for capturing descriptive information, along with a <strong><a href="#location">Location</a></strong> entity describing its location and a <strong><a href="#position">Position</a></strong> entity describing its geometry and positional accuracy. In order to maximize the flexibility with which POI, POIs and their sub-entities can be described, each inherit its properties from a single common entity. In practical terms, this allows properties such as update time, authorship, links and other categorizations to be described at multiple levels of granularity within the data model.
+				</p>
+
+				<p>
+					<span class="image"><img src="graphics/poi_model.svg" alt="UML model of the POI core data model"></span>
+				</p>
+				<p>
+					The classes of the core data model are described in more detail below.
+				</p>
+			</div>
+
+					
 					<h2 id="poiconceptual">POI</h2>
 					<p>
 						A POI is defined as having the following conceptual properties:
@@ -503,25 +524,7 @@
 					</p>
 				</div>
 		</section>
-		<div class="sect1">
-			<h2 id="uml">
-				UML Model
-			</h2>
-			<div class="sectionbody">
-				<p>
-					The Point of Interest data model consists of a <strong><a href="#poi">POI</a></strong> entity and a <strong><a href="#pois">POIS</a></strong> grouping entity. Each POI has a number of properties for capturing descriptive information along with a Location entity describing its location. In order to maximize the flexibility with which POI, POIs and their sub-entities can be described, each inherit its properties from a single common entity. In practical terms, this allows properties such as update time, authorship, links and other categorizations to be described at multiple levels of granularity within the data model.
-				</p>
-				<p>
-					More formally, the core data model consists of the <a href="#poitype">POIType</a> entity derived from, and having child entities derived from an abstract <a href="#poibasetype">POIBaseType</a> entity. This common POIBaseType allows the authorship, modification, and source of POIs to be attributed at the POI level, at the child entity level, and at a group level through the POIS grouping entity. Child entities are constructed from primitive datatypes, <a href="#poibasetype">POIBaseType</a> entities or <a href="#poitermtype">POITermType</a> entities.
-				</p>
-				<p>
-					<span class="image"><img src="graphics/poi_model.svg" alt="UML model of the POI core data model"></span>
-				</p>
-				<p>
-					The classes of the core data model are described in more detail below.
-				</p>
-			</div>
-		</div>
+
 		<div class="sect1">
 			<h1 id="pois">
 				POIS
