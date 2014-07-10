@@ -520,7 +520,6 @@
 				POI
 			</h1>
 			<div class="sectionbody">
-				
 				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
 					<div class="requirementlabel"></div>
 					<div class="requirementuri">
@@ -529,7 +528,7 @@
 					<div class="requirementtext" itemprop="description">
 						a POI shall have a globally unique identification property named <code>id</code> in the format of a URI.
 					</div>
-				</div>
+				</div><!-- end requirement -->
 
 			<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
 				<div class="requirementlabel"></div>
@@ -612,11 +611,12 @@
 						</tr>
 						<tr>
 							<td>metadata</td>
-							<td>text</td>
+							<td><a href="#poiproperties">POIProperties</a></td>
 							<td>0..*</td>
 						</tr>
 					</tbody>
 				</table>
+
 				<div class="sect2">
 					<h2 id="location">Location</h2>
 					<p>
@@ -875,10 +875,10 @@
 				<div class="sect2">
 					<h2 id="label">label</h2>
 					<p>
-						A human-readable name. Multiple names are used for synonyms, and for multiple languages.
+						A human-readable name. This object can be repeated to indicate different names for the POI. Those labels may be used to describe synonyms, different languages, or names used by different communities.
 					</p>
 					<p>
-						The label object is of type <a href="#poiproperties">POIProperties</a> and specifies a human-readable name. The language of label <em>may</em> be indicated using the lang property. Multiple labels <em>may</em> be discriminated with the term property (e.g. primary, colloquial, etc.). The first label encountered per language is considered the primary label for that language.
+						The label object inherits from object <a href="#poiproperties">POIProperties</a> and specifies a human-readable name. The language of label <em>may</em> be indicated using the lang property. Multiple labels <em>may</em> be discriminated with the term property (e.g. primary, colloquial, etc.). The first label encountered per language is considered the primary label for that language.
 					</p>
 					<p>
 						It is <em>recommended</em> to use the term property to discriminate between different categories of label entities.
@@ -920,17 +920,35 @@
 							</tr>
 						</tbody>
 					</table>
+				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+					<div class="requirementlabel"></div>
+					<div class="requirementuri">
+						<a href="http://www.opengis.net/spec/poi/1.0/req/core/label/value">http://www.opengis.net/spec/poi/1.0/req/core/label/value</a>
+					</div>
+					<div class="requirementtext" itemprop="description">
+						a label must populate its value property
+					</div>
+				</div><!-- end requirement -->
 				</div>
 				<div class="sect2">
 					<h2 id="description">description</h2>
 					<p>
 						A human-readable narrative description that can be discrimintated with the language attribute. <a href="#description">description</a> is of type <a href="#poiproperties">POIProperties</a> and specifies a human readable description. The language the description is in <em>may</em> be indicated using the lang property. The first description encountered per language is considered the primary description for that language.
 					</p>
+				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+					<div class="requirementlabel"></div>
+					<div class="requirementuri">
+						<a href="http://www.opengis.net/spec/poi/1.0/req/core/description/value">http://www.opengis.net/spec/poi/1.0/req/core/description/value</a>
+					</div>
+					<div class="requirementtext" itemprop="description">
+						a description must populate its value property
+					</div>
+				</div><!-- end requirement -->
 				</div>
 				<div class="sect2">
 					<h2 id="category">category</h2>
 					<p>
-						The category property classifies the POI using keywords. Category is adopted from the atom:category object <a href="#RFC4087">[RFC4087]</a>, and works in much the same way. A category should specify the type of POI, such as city, restaurant, etc. The category’s value property is the keyword, or tag. The <a href="#term">term</a>, if specified, is the classification scheme to which the value belongs. To emulate a "folksonomy" or "free tagging", the term <em>shall</em> be "free". This tagging system <em>may</em> be more formally structured using the scheme property to specify a dictionary of terms or a web resource containing definitions of the terms and values.
+						The category property classifies the POI using keywords. Category is adopted from the atom:category object <a href="#RFC4087">[RFC4087]</a>, and works in much the same way. A category should specify the type of POI, such as city, restaurant, etc. The category’s term property is the keyword, or tag.  The <a href="#scheme">scheme</a>, if specified, is the classification scheme to which the value belongs. To emulate a "folksonomy" or "free tagging", the scheme <em>shall</em> be "free". This tagging system <em>may</em> be more formally structured using the scheme property to specify the URI identifying a dictionary of terms or a web resource containing definitions of the terms and values.
 					</p>
 					<p>
 						Multiple categories are allowed to accommodate the fact that POIs may be more than one thing. For example, a casino might be a gambling hall, a restaurant, and a concert venue. A grocery store may also be a bank and a pharmacy.
@@ -941,17 +959,36 @@
 					<p>
 						It is <em>recommended</em> to utilize the value property when describing human readable categorical descriptions.
 					</p>
+				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+					<div class="requirementlabel"></div>
+					<div class="requirementuri">
+						<a href="http://www.opengis.net/spec/poi/1.0/req/core/category/term">http://www.opengis.net/spec/poi/1.0/req/core/category/term</a>
+					</div>
+					<div class="requirementtext" itemprop="description">
+						a category must populate its term property
+					</div>
+				</div><!-- end requirement -->
 				</div>
+
 				<div class="sect2">
 					<h2 id="link">link</h2>
 					<p>
 						A link to another POI, or any other web resource. The link object is of type <a href="#poiproperties">POIProperties</a> and adopted from the atom:link object <a href="#RFC4087">[RFC4087]</a> which works in much the same way. A link is a generic way to define a relationship between the POI and other Web-accessible resources.
 					</p>
 					<p>
-						Links are a powerful way to describe a host of relationships. One could argue that just as Web pages obtain most of their value by the links between them, a POI’s value is directly related to the number of links between it and others. Links in POIs are perhaps even more important than links in Web pages or Atom feeds, as POIs are inherently place-based objects with natural relationships in space and time that should be expressed. Those spatial relationships are mostly covered by the <a href="#relationship">relationship</a> property, which is in many ways a specialization of the generic Link. But there are many more semi-spatial and non-spatial relationships that can be expressed using link.
+						Links are a powerful way to describe a host of relationships. One could argue that just as Web pages obtain most of their value by the links between them, a POI obtains value from the number of links between it and others. Links in POIs are perhaps even more important than links in Web pages or Atom feeds, as POIs are inherently place-based objects with natural relationships in space and time that should be expressed. Those spatial relationships are mostly covered by the <a href="#relationship">relationship</a> property, which is in many ways a specialization of the generic Link. But there are many more semi-spatial and non-spatial relationships that can be expressed using link.
 					</p>
+				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+					<div class="requirementlabel"></div>
+					<div class="requirementuri">
+						<a href="http://www.opengis.net/spec/poi/1.0/req/core/link/href">http://www.opengis.net/spec/poi/1.0/req/core/link/href</a>
+					</div>
+					<div class="requirementtext" itemprop="description">
+						a link must populate its href property
+					</div>
+				</div><!-- end requirement -->
 					<p>
-						This specification proposes a number of best practices for defining links. Key relations from the IANA registry are listed below in italics. Those relations in bold are defined only in this specification.
+						This specification proposes a number of key words for defining the relationship of a link to the POI. A key word may be used to populate the <a href="#term">term</a> property. Useful key word relations from the IANA registry are listed below in italics. Those relations in bold are defined only in this specification.
 					</p>
 					<table id="linkrelations" style="width:65%;">
 						<caption>
@@ -985,7 +1022,7 @@
 									<em>canonical</em>
 								</td>
 								<td>
-									the preferred version of a set of POIs with highly similar content. For example, there could be many different perceptions of a neighborhood boundary POI, but the city’s neighborhood map could be the canonical version of this POI.
+									the preferred version of a POI with highly similar content. For example, there could be many different perceptions of a neighborhood boundary POI, but the city’s neighborhood map could be the canonical version of this POI.
 								</td>
 							</tr>
 							<tr>
@@ -1017,7 +1054,7 @@
 									<em>icon</em>
 								</td>
 								<td>
-									fill in here
+									a small graphic representing the POI
 								</td>
 							</tr>
 							<tr>
@@ -1026,14 +1063,6 @@
 								</td>
 								<td>
 									points to a resource containing the latest version
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<em>rights</em>
-								</td>
-								<td>
-									a license or other type of intellectual property right for this POI
 								</td>
 							</tr>
 							<tr>
@@ -1095,6 +1124,18 @@
 					<p>
 						When the MIME type attribute is undetermined or <code>text/plain</code>, the content of the value property is assumed to be in the dateTime format <a href="#ISO8601">[ISO8601]</a>. When the MIME type attribute is <code>text/calendar</code>, the value content is expected to conform to the iCalendar specification <a href="#RFC5545">[RFC5545]</a>.
 					</p>
+				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+					<div class="requirementlabel"></div>
+					<div class="requirementuri">
+						<a href="http://www.opengis.net/spec/poi/1.0/req/core/time/value">http://www.opengis.net/spec/poi/1.0/req/core/time/value</a>
+					</div>
+					<div class="requirementtext" itemprop="description">
+						time must populate its value property
+					</div>
+				</div><!-- end requirement -->
+					<p>
+						This specification proposes a number of key words for defining the semantics of the time specified in the value property. A key word may be used to populate the <a href="#term">term</a> property.
+					</p>
 					<table id="timerelations" style="width:65%;">
 						<caption>
 							Table 3. Time Relations
@@ -1152,8 +1193,17 @@
 				<div class="sect2">
 					<h2 id="metadata">Metadata</h2>
 					<p>
-						Dublin Core or <a href="#ISO19115">[ISO19115]</a> metadata.
+						The Metadata property is not strictly constrained in this specification. However, Dublin Core or <a href="#ISO19115">[ISO19115]</a> metadata should be used whenever possible.
 					</p>
+				<div class="requirement" itemscope itemtype="http://www.opengeospatial.org/microdata/Requirement">
+					<div class="requirementlabel"></div>
+					<div class="requirementuri">
+						<a href="http://www.opengis.net/spec/poi/1.0/req/core/metadata/type">http://www.opengis.net/spec/poi/1.0/req/core/metadata/type</a>
+					</div>
+					<div class="requirementtext" itemprop="description">
+						the type property must describe the content type of the content in the value property
+					</div>
+				</div><!-- end requirement -->
 				</div>
 			</div>
 		</div>
@@ -1328,7 +1378,7 @@
 								string
 							</td>
 							<td>
-								1
+								0..1
 							</td>
 						</tr>
 						<tr>
@@ -1386,25 +1436,25 @@
 				<div class="sect2">
 					<h2 id="created">created</h2>
 					<p>
-						This property is for capturing the time at which the POI record was created in the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#poi">POI</a> <a href="#time">time</a> property.
+						This property is for capturing the time at which the POI record was created in the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#time">time</a> property.
 					</p>
 				</div>
 				<div class="sect2">
 					<h2 id="updated">updated</h2>
 					<p>
-						Time this POI information was last changed <a href="#ISO8601">[ISO8601]</a> also refer to atom:updated <a href="#RFC4087">[RFC4087]</a>. This property is for capturing the time at which the POI record was updated in the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#poitype">POIType</a> <a href="#time">time</a> property.
+						Time this POI information was last changed <a href="#ISO8601">[ISO8601]</a> also refer to atom:updated <a href="#RFC4087">[RFC4087]</a>. This property is for capturing the time at which the POI record was updated in the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#time">time</a> property.
 					</p>
 				</div>
 				<div class="sect2">
 					<h2 id="deleted">deleted</h2>
 					<p>
-						This property is for capturing the time at which the POI record was deleted from the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#poi">POI</a> <a href="#time">time</a> property.
+						This property is for capturing the time at which the POI record was deleted from the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#time">time</a> property.
 					</p>
 				</div>
 				<div class="sect2">
 					<h2 id="author">author</h2>
 					<p>
-						When in an author property, <a href="#value">value</a> specifies the author’s identification information, which should at minimum be the author’s name. When the <a href="#type">type</a> (MIME type) property (MIME type) is undetermined or <code>text/plain</code>, the content of the value property is assumed to be free text. When the <a href="#type">type</a> property is <code>text/vcard</code>, <a href="#value">value</a> should be encoded in VCard format <a href="#RFC6350">[RFC6350]</a>.
+						Specifies the author’s identification information, which should at minimum be the author’s name populated in the <a href="#value">value</a> property. When the <a href="#type">type</a> (MIME type) property (MIME type) is undetermined or <code>text/plain</code>, the content of the value property is assumed to be free text. When the <a href="#type">type</a> property is <code>text/vcard</code>, <a href="#value">value</a> should be encoded in VCard format <a href="#RFC6350">[RFC6350]</a>.
 					</p>
 					<p>
 						Multiple authors can be specified by nesting author properties, and their authorship role <em>may</em> be discriminated with the <a href="#term">term</a> property (e.g. primary, publisher, editor, etc.).
@@ -1695,22 +1745,13 @@
 				<div class="sect2">
 					<h2 id="srsname">Coordinate Reference Systems</h2>
 					<p>
-						In all of the entities that specify geodetic coordinates, an srsName property is included in order to indicate the coordinate reference system (CRS) being used. The srsName value is a URI <a href="#RFC3986">[RFC3986]</a> indicating the CRS used and is <a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a> by default. This default is the URI for the World Geodetic System 84 (WGS84) in 2 dimensions, latitude and longitude. Other CRS URNs are allowed. In particular, the URI <a href="http://www.opengis.net/def/crs/EPSG/0/4979">http://www.opengis.net/def/crs/EPSG/0/4979</a> indicates WGS84 in 3 dimensions, latitude, longitude and elevation in meters above sea level. The CRS used influences the interpretation of the coordinate set.
+						In all of the objects that specify geodetic coordinates, an srsName property is included in order to indicate the coordinate reference system (CRS) being used. The srsName value is a URI <a href="#RFC3986">[RFC3986]</a> indicating the CRS used and is <a href="http://www.opengis.net/def/crs/OGC/1.3/CRS84">http://www.opengis.net/def/crs/OGC/1.3/CRS84</a> by default. This default is the URI for the World Geodetic System 84 (WGS84) in 2 dimensions, longitude and latitude. The CRS used influences the interpretation of the coordinate set.
 					</p>
 					<p>
 						The default CRS refers to WGS84 geographic longitude and latitude expressed in decimal degrees, namely EPSG 4326, without the degrees symbol, "°". The values of latitude and longitude are bounded by ±90° and ±180° respectively. Positive latitudes are north of the equator, negative latitudes are south of the equator. Positive longitudes are east of the Prime Meridian, negative longitudes are west of the Prime Meridian. Latitude and longitude are expressed in that sequence, namely latitude before longitude.
 					</p>
 					<p>
-						Implementations are required to support the following CRS based on WGS 84 NIMA.TR8350.2-3e <a href="#NIMA-TR8350-2">[NIMA-TR8350-2]</a>. These are identified using the European Petroleum Survey Group (EPSG) Geodetic Parameter Dataset, as formalized by the Open Geospatial Consortium (OGC):
-					</p>
-					<div>
-						<ul>
-							<li><a href="http://www.opengis.net/def/crs/EPSG/0/4326:">http://www.opengis.net/def/crs/EPSG/0/4326:</a> 2 dimensional WGS 84, latitude, and longitude</li>
-							<li><a href="http://www.opengis.net/def/crs/EPSG/0/4979:">http://www.opengis.net/def/crs/EPSG/0/4979:</a> 3 dimensional WGS 84, latitude, longitude, altitude</li>
-						</ul>
-					</div>
-					<p>
-						The most recent version of the EPSG Geodetic Parameter Dataset should be used. A CRS must be specified using the above URI notation only, implementations do not need to support user-defined CRSs. This specification does not assign responsibilities for coordinate transformations from and to other Coordinate Reference Systems.
+						The most recent version of the EPSG Geodetic Parameter Dataset should be used. A CRS must be specified using URI notation only, and implementations do not need to support user-defined CRSs. This specification does not assign responsibilities for coordinate transformations from and to other Coordinate Reference Systems.
 					</p>
 					<p class="notice">The term coordinate set as used throughout this document refers to coordinates as influenced by the rules laid out above.</p>
 				</div>
@@ -1722,10 +1763,11 @@
 			<h1 id="pois">
 				POIS
 			</h1>
+			<p>The POIS object is mainly present for convenience when a set of POI objects needs to be grouped together.
 			<div class="requirement">
 				<div class="requirementlabel"></div>
 				<div class="requirementuri">
-					<a href="http://www.opengis.net/spec/poi/1.0/req/core/POISClass/POIProperties">http://www.opengis.net/spec/poi/1.0/req/core/POISClass/POIProperties</a>
+					<a href="http://www.opengis.net/spec/poi/1.0/req/core/POIS/POIProperties">http://www.opengis.net/spec/poi/1.0/req/core/POIS/POIProperties</a>
 				</div>
 				<div class="requirementtext">
 					A POIS object shall inherit the properties of a POIProperties object.
@@ -1735,7 +1777,7 @@
 			<div class="requirement">
 				<div class="requirementlabel"></div>
 				<div class="requirementuri">
-					<a href="http://www.opengis.net/spec/poi/1.0/req/core/POISClass/POI">http://www.opengis.net/spec/poi/1.0/req/core/POISClass/POI</a>
+					<a href="http://www.opengis.net/spec/poi/1.0/req/core/POIS/POI">http://www.opengis.net/spec/poi/1.0/req/core/POIS/POI</a>
 				</div>
 				<div class="requirementtext">
 					A POIS object shall include zero or more POI objects.
@@ -1792,822 +1834,6 @@
 			<h1 id="Annexconformanceats">
 				Conformance Class Abstract Test Suite (Normative)
 			</h1>
-		</section>
-
-		<section>
-			<h1 id="usecases">Use Cases</h1>
-			<div class="sectionbody">
-				<div class="sect2">
-					<h2 id="generic-points-of-interest-use-cases">Generic Points of Interest Use Cases</h2>
-					<div class="olist arabic">
-						<ol class="arabic">
-							<li>
-								<p>
-									<a href="http://www.w3.org/2010/POI/wiki/A_very_minimal_POI_%28a_city%29">a very minimal POI (a city)</a>
-								</p></li>
-							<li>
-								<p>
-									a city
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												<a href="http://www.w3.org/2010/POI/wiki/In_the_US">in the US</a>
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<a href="http://www.w3.org/2010/POI/wiki/A_place_with_many_links_to_other_information_about_that_place">a place with many links to other information about that place</a>
-								</p></li>
-							<li>
-								<p>
-									a country
-								</p></li>
-							<li>
-								<p>
-									<a href="http://www.w3.org/2010/POI/wiki/An_airport">an airport</a>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												extension: links to airlines serving the airport?
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									a museum
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												links to items in the collection?
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<a href="http://www.w3.org/2010/POI/wiki/A_UNESCO_World_Heritage_site">a UNESCO World Heritage site</a>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												<a href="http://whc.unesco.org/en/list">reference</a>
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									Boston Freedom Trail
-								</p></li>
-							<li>
-								<p>
-									a bike route
-								</p></li>
-							<li>
-								<p>
-									restaurant in NYC
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												extensions: opening/closing hours, menu, ratings, reviews
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									Navteq examples
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												<a href="http://www.w3.org/2010/POI/wiki/NVTPOI_03_01_5800_001">NVTPOI_03_01_5800_001</a>
-											</p>
-										</li>
-										<li>
-											<p>
-												<a href="http://www.w3.org/2010/POI/wiki/NVTPOI_03_ZAF_9517_001">NVTPOI_03_ZAF_9517_001</a>
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									Representing Change
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												<a href="http://www.w3.org/2010/POI/wiki/A_change_of_address">a change of address</a>
-											</p>
-										</li>
-										<li>
-											<p>
-												<a href="http://www.w3.org/2010/POI/wiki/A_building_changes_shape_and_goes_from_being_an_Indian_restaurant_to_an_Italian_one">a building changes shape and goes from being an Indian restaurant to an Italian one</a>
-											</p>
-										</li>
-									</ul>
-								</div></li>
-						</ol>
-					</div>
-				</div>
-				<div class="sect2">
-					<h2 id="check-in-services">
-						13.2. Check in services
-					</h2>
-					<div>
-						<ul>
-							<li>
-								<p>
-									TBD
-								</p></li>
-						</ul>
-					</div>
-				</div>
-				<div class="sect2">
-					<h2 id="ar-use-cases">
-						13.3. AR Use Cases
-					</h2>
-					<p>
-						<a href="http://www.perey.com/ARStandards/Three_Use_Cases.pdf">Three Use Cases for AR Standards Discussion</a>
-					</p>
-					<div class="listingblock">
-						<div class="content">
-							<pre>
-  This file captures contributions of the participants of International AR Standards Meeting conducted Oct 11-12 in Seoul.
-  Added to this wiki page Oct 26, 2010
-</pre>
-						</div>
-					</div>
-					<p>
-						<a href="http://www.w3.org/2010/POI/wiki/File:DERI_-_Linked_AR_proof-of-concept_1_pager.pdf">DERI Linked AR PoC</a>
-					</p>
-					<div class="listingblock">
-						<div class="content">
-							<pre>
- This file describes use case where all manner of historical content is related to relevant locations and viewed through a mobile AR browser.
- Added to this wiki page on Oct 28, 2010
-</pre>
-						</div>
-					</div>
-				</div>
-				<div class="sect2">
-					<h2 id="search">
-						13.4. Search
-					</h2>
-					<div class="olist arabic">
-						<ol class="arabic">
-							<li>
-								<p>
-									<strong>What is there to do here?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Categories, Tags, Time, Events
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Where is a 4 star Italian restaurant near me that is still open?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Categories, Tags, Time, Events
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Where can I find a new battery for my phone?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Brand associations, inventory
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>What movies are playing now near me?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Categories, Time, Event
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Where is the cheapest available parking near the theater?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Categories, Historical pricing info
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>What shoes stores are in this mall?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Categories, Local group associations
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>How much is the entrance fee for the museum?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Categories, Pricing info
-											</p>
-										</li>
-									</ul>
-								</div></li>
-						</ol>
-					</div>
-				</div>
-				<div class="sect2">
-					<h2 id="location-based-advertising">
-						13.5. Location-Based Advertising
-					</h2>
-					<div class="olist arabic">
-						<ol class="arabic">
-							<li>
-								<p>
-									<strong>What special offers are around here?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Location-based Advertising, Offer System
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>What are the specials at nearby restaurants?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Location-based Advertising, Offer System
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Let me know of any shoe sales I might pass as I walk around the city shopping.</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User, Interconnected systems
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, Location-based Advertising, Offer System
-											</p>
-										</li>
-									</ul>
-								</div></li>
-						</ol>
-					</div>
-				</div>
-				<div class="sect2">
-					<h2 id="destination-selection">
-						13.6. Destination Selection
-					</h2>
-					<div class="olist arabic">
-						<ol class="arabic">
-							<li>
-								<p>
-									<strong>Take me to this café…</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: POI attribute search, location, route calc
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Take me to the place with this phone number…</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: POI attribute search, location, route calc
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Take me on a scenic wine tour</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: POI group associations, POIs, tags, route calc
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Take me to the office of my next appointment</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Calendar, Contacts, locations, route calc
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>If I want to go to Macy’s in this mall at what entrance should I park?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: POI group associations, location, location associations, route calc
-											</p>
-										</li>
-									</ul>
-								</div></li>
-						</ol>
-					</div>
-				</div>
-				<div class="sect2">
-					<h2 id="b2b">
-						13.7. B2B
-					</h2>
-					<div class="olist arabic">
-						<ol class="arabic">
-							<li>
-								<p>
-									<strong>Associate together these similar business by categories and associations</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: Interconnected systems
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: POI group associations, POIs, categories, tags
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Convert these POI listings descriptions to 12 major languages</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: Interconnected systems
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: POIs, translation service
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Share this specific set of Yellow Pages with this business partner</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: Interconnected systems
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: POIs, source identification, tags, fullfillment services, distribution services
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Sweep these web sites and normalize the data to a standard exchange format</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: Interconnected systems
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: web scraping, standard format, language/tag processing service
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Accurately geolocate these places of business</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: Interconnected systems
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: locations, geocoding service, map
-											</p>
-										</li>
-									</ul>
-								</div></li>
-						</ol>
-					</div>
-				</div>
-				<div class="sect2">
-					<h2 id="informational">
-						13.8. Informational
-					</h2>
-					<div class="olist arabic">
-						<ol class="arabic">
-							<li>
-								<p>
-									<strong>What is the history of this building?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, Building cartography, POIs+Locations, Historical data
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>What is the name of this neighborhood?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User, Interconnected systems
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, area cartography, Named areas
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Tell me about this house…</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User, Interconnected systems
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, Building cartography, POIs+Locations, Real estate data
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>What kind of businesses are in this building?</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User, Interconnected systems
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, Building cartography, POIs+Locations, Building to POI associations
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Take me on a tour…</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POI group associations, POIs, tags, route calc
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>I want to leave a trail of my experiences for others to find and enjoy</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, route calc, social data servcies
-											</p>
-										</li>
-									</ul>
-								</div></li>
-						</ol>
-					</div>
-				</div>
-				<div class="sect2">
-					<h2 id="augmented-reality">
-						13.9. Augmented Reality
-					</h2>
-					<div class="olist arabic">
-						<ol class="arabic">
-							<li>
-								<p>
-									<strong>Guide</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												A system which leads the user through a process involving real world
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Create</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												A system with which the user attaches/contributes a digital content “object” to or in the real world
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									<strong>Play</strong>
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												A system which supports bi-directional interaction between users and the real world
-											</p>
-										</li>
-									</ul>
-								</div></li>
-						</ol>
-					</div>
-				</div>
-				<div class="sect2">
-					<h2 id="bookmarking---sharing">
-						13.10. Bookmarking &amp; Sharing
-					</h2>
-					<div class="olist arabic">
-						<ol class="arabic">
-							<li>
-								<p>
-									I like it
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona&nbsp;: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, user prererence info
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									I recommend you visit here
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona&nbsp;: End-User, messaging system and receiver (SMS, mail, twitter, facebook ..)
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, geo hyperlink
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									I want to comments on here
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona&nbsp;: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, tags, User’s comments
-											</p>
-										</li>
-									</ul>
-								</div></li>
-							<li>
-								<p>
-									I will remember it (I will bookmark here)
-								</p>
-								<div>
-									<ul>
-										<li>
-											<p>
-												Persona&nbsp;: End-User
-											</p>
-										</li>
-										<li>
-											<p>
-												Elements: Geo-spatial proximity, POIs+Locations, tags, User’s bookmark storage
-											</p>
-										</li>
-									</ul>
-								</div></li>
-						</ol>
-					</div>
-				</div>
-
 		</section>
 		
 		<section>
