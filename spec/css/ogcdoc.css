@@ -49,6 +49,7 @@ dd.term {
 .requirement {
 	background-color: #fedcdc;
 	padding: 1em;
+	margin: 1em;
 	border-radius: 1em;
 	border: 4px solid #ff0000;
 }
@@ -74,40 +75,40 @@ dd.term {
 }
 
 /* auto numbering headings */
-main {
+#main {
 	counter-reset: o req;
 }
-main H1:before {
+#main H1:before {
 	content: counter(o) ". ";
 	counter-increment: o;
 }
-main H1 { counter-reset: oo; }
+#main H1 { counter-reset: oo; }
 
-main H2:before {
+#main H2:before {
 	content: counter(o) "." counter(oo) " ";
 	counter-increment: oo;
 }
-main H2 { counter-reset: ooo; }
+#main H2 { counter-reset: ooo; }
 
-main H3:before {
+#main H3:before {
 	content: counter(o) "." counter(oo) "." counter(ooo) " ";
 	counter-increment: ooo;
 }
-main H3 { counter-reset: oooo; }
+#main H3 { counter-reset: oooo; }
 
-main H4:before {
+#main H4:before {
 	content: counter(o) "." counter(oo) "." counter(ooo) "." counter(oooo) " ";
 	counter-increment: oooo;
 }
-main H4 { counter-reset: ooooo; }
+#main H4 { counter-reset: ooooo; }
 
-main H5:before {
+#main H5:before {
 	content: counter(o) "." counter(oo) "." counter(ooo) "." counter(oooo) "." counter(ooooo) " ";
 	counter-increment: ooooo;
 }
-main H5 { counter-reset: oooooo; }
+#main H5 { counter-reset: oooooo; }
 
-main H6:before {
+#main H6:before {
 	content: counter(o) "." counter(oo) "." counter(ooo) "." counter(oooo) "." counter(ooooo) "." counter(oooooo) " ";
 	counter-increment: oooooo;
 }
