@@ -1,0 +1,61 @@
+<bibitem id="RFC3986">
+  <fetched>2019-01-13</fetched>
+  <title format="plain" language="en" script="Latn">Uniform Resource Identifier (URI): Generic Syntax</title>
+  <uri type="src">https://www.rfc-editor.org/info/rfc3986</uri>
+  <docidentifier type="IETF">RFC 3986</docidentifier>
+  <docidentifier type="DOI">10.17487/RFC3986</docidentifier>
+  <date type="published">
+    <on>2005</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en">T. Berners-Lee</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>IETF</name>
+          <abbreviation>IETF</abbreviation>
+        </organization>
+      </affiliation>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en">R. Fielding</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>IETF</name>
+          <abbreviation>IETF</abbreviation>
+        </organization>
+      </affiliation>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en">L. Masinter</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>IETF</name>
+          <abbreviation>IETF</abbreviation>
+        </organization>
+      </affiliation>
+    </person>
+  </contributor>
+  <language>en</language>
+  <series type="main">
+    <title format="plain" language="en" script="Latn">STD</title>
+    <number>66</number>
+  </series>
+  <series type="main">
+    <title format="plain" language="en" script="Latn">RFC</title>
+    <number>3986</number>
+  </series>
+</bibitem>

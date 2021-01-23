@@ -1,0 +1,4 @@
+[[oas30_example]]
+[appendix,obligation=informative]
+:appendix-caption: Annex
+== Placeholder for Title of this Annex
