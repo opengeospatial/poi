@@ -1,0 +1,29 @@
+<bibitem id="RFC5988">
+  <fetched>2019-01-13</fetched>
+  <title format="plain" language="en" script="Latn">Web Linking</title>
+  <uri type="src">https://www.rfc-editor.org/info/rfc5988</uri>
+  <docidentifier type="IETF">RFC 5988</docidentifier>
+  <docidentifier type="DOI">10.17487/RFC5988</docidentifier>
+  <date type="published">
+    <on>2010</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en">M. Nottingham</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>IETF</name>
+          <abbreviation>IETF</abbreviation>
+        </organization>
+      </affiliation>
+    </person>
+  </contributor>
+  <language>en</language>
+  <series type="main">
+    <title format="plain" language="en" script="Latn">RFC</title>
+    <number>5988</number>
+  </series>
+</bibitem>

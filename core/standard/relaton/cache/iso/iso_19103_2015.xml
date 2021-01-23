@@ -1,0 +1,48 @@
+<bibitem type="international-standard" id="ISO19103-2015">
+  <fetched>2019-01-13</fetched>
+  <title format="text/plain" language="en" script="Latn">Geographic information -- Conceptual schema language</title>
+  <uri type="src">https://www.iso.org/standard/56734.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:56734:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri>
+  <docidentifier type="ISO">ISO 19103:2015</docidentifier>
+  <date type="published">
+    <on>2015</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <abstract format="plain" language="en" script="Latn">ISO 19103:2015 provides rules and guidelines for the use of a conceptual schema language within the context of geographic information. The chosen conceptual schema language is the Unified Modeling Language (UML).ISO 19103.2015 provides a profile of the Unified Modelling Language (UML).The standardization target type of this standard is UML schemas describing geographic information.</abstract>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2015</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref>ISO/TS 19103:2005</formattedref>
+    </bibitem>
+  </relation>
+  <editorialgroup>
+    <technical_committee number="211" type="TC">ISO/TC 211Geographic information/Geomatics</technical_committee>
+  </editorialgroup>
+  <ics>
+    <code>35.240.70</code>
+    <text>IT applications in science</text>
+  </ics>
+</bibitem>
