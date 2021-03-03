@@ -63,7 +63,7 @@ Please feel free to forward this announcement to any other appropriate lists. Th
 
 The purpose of the POI SWG is to produce a version 1.0 encoding standard of points of interest data that includes an abstract data model and JSON implementations of that data model.
 
-Upon completion of the draft the SWG will verify compliance with the OGC Base
+Upon completion of the draft, the SWG will verify compliance with the OGC Baseline.
 
 === Definition of Points of Interest
 A “point of interest” (PoI) is a location for which information is available. A PoI can be as simple as a set of coordinates, a name and a unique identifier, or more complex such as a three-dimensional model of a building with names in multiple languages information about opening and closing hours and a civic address.
