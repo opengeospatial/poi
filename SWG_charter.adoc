@@ -1,4 +1,4 @@
-:Title: OGC (add title text)
+:Title: OGC Points of Interest Standard Working Group Charter
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
@@ -36,23 +36,9 @@
 
 <<<
 
-////
-Version of 2018-12-12
-Some Instructions
-This document is the template to be used for proposing the formation of a new Standards Working Group (SWG).
-
-The first step is to complete the SWG Charter for the proposed new SWG.
-
-The next step is to email the draft SWG charter to the Technical Committee Chair (TCC).  The TCC will review the draft charter and make any necessary comments and provide guidance.
-
-Finally, once the Charter is ready, the SWG charter will be posted to the OGC Pending Documents and the vote process in the Technical Committee Policies and Procedures will start.
-
-Any questions, please contact OGC staff.
-////
-
 To: OGC members & interested parties
 
-A new OGC Standards Working Group is being formed. The OGC members listed below have proposed the OGC <Name of SWG>.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
+A dormant OGC Standards Working Group is being rechartered. The OGC members listed below propose to restart the POI Standards Working Group.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
 
 The SWG name, statement of purpose, scope, list of deliverables, audience, and language specified in the proposal will constitute the SWG's official charter. Technical discussions may occur no sooner than the SWG's first meeting.
 
@@ -75,28 +61,49 @@ Please feel free to forward this announcement to any other appropriate lists. Th
 
 == Purpose of the Standards Working Group
 
-////
-Proposers will describe the purpose of the Standards Working Group and its overall mission in relation to OGC processes, the OGC Standards baseline, and OGC’s business plan.
-////
+The purpose of the POI SWG is to produce a version 1.0 encoding standard of points of interest data that includes an abstract data model and JSON implementations of that data model.
+
+Upon completion of the draft the SWG will verify compliance with the OGC Base
+
+=== Definition of Points of Interest
+A “point of interest” (PoI) is a location for which information is available. A PoI can be as simple as a set of coordinates, a name and a unique identifier, or more complex such as a three-dimensional model of a building with names in multiple languages information about opening and closing hours and a civic address.
+
+=== PoI Use Cases
+There are numerous use cases for PoI. They include location-based social networking,games, assessments of gaps or needs, mapping and navigation systems.
+
+End users may search databases of PoIs to identify properties for sale, financial institutions, accommodations, retail shops, or  transportation. There are also numerous ways the public sector can use PoI. For example, government agencies can provide information to citizens about services and locations by publishing their PoI datasets.
 
 == Business Value Proposition
 
-////
-This section provides a statement describing the value of this standards activity in relation to the OGC Membership, the geospatial community, and the wider IT community. This statement can be in terms of the interoperability problem being solved, processing Change requests to meet market (and Member requirements), a policy requirement and/or some other business value proposition. The proposition described in this section does not have to be in economic terms.
-////
+There are many advantages to standardizing PoI.
+
+First, complying with a standard permits systems to populate a PoI database regardless of authoring platform or application, without transcoding, delays or costs that are incurred when data is compiled from many different contributors using proprietary formats.
+
+Further, with a standard encoding, PoIs can be stored in non-proprietary formats and technology providers can focus on the competitive advantages of faster querying technologies.
+
+When PoI publishers support a standard PoI format, they will be able to sell and transmit PoI data to the applications of the user's choice, regardless of devices, and thereby focus on the value of the dataset, not the development and maintenance of prorietary applications or interfaces.
+
+Finally, when PoI are encoded in compliance with a standard, third parties are able to compile PoI sets from multiple, diverse sources, to compare PoI across sources and services, and to archive PoI without loss of accuracy, metadata or value.
+
+These advantages will offer new value across many use cases.
+
 
 == Scope of Work
 
-////
-This section describes the scope of work (SOW) for the work of the SWG. There are typically at least three (3) cases that justify the formation of a SWG: A group of members decide to develop a new OGC candidate Standard from scratch, there is a draft submission being discussed by OGC members, or there are outstanding Change Requests for an existing OGC Standard and a revision is required.
+The PoI SWG shall review  and, if deemed appropriate, edit and expand upon the draft specification previously begun in this SWG with a special emphasis on ways to modernize and adopt the most current OGC practices, industry conventions and developer tools to define an information model and data encoding(s).
 
-The following describes the characteristics of a SOW for each of these cases.
+The items that need to be addressed by the SWG include:
+1.	Update to conform to the latest OGC document directives. While not mandated for an encoding specification the SWG will conform to the Modular Specifications Policy  as appropriate.
+2.	Add a JSON encoding with particular attention paid to support ways to build resilient and scalable PoI architectures including but not limited to DGGS and OGC APIs
+4.	Provide an abstract and/or conformance  test suite.
+5.	Validate all schemas and examples.
+6.	Prepare and publish a user guide in compliance with OGC policies.
+7.	Study the interactions between service model and data encoding approaches to POI and gazetteer functions.
+8.	Address any other technical and/or editorial issues that arise during the review period.
 
-For a SWG focused on defining and documenting a new OGC candidate Standard from “scratch,” the SOW SHALL include a statement of the requirements and use cases for the candidate Standard being developed. The SOW SHALL also include a justification statement for developing a new candidate OGC Standard. The SOW SHALL also describe how the new candidate Standard is related to the existing OGC Standards baseline and the OGC Reference Model. The final deliverable of a “from scratch” focused SWG SHALL be a candidate Standard ready for submission using the OGC standards process.
+Change requests and comments submitted through GitHub as well as through traditional processes identified in the OGC Policy and Procedures shall be discussed and addressed by the SWG. 
 
-For a SWG focused on processing a draft submission such as a specification developed outside the OGC and submitted into the OGC for consideration, the SOW would include evaluation of the submission in terms of the relationship to the existing OGC Standards baseline (see section below). The final deliverable of such a SWG SHALL be a candidate Standard for consideration by the membership for adoption.
-
-For a SWG focused on revisions to an existing adopted Standard, the SOW should include a statement that the SWG will collect all outstanding Change Request Proposals (CRPs), evaluate each of the proposals, and make edits to the Standard based on CRPs and related decisions of the SWG membership. The SWG, at their discretion, may also ask the membership for any additional change requests that have not been previous submitted. Again, the final deliverable of a revision focused SWG SHALL be a revision of the candidate Standard for consideration by the membership for adoption.
+NOTE: For a SWG focused on revisions to an existing adopted Standard, the SOW should include a statement that the SWG will collect all outstanding Change Request Proposals (CRPs), evaluate each of the proposals, and make edits to the Standard based on CRPs and related decisions of the SWG membership. The SWG, at their discretion, may also ask the membership for any additional change requests that have not been previous submitted. Again, the final deliverable of a revision focused SWG SHALL be a revision of the candidate Standard for consideration by the membership for adoption.
 
 In all cases, the SWG Charter shall provide a basic timeline plan for their activities.
 ////
@@ -147,7 +154,9 @@ This section also includes a preliminary schedule of activities. For example, an
 === Initial Deliverables
 
 ////
-Describe the initial Standard(s) to be developed by the SWG.
+There shall be two deliverables:
+•	Points of Interest (POI) Information Model and JSON Encoding Specification version 1.0.
+•	POI Standard Users Guide
 ////
 
 === Additional SWG Tasks
