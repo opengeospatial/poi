@@ -120,23 +120,23 @@ If processing change requests and performing a revision to an existing Standard,
 If processing a draft submission of a specification developed outside the OGC process, a clear statement of the relationship to the existing Standards baseline including statements related to overlap (if any) with existing OGC Standards functionality, harmonization issues, and so forth. This information is provided to allow a focus of the discussion on criteria for considering any new solution that may be incompatible with older ones, overlaps existing functionality in the current baseline, and criteria for either deprecating older solutions, or simultaneously endorsing more than one option.
 ////
 
-=== What is Out of Scope?
+== What is Out of Scope?
 
 ////
 A short description of any activities that will be out of scope for the SWG. For example, a SWG may limit consideration of CRPs after a specified date or milestone.
 ////
 
-=== Specific Existing Work Used as Starting Point
+== Specific Existing Work Used as Starting Point
 
 The PoI SWG will use the prior draft PoI encoding specification as its starting point.
 
-=== Is This a Persistent SWG
+== Is This a Persistent SWG
 
 [x] YES
 
 [ ] NO
 
-=== When can the SWG be Inactivated
+== When can the SWG be Inactivated
 
 ////
 If this is not a persistent SWG, please define the criteria for determining when the SWG can be inactivated and the project archived. Please note that completion and archiving ensures that all files, wikis, emails, and so forth are archived and available for future viewing and use.
