@@ -93,22 +93,23 @@ These advantages will offer new value across many use cases.
 The PoI SWG shall review  and, if deemed appropriate, edit and expand upon the draft specification previously begun in this SWG with a special emphasis on ways to modernize and adopt the most current OGC practices, industry conventions and developer tools to define an information model and data encoding(s).
 
 The items that need to be addressed by the SWG include:
-1.	Update to conform to the latest OGC document directives. While not mandated for an encoding specification the SWG will conform to the Modular Specifications Policy  as appropriate.
-2.	Add a JSON encoding with particular attention paid to support ways to build resilient and scalable PoI architectures including but not limited to DGGS and OGC APIs
-4.	Provide an abstract and/or conformance  test suite.
-5.	Validate all schemas and examples.
-6.	Prepare and publish a user guide in compliance with OGC policies.
-7.	Study the interactions between service model and data encoding approaches to POI and gazetteer functions.
-8.	Address any other technical and/or editorial issues that arise during the review period.
+
+.	Update to conform to the latest OGC document directives. While not mandated for an encoding specification the SWG will conform to the Modular Specifications Policy  as appropriate.
+.	Add a JSON encoding with particular attention paid to support ways to build resilient and scalable PoI architectures including but not limited to DGGS and OGC APIs
+.	Provide an abstract and/or conformance  test suite.
+.	Validate all schemas and examples.
+.	Prepare and publish a user guide in compliance with OGC policies.
+.	Study the interactions between service model and data encoding approaches to POI and gazetteer functions.
+.	Address any other technical and/or editorial issues that arise during the review period.
 
 Change requests and comments submitted through GitHub as well as through traditional processes identified in the OGC Policy and Procedures shall be discussed and addressed by the SWG. 
 
 NOTE: For a SWG focused on revisions to an existing adopted Standard, the SOW should include a statement that the SWG will collect all outstanding Change Request Proposals (CRPs), evaluate each of the proposals, and make edits to the Standard based on CRPs and related decisions of the SWG membership. The SWG, at their discretion, may also ask the membership for any additional change requests that have not been previous submitted. Again, the final deliverable of a revision focused SWG SHALL be a revision of the candidate Standard for consideration by the membership for adoption.
 
 In all cases, the SWG Charter shall provide a basic timeline plan for their activities.
-////
 
-=== Statement of relationship of planned work to the current OGC Standards baseline
+
+== Statement of relationship of planned work to the current OGC Standards baseline
 
 ////
 This section describes the relationship of the proposed standards activity to the existing Standards baseline. For the 3 cases:
@@ -127,9 +128,7 @@ A short description of any activities that will be out of scope for the SWG. For
 
 === Specific Existing Work Used as Starting Point
 
-////
-This section provides reference information relevant to the work of the SWG. For example, a document reference for a draft submission or a list of CRPs for a SWG focused on revision to an adopted specification.
-////
+The PoI SWG will use the prior draft PoI encoding specification as its starting point.
 
 === Is This a Persistent SWG
 
@@ -143,21 +142,11 @@ This section provides reference information relevant to the work of the SWG. For
 If this is not a persistent SWG, please define the criteria for determining when the SWG can be inactivated and the project archived. Please note that completion and archiving ensures that all files, wikis, emails, and so forth are archived and available for future viewing and use.
 ////
 
-== Description of deliverables
+== Description of Deliverables
 
-////
-This section describes what the deliverables will be for this SWG activity. Deliverables could be a revision to an existing Standard, including revisions to schemas. A deliverable could also be a best practices document.
-
-This section also includes a preliminary schedule of activities. For example, an RFC focused SWG schedule would provide a plan and schedule that includes the start date, target date for release of the candidate Standard for public review, date for consolidation of comments, date for edits to document based on comments, and a final target date for making a recommendation to the Membership. This information will be made public and will also be used as input to a RoadMap for the document. Therefore, the more detail the better.
-////
-
-=== Initial Deliverables
-
-////
 There shall be two deliverables:
-•	Points of Interest (POI) Information Model and JSON Encoding Specification version 1.0.
-•	POI Standard Users Guide
-////
+•	Points of Interest (PoI) Information Model and JSON Encoding Specification version 1.0, and
+•	PoI Standard Users Guide
 
 === Additional SWG Tasks
 
@@ -173,11 +162,7 @@ Describe each additional Standard to be developed by the SWG as an additional ta
 
 == Anticipated Audience / Participants
 
-////
-Description of the target participants in this SWG. For example, if the SWG were focused on a candidate spatial query language standard: Those involved in the design, development, implementation, or use of elements listed above in "Scope of the Work".  This includes search service providers, prospective users of search services exposed as XML, information architects and bibliographic, metadata, and content provider.
-
-This is not meant as a limiting statement but instead is intended to provide guidance to interested potential participants as to whether they wish to participate in this SWG.
-////
+The target audiences for this SWG and the specification include any organization that has requirements for compiling, sharing, analyzing, publishing or providing PoI data on a public, private or commercial basis. Such organizations include providers of navigation data, business information, health data, emergency response data, real estate data, historical place names, and government agencies.
 
 == Domain Working Group Endorsement
 
@@ -189,9 +174,7 @@ The SWG will list all Domain Working Groups (DWGs) in which the SWG formation wa
 
 === Collaboration
 
-////
-Describe the work environment of the SWG, including the use of GitHub or GitLab.
-////
+The PoI SWG will perform its work in public in a GitHub repository operated by the PoI SWG.
 
 === Similar or Applicable Standards Work (OGC and Elsewhere)
 
