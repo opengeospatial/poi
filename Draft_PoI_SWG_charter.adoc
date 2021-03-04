@@ -15,7 +15,7 @@
 |===
 |{set:cellbgcolor:#FFFFFF}
 |[big]*Open Geospatial Consortium*
-|Submission Date: <yyyy-mm-dd>
+|Submission Date: <2021-03-04>
 |Approval Date:   <yyyy-mm-dd>
 |Internal reference number of this OGC(R) document:    21-012
 |Category: OGC(R) Standards Working Group Charter
@@ -38,7 +38,7 @@
 
 To: OGC members & interested parties
 
-A dormant OGC Standards Working Group is being rechartered. The OGC members listed below propose to restart the Points of Interest (POI) Standards Working Group.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
+A dormant OGC Standards Working Group is being rechartered. The OGC members listed below propose to restart the Points of Interest (PoI) Standards Working Group.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
 
 The SWG name, statement of purpose, scope, list of deliverables, audience, and language specified in the proposal will constitute the SWG's official charter. Technical discussions may occur no sooner than the SWG's first meeting.
 
@@ -61,7 +61,7 @@ Please feel free to forward this announcement to any other appropriate lists. Th
 
 == Purpose of the Standards Working Group
 
-The purpose of the POI SWG is to produce a version 1.0 encoding standard of points of interest data that includes an abstract data model and JSON implementations of that data model.
+The purpose of the PoI SWG is to produce a version 1.0 encoding standard of points of interest data that includes an abstract data model and JSON implementations of that data model.
 
 Upon completion of the draft, the SWG will verify compliance with the OGC Baseline.
 
