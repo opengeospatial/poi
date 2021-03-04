@@ -38,7 +38,7 @@
 
 To: OGC members & interested parties
 
-A dormant OGC Standards Working Group is being rechartered. The OGC members listed below propose to restart the POI Standards Working Group.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
+A dormant OGC Standards Working Group is being rechartered. The OGC members listed below propose to restart the Points of Interest (POI) Standards Working Group.  The SWG proposal provided in this document meets the requirements of the OGC Technical Committee (TC) Policies and Procedures.
 
 The SWG name, statement of purpose, scope, list of deliverables, audience, and language specified in the proposal will constitute the SWG's official charter. Technical discussions may occur no sooner than the SWG's first meeting.
 
@@ -66,12 +66,12 @@ The purpose of the POI SWG is to produce a version 1.0 encoding standard of poin
 Upon completion of the draft, the SWG will verify compliance with the OGC Baseline.
 
 === Definition of Points of Interest
-A “point of interest” (PoI) is a location for which information is available. A PoI can be as simple as a set of coordinates, a name and a unique identifier, or more complex such as a three-dimensional model of a building with names in multiple languages information about opening and closing hours and a civic address.
+A “point of interest” (PoI) is a location for which information is available. A PoI can be as simple as a set of coordinates, a name and a unique identifier, or more complex such as a three-dimensional model of a building with names in multiple languages information about opening and closing hours, and a civic address.
 
 === PoI Use Cases
-There are numerous use cases for PoI. They include location-based social networking,games, assessments of gaps or needs, mapping and navigation systems.
+There are numerous use cases for PoI. They include location-based social networking, games, assessments of gaps or needs, mapping and navigation systems, etc.
 
-End users may search databases of PoIs to identify properties for sale, financial institutions, accommodations, retail shops, or  transportation. There are also numerous ways the public sector can use PoI. For example, government agencies can provide information to citizens about services and locations by publishing their PoI datasets.
+End users may search databases of PoIs to identify properties for sale, financial institutions, accommodations, retail shops, or transportation. There are also numerous ways the public sector can use PoI data. For example, government agencies can provide information to citizens about services and locations by publishing their PoI datasets.
 
 == Business Value Proposition
 
@@ -79,7 +79,7 @@ There are many advantages to standardizing PoI.
 
 The first goal of the PoI standard is *interoperable PoI data and systems.* Complying with this standard will permit systems that populate a PoI database regardless of authoring platform or application, to do so without transcoding, delays or costs that are incurred when data is compiled from many different contributors using proprietary formats.
 
-Further, with a standard encoding, PoIs can be stored in open, non-proprietary formats and technology providers can focus on the competitive advantages.
+Further, with a standard encoding, PoIs can be stored in open, non-proprietary formats and technology providers can focus on their respective competitive advantages.
 
 When PoI publishers support this PoI standard, they will be able to make available PoI data and to transmit the data to the *applications of the user's choice,* regardless of devices, and thereby focus on the *value of the data*, not the development and maintenance of proprietary applications or interfaces.
 
@@ -91,14 +91,14 @@ Finally, as a result of higher confidence in PoI data quality, validity and secu
 
 == Scope of Work
 
-The PoI SWG shall review  and, if deemed appropriate, edit and expand upon the draft specification previously begun in this SWG with a special emphasis on ways to modernize and adopt the most current OGC practices, industry conventions and developer tools to define an information model and data encoding(s).
+The PoI SWG shall review  and, if deemed appropriate, edit and expand upon the draft specification previously begun in this SWG with a special emphasis on ways to modernize and adopt the most current OGC practices, industry conventions, and developer tools to define an information model and data encoding(s).
 
-The items may be addressed by the SWG include:
+The items may be addressed by the SWG include the following:
 
 .	Update to conform to the latest OGC document directives. While not mandated for an encoding specification, the SWG will conform to the Modular Specifications Policy  as appropriate.
 .	Add a JSON encoding with particular attention paid to support ways to build resilient and scalable PoI architectures.
 . Study PoI use cases to identify their needs for data granularity, resolution, metadata and other requirements and determine the relevance of these requirements to meeting the standard's goals.
-.	Address any technical and/or editorial issues that arise during the formal review period, per OGC policy.
+.	Address any technical and/or editorial issues that arise during the review period.
 . Address change requests and comments submitted to the SWG through GitHub.
 . Provide an abstract and/or conformance test suite.
 .	Validate all schemas and examples.
@@ -143,7 +143,7 @@ There shall be two deliverables:
 
 == Anticipated Audience / Participants
 
-The target audiences for this SWG and the specification include any organization that has requirements for creating, interacting, compiling, sharing, analyzing, publishing or providing PoI data on a public, private or commercial basis.
+The target audiences for this SWG and the specification include any organization that has requirements for creating, interacting, compiling, sharing, analyzing, publishing, or providing PoI data on a public, private or commercial basis.
 
 Such organizations include providers of navigation data, business information, health data, emergency response data, real estate data, historical place names, and government agencies.
 
