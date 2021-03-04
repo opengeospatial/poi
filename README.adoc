@@ -1,4 +1,4 @@
-About Points of Interest (POI) Repository
+About Points of Interest (PoI) Repository
 ===
 
 This repository contains files about and for the purpose of developing one or more POI specifications following the Open Geospatial Consortium processes and policies.
