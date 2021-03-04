@@ -98,15 +98,13 @@ The items may be addressed by the SWG include:
 .	Update to conform to the latest OGC document directives. While not mandated for an encoding specification, the SWG will conform to the Modular Specifications Policy  as appropriate.
 .	Add a JSON encoding with particular attention paid to support ways to build resilient and scalable PoI architectures.
 . Study PoI use cases to identify their needs for data granularity, resolution, metadata and other requirements and determine the relevance of these requirements to meeting the standard's goals.
-.	Address any technical and/or editorial issues that arise during the review period
+.	Address any technical and/or editorial issues that arise during the formal review period, per OGC policy.
+. Address change requests and comments submitted to the SWG through GitHub.
 . Provide an abstract and/or conformance test suite.
 .	Validate all schemas and examples.
 .	Prepare and publish a user guide in compliance with OGC policies.
 
-NOTE: is this statement redundant with #4 above? Change requests and comments submitted through GitHub as well as through traditional processes identified in the OGC Policy and Procedures shall be discussed and addressed by the SWG. 
-
-NOTE: Can we see/obtain guidance on a basic timeline plan for a SWG in similiar status (e.g., recharter, but potential to expand study of new use cases and requirements)?
-
+The PoI SWG anticipates completing the first deliverable, a Points of Interest (PoI) Information Model and JSON Encoding Specification version 1.0 standard, in 18 months. The SWG will then prepare the second deliverable, the POI User Guide, in the following 6 months.
 
 == Statement of relationship of planned work to the current OGC Standards baseline
 
