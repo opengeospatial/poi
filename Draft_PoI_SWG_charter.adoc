@@ -17,7 +17,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: <yyyy-mm-dd>
 |Approval Date:   <yyyy-mm-dd>
-|Internal reference number of this OGC(R) document:    YY-nnnrx
+|Internal reference number of this OGC(R) document:    21-012
 |Category: OGC(R) Standards Working Group Charter
 |Authors:   Marna Roos (AfriGIS), Christine Perey (OARC)
 |===
