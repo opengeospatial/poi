@@ -133,6 +133,7 @@ The PoI SWG will use the prior draft PoI encoding specification as its starting 
 == Description of Deliverables
 
 There shall be two deliverables:
+
 •	Points of Interest (PoI) Information Model and JSON Encoding Specification version 1.0, and
 •	PoI Standard Users Guide
 
