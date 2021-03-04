@@ -30,7 +30,7 @@
 [cols = "^", frame = "none", grid = "none"]
 |===
 |*Copyright notice*
-|Copyright (C) <year> Open Geospatial Consortium
+|Copyright (C) 2021 Open Geospatial Consortium
 |To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
 |===
 
@@ -77,54 +77,48 @@ End users may search databases of PoIs to identify properties for sale, financia
 
 There are many advantages to standardizing PoI.
 
-First, complying with a standard permits systems to populate a PoI database regardless of authoring platform or application, without transcoding, delays or costs that are incurred when data is compiled from many different contributors using proprietary formats.
+The first goal of the PoI standard is *interoperable PoI data and systems.* Complying with this standard will permit systems that populate a PoI database regardless of authoring platform or application, to do so without transcoding, delays or costs that are incurred when data is compiled from many different contributors using proprietary formats.
 
-Further, with a standard encoding, PoIs can be stored in non-proprietary formats and technology providers can focus on the competitive advantages of faster querying technologies.
+Further, with a standard encoding, PoIs can be stored in open, non-proprietary formats and technology providers can focus on the competitive advantages.
 
-When PoI publishers support a standard PoI format, they will be able to sell and transmit PoI data to the applications of the user's choice, regardless of devices, and thereby focus on the value of the dataset, not the development and maintenance of prorietary applications or interfaces.
+When PoI publishers support this PoI standard, they will be able to make available PoI data and to transmit the data to the *applications of the user's choice,* regardless of devices, and thereby focus on the *value of the data*, not the development and maintenance of proprietary applications or interfaces.
 
-Finally, when PoI are encoded in compliance with a standard, third parties are able to compile PoI sets from multiple, diverse sources, to compare PoI across sources and services, and to archive PoI without loss of accuracy, metadata or value.
+Furthermore, when data are encoded in compliance with the PoI standard, third parties are able to *create, interact with, and query* across platforms from multiple, diverse sources, to *compare, merge, and, at the end of life cycle, to archive*, PoI without loss of accuracy, metadata or value.
 
 These advantages will offer new value across many use cases.
 
+Finally, as a result of higher confidence in PoI data quality, validity and security, a widely adopted PoI standard will *increase use of and trust in PoI*, in general.
 
 == Scope of Work
 
 The PoI SWG shall review  and, if deemed appropriate, edit and expand upon the draft specification previously begun in this SWG with a special emphasis on ways to modernize and adopt the most current OGC practices, industry conventions and developer tools to define an information model and data encoding(s).
 
-The items that need to be addressed by the SWG include:
+The items may be addressed by the SWG include:
 
-.	Update to conform to the latest OGC document directives. While not mandated for an encoding specification the SWG will conform to the Modular Specifications Policy  as appropriate.
-.	Add a JSON encoding with particular attention paid to support ways to build resilient and scalable PoI architectures including but not limited to DGGS and OGC APIs
-.	Provide an abstract and/or conformance  test suite.
+.	Update to conform to the latest OGC document directives. While not mandated for an encoding specification, the SWG will conform to the Modular Specifications Policy  as appropriate.
+.	Add a JSON encoding with particular attention paid to support ways to build resilient and scalable PoI architectures.
+. Study PoI use cases to identify their needs for data granularity, resolution, metadata and other requirements and determine the relevance of these requirements to meeting the standard's goals.
+.	Address any technical and/or editorial issues that arise during the review period
+. Provide an abstract and/or conformance test suite.
 .	Validate all schemas and examples.
 .	Prepare and publish a user guide in compliance with OGC policies.
-.	Study the interactions between service model and data encoding approaches to POI and gazetteer functions.
-.	Address any other technical and/or editorial issues that arise during the review period.
 
-Change requests and comments submitted through GitHub as well as through traditional processes identified in the OGC Policy and Procedures shall be discussed and addressed by the SWG. 
+NOTE: is this statement redundant with #4 above? Change requests and comments submitted through GitHub as well as through traditional processes identified in the OGC Policy and Procedures shall be discussed and addressed by the SWG. 
 
-NOTE: For a SWG focused on revisions to an existing adopted Standard, the SOW should include a statement that the SWG will collect all outstanding Change Request Proposals (CRPs), evaluate each of the proposals, and make edits to the Standard based on CRPs and related decisions of the SWG membership. The SWG, at their discretion, may also ask the membership for any additional change requests that have not been previous submitted. Again, the final deliverable of a revision focused SWG SHALL be a revision of the candidate Standard for consideration by the membership for adoption.
-
-In all cases, the SWG Charter shall provide a basic timeline plan for their activities.
+NOTE: Can we see/obtain guidance on a basic timeline plan for a SWG in similiar status (e.g., recharter, but potential to expand study of new use cases and requirements)?
 
 
 == Statement of relationship of planned work to the current OGC Standards baseline
 
-////
-This section describes the relationship of the proposed standards activity to the existing Standards baseline. For the 3 cases:
-If defining a new Standard, a statement of the relationship to the existing Standards baseline including statements related to overlap (if any) with existing OGC Standards functionality, harmonization issues, and so forth.
+The SWG will examine whether the proposed standard maintains interoperability with the OGC Standards Baseline and assess whether extension of existing standards could achieve the goals of PoI SWG.
 
-If processing change requests and performing a revision to an existing Standard, a simple statement to this effect shall be made.
-
-If processing a draft submission of a specification developed outside the OGC process, a clear statement of the relationship to the existing Standards baseline including statements related to overlap (if any) with existing OGC Standards functionality, harmonization issues, and so forth. This information is provided to allow a focus of the discussion on criteria for considering any new solution that may be incompatible with older ones, overlaps existing functionality in the current baseline, and criteria for either deprecating older solutions, or simultaneously endorsing more than one option.
-////
+The SWG will also explore the need to develop additional PoI related standards to better support the use cases explored in the objectives as specified in the Scope of Work.
 
 == What is Out of Scope?
 
-////
-A short description of any activities that will be out of scope for the SWG. For example, a SWG may limit consideration of CRPs after a specified date or milestone.
-////
+This standard will not define or in any way be limited to a web services environment.
+
+This SWG will not define or become a PoI registry or library.
 
 == Specific Existing Work Used as Starting Point
 
@@ -136,23 +130,11 @@ The PoI SWG will use the prior draft PoI encoding specification as its starting 
 
 [ ] NO
 
-== When can the SWG be Inactivated
-
-////
-If this is not a persistent SWG, please define the criteria for determining when the SWG can be inactivated and the project archived. Please note that completion and archiving ensures that all files, wikis, emails, and so forth are archived and available for future viewing and use.
-////
-
 == Description of Deliverables
 
 There shall be two deliverables:
 •	Points of Interest (PoI) Information Model and JSON Encoding Specification version 1.0, and
 •	PoI Standard Users Guide
-
-=== Additional SWG Tasks
-
-////
-Describe each additional Standard to be developed by the SWG as an additional task after the deliverables from the initial charter have been completed. This section is blank in a new charter, then is populated with each task approval request per the OGC TC Policies and Procedures.
-////
 
 == IPR Policy for this SWG
 
@@ -162,44 +144,40 @@ Describe each additional Standard to be developed by the SWG as an additional ta
 
 == Anticipated Audience / Participants
 
-The target audiences for this SWG and the specification include any organization that has requirements for compiling, sharing, analyzing, publishing or providing PoI data on a public, private or commercial basis. Such organizations include providers of navigation data, business information, health data, emergency response data, real estate data, historical place names, and government agencies.
+The target audiences for this SWG and the specification include any organization that has requirements for creating, interacting, compiling, sharing, analyzing, publishing or providing PoI data on a public, private or commercial basis.
 
-== Domain Working Group Endorsement
-
-////
-The SWG will list all Domain Working Groups (DWGs) in which the SWG formation was discussed and/or chartered. If a DWG has specifically endorsed the formation of the SWG, then a statement of endorsement should be included.
-////
+Such organizations include providers of navigation data, business information, health data, emergency response data, real estate data, historical place names, and government agencies.
 
 == Other informative information about the work of this SWG
 
 === Collaboration
 
-The PoI SWG will perform its work in public in a GitHub repository operated by the PoI SWG.
+The PoI SWG will perform its work in public in a GitHub repository operated by OGC and managed by the PoI SWG chairs.
 
 === Similar or Applicable Standards Work (OGC and Elsewhere)
 
-////
-The following Standards and projects may be relevant to the SWG's planned work, although none currently provide the functionality anticipated by this committee's deliverables:
+==== World Wide Web Consortium POI Working Group
+The starting point for this implementation standard shall be prior work begun, but abandoned, by the W3C with OGC participation, described at http://www.w3.org/2010/POI/. This effort generally conforms to the ISO information model as described in 19112 (see below), although it has fewer required properties, and extends that model in some very important ways that reflect its focus on the architecture of the Web. In terms of similarities with the ISO and OGC standards, POI’s primary properties for gazetteer items are a name and a geographic identifier (location) that can be either direct, indirect, or both. POI expands upon this model with a mandatory URI-based globally unique ID, along with Categories and Links.
 
-OASIS BPEL
-IETF HTTP
+==== ISO 19112 – Spatial referencing by geographic identifiers
+ISO 19112 describes a basic framework for describing items in a gazetteer. It links “indirect” geographic references, which are things like addresses and town names, to “direct” references, which are geographic coordinates. In other words, ISO 19112 defines a standard information model for saying that a place is located at a specific position on the Earth. The standard goes far beyond that baseline though. Positions on the Earth can be described in any number of ways, such as by a rough bounding box, an exact polygon boundary, or a point in the center of the place. ISO 19112 also describes a host of metadata that can be associated with the place, such as the administrative agency responsible for the data, in what part of the world the data should be used, and in what time period it’s valid.
 
-The SWG intends to seek and if possible maintain liaison with each of the organizations maintaining the above works.
-////
+==== ISO 19115:2012 – Place identifier
+In ISO 19155, the identifier of a place is referred to as a Place Identifier (PI). A single “place” may be identified using several separate Place Identifiers.
+
+Place descriptions are used for information retrieval. In reality, those identifiers often refer to the same place. Currently these relationships are difficult for machines to correctly distinguish, which impedes the discovery and retrieval of information. The conceptual architecture and reference model defined in ISO 19155 provides a mechanism for solving these problems.
+
+When implemented, this architecture would enable the access and sharing of place descriptions using the Place Identifier as the standardized method.
+
+Within the reference model, place descriptions are defined using a PI. A PI consists of a reference system (RS), a value, and the valid temporal period of that value.
 
 === Details of first meeting
 
-////
-Example:
-The first meeting of the SWG will be held by telephone conference call at 10AM EDT on 1 October 2007. Call-in information will be provided to the SWG's e-mail list and on the portal calendar in advance of the meeting.
-////
+The first meeting of the SWG will be held by telephone conference call at 11 AM EDT on 24 March 2021. Call-in information will be provided to the SWG's e-mail list and on the portal calendar in advance of the meeting.
 
 === Projected on-going meeting schedule
 
-////
-Example:
-The work of the SWG will be carried out primarily by email and conference calls, possibly every two weeks, with face-to-face meetings perhaps at each of the OGC TC meetings.
-////
+The work of the SWG will be carried out primarily by email and conference calls, every two weeks, with possible face-to-face meetings at each of the OGC member meetings.
 
 === Supporters of this Charter
 
@@ -207,14 +185,26 @@ The following people support this proposal and are committed to the Charter and 
 
 |===
 |Name |Organization
-| |
+|Marna Roos | AfriGIS
+|Christine Perey | Open AR Cloud (PEREY Research & Consulting)
+|Felix Cheung | PlaceKey
+|Matthew Purss | Panagea Innovations
+|name here | organization here
+
 |===
 
 === Conveners
 
-////
-Name of individual(s) who started the SWG process. Could be the lead for an RFC submission, an OGC staff person, or an individual who believes it is time for a revision to an adopted Standard.
-////
+|===
+|Name |Organization
+|Marna Roos | AfriGIS
+|Christine Perey | Open AR Cloud (PEREY Research & Consulting)
+|Felix Cheung | PlaceKey
+|Matthew Purss | Panagea Innovations
+|name here | organization here
+
+
+|===
 
 == References
 
