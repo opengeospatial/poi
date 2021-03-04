@@ -19,7 +19,7 @@
 |Approval Date:   <yyyy-mm-dd>
 |Internal reference number of this OGC(R) document:    YY-nnnrx
 |Category: OGC(R) Standards Working Group Charter
-|Authors:   <Marna Roos, Christine Perey>
+|Authors:   Marna Roos (AfriGIS), Christine Perey (OARC)
 |===
 
 [cols = "^", frame = "none"]
