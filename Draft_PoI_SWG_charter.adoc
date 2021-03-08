@@ -161,6 +161,9 @@ The starting point for this implementation standard shall be prior work begun, b
 ==== Schema.org/Place
 Place is a Schema.org type for entities that have a somewhat fixed, physical extension. In addition to the generic profile for places, fields and metadata for more specific place types, such as accommodation, administrative area, civic structure, landform, landmarks or historical buildings, local businesses, residence, tourist attraction and tourist destination, have been published.
 
+====  Spatial Data on the Web Best Practices
+The Spatial Data on the Web Best Practices document published as an OGC Technical Note jointly by the OGC and W3C, https://www.w3.org/TR/sdw-bp/ advises on best practices related to the publication of spatial data on the Web; the use of Web technologies as they may be applied to location. The best practices are intended for practitioners, including Web developers and geospatial experts, and are compiled based on evidence of real-world applications. These best practices suggest a significant change of emphasis from traditional Spatial Data Infrastructures by adopting an approach based on general Web standards.
+
 ==== ISO 19112 – Spatial referencing by geographic identifiers
 ISO 19112 describes a basic framework for describing items in a gazetteer. It links “indirect” geographic references, which are things like addresses and town names, to “direct” references, which are geographic coordinates. In other words, ISO 19112 defines a standard information model for saying that a place is located at a specific position on the Earth. The standard goes far beyond that baseline though. Positions on the Earth can be described in any number of ways, such as by a rough bounding box, an exact polygon boundary, or a point in the center of the place. ISO 19112 also describes a host of metadata that can be associated with the place, such as the administrative agency responsible for the data, in what part of the world the data should be used, and in what time period it’s valid.
 
@@ -205,6 +208,8 @@ The following people support this proposal and are committed to the Charter and 
 |Matthew Purss | Panagea Innovations
 |Kyoung-sook Kim | AIST
 |Sisi Zlatanova | University of New South Wales
+|Jeff Harrison | US Army Geospatial Center
+
 
 
 |===
