@@ -195,6 +195,9 @@ The following people support this proposal and are committed to the Charter and 
 |Felix Cheung | PlaceKey
 |Matthew Purss | Panagea Innovations
 |Clemens Portele | Interactive Instruments
+|Nazih Fino | Global Nomad
+|Jan-Erik Vinje | Open AR Cloud
+|Timo Ruohomaki | Forum Virium Helsinki Oy
 
 |===
 
