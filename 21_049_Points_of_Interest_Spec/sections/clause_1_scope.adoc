@@ -3,3 +3,110 @@
 ====
 Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.
 ====
+
+
+This document describes a data model and #XML# footnote:xml[Are we going to bother with an XML Schema or move straight to JSON?] syntax for representing information about points of interest (POI).
+
+In the most broad terms, a "point of interest" is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three dimensional model of a building with names in various languages, information about open and closed hours, and a civic address. POI data has many uses including navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers.
+
+POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.
+
+To achieve these goals, this document describes a generic data model that may be instantiated in a variety of serializations, including #XML# footnote:xml[], JSON and RDFfootnote:rdf[Are we going to specify an RDF encoding?].
+
+Here is an example of a simple POI serialized in #XML# footnote:xml[]:
+
+----
+
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<poi id="http://www.rajsingh.org/pois/45343489">
+<label term="primary">
+<value>Boston</value>
+</label>
+<description term="source" href="http://en.wikipedia.org/wiki/Boston">
+<value>Boston is the capital of and largest city in Massachusetts, and is one of the oldest
+  cities in the United States. The largest city in New England, Boston is regarded as the
+  unofficial "Capital of New England" for its economic and cultural impact on the entire
+  New England region. The city proper had a population of 617,594 according to the 2010
+  U.S. Census.
+</value>
+<author id="http://en.wikipedia.org" term="publisher" type="text/plain">
+  <value>Wikipedia</value>
+</author>
+</description>
+<category term="city" scheme="http://www.usgs.gov/placetypes">
+<value>seat of a first-order administrative division</value>
+</category>
+<link term="canonical" href="http://www.rajsingh.org/pois/45343489.xml" 
+	type="text/xml" scheme="http://www.iana.org/assignments/link-relations/link-relations.xml"/>
+<link term="related" href="http://en.wikipedia.org/wiki/Boston" 
+	type="text/html" scheme="http://www.iana.org/assignments/link-relations/link-relations.xml"/>
+<link term="related" href="http://www.geonames.org/maps/google_42.358_-71.06.html" 
+	type="text/html" scheme="http://www.iana.org/assignments/link-relations/link-relations.xml"/>
+<location>
+<point term="centroid">
+  <Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+	<posList>42.358 -71.06</posList>
+  </Point>
+</point>
+</location>
+</poi>
+
+----
+
+Here is an example of a simple POI serialized in #JSON# footnote:json[What are we missing in this JSON schema representation?]:
+
+----
+{
+	"poi_id": {
+		"value": "45343489",
+		"href": "http://www.rajsingh.org/pois/45343489"
+	},
+	"label": {
+	    "type": "primary",
+		"value": "Boston"
+	},
+	"description": {
+	    "type": "source",
+		"value": "Boston is the capital of and largest city in Massachusetts, and is one of the oldest cities in the United States. The largest city in New England, Boston is regarded as the unofficial "Capital of New England" for its economic and cultural impact on the entire New England region. The city proper had a population of 617,594 according to the 2010 U.S. Census.",
+		"href": "http://en.wikipedia.org/wiki/Boston",
+		"author": "Wikipedia"
+	},
+	"category": {
+		"type": "city",
+		"value": "seat of a first-order administrative division",
+		"href": "http://www.usgs.gov/placetypes"
+	},
+	"links": [
+		{
+			"href": "http://www.rajsingh.org/pois/45343489.json",
+			"rel": "canonical",
+			"type": "application/json",
+			"title": "Canonical POI Reference",
+			"hreflang": "en"
+		},	
+		{
+			"href": "http://en.wikipedia.org/wiki/Boston",
+			"rel": "related",
+			"type": "text/html",
+			"title": "Wikipedia Reference",
+			"hreflang": "en"
+		},	
+		{
+			"href": "http://www.geonames.org/maps/google_42.358_-71.06.html",
+			"rel": "related",
+			"type": "text/html",
+			"title": "Map of Boston",
+			"hreflang": "en"
+		}
+	],
+	"location": {
+		"geometry": {
+    		"type": "Point",
+    		"coordinates": [42.358, -71.06]
+  		},
+	}
+}
+
+
+----
+
