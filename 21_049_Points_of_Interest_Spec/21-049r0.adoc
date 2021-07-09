@@ -5,7 +5,7 @@
 :status: draft
 :committee: technical
 :draft: 3.0
-:external-id: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
+:external-id: http://www.opengis.net/doc/IS/poi/1.0
 :docnumber: 21-049
 :received-date: 2029-03-30
 :issued-date: 2029-03-30
@@ -15,14 +15,14 @@
 :docsubtype: Interface
 :keywords: ogcdoc, OGC document, poi, points of interest
 :submitting-organizations: Organization One; Organization Two
-:docfile: document.adoc
+:docfile: 21-049r0.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf
 :local-cache-only:
 :data-uri-image:
-:pdf-uri: ./document.pdf
-:xml-uri: ./document.xml
-:doc-uri: ./document.doc
+:pdf-uri: ./21-049r0.pdf
+:xml-uri: ./21-049r0.xml
+:doc-uri: ./21-049r0.doc
 :edition: 1.0
 
 ////

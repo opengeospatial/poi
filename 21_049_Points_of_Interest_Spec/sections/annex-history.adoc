@@ -4,5 +4,7 @@
 [width="90%",options="header"]
 |===
 |Date |Release |Editor | Primary clauses modified |Description
-|2021-06-17 |0.1 |Matthew Purss |all |initial version
+|2021-06-17 |0.0.1 |Matthew Purss |all |initial version
+|2021-07-08 |0.0.1 |Matthew Purss |Clause 1 | initial scope text inserted from original POI draft standard
+|2021-07-09 |0.0.1 |Matthew Purss |Clause 4 | initial terms inserted from original POI draft standard (and reformatted to meet formal definition requirements)
 |===
