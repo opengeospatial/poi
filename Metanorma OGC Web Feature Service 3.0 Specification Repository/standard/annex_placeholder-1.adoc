@@ -1,4 +1,0 @@
-[[annex-a]]
-[appendix]
-:appendix-caption: Annex
-== Placeholder for Title of this Annex
