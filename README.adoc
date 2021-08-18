@@ -9,5 +9,4 @@ The repo contains files from the following sources:
 2. https://github.com/opengeospatial/templates[OGC Templates GitHub Repository]
 This is the origin of one file at the top level of this repo, the https://github.com/opengeospatial/poi/blob/main/Draft_PoI_SWG_charter.adoc[Draft PoI SWG charter template]
 
-3. https://github.com/metanorma/ogc-wfs/tree/afad7f2cfca77ba67c5b82dee68124dd077b9b4f[Metanorma OGC Web Feature Service 3.0 Specification Repository]
-In order to serve as a template for the PoI standard(s) to be developed and maintained in compliance with the Metanorma tools and workflow, the draft Metanorma OGC WFS 3.0 specification files were added to the repo after being modified extensively (e.g., global replacement of WFS with "POI"). There remain files and sections of text which refer to WFS 3.0 which, as the draft PoI specification develops, will be removed and replaced with text pertaining to POI.
+3. A folder containing the template for the new POI draft specification.
