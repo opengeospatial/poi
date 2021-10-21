@@ -1,0 +1,5 @@
+= Submitted Documents
+
+This repository is a bucket for any form of document you wish to share with the SWG. It was created to support those who are not comfortable with Asciidoc and for documents which cannot be adequately captured in Asciidoc.
+
+Please use a file name which is descriptive of the content.
