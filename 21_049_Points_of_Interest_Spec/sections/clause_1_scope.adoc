@@ -1,9 +1,5 @@
+[[scope-section]]
 == Scope
-[NOTE]
-====
-Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.
-====
-
 
 This document describes a data model and #XML# footnote:xml[Are we going to bother with an XML Schema or move straight to JSON?] syntax for representing information about points of interest (POI).
 

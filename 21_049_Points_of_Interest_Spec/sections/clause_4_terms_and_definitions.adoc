@@ -1,11 +1,13 @@
-== Terms and definitions
+== Terms and Definitions
+This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
 
-This document uses the terms defined in Sub-clause 5.3 of <<OGC06-121r9>>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word "`shall`" (not "`must`") is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
+This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
 
 For the purposes of this document, the following additional terms and definitions apply.
+
 ////
 [[boundary]]
-=== boundary
+boundary::
 
 set that represents the limit of an entity
 
@@ -18,25 +20,22 @@ that represent those points. In other domains, the term is used metaphorically t
 
 
 [[coordinate]]
-=== coordinate
+coordinate::
 sequence of n numbers designating the _position_ of a _point_ in n-dimensional space 
 
 [.source]
 <<ISO19111>>
 #ISO19111,clause xxxx - get definition clause#
 
-
 [[coordinate_set]]
-=== coordinate set
+coordinate set::
 individual parts of a coordinate
 
 [example]
 coordinate pair of latitude and longitude values.
 
-
 [[coordinate_reference_system]]
-=== coordinate reference system
-
+coordinate reference system::
 _coordinate system_ that is related to an object by a _datum_ (<<datum>>)
 
 NOTE: Geodetic and vertical datums are referred to as reference frames.
@@ -47,18 +46,15 @@ In planetary applications, geodetic and vertical reference frames may be applied
 [.source]
 <<ISO19111,clause 3.1.9>>
 
-
 [[coordinate_system]]
-=== coordinate system
-
+coordinate system::
 set of mathematical rules for specifying how _coordinates_ are to be assigned to _points_
 
 [.source]
 <<ISO19111,clause 3.1.11>>
 
-
 [[datum]]
-=== datum
+datum::
 alt:[reference frame]
 
 parameter or set of parameters that realize the _positions_ of the origin, the scale, and the orientation of a _coordinate system_ (<<coordinate_system>>)
@@ -66,17 +62,12 @@ parameter or set of parameters that realize the _positions_ of the origin, the s
 [.source]
 <<ISO19111,clause 3.1.15>>
 
-
-
 [[geolocation]]
-=== geolocation
+geolocation::
 identification of the real world geographic _location_ of an object
 
-
-
 [[location]]
-=== location
-
+location::
 particular _place_ or _position_
 
 NOTE: A _location_ identifies a geographic _place_.
@@ -94,10 +85,8 @@ NOTE: When a _POI_ physically moves it is understood to have acquired a new _loc
 [.source]
 <<ISO19112,clause 3.1.3>>
 
-
 [[place]]
-=== place
-
+place::
 semantic description of a _location_
 
 NOTE: A _place_ is a human construct which typically has a coarse level of spatial granularity. 
@@ -115,21 +104,16 @@ NOTE: A _place_ typically contains multiple _POIs_ and can also be coterminous w
 [example]
 Countries, states, counties, districts, neighborhoods and postal codes or telephone area codes are all places. 
 
-
-
-
 [[point]]
-=== point
+point::
 0-dimensional geometric primitive, representing a _position_ 
 
 [.source]
 <<ISO19107>>
 #ISO19107,clause xxxx - get definition clause#
 
-
-
 [[point_of_interest]]
-=== point of interest
+point of interest::
 alt:[POI]
 
 _location_ where one can find a _place_, product or service
@@ -143,20 +127,16 @@ NOTE: A _POI_ does not exclude the labeling, identification, and tracking of per
 [example]
 destination of a route; such as, Boston
 
-
-
 [[position]]
-=== position
+position::
 data type that describes a _point_ or _geometry_ potentially occupied by an object or person
 
 [.source]
 <<ISO19133>>
 #ISO19133,clause xxxx - get definition clause#
 
-
-
 [[route]]
-=== route
+route::
 sequence of _links_ and / or partial _links_ that describe a _path_, usually between two _positions_, within a _network_
 ////
 [def from OGC API Routes spec ]

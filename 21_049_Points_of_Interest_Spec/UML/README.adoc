@@ -1,3 +1,19 @@
-Store UML content in this directory. Feel free to use any organizational scheme that you like.
+= UML
 
-Figures derived from UML diagrams should be placed in the "figures" folder.
+This directory contains the UML models(s) and resources generated from those models.
+
+== The following Enterprise Architect files are included:
+
+. POI_Model-original.eapx: The original UML model from pre-2014
+. ISOTC211_HM-20211018.eapx: The ISO TC211 Harmonized Model, downloaded October 18, 2021
+. POI_model-20211019.eapx: The updated POI UML model built on the TC211 Harmonized Model.
+
+== Figures
+
+Figures have been exported from the model and stored under the `/Figures` directory. All figures are in png format.
+
+== Data Dictionary
+
+The `/Data-Dictionary` directory provides a text representation of the UML model. The following files are available:
+
+. POI_Model-New.rtf: This file is an RTF formatted report generated using the "Data Modeling Report" template in the Enterprise Architect file. It include the figures, definition of each class as well as all attributes and associations.
