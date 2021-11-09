@@ -1,8 +1,19 @@
-.Preface
+[abstract-section]
+[big]*i.    Abstract*
+
+<Insert Abstract Text here>
+
+[big]*ii.    Keywords*
+
+The following are keywords to be used by search engines and document catalogues.
+
+ogcdoc, OGC document, poi, gazetteer, pointsofinterest, placesofinterest 
+
+[big]*iii.   Preface*
 
 [NOTE]
 ====
-Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.
+Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. 
 ====
 
 ////
@@ -27,8 +38,31 @@ The main task of technical committees is to prepare International Standards. Dra
 Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. ISO shall not be held responsible for identifying any or all such patent rights.
 ////
 
-[abstract]
-== Abstract
+[big]*iv.    Security Considerations*
 
-<Insert Abstract Text here>
+//If no security considerations have been made for this Standard, use the following text.
+
+No security considerations have been made for this Standard.
+
+////
+If security considerations have been made for this Standard, follow the examples found in IANA or IETF documents. Please see the following example.
+“VRRP is designed for a range of internetworking environments that may employ different security policies. The protocol includes several authentication methods ranging from no authentication, simple clear text passwords, and strong authentication using IP Authentication with MD5 HMAC. The details on each approach including possible attacks and recommended environments follows.
+Independent of any authentication type VRRP includes a mechanism (setting TTL=255, checking on receipt) that protects against VRRP packets being injected from another remote network. This limits most vulnerabilities to local attacks.
+NOTE: The security measures discussed in the following sections only provide various kinds of authentication. No confidentiality is provided at all. This should be explicitly described as outside the scope....”
+////
+
+[big]*v.    Submitting organizations*
+
+The following organizations submitted this Document to the Open Geospatial Consortium (OGC):
+
+Organization name(s)
+
+[big]*vi.     Submitters*
+
+All questions regarding this submission should be directed to the editor or the submitters:
+
+|===
+|*Name* |*Affiliation*
+| |
+|===
 

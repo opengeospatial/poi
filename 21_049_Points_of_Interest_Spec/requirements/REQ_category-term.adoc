@@ -1,0 +1,6 @@
+[[req_core_category-term]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/category-term* 
+2+|A category must populate its term property. 
+|===

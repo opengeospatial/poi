@@ -2,21 +2,42 @@
 [[Bibliography]]
 == Bibliography
 
-[NOTE]
-.Example Bibliography (Delete this note).
-===============================================
-The TC has approved Springer LNCS as the official document citation type.
+* [[[BCP47]]], A. Phillips; M. Davis. Tags for Identifying Languages September 2009. IETF Best Current Practice.
 
-Springer LNCS is widely used in technical and computer science journals and other publications
+* [[[IRI]]], M. Duerst, M. Suignard. Internationalized Resource Identifiers (IRI). January 2005. Internet RFC 3987.
 
-* For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]
+* [[[ISO13249-3]]], Information technology — Database languages — SQL multimedia and application packages — Part 3: Spatial. International Organization for Standardization. ISO13249-3:2011. 2011.
 
-– Actual References:
+* [[[ISO19107]]], Geographic information — Spatial schema. International Organization for Standardization. 2003. ISO 19107:2003.
 
-[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)
+* [[[ISO19111]]], Geographic information — Spatial referencing by coordinates. International Organization for Standardization. 2007. ISO 19115:2007.
 
-[n] Web: Author Surname, A.: Title, http://Website-Url
+* [[[ISO19112]]], Geographic information. Spatial referencing by geographic identifiers. International Organization for Standardization. 2003. ISO 19112:2003.
 
-===============================================
+* [[[ISO19115]]], Geographic information — Metadata. International Organization for Standardization. 2003. ISO 19115:2003.
 
-* [[[OGC2015,OGCTB12]]], _OGC: OGC Testbed 12 Annex B: Architecture_ (2015).
+* [[[ISO19133]]], Geographic information — Location-based services — Tracking and navigation. International Organization for Standardization. 2005. ISO 19133:2005.
+
+* [[[ISO8601]]], Representation of dates and times. International Organization for Standardization. 2004. ISO 8601:2004.
+
+* [[[NIMA-TR8350-2]]], US National Imagery and Mapping Agency, "Department of Defense (DoD) World Geodetic System 1984 (WGS 84), Third Edition", NIMA TR8350.2, January 2000.
+
+* [[[RFC2046]]], N. Freed; N. Borenstein. Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types. November 1996. Internet RFC 2046.
+
+* [[[RFC2119]]], S. Bradner. Key words for use in RFCs to Indicate Requirement Levels. March 1997. Internet RFC 2119.
+
+* [[[RFC3986]]], T. Berners-Lee; R. Fielding; L. Masinter. Uniform Resource Identifier (URI): Generic Syntax. January 2005. Internet RFC 3986.
+
+* [[[RFC4087]]], M. Nottingham, R. Sayre. The Atom Syndication Format.. IETF RFC 4087 December 2005.
+
+* [[[RFC5545]]], B. Desruisseaux. Internet Calendaring and Scheduling Core Object Specification (iCalendar). September 2009. Internet RFC 5545.
+
+* [[[RFC6350]]], S. Perreault. vCard Format Specification. IETF RFC 6350 August 2011.
+
+* [[[RFC3066]]], H. Alvestrand. Tags for the Identification of Languages. IETF RFC 3066 January 2001.
+
+* [[[XML11]]], Eve Maler; et al. Extensible Markup Language (XML) 1.1 (Second Edition). 16 August 2006. W3C Recommendation.
+
+* [[[XMLBASE]]], Jonathan Marsh, Richard Tobin. XML Base (Second Edition). 28 January 2009. W3C Recommendation.
+
+* [[[XMLSCHEMA11-2]]], Henry S. Thompson; et al. W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes. 30 January 2009. W3C Working Draft. (Work in progress.)

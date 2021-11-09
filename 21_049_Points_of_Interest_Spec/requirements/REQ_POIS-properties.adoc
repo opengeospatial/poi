@@ -1,0 +1,6 @@
+[[req_core_pois-properties]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/pois-properties* 
+2+|A POIS object shall inherit the properties of a POIProperties object. 
+|===

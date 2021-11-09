@@ -1,0 +1,6 @@
+[[req_core_guid]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/guid* 
+2+|A POI shall have a globally unique identification property named id in the format of a URI. 
+|===

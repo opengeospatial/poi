@@ -1,10 +1,70 @@
-[obligation=informative]
-== Clauses not Containing Normative Material
+[poi_conceptual_model-section]
+== POI Conceptual Model (Informative)
 
-Paragraph
+=== Overview
 
-=== Clauses not containing normative material sub-clause 1
+This clause specifies the underlying POI conceptual model for which an encoding can be created. It defines the mandatory requirements for encoding and the necessary semantics of how that encoding should be interpreted. 
 
-Paragraph
+=== Core Conceptual Model
 
-=== Clauses not containing normative material sub-clause 2
+The Point of Interest data model consists of a **<<poi-definition,POI>>** object and a **<<pois-definition,POIS>>** grouping object. Each POI has a number of properties described in the **<<poiproperties-definition,POIProperties>>** object for capturing descriptive information, along with a **<<location-definition,Location>>** object describing its location and a **<<position-definition,Position>>** object describing its geometry and positional accuracy. In order to maximize the flexibility with which POI, POIs and their sub-entities can be described, each inherit its properties from a single common object. In practical terms, this allows properties such as update time, authorship, links and other categorizations to be described at multiple 
+levels of granularity within the data model.
+
+image::./figures/core.png[]
+
+The classes of the core data model are described in more detail below. 
+
+=== POI
+
+A POI is defined as having the following conceptual properties:
+
+*   a globally unique ID
+*   labels
+*   descriptions
+*   location
+*   tags/keywords/categories
+*   links to related information
+*   time
+*   authors
+*   rights
+*   metadata
+
+While a POI may be near meaningless without a label and location, from a computational perspective there are use cases in which any of these properties should be optional. Therefore, the only mandatory characteristic of a POI is that it have a globally unique identification property in the format of a URI.
+
+=== Labels and Descriptions
+
+Labels (place names) and descriptions are largely self-explanatory properties. A place may have multiple labels, as it may be known differently by different people, in different languages or in different times or contexts. Multiple descriptions are important for the same reasons.
+
+=== Location
+
+The most common way of expressing the location of a POI is as a point defined by latitude and longitude coordinates in decimal degrees. This specification enhances that basic definition, allowing a POI’s location to be determined by either a point, line, polygon or civic address. A POI may also use more than one location definition property to more clearly specify multiple locational concepts, such as a building’s address, boundary, centroid, and entrance. A POI is most useful when its location is well-known, but this is not always possible, so the model supports the ability to express location relative to other POIs. This feature may be used alone, or in addition to, an absolute location.
+
+=== Categories
+
+Tagging, or categorizing a POI is a common practice in wide use by personal navigation systems, government gazetteers such as the USGS Geographic Names Information System, and businesses like Yelp!. Therefore the POI specification supports structured categorization, where the identifying term comes from a dictionary - or registry of terms - and it also supports "free" tagging, where the identifying term is simply that - a word or phrase with no reference to a structured information model.
+
+=== Links
+
+Links to related information allow a POI reference content that may exist in external repositories, such as images, web pages, maps, reviews, 3D models, and even other POI data repositories.
+
+=== Time
+
+Time plays an important role as no place stays the same forever. A POI may have a start time and/or an end time. The POI data record (and also all its child properties) may also have start, end and last updated time stamps.
+
+=== Authors and Rights
+
+Identifying authors and licensing terms are important aspects of any information sharing system. These two are so important that they are separated from any more universal metadata definition system used by the following mechanism.
+ 
+=== Metadata
+
+Metadata and provenance is a such a broad, generic area of work that one approach could not work for all POIs. Therefore, if a POI contains metadata it must also define the metadata information model it uses.
+
+=== Property Inheritance
+
+In many cases, POI information is nested in a heirarchical system. Any property of a POI applies to all its child properties, unless that property is re-defined in the child. For example, if a POI has an author property of "A", and the POI has a description property of "D", the author of D is A, unless D has an author property itself. Then the author of D is whatever D defines it to be. One useful feature of inheritance is that if only one property of a POI has a different author, it is easy to express that fact precisely without adding a lot of duplicative author information to every property in the POI.
+
+=== POIS
+
+Multiple POIs may be grouped into a POIS object, which serves only as a container object such that a group of POIs can inherit properties - for example authorship, licensing or categorization. The POIS object is expected to be useful only as a dynamic aggregation mechanism when information is being shared between systems. It is not expected to be of any particular use as a way to permanently model POI information in a database.
+
+Following sections provide additional detail on the properties described above.

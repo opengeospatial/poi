@@ -1,0 +1,6 @@
+[[req_core_time-value]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/time-value* 
+2+|time must populate its value property. 
+|===

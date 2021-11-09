@@ -1,0 +1,6 @@
+[[req_core_link-href]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/link-href* 
+2+|A link must populate its href property. 
+|===

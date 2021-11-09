@@ -1,0 +1,6 @@
+[[req_core_pois-poi]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/pois-poi* 
+2+|A POIS object shall include zero or more POI objects. 
+|===

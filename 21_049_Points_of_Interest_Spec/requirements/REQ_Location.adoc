@@ -1,0 +1,6 @@
+[[req_core_location]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/location* 
+2+|A POI shall contain exactly one Location object. 
+|===

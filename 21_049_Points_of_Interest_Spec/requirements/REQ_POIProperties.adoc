@@ -1,0 +1,6 @@
+[[req_core_poiproperties]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/poiproperties* 
+2+|Serializations shall support the encoding of all mandatory and optional parameters of the POIProperties Class and meet all of the tabulated constraints and notes. 
+|===

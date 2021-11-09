@@ -1,0 +1,6 @@
+[[req_core_metadata-type]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/metadata-type* 
+2+|The type property must describe the content type of the content in the value property. 
+|===

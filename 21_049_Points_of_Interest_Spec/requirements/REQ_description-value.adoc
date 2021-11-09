@@ -1,0 +1,6 @@
+[[req_core_description-value]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/description-value* 
+2+|A description must populate its value property.  
+|===

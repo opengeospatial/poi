@@ -1,0 +1,6 @@
+[[req_core_label-value]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/label-value* 
+2+|A label must populate its value property. 
+|===

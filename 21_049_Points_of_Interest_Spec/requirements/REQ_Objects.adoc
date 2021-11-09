@@ -1,0 +1,6 @@
+[[req_core_objects]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/objects* 
+2+|A POI shall contain zero or more of the following objects: label; description; category; time; link; metadata. 
+|===
