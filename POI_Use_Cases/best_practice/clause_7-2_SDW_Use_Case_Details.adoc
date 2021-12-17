@@ -1,0 +1,223 @@
+== SDW Use Case Details
+
+[[use_case_detail_1]]
+=== Use Case 1
+
+This is really one of several future, but realistic, meteorological scenarios to aim at.
+
+National Hydro-Meteorological Services around the world are coordinated via the WMO (World Meteorological Organization), part of the United Nations system. WMO has the same status as ISO, and its standards and regulatory materials applies to all its 193 national meteorological services and are available in the six working languages ( عربي | 中文 | Fr | Ru | Es | En). WMO has embarked on a long-term (think a decade or so) program to update the global meteorological operational infrastructure. This is known as the WIS (WMO Information System). The global infrastructure also has aviation, oceanographic, seismic and other users. The WIS includes a global, federated, synchronized, geospatial catalog, envisaged to encompass all hydro-meteorological data and services. Currently several nodes are operational, cataloging mainly routinely exchanged observations and forecasts.
+
+Envisage an environmental scientist in Cambodia, researching the impact of deforestation in Vietnam as part of investigating the regional impacts of climate change. She submits her search keywords, in Cambodian, and receives responses indicating there is some data from the 1950s, printed in a 1960 pamphlet, in the Bibliothèque Nationale, a library in Paris, France, in French. She receives an abstract of some form that enables her to decide that the data are worth accessing, and initiates a request for a digital copy to be sent.
+
+She receives the pamphlet as a scanned image of each page, and she decides that the quantitative information in the paper is useful, so she arranges transcription of the tabular numerical data and their summary values into a digital form and publishes the dataset, with a persistent identifier, and links it to a detailed coverage extent, the original paper source, the scanned pages and her paper when it is published. She also incorporates scanned charts and graphs from the original pamphlet into her paper. Her organization creates a catalog record for her research paper dataset and publishes it in the WIS global catalog, which makes it also visible to the GEO System of Systems broker portal.
+
+[[use_case_detail_2]]
+=== Use Case 2
+
+        
+The http://jncc.defra.gov.uk/page-5230[Marine and Coastal Access Act 2009] allows for the creation of a type of Marine Protected Area (MPA), called a Marine Conservation Zone (MCZ). MCZs protect a range of nationally important marine wildlife, habitats, geology and geomorphology and can be designated anywhere in English and Welsh inshore and UK offshore waters.
+
+The designation of a MCZ is dependent on a detailed analysis of the marine environment which results in the definition of geometric areas where a given habitat type is deemed to occur and is published as a habitat map.
+
+Being a policy statement, it is important to be able to express the provenance of information that was used to compile the habitat map. Moreover, because the marine environment is always changing, it is important to express the time at which this information was collected.
+
+The information includes:
+
+*   acoustic survey
+*   video (from a video camera towed behind a survey boat)
+*   biota observations (based on what is observed in the video and from physical collection)
+*   particle size (sand/mud)
+*   water column data
+*   seabed character map: discrete seabed features and backscatter information (from sonar) to determine bottom type
+
+These information types are varied in type and size. In particular, the acoustic survey (e.g. side-scan sonar) is difficult to manage as these survey results can be many gigabytes in size and cover large areas. A way is needed to refer to just a small part of these coverage data sets that are relevant to a particular habitat zone 
+analysis.
+
+[[use_case_detail_3]]
+=== Use Case 3
+
+This use case is about the wildfire monitoring service of the National Observatory of Athens (NOA) as studied in the TELEIOS project. The wildfire monitoring service is based on the use of satellite images originating from the SEVIRI (Spinning Enhanced Visible and Infrared Imager) sensor on top of the Meteosat Second Generation satellites MSG-1 and MSG-2. Since 2007, NOA operates an MSG/SEVIRI acquisition station, and has been systematically archiving raw satellite images on a 5 and 15 minutes basis, the respective temporal resolutions of MSG-1 and MSG-2.
+
+The service active in NOA before TELEIOS can be summarized as follows:
+
+. The ground-based receiving antenna collects all spectral bands from MSG-1 and MSG-2 every 5 and 15 minutes respectively.
+. The raw datasets are decoded and temporarily stored in the METEOSAT Ground Station as wavelet compressed images.
+. A Python program manages the data stream in real-time by offering the following functionality:
+.. Extract and store the raw file metadata in an SQLite database. This metadata describes the type of sensor, the acquisition time, the spectral bands captured, and other related parameters. Such a step is required as one image comprises multiple raw files, which might arrive out-of-order.
+.. Filter the raw data files, disregarding non-applicable data for the fire monitoring scenario, and dispatch them to a dedicated disk array for permanent storage.
+.. Trigger the processing chain by transferring the appropriate spectral bands via FTP to a dedicated machine and initiating the following steps: (i) cropping the image to keep only the area of interest, (ii) georeferencing to the geodetic reference system used in Greece (HGRS 87), (iii) classifying the image pixels as "fire" or "non-fire" using appropriate algorithms, and finally (iv) exporting the final product to raster and vector formats (ESRI shapefiles).
+.. Dispatch the derived products to the disk array and additionally store them in a PostGIS database system.
+
+It would be interesting for NOA to see how to use the standards developed by this Working Group to achieve the following:
+
+* Improve the thematic accuracy of generated products.
+* Generate thematic maps by combining the generated products with other kinds of data such as: Corine Land Cover, the Administrative Geography of Greece, OpenStreetMap data and Geonames.
+
+This use case is further discussed in Real-Time Wildfire Monitoring Using Scientific Database and Linked Data Technologies. Some of the data used in the operational service is available separately.
+
+[[use_case_detail_4]]
+=== Use Case 4
+
+This use case was studied by the National Observatory of Athens (NOA) in the http://www.earthobservatory.eu/[TELEIOS] project. The burnt scar mapping service is dedicated to the accurate mapping of burnt areas in Greece after the end of the summer fire season, using Landsat 5 TM satellite images. The processing chain of this service is divided into three stages, each one containing a series of modules.
+
+The pre-processing stage is dedicated to (i) identification of appropriate data, downloading and archiving, (ii) georeferencing of the received satellite images, and (iii) cloud masking process to exclude pixels “contaminated” by clouds from the subsequent processing steps.
+
+The core processing stage comprises (i) a classification algorithm which identifies burnt and non-burnt sets of pixels, (ii) a noise removal process that is necessary to eliminate isolated pixels that have been classified wrongfully as burnt, and (ii) converting the raster intermediate product to vector format.
+
+Finally, the post-processing stage consists of (i) a visual refinement step to ensure product thematic accuracy and consistency, (ii) attribute enrichment of the product by overlaying the polygons with geoinformation layers and finally (iii) generation of thematic maps. It would be interesting for NOA to see where the standards to be developed in this Working Group could be used.
+
+[[use_case_detail_5]]
+=== Use Case 5
+
+This is a rather generic and broad use case, relevant to Google but clearly also relevant to anyone interested in machine processing of HTML referring to about locations and activities that take place at those locations. Local search providers spend much time and effort creating databases of local facilities, businesses and events.
+
+Much of this information comes from Web pages published on the public Web, but in an unstructured form. Previous attempts at harvesting this information automatically have met with only limited success. Current alternative approaches involve business owners manually adding structured data to dedicated portals. This approach, although clearly an improvement, does not really scale and there are clearly issues in terms of data sharing and freshness.
+
+The information of interest includes:
+
+* the facility's address;
+* the type of business/activity;
+* opening hours;
+* date, time and duration of events;
+* telephone, e-mail and Web site details.
+
+Complexities to this include multiple address standards, the differences between qualitative representations of place, and precise spatial co-ordinates, definitions of activities etc.
+
+Ultimately these Web pages should become the canonical source of local data used by all Web users and services.
+
+[[use_case_detail_6]]
+=== Use Case 6
+
+With the increasing availability of small, mobile location aware devices the requirement to identify a location human terms is becoming more important. While the determination of sensor in space to a high level of precision is a largely solved problem we are less able to express the location in terms meaningful to humans. The fact that the Bluetooth-LE tracker attached to my bag is at 51.4256853,-0.3317991,4.234500 is much less useful than the description, "Under your bed at home". At others times the location descriptions "24 Bridgeman Road, Teddington, TW11 8AH, UK" might be equally valid, as might "Teddington", "South West London", "England", "UK", "Inside", "Where you left it Yesterday", "Upstairs", "45 minutes from here" or "150 meters from the Post Office".
+
+A better understanding of how we describe places in human terms, the hierarchical nature of places and the fuzzy nature of many geographical entities will be needed to make the "Internet of Things" manageable. A new scale of geospatial analysis may be required using a reference frame based on the locations of individuals rather than a global spherical co-ordinate, allowing a location of your keys and their attached bluetooth tag to be described as "in the kitchen".
+
+[[use_case_detail_7]]
+=== Use Case 7
+
+This use case is for representing the perspective of a party that is interested in publishing data on the Web and wants to do it right with respect to the geographical component of the data. The point of this use case is that it would be good to remove barriers that stand in the way of more spatial data becoming available on the Web.
+
+A data publisher could have the following questions:
+
+. How should I publish vector data? What is the best encoding to use?
+. How should I publish raster data?
+. How do I make the CRS(s) known?
+. How do I make the spatial resolution/level of detail/accuracy known?
+. Which data publishing software has good support of geographical data types and geographical functions?
+. Which data publishing software has good performance when it comes to spatial operations on data?
+
+From the last two questions it follows that the WG could also be involved in enabling conformance testing and stimulating development of benchmarks for software.
+
+[[use_case_detail_8]]
+=== Use Case 8
+
+This use case is somewhat complementary to use case https://www.w3.org/TR/sdw-ucr/#PublishingGeographicalData[Publishing GeographicalD ata]. It takes the consumer perspective, specifically that of a developer of a Web application that should visualize data and allow some kind of user interaction. The hypothetical Web application has little or no prior knowledge about the data it will encounter on the Web, but should be able to do something meaningful with any spatial data that are encountered, like drawing data on a map or rendering the data in a 3D cityscape.
+
+The point of this use case is that in order for spatial data on the Web to be successful, supply and demand must be balanced to create a positive feedback loop. High quality data must be available in high quantities but those data must also be highly usable for experts as well as non-experts.
+
+A Web application developer could have the following questions:
+
+. How do I find geographical data on the Web?
+. How can I tell what kind of spatial data I will get? Raster or vector? 2D or 3D?
+. Which encoding of vector data can I expect?
+. Which encoding of raster data can I expect?
+. Can I get the data with coordinates that match the coordinate system of my map?
+. What is the spatial extent of this dataset/collection of resources/resource?
+. How can I filter data to get the most appropriate spatial representation of a resource/collection of resources?
+. How can I use spatial data on the Web without having to take a four year academic course first?
+. Which spatial operations does this SPARQL endpoint support?
+. Can I use spatial operations in federated queries?
+. How can I ensure responsiveness of my application (low wait times when accessing data)?
+      
+[[use_case_detail_9]]
+=== Use Case 9
+
+Note this use case shares characteristics with Publishing Cultural Heritage Data.
+
+A research endeavor that has just started tries to stimulate researchers in various fields of the humanities to make research data available in such a way that the data are and remain usable by other researchers, and that the data may be used for purposes other than those envisaged by the original researcher. The emphasis lies on spatiotemporal data because they are nice to visualize (a map with a time slider) and because it is thought that it would be interesting to try to discover patterns in time and/or space in interlinked distributed data sets.
+
+This project has the following aspects that seem relevant to this Working Group:
+
+. Technologies must be easy to implement for people that generally do not have a high affinity with IT. This goes for data publishing as well as data consumption.
+. References to time and space are often inexact or have shifting frames of reference, so simple encodings like basic geo or ISO 8601 do not suffice.
+. References to time and space do need to be as exact as possible, to enable automatic discovery of spatiotemporal patterns.
+. Datasets do not just need to be published, they need to be easily discovered too, using spatial and/or temporal filters.
+
+Adding examples below relevant to items 2 and 3 above, from one existing scholarly Web application case, which may contribute to a more general (i.e. not necessarily historical) requirement for representing several types of uncertainty: imprecision, probability, confidence. Standards for gazetteers -particularly historical (temporal) ones- are non-existent, although several projects with potentially global reach are underway. It will be helpful to have this Working Group in dialog with developers for such projects as Pelagios, Library of Congress, Pleiades, and Past Place (cf. Humphrey Southall).
+
+*Spatial*
+
+* A set of life path data were developed for a kinship network of 30,000 individual Britons linked by birth and marriage. Spatial data for the locations of life events has several levels of granularity, from street address (10 Downing Street) to country (China). How can spatial containment relationships for places be expressed so that spatial-temporal contemporaneity be calculated?
+* References to places in historical works are often limited to toponyms (i.e. absent geometry or precise spatial relations), and qualified by such terms as "near," and "north of." How can these be indexed spatially so as to be discoverable?
+
+*Temporal*
+
+* As with spatial data, historical sources contain temporal references at varying granularity. A single data set may contain expressions for exact dates, months, or years -- or ranges containing a mix of any of those.
+* Temporal references are frequently inexact, or relational with variable precision. The above referenced data set has a mix, including "around March 1832," "before 1750," "after WW II."
+
+[[use_case_detail_10]]
+=== Use Case 10
+
+This use is based on the European Location Framework (ELF).
+
+Mapping and cadastral authorities maintain datasets that provide geospatial reference data. Reference data is data that a user/developer uses to provide location for her own data (by linking to it), by providing context information about a location (overlaying his data over a background map), etc.
+
+A key part of this is persistent identifiers for the published data to allow linking to the reference data. Let's assume that http URIs following the Cool URI note are used as identifiers.
+
+In ELF — and INSPIRE — reference data is typically published using a Web service by the national authority. In ELF this is an OGC Web Feature Service. To provide access to the different datasets via a single entry point, all the national services are made available via a proxy Web service that also handles authentication etc. In addition, it is foreseen to publish the reference data in other commonly used Web-based platforms for geospatial data to simplify the use of the data - developers and users can use the tools and APIs they are familiar with.
+
+As a result, the same administrative unit (to pick an example) is basically available via multiple (document) URIs: via the national Web service, the ELF proxy Web service and Web services of the other platforms. Different services will support different representations (GML, JSON, etc.). The Web services may not be accessible by everyone and different users will have access to different document URIs.
+
+Which real-world object and document URIs for the administrative unit should be maintained and what does a GET return in order:
+
+* to support linking other data to the administrative unit;
+* to deliver the document and representation that the user expects when dereferencing the link?
+
+A related challenge is that today such links are often implicit. For example, a post code or a statistical unit code is a property in the other data, but the link is not explicit like an HTTP URI. What is a good practice to make use of such implicit links? Should they be converted to HTTP URIs to be explicit or are there better ways (e.g. additional context that provide information about the semantics and a pattern how to construct dereferenceable URIs)?
+
+[[use_case_detail_11]]
+=== Use Case 11
+
+The research project CERISE-SG aims to integrate data from different domains: government, energy utilities and geography, in order to enable establishment of smart energy grids.
+
+The project has recognized Linked Data as an appropriate concept for integration of data from separate semantic domains. One approach of achieving cross-domain interoperability is to switch from domain-specific semantics to common semantics. For example, the concept of an address has its own definitions in governmental standards and utility standards. Using a common definition improves interoperability.
+
+An example of a domain model that is an international standard in electric utilities is the Common Information Model (CIM). Its data model provides definitions for an important entity: the electricity meter. These meters provide useful data on consumption and production of energy. If it is possible to view these devices as sensors, it could be possible to move from domain specific semantics (CIM) to common semantics (SSN), and to have ready linkage to geographical semantics (location and network topology). What is required in this case is a low-threshold way of using sensor semantics, because people involved in integration of data from multiple domains should not be burdened with having to grasp the full complexity of each domain.
+
+[[use_case_detail_12]]
+=== Use Case 12
+
+Emergency response services in the Netherlands use Spatial Data Infrastructures (SDI) to help manage large scale incidents. Predefined geographical data from their GIS warehouses can be used, but incidents and accidents are by nature unpredictable so it is impossible to determine beforehand which data are needed. In-house data need to be supplemented with data from other sources based on ad-hoc requirements. Typically, supplemental data are available through WxS services. This poses several problems:
+
+. Third party data lack semantics in the sense of the Web of data. Under the umbrella of various projects a first attempt has been made to at least share definitions of the terminology used by various emergency response services, both national and cross border. This resulted in the start of a project called the Firebrary. Now the terminology and definitions are available on the Web as linked data as SKOS. Still linking from the spatial data to these definitions and vice versa is not standardized. Publication of Web semantics with spatial data would improve discoverability of applicable data and facilitate linking data from separate sources.
+. It is not possible to predefine relationships between Web data and data exposed through WxS services (rdfs:seeAlso is considered by many to be too limited).
+. It is not easy to share all data related to an incident as Web data.
+
+Being able to plot and exchange data about active incidents through the Web and visualize them in GIS tools with open standards would be a huge leap forward for emergency response services.
+
+[[use_case_detail_13]]
+=== Use Case 13
+
+*What:* The local authorities of Zaragoza (Spain) want to publish the air quality data of the city. Each observation station has a spatial location described with an address. The dataset contains hourly observations and daily aggregations of different gases, e.g. SO2, NO2, O3, CO, etc.
+
+*How:* We use the Location Core vocabulary to model the address, e.g. :station locn:address "C/ Gran Vía (Paraninfo)"^^xsd:string. We use xsd:dateTime to represent hourly observations, e.g. :obs ssn:observationResultTime "2003-03-08T11:00:00Z"^^xsd:dateTime.
+
+*Open challenges:* The combination of hourly observations and daily aggregations in the same dataset may cause confusion because the granularity of the observation is not explicit. For daily aggregations, we suggest using time:Interval from the Time Ontology. To make the temporal modeling more homogeneous, time:Instant could be used for the hourly observations.
+
+A description of the data set, including its SPARQL endpoint, can be found at https://www.zaragoza.es/ciudad/risp/detalle_Risp?id=131.
+
+[[use_case_detail_14]]
+=== Use Case 14
+
+*What:* The Regional Transport Consortium of Madrid (CRTM) wants to make available data about transport card validations and transport card recharging. In the case of transport card validations, the NFC sensors are located on buses, and at the entrance and (some) exit points of metro stations. The observation value of a validation includes data related to the transport card, such as the card identifier and the user profile. The sensors for transport card recharging are ATMs and ticket selling points distributed around Madrid. The observation value of a recharging includes the card identifier and the type of recharging.
+
+*How:* To model transport card validations, we consider two observed properties: user entry (EntradaUsuario) and user exit (SalidaUsuario). Validation sensors at metro stations have a fixed location and a unique identifier, e.g. 02_L12_P2. A bus validation sensor is moving continuously, so for the sake of pragmatism, there is a unique sensor identifier for each bus stop in every line, e.g. 03_L20_P837. Those identifiers point to an address and geographic coordinates. The observed property when a user adds money to her transport card is the act of recharging (CargaTTP). In both cases, validation and recharging observations, the feature of interest is the transport card.
+
+[[use_case_detail_99]]
+=== Use Case 99
+
+Place holder for use cases which are under construction.
+
+
+     
+

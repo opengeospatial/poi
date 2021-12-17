@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<title>OGC (add title text)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="book">
+<div id="header">
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">Open Geospatial Consortium</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Submission Date: &lt;yyyy-mm-dd&gt;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Approval Date:   &lt;yyyy-mm-dd&gt;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Publication Date:   2021-12-17</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">External identifier of this OGC&#174; document: <a href="http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}" class="bare">http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Internal reference number of this OGC&#174; document:    YY-nnnrx</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: n.n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Category: OGC&#174; Best Practice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Editor:   &lt;Name(s) of Editor or Editors&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-none grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">OGC (add title text)</strong></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Copyright notice</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Copyright &#169; &lt;year&gt; Open Geospatial Consortium</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">To obtain additional rights of use, visit <a href="http://www.opengeospatial.org/legal/" class="bare">http://www.opengeospatial.org/legal/</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-none grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Warning</strong></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>This document defines an OGC Best Practice on a particular technology or approach related to an OGC standard. This document is not an OGC Standard and may not be referred to as an OGC Standard. It is subject to change without notice. However, this document is an official position of the OGC membership on this particular technology topic.</p>
+</div>
+<div class="paragraph">
+<p>Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+</div>
+<table class="tableblock frame-all grid-none" style="width: 50%;">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Document type:   	OGC® Best Practice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Document subtype:</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Document stage:   	Draft</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Document language: 	English</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>License Agreement</p>
+</div>
+<div class="paragraph">
+<p><span class="small">Permission is hereby granted by the Open Geospatial Consortium, ("Licensor"), free of charge and subject to the terms set forth below, to any person obtaining a copy of this Intellectual Property and any associated documentation, to deal in the Intellectual Property without restriction (except as set forth below), including without limitation the rights to implement, use, copy, modify, merge, publish, distribute, and/or sublicense copies of the Intellectual Property, and to permit persons to whom the Intellectual Property is furnished to do so, provided that all copyright notices on the intellectual property are retained intact and that each person to whom the Intellectual Property is furnished agrees to the terms of this Agreement.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="small">If you modify the Intellectual Property, all copies of the modified Intellectual Property must include, in addition to the above copyright notice, a notice that the Intellectual Property includes modifications that have not been approved or adopted by LICENSOR.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="small">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="small">THE INTELLECTUAL PROPERTY IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER’S OWN RISK. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="small">This license is effective until terminated. You may terminate it at any time by destroying the Intellectual Property together with all copies in any form. The license will also terminate if you fail to comply with any term or condition of this Agreement. Except as provided in the following sentence, no such termination of this license shall require the termination of any third party end-user sublicense to the Intellectual Property which is in force as of the date of notice of such termination. In addition, should the Intellectual Property, or the operation of the Intellectual Property, infringe, or in LICENSOR&#8217;s sole opinion be likely to infringe, any patent, copyright, trademark or other right of a third party, you agree that LICENSOR, in its sole discretion, may terminate this license without any compensation or liability to you, your licensees or any other party. You agree upon termination of any kind to destroy or cause to be destroyed the Intellectual Property together with all copies in any form, whether held by you or by any third party.</span></p>
+</div>
+<div class="paragraph">
+<p><span class="small">Except as contained in this notice, the name of LICENSOR or of any other holder of a copyright in all or part of the Intellectual Property shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Intellectual Property without prior written authorization of LICENSOR or such copyright holder. LICENSOR is and shall at all times be the sole entity that may authorize you or any third party to use certification marks, trademarks or other special designations to indicate compliance with any LICENSOR standards or specifications. This Agreement is governed by the laws of the Commonwealth of Massachusetts. The application to this Agreement of the United Nations Convention on Contracts for the International Sale of Goods is hereby expressly excluded. In the event any provision of this Agreement shall be deemed unenforceable, void or invalid, such provision shall be modified so as to make it valid and enforceable, and as so modified the entire Agreement shall remain in full force and effect. No decision, action or inaction by LICENSOR shall be construed to be a waiver of any rights or remedies available to it.</span></p>
+</div>
+<div style="page-break-after: always;"></div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_scope">1. Scope</a></li>
+<li><a href="#_conformance">2. Conformance</a></li>
+<li><a href="#_references">3. References</a></li>
+<li><a href="#_terms_and_definitions">4. Terms and Definitions</a>
+<ul class="sectlevel2">
+<li><a href="#_term_name">4.1. <strong>term name</strong></a></li>
+</ul>
+</li>
+<li><a href="#_conventions">5. Conventions</a>
+<ul class="sectlevel2">
+<li><a href="#_identifiers">5.1. Identifiers</a></li>
+</ul>
+</li>
+<li><a href="#_sdw_use_cases">6. SDW Use Cases</a>
+<ul class="sectlevel2">
+<li><a href="#_4_1_meteorological_data_rescue">6.1. 4.1 Meteorological data rescue</a></li>
+<li><a href="#_4_2_habitat_zone_verification_for_designation_of_marine_conservation_zones">6.2. 4.2 Habitat zone verification for designation of Marine Conservation Zones</a></li>
+<li><a href="#_4_3_real_time_wildfire_monitoring">6.3. 4.3 Real-time wildfire monitoring</a></li>
+<li><a href="#_4_4_diachronic_burnt_scar_mapping">6.4. 4.4 Diachronic burnt scar Mapping</a></li>
+<li><a href="#_4_5_harvesting_of_local_search_content">6.5. 4.5 Harvesting of Local Search Content</a></li>
+<li><a href="#_4_6_locating_a_thing">6.6. 4.6 Locating a thing</a></li>
+<li><a href="#_4_7_publishing_geographical_data">6.7. 4.7 Publishing geographical data</a></li>
+<li><a href="#_4_8_consuming_geographical_data_in_a_web_application">6.8. 4.8 Consuming geographical data in a Web application</a></li>
+<li><a href="#_4_9_enabling_publication_discovery_and_analysis_of_spatiotemporal_data_in_the_humanities">6.9. 4.9 Enabling publication, discovery and analysis of spatiotemporal data in the humanities</a></li>
+<li><a href="#_4_10_publishing_geospatial_reference_data">6.10. 4.10 Publishing geospatial reference data</a></li>
+<li><a href="#_4_11_integration_of_governmental_and_utility_data_to_enable_smart_grids">6.11. 4.11 Integration of governmental and utility data to enable smart grids</a></li>
+<li><a href="#_4_12_using_spatial_data_during_emergency_response_operations">6.12. 4.12 Using spatial data during emergency response operations</a></li>
+<li><a href="#_4_13_publication_of_air_quality_data_aggregations">6.13. 4.13 Publication of air quality data aggregations</a></li>
+<li><a href="#_4_14_publication_of_transport_card_validation_and_recharging_data">6.14. 4.14 Publication of transport card validation and recharging data</a></li>
+<li><a href="#_4_15_combining_spatial_rdf_data_for_integrated_querying_in_a_triplestore">6.15. 4.15 Combining spatial RDF data for integrated querying in a triplestore</a></li>
+<li><a href="#_4_16_dutch_base_registry">6.16. 4.16 Dutch Base Registry</a></li>
+<li><a href="#_4_17_publishing_cultural_heritage_data">6.17. 4.17 Publishing Cultural heritage data</a></li>
+<li><a href="#_4_18_dissemination_of_3d_geological_data">6.18. 4.18 Dissemination of 3D geological data</a></li>
+<li><a href="#_4_19_publication_of_raw_subsurface_monitoring_data">6.19. 4.19 Publication of raw subsurface monitoring data</a></li>
+<li><a href="#_4_20_use_of_a_place_name_ontology_for_geo_parsing_text_and_geo_enabling_searches">6.20. 4.20 Use of a place name ontology for geo-parsing text and geo-enabling searches</a></li>
+<li><a href="#_4_21_driving_to_work_in_the_snow">6.21. 4.21 Driving to work in the snow</a></li>
+<li><a href="#_4_22_intelligent_transportation_system">6.22. 4.22 Intelligent Transportation System</a></li>
+<li><a href="#_4_23_optimizing_energy_consumption_production_sales_and_purchases_in_smart_grids">6.23. 4.23 Optimizing energy consumption, production, sales and purchases in Smart Grids</a></li>
+<li><a href="#_4_24_linked_data_for_tax_assessment">6.24. 4.24 Linked Data for tax assessment</a></li>
+<li><a href="#_4_25_images_e_g_a_time_series_of_a_water_course">6.25. 4.25 Images, e.g. a time series of a water course</a></li>
+<li><a href="#_4_26_droughts_in_geological_complex_environments_where_groundwater_is_important">6.26. 4.26 Droughts in geological complex environments where groundwater is important</a></li>
+<li><a href="#_4_27_soil_data_applications">6.27. 4.27 Soil data applications</a></li>
+<li><a href="#_4_28_bushfire_response_coordination_centre">6.28. 4.28 Bushfire response coordination centre</a></li>
+<li><a href="#_4_29_observations_on_geological_samples">6.29. 4.29 Observations on geological samples</a></li>
+<li><a href="#_4_30_spatial_sampling">6.30. 4.30 Spatial sampling</a></li>
+<li><a href="#_4_31_select_hierarchical_geographical_regions_for_use_in_data_analysis_or_visualisation">6.31. 4.31 Select hierarchical geographical regions for use in data analysis or visualisation</a></li>
+<li><a href="#_4_32_satellite_data_processing">6.32. 4.32 Satellite data processing</a></li>
+<li><a href="#_4_33_marine_observations_emii">6.33. 4.33 Marine observations - eMII</a></li>
+<li><a href="#_4_34_marine_observations_data_providers">6.34. 4.34 Marine observations - data providers</a></li>
+<li><a href="#_4_35_marine_observations_data_consumers">6.35. 4.35 Marine observations - data consumers</a></li>
+<li><a href="#_4_36_building_information_management_and_data_sharing">6.36. 4.36 Building information management and data sharing</a></li>
+<li><a href="#_4_37_landsat_data_services">6.37. 4.37 Landsat data services</a></li>
+<li><a href="#_4_38_metadata_and_search_granularity">6.38. 4.38 Metadata and search granularity</a></li>
+<li><a href="#_4_39_crowdsourced_earthquake_observation_information">6.39. 4.39 Crowdsourced earthquake observation information</a></li>
+<li><a href="#_4_40_tcga_microscopy_imaging">6.40. 4.40 TCGA / microscopy imaging</a></li>
+<li><a href="#_4_41_crop_yield_estimation_using_multiple_satellites">6.41. 4.41 Crop yield estimation using multiple satellites</a></li>
+<li><a href="#_4_42_enabling_cross_domain_sharing_and_re_use_of_geospatial_metadata">6.42. 4.42 Enabling cross-domain sharing and re-use of geospatial metadata</a></li>
+<li><a href="#_4_43_improving_discovery_of_spatial_data_on_the_web">6.43. 4.43 Improving discovery of spatial data on the Web</a></li>
+<li><a href="#_4_44_inspire_compliance_using_web_standards">6.44. 4.44 INSPIRE compliance using Web standards</a></li>
+<li><a href="#_4_45_event_like_geographic_features">6.45. 4.45 Event-like geographic features</a></li>
+<li><a href="#_4_46_creation_of_virtual_observations_from_analysis_phase_of_weather_prediction_model">6.46. 4.46 Creation of “virtual observations” from “analysis” phase of weather prediction model</a></li>
+<li><a href="#_4_47_incorporating_geospatial_data_e_g_geo_referenced_geometry_into_interactive_3d_graphics_on_the_web">6.47. 4.47 Incorporating geospatial data (e.g. geo-referenced geometry) into interactive 3D graphics on the Web</a></li>
+<li><a href="#_4_48_smart_cities">6.48. 4.48 Smart Cities</a></li>
+<li><a href="#_4_49_provenance_of_climate_data">6.49. 4.49 Provenance of climate data</a></li>
+<li><a href="#_4_50_representing_geospatial_data_in_rdf">6.50. 4.50 Representing geospatial data in RDF</a></li>
+<li><a href="#_4_51_modelling_in_the_construction_sector">6.51. 4.51 Modelling in the construction sector</a></li>
+</ul>
+</li>
+<li><a href="#_sdw_use_case_details">7. SDW Use Case Details</a>
+<ul class="sectlevel2">
+<li><a href="#use_case_detail_1">7.1. Use Case 1</a></li>
+<li><a href="#use_case_detail_2">7.2. Use Case 2</a></li>
+<li><a href="#use_case_detail_3">7.3. Use Case 3</a></li>
+<li><a href="#use_case_detail_4">7.4. Use Case 4</a></li>
+<li><a href="#use_case_detail_5">7.5. Use Case 5</a></li>
+<li><a href="#use_case_detail_6">7.6. Use Case 6</a></li>
+<li><a href="#use_case_detail_7">7.7. Use Case 7</a></li>
+<li><a href="#use_case_detail_8">7.8. Use Case 8</a></li>
+<li><a href="#use_case_detail_9">7.9. Use Case 9</a></li>
+<li><a href="#use_case_detail_10">7.10. Use Case 10</a></li>
+<li><a href="#use_case_detail_11">7.11. Use Case 11</a></li>
+<li><a href="#use_case_detail_12">7.12. Use Case 12</a></li>
+<li><a href="#use_case_detail_13">7.13. Use Case 13</a></li>
+<li><a href="#use_case_detail_14">7.14. Use Case 14</a></li>
+<li><a href="#use_case_detail_99">7.15. Use Case 99</a></li>
+</ul>
+</li>
+<li><a href="#_conformance_class_abstract_test_suite_normative">Annex A: Conformance Class Abstract Test Suite (Normative)</a>
+<ul class="sectlevel2">
+<li><a href="#_conformance_class_a">A.1. Conformance Class A</a>
+<ul class="sectlevel3">
+<li><a href="#_requirement_1">A.1.1. Requirement 1</a></li>
+<li><a href="#_requirement_2">A.1.2. Requirement 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_title_normativeinformative">Annex B: Title ( {Normative/Informative} )</a></li>
+<li><a href="#_revision_history">Annex C: Revision History</a></li>
+<li><a href="#Bibliography">Annex D: Bibliography</a></li>
+</ul>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p><strong class="big">i.     Abstract</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Insert Abstract Text here&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong class="big">ii.    Keywords</strong></p>
+</div>
+<div class="paragraph">
+<p>The following are keywords to be used by search engines and document catalogues.</p>
+</div>
+<div class="paragraph">
+<p>ogcdoc, OGC document,  &lt;tags separated by commas&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong class="big">iii.   Preface</strong></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. &gt;
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+</div>
+<div class="paragraph">
+<p>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong class="big">iv.    Submitting organizations</strong></p>
+</div>
+<div class="paragraph">
+<p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
+</div>
+<div class="paragraph">
+<p>Organization name(s)</p>
+</div>
+<div class="paragraph">
+<p><strong class="big">v.     Submitters</strong></p>
+</div>
+<div class="paragraph">
+<p>All questions regarding this submission should be directed to the editor or the submitters:</p>
+</div>
+<div class="paragraph">
+<p>Name  Affiliation</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_scope"><a class="anchor" href="#_scope"></a>1. Scope</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conformance"><a class="anchor" href="#_conformance"></a>2. Conformance</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This Best Practice defines XXXX.</p>
+</div>
+<div class="paragraph">
+<p>Requirements for N target types are considered:
+* AAAA
+* BBBB</p>
+</div>
+<div class="paragraph">
+<p>Conformance with this Best Practice shall be checked using all the relevant tests specified in Annex A (normative) of this document.</p>
+</div>
+<div class="paragraph">
+<p>In order to conform to this OGC® Best Practice, a software implementation shall choose to implement:
+* Any one of the conformance levels specified in Annex A (normative).
+* Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).</p>
+</div>
+<div class="paragraph">
+<p>All requirements-classes and conformance-classes described in this document are owned by the document(s) identified.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>3. References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Insert References here. If there are no references, state “There are no normative references”.</p>
+</div>
+<div class="paragraph">
+<p>References are to follow the Springer LNCS style, with the exception that optional information may be appended to references: DOIs are added after the date and web resource references may include an access date at the end of the reference in parentheses. See examples from Springer and OGC below.</p>
+</div>
+<div class="paragraph">
+<p>Smith, T.F., Waterman, M.S.: Identification of Common Molecular Subsequences.
+J. Mol. Biol. 147, 195–197 (1981)</p>
+</div>
+<div class="paragraph">
+<p>May, P., Ehrlich, H.C., Steinke, T.: ZIB Structure Prediction Pipeline: Composing
+a Complex Biological Workflow through Web Services. In: Nagel, W.E., Walter,
+W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148–1158. Springer,
+Heidelberg (2006)</p>
+</div>
+<div class="paragraph">
+<p>Foster, I., Kesselman, C.: The Grid: Blueprint for a New Computing Infrastructure.
+Morgan Kaufmann, San Francisco (1999)</p>
+</div>
+<div class="paragraph">
+<p>Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C.: Grid Information Services
+for Distributed Resource Sharing. In: 10th IEEE International Symposium on High
+Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</p>
+</div>
+<div class="paragraph">
+<p>Foster, I., Kesselman, C., Nick, J., Tuecke, S.: The Physiology of the Grid: an Open
+Grid Services Architecture for Distributed Systems Integration. Technical report,
+Global Grid Forum (2002)</p>
+</div>
+<div class="paragraph">
+<p>National Center for Biotechnology Information, <a href="http://www.ncbi.nlm.nih.gov" class="bare">http://www.ncbi.nlm.nih.gov</a></p>
+</div>
+<div class="paragraph">
+<p>ISO / TC 211: ISO 19115-1:2014 Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;Part 1: Fundamentals (2014)</p>
+</div>
+<div class="paragraph">
+<p>ISO / TC 211: ISO 19157:2013 Geographic information&#8201;&#8212;&#8201;Data quality (2013)</p>
+</div>
+<div class="paragraph">
+<p>ISO / TC 211: ISO 19139:2007 Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;XML schema implementation (2007)</p>
+</div>
+<div class="paragraph">
+<p>ISO / TC 211: ISO 19115-3: Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;Part 3: XML schemas (2016)</p>
+</div>
+<div class="paragraph">
+<p>OGC: OGC 15-097 OGC Geospatial User Feedback Standard. Conceptual Model (2016)</p>
+</div>
+<div class="paragraph">
+<p>OGC: OGC 12-019, OGC City Geography Markup Language (CityGML) Encoding Standard (2012)</p>
+</div>
+<div class="paragraph">
+<p>OGC: OGC 14-005r3, OGC IndoorGML (2014)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terms_and_definitions"><a class="anchor" href="#_terms_and_definitions"></a>4. Terms and Definitions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This document uses the terms defined in Sub-clause 5.3 of [OGC 06-121r8], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Best Practice.</p>
+</div>
+<div class="paragraph">
+<p>For the purposes of this document, the following additional terms and definitions apply.</p>
+</div>
+<div class="sect2">
+<h3 id="_term_name"><a class="anchor" href="#_term_name"></a>4.1. <strong>term name</strong></h3>
+<div class="paragraph">
+<p>text of the definition</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conventions"><a class="anchor" href="#_conventions"></a>5. Conventions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+</div>
+<div class="sect2">
+<h3 id="_identifiers"><a class="anchor" href="#_identifiers"></a>5.1. Identifiers</h3>
+<div class="paragraph">
+<p>The normative provisions in this document are denoted by the URI</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.opengis.net/spec/{standard}/{m.n}" class="bare">http://www.opengis.net/spec/{standard}/{m.n}</a></p>
+</div>
+<div class="paragraph">
+<p>All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sdw_use_cases"><a class="anchor" href="#_sdw_use_cases"></a>6. SDW Use Cases</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Use cases that describe current problems or future opportunities for spatial data on the Web have been gathered as a first activity of the Working Group. They were mainly contributed by members of Working Group, but there were also contributions from other interested parties. In this chapter these use cases are listed and identified. Each use case is related to one or more Working Group <a href="#Deliverables">deliverables</a> and to one or more <a href="#Requirements">requirements</a> for future deliverables.</p>
+</div>
+<div class="sect2">
+<h3 id="_4_1_meteorological_data_rescue"><a class="anchor" href="#_4_1_meteorological_data_rescue"></a>6.1. 4.1 Meteorological data rescue</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Chris Little, based on scenarios used for the WMO infrastructure requirements.</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_1">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#CoverageTemporalExtent">5.7 Coverage temporal extent</a>, <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#DifferentTimeModels">5.12 Different time models</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#MultilingualSupport">5.29 Multilingual support</a>, <a href="#NominalTemporalReferences">5.32 Nominal temporal references</a>, <a href="#ObservedPropertyInCoverage">5.34 Observed property in coverage</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#ReferenceDataChunks">5.37 Reference data chunks</a>, <a href="#SensingProcedure">5.40 Sensing procedure</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#TemporalReferenceSystem">5.54 Temporal reference system</a>, <a href="#UncertaintyInObservations">5.57 Uncertainty in observations</a>, <a href="#Crawlability">5.8 Crawlability</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_2_habitat_zone_verification_for_designation_of_marine_conservation_zones"><a class="anchor" href="#_4_2_habitat_zone_verification_for_designation_of_marine_conservation_zones"></a>6.2. 4.2 Habitat zone verification for designation of Marine Conservation Zones</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Jeremy Tandy</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_2">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#IdentifyCoverageType">5.20 Identify coverage type</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#ReferenceDataChunks">5.37 Reference data chunks</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#MobileSensors">5.26 Mobile sensors</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#NominalObservations">5.31 Nominal observations</a>, <a href="#HumansAsSensors">5.19 Humans as sensors</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#ExSituSampling">5.16 Ex-situ sampling</a>, <a href="#SensingProcedure">5.40 Sensing procedure</a>, <a href="#SpatialRelationships">5.43 Spatial relationships</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_3_real_time_wildfire_monitoring"><a class="anchor" href="#_4_3_real_time_wildfire_monitoring"></a>6.3. 4.3 Real-time wildfire monitoring</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Manolis Koubarakis</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_3">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#Georectification">5.17 Georectification</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#IdentifyCoverageType">5.20 Identify coverage type</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#DynamicSensorData">5.14 Dynamic sensor data</a>, <a href="#SSNLikeRepresentation">5.46 SSN-like representation</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_4_diachronic_burnt_scar_mapping"><a class="anchor" href="#_4_4_diachronic_burnt_scar_mapping"></a>6.4. 4.4 Diachronic burnt scar Mapping</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Manolis Koubarakis</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_4">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#Georectification">5.17 Georectification</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#IdentifyCoverageType">5.20 Identify coverage type</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#SSNLikeRepresentation">5.46 SSN-like representation</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_5_harvesting_of_local_search_content"><a class="anchor" href="#_4_5_harvesting_of_local_search_content"></a>6.5. 4.5 Harvesting of Local Search Content</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Ed Parsons</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_5">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#AvoidCoordinateTransformations">5.2 Avoid coordinate transformations</a>, <a href="#CoordinatePrecision">5.6 Coordinate precision</a>, <a href="#Crawlability">5.8 Crawlability</a>, <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_6_locating_a_thing"><a class="anchor" href="#_4_6_locating_a_thing"></a>6.6. 4.6 Locating a thing</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Ed Parsons</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_6">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#IndependenceOnReferenceSystems">5.21 Independence on reference systems</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#TimeDependentCRS">5.53 Time dependencies in CRS definitions</a>, <a href="#MachineToMachine">5.25 Machine to machine</a>, <a href="#SpatialRelationships">5.43 Spatial relationships</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_7_publishing_geographical_data"><a class="anchor" href="#_4_7_publishing_geographical_data"></a>6.7. 4.7 Publishing geographical data</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Frans Knibbe</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_7">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#BoundingBoxCentroid">5.3 Bounding box and centroid</a>, <a href="#Compatibility">5.4 Compatibility with existing practices</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#MultipleCRS">5.30 Multiple CRSs</a>, <a href="#SpatialRelationships">5.43 Spatial relationships</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_8_consuming_geographical_data_in_a_web_application"><a class="anchor" href="#_4_8_consuming_geographical_data_in_a_web_application"></a>6.8. 4.8 Consuming geographical data in a Web application</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Frans Knibbe</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_8">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#AvoidCoordinateTransformations">5.2 Avoid coordinate transformations</a>, <a href="#BoundingBoxCentroid">5.3 Bounding box and centroid</a>, <a href="#Compressible">5.5 Compressibility</a>, <a href="#Crawlability">5.8 Crawlability</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#IndependenceOnReferenceSystems">5.21 Independence on reference systems</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#TilingSupport">5.52 Support for tiling</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_9_enabling_publication_discovery_and_analysis_of_spatiotemporal_data_in_the_humanities"><a class="anchor" href="#_4_9_enabling_publication_discovery_and_analysis_of_spatiotemporal_data_in_the_humanities"></a>6.9. 4.9 Enabling publication, discovery and analysis of spatiotemporal data in the humanities</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Frans Knibbe, Karl Grossner</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_9">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#AvoidCoordinateTransformations">5.2 Avoid coordinate transformations</a>, , <a href="#CoordinatePrecision">5.6 Coordinate precision</a>, <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#MultipleCRS">5.30 Multiple CRSs</a>, <a href="#NominalTemporalReferences">5.32 Nominal temporal references</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#TemporalVagueness">5.55 Temporal vagueness</a>, <a href="#TimeDependentCRS">5.53 Time dependencies in CRS definitions</a>, <a href="#IndependenceOnReferenceSystems">5.21 Independence on reference systems</a>, <a href="#SpatialRelationships">5.43 Spatial relationships</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_10_publishing_geospatial_reference_data"><a class="anchor" href="#_4_10_publishing_geospatial_reference_data"></a>6.10. 4.10 Publishing geospatial reference data</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Clemens Portele</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_10">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Validation">5.60 Validation</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#SpatialOperators">5.44 Spatial operators</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_11_integration_of_governmental_and_utility_data_to_enable_smart_grids"><a class="anchor" href="#_4_11_integration_of_governmental_and_utility_data_to_enable_smart_grids"></a>6.11. 4.11 Integration of governmental and utility data to enable smart grids</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Frans Knibbe</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_11">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#SSNExamples">5.48 SSN usage examples</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_12_using_spatial_data_during_emergency_response_operations"><a class="anchor" href="#_4_12_using_spatial_data_during_emergency_response_operations"></a>6.12. 4.12 Using spatial data during emergency response operations</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Bart van Leeuwen</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_12">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#AvoidCoordinateTransformations">5.2 Avoid coordinate transformations</a>, <a href="#Compatibility">5.4 Compatibility with existing practices</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#SpatialRelationships">5.43 Spatial relationships</a>, <a href="#SubjectEquality">5.50 Subject equality</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_13_publication_of_air_quality_data_aggregations"><a class="anchor" href="#_4_13_publication_of_air_quality_data_aggregations"></a>6.13. 4.13 Publication of air quality data aggregations</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Alejandro Llaves, Miguel Angel García-Delgado (OEG-UPM), Rubén Notivol, Javier Celma (Ayuntamiento de Zaragoza)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_13">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#ObservationAggregations">5.33 Observation aggregations</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_14_publication_of_transport_card_validation_and_recharging_data"><a class="anchor" href="#_4_14_publication_of_transport_card_validation_and_recharging_data"></a>6.14. 4.14 Publication of transport card validation and recharging data</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Alejandro Llaves (OEG-UPM)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_14">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#TimeDependentCRS">5.53 Time dependencies in CRS definitions</a>, <a href="#SSNExamples">5.48 SSN usage examples</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_15_combining_spatial_rdf_data_for_integrated_querying_in_a_triplestore"><a class="anchor" href="#_4_15_combining_spatial_rdf_data_for_integrated_querying_in_a_triplestore"></a>6.15. 4.15 Combining spatial RDF data for integrated querying in a triplestore</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Matthew Perry (Oracle)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#AvoidCoordinateTransformations">5.2 Avoid coordinate transformations</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#EncodingForVectorGeometry">5.15 Encoding for vector geometry</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_16_dutch_base_registry"><a class="anchor" href="#_4_16_dutch_base_registry"></a>6.16. 4.16 Dutch Base Registry</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Linda van den Brink</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#AvoidCoordinateTransformations">5.2 Avoid coordinate transformations</a>, <a href="#Compressible">5.5 Compressibility</a>, , <a href="#CoordinatePrecision">5.6 Coordinate precision</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#MultipleCRS">5.30 Multiple CRSs</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_17_publishing_cultural_heritage_data"><a class="anchor" href="#_4_17_publishing_cultural_heritage_data"></a>6.17. 4.17 Publishing Cultural heritage data</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Lars G. Svensson</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#CoverageTemporalExtent">5.7 Coverage temporal extent</a>, <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#NominalTemporalReferences">5.32 Nominal temporal references</a>, <a href="#IndependenceOnReferenceSystems">5.21 Independence on reference systems</a>, <a href="#UpdateDatatypes">5.58 Update datatypes in OWL Time</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#TemporalVagueness">5.55 Temporal vagueness</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#Validation">5.60 Validation</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_18_dissemination_of_3d_geological_data"><a class="anchor" href="#_4_18_dissemination_of_3d_geological_data"></a>6.18. 4.18 Dissemination of 3D geological data</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Rachel Heaven</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Discoverability">5.13 Discoverability</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#IdentifyCoverageType">5.20 Identify coverage type</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#ObservedPropertyInCoverage">5.34 Observed property in coverage</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#ReferenceDataChunks">5.37 Reference data chunks</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#UseInComputationalModels">5.59 Use in computational models</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#TilingSupport">5.52 Support for tiling</a>, <a href="#Compressible">5.5 Compressibility</a>, <a href="#Linkability">5.23 Linkability</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_19_publication_of_raw_subsurface_monitoring_data"><a class="anchor" href="#_4_19_publication_of_raw_subsurface_monitoring_data"></a>6.19. 4.19 Publication of raw subsurface monitoring data</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Rachel Heaven</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#HumansAsSensors">5.19 Humans as sensors</a>, <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#DynamicSensorData">5.14 Dynamic sensor data</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#IdentifyCoverageType">5.20 Identify coverage type</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#4DModelSpaceTime">5.1 4D model of space-time</a>, <a href="#NominalObservations">5.31 Nominal observations</a>, <a href="#ObservationAggregations">5.33 Observation aggregations</a>, <a href="#SamplingTopology">5.38 Sampling topology</a>, <a href="#SensingProcedure">5.40 Sensing procedure</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#SSNExamples">5.48 SSN usage examples</a>, <a href="#TimeSeries">5.56 Time series</a>, <a href="#UncertaintyInObservations">5.57 Uncertainty in observations</a>, <a href="#VirtualObservations">5.62 Virtual observations</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_20_use_of_a_place_name_ontology_for_geo_parsing_text_and_geo_enabling_searches"><a class="anchor" href="#_4_20_use_of_a_place_name_ontology_for_geo_parsing_text_and_geo_enabling_searches"></a>6.20. 4.20 Use of a place name ontology for geo-parsing text and geo-enabling searches</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Rachel Heaven</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DifferentTimeModels">5.12 Different time models</a>, <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#NominalTemporalReferences">5.32 Nominal temporal references</a>, <a href="#TemporalReferenceSystem">5.54 Temporal reference system</a>, <a href="#TemporalVagueness">5.55 Temporal vagueness</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#SpatialRelationships">5.43 Spatial relationships</a>, <a href="#ValidTime">5.61 Valid time</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_21_driving_to_work_in_the_snow"><a class="anchor" href="#_4_21_driving_to_work_in_the_snow"></a>6.21. 4.21 Driving to work in the snow</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Cory Henson (Bosch RTC)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#HumansAsSensors">5.19 Humans as sensors</a>, <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#DynamicSensorData">5.14 Dynamic sensor data</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#LightweightAPI">5.22 Lightweight API</a>, <a href="#ModelActuation">5.27 Model actuation</a>, <a href="#MovingFeatures">5.28 Moving features</a>, <a href="#NominalObservations">5.31 Nominal observations</a>, <a href="#NominalTemporalReferences">5.32 Nominal temporal references</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#MachineToMachine">5.25 Machine to machine</a>, <a href="#Compressible">5.5 Compressibility</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_22_intelligent_transportation_system"><a class="anchor" href="#_4_22_intelligent_transportation_system"></a>6.22. 4.22 Intelligent Transportation System</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Antoine Zimmermann</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#MobileSensors">5.26 Mobile sensors</a>, <a href="#ModelActuation">5.27 Model actuation</a>, <a href="#MovingFeatures">5.28 Moving features</a>, <a href="#NominalObservations">5.31 Nominal observations</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#SSNExamples">5.48 SSN usage examples</a>, <a href="#TemporalReferenceSystem">5.54 Temporal reference system</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_23_optimizing_energy_consumption_production_sales_and_purchases_in_smart_grids"><a class="anchor" href="#_4_23_optimizing_energy_consumption_production_sales_and_purchases_in_smart_grids"></a>6.23. 4.23 Optimizing energy consumption, production, sales and purchases in Smart Grids</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Antoine Zimmermann</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Linkability">5.23 Linkability</a>, <a href="#ModelActuation">5.27 Model actuation</a>, &lt;&lt;SSNExamples,5.48 SSN usage examples]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_24_linked_data_for_tax_assessment"><a class="anchor" href="#_4_24_linked_data_for_tax_assessment"></a>6.24. 4.24 Linked Data for tax assessment</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Luigi Selmi (via <a href="https://lists.w3.org/Archives/Public/public-sdw-comments/">public-sdw-comments)</a></p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_25_images_e_g_a_time_series_of_a_water_course"><a class="anchor" href="#_4_25_images_e_g_a_time_series_of_a_water_course"></a>6.25. 4.25 Images, e.g. a time series of a water course</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Kerry Taylor (on behalf of Jamie Baker, Australian Commonwealth Department of Communications)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Discoverability">5.13 Discoverability</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#IdentifyCoverageType">5.20 Identify coverage type</a>, <a href="#ReferenceDataChunks">5.37 Reference data chunks</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#TimeSeries">5.56 Time series</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#SamplingTopology">5.38 Sampling topology</a>, <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#ValidTime">5.61 Valid time</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_26_droughts_in_geological_complex_environments_where_groundwater_is_important"><a class="anchor" href="#_4_26_droughts_in_geological_complex_environments_where_groundwater_is_important"></a>6.26. 4.26 Droughts in geological complex environments where groundwater is important</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Chris Little (on behalf of Andrew G Hughes, British Geological Survey)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Linkability">5.23 Linkability</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#NominalObservations">5.31 Nominal observations</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#VirtualObservations">5.62 Virtual observations</a>, <a href="#DynamicSensorData">5.14 Dynamic sensor data</a>, <a href="#UseInComputationalModels">5.59 Use in computational models</a>, <a href="#TimeSeries">5.56 Time series</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_27_soil_data_applications"><a class="anchor" href="#_4_27_soil_data_applications"></a>6.27. 4.27 Soil data applications</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Simon Cox (on behalf of Peter Wilson, Bruce Simons @ CSIRO)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Discoverability">5.13 Discoverability</a>, <a href="#IdentifyCoverageType">5.20 Identify coverage type</a>, <a href="#ObservationAggregations">5.33 Observation aggregations</a>, <a href="#ObservedPropertyInCoverage">5.34 Observed property in coverage</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#VirtualObservations">5.62 Virtual observations</a>, <a href="#SensingProcedure">5.40 Sensing procedure</a>, <a href="#HumansAsSensors">5.19 Humans as sensors</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_28_bushfire_response_coordination_centre"><a class="anchor" href="#_4_28_bushfire_response_coordination_centre"></a>6.28. 4.28 Bushfire response coordination centre</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Simon Cox (on behalf of Paul Box, Simon Cox and Ryan Fraser @ CSIRO)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#AvoidCoordinateTransformations">5.2 Avoid coordinate transformations</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#SSNExamples">5.48 SSN usage examples</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_29_observations_on_geological_samples"><a class="anchor" href="#_4_29_observations_on_geological_samples"></a>6.29. 4.29 Observations on geological samples</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Simon Cox</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#DifferentTimeModels">5.12 Different time models</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#ExSituSampling">5.16 Ex-situ sampling</a>, <a href="#SamplingTopology">5.38 Sampling topology</a>, <a href="#SensingProcedure">5.40 Sensing procedure</a>, <a href="#SSNExamples">5.48 SSN usage examples</a>, <a href="#HumansAsSensors">5.19 Humans as sensors</a>, <a href="#TemporalReferenceSystem">5.54 Temporal reference system</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_30_spatial_sampling"><a class="anchor" href="#_4_30_spatial_sampling"></a>6.30. 4.30 Spatial sampling</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Simon Cox</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#MobileSensors">5.26 Mobile sensors</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#SSNExamples">5.48 SSN usage examples</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#SamplingTopology">5.38 Sampling topology</a>, <a href="#UncertaintyInObservations">5.57 Uncertainty in observations</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_31_select_hierarchical_geographical_regions_for_use_in_data_analysis_or_visualisation"><a class="anchor" href="#_4_31_select_hierarchical_geographical_regions_for_use_in_data_analysis_or_visualisation"></a>6.31. 4.31 Select hierarchical geographical regions for use in data analysis or visualisation</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Bill Roberts (based on needs arising from Swirrl&#8217;s own work)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#SpatialOperators">5.44 Spatial operators</a>, <a href="#SpatialRelationships">5.43 Spatial relationships</a>, <a href="#ValidTime">5.61 Valid time</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_32_satellite_data_processing"><a class="anchor" href="#_4_32_satellite_data_processing"></a>6.32. 4.32 Satellite data processing</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Kerry Taylor (informed by Matt Paget and Juan Guerschman, CSIRO)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#MobileSensors">5.26 Mobile sensors</a>, <a href="#IdentifyCoverageType">5.20 Identify coverage type</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#HumansAsSensors">5.19 Humans as sensors</a>, <a href="#VirtualObservations">5.62 Virtual observations</a>, <a href="#SensingProcedure">5.40 Sensing procedure</a>, <a href="#IndependenceOnReferenceSystems">5.21 Independence on reference systems</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#SSNProfiles">5.47 SSN profiles</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_33_marine_observations_emii"><a class="anchor" href="#_4_33_marine_observations_emii"></a>6.33. 4.33 Marine observations - eMII</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Simon Cox (on behalf of <a href="http://imos.org.au/aodn.html">IMOS eMII</a>)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Discoverability">5.13 Discoverability</a>, <a href="#MobileSensors">5.26 Mobile sensors</a>, <a href="#ObservationAggregations">5.33 Observation aggregations</a>, <a href="#ObservedPropertyInCoverage">5.34 Observed property in coverage</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#SamplingTopology">5.38 Sampling topology</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_34_marine_observations_data_providers"><a class="anchor" href="#_4_34_marine_observations_data_providers"></a>6.34. 4.34 Marine observations - data providers</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Simon Cox (on behalf of <a href="http://imos.org.au/aodn.html">IMOS eMII</a>)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#NominalObservations">5.31 Nominal observations</a>, <a href="#HumansAsSensors">5.19 Humans as sensors</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#SSNExamples">5.48 SSN usage examples</a>, <a href="#UncertaintyInObservations">5.57 Uncertainty in observations</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_35_marine_observations_data_consumers"><a class="anchor" href="#_4_35_marine_observations_data_consumers"></a>6.35. 4.35 Marine observations - data consumers</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Simon Cox (on behalf of <a href="http://imos.org.au/aodn.html">IMOS eMII</a>)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#AvoidCoordinateTransformations">5.2 Avoid coordinate transformations</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#SensingProcedure">5.40 Sensing procedure</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_36_building_information_management_and_data_sharing"><a class="anchor" href="#_4_36_building_information_management_and_data_sharing"></a>6.36. 4.36 Building information management and data sharing</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Linda van den Brink (with thanks to Henk Schaap - Gobar)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#SpatialRelationships">5.43 Spatial relationships</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#Validation">5.60 Validation</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_37_landsat_data_services"><a class="anchor" href="#_4_37_landsat_data_services"></a>6.37. 4.37 Landsat data services</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Kerry Taylor (on behalf of Aaron Sedgmen of Geoscience Australia)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#ReferenceDataChunks">5.37 Reference data chunks</a>, <a href="#TimeSeries">5.56 Time series</a>, <a href="#CoverageTemporalExtent">5.7 Coverage temporal extent</a>, <a href="#TilingSupport">5.52 Support for tiling</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_38_metadata_and_search_granularity"><a class="anchor" href="#_4_38_metadata_and_search_granularity"></a>6.38. 4.38 Metadata and search granularity</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Kerry Taylor (on behalf of Aaron Sedgmen of Geoscience Australia)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#DifferentTimeModels">5.12 Different time models</a>, <a href="#ExSituSampling">5.16 Ex-situ sampling</a>, <a href="#NominalTemporalReferences">5.32 Nominal temporal references</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#TemporalReferenceSystem">5.54 Temporal reference system</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_39_crowdsourced_earthquake_observation_information"><a class="anchor" href="#_4_39_crowdsourced_earthquake_observation_information"></a>6.39. 4.39 Crowdsourced earthquake observation information</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Kerry Taylor (on behalf of Aaron Sedgmen of Geoscience Australia)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Crawlability">5.8 Crawlability</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#EncodingForVectorGeometry">5.15 Encoding for vector geometry</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#NominalObservations">5.31 Nominal observations</a>, <a href="#MultilingualSupport">5.29 Multilingual support</a>, <a href="#HumansAsSensors">5.19 Humans as sensors</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#ObservationAggregations">5.33 Observation aggregations</a>, <a href="#MobileSensors">5.26 Mobile sensors</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#DynamicSensorData">5.14 Dynamic sensor data</a>, <a href="#Streamable">5.49 Streamable data</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#MachineToMachine">5.25 Machine to machine</a>, <a href="#SpatialOperators">5.44 Spatial operators</a>, <a href="#SSNExamples">5.48 SSN usage examples</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_40_tcga_microscopy_imaging"><a class="anchor" href="#_4_40_tcga_microscopy_imaging"></a>6.40. 4.40 TCGA / microscopy imaging</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Erich Bremer</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#CoverageTemporalExtent">5.7 Coverage temporal extent</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#ReferenceDataChunks">5.37 Reference data chunks</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#TilingSupport">5.52 Support for tiling</a>, <a href="#IndependenceOnReferenceSystems">5.21 Independence on reference systems</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#TimeSeries">5.56 Time series</a>, <a href="#SpatialOperators">5.44 Spatial operators</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_41_crop_yield_estimation_using_multiple_satellites"><a class="anchor" href="#_4_41_crop_yield_estimation_using_multiple_satellites"></a>6.41. 4.41 Crop yield estimation using multiple satellites</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Kerry Taylor with Zheng-Shu Zhou, CSIRO</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#AvoidCoordinateTransformations">5.2 Avoid coordinate transformations</a>, <a href="#CoverageTemporalExtent">5.7 Coverage temporal extent</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#SSNLikeRepresentation">5.46 SSN-like representation</a>, <a href="#VirtualObservations">5.62 Virtual observations</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#UncertaintyInObservations">5.57 Uncertainty in observations</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#ObservedPropertyInCoverage">5.34 Observed property in coverage</a>, <a href="#IdentifyCoverageType">5.20 Identify coverage type</a>, <a href="#ReferenceDataChunks">5.37 Reference data chunks</a>, <a href="#UseInComputationalModels">5.59 Use in computational models</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#TimeSeries">5.56 Time series</a>, <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#TimeSeries">5.56 Time series</a>, <a href="#SpatialOperators">5.44 Spatial operators</a>, <a href="#SSNExamples">5.48 SSN usage examples</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_42_enabling_cross_domain_sharing_and_re_use_of_geospatial_metadata"><a class="anchor" href="#_4_42_enabling_cross_domain_sharing_and_re_use_of_geospatial_metadata"></a>6.42. 4.42 Enabling cross-domain sharing and re-use of geospatial metadata</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Andrea Perego, <a href="https://ec.europa.eu/jrc/">European Commission, Joint Research Centre (JRC)</a></p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#BoundingBoxCentroid">5.3 Bounding box and centroid</a>, <a href="#Crawlability">5.8 Crawlability</a>, <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#DifferentTimeModels">5.12 Different time models</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#EncodingForVectorGeometry">5.15 Encoding for vector geometry</a>, <a href="#IndependenceOnReferenceSystems">5.21 Independence on reference systems</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#LinkingCRS">5.24 Linking geometry to CRS</a>, <a href="#NominalTemporalReferences">5.32 Nominal temporal references</a>, <a href="#MachineToMachine">5.25 Machine to machine</a>, <a href="#MultilingualSupport">5.29 Multilingual support</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#TemporalReferenceSystem">5.54 Temporal reference system</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#TemporalVagueness">5.55 Temporal vagueness</a>, <a href="#TimeSeries">5.56 Time series</a>, <a href="#ValidTime">5.61 Valid time</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_43_improving_discovery_of_spatial_data_on_the_web"><a class="anchor" href="#_4_43_improving_discovery_of_spatial_data_on_the_web"></a>6.43. 4.43 Improving discovery of spatial data on the Web</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Andrea Perego, <a href="https://ec.europa.eu/jrc/">European Commission, Joint Research Centre (JRC)</a></p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Crawlability">5.8 Crawlability</a>, <a href="#Discoverability">5.13 Discoverability</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#EncodingForVectorGeometry">5.15 Encoding for vector geometry</a>, <a href="#IndependenceOnReferenceSystems">5.21 Independence on reference systems</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#MachineToMachine">5.25 Machine to machine</a>, <a href="#MultilingualSupport">5.29 Multilingual support</a>, <a href="#NominalTemporalReferences">5.32 Nominal temporal references</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#SpatialVagueness">5.45 Spatial vagueness</a>, <a href="#TemporalVagueness">5.55 Temporal vagueness</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_44_inspire_compliance_using_web_standards"><a class="anchor" href="#_4_44_inspire_compliance_using_web_standards"></a>6.44. 4.44 INSPIRE compliance using Web standards</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Erwin Folmer, <a href="http://www.kadaster.com">Dutch Cadastre</a> (via <a href="mailto:public-sdw-comments@w3.org">public-sdw-comments@w3.org</a>)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Compatibility">5.4 Compatibility with existing practices</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_45_event_like_geographic_features"><a class="anchor" href="#_4_45_event_like_geographic_features"></a>6.45. 4.45 Event-like geographic features</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Karl Grossner, Stanford Libraries</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#DateTimeDuration">5.10 Date, time and duration</a>, <a href="#4DModelSpaceTime">5.1 4D model of space-time</a>, <a href="#SpaceTimeMultiScale">5.41 Space-time multi-scale</a>, <a href="#TemporalReferenceSystem">5.54 Temporal reference system</a>, <a href="#TemporalVagueness">5.55 Temporal vagueness</a>, <a href="#ValidTime">5.61 Valid time</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_46_creation_of_virtual_observations_from_analysis_phase_of_weather_prediction_model"><a class="anchor" href="#_4_46_creation_of_virtual_observations_from_analysis_phase_of_weather_prediction_model"></a>6.46. 4.46 Creation of “virtual observations” from “analysis” phase of weather prediction model</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Jeremy Tandy, <a href="http://www.metoffice.gov.uk/">Met Office</a></p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#TimeOntologyInOWL">2.3 Time Ontology in OWL</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Provenance">5.35 Provenance</a>, <a href="#VirtualObservations">5.62 Virtual observations</a>, <a href="#SensingProcedure">5.40 Sensing procedure</a>, <a href="#UncertaintyInObservations">5.57 Uncertainty in observations</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#CRSDefinition">5.9 CRS definition</a>, <a href="#GeoreferencedData">5.18 Georeferenced spatial data</a>, <a href="#ObservationAggregations">5.33 Observation aggregations</a>, <a href="#SSNExamples">5.48 SSN usage examples</a>, <a href="#TimeSeries">5.56 Time series</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_47_incorporating_geospatial_data_e_g_geo_referenced_geometry_into_interactive_3d_graphics_on_the_web"><a class="anchor" href="#_4_47_incorporating_geospatial_data_e_g_geo_referenced_geometry_into_interactive_3d_graphics_on_the_web"></a>6.47. 4.47 Incorporating geospatial data (e.g. geo-referenced geometry) into interactive 3D graphics on the Web</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Stefan Lemme, DFKI/Saarland University</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Linkability">5.23 Linkability</a>, <a href="#Streamable">5.49 Streamable data</a>, <a href="#Compressible">5.5 Compressibility</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#TilingSupport">5.52 Support for tiling</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_48_smart_cities"><a class="anchor" href="#_4_48_smart_cities"></a>6.48. 4.48 Smart Cities</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Payam Barnaghi (on behalf of the EU FP7 CityPulse Project)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Linkability">5.23 Linkability</a>, <a href="#DeterminableCRS">5.11 Determinable CRS</a>, <a href="#DynamicSensorData">5.14 Dynamic sensor data</a>, <a href="#HumansAsSensors">5.19 Humans as sensors</a>, <a href="#MobileSensors">5.26 Mobile sensors</a>, <a href="#ModelActuation">5.27 Model actuation</a>, <a href="#NominalObservations">5.31 Nominal observations</a>, <a href="#LightweightAPI">5.22 Lightweight API</a>, <a href="#SSNExamples">5.48 SSN usage examples</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_49_provenance_of_climate_data"><a class="anchor" href="#_4_49_provenance_of_climate_data"></a>6.49. 4.49 Provenance of climate data</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Bruce Bannerman (Australian Bureau of Meteorology)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#SSN">2.4 Semantic Sensor Network Vocabulary</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Discoverability">5.13 Discoverability</a>, <a href="#ObservationAggregations">5.33 Observation aggregations</a>, <a href="#ObservedPropertyInCoverage">5.34 Observed property in coverage</a>, <a href="#Provenance">5.35 Provenance</a>, <a href="#QualityPerSample">5.36 Quality per sample</a>, <a href="#SensorMetadata">5.39 Sensor metadata</a>, <a href="#SensingProcedure">5.40 Sensing procedure</a>, <a href="#SpatialMetadata">5.42 Spatial metadata</a>, <a href="#SSNExamples">5.48 SSN usage examples</a>, <a href="#3DSupport">5.51 Support for 3D</a>, <a href="#TimeSeries">5.56 Time series</a>, <a href="#VirtualObservations">5.62 Virtual observations</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_50_representing_geospatial_data_in_rdf"><a class="anchor" href="#_4_50_representing_geospatial_data_in_rdf"></a>6.50. 4.50 Representing geospatial data in RDF</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Phil Archer on behalf of the SmartOpendata project</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a>, <a href="#CoverageInLinkedData">2.5 Coverage in Linked Data</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#Compatibility">5.4 Compatibility with existing practices</a>, <a href="#Linkability">5.23 Linkability</a>, <a href="#MultilingualSupport">5.29 Multilingual support</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_51_modelling_in_the_construction_sector"><a class="anchor" href="#_4_51_modelling_in_the_construction_sector"></a>6.51. 4.51 Modelling in the construction sector</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Sander Stolk (Semmtech)</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_detail_99">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Deliverables:</strong> <a href="#BestPractices">2.2 Spatial Data on the Web Best Practices</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Related Requirements:</strong> <a href="#SubjectEquality">5.50 Subject equality</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sdw_use_case_details"><a class="anchor" href="#_sdw_use_case_details"></a>7. SDW Use Case Details</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="use_case_detail_1"><a class="anchor" href="#use_case_detail_1"></a>7.1. Use Case 1</h3>
+<div class="paragraph">
+<p>This is really one of several future, but realistic, meteorological scenarios to aim at.</p>
+</div>
+<div class="paragraph">
+<p>National Hydro-Meteorological Services around the world are coordinated via the WMO (World Meteorological Organization), part of the United Nations system. WMO has the same status as ISO, and its standards and regulatory materials applies to all its 193 national meteorological services and are available in the six working languages ( عربي | 中文 | Fr | Ru | Es | En). WMO has embarked on a long-term (think a decade or so) program to update the global meteorological operational infrastructure. This is known as the WIS (WMO Information System). The global infrastructure also has aviation, oceanographic, seismic and other users. The WIS includes a global, federated, synchronized, geospatial catalog, envisaged to encompass all hydro-meteorological data and services. Currently several nodes are operational, cataloging mainly routinely exchanged observations and forecasts.</p>
+</div>
+<div class="paragraph">
+<p>Envisage an environmental scientist in Cambodia, researching the impact of deforestation in Vietnam as part of investigating the regional impacts of climate change. She submits her search keywords, in Cambodian, and receives responses indicating there is some data from the 1950s, printed in a 1960 pamphlet, in the Bibliothèque Nationale, a library in Paris, France, in French. She receives an abstract of some form that enables her to decide that the data are worth accessing, and initiates a request for a digital copy to be sent.</p>
+</div>
+<div class="paragraph">
+<p>She receives the pamphlet as a scanned image of each page, and she decides that the quantitative information in the paper is useful, so she arranges transcription of the tabular numerical data and their summary values into a digital form and publishes the dataset, with a persistent identifier, and links it to a detailed coverage extent, the original paper source, the scanned pages and her paper when it is published. She also incorporates scanned charts and graphs from the original pamphlet into her paper. Her organization creates a catalog record for her research paper dataset and publishes it in the WIS global catalog, which makes it also visible to the GEO System of Systems broker portal.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_2"><a class="anchor" href="#use_case_detail_2"></a>7.2. Use Case 2</h3>
+<div class="paragraph">
+<p>The <a href="http://jncc.defra.gov.uk/page-5230">Marine and Coastal Access Act 2009</a> allows for the creation of a type of Marine Protected Area (MPA), called a Marine Conservation Zone (MCZ). MCZs protect a range of nationally important marine wildlife, habitats, geology and geomorphology and can be designated anywhere in English and Welsh inshore and UK offshore waters.</p>
+</div>
+<div class="paragraph">
+<p>The designation of a MCZ is dependent on a detailed analysis of the marine environment which results in the definition of geometric areas where a given habitat type is deemed to occur and is published as a habitat map.</p>
+</div>
+<div class="paragraph">
+<p>Being a policy statement, it is important to be able to express the provenance of information that was used to compile the habitat map. Moreover, because the marine environment is always changing, it is important to express the time at which this information was collected.</p>
+</div>
+<div class="paragraph">
+<p>The information includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>acoustic survey</p>
+</li>
+<li>
+<p>video (from a video camera towed behind a survey boat)</p>
+</li>
+<li>
+<p>biota observations (based on what is observed in the video and from physical collection)</p>
+</li>
+<li>
+<p>particle size (sand/mud)</p>
+</li>
+<li>
+<p>water column data</p>
+</li>
+<li>
+<p>seabed character map: discrete seabed features and backscatter information (from sonar) to determine bottom type</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These information types are varied in type and size. In particular, the acoustic survey (e.g. side-scan sonar) is difficult to manage as these survey results can be many gigabytes in size and cover large areas. A way is needed to refer to just a small part of these coverage data sets that are relevant to a particular habitat zone
+analysis.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_3"><a class="anchor" href="#use_case_detail_3"></a>7.3. Use Case 3</h3>
+<div class="paragraph">
+<p>This use case is about the wildfire monitoring service of the National Observatory of Athens (NOA) as studied in the TELEIOS project. The wildfire monitoring service is based on the use of satellite images originating from the SEVIRI (Spinning Enhanced Visible and Infrared Imager) sensor on top of the Meteosat Second Generation satellites MSG-1 and MSG-2. Since 2007, NOA operates an MSG/SEVIRI acquisition station, and has been systematically archiving raw satellite images on a 5 and 15 minutes basis, the respective temporal resolutions of MSG-1 and MSG-2.</p>
+</div>
+<div class="paragraph">
+<p>The service active in NOA before TELEIOS can be summarized as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The ground-based receiving antenna collects all spectral bands from MSG-1 and MSG-2 every 5 and 15 minutes respectively.</p>
+</li>
+<li>
+<p>The raw datasets are decoded and temporarily stored in the METEOSAT Ground Station as wavelet compressed images.</p>
+</li>
+<li>
+<p>A Python program manages the data stream in real-time by offering the following functionality:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Extract and store the raw file metadata in an SQLite database. This metadata describes the type of sensor, the acquisition time, the spectral bands captured, and other related parameters. Such a step is required as one image comprises multiple raw files, which might arrive out-of-order.</p>
+</li>
+<li>
+<p>Filter the raw data files, disregarding non-applicable data for the fire monitoring scenario, and dispatch them to a dedicated disk array for permanent storage.</p>
+</li>
+<li>
+<p>Trigger the processing chain by transferring the appropriate spectral bands via FTP to a dedicated machine and initiating the following steps: (i) cropping the image to keep only the area of interest, (ii) georeferencing to the geodetic reference system used in Greece (HGRS 87), (iii) classifying the image pixels as "fire" or "non-fire" using appropriate algorithms, and finally (iv) exporting the final product to raster and vector formats (ESRI shapefiles).</p>
+</li>
+<li>
+<p>Dispatch the derived products to the disk array and additionally store them in a PostGIS database system.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>It would be interesting for NOA to see how to use the standards developed by this Working Group to achieve the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Improve the thematic accuracy of generated products.</p>
+</li>
+<li>
+<p>Generate thematic maps by combining the generated products with other kinds of data such as: Corine Land Cover, the Administrative Geography of Greece, OpenStreetMap data and Geonames.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This use case is further discussed in Real-Time Wildfire Monitoring Using Scientific Database and Linked Data Technologies. Some of the data used in the operational service is available separately.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_4"><a class="anchor" href="#use_case_detail_4"></a>7.4. Use Case 4</h3>
+<div class="paragraph">
+<p>This use case was studied by the National Observatory of Athens (NOA) in the <a href="http://www.earthobservatory.eu/">TELEIOS</a> project. The burnt scar mapping service is dedicated to the accurate mapping of burnt areas in Greece after the end of the summer fire season, using Landsat 5 TM satellite images. The processing chain of this service is divided into three stages, each one containing a series of modules.</p>
+</div>
+<div class="paragraph">
+<p>The pre-processing stage is dedicated to (i) identification of appropriate data, downloading and archiving, (ii) georeferencing of the received satellite images, and (iii) cloud masking process to exclude pixels “contaminated” by clouds from the subsequent processing steps.</p>
+</div>
+<div class="paragraph">
+<p>The core processing stage comprises (i) a classification algorithm which identifies burnt and non-burnt sets of pixels, (ii) a noise removal process that is necessary to eliminate isolated pixels that have been classified wrongfully as burnt, and (ii) converting the raster intermediate product to vector format.</p>
+</div>
+<div class="paragraph">
+<p>Finally, the post-processing stage consists of (i) a visual refinement step to ensure product thematic accuracy and consistency, (ii) attribute enrichment of the product by overlaying the polygons with geoinformation layers and finally (iii) generation of thematic maps. It would be interesting for NOA to see where the standards to be developed in this Working Group could be used.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_5"><a class="anchor" href="#use_case_detail_5"></a>7.5. Use Case 5</h3>
+<div class="paragraph">
+<p>This is a rather generic and broad use case, relevant to Google but clearly also relevant to anyone interested in machine processing of HTML referring to about locations and activities that take place at those locations. Local search providers spend much time and effort creating databases of local facilities, businesses and events.</p>
+</div>
+<div class="paragraph">
+<p>Much of this information comes from Web pages published on the public Web, but in an unstructured form. Previous attempts at harvesting this information automatically have met with only limited success. Current alternative approaches involve business owners manually adding structured data to dedicated portals. This approach, although clearly an improvement, does not really scale and there are clearly issues in terms of data sharing and freshness.</p>
+</div>
+<div class="paragraph">
+<p>The information of interest includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the facility&#8217;s address;</p>
+</li>
+<li>
+<p>the type of business/activity;</p>
+</li>
+<li>
+<p>opening hours;</p>
+</li>
+<li>
+<p>date, time and duration of events;</p>
+</li>
+<li>
+<p>telephone, e-mail and Web site details.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Complexities to this include multiple address standards, the differences between qualitative representations of place, and precise spatial co-ordinates, definitions of activities etc.</p>
+</div>
+<div class="paragraph">
+<p>Ultimately these Web pages should become the canonical source of local data used by all Web users and services.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_6"><a class="anchor" href="#use_case_detail_6"></a>7.6. Use Case 6</h3>
+<div class="paragraph">
+<p>With the increasing availability of small, mobile location aware devices the requirement to identify a location human terms is becoming more important. While the determination of sensor in space to a high level of precision is a largely solved problem we are less able to express the location in terms meaningful to humans. The fact that the Bluetooth-LE tracker attached to my bag is at 51.4256853,-0.3317991,4.234500 is much less useful than the description, "Under your bed at home". At others times the location descriptions "24 Bridgeman Road, Teddington, TW11 8AH, UK" might be equally valid, as might "Teddington", "South West London", "England", "UK", "Inside", "Where you left it Yesterday", "Upstairs", "45 minutes from here" or "150 meters from the Post Office".</p>
+</div>
+<div class="paragraph">
+<p>A better understanding of how we describe places in human terms, the hierarchical nature of places and the fuzzy nature of many geographical entities will be needed to make the "Internet of Things" manageable. A new scale of geospatial analysis may be required using a reference frame based on the locations of individuals rather than a global spherical co-ordinate, allowing a location of your keys and their attached bluetooth tag to be described as "in the kitchen".</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_7"><a class="anchor" href="#use_case_detail_7"></a>7.7. Use Case 7</h3>
+<div class="paragraph">
+<p>This use case is for representing the perspective of a party that is interested in publishing data on the Web and wants to do it right with respect to the geographical component of the data. The point of this use case is that it would be good to remove barriers that stand in the way of more spatial data becoming available on the Web.</p>
+</div>
+<div class="paragraph">
+<p>A data publisher could have the following questions:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>How should I publish vector data? What is the best encoding to use?</p>
+</li>
+<li>
+<p>How should I publish raster data?</p>
+</li>
+<li>
+<p>How do I make the CRS(s) known?</p>
+</li>
+<li>
+<p>How do I make the spatial resolution/level of detail/accuracy known?</p>
+</li>
+<li>
+<p>Which data publishing software has good support of geographical data types and geographical functions?</p>
+</li>
+<li>
+<p>Which data publishing software has good performance when it comes to spatial operations on data?</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>From the last two questions it follows that the WG could also be involved in enabling conformance testing and stimulating development of benchmarks for software.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_8"><a class="anchor" href="#use_case_detail_8"></a>7.8. Use Case 8</h3>
+<div class="paragraph">
+<p>This use case is somewhat complementary to use case <a href="https://www.w3.org/TR/sdw-ucr/#PublishingGeographicalData">Publishing GeographicalD ata</a>. It takes the consumer perspective, specifically that of a developer of a Web application that should visualize data and allow some kind of user interaction. The hypothetical Web application has little or no prior knowledge about the data it will encounter on the Web, but should be able to do something meaningful with any spatial data that are encountered, like drawing data on a map or rendering the data in a 3D cityscape.</p>
+</div>
+<div class="paragraph">
+<p>The point of this use case is that in order for spatial data on the Web to be successful, supply and demand must be balanced to create a positive feedback loop. High quality data must be available in high quantities but those data must also be highly usable for experts as well as non-experts.</p>
+</div>
+<div class="paragraph">
+<p>A Web application developer could have the following questions:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>How do I find geographical data on the Web?</p>
+</li>
+<li>
+<p>How can I tell what kind of spatial data I will get? Raster or vector? 2D or 3D?</p>
+</li>
+<li>
+<p>Which encoding of vector data can I expect?</p>
+</li>
+<li>
+<p>Which encoding of raster data can I expect?</p>
+</li>
+<li>
+<p>Can I get the data with coordinates that match the coordinate system of my map?</p>
+</li>
+<li>
+<p>What is the spatial extent of this dataset/collection of resources/resource?</p>
+</li>
+<li>
+<p>How can I filter data to get the most appropriate spatial representation of a resource/collection of resources?</p>
+</li>
+<li>
+<p>How can I use spatial data on the Web without having to take a four year academic course first?</p>
+</li>
+<li>
+<p>Which spatial operations does this SPARQL endpoint support?</p>
+</li>
+<li>
+<p>Can I use spatial operations in federated queries?</p>
+</li>
+<li>
+<p>How can I ensure responsiveness of my application (low wait times when accessing data)?</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_9"><a class="anchor" href="#use_case_detail_9"></a>7.9. Use Case 9</h3>
+<div class="paragraph">
+<p>Note this use case shares characteristics with Publishing Cultural Heritage Data.</p>
+</div>
+<div class="paragraph">
+<p>A research endeavor that has just started tries to stimulate researchers in various fields of the humanities to make research data available in such a way that the data are and remain usable by other researchers, and that the data may be used for purposes other than those envisaged by the original researcher. The emphasis lies on spatiotemporal data because they are nice to visualize (a map with a time slider) and because it is thought that it would be interesting to try to discover patterns in time and/or space in interlinked distributed data sets.</p>
+</div>
+<div class="paragraph">
+<p>This project has the following aspects that seem relevant to this Working Group:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Technologies must be easy to implement for people that generally do not have a high affinity with IT. This goes for data publishing as well as data consumption.</p>
+</li>
+<li>
+<p>References to time and space are often inexact or have shifting frames of reference, so simple encodings like basic geo or ISO 8601 do not suffice.</p>
+</li>
+<li>
+<p>References to time and space do need to be as exact as possible, to enable automatic discovery of spatiotemporal patterns.</p>
+</li>
+<li>
+<p>Datasets do not just need to be published, they need to be easily discovered too, using spatial and/or temporal filters.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Adding examples below relevant to items 2 and 3 above, from one existing scholarly Web application case, which may contribute to a more general (i.e. not necessarily historical) requirement for representing several types of uncertainty: imprecision, probability, confidence. Standards for gazetteers -particularly historical (temporal) ones- are non-existent, although several projects with potentially global reach are underway. It will be helpful to have this Working Group in dialog with developers for such projects as Pelagios, Library of Congress, Pleiades, and Past Place (cf. Humphrey Southall).</p>
+</div>
+<div class="paragraph">
+<p><strong>Spatial</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A set of life path data were developed for a kinship network of 30,000 individual Britons linked by birth and marriage. Spatial data for the locations of life events has several levels of granularity, from street address (10 Downing Street) to country (China). How can spatial containment relationships for places be expressed so that spatial-temporal contemporaneity be calculated?</p>
+</li>
+<li>
+<p>References to places in historical works are often limited to toponyms (i.e. absent geometry or precise spatial relations), and qualified by such terms as "near," and "north of." How can these be indexed spatially so as to be discoverable?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Temporal</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>As with spatial data, historical sources contain temporal references at varying granularity. A single data set may contain expressions for exact dates, months, or years&#8201;&#8212;&#8201;or ranges containing a mix of any of those.</p>
+</li>
+<li>
+<p>Temporal references are frequently inexact, or relational with variable precision. The above referenced data set has a mix, including "around March 1832," "before 1750," "after WW II."</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_10"><a class="anchor" href="#use_case_detail_10"></a>7.10. Use Case 10</h3>
+<div class="paragraph">
+<p>This use is based on the European Location Framework (ELF).</p>
+</div>
+<div class="paragraph">
+<p>Mapping and cadastral authorities maintain datasets that provide geospatial reference data. Reference data is data that a user/developer uses to provide location for her own data (by linking to it), by providing context information about a location (overlaying his data over a background map), etc.</p>
+</div>
+<div class="paragraph">
+<p>A key part of this is persistent identifiers for the published data to allow linking to the reference data. Let&#8217;s assume that http URIs following the Cool URI note are used as identifiers.</p>
+</div>
+<div class="paragraph">
+<p>In ELF — and INSPIRE — reference data is typically published using a Web service by the national authority. In ELF this is an OGC Web Feature Service. To provide access to the different datasets via a single entry point, all the national services are made available via a proxy Web service that also handles authentication etc. In addition, it is foreseen to publish the reference data in other commonly used Web-based platforms for geospatial data to simplify the use of the data - developers and users can use the tools and APIs they are familiar with.</p>
+</div>
+<div class="paragraph">
+<p>As a result, the same administrative unit (to pick an example) is basically available via multiple (document) URIs: via the national Web service, the ELF proxy Web service and Web services of the other platforms. Different services will support different representations (GML, JSON, etc.). The Web services may not be accessible by everyone and different users will have access to different document URIs.</p>
+</div>
+<div class="paragraph">
+<p>Which real-world object and document URIs for the administrative unit should be maintained and what does a GET return in order:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>to support linking other data to the administrative unit;</p>
+</li>
+<li>
+<p>to deliver the document and representation that the user expects when dereferencing the link?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A related challenge is that today such links are often implicit. For example, a post code or a statistical unit code is a property in the other data, but the link is not explicit like an HTTP URI. What is a good practice to make use of such implicit links? Should they be converted to HTTP URIs to be explicit or are there better ways (e.g. additional context that provide information about the semantics and a pattern how to construct dereferenceable URIs)?</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_11"><a class="anchor" href="#use_case_detail_11"></a>7.11. Use Case 11</h3>
+<div class="paragraph">
+<p>The research project CERISE-SG aims to integrate data from different domains: government, energy utilities and geography, in order to enable establishment of smart energy grids.</p>
+</div>
+<div class="paragraph">
+<p>The project has recognized Linked Data as an appropriate concept for integration of data from separate semantic domains. One approach of achieving cross-domain interoperability is to switch from domain-specific semantics to common semantics. For example, the concept of an address has its own definitions in governmental standards and utility standards. Using a common definition improves interoperability.</p>
+</div>
+<div class="paragraph">
+<p>An example of a domain model that is an international standard in electric utilities is the Common Information Model (CIM). Its data model provides definitions for an important entity: the electricity meter. These meters provide useful data on consumption and production of energy. If it is possible to view these devices as sensors, it could be possible to move from domain specific semantics (CIM) to common semantics (SSN), and to have ready linkage to geographical semantics (location and network topology). What is required in this case is a low-threshold way of using sensor semantics, because people involved in integration of data from multiple domains should not be burdened with having to grasp the full complexity of each domain.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_12"><a class="anchor" href="#use_case_detail_12"></a>7.12. Use Case 12</h3>
+<div class="paragraph">
+<p>Emergency response services in the Netherlands use Spatial Data Infrastructures (SDI) to help manage large scale incidents. Predefined geographical data from their GIS warehouses can be used, but incidents and accidents are by nature unpredictable so it is impossible to determine beforehand which data are needed. In-house data need to be supplemented with data from other sources based on ad-hoc requirements. Typically, supplemental data are available through WxS services. This poses several problems:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Third party data lack semantics in the sense of the Web of data. Under the umbrella of various projects a first attempt has been made to at least share definitions of the terminology used by various emergency response services, both national and cross border. This resulted in the start of a project called the Firebrary. Now the terminology and definitions are available on the Web as linked data as SKOS. Still linking from the spatial data to these definitions and vice versa is not standardized. Publication of Web semantics with spatial data would improve discoverability of applicable data and facilitate linking data from separate sources.</p>
+</li>
+<li>
+<p>It is not possible to predefine relationships between Web data and data exposed through WxS services (rdfs:seeAlso is considered by many to be too limited).</p>
+</li>
+<li>
+<p>It is not easy to share all data related to an incident as Web data.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Being able to plot and exchange data about active incidents through the Web and visualize them in GIS tools with open standards would be a huge leap forward for emergency response services.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_13"><a class="anchor" href="#use_case_detail_13"></a>7.13. Use Case 13</h3>
+<div class="paragraph">
+<p><strong>What:</strong> The local authorities of Zaragoza (Spain) want to publish the air quality data of the city. Each observation station has a spatial location described with an address. The dataset contains hourly observations and daily aggregations of different gases, e.g. SO2, NO2, O3, CO, etc.</p>
+</div>
+<div class="paragraph">
+<p><strong>How:</strong> We use the Location Core vocabulary to model the address, e.g. :station locn:address "C/ Gran Vía (Paraninfo)"^^xsd:string. We use xsd:dateTime to represent hourly observations, e.g. :obs ssn:observationResultTime "2003-03-08T11:00:00Z"^^xsd:dateTime.</p>
+</div>
+<div class="paragraph">
+<p><strong>Open challenges:</strong> The combination of hourly observations and daily aggregations in the same dataset may cause confusion because the granularity of the observation is not explicit. For daily aggregations, we suggest using time:Interval from the Time Ontology. To make the temporal modeling more homogeneous, time:Instant could be used for the hourly observations.</p>
+</div>
+<div class="paragraph">
+<p>A description of the data set, including its SPARQL endpoint, can be found at <a href="https://www.zaragoza.es/ciudad/risp/detalle_Risp?id=131" class="bare">https://www.zaragoza.es/ciudad/risp/detalle_Risp?id=131</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_14"><a class="anchor" href="#use_case_detail_14"></a>7.14. Use Case 14</h3>
+<div class="paragraph">
+<p><strong>What:</strong> The Regional Transport Consortium of Madrid (CRTM) wants to make available data about transport card validations and transport card recharging. In the case of transport card validations, the NFC sensors are located on buses, and at the entrance and (some) exit points of metro stations. The observation value of a validation includes data related to the transport card, such as the card identifier and the user profile. The sensors for transport card recharging are ATMs and ticket selling points distributed around Madrid. The observation value of a recharging includes the card identifier and the type of recharging.</p>
+</div>
+<div class="paragraph">
+<p><strong>How:</strong> To model transport card validations, we consider two observed properties: user entry (EntradaUsuario) and user exit (SalidaUsuario). Validation sensors at metro stations have a fixed location and a unique identifier, e.g. 02_L12_P2. A bus validation sensor is moving continuously, so for the sake of pragmatism, there is a unique sensor identifier for each bus stop in every line, e.g. 03_L20_P837. Those identifiers point to an address and geographic coordinates. The observed property when a user adds money to her transport card is the act of recharging (CargaTTP). In both cases, validation and recharging observations, the feature of interest is the transport card.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_detail_99"><a class="anchor" href="#use_case_detail_99"></a>7.15. Use Case 99</h3>
+<div class="paragraph">
+<p>Place holder for use cases which are under construction.</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conformance_class_abstract_test_suite_normative"><a class="anchor" href="#_conformance_class_abstract_test_suite_normative"></a>Annex A: Conformance Class Abstract Test Suite (Normative)</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_conformance_class_a"><a class="anchor" href="#_conformance_class_a"></a>A.1. Conformance Class A</h3>
+<div class="sect3">
+<h4 id="_requirement_1"><a class="anchor" href="#_requirement_1"></a>A.1.1. Requirement 1</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test id:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/conf/conf-class-a/req-name-1</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Requirement:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">/req/req-class-a/req-name-1</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test purpose:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Verify that&#8230;&#8203;</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Test method:</p></th>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Inspect&#8230;&#8203;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_requirement_2"><a class="anchor" href="#_requirement_2"></a>A.1.2. Requirement 2</h4>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_title_normativeinformative"><a class="anchor" href="#_title_normativeinformative"></a>Annex B: Title ( {Normative/Informative} )</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Place other Annex material in sequential annexes beginning with "B" and leave final two annexes for the Revision History and Bibliography
+</td>
+</tr>
+</table>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_revision_history"><a class="anchor" href="#_revision_history"></a>Annex C: Revision History</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Date</th>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Release</th>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Editor</th>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Primary clauses modified</th>
+<th class="tableblock halign-left valign-top" style="background-color: #FFFFFF;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">2016-04-28</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">0.1</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">G. Editor</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">all</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">initial version</p></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Bibliography"><a class="anchor" href="#Bibliography"></a>Annex D: Bibliography</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title">Example Bibliography (Delete this note).</div>
+<div class="paragraph">
+<p>The TC has approved Springer LNCS as the official document citation type.</p>
+</div>
+<div class="paragraph">
+<p>Springer LNCS is widely used in technical and computer science journals and other publications</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>– Actual References:</p>
+</div>
+<div class="paragraph">
+<p>[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
+</div>
+<div class="paragraph">
+<p>[n] Web: Author Surname, A.: Title, <a href="http://Website-Url" class="bare">http://Website-Url</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p></p>
+</div>
+<div id="OGC2015" class="paragraph">
+<p>[1] OGC: OGC Testbed 12 Annex B: Architecture. (2015).</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2021-12-17 23:20:39 UTC
+</div>
+</div>
+</body>
+</html>

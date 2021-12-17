@@ -1,0 +1,514 @@
+== SDW Use Cases
+
+Use cases that describe current problems or future opportunities for spatial data on the Web have been gathered as a first activity of the Working Group. They were mainly contributed by members of Working Group, but there were also contributions from other interested parties. In this chapter these use cases are listed and identified. Each use case is related to one or more Working Group <<Deliverables,deliverables>> and to one or more <<Requirements,requirements>> for future deliverables.
+
+=== 4.1 Meteorological data rescue
+
+*Contributed By:* Chris Little, based on scenarios used for the WMO infrastructure requirements.
+
+<<use_case_detail_1,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<SpatialMetadata,5.42 Spatial metadata>>, <<CoverageTemporalExtent,5.7 Coverage temporal extent>>, <<CRSDefinition,5.9 CRS definition>>, <<DateTimeDuration,5.10 Date, time and duration>>, <<DifferentTimeModels,5.12 Different time models>>, <<Discoverability,5.13 Discoverability>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<Linkability,5.23 Linkability>>, <<MultilingualSupport,5.29 Multilingual support>>, <<NominalTemporalReferences,5.32 Nominal temporal references>>, <<ObservedPropertyInCoverage,5.34 Observed property in coverage>>, <<Provenance,5.35 Provenance>>, <<QualityPerSample,5.36 Quality per sample>>, <<ReferenceDataChunks,5.37 Reference data chunks>>, <<SensingProcedure,5.40 Sensing procedure>>, <<SensorMetadata,5.39 Sensor metadata>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<TemporalReferenceSystem,5.54 Temporal reference system>>, <<UncertaintyInObservations,5.57 Uncertainty in observations>>, <<Crawlability,5.8 Crawlability>>
+
+=== 4.2 Habitat zone verification for designation of Marine Conservation Zones
+
+*Contributed By:* Jeremy Tandy
+
+<<use_case_detail_2,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<IdentifyCoverageType,5.20 Identify coverage type>>, <<Provenance,5.35 Provenance>>, <<ReferenceDataChunks,5.37 Reference data chunks>>, <<SensorMetadata,5.39 Sensor metadata>>, <<CRSDefinition,5.9 CRS definition>>, <<MobileSensors,5.26 Mobile sensors>>, <<Linkability,5.23 Linkability>>, <<NominalObservations,5.31 Nominal observations>>, <<HumansAsSensors,5.19 Humans as sensors>>, <<3DSupport,5.51 Support for 3D>>, <<ExSituSampling,5.16 Ex-situ sampling>>, <<SensingProcedure,5.40 Sensing procedure>>, <<SpatialRelationships,5.43 Spatial relationships>>
+
+=== 4.3 Real-time wildfire monitoring
+
+*Contributed By:* Manolis Koubarakis
+
+<<use_case_detail_3,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<CRSDefinition,5.9 CRS definition>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<Georectification,5.17 Georectification>>, <<Linkability,5.23 Linkability>>, <<IdentifyCoverageType,5.20 Identify coverage type>>, <<Provenance,5.35 Provenance>>, <<SensorMetadata,5.39 Sensor metadata>>, <<DynamicSensorData,5.14 Dynamic sensor data>>, <<SSNLikeRepresentation,5.46 SSN-like representation>>
+
+=== 4.4 Diachronic burnt scar Mapping
+
+*Contributed By:* Manolis Koubarakis
+
+<<use_case_detail_4,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<CRSDefinition,5.9 CRS definition>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<Georectification,5.17 Georectification>>, <<Linkability,5.23 Linkability>>, <<IdentifyCoverageType,5.20 Identify coverage type>>, <<Provenance,5.35 Provenance>>, <<SensorMetadata,5.39 Sensor metadata>>, <<SSNLikeRepresentation,5.46 SSN-like representation>> 
+
+=== 4.5 Harvesting of Local Search Content
+
+*Contributed By:* Ed Parsons
+
+<<use_case_detail_5,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>
+
+*Related Requirements:* <<AvoidCoordinateTransformations,5.2 Avoid coordinate transformations>>, <<CoordinatePrecision,5.6 Coordinate precision>>, <<Crawlability,5.8 Crawlability>>, <<DateTimeDuration,5.10 Date, time and duration>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<Discoverability,5.13 Discoverability>>, <<LinkingCRS,5.24 Linking geometry to CRS>>
+
+=== 4.6 Locating a thing
+
+*Contributed By:* Ed Parsons
+
+<<use_case_detail_6,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<DeterminableCRS,5.11 Determinable CRS>>, <<IndependenceOnReferenceSystems,5.21 Independence on reference systems>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<TimeDependentCRS,5.53 Time dependencies in CRS definitions>>, <<MachineToMachine,5.25 Machine to machine>>, <<SpatialRelationships,5.43 Spatial relationships>>
+
+=== 4.7 Publishing geographical data
+
+*Contributed By:* Frans Knibbe
+
+<<use_case_detail_7,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<3DSupport,5.51 Support for 3D>>, <<BoundingBoxCentroid,5.3 Bounding box and centroid>>, <<Compatibility,5.4 Compatibility with existing practices>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<MultipleCRS,5.30 Multiple CRSs>>, <<SpatialRelationships,5.43 Spatial relationships>>
+
+=== 4.8 Consuming geographical data in a Web application
+
+*Contributed By:* Frans Knibbe
+
+<<use_case_detail_8,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<AvoidCoordinateTransformations,5.2 Avoid coordinate transformations>>, <<BoundingBoxCentroid,5.3 Bounding box and centroid>>, <<Compressible,5.5 Compressibility>>, <<Crawlability,5.8 Crawlability>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<IndependenceOnReferenceSystems,5.21 Independence on reference systems>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<TilingSupport,5.52 Support for tiling>>
+
+=== 4.9 Enabling publication, discovery and analysis of spatiotemporal data in the humanities
+
+*Contributed By:* Frans Knibbe, Karl Grossner
+
+<<use_case_detail_9,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>
+
+*Related Requirements:* <<AvoidCoordinateTransformations,5.2 Avoid coordinate transformations>>, , <<CoordinatePrecision,5.6 Coordinate precision>>, <<DateTimeDuration,5.10 Date, time and duration>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<MultipleCRS,5.30 Multiple CRSs>>, <<NominalTemporalReferences,5.32 Nominal temporal references>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<TemporalVagueness,5.55 Temporal vagueness>>, <<TimeDependentCRS,5.53 Time dependencies in CRS definitions>>, <<IndependenceOnReferenceSystems,5.21 Independence on reference systems>>, <<SpatialRelationships,5.43 Spatial relationships>>
+
+=== 4.10 Publishing geospatial reference data
+
+*Contributed By:* Clemens Portele
+
+<<use_case_detail_10,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<Validation,5.60 Validation>>, <<Linkability,5.23 Linkability>>, <<SpatialOperators,5.44 Spatial operators>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>
+
+=== 4.11 Integration of governmental and utility data to enable smart grids
+
+*Contributed By:* Frans Knibbe
+
+<<use_case_detail_11,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<DeterminableCRS,5.11 Determinable CRS>>, <<Discoverability,5.13 Discoverability>>, <<Linkability,5.23 Linkability>>, <<SensorMetadata,5.39 Sensor metadata>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<SSNExamples,5.48 SSN usage examples>>
+
+=== 4.12 Using spatial data during emergency response operations
+
+*Contributed By:* Bart van Leeuwen
+
+<<use_case_detail_12,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<AvoidCoordinateTransformations,5.2 Avoid coordinate transformations>>, <<Compatibility,5.4 Compatibility with existing practices>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<Discoverability,5.13 Discoverability>>, <<Linkability,5.23 Linkability>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<SpatialRelationships,5.43 Spatial relationships>>, <<SubjectEquality,5.50 Subject equality>>
+
+=== 4.13 Publication of air quality data aggregations
+
+*Contributed By:* Alejandro Llaves, Miguel Angel García-Delgado (OEG-UPM), Rubén Notivol, Javier Celma (Ayuntamiento de Zaragoza)
+
+<<use_case_detail_13,Click to view>> full use case description
+
+*Related Deliverables:* <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>
+
+*Related Requirements:* <<DateTimeDuration,5.10 Date, time and duration>>, <<ObservationAggregations,5.33 Observation aggregations>>
+
+=== 4.14 Publication of transport card validation and recharging data
+
+*Contributed By:* Alejandro Llaves (OEG-UPM)
+
+<<use_case_detail_14,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<TimeDependentCRS,5.53 Time dependencies in CRS definitions>>, <<SSNExamples,5.48 SSN usage examples>>
+
+=== 4.15 Combining spatial RDF data for integrated querying in a triplestore
+
+*Contributed By:* Matthew Perry (Oracle)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<AvoidCoordinateTransformations,5.2 Avoid coordinate transformations>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<EncodingForVectorGeometry,5.15 Encoding for vector geometry>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<SpatialMetadata,5.42 Spatial metadata>>
+
+=== 4.16 Dutch Base Registry
+
+*Contributed By:* Linda van den Brink
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<AvoidCoordinateTransformations,5.2 Avoid coordinate transformations>>, <<Compressible,5.5 Compressibility>>, , <<CoordinatePrecision,5.6 Coordinate precision>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<Linkability,5.23 Linkability>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<MultipleCRS,5.30 Multiple CRSs>>
+
+=== 4.17 Publishing Cultural heritage data
+
+*Contributed By:* Lars G. Svensson
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<CoverageTemporalExtent,5.7 Coverage temporal extent>>, <<DateTimeDuration,5.10 Date, time and duration>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<NominalTemporalReferences,5.32 Nominal temporal references>>, <<IndependenceOnReferenceSystems,5.21 Independence on reference systems>>, <<UpdateDatatypes,5.58 Update datatypes in OWL Time>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<TemporalVagueness,5.55 Temporal vagueness>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<Validation,5.60 Validation>>
+
+=== 4.18 Dissemination of 3D geological data
+
+*Contributed By:* Rachel Heaven
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<Discoverability,5.13 Discoverability>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<IdentifyCoverageType,5.20 Identify coverage type>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<ObservedPropertyInCoverage,5.34 Observed property in coverage>>, <<QualityPerSample,5.36 Quality per sample>>, <<ReferenceDataChunks,5.37 Reference data chunks>>, <<3DSupport,5.51 Support for 3D>>, <<UseInComputationalModels,5.59 Use in computational models>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<TilingSupport,5.52 Support for tiling>>, <<Compressible,5.5 Compressibility>>, <<Linkability,5.23 Linkability>>
+
+=== 4.19 Publication of raw subsurface monitoring data
+
+*Contributed By:* Rachel Heaven
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<HumansAsSensors,5.19 Humans as sensors>>, <<CRSDefinition,5.9 CRS definition>>, <<DynamicSensorData,5.14 Dynamic sensor data>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<IdentifyCoverageType,5.20 Identify coverage type>>, <<Linkability,5.23 Linkability>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<4DModelSpaceTime,5.1 4D model of space-time>>, <<NominalObservations,5.31 Nominal observations>>, <<ObservationAggregations,5.33 Observation aggregations>>, <<SamplingTopology,5.38 Sampling topology>>, <<SensingProcedure,5.40 Sensing procedure>>, <<SensorMetadata,5.39 Sensor metadata>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<3DSupport,5.51 Support for 3D>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<SSNExamples,5.48 SSN usage examples>>, <<TimeSeries,5.56 Time series>>, <<UncertaintyInObservations,5.57 Uncertainty in observations>>, <<VirtualObservations,5.62 Virtual observations>>
+
+=== 4.20 Use of a place name ontology for geo-parsing text and geo-enabling searches
+
+*Contributed By:* Rachel Heaven
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<DifferentTimeModels,5.12 Different time models>>, <<DateTimeDuration,5.10 Date, time and duration>>, <<3DSupport,5.51 Support for 3D>>, <<NominalTemporalReferences,5.32 Nominal temporal references>>, <<TemporalReferenceSystem,5.54 Temporal reference system>>, <<TemporalVagueness,5.55 Temporal vagueness>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<SpatialRelationships,5.43 Spatial relationships>>, <<ValidTime,5.61 Valid time>>, <<SpatialMetadata,5.42 Spatial metadata>>
+
+=== 4.21 Driving to work in the snow
+
+*Contributed By:* Cory Henson (Bosch RTC)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<HumansAsSensors,5.19 Humans as sensors>>, <<DateTimeDuration,5.10 Date, time and duration>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<Discoverability,5.13 Discoverability>>, <<DynamicSensorData,5.14 Dynamic sensor data>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<LightweightAPI,5.22 Lightweight API>>, <<ModelActuation,5.27 Model actuation>>, <<MovingFeatures,5.28 Moving features>>, <<NominalObservations,5.31 Nominal observations>>, <<NominalTemporalReferences,5.32 Nominal temporal references>>, <<SensorMetadata,5.39 Sensor metadata>>, <<MachineToMachine,5.25 Machine to machine>>, <<Compressible,5.5 Compressibility>>
+
+=== 4.22 Intelligent Transportation System
+
+*Contributed By:* Antoine Zimmermann
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<DateTimeDuration,5.10 Date, time and duration>>, <<MobileSensors,5.26 Mobile sensors>>, <<ModelActuation,5.27 Model actuation>>, <<MovingFeatures,5.28 Moving features>>, <<NominalObservations,5.31 Nominal observations>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<SSNExamples,5.48 SSN usage examples>>, <<TemporalReferenceSystem,5.54 Temporal reference system>>
+
+=== 4.23 Optimizing energy consumption, production, sales and purchases in Smart Grids
+
+*Contributed By:* Antoine Zimmermann
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<Linkability,5.23 Linkability>>, <<ModelActuation,5.27 Model actuation>>, <<SSNExamples,5.48 SSN usage examples]
+
+=== 4.24 Linked Data for tax assessment
+
+*Contributed By:* Luigi Selmi (via https://lists.w3.org/Archives/Public/public-sdw-comments/[public-sdw-comments)]
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<DeterminableCRS,5.11 Determinable CRS>>, <<Discoverability,5.13 Discoverability>>, <<Linkability,5.23 Linkability>>, <<LinkingCRS,5.24 Linking geometry to CRS>>
+
+=== 4.25 Images, e.g. a time series of a water course
+
+*Contributed By:* Kerry Taylor (on behalf of Jamie Baker, Australian Commonwealth Department of Communications)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<Discoverability,5.13 Discoverability>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<IdentifyCoverageType,5.20 Identify coverage type>>, <<ReferenceDataChunks,5.37 Reference data chunks>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<TimeSeries,5.56 Time series>>, <<3DSupport,5.51 Support for 3D>>, <<SensorMetadata,5.39 Sensor metadata>>, <<CRSDefinition,5.9 CRS definition>>, <<Linkability,5.23 Linkability>>, <<Provenance,5.35 Provenance>>, <<SamplingTopology,5.38 Sampling topology>>, <<DateTimeDuration,5.10 Date, time and duration>>, <<QualityPerSample,5.36 Quality per sample>>, <<ValidTime,5.61 Valid time>>
+
+=== 4.26 Droughts in geological complex environments where groundwater is important
+
+*Contributed By:* Chris Little (on behalf of Andrew G Hughes, British Geological Survey)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<Linkability,5.23 Linkability>>, <<Provenance,5.35 Provenance>>, <<QualityPerSample,5.36 Quality per sample>>, <<NominalObservations,5.31 Nominal observations>>, <<3DSupport,5.51 Support for 3D>>, <<VirtualObservations,5.62 Virtual observations>>, <<DynamicSensorData,5.14 Dynamic sensor data>>, <<UseInComputationalModels,5.59 Use in computational models>>, <<TimeSeries,5.56 Time series>> 
+
+=== 4.27 Soil data applications
+
+*Contributed By:* Simon Cox (on behalf of Peter Wilson, Bruce Simons @ CSIRO)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<Discoverability,5.13 Discoverability>>, <<IdentifyCoverageType,5.20 Identify coverage type>>, <<ObservationAggregations,5.33 Observation aggregations>>, <<ObservedPropertyInCoverage,5.34 Observed property in coverage>>, <<QualityPerSample,5.36 Quality per sample>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<VirtualObservations,5.62 Virtual observations>>, <<SensingProcedure,5.40 Sensing procedure>>, <<HumansAsSensors,5.19 Humans as sensors>>
+
+=== 4.28 Bushfire response coordination centre
+
+*Contributed By:* Simon Cox (on behalf of Paul Box, Simon Cox and Ryan Fraser @ CSIRO)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<AvoidCoordinateTransformations,5.2 Avoid coordinate transformations>>, <<Linkability,5.23 Linkability>>, <<SensorMetadata,5.39 Sensor metadata>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<SSNExamples,5.48 SSN usage examples>>
+
+=== 4.29 Observations on geological samples
+
+*Contributed By:* Simon Cox
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<DateTimeDuration,5.10 Date, time and duration>>, <<DifferentTimeModels,5.12 Different time models>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<Linkability,5.23 Linkability>>, <<Provenance,5.35 Provenance>>, <<SensorMetadata,5.39 Sensor metadata>>, <<ExSituSampling,5.16 Ex-situ sampling>>, <<SamplingTopology,5.38 Sampling topology>>, <<SensingProcedure,5.40 Sensing procedure>>, <<SSNExamples,5.48 SSN usage examples>>, <<HumansAsSensors,5.19 Humans as sensors>>, <<TemporalReferenceSystem,5.54 Temporal reference system>>
+
+=== 4.30 Spatial sampling
+
+*Contributed By:* Simon Cox
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<CRSDefinition,5.9 CRS definition>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<Linkability,5.23 Linkability>>, <<MobileSensors,5.26 Mobile sensors>>, <<SensorMetadata,5.39 Sensor metadata>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<SSNExamples,5.48 SSN usage examples>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<SamplingTopology,5.38 Sampling topology>>, <<UncertaintyInObservations,5.57 Uncertainty in observations>>, <<SpatialMetadata,5.42 Spatial metadata>>
+
+=== 4.31 Select hierarchical geographical regions for use in data analysis or visualisation
+
+*Contributed By:* Bill Roberts (based on needs arising from Swirrl's own work)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>
+
+*Related Requirements:* <<DateTimeDuration,5.10 Date, time and duration>>, <<SpatialOperators,5.44 Spatial operators>>, <<SpatialRelationships,5.43 Spatial relationships>>, <<ValidTime,5.61 Valid time>>
+
+=== 4.32 Satellite data processing
+
+*Contributed By:* Kerry Taylor (informed by Matt Paget and Juan Guerschman, CSIRO)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<CRSDefinition,5.9 CRS definition>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<MobileSensors,5.26 Mobile sensors>>, <<IdentifyCoverageType,5.20 Identify coverage type>>, <<Provenance,5.35 Provenance>>, <<SensorMetadata,5.39 Sensor metadata>>, <<HumansAsSensors,5.19 Humans as sensors>>, <<VirtualObservations,5.62 Virtual observations>>, <<SensingProcedure,5.40 Sensing procedure>>, <<IndependenceOnReferenceSystems,5.21 Independence on reference systems>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<SSNProfiles,5.47 SSN profiles>>
+
+=== 4.33 Marine observations - eMII
+
+*Contributed By:* Simon Cox (on behalf of http://imos.org.au/aodn.html[IMOS eMII])
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<Discoverability,5.13 Discoverability>>, <<MobileSensors,5.26 Mobile sensors>>, <<ObservationAggregations,5.33 Observation aggregations>>, <<ObservedPropertyInCoverage,5.34 Observed property in coverage>>, <<QualityPerSample,5.36 Quality per sample>>, <<SensorMetadata,5.39 Sensor metadata>>, <<3DSupport,5.51 Support for 3D>>, <<SamplingTopology,5.38 Sampling topology>>
+
+=== 4.34 Marine observations - data providers
+
+*Contributed By:* Simon Cox (on behalf of http://imos.org.au/aodn.html[IMOS eMII])
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<NominalObservations,5.31 Nominal observations>>, <<HumansAsSensors,5.19 Humans as sensors>>, <<3DSupport,5.51 Support for 3D>>, <<SSNExamples,5.48 SSN usage examples>>, <<UncertaintyInObservations,5.57 Uncertainty in observations>>
+
+=== 4.35 Marine observations - data consumers
+
+*Contributed By:* Simon Cox (on behalf of http://imos.org.au/aodn.html[IMOS eMII])
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<AvoidCoordinateTransformations,5.2 Avoid coordinate transformations>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<SensingProcedure,5.40 Sensing procedure>>
+
+=== 4.36 Building information management and data sharing
+
+*Contributed By:* Linda van den Brink (with thanks to Henk Schaap - Gobar)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<3DSupport,5.51 Support for 3D>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<SpatialRelationships,5.43 Spatial relationships>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<Validation,5.60 Validation>>, <<DeterminableCRS,5.11 Determinable CRS>>
+
+=== 4.37 Landsat data services
+
+*Contributed By:* Kerry Taylor (on behalf of Aaron Sedgmen of Geoscience Australia)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<DateTimeDuration,5.10 Date, time and duration>>, <<Discoverability,5.13 Discoverability>>, <<ReferenceDataChunks,5.37 Reference data chunks>>, <<TimeSeries,5.56 Time series>>, <<CoverageTemporalExtent,5.7 Coverage temporal extent>>, <<TilingSupport,5.52 Support for tiling>>
+
+=== 4.38 Metadata and search granularity
+
+*Contributed By:* Kerry Taylor (on behalf of Aaron Sedgmen of Geoscience Australia)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<DeterminableCRS,5.11 Determinable CRS>>, <<DifferentTimeModels,5.12 Different time models>>, <<ExSituSampling,5.16 Ex-situ sampling>>, <<NominalTemporalReferences,5.32 Nominal temporal references>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<3DSupport,5.51 Support for 3D>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<TemporalReferenceSystem,5.54 Temporal reference system>>
+
+=== 4.39 Crowdsourced earthquake observation information
+
+*Contributed By:* Kerry Taylor (on behalf of Aaron Sedgmen of Geoscience Australia)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<Crawlability,5.8 Crawlability>>, <<Discoverability,5.13 Discoverability>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<EncodingForVectorGeometry,5.15 Encoding for vector geometry>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<NominalObservations,5.31 Nominal observations>>, <<MultilingualSupport,5.29 Multilingual support>>, <<HumansAsSensors,5.19 Humans as sensors>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<SensorMetadata,5.39 Sensor metadata>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<ObservationAggregations,5.33 Observation aggregations>>, <<MobileSensors,5.26 Mobile sensors>>, <<3DSupport,5.51 Support for 3D>>, <<DynamicSensorData,5.14 Dynamic sensor data>>, <<Streamable,5.49 Streamable data>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<Linkability,5.23 Linkability>>, <<MachineToMachine,5.25 Machine to machine>>, <<SpatialOperators,5.44 Spatial operators>>, <<SSNExamples,5.48 SSN usage examples>>
+
+=== 4.40 TCGA / microscopy imaging
+
+*Contributed By:* Erich Bremer
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<CoverageTemporalExtent,5.7 Coverage temporal extent>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<ReferenceDataChunks,5.37 Reference data chunks>>, <<3DSupport,5.51 Support for 3D>>, <<Discoverability,5.13 Discoverability>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<TilingSupport,5.52 Support for tiling>>, <<IndependenceOnReferenceSystems,5.21 Independence on reference systems>>, <<Provenance,5.35 Provenance>>, <<TimeSeries,5.56 Time series>>, <<SpatialOperators,5.44 Spatial operators>>
+
+=== 4.41 Crop yield estimation using multiple satellites
+
+*Contributed By:* Kerry Taylor with Zheng-Shu Zhou, CSIRO
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<3DSupport,5.51 Support for 3D>>, <<AvoidCoordinateTransformations,5.2 Avoid coordinate transformations>>, <<CoverageTemporalExtent,5.7 Coverage temporal extent>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<SSNLikeRepresentation,5.46 SSN-like representation>>, <<VirtualObservations,5.62 Virtual observations>>, <<SensorMetadata,5.39 Sensor metadata>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<Linkability,5.23 Linkability>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<UncertaintyInObservations,5.57 Uncertainty in observations>>, <<QualityPerSample,5.36 Quality per sample>>, <<ObservedPropertyInCoverage,5.34 Observed property in coverage>>, <<IdentifyCoverageType,5.20 Identify coverage type>>, <<ReferenceDataChunks,5.37 Reference data chunks>>, <<UseInComputationalModels,5.59 Use in computational models>>, <<Provenance,5.35 Provenance>>, <<TimeSeries,5.56 Time series>>, <<CRSDefinition,5.9 CRS definition>>, <<TimeSeries,5.56 Time series>>, <<SpatialOperators,5.44 Spatial operators>>, <<SSNExamples,5.48 SSN usage examples>>
+
+=== 4.42 Enabling cross-domain sharing and re-use of geospatial metadata
+
+*Contributed By:* Andrea Perego, https://ec.europa.eu/jrc/[European Commission, Joint Research Centre (JRC)]
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<BoundingBoxCentroid,5.3 Bounding box and centroid>>, <<Crawlability,5.8 Crawlability>>, <<DateTimeDuration,5.10 Date, time and duration>>, <<DifferentTimeModels,5.12 Different time models>>, <<Discoverability,5.13 Discoverability>>, <<EncodingForVectorGeometry,5.15 Encoding for vector geometry>>, <<IndependenceOnReferenceSystems,5.21 Independence on reference systems>>, <<Linkability,5.23 Linkability>>, <<LinkingCRS,5.24 Linking geometry to CRS>>, <<NominalTemporalReferences,5.32 Nominal temporal references>>, <<MachineToMachine,5.25 Machine to machine>>, <<MultilingualSupport,5.29 Multilingual support>>, <<Provenance,5.35 Provenance>>, <<QualityPerSample,5.36 Quality per sample>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<TemporalReferenceSystem,5.54 Temporal reference system>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<TemporalVagueness,5.55 Temporal vagueness>>, <<TimeSeries,5.56 Time series>>, <<ValidTime,5.61 Valid time>>
+
+=== 4.43 Improving discovery of spatial data on the Web
+
+*Contributed By:* Andrea Perego, https://ec.europa.eu/jrc/[European Commission, Joint Research Centre (JRC)]
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<Crawlability,5.8 Crawlability>>, <<Discoverability,5.13 Discoverability>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<EncodingForVectorGeometry,5.15 Encoding for vector geometry>>, <<IndependenceOnReferenceSystems,5.21 Independence on reference systems>>, <<Linkability,5.23 Linkability>>, <<MachineToMachine,5.25 Machine to machine>>, <<MultilingualSupport,5.29 Multilingual support>>, <<NominalTemporalReferences,5.32 Nominal temporal references>>, <<Provenance,5.35 Provenance>>, <<QualityPerSample,5.36 Quality per sample>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<TemporalVagueness,5.55 Temporal vagueness>>
+
+=== 4.44 INSPIRE compliance using Web standards
+
+*Contributed By:* Erwin Folmer, http://www.kadaster.com[Dutch Cadastre] (via public-sdw-comments@w3.org)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<Compatibility,5.4 Compatibility with existing practices>>
+
+=== 4.45 Event-like geographic features
+
+*Contributed By:* Karl Grossner, Stanford Libraries
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>
+
+*Related Requirements:* <<DateTimeDuration,5.10 Date, time and duration>>, <<4DModelSpaceTime,5.1 4D model of space-time>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<TemporalReferenceSystem,5.54 Temporal reference system>>, <<TemporalVagueness,5.55 Temporal vagueness>>, <<ValidTime,5.61 Valid time>>
+
+=== 4.46 Creation of “virtual observations” from “analysis” phase of weather prediction model
+
+*Contributed By:* Jeremy Tandy, http://www.metoffice.gov.uk/[Met Office]
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<Provenance,5.35 Provenance>>, <<VirtualObservations,5.62 Virtual observations>>, <<SensingProcedure,5.40 Sensing procedure>>, <<UncertaintyInObservations,5.57 Uncertainty in observations>>, <<SensorMetadata,5.39 Sensor metadata>>, <<CRSDefinition,5.9 CRS definition>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<ObservationAggregations,5.33 Observation aggregations>>, <<SSNExamples,5.48 SSN usage examples>>, <<TimeSeries,5.56 Time series>>
+
+=== 4.47 Incorporating geospatial data (e.g. geo-referenced geometry) into interactive 3D graphics on the Web
+
+*Contributed By:* Stefan Lemme, DFKI/Saarland University
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<Linkability,5.23 Linkability>>, <<Streamable,5.49 Streamable data>>, <<Compressible,5.5 Compressibility>>, <<3DSupport,5.51 Support for 3D>>, <<TilingSupport,5.52 Support for tiling>>
+
+=== 4.48 Smart Cities
+
+*Contributed By:* Payam Barnaghi (on behalf of the EU FP7 CityPulse Project)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>
+
+*Related Requirements:* <<Linkability,5.23 Linkability>>, <<DeterminableCRS,5.11 Determinable CRS>>, <<DynamicSensorData,5.14 Dynamic sensor data>>, <<HumansAsSensors,5.19 Humans as sensors>>, <<MobileSensors,5.26 Mobile sensors>>, <<ModelActuation,5.27 Model actuation>>, <<NominalObservations,5.31 Nominal observations>>, <<LightweightAPI,5.22 Lightweight API>>, <<SSNExamples,5.48 SSN usage examples>>
+
+=== 4.49 Provenance of climate data
+
+*Contributed By:* Bruce Bannerman (Australian Bureau of Meteorology)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<Discoverability,5.13 Discoverability>>, <<ObservationAggregations,5.33 Observation aggregations>>, <<ObservedPropertyInCoverage,5.34 Observed property in coverage>>, <<Provenance,5.35 Provenance>>, <<QualityPerSample,5.36 Quality per sample>>, <<SensorMetadata,5.39 Sensor metadata>>, <<SensingProcedure,5.40 Sensing procedure>>, <<SpatialMetadata,5.42 Spatial metadata>>, <<SSNExamples,5.48 SSN usage examples>>, <<3DSupport,5.51 Support for 3D>>, <<TimeSeries,5.56 Time series>>, <<VirtualObservations,5.62 Virtual observations>>
+
+=== 4.50 Representing geospatial data in RDF
+
+*Contributed By:* Phil Archer on behalf of the SmartOpendata project
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+
+*Related Requirements:* <<Compatibility,5.4 Compatibility with existing practices>>, <<Linkability,5.23 Linkability>>, <<MultilingualSupport,5.29 Multilingual support>>
+
+=== 4.51 Modelling in the construction sector
+
+*Contributed By:* Sander Stolk (Semmtech)
+
+<<use_case_detail_99,Click to view>> full use case description
+
+*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>
+
+*Related Requirements:* <<SubjectEquality,5.50 Subject equality>>
+
