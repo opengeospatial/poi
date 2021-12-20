@@ -1,0 +1,15 @@
+== POI Use Case Details
+
+[[use_case_detail_1]]
+=== Use Case 1
+
+Content goes here.
+
+[[use_case_detail_99]]
+=== Use Case 99
+
+Place holder for use cases which are under construction.
+
+
+     
+
