@@ -2,13 +2,23 @@
 
 Use cases that describe current problems or future opportunities for spatial data on the Web have been gathered as a first activity of the Working Group. They were mainly contributed by members of Working Group, but there were also contributions from other interested parties. In this chapter these use cases are listed and identified. Each use case is related to one or more Working Group <<Deliverables,deliverables>> and to one or more <<Requirements,requirements>> for future deliverables.
 
-=== Meteorological data rescue
+=== Last Mile Logistics
 
-*Contributed By:* Chris Little, based on scenarios used for the WMO infrastructure requirements.
+*Contributed By:* Timo Ruohomäki, based on innovation projects from the city of Helsinki.
 
 <<use_case_detail_1,Click to view>> full use case description
 
-*Related Deliverables:* <<BestPractices,2.2 Spatial Data on the Web Best Practices>>, <<TimeOntologyInOWL,2.3 Time Ontology in OWL>>, <<SSN,2.4 Semantic Sensor Network Vocabulary>>, <<CoverageInLinkedData,2.5 Coverage in Linked Data>>
+*Related Deliverables:* ```TBD```
 
-*Related Requirements:* <<SpatialMetadata,5.42 Spatial metadata>>, <<CoverageTemporalExtent,5.7 Coverage temporal extent>>, <<CRSDefinition,5.9 CRS definition>>, <<DateTimeDuration,5.10 Date, time and duration>>, <<DifferentTimeModels,5.12 Different time models>>, <<Discoverability,5.13 Discoverability>>, <<GeoreferencedData,5.18 Georeferenced spatial data>>, <<Linkability,5.23 Linkability>>, <<MultilingualSupport,5.29 Multilingual support>>, <<NominalTemporalReferences,5.32 Nominal temporal references>>, <<ObservedPropertyInCoverage,5.34 Observed property in coverage>>, <<Provenance,5.35 Provenance>>, <<QualityPerSample,5.36 Quality per sample>>, <<ReferenceDataChunks,5.37 Reference data chunks>>, <<SensingProcedure,5.40 Sensing procedure>>, <<SensorMetadata,5.39 Sensor metadata>>, <<SpaceTimeMultiScale,5.41 Space-time multi-scale>>, <<SpatialVagueness,5.45 Spatial vagueness>>, <<TemporalReferenceSystem,5.54 Temporal reference system>>, <<UncertaintyInObservations,5.57 Uncertainty in observations>>, <<Crawlability,5.8 Crawlability>>
+*Related Requirements:* ```TBD```
+
+=== Electrical Vehicle Charging Stations
+
+*Contributed By:* Timo Ruohomäki, based on innovation projects from the city of Helsinki.
+
+<<use_case_detail_2,Click to view>> full use case description
+
+*Related Deliverables:* ```TBD```
+
+*Related Requirements:* ```TBD```
 
