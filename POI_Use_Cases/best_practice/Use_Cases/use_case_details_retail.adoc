@@ -1,0 +1,3 @@
+[[retail_detail]]
+=== Retail Use Case
+

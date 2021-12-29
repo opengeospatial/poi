@@ -1,0 +1,7 @@
+[[underground_detail]]
+=== Underground Use Case
+
+https://www.ukri.org/news/uks-new-underground-observatory-open-for-research/[U.K. New Underground]
+
+In Scotland there is an existing system called Volt, which is slightly different from the UK but contains the same fundamental information.
+

@@ -1,0 +1,15 @@
+[[situational-awareness_detail]]
+=== Situational Awareness
+
+So I work for the Army Geospatial Center and we've been. Looking.at
+
+So I haven't attended this group before. So I'm a little bit new to this, this group. But one of the cases that we're really looking at is kind of a concept of simplified situational awareness.
+
+We have very complex data models and and sometimes those are a challenge to get down to user levels. And some of the use cases that they really need this for is concepts of positional validation. So that's not to say, like, specifically, I am here, But rather, I think I'm here. What's around me? Um, and, and also, looking at it from the other side of being data collection. So what are the things a community needs to need to collect, and those, in turn, become POIs? Ok, that's that's a really great question.
+
+So one of the things that happens with that is you end up with a lot of POIs. But I think going back to the earlier question.
+
+How are you how you interact with these things or how you end up with what things are ...? They could be most anything.
+
+It's going to be dependent on it on a user community. But I think there's also a level, and I know level of detail is a loaded concept, but in terms of, if you're looking at something from kind of the macro level, you might be looking at an entire power grid.
+

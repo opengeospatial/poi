@@ -1,0 +1,5 @@
+[[requirements-section]]
+== Requirements
+
+One purpose of a Use Case is to derive operational requirements for the planned solution. These are not requiremetents in the software development sense of the term. Rather, they are a further refinement of the Use Cases. They capture a set of functional capabilties which, if supported, would be sufficient to enable performance of the tasks described in the Use Cases. 
+

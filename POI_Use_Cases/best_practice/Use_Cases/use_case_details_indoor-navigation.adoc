@@ -1,0 +1,7 @@
+[[indoor-navigation_detail]]
+=== Indoor Navigation Use Case
+
+Compliments the Retail Use Case - How do I get to this store?
+Compliments the Emergency Evaculation Use Case - What are the POIs needed to guide people to the closest (or optimal) exit?
+Compliments the First Responders Use Case - What are the POIs available for first responders to get where they need to go? 
+

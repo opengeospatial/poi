@@ -1,0 +1,37 @@
+[[last-mile-logistics_use_case]]
+=== Last Mile Logistics
+
+*Contributed By:* Timo Ruohomäki, based on innovation projects from the city of Helsinki.
+
+*Motivation:* The last mile has often found to be the most challenging factor in the logistics chain and the most demanding regarding to the service level.
+
+*Summary*
+
+<<last-mile-logistics_detail,Click to view>> full use case description
+
+*Related Use Cases* 
+
+*Roles:*
+
+*Devices:*
+
+*Data:*
+
+*Dependencies:*
+
+*Requirements:*
+
+*Variants:*
+
+<Describe possible use case variants, if applicable>
+
+*Security Considerations:*
+
+<Describe any issues related to security; if there are none, say "none" and justify>
+
+*Privacy Considerations:*
+
+<Describe any issues related to privacy; if there are none, say "none" and justify>
+
+*Comments:*
+

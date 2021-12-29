@@ -1,6 +1,6 @@
 [appendix]
 :appendix-caption: Annex
-[[Bibliography]]
+[[Bibliography-section]]
 = Bibliography
 
 [NOTE]

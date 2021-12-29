@@ -1,4 +1,4 @@
-:Title: OGC (add title text)
+:Title: OGC POI Use Cases
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
@@ -17,7 +17,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: <yyyy-mm-dd>
 |Approval Date:   <yyyy-mm-dd>
-|Publication Date:   2021-12-17
+|Publication Date:   2021-12-29
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 |Internal reference number of this OGC(R) document:    YY-nnnrx
 |Version: n.n
@@ -89,9 +89,11 @@ include::clause_4_terms_and_definitions.adoc[]
 
 include::clause_5_conventions.adoc[]
 
-include::clause_7-1_SDW_Use_Cases.adoc[]
+include::clause_7_use_cases.adoc[]
 
-include::clause_7-2_SDW_Use_Case_Details.adoc[]
+include::clause_8_roles.adoc[]
+
+include::clause_9_requirements.adoc[]
 
 <<<
 ////

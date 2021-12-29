@@ -1,0 +1,11 @@
+[[crossrail_detail]]
+=== Crossrail Use Case
+
+Crossrail is delivering the Elizabeth line, a 118km railway that will link Reading and Heathrow in the west with Shenfield and Abbey Wood in the east via 21km of twin-bored tunnels under London.
+
+This involves digging large tunnels under a city honycombed with current and abandoned subterranian infrastructure. "Tunnelling so close to existing train tunnels and utilities with no impact on daily operations was a challenge. At Tottenham Court Road we were sitting just 800mm over the Northern line platforms in a 900 tonne tunnelling machine and no one was any the wiser." 
+
+https://www.crossrail.co.uk/[Crossrail Web Site]
+
+https://www.crossrail.co.uk/news/crossrail-documentary-the-fifteen-billion-pound-railway/[BBC Documentary]
+

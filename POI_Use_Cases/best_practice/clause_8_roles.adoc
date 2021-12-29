@@ -1,0 +1,119 @@
+[[stakeholders-section]]
+== Stakeholders
+
+The following tables define a list of stakeholder roles based on the onion model (Alexander 2005).
+
+[[role_normal-operator]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Normal Operator 
+^| Scope | Our System 
+^| Description | Role that involves giving routine commands and monitoring outputs from the product 
+|===
+
+[[role_operational-support]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Operational Support 
+^| Scope | Our System 
+^| Description | Role that involves advising normal operators of a product about how to operate it  
+|===
+
+[[role_maintenance-operator]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Maintenance Operator 
+^| Scope | Our System 
+^| Description | Role that involves maintaining the product 
+|===
+
+[[role_interfacing-system]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Interfacing System 
+^| Scope | Containing System 
+^| Description | Role responsible for neighboring systems that have interfaces to and from the product
+|===
+
+[[role_sponsor-or-champion]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Sponsor or Champion 
+^| Scope | Containing System 
+^| Description | Role responsible for initiating development of the product 
+|===
+
+[[role_functional-beneficiary]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Functional Beneficiary  
+^| Scope | Containing System
+^| Description | Role that benefits from the results or outputs created by the product 
+|===
+
+[[role_purchaser]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Purchaser 
+^| Scope | Containing System 
+^| Description | Role responsible for having the product developed 
+|===
+
+[[role_developer]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Developer 
+^| Scope | Wider Environment 
+^| Description | Any of the many roles involved directly in product development 
+|===
+
+[[role_consultant]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Consultant 
+^| Scope | Wider Environment
+^| Description | Any of the many roles involved in supporting some aspect of product development, characteristically from outside the development organization
+|===
+
+[[role_supplier]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Supplier
+^| Scope | Wider Environment 
+^| Description | A role involved in the manufacture and provision of components for the product 
+|===
+
+[[role_political-beneficiary]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Political Beneficiary 
+^| Scope | Wider Environment 
+^| Description | Any role in public office or private business that can benefit in terms of power, influence, and prestige through the success of the product 
+|===
+
+[[role_regulator]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Regulator 
+^| Scope | Wider Environment 
+^| Description | Any role responsible for regulating the quality, safety, cost or other aspects of the product 
+|===
+
+[[role_financial-beneficiary]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Financial Beneficiary 
+^| Scope | Wider Environment
+^| Description | Any role that can benefit financially from the success of a product 
+|===
+
+[[role_negative-stakeholder]]
+[width="90%",cols="2,6"]
+|===
+^| Role | Negative Stakeholder 
+^| Scope | Wider Environment 
+^| Description | Role that could be harmed by the product physically, financially, or in any other way that might be found justifiable by the authorities  
+|===
+
+(SOURCE: Alexander, I. F. (2005). A Taxonomy of Stakeholders: Human Roles in System Development. *International Journal of Technology and Human Interaction (IJTHI)* , 1(1), 23-59. http://doi.org/10.4018/jthi.2005010102)
+
