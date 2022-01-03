@@ -1,120 +1,49 @@
 
 === Discussion
 
-Well that one gets a little bit interesting when you start factoring in whether the source of that power for the electric car charging port is part of an electric grid, or whether it is a self contained solar, solar powered unit.
+==== Electronic Charging Ports
 
-In that case, then that unit would be, would be the point of interest in itself, and that, like. That green aspect would be kind of self contained within within that object, but it makes it to, A, to, a PowerPoint that was connected to a building that was connected to electric grid, well, then, of course, then, you've got it? Well, you're part of a, a larger. Structure or network? Sure.
+Well that one gets a little bit interesting when you start factoring in whether the source of that power for the electric car charging port is part of an electric grid, or whether it is a self contained solar powered unit.
 
-But, an electric grid
-can be composed of a solar charger an EV station, but, yes, it's.
-Australia.
+In that case, the unit would be the point of interest in itself. The green aspect would be contained within that object. A power port that is connected to a building that is connected to electric grid. A Point of Interest which is a larger structure or network.
 
-I mean, there's,
-There's a lot of, there's a lot of houses that are now completely off the off
-the grid there room, they powered powered by solar, and they've got battery
-battery systems.
-And I think they are
-legislated, They need to be connected to the grid.
-But they they're not
-effectively the grid.
-You're using that to
-charge your electric bagel then
-Well, yeah.
-So, I guess the
-question is, well, what does?
+But, an electric grid can be composed of a solar charger and an EV station.
 
-How do you describe that point of interest? Would you just describe the point O: connection, or point of as the. Point of Interest?
+There's a lot of houses that are now completely off the off the grid. They powered powered by solar and they've got battery battery systems. They need to be connected to the grid but they they're not effectively the grid. You're using that to charge your electric bagel.
 
-So, I don't know what
-the answer to that question is.
-It's not, or it's not
-obvious to me.
-What, David?
-Well, I guess.
-I mean, I guess it
-does come.
-To whether we, whether
-we're talking about, I guess, that the whole whole system as being an
-integrated system.
-And we're calling that
-whole thing, a point of interest.
-Or whether we're
-calling the point of.
-Interest.
-As being the point.
-By which we interact
-with another system.
-So the electricity
-grid as a system.
-But we interact with
-it at certain points.
-A power points.
-Then, in those
-PowerPoints themselves, could potentially be points of interest.
-And then just.
-Before I go ahead.
-I was gonna say that
-if we approach it like that, then we, we don't necessarily need to define the
-whole grid in order to be able to define the point of interest.
-Ok, so I was, just,
-before this meeting, I was attending a energy industry talk, Was describing
-how, in the energy industry, the Digital twin is the is really.
+How do you describe that point of interest? Would you just describe the point point of connection or point of as the grid?
 
-Really, really
-valuable, and there were like these different use cases, different energy
-types, and it's quite an excellent presentation by General Electric.
-And.
-One of the things
-that, so they were describing how having a digital twin help them to, know,
-operates at track, efficiency, and then then manipulate the physical world from
-the twin.
-I wonder, in a case
-of, in a case like that, does it?
+So, I don't know what the answer to that question is. It's not, or it's not obvious to me. 
 
-And we, is there a
-special requirement In which a Digital Twin has a point of interests, it has to
-have a point on the globe, or in order for it to be a point of interest.
-But how can we capture
-that?
-In a digital Twin
-that's operated by a utility, they have millions of points of interest.
-How do we connect with
-the Digital Twin?
+It does come down to whether we're talking about the whole whole system as being an integrated system. And we're calling that whole thing a point of interest. Or whether we're calling the point of Interest as being the point by which we interact with another system. So the electricity grid as a system.
 
-Concepts or standards?
-Is my question clear?
+But we interact with it at certain points. At power points. Those PowerPoints themselves could potentially be points of interest.  
 
-My thought process is
-it.
-Are we not
-complicating this?
-Should we not be
-looking for, uh, examples of what items we would want to have as twice of
-interests and then potentially look at then collating them into themes,
-potentially, and looking then where those themes come from.
+I was gonna say that if we approach it like that, then we, we don't necessarily need to define the whole grid in order to be able to define the point of interest.
 
-So I'm wondering
-whether we're trying to identify things too early.
-What the most use
-cases is, so, you know, if we have electric charge for it as 1, 1 item on the
-theme, we might also have windmills that generate power as another similar
-theme on the same G.
-Then we could then
-break that back to what was the master theme, masten dataset, that theme, and
-then we can then drill in at that point.
+Just before this meeting I was attending a energy industry talk. They were describing how, in the energy industry, the Digital twin is the is really. Really, really valuable, and there were like these different use cases, different energy types, and it's quite an excellent presentation by General Electric. One of the things they were describing was how having a digital twin help them to know --- operates at track efficiency and then then manipulate the physical world from the twin. 
 
-But, I think we need to potentially have a wide trawl of what people would like to see as points of
-interests. Of items that are points of interest, then classify them into themes.
+Is there a special requirement in which a Digital Twin has a point of interest? it has to have a point on the globe in order for it to be a point of interest. But how can we capture that?
 
-And then, for that master use case, think that's possibly a better direction. 
+In a digital Twin that's operated by a utility, they have millions of points of interest. How do we connect with the Digital Twin?
 
-=== Collections of Collections
+Concepts or standards? Is my question clear?
 
-But when you're looking at it from that different perspective, you're going to be looking at individual elements of plugs and and, uh, other caen other things like that, filling Stations. So, there's kind of multiple levels.
+Are we not complicating this? Should we not be looking for examples of what items we would want to have as points of interest and then potentially look at then collating them into themes and looking then where those themes come from.
+
+So I'm wondering whether we're trying to identify things too early.
+
+What the most use cases is, so, you know, if we have electric charge for it as 1, 1 item on the theme, we might also have windmills that generate power as another similar theme on the same G. Then we could then break that back to what was the master theme, master dataset, that theme, and then we can then drill in at that point.
+
+But, I think we need to have a wide trawl of what people would like to see as points of interests. Of items that are points of interest, then classify them into themes. And then, for that master use case, think that's possibly a better direction. 
+
+==== Collections of Collections
+
+But when you're looking at it from that different perspective, you're going to be looking at individual elements of plugs and and other things like that such as filling Stations. So, there's kind of multiple levels.
 
 So, I think there has to be kind of a built-in element of extensibility, while keeping simplicity.
 
-I'd like to ask a chapter to respond to that. Because I remember in the original W3C work we had done. We had spent many, many hours talking about, um, how a POI can be within another POI can be within another. So, that there was this nested.
+I'd like to ask a chapter to respond to that. Because I remember in the original W3C work we had done, we had spent many many hours talking about how a POI can be within another POI can be within another. So, that there was this nested.
 
 I believe that we totally have that today.
 
@@ -124,33 +53,19 @@ Put the same model has an individual of that group. A feature can be a collectio
 
 Therefore, a feature can be encompassed inside another feature inside another POI, right?
 
+==== Temporal Discussion
 
-=== Temporal Discussion
+We could integrate the theme time.
 
-We could integrate to the theme time.
+So, for example, in a case of an emergency or a disaster, a point of interest could be just open space at a certain time and under certain circumstances. There is going to be a timer.  How we could capture that or add it to the theme that we were talking about earlier?
 
-So, for example, if, in a case of an emergency or a disaster a point of interest, it could be just open space. Then, in a certain time, a certain, certain circumstances is going to be a timber how we could capture that or added to the theme that we were talking about it earlier.
+Time-stamp and its duration, such as Valid time and valid time period are supported in the model. If you want to talk about nanoseconds and milliseconds, no, we're not quite there yet.
 
-Time-stamp and its duration, such as Valid time and valid time
-period are supported in the model. If you want to talk about nanoseconds and milliseconds, no, we're not quite there yet.
+We're working on temporal reference systems.
 
-This time we're working on.
-We're working on
-temporal reference.
-Systems.
-Does that work?
+The point is that work is being done on the underlying foundation that the POI is built on top of. So you'll you'll get the advantage of it without having to make the investment.
 
-The point is that work
-is being done on the underlying foundation, that the POI is built on top of.
-So you'll you'll get
-the advantage of it without having to make the investment.
+Or we can also consider the POI it may be a moving object. Which brings in a whole nother set of geometries?
 
-Or we can also
-consider the POI it may be a moving object.
-Which brings in a
-whole nother set of geometries?
-
-Ok, there is a whole
-raft of philosophical questions, because by reference frame, we were moving
-because We're all moving, rather class.
+Ok, there is a whole raft of philosophical questions, because by reference frame, we were moving because We're all moving, rather class.
 
