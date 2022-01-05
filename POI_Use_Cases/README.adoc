@@ -1,0 +1,17 @@
+# Best Practice template
+
+This GitHub repository contains the boilerplate content for an OGC Best Practice. The generic repo is organized as follows:
+
+* index.adoc - nothing in this document
+* best_practice - the main Best Practice document content
+  - organized in multiple sections and directories
+  - this is the only part needed to create a Best Practice document
+  - the document structure is modeled after that of an OGC standard, however, you may change or remove sections as you need to best construct a Best Practice document
+
+# Next Steps
+
+The POI SWG members are considering using this best OGC Best Practice template for capturing/organizing POI use cases.
+
+One source of use cases is the link:https://github.com/opengeospatial/poi/wiki/Use-Cases-for-PoI[Wiki in this repository] into which we have been capturing notes/brainstorms over the course of meetings in fall 2021.
+
+We can also review and evaluate how much of the link:https://www.w3.org/2010/POI/wiki/Use_Cases[W3C POI Use Cases document] (last edited in January 2012, not that's not 2021!) we would like to use.
