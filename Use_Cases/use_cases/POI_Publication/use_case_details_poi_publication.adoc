@@ -1,0 +1,8 @@
+[[poi_publication_detail]]
+=== POI PUblication Use Case
+
+<insert narrative text>
+
+
+
+

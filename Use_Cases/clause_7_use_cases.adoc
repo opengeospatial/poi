@@ -1,0 +1,15 @@
+[[use-case-section]]
+== POI Use Cases
+
+include::./use_cases/Last_Mile_Logistics/use_case_last-mile-logistics.adoc[]
+
+include::./use_cases/POI_Publication/use_case_poi_publication.adoc[]
+
+[[detailed-use-case-section]]
+== POI Detailed Use Cases
+
+include::./use_cases/Last_Mile_Logistics/use_case_details_last-mile-logistics.adoc[]
+
+include::./use_cases/POI_Publication/use_case_details_poi_publication.adoc[]
+
+
