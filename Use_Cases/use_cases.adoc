@@ -17,7 +17,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: <yyyy-mm-dd>
 |Approval Date:   <yyyy-mm-dd>
-|Publication Date:   2021-12-29
+|Publication Date:   2022-01-06
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 |Internal reference number of this OGC(R) document:    YY-nnnrx
 |Version: n.n
@@ -92,6 +92,10 @@ include::clause_5_conventions.adoc[]
 include::clause_7_use_cases.adoc[]
 
 include::clause_8_roles.adoc[]
+
+include::clause_8_devices.adoc[]
+
+include::clause_8_data.adoc[]
 
 include::clause_9_requirements.adoc[]
 

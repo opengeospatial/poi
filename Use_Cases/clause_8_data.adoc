@@ -1,0 +1,13 @@
+[[data_categories-section]]
+== Data Categories
+
+The following tables define a list of categories of data, or data types, referenced in the POI Use Cases.
+
+[[data_category-any]]
+[width="90%",cols="2,6"]
+|===
+^| Category | Any 
+^| Scope | tbr 
+^| Description | Any data type may be used. 
+|===
+

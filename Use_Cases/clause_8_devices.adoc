@@ -1,0 +1,13 @@
+[[devices-section]]
+== Devices
+
+The following tables define a list of devices referenced in the POI Use Cases.
+
+[[device_web-browser]]
+[width="90%",cols="2,6"]
+|===
+^| Device | Web Browser 
+^| Scope | tbr 
+^| Description | A generic web browser. 
+|===
+
