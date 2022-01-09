@@ -3,13 +3,13 @@
 
 *Contributed By:* Timo Ruohomäki, based on innovation projects from the city of Helsinki.
 
-*Motivation:* The last mile has often found to be the most challenging factor in the logistics chain and the most demanding regarding to the service level.
+*Motivation:* The last mile has often been found to be the most challenging factor in the logistics chain and the most demanding in terms of achieving the desired service level.
 
 *Summary*
 
 <<last-mile-logistics_detail,Click to view>> full use case description
 
-*Related Use Cases* 
+*Related Use Cases*
 
 *Roles:*
 
@@ -34,4 +34,3 @@
 <Describe any issues related to privacy; if there are none, say "none" and justify>
 
 *Comments:*
-

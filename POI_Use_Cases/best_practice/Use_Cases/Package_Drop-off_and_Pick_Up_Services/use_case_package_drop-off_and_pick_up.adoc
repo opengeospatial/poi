@@ -1,0 +1,35 @@
+[[last-mile-logistics_use_case]]
+=== Package Drop-off and Pick Up Services
+
+*Contributed By:* Christine Perey, based on commercial package delivery and return services (e.g., Amazon)
+
+*Motivation:* For commercial or residential customers, package delivery and pick up logistics requires considerable attention to details (e.g., pick up location, time), and tracing (tracking) for efficient space use, billing and insurance purposes. Customers may end up waiting for either a delivery or a pick up that is late, or miss the connection if the delivery is early, and fuel consumption associated with individual addresses may be greater than services using a pooled location (individually-secured containers within a larger container). Some service providers have developed systems to manage a multi-customer delivery and return location.
+
+*Summary*
+
+<<package_drop_off_and_pick_up_detail,Click to view>> full use case description
+
+*Related Use Cases*
+This use case is somewhat related to the last mile logistics use case.
+
+*Roles:*
+
+*Devices:*
+
+*Data:*
+
+*Dependencies:*
+
+*Requirements:*
+
+*Variants:*
+
+*Security Considerations:*
+
+There must be unique and secure access codes assigned for the customer dropping off a package and the operator or customer picking up from the same secure cubicle.
+
+*Privacy Considerations:*
+
+Once the customer agrees to terms and conditions of use, the contents of the cubicle must not be disclosed to other customers or delivery personnel.
+
+*Comments:*

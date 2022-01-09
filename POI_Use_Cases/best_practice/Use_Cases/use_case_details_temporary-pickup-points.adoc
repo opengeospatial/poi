@@ -1,3 +1,0 @@
-[[temporary-pickup-points_detail]]
-=== Temporary Pickup Points Use Case
-
