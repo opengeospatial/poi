@@ -5,11 +5,15 @@ include::./use_cases/Last_Mile_Logistics/use_case_last-mile-logistics.adoc[]
 
 include::./use_cases/POI_Publication/use_case_poi_publication.adoc[]
 
+include::./use_cases/Package_Drop-off_and_Pick_Up_Services/use_case_package_drop-off_and_pick_up.adoc[]
+
 [[detailed-use-case-section]]
 == POI Detailed Use Cases
 
 include::./use_cases/Last_Mile_Logistics/use_case_details_last-mile-logistics.adoc[]
 
 include::./use_cases/POI_Publication/use_case_details_poi_publication.adoc[]
+
+include::./use_cases/Package_Drop-off_and_Pick_Up_Services/use_case_details_package_drop-off_and_pick_up.adoc[]
 
 

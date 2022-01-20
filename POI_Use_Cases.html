@@ -590,12 +590,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#last-mile-logistics_use_case">6.1. Last Mile Logistics</a></li>
 <li><a href="#poi_publication_use_case">6.2. POI Publication</a></li>
+<li><a href="#package_drop_off_and_pick_up_use_case">6.3. Package Drop-off and Pick Up Services</a></li>
 </ul>
 </li>
 <li><a href="#detailed-use-case-section">7. POI Detailed Use Cases</a>
 <ul class="sectlevel2">
 <li><a href="#last-mile-logistics_detail">7.1. Last Mile Logistics Use Case</a></li>
 <li><a href="#poi_publication_detail">7.2. POI PUblication Use Case</a></li>
+<li><a href="#package_drop_off_and_pick_up_detail">7.3. Package Drop off and Pick Up Services Use Case</a></li>
 </ul>
 </li>
 <li><a href="#stakeholders-section">8. Stakeholders</a></li>
@@ -887,7 +889,7 @@ Global Grid Forum (2002)</p>
 <p><strong>Contributed By:</strong> Timo Ruohomäki, based on innovation projects from the city of Helsinki.</p>
 </div>
 <div class="paragraph">
-<p><strong>Motivation:</strong> The last mile has often found to be the most challenging factor in the logistics chain and the most demanding regarding to the service level.</p>
+<p><strong>Motivation:</strong> The last mile has often been found to be the most challenging factor in the logistics chain and the most demanding in terms of achieving the desired service level.</p>
 </div>
 <div class="paragraph">
 <p><strong>Summary</strong></p>
@@ -1010,6 +1012,58 @@ Global Grid Forum (2002)</p>
 <p><strong>Comments:</strong></p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="package_drop_off_and_pick_up_use_case"><a class="anchor" href="#package_drop_off_and_pick_up_use_case"></a>6.3. Package Drop-off and Pick Up Services</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Christine Perey, based on commercial package delivery and return services (e.g., Amazon)</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation:</strong> For commercial or residential customers, package delivery and pick up logistics requires considerable attention to details (e.g., pick up location, time), and tracing (tracking) for efficient space use, billing and insurance purposes. Customers may end up waiting for either a delivery or a pick up that is late, or miss the connection if the delivery is early, and fuel consumption associated with individual addresses may be greater than services using a pooled location (individually-secured containers within a larger container). Some service providers have developed systems to manage a multi-customer delivery and return location.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary</strong></p>
+</div>
+<div class="paragraph">
+<p><a href="#package_drop_off_and_pick_up_detail">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Use Cases</strong>
+This use case is somewhat related to the last mile logistics use case.</p>
+</div>
+<div class="paragraph">
+<p><strong>Roles:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Devices:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Data:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Dependencies:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Requirements:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Variants:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Security Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>There must be unique and secure access codes assigned for the customer dropping off a package and the operator or customer picking up from the same secure cubicle.</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>Once the customer agrees to terms and conditions of use, the contents of the cubicle must not be disclosed to other customers or delivery personnel.</p>
+</div>
+<div class="paragraph">
+<p><strong>Comments:</strong></p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1018,19 +1072,31 @@ Global Grid Forum (2002)</p>
 <div class="sect2">
 <h3 id="last-mile-logistics_detail"><a class="anchor" href="#last-mile-logistics_detail"></a>7.1. Last Mile Logistics Use Case</h3>
 <div class="paragraph">
-<p>The last mile has often found to be the most challenging factor in the logistics chain and the most demanding regarding to the service level. The delivery drivers need to consider the nearest parking spot to the recipient, avoid road constructions or use temporary routes and in large buildings find the most suitable access point. In construction sites the suitable loading areas change often and as a safety measure, the delivery routes need to be planned in advance. The traffic flows and entrance and exit points are included in the detailed site logistics plan.</p>
+<p>The last mile has often found to be the most challenging factor in the logistics chain and the most demanding regarding to the service level. The delivery drivers need to consider the nearest parking spot to the recipient, avoid road constructions or use temporary routes and, in large buildings, find the most suitable access point. On construction sites, the suitable loading areas change often and, as a safety measure, the delivery routes need to be planned in advance. The traffic flows and entrance and exit points are included in the detailed site logistics plan.</p>
 </div>
 <div class="paragraph">
-<p>The logistics plan contains heavily relies on geospatial referencing. The entrance and exit points, routes within the site and loading areas are all geospatial features. This information may change with short notice, but up to date information about the site logistics need to be maintained by the site logistics planner and shared with the logistics operators, drivers and first responders.</p>
+<p>The logistics plan heavily relies on geospatial referencing. The entrance and exit points, routes within the site and loading areas are all geospatial features. This information may change with short notice, but up-to-date information about the site logistics need to be maintained by the site logistics planner and shared with the logistics operators, drivers and first responders.</p>
 </div>
 <div class="paragraph">
-<p>As addition to maintain the location information, the logistics planning involves additional attributes that are maintained as part of the process. The entrance and exit points may have opening hours, routes weight and height limits and loading decks contact information for the recipient. It is unlikely that a comprehensive list of all the attributes can be created since cases my have unique needs.</p>
+<p>In addition to maintaining the location information, logistics planning involves additional attributes that are maintained as part of the process. The entrance and exit points may have opening hours, routes sometimes have weight and height limits and contact information for the loading deck manager and final recipients need to be easily accessible. It is unlikely that a comprehensive list of all the attributes can be created since cases many have unique needs.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="poi_publication_detail"><a class="anchor" href="#poi_publication_detail"></a>7.2. POI PUblication Use Case</h3>
 <div class="paragraph">
 <p>&lt;insert narrative text&gt;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="package_drop_off_and_pick_up_detail"><a class="anchor" href="#package_drop_off_and_pick_up_detail"></a>7.3. Package Drop off and Pick Up Services Use Case</h3>
+<div class="paragraph">
+<p>For commercial or residential customers, package delivery and pick up logistics requires considerable attention to detail (e.g., pick up location, restrictions, time), and tracing (tracking) for efficient space use, billing and insurance purposes. Customers may end up waiting for either a delivery or a pick up that is late, or miss the connection if the delivery is early, and fuel consumption associated with individual addresses may be greater than services using a pooled location (individually-secured containers). Space in delivery vehicles can also be calculated and optimized when the package details are associated with the point of interest. Some service providers use systems to manage a "multi-customer" delivery and return location.</p>
+</div>
+<div class="paragraph">
+<p>The customer needs to be assigned or choose a specific section (locked cubicle) that meets the package needs. Each cubicle is a point of interest within a larger "multi-customer" container, within a secured or outdoor business facility. This means that static metadata such as the street address, open hours of the facility, the latest time for drop off, cubicle&#8217;s dimensions must be associated with each unit.</p>
+</div>
+<div class="paragraph">
+<p>In addition to maintaining the static metadata for a cubicle or group of cubicles, there is dynamic data such as the weight of a package (if the cubicle is equipped with weight sensing), a unique access code for a cubicle (to be assigned each time there is a new drop off or pick up scheduled), and time of cubicle access (occupancy status). The dynamic information for each unit (PoI) can be integrated with a real-time route planning system, to release a cubicle for a future customer&#8217;s use and customer back end (e.g., for billing).</p>
 </div>
 </div>
 </div>

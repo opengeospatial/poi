@@ -1,4 +1,4 @@
-[[last-mile-logistics_use_case]]
+[[package_drop_off_and_pick_up_use_case]]
 === Package Drop-off and Pick Up Services
 
 *Contributed By:* Christine Perey, based on commercial package delivery and return services (e.g., Amazon)
