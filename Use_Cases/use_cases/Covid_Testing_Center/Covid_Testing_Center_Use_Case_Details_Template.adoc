@@ -1,0 +1,4 @@
+[[use_case_name_detail]]
+=== Covid Testing Center Use Case
+
+<insert narrative text>
