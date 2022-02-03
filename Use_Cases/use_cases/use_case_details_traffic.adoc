@@ -1,3 +1,4 @@
 [[traffic_detail]]
 === Traffic Use Case
 
+Contributed by: Kyoungsook Kim
