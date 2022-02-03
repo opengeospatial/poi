@@ -1,7 +1,0 @@
-[[ev-charging-stations_detail]]
-=== EV Charging Stations Use Case
-
-From the drivers perspective, where are the charging stations compatible with my car? Are there any open? 
-
-Is there a different perspective from the perspective of the grid operator?  
-
