@@ -1,4 +1,4 @@
-[[use-case-name_use_case]]
+[[covid_teseting_center_use_case]]
 === Covid Testing Center Use Case
 
 *Contributed By:* <Put your name here>
