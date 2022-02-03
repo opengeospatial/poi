@@ -1,0 +1,82 @@
+[[choose_restaurant_detail]]
+=== Choose Restaurant Use Case
+
+A user of a map system (on a computer, a phone, in a car, etc.) may want to find
+a restaurant to eat in or get delivery from.
+They will have some set of requirements that the restaurant should satisfy
+for it to be a good choice for them.
+The user requirements may include some or all of the following:
+
+* Near a particular location in the world (maybe the user's
+current location, maybe somewhere they are intending to travel to).
+* Serves cuisines that the user can eat and likes.
+* Is open during the hours the user intends to visit,
+and/or serve the type of meal (breakfast, lunch, dinner, etc.) the user wants.
+* Has service style the user prefers (take-out vs dine-in).
+* Has a price level the user prefers.
+* Has a bar and/or serves alcohol.
+* Has delivery.
+* Has order-ahead with pickup.
+* Requires reservations or reservations recommended.
+* Will have a busyness level that the user prefers at the time of intended vist.
+* Has good reviews.
+* Accepts particular payment methods.
+* Has an ambience the user prefers (family-friendly, upscale, romantic, etc.).
+* Has an all-you-can eat buffet.
+* Shows sports on TV.
+* Has a happy hour.
+* Is Handicap-accessible.
+* Has available free parking.
+* Has Covid-related requiements (vaccination and/or masks).
+
+Given these requirments, the user will want to browse restaurants in a particular
+locality or in a particular time-from or distance-from a particular (latitude, longitude),
+and examine whether or not those restaurants have the required attributes.
+
+As a final part of this use case, the user may want to execute the transaction by doing one of:
+
+* Get navigation directions from their current location to the chosen restaurant.
+* Place an order for delivery from the chosen restaurant.
+* Place an order for pickup from the chosen restaurant and get navigation directions to it.
+* Save the restaurant in a list of "favorites".
+
+==== Restaurant Attribute Details
+
+===== Food Served =====
+
+There are a number of dimensions along which one can describe the food served by a restaurant. Here is an example taxonomy:
+
+* Regional
+** African
+*** Cape Verdean, East African, Eritrean, Ethiopian, North African, Seychelles, South African, West African, ...
+** Asian
+*** Central Asian
+**** Kazakhstani, Turkmen, Uzbeki
+*** East Asian
+**** Chinese, Japanese, Korean, Mongolian, Taiwanese, ...
+*** South Asian
+**** Indian, Nepalese, Pakistani, Sri Lankan, ...
+*** South-East Asian
+**** Burmese, Cambodian, Filipino, Indonesian, Laotian, Malaysian, Singaporean, Thai, Vietnamese, Tibetan, ...
+*** European
+**** Austrian, Belgian, British, Dutch, French, German, Greek, Irish, Italian, Maltese,
+Portguese, Danish, Finnish, Icelandic, Norwegian, Swedish, Spanish, Swiss, Turkish, ...
+*** East European
+**** Armenian, Bulgarian, Croation, Czech, Georgian, Hungarian, Lithuanian, Polish, Romanian, Russian, Serbian, Ukranian, ...
+*** Middle Eastern
+**** Egyptian, Georgian, Israeli, Lebanese, Persian, Syrian, Turkish, Yemenite, ...
+*** North American
+**** Californian, Native American, New American, New England, Puerto Rican, Southern US, Southwestern US, Traditional American, Canadian, Cuban, Dominican, Haitian, Jamaican, Costa Rican, Guatemalen, Honduran, Nicaraguan, Salvadoran, Mexican, ...
+*** Oceanian
+**** Australian, New Zealand, Polynesian, ...
+* Cooking style
+** Barbecue, Carvery, Grill, Hot Pot, Wok, Down-home Cooking, Fusion, ...
+* Dietary
+** Gluten-free, Halal, Health Food, Jewish, Kosher, Macrobiotic, Non-vegetarian, Organic, Raw Food, Vegan, Vegetarian, ...
+* Dining style
+** Box lunch, Beer Garden, Buffet, Carvery, Family-friendly, Fast food, Fine dining, Gastropub, Small Plates, Stand bar, Street food, Tavern, Pub, Cafe, ...
+* Meal type
+** Breakfast, Brunch, Lunch, Dinner, Late-night Meal
+* Dishes Served
+*** Fried Chicken, Pizza, Salad, Sandwich, Seafood, Soup, Steak, Noodles, Sushi, Dim Sum, Curry, Fish and Chips, Pancakes, Hamburger,
+Hot dog, Cheesesteak, Chicken Wings, Coffee, Alcohol, ...
