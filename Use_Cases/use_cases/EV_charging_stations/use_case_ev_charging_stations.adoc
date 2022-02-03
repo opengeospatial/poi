@@ -1,0 +1,50 @@
+[[EV-charging-station]]
+=== Electrical Vehicle Charging Stations
+
+*Contributed By:* Timo Ruohomäki, Forum Virium Helsinki Oy
+
+*Motivation:* People driving EV would appreciate up to date information of the nearest available charging station.
+
+*Summary* 
+
+There are several operators providing the charging stations, some of them open and some requiring membership. The charging stations also can provide back useful information, e.g. the occupancy status and estimated time of being available. The use case aims to tackle the charging station as a service from several different stakeholders point of view.
+
+<<use_case_details_ev_charging_stations.adoc,Click to view>> full use case description
+
+*Related Use Cases* 
+
+<Identify any use cases which are related to this one and describe the nature of that relation. Include a hyperlink to each use case.>
+
+*Roles:* 
+
+<List all stakeholders that are involved in the use case. Stakeholders are described in the <<stakeholders-section,Stakeholders Section>> of this document. Each listed stakeholder should be hyperlinked to its description.>
+
+*Devices:* 
+
+Vehicle, Charging Station
+
+*Data:* 
+
+Operational data of the charging process
+
+*Dependencies:* 
+
+<Identify any dependencies of this use case. Dependencies are described in the <<bibliography-section,Bibliography>> and  <<terms-and-definitions-section,Terms and Definitions>> sections of this document. Each listed dependency should be hyperlinked to its description.>
+
+*Requirements:* 
+
+<Identify the requirements derived from this use case. Requirements are described in the <<requirements-section,Requirements section>> of this document. Each listed requirement should be hyperlinked to its description.>
+
+*Variants:* 
+
+<Describe possible use case variants, if applicable>
+
+*Security Considerations:* 
+
+<Describe any issues related to security; if there are none, say "none" and justify>
+
+*Privacy Considerations:*
+
+Data originated from the vehicle may contain personal data.
+
+*Comments:*
