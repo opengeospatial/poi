@@ -1,13 +1,14 @@
 [[poi_publication_use_case]]
 === POI Publication
 
-*Contributed By:* Koen De Baets
+*Contributed By:* Koen De Baets, Digitaal Vlaanderen (Government of Flanders)
 
-*Motivation:* A diverse group of (governmental) agencies have data that might be of interest to a broad audience. These agencies want to make this data publicly available in a uniform and user friendly way. 
+*Motivation:* A diverse group of (governmental) agencies have data that might be of interest to a broad audience (e.g., citizens, visitors, researchers, other agencies). The publisher wants to make this data publicly available in a uniform and user friendly way.
 
 *Summary*
+Multiple data sets from different sources, each having its own data model, are mapped and/or geocoded to a single POI data model. The data model should have a set of generic attributes to minimize loosing any richness of the source data. All POI’s from different sources are combined and available to end users as single service.
 
-Multiple dataset from different sources, each having its own data model, are mapped and/or geocoded to a single POI-data model. The data model should have a set of generic attributes to minimize impoverishment of the source data. All POI’s from different sources are combined and available to end users as single service.
+In addition, services that search data would be able to present to the user a single result after retrieving data from multiple original data sources.
 
 <<poi_publication_detail,Click to view>> full use case description
 
@@ -16,22 +17,27 @@ Multiple dataset from different sources, each having its own data model, are map
 <Identify any use cases which are related to this one and describe the nature of that relation. Include a hyperlink to each use case.>
 
 *Roles:*
-
+POI Publisher
 <List all stakeholders that are involved in the use case. Stakeholders are described in the <<stakeholders-section,Stakeholders Section>> of this document. Each listed stakeholder should be hyperlinked to its description.>
 
 *Devices:*
-
-PC (via geoportal website)
+Personal Computers, Mobile
 
 *Data:*
-
-All types of data located at an address can be expected.
+Geo-referenced data
 
 *Dependencies:*
 
 <Identify any dependencies of this use case. Dependencies are described in the <<bibliography-section,Bibliography>> and  <<terms-and-definitions-section,Terms and Definitions>> sections of this document. Each listed dependency should be hyperlinked to its description.>
 
 *Requirements:*
+Data Source (Provenance)
+Location
+Publication Date
+Version
+Label
+Description (including HTML Tags)
+
 
 <Identify the requirements derived from this use case. Requirements are described in the <<requirements-section,Requirements section>> of this document. Each listed requirement should be hyperlinked to its description.>
 
@@ -40,11 +46,9 @@ All types of data located at an address can be expected.
 <Describe possible use case variants, if applicable>
 
 *Security Considerations:*
-
-<Describe any issues related to security; if there are none, say "none" and justify>
+None, the sources are public and licensed under open data agreement/policy
 
 *Privacy Considerations:*
-
-<Describe any issues related to privacy; if there are none, say "none" and justify>
+None, the sources are public and licensed under open data agreement/policy
 
 *Comments:*
