@@ -9,7 +9,7 @@
 *Summary*
 <Text here>
 
-<<poi_publication_detail,Click to view>> full use case description
+<<use_case_details_military,Click to view>> full use case description
 
 *Related Use Cases*
 
