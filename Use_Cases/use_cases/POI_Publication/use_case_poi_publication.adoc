@@ -3,43 +3,43 @@
 
 *Contributed By:* Koen De Baets
 
-*Motivation:* <Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users>
+*Motivation:* A diverse group of (governmental) agencies have data that might be of interest to a broad audience. These agencies want to make this data publicly available in a uniform and user friendly way. 
 
-*Summary* 
+*Summary*
 
-<Provide a summary of the use case. The full use case description should be available through the following link>
+Multiple dataset from different sources, each having its own data model, are mapped and/or geocoded to a single POI-data model. The data model should have a set of generic attributes to minimize impoverishment of the source data. All POI’s from different sources are combined and available to end users as single service.
 
 <<poi_publication_detail,Click to view>> full use case description
 
-*Related Use Cases* 
+*Related Use Cases*
 
 <Identify any use cases which are related to this one and describe the nature of that relation. Include a hyperlink to each use case.>
 
-*Roles:* 
+*Roles:*
 
 <List all stakeholders that are involved in the use case. Stakeholders are described in the <<stakeholders-section,Stakeholders Section>> of this document. Each listed stakeholder should be hyperlinked to its description.>
 
-*Devices:* 
+*Devices:*
 
-<List the target devices, e.g. as a sensor, solar panel, air conditioner>
+PC (via geoportal website)
 
-*Data:* 
+*Data:*
 
-<List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors, vehicle data>
+All types of data located at an address can be expected.
 
-*Dependencies:* 
+*Dependencies:*
 
 <Identify any dependencies of this use case. Dependencies are described in the <<bibliography-section,Bibliography>> and  <<terms-and-definitions-section,Terms and Definitions>> sections of this document. Each listed dependency should be hyperlinked to its description.>
 
-*Requirements:* 
+*Requirements:*
 
 <Identify the requirements derived from this use case. Requirements are described in the <<requirements-section,Requirements section>> of this document. Each listed requirement should be hyperlinked to its description.>
 
-*Variants:* 
+*Variants:*
 
 <Describe possible use case variants, if applicable>
 
-*Security Considerations:* 
+*Security Considerations:*
 
 <Describe any issues related to security; if there are none, say "none" and justify>
 
