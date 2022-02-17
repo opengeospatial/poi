@@ -3,7 +3,7 @@
 
 *Contributed By:* Koen De Baets
 
-*Motivation:* A diverse group of (governmental) agencies have data that might be of interest to a broad audience. These agencies want to make this data publicly available in a uniform and user friendly way.
+*Motivation:* A diverse group of (governmental) agencies have data that might be of interest to a broad audience. These agencies want to make this data publicly available in a uniform and user friendly way. 
 
 *Summary*
 
@@ -21,7 +21,7 @@ Multiple dataset from different sources, each having its own data model, are map
 
 *Devices:*
 
-PC (via geoportal website) 
+PC (via geoportal website)
 
 *Data:*
 
