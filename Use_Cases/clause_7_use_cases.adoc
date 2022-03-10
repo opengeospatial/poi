@@ -1,19 +1,43 @@
 [[use-case-section]]
 == POI Use Cases
 
-include::./use_cases/Last_Mile_Logistics/use_case_last-mile-logistics.adoc[]
+include::./use_cases/Choose_Restaurant/use_case_choose-restaurant.adoc[]
 
-include::./use_cases/POI_Publication/use_case_poi_publication.adoc[]
+include::./use_cases/Construction_Site/use_case_construction-site.adoc[]
+
+include::./use_cases/Covid_Testing_Center/use_case_covid-testing-center.adoc[]
+
+include::./use_cases/EV_charging_stations/use_case_ev-charging-stations.adoc[]
+
+include::./use_cases/Military_Use_Case/use_case_military.adoc[]
 
 include::./use_cases/Package_Drop-off_and_Pick_Up_Services/use_case_package_drop-off_and_pick_up.adoc[]
+
+include::./use_cases/POI_Publication/use_case_poi-publication.adoc[]
+
+include::./use_cases/Situational_Awareness/use_case_situational-awareness.adoc[]
+
+include::./use_cases/Smart_Tourism/use_case_smart-tourism.adoc[]
 
 [[detailed-use-case-section]]
 == POI Detailed Use Cases
 
-include::./use_cases/Last_Mile_Logistics/use_case_details_last-mile-logistics.adoc[]
+include::./use_cases/Choose_Restaurant/use_case_details_choose-restaurant.adoc[]
 
-include::./use_cases/POI_Publication/use_case_details_poi_publication.adoc[]
+include::./use_cases/Construction_Site/use_case_details_construction-site.adoc[]
+
+include::./use_cases/Covid_Testing_Center/use_case_details_covid-testing-center.adoc[]
+
+include::./use_cases/EV_charging_stations/use_case_details_ev-charging-stations.adoc[]
+
+include::./use_cases/Military_Use_Case/use_case_details_military.adoc[]
 
 include::./use_cases/Package_Drop-off_and_Pick_Up_Services/use_case_details_package_drop-off_and_pick_up.adoc[]
+
+include::./use_cases/POI_Publication/use_case_details_poi-publication.adoc[]
+
+include::./use_cases/Situational_Awareness/use_case_details_situational-awareness.adoc[]
+
+include::./use_cases/Smart_Tourism/use_case_details_smart-tourism.adoc[]
 
 
