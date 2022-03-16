@@ -462,7 +462,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Approval Date:   &lt;yyyy-mm-dd&gt;</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Publication Date:   2022-03-10</p></td>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Publication Date:   2022-03-16</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">External identifier of this OGC&#174; document: <a href="http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}" class="bare">http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}</a></p></td>
@@ -609,7 +609,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#construction-site_detail">7.2. Construction Site Use Case</a></li>
 <li><a href="#covid_testing_center_detail">7.3. Covid Testing Center Use Case</a></li>
 <li><a href="#EV-charging-station_detail">7.4. Electrical Vehicle Charging Stations</a></li>
-<li><a href="#military_detail">7.5. Military Use Case</a></li>
+<li><a href="#military_detail">7.5. Military Use Case</a>
+<ul class="sectlevel3">
+<li><a href="#_scenario">7.5.1. Scenario</a></li>
+<li><a href="#_what_is_a_poi">7.5.2. What is a POI?</a></li>
+</ul>
+</li>
 <li><a href="#package_drop_off_and_pick_up_detail">7.6. Package Drop off and Pick Up Services Use Case</a></li>
 <li><a href="#poi_publication_detail">7.7. POI Publication Use Case</a></li>
 <li><a href="#situational-awareness_detail">7.8. Situational Awareness</a></li>
@@ -1210,15 +1215,19 @@ that require that a POI listing be deleted upon request by the POI owner.</p>
 <div class="sect2">
 <h3 id="military_use_case"><a class="anchor" href="#military_use_case"></a>6.5. Military Use Case</h3>
 <div class="paragraph">
-<p><strong>Contributed By:</strong> Insert name and affiliation here</p>
+<p><strong>Contributed By:</strong> Joetta Kreck (AGC) – <a href="mailto:Joetta.l.kreck@usace.army.mil">Joetta.l.kreck@usace.army.mil</a></p>
 </div>
 <div class="paragraph">
-<p><strong>Motivation:</strong>
-&lt;Text here&gt;</p>
+<p><strong>Motivation:</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>Summary</strong>
-&lt;Text here&gt;</p>
+<p>Use POIs to simplify data collection and use.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary</strong></p>
+</div>
+<div class="paragraph">
+<p>POIs are a simplification of a Feature dataset. The selection and population of a POI is mission-specific. There is no standard attribution for a POI Feature. Rather, the POI Feature Type serves as a scafolding which is attributed based on the data available and the needs of the user.</p>
 </div>
 <div class="paragraph">
 <p><a href="#use_case_details_military">Click to view</a> full use case description</p>
@@ -1227,7 +1236,7 @@ that require that a POI listing be deleted upon request by the POI owner.</p>
 <p><strong>Related Use Cases</strong></p>
 </div>
 <div class="paragraph">
-<p>&lt;Identify any use cases which are related to this one and describe the nature of that relation. Include a hyperlink to each use case.&gt;</p>
+<p>TBD</p>
 </div>
 <div class="paragraph">
 <p><strong>Roles:</strong></p>
@@ -1236,38 +1245,46 @@ that require that a POI listing be deleted upon request by the POI owner.</p>
 <p>&lt;List all stakeholders that are involved in the use case. Stakeholders are described in the <a href="#stakeholders-section">Stakeholders Section</a> of this document. Each listed stakeholder should be hyperlinked to its description.&gt;</p>
 </div>
 <div class="paragraph">
-<p><strong>Devices:</strong>
-&lt;List all devices here&gt;</p>
+<p><strong>Devices:</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>Data:</strong>
-&lt;List Data Types here&gt;</p>
+<p>NA</p>
+</div>
+<div class="paragraph">
+<p><strong>Data:</strong></p>
+</div>
+<div class="paragraph">
+<p>A Feature dataset which is the source or target of the POI.</p>
 </div>
 <div class="paragraph">
 <p><strong>Dependencies:</strong></p>
 </div>
 <div class="paragraph">
-<p>&lt;Identify any dependencies of this use case. Dependencies are described in the <a href="#bibliography-section">Bibliography</a> and  <a href="#terms-and-definitions-section">Terms and Definitions</a> sections of this document. Each listed dependency should be hyperlinked to its description.&gt;</p>
+<p>NA</p>
 </div>
 <div class="paragraph">
 <p><strong>Requirements:</strong></p>
 </div>
 <div class="paragraph">
-<p>&lt;Identify the requirements derived from this use case. Requirements are described in the <a href="#requirements-section">Requirements section</a> of this document. Each listed requirement should be hyperlinked to its description.&gt;</p>
+<p>TBD</p>
 </div>
 <div class="paragraph">
 <p><strong>Variants:</strong></p>
 </div>
 <div class="paragraph">
-<p>&lt;Describe possible use case variants, if applicable&gt;</p>
+<p>None</p>
 </div>
 <div class="paragraph">
-<p><strong>Security Considerations:</strong>
-&lt;Identify Security considerations here&gt;</p>
+<p><strong>Security Considerations:</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>Privacy Considerations:</strong>
-&lt;Identify Privacy considerations here&gt;</p>
+<p>TBD</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>TBD</p>
 </div>
 <div class="paragraph">
 <p><strong>Comments:</strong></p>
@@ -1855,8 +1872,56 @@ Hot dog, Cheesesteak, Chicken Wings, Coffee, Alcohol, &#8230;&#8203;</p>
 </div>
 <div class="sect2">
 <h3 id="military_detail"><a class="anchor" href="#military_detail"></a>7.5. Military Use Case</h3>
+<div class="sect3">
+<h4 id="_scenario"><a class="anchor" href="#_scenario"></a>7.5.1. Scenario</h4>
 <div class="paragraph">
-<p>Fill in details here&#8230;&#8203;</p>
+<p>One Army unit is deploying to assist with setting up Covid testing and emergency hospitals while another unit is deploying to a war-torn area where infrastructure has been destroyed and potential hazardous materials may have been released. Each unit has a need for Points of Interest (POI), however these POI will be different depending on the mission and the operational setting. A vast feature data set is available with a complex/robust data schema however these end users are seeking situational awareness for their operation and a geospatial engineer team is responsible for leveraging the feature dataset to generate sets of POI to support each mission. These users only require a limited set of features that are easily represented by intuitive symbols and a select set of attributes that support the mission and can be easily displayed on a mobile device. The end user loads the prepared dataset or connects to a service to cache the POI. The end user reviews POI data over imagery and over a map background to familiarize themselves with on the area. In a sparse area the user will turn on a full set of POI while in dense urban areas the user selects from a list of POI to display.</p>
+</div>
+<div class="paragraph">
+<p>In both scenarios the users also have a need to collect POI via a simple select the symbol from a list and drop it on the map with a second step of select the symbol from the map and add detail via a drop-down menu with a list of list attributes. The collected and revised POI will be uploaded and validated by the geospatial engineer team and persistent information will be added to the master feature dataset.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_what_is_a_poi"><a class="anchor" href="#_what_is_a_poi"></a>7.5.2. What is a POI?</h4>
+<div class="paragraph">
+<p>A POI provides a simplified, mission-specific, view of Feature data.</p>
+</div>
+<div class="paragraph">
+<p><strong>POI for Situational Awareness</strong></p>
+</div>
+<div class="paragraph">
+<p><em>A POI is a simplified view of a mission-specific subset of a Feature dataset</em></p>
+</div>
+<div class="paragraph">
+<p>For this military situation awareness use case, POIs are a simplified set of point features that the user community needs visually represented with options to search, filter, and view labels and attributes. POIs are derived from a more complex geospatial data model and simplified to better enable systems with limited geospatial capabilities. While traditional feature data carries attributes that are often null or contain a “no information” value, POIs should only carry the most relevant and well populated information. In addition to traditional attributes the POI will contains 3 pre-calculate fields that can simplify search, filter, categorize and symbolize the POIs.</p>
+</div>
+<div class="paragraph">
+<p><strong>POI for Data Collection</strong></p>
+</div>
+<div class="paragraph">
+<p><em>A POI is a collection of mission-specific Feature Types to be used by field operators to collect data.</em></p>
+</div>
+<div class="paragraph">
+<p>POIs, when combined with an identified symbol set, play a key role in enabling end user data collection. An end user with a known symbol set loaded on a device and a capability to select the icon and place it on the map can perform data collection in the field. The end user may also select the collected symbol and fill form fields with additional details. The collected data may be encrypted and stored on the device, shared across the network, or pushed to the server when connectivity is available.</p>
+</div>
+<div id="military_use_case_figure_1" class="imageblock text-center">
+<div class="content">
+<img src="./images/DataCollectionUseCase.png" alt="DataCollectionUseCase">
+</div>
+<div class="title">Figure 1. POIs for Collection and Use</div>
+</div>
+<div class="paragraph">
+<p>The left image in <a href="#military_use_case_figure_1">Figure 1</a> shows POIs dropped on a Feature data set capturing new or enhanced data. The right image shows those POIs dropped on an image for use by operations personnel.</p>
+</div>
+<div class="paragraph">
+<p>The attributes of these POIs are shown in <a href="#military_poi_contents">Figure 2</a>.</p>
+</div>
+<div id="military_poi_contents" class="imageblock text-center">
+<div class="content">
+<img src="./images/Military_POI.png" alt="Military POI">
+</div>
+<div class="title">Figure 2. Military POI Contents</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -2418,7 +2483,7 @@ Place other Annex material in sequential annexes beginning with "B" and leave fi
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-03-10 12:13:17 UTC
+Last updated 2022-03-16 15:16:42 +0100
 </div>
 </div>
 </body>

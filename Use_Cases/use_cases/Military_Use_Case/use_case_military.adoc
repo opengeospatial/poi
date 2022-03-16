@@ -1,46 +1,52 @@
 [[military_use_case]]
 === Military Use Case
 
-*Contributed By:* Insert name and affiliation here
+*Contributed By:* Joetta Kreck (AGC) – Joetta.l.kreck@usace.army.mil
 
 *Motivation:*
-<Text here>
+
+Use POIs to simplify data collection and use.
 
 *Summary*
-<Text here>
+
+POIs are a simplification of a Feature dataset. The selection and population of a POI is mission-specific. There is no standard attribution for a POI Feature. Rather, the POI Feature Type serves as a scafolding which is attributed based on the data available and the needs of the user.
 
 <<use_case_details_military,Click to view>> full use case description
 
 *Related Use Cases*
 
-<Identify any use cases which are related to this one and describe the nature of that relation. Include a hyperlink to each use case.>
+TBD
 
 *Roles:*
 
 <List all stakeholders that are involved in the use case. Stakeholders are described in the <<stakeholders-section,Stakeholders Section>> of this document. Each listed stakeholder should be hyperlinked to its description.>
 
 *Devices:*
-<List all devices here>
+
+NA
 
 *Data:*
-<List Data Types here>
+
+A Feature dataset which is the source or target of the POI.
 
 *Dependencies:*
 
-<Identify any dependencies of this use case. Dependencies are described in the <<bibliography-section,Bibliography>> and  <<terms-and-definitions-section,Terms and Definitions>> sections of this document. Each listed dependency should be hyperlinked to its description.>
+NA
 
 *Requirements:*
 
-<Identify the requirements derived from this use case. Requirements are described in the <<requirements-section,Requirements section>> of this document. Each listed requirement should be hyperlinked to its description.>
+TBD
 
 *Variants:*
 
-<Describe possible use case variants, if applicable>
+None
 
 *Security Considerations:*
-<Identify Security considerations here>
+
+TBD
 
 *Privacy Considerations:*
-<Identify Privacy considerations here>
+
+TBD
 
 *Comments:*
