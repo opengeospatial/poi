@@ -34,8 +34,6 @@ include::./use_cases/Package_Drop-off_and_Pick_Up_Services/use_case_details_pack
 
 include::./use_cases/POI_Publication/use_case_details_poi-publication.adoc[]
 
-include::./use_cases/Situational_Awareness/use_case_details_situational-awareness.adoc[]
-
 include::./use_cases/Smart_Tourism/use_case_details_smart-tourism.adoc[]
 
 
