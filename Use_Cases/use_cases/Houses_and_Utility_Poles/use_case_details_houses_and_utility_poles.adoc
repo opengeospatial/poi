@@ -1,35 +1,17 @@
 [[houses_and_utility_poles_detail]]
 === Houses and Utility Poles Use Case
 
-This use case is about the private use of a POI database containing
-two different kinds of POIs:
+This use case is about the private use of a POI database containing two different kinds of POIs:
 
 * Buildings (houses, commercial establishments, etc.)
 * Utility Poles (that carry wires for power, cable, phone, etc.)
 
-A company may want to know where all the houses are, where all the utility poles are,
-and which utility pole is deemed nearest the "point of attachment" to each
-of the buildings that it serves.
-It could use this information to handle requests to add or drop service, or
-repair service interruption.
+A company may want to know where all the houses are, where all the utility poles are, and which utility pole is deemed nearest the "point of attachment" to each of the buildings that it serves. It could use this information to handle requests to add or drop service, or repair service interruption.
 
-An important part of the use case is being able to look up a house by its
-address. This is not trivial, because there are many ways to express an address
-and a lookup service should not expect its users to know the one true canonical
-way to represent any particular address. Also, in some countries, the addressing
-system is not all that developed (e.g., use of numbers on roads may not be present
-much of the time).
+An important part of the use case is being able to look up a house by its address. This is not trivial, because there are many ways to express an address and a lookup service should not expect its users to know the one true canonical way to represent any particular address. Also, in some countries, the addressing system is not all that developed (e.g., use of numbers on roads may not be present much of the time).
 
-There may be the need for a _geocoder_ : a function to take any form of address
-to the (latitude,longitude) represented by that address.
+There may be the need for a _geocoder_ : a function to take any form of address to the (latitude,longitude) represented by that address.
 
-There may be the need for a function that returns all the houses within a given
-distance of a given (latitude,longitude), and similarly for utility poles.
+There may be the need for a function that returns all the houses within a given distance of a given (latitude,longitude), and similarly for utility poles.
 
-The other important part of this use case is that it requires the maintenance of
-a _relation_ between POIs: the relation _closest_to(house, pole)_ that says that
-a given pole is deemed closest to a given house. This might not necessarily be
-the one that minimizes the distance between the points for the pole and house,
-because a corner house may be approximately the same distance to two separate poles
-and the utility company might choose a slightly farther pole to be "closest" for
-reasons related to, say, house orientation.
+The other important part of this use case is that it requires the maintenance of a _relation_ between POIs: the relation _closest_to(house, pole)_ that says that a given pole is deemed closest to a given house. This might not necessarily be the one that minimizes the distance between the points for the pole and house, because a corner house may be approximately the same distance to two separate poles and the utility company might choose a slightly farther pole to be "closest" for reasons related to, say, house orientation.

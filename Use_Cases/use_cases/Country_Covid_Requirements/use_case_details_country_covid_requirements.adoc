@@ -1,14 +1,11 @@
 [[country_covid_requirements_detail]]
 === Country Covid Requirements Use Case
 
-This use case proposes a service that users can consult via a web browser
-in order to find out what the rules are for entering, possibly quarantining,
-and then staying in any of the countries of the world.
+This use case proposes a service that users can consult via a web browser in order to find out what the rules are for entering, possibly quarantining, and then staying in any of the countries of the world.
 
-A user should be able to enter a country name in a form, and then be shown
-the following information:
+A user should be able to enter a country name in a form, and then be shown the following information:
 
-===== For Entry to the Country =====
+==== For Entry to the Country 
 
 * Is there a testing requirement? If so
 ** What kind of tests are allowed?
@@ -24,7 +21,7 @@ the following information:
 ** How long is the quarantine period? Is there an early out possibility?
 ** What places are acceptable for quarantining in?
 
-===== Once in a Country =====
+==== Once in a Country 
 
 * If one gets Covid, are there quarantining requirements? If so
 ** __same questions as in previous section for quarantine__
@@ -32,17 +29,8 @@ the following information:
 ** In what places are masks required?
 ** Is the type of allowable mask specified?
 
-==== Geopolitical Complications ====
+==== Geopolitical Complications 
 
-A complication of this use case is that the set of countries in the world is
-not well-defined. Some countries' laws prohibit the recognition of other
-countries. Therefore, depending on where the user of this service is and
-perhaps where the serving machines for the service is, the set of countries
-that the service recognizes may be different for different users.
+A complication of this use case is that the set of countries in the world is not well-defined. Some countries' laws prohibit the recognition of other countries. Therefore, depending on where the user of this service is and perhaps where the serving machines for the service is, the set of countries that the service recognizes may be different for different users.
 
-While this use case posits just having a point on a map to associate with
-each country, a variant might be to outline the borders of a country on a map
-as part of what is shown to the user. This would open up even more
-geopolitical complications, as different countries have different laws about
-what their borders are, and the service may, just as in the previous paragraph,
-have to adapt the display according to where the user and/or servers are.
+While this use case posits just having a point on a map to associate with each country, a variant might be to outline the borders of a country on a map as part of what is shown to the user. This would open up even more geopolitical complications, as different countries have different laws about what their borders are, and the service may, just as in the previous paragraph, have to adapt the display according to where the user and/or servers are.

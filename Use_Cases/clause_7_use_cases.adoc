@@ -5,11 +5,15 @@ include::./use_cases/Choose_Restaurant/use_case_choose-restaurant.adoc[]
 
 include::./use_cases/Construction_Site/use_case_construction-site.adoc[]
 
+include::./use_cases/Country_Covid_Requirements/use_case_country_covid_requirements.adoc[]
+
 include::./use_cases/Covid_Testing_Center/use_case_covid-testing-center.adoc[]
 
 include::./use_cases/EV_charging_stations/use_case_ev-charging-stations.adoc[]
 
 include::./use_cases/Military_Use_Case/use_case_military.adoc[]
+
+include::./use_cases/Houses_and_Utility_Poles/use_case_houses_and_utility_poles.adoc[]
 
 include::./use_cases/Package_Drop-off_and_Pick_Up_Services/use_case_package_drop-off_and_pick_up.adoc[]
 
@@ -24,11 +28,15 @@ include::./use_cases/Choose_Restaurant/use_case_details_choose-restaurant.adoc[]
 
 include::./use_cases/Construction_Site/use_case_details_construction-site.adoc[]
 
+include::./use_cases/Country_Covid_Requirements/use_case_details_country_covid_requirements.adoc[]
+
 include::./use_cases/Covid_Testing_Center/use_case_details_covid-testing-center.adoc[]
 
 include::./use_cases/EV_charging_stations/use_case_details_ev-charging-stations.adoc[]
 
 include::./use_cases/Military_Use_Case/use_case_details_military.adoc[]
+
+include::./use_cases/Houses_and_Utility_Poles/use_case_details_houses_and_utility_poles.adoc[]
 
 include::./use_cases/Package_Drop-off_and_Pick_Up_Services/use_case_details_package_drop-off_and_pick_up.adoc[]
 

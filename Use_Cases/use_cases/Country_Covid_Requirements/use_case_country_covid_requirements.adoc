@@ -3,15 +3,11 @@
 
 *Contributed By:* Howard Trickey
 
-*Motivation:* People might want to know what the requirements are related to
-Covid that they need to be prepared for if they intend to visit a particular country.
-This use case shows that a POI might be a _whole country_.
+*Motivation:* People might want to know what the requirements are related to Covid that they need to be prepared for if they intend to visit a particular country. This use case shows that a POI might be a _whole country_.
 
 *Summary*
 
-A user can use a service to look up, by country name, what the requirements are
-to visit a country with respect to Covid precautions: vaccinations required,
-tests required, etc.
+A user can use a service to look up, by country name, what the requirements are to visit a country with respect to Covid precautions: vaccinations required, tests required, etc.
 
 <<country_requirements_covid_detail,Click to view>> full use case description
 
@@ -45,21 +41,16 @@ quarantining, and masking, for entry to and staying in the country.
 
 *Variants:*
 
-A variant use case would be looking up other kinds of information about
-a country - for example, population or economic data.
+A variant use case would be looking up other kinds of information about a country - for example, population or economic data.
 
-Another variant use case would be lookup up information over different-sized
-region classifications - for example, states, provinces, or cities.
+Another variant use case would be lookup up information over different-sized region classifications - for example, states, provinces, or cities.
 
 *Security Considerations:*
 
-The information about Covid requirements might be harmful (or at least, annoying)
-to users if wrong, so there should be security mechanisms in place to ensure that
-only data from authorized sources is shown to users.
+The information about Covid requirements might be harmful (or at least, annoying) to users if wrong, so there should be security mechanisms in place to ensure that only data from authorized sources is shown to users.
 
 *Privacy Considerations:*
 
-Users should be able to assume that their inquiries cannot be tracked back to
-them, unless the service very clearly warns otherwise.
+Users should be able to assume that their inquiries cannot be tracked back to them, unless the service very clearly warns otherwise.
 
 *Comments:*
