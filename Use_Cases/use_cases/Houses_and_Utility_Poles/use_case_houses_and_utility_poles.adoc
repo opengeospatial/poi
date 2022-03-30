@@ -1,0 +1,62 @@
+[[houses_and_utility_poles_use_case]]
+=== Use Case Name
+
+*Contributed By:* Howard Trickey
+
+*Motivation:* A utility company (e.g., electricity supplier) may want to know
+the location of all of the houses (and other buildings) that it serves,
+and the utility pole that is closest to each house.
+This use case shows that a POI might be a private house or some other kind
+of object that has a location in the world.
+
+*Summary*
+
+Employees of the utility company can use a service to look up a house by address,
+and be presented with the utility pole that is closest to it.
+They might also look up utility poles closest to a particular address,
+and from the results, choose one to see all of the houses closest to that utility pole.
+
+<<houses_and_utility_poles_detail,Click to view>> full use case description
+
+*Related Use Cases*
+
+*Roles:*
+
+* <<role_functional-beneficiary,Functional Beneficiary>> - the employee searching for houses or poles
+* <<role_maintenance-operator,Maintenance Operator>> - responsible for keeping the houses and poles data updated
+* <<role_supplier,Supplier>> - supplies data for houses, address-to-latitude/longitude mapping, utility pole locations
+
+*Devices:*
+
+<<device_web-browser,Web Browser>>
+
+*Data:*
+
+* List of all the houses in a region, with address and (latitude,longitude) attributes.
+* List of all the utility poles in a region, with (latitude,longitude) attribute.
+* Relation closest_to(house, pole) stating that the given pole is closest to the given house.
+
+*Dependencies:*
+
+<Identify any dependencies of this use case. Dependencies are described in the <<bibliography-section,Bibliography>> and  <<terms-and-definitions-section,Terms and Definitions>> sections of this document. Each listed dependency should be hyperlinked to its description.>
+
+*Requirements:*
+
+<Identify the requirements derived from this use case. Requirements are described in the <<requirements-section,Requirements section>> of this document. Each listed requirement should be hyperlinked to its description.>
+
+*Variants:*
+
+This use case could be enhanced with things such as substations and power line
+routing along the utility poles.
+
+*Security Considerations:*
+
+This may be sensitive data from an infrastructure security point of view, in which
+case adequate access controls to the service need to be in place.
+
+*Privacy Considerations:*
+
+Probably none. If this service were made publicly available then public laws
+may require that a person could request that their house be deleted from the database.
+
+*Comments:*

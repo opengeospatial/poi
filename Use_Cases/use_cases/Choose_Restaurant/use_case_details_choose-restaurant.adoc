@@ -27,9 +27,9 @@ and/or serve the type of meal (breakfast, lunch, dinner, etc.) the user wants.
 * Has a happy hour.
 * Is Handicap-accessible.
 * Has available free parking.
-* Has Covid-related requiements (vaccination and/or masks).
+* Has Covid-related requirements (vaccination and/or masks).
 
-Given these requirments, the user will want to browse restaurants in a particular
+Given these requirements, the user will want to browse restaurants in a particular
 locality or in a particular time-from or distance-from a particular (latitude, longitude),
 and examine whether or not those restaurants have the required attributes.
 
