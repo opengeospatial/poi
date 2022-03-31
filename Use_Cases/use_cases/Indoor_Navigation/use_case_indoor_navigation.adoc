@@ -1,9 +1,9 @@
 [[use-case-name_use_case]]
 === Use Case Name
 
-*Contributed By:* <Put your name here>
+*Contributed By:* Abdoulaye Diakite
 
-*Motivation:* <Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users>
+*Motivation:* With the complexification of urban constructions that are increasingly leveraging vertical spaces (high rise and underground), navigating the indoor environment is becoming more and more challenging. While reliable localization system is still the biggest challenge for indoor navigation applications, the perfect map to support smart navigation is yet to be fully defined but PoI plays a critical role in its functionalities. In indoor navigation, a PoI either plays the role of a destination, or a "landmark" on the agent’s way to improve the navigation experience.
 
 *Summary* 
 
