@@ -1,4 +1,15 @@
 [[EV-charging-station_detail]]
 === Electrical Vehicle Charging Stations
 
-<insert narrative text>
+Electrical vehicle charging stations have become an important element on location services. The information is highly useful extension for the services provided for cars and because of that, higher level of open interoperability would make it easier to maintain information on charging networks that have multiple operators and a growing number of private vendors making their chargers available for public.
+
+There are several ways of viewing what a charging station is:
+- Charging station as a part of traffic system, having a location and street address
+- Charging station as a node part of the routing algorithms (e.g. Battery Level on Arrival -indicator)
+- Charging station as a part of electric utility network
+- Charging station as an asset with stakeholders, maintenance operations and permits
+
+Open Charger Alliance, an industry organization, has created a widely adopted data standard for the chargers. The [Open Charging Point Protocol](https://www.openchargealliance.org/protocols/ocpp-16/), currently in version 1.6, defines the messaging standard between the charger and the vehicle. While it doesn't define the characteristics of the charger itself, it does provide some dynamic attributes that are expected in charging assistance. As an example, it defines the number of charging positions available for vehicles, their availability, operational status and energy consumption. To access this information, typically a data integration is required with the charging network operator.
+
+References:
+- [Google Maps for EV](https://support.google.com/maps/answer/9773205)
