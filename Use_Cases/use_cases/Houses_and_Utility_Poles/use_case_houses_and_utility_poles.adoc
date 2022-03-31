@@ -1,5 +1,5 @@
 [[houses_and_utility_poles_use_case]]
-=== Use Case Name
+=== Houses and Utility Poles
 
 *Contributed By:* Howard Trickey
 

@@ -1,4 +1,4 @@
-[[use_case_name_detail]]
+[[use_case_indoor_navigation_detail]]
 === Indoor Navigation Use Case
 
 With the complexification of urban constructions that are increasingly leveraging vertical spaces (high rise and underground), navigating the indoor environment is becoming more and more challenging. While reliable localization system is still the biggest challenge for indoor navigation applications, the perfect map to support smart navigation is yet to be fully defined but PoI plays a critical role in its functionalities. In indoor navigation, a PoI either plays the role of a destination, or a "landmark" on the agent's way to improve the navigation experience. In this document, we select few navigation scenarios and suggest PoI examples that an application (e.g., an navigation app) would need to support them.

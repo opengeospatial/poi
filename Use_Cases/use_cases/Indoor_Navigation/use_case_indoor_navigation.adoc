@@ -1,5 +1,5 @@
-[[use-case-name_use_case]]
-=== Use Case Name
+[[indoor_navigation_use_case]]
+=== Indoor Navigation
 
 *Contributed By:* Abdoulaye Diakite
 
