@@ -3,13 +3,13 @@
 
 *Contributed By:* Timo Ruohomäki, Forum Virium Helsinki Oy
 
-*Motivation:* <Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users>
+*Motivation:* Provide better and up-to-date information services for tourists
 
 *Summary* 
 
-<Provide a summary of the use case. The full use case description should be available through the following link>
+Smart Tourism is the type of tourism that depends on high level of integration with information systems, possibly in combination with social connections and human interest. Tourism services have a strong link to spatial information systems in providing information on tourist attractions and planning routes between them. The information on tourist attractions can be somewhat dynamic, including opening hours and physical accessibility. Oftentimes with the help of social media services, rating and feedback from visitors is linked to the attractions. The tourism is international by definition, so the information is to be provided in many languages.
 
-<<use-case-name_detail,Click to view>> full use case description
+<<use-case-smart_tourism-detail,Click to view>> full use case description
 
 *Related Use Cases* 
 
