@@ -11,6 +11,8 @@ include::./use_cases/Covid_Testing_Center/use_case_covid-testing-center.adoc[]
 
 include::./use_cases/EV_charging_stations/use_case_ev-charging-stations.adoc[]
 
+include::./use_cases/Indoor_Navigation/use_case_indoor_navigation.adoc[]
+
 include::./use_cases/Military_Use_Case/use_case_military.adoc[]
 
 include::./use_cases/Houses_and_Utility_Poles/use_case_houses_and_utility_poles.adoc[]
@@ -33,6 +35,8 @@ include::./use_cases/Country_Covid_Requirements/use_case_details_country_covid_r
 include::./use_cases/Covid_Testing_Center/use_case_details_covid-testing-center.adoc[]
 
 include::./use_cases/EV_charging_stations/use_case_details_ev-charging-stations.adoc[]
+
+include::./use_cases/Indoor_Navigation/use_case_details_indoor_navigation.adoc[]
 
 include::./use_cases/Military_Use_Case/use_case_details_military.adoc[]
 
