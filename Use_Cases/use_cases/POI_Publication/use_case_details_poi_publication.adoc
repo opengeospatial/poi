@@ -1,4 +1,0 @@
-[[poi_publication_detail]]
-=== POI Publication Use Case
-
-<insert narrative text>

@@ -1,0 +1,39 @@
+[[military_detail]]
+=== Military Use Case
+
+==== Scenario
+
+One Army unit is deploying to assist with setting up Covid testing and emergency hospitals while another unit is deploying to a war-torn area where infrastructure has been destroyed and potential hazardous materials may have been released. Each unit has a need for Points of Interest (POI), however these POI will be different depending on the mission and the operational setting. A vast feature data set is available with a complex/robust data schema however these end users are seeking situational awareness for their operation and a geospatial engineer team is responsible for leveraging the feature dataset to generate sets of POI to support each mission. These users only require a limited set of features that are easily represented by intuitive symbols and a select set of attributes that support the mission and can be easily displayed on a mobile device. The end user loads the prepared dataset or connects to a service to cache the POI. The end user reviews POI data over imagery and over a map background to familiarize themselves with on the area. In a sparse area the user will turn on a full set of POI while in dense urban areas the user selects from a list of POI to display.
+
+In both scenarios the users also have a need to collect POI via a simple select the symbol from a list and drop it on the map with a second step of select the symbol from the map and add detail via a drop-down menu with a list of list attributes. The collected and revised POI will be uploaded and validated by the geospatial engineer team and persistent information will be added to the master feature dataset.
+
+==== What is a POI?
+
+A POI provides a simplified, mission-specific, view of Feature data. 
+
+*POI for Situational Awareness*
+
+_A POI is a simplified view of a mission-specific subset of a Feature dataset_
+
+For this military situation awareness use case, POIs are a simplified set of point features that the user community needs visually represented with options to search, filter, and view labels and attributes. POIs are derived from a more complex geospatial data model and simplified to better enable systems with limited geospatial capabilities. While traditional feature data carries attributes that are often null or contain a “no information” value, POIs should only carry the most relevant and well populated information. In addition to traditional attributes the POI will contains 3 pre-calculate fields that can simplify search, filter, categorize and symbolize the POIs.
+
+**POI for Data Collection**
+
+_A POI is a collection of mission-specific Feature Types to be used by field operators to collect data._
+
+POIs, when combined with an identified symbol set, play a key role in enabling end user data collection. An end user with a known symbol set loaded on a device and a capability to select the icon and place it on the map can perform data collection in the field. The end user may also select the collected symbol and fill form fields with additional details. The collected data may be encrypted and stored on the device, shared across the network, or pushed to the server when connectivity is available.
+
+[[military_use_case_figure_1]]
+.POIs for Collection and Use
+
+image::./images/DataCollectionUseCase.png[align="center"]
+
+The left image in <<military_use_case_figure_1,Figure 1>> shows POIs dropped on a Feature data set capturing new or enhanced data. The right image shows those POIs dropped on an image for use by operations personnel.
+
+The attributes of these POIs are shown in <<military_poi_contents,Figure 2>>.
+
+[[military_poi_contents]]
+.Military POI Contents
+
+image::./images/Military_POI.png[align="center"]
+

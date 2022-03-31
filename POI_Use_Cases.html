@@ -462,7 +462,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Approval Date:   &lt;yyyy-mm-dd&gt;</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Publication Date:   2022-01-06</p></td>
+<td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Publication Date:   2022-03-30</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top" style="background-color: #FFFFFF;"><p class="tableblock">External identifier of this OGC&#174; document: <a href="http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}" class="bare">http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}</a></p></td>
@@ -588,22 +588,60 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#use-case-section">6. POI Use Cases</a>
 <ul class="sectlevel2">
-<li><a href="#last-mile-logistics_use_case">6.1. Last Mile Logistics</a></li>
-<li><a href="#poi_publication_use_case">6.2. POI Publication</a></li>
-<li><a href="#package_drop_off_and_pick_up_use_case">6.3. Package Drop-off and Pick Up Services</a></li>
+<li><a href="#choose_restaurant_use_case">6.1. Choose Restaurant</a></li>
+<li><a href="#use_case_construction-site">6.2. Construction Site</a></li>
+<li><a href="#country_covid_requirements_use_case">6.3. Country Covid Requirements</a></li>
+<li><a href="#covid_teseting_center_use_case">6.4. Covid Testing Center Use Case</a></li>
+<li><a href="#EV-charging-station">6.5. Electrical Vehicle Charging Stations</a></li>
+<li><a href="#military_use_case">6.6. Military Use Case</a></li>
+<li><a href="#houses_and_utility_poles_use_case">6.7. Use Case Name</a></li>
+<li><a href="#package_drop_off_and_pick_up_use_case">6.8. Package Drop-off and Pick Up Services</a></li>
+<li><a href="#poi_publication_use_case">6.9. POI Publication</a></li>
+<li><a href="#use-case-smart_tourism">6.10. Smart Tourism</a></li>
 </ul>
 </li>
 <li><a href="#detailed-use-case-section">7. POI Detailed Use Cases</a>
 <ul class="sectlevel2">
-<li><a href="#last-mile-logistics_detail">7.1. Last Mile Logistics Use Case</a></li>
-<li><a href="#poi_publication_detail">7.2. POI PUblication Use Case</a></li>
-<li><a href="#package_drop_off_and_pick_up_detail">7.3. Package Drop off and Pick Up Services Use Case</a></li>
+<li><a href="#choose_restaurant_detail">7.1. Choose Restaurant Use Case</a>
+<ul class="sectlevel3">
+<li><a href="#_restaurant_attribute_details">7.1.1. Restaurant Attribute Details</a></li>
+</ul>
+</li>
+<li><a href="#construction-site_detail">7.2. Construction Site Use Case</a></li>
+<li><a href="#country_covid_requirements_detail">7.3. Country Covid Requirements Use Case</a>
+<ul class="sectlevel3">
+<li><a href="#_for_entry_to_the_country">7.3.1. For Entry to the Country</a></li>
+<li><a href="#_once_in_a_country">7.3.2. Once in a Country</a></li>
+<li><a href="#_geopolitical_complications">7.3.3. Geopolitical Complications</a></li>
+</ul>
+</li>
+<li><a href="#covid_testing_center_detail">7.4. Covid Testing Center Use Case</a></li>
+<li><a href="#EV-charging-station_detail">7.5. Electrical Vehicle Charging Stations</a></li>
+<li><a href="#military_detail">7.6. Military Use Case</a>
+<ul class="sectlevel3">
+<li><a href="#_scenario">7.6.1. Scenario</a></li>
+<li><a href="#_what_is_a_poi">7.6.2. What is a POI?</a></li>
+</ul>
+</li>
+<li><a href="#houses_and_utility_poles_detail">7.7. Houses and Utility Poles Use Case</a></li>
+<li><a href="#package_drop_off_and_pick_up_detail">7.8. Package Drop off and Pick Up Services Use Case</a></li>
+<li><a href="#poi_publication_detail">7.9. POI Publication Use Case</a></li>
+<li><a href="#use_case_details_smart-tourism">7.10. Smart Tourism Use Case</a></li>
 </ul>
 </li>
 <li><a href="#stakeholders-section">8. Stakeholders</a></li>
 <li><a href="#devices-section">9. Devices</a></li>
 <li><a href="#data_categories-section">10. Data Categories</a></li>
-<li><a href="#requirements-section">11. Requirements</a></li>
+<li><a href="#requirements-section">11. Requirements</a>
+<ul class="sectlevel2">
+<li><a href="#requirement_simple_geometry">11.1. Simple Geometry</a></li>
+<li><a href="#requirement_feature_of_interest">11.2. Features of Interest</a></li>
+<li><a href="#requirement_symbology">11.3. Symbology</a></li>
+<li><a href="#requirement_mandatory_properties">11.4. Mandatory Properties</a></li>
+<li><a href="#requirement_data_model">11.5. Data Model</a></li>
+<li><a href="#requirement_feature_navigation">11.6. Navigation to Feature(s) of Interest</a></li>
+</ul>
+</li>
 <li><a href="#_conformance_class_abstract_test_suite_normative">Annex A: Conformance Class Abstract Test Suite (Normative)</a>
 <ul class="sectlevel2">
 <li><a href="#_conformance_class_a">A.1. Conformance Class A</a>
@@ -884,18 +922,122 @@ Global Grid Forum (2002)</p>
 <h2 id="use-case-section"><a class="anchor" href="#use-case-section"></a>6. POI Use Cases</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="last-mile-logistics_use_case"><a class="anchor" href="#last-mile-logistics_use_case"></a>6.1. Last Mile Logistics</h3>
+<h3 id="choose_restaurant_use_case"><a class="anchor" href="#choose_restaurant_use_case"></a>6.1. Choose Restaurant</h3>
 <div class="paragraph">
-<p><strong>Contributed By:</strong> Timo Ruohomäki, based on innovation projects from the city of Helsinki.</p>
+<p><strong>Contributed By:</strong> Howard Trickey</p>
 </div>
 <div class="paragraph">
-<p><strong>Motivation:</strong> The last mile has often been found to be the most challenging factor in the logistics chain and the most demanding in terms of achieving the desired service level.</p>
+<p><strong>Motivation:</strong> People using a map service that contains POIs may want to find a restaurant to eat in.
+This is good example of the general use case of finding and choosing POIs with particular services.</p>
 </div>
 <div class="paragraph">
 <p><strong>Summary</strong></p>
 </div>
 <div class="paragraph">
-<p><a href="#last-mile-logistics_detail">Click to view</a> full use case description</p>
+<p>In order to choose a restaurant to eat in or get delivery from, users need to find restaurants near them
+and information about those restaurants to help decide which, if any, they want to use.</p>
+</div>
+<div class="paragraph">
+<p><a href="#choose_restaurant_detail">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Use Cases</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Roles:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Restaurant owner or operator</p>
+</li>
+<li>
+<p>User (person choosing a restaurant)</p>
+</li>
+<li>
+<p>Government entities responsible for regulating restaurants, search services, phones, automobiles</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>TODO: link stakeholders to the <a href="#stakeholders-section">Stakeholders Section</a> of this document.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Devices:</strong></p>
+</div>
+<div class="paragraph">
+<p>Users may want to choose a restaurant using a computer, a mobile phone, or an in-auto navigation system.</p>
+</div>
+<div class="paragraph">
+<p><strong>Data:</strong></p>
+</div>
+<div class="paragraph">
+<p>The data will be attributes of restaurants such as: location, name, type of cuisine, business hours, price level, etc.</p>
+</div>
+<div class="paragraph">
+<p><strong>Dependencies:</strong></p>
+</div>
+<div class="paragraph">
+<p><em>TODO: Add any dependencies from the <a href="#bibliography-section">Bibliography</a> and  <a href="#terms-and-definitions-section">Terms and Definitions</a> sections of this document.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Requirements:</strong></p>
+</div>
+<div class="paragraph">
+<p><em>TODO: Add requirements from the <a href="#requirements-section">Requirements section</a> of this document.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Variants:</strong></p>
+</div>
+<div class="paragraph">
+<p>Many "Choose <em>X</em>" use cases will be similar, differing mainly in the specialized attributes needed to make a choice for POIs in category <em>X</em>. For example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Choose Lodging</p>
+</li>
+<li>
+<p>Choose Clothes Store</p>
+</li>
+<li>
+<p>Choose Electronics Store</p>
+<div class="paragraph">
+<p>&#8230;&#8203;</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Security Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>A user should not be able to discover what any other particular user did while choosing a restaurant.</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>An restaurant listed must be a publicly visitable place. There may be other privacy laws, in certain countries,
+that require that a POI listing be deleted upon request by the POI owner.</p>
+</div>
+<div class="paragraph">
+<p><strong>Comments:</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_construction-site"><a class="anchor" href="#use_case_construction-site"></a>6.2. Construction Site</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Timo Ruohomäki, based on innovation projects from the city of Helsinki.</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation:</strong> The last mile has often been found to be the most challenging factor in the logistics chain and the most demanding in terms of achieving the desired service level. This is an issue especially on developing areas, e.g. construction sites.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary</strong></p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_details_construction-site">Click to view</a> full use case description</p>
 </div>
 <div class="paragraph">
 <p><strong>Related Use Cases</strong></p>
@@ -938,9 +1080,105 @@ Global Grid Forum (2002)</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="poi_publication_use_case"><a class="anchor" href="#poi_publication_use_case"></a>6.2. POI Publication</h3>
+<h3 id="country_covid_requirements_use_case"><a class="anchor" href="#country_covid_requirements_use_case"></a>6.3. Country Covid Requirements</h3>
 <div class="paragraph">
-<p><strong>Contributed By:</strong> Koen De Baets</p>
+<p><strong>Contributed By:</strong> Howard Trickey</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation:</strong> People might want to know what the requirements are related to Covid that they need to be prepared for if they intend to visit a particular country. This use case shows that a POI might be a <em>whole country</em>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary</strong></p>
+</div>
+<div class="paragraph">
+<p>A user can use a service to look up, by country name, what the requirements are to visit a country with respect to Covid precautions: vaccinations required, tests required, etc.</p>
+</div>
+<div class="paragraph">
+<p><a href="#country_requirements_covid_detail">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Use Cases</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Roles:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#role_functional-beneficiary">Functional Beneficiary</a> - the user searching for Covid requirements</p>
+</li>
+<li>
+<p><a href="#role_maintenance-operator">Maintenance Operator</a> - responsible for keeping the per-country requirements updated</p>
+</li>
+<li>
+<p><a href="#role_supplier">Supplier</a> - supplies the Covid requirements for some or all countries</p>
+</li>
+<li>
+<p><a href="#role_regulator">Regulator</a> - has input or legal requirements over what constitutes a country</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Devices:</strong></p>
+</div>
+<div class="paragraph">
+<p><a href="#device_web-browser">Web Browser</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Data:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>List of the world&#8217;s countries and a representative geographic point for each</p>
+</li>
+<li>
+<p>For each country, an up-to-date set of requirements for vaccination, testing,
+quarantining, and masking, for entry to and staying in the country.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Dependencies:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify any dependencies of this use case. Dependencies are described in the <a href="#bibliography-section">Bibliography</a> and  <a href="#terms-and-definitions-section">Terms and Definitions</a> sections of this document. Each listed dependency should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Requirements:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify the requirements derived from this use case. Requirements are described in the <a href="#requirements-section">Requirements section</a> of this document. Each listed requirement should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Variants:</strong></p>
+</div>
+<div class="paragraph">
+<p>A variant use case would be looking up other kinds of information about a country - for example, population or economic data.</p>
+</div>
+<div class="paragraph">
+<p>Another variant use case would be lookup up information over different-sized region classifications - for example, states, provinces, or cities.</p>
+</div>
+<div class="paragraph">
+<p><strong>Security Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>The information about Covid requirements might be harmful (or at least, annoying) to users if wrong, so there should be security mechanisms in place to ensure that only data from authorized sources is shown to users.</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>Users should be able to assume that their inquiries cannot be tracked back to them, unless the service very clearly warns otherwise.</p>
+</div>
+<div class="paragraph">
+<p><strong>Comments:</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="covid_teseting_center_use_case"><a class="anchor" href="#covid_teseting_center_use_case"></a>6.4. Covid Testing Center Use Case</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> &lt;Put your name here&gt;</p>
 </div>
 <div class="paragraph">
 <p><strong>Motivation:</strong> &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users&gt;</p>
@@ -952,7 +1190,7 @@ Global Grid Forum (2002)</p>
 <p>&lt;Provide a summary of the use case. The full use case description should be available through the following link&gt;</p>
 </div>
 <div class="paragraph">
-<p><a href="#poi_publication_detail">Click to view</a> full use case description</p>
+<p><a href="#use-case-name_detail">Click to view</a> full use case description</p>
 </div>
 <div class="paragraph">
 <p><strong>Related Use Cases</strong></p>
@@ -1013,7 +1251,252 @@ Global Grid Forum (2002)</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="package_drop_off_and_pick_up_use_case"><a class="anchor" href="#package_drop_off_and_pick_up_use_case"></a>6.3. Package Drop-off and Pick Up Services</h3>
+<h3 id="EV-charging-station"><a class="anchor" href="#EV-charging-station"></a>6.5. Electrical Vehicle Charging Stations</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Timo Ruohomäki, Forum Virium Helsinki Oy</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation:</strong> People driving EV would appreciate up to date information of the nearest available charging station.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary</strong></p>
+</div>
+<div class="paragraph">
+<p>There are several operators providing the charging stations, some of them open and some requiring membership. The charging stations also can provide back useful information, e.g. the occupancy status and estimated time of being available. The use case aims to tackle the charging station as a service from several different stakeholders point of view.</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_details_ev_charging_stations.adoc">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Use Cases</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify any use cases which are related to this one and describe the nature of that relation. Include a hyperlink to each use case.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Roles:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;List all stakeholders that are involved in the use case. Stakeholders are described in the <a href="#stakeholders-section">Stakeholders Section</a> of this document. Each listed stakeholder should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Devices:</strong></p>
+</div>
+<div class="paragraph">
+<p>Vehicle, Charging Station</p>
+</div>
+<div class="paragraph">
+<p><strong>Data:</strong></p>
+</div>
+<div class="paragraph">
+<p>Operational data of the charging process</p>
+</div>
+<div class="paragraph">
+<p><strong>Dependencies:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify any dependencies of this use case. Dependencies are described in the <a href="#bibliography-section">Bibliography</a> and  <a href="#terms-and-definitions-section">Terms and Definitions</a> sections of this document. Each listed dependency should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Requirements:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify the requirements derived from this use case. Requirements are described in the <a href="#requirements-section">Requirements section</a> of this document. Each listed requirement should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Variants:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Describe possible use case variants, if applicable&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Security Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Describe any issues related to security; if there are none, say "none" and justify&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>Data originated from the vehicle may contain personal data.</p>
+</div>
+<div class="paragraph">
+<p><strong>Comments:</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="military_use_case"><a class="anchor" href="#military_use_case"></a>6.6. Military Use Case</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Joetta Kreck (AGC) – <a href="mailto:Joetta.l.kreck@usace.army.mil">Joetta.l.kreck@usace.army.mil</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation:</strong></p>
+</div>
+<div class="paragraph">
+<p>Use POIs to simplify data collection and use.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary</strong></p>
+</div>
+<div class="paragraph">
+<p>POIs are a simplification of a Feature dataset. The selection and population of a POI is mission-specific. There is no standard attribution for a POI Feature. Rather, the POI Feature Type serves as a scafolding which is attributed based on the data available and the needs of the user.</p>
+</div>
+<div class="paragraph">
+<p><a href="#use_case_details_military">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Use Cases</strong></p>
+</div>
+<div class="paragraph">
+<p>TBD</p>
+</div>
+<div class="paragraph">
+<p><strong>Roles:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;List all stakeholders that are involved in the use case. Stakeholders are described in the <a href="#stakeholders-section">Stakeholders Section</a> of this document. Each listed stakeholder should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Devices:</strong></p>
+</div>
+<div class="paragraph">
+<p>NA</p>
+</div>
+<div class="paragraph">
+<p><strong>Data:</strong></p>
+</div>
+<div class="paragraph">
+<p>A Feature dataset which is the source or target of the POI.</p>
+</div>
+<div class="paragraph">
+<p><strong>Dependencies:</strong></p>
+</div>
+<div class="paragraph">
+<p>NA</p>
+</div>
+<div class="paragraph">
+<p><strong>Requirements:</strong></p>
+</div>
+<div class="paragraph">
+<p>TBD</p>
+</div>
+<div class="paragraph">
+<p><strong>Variants:</strong></p>
+</div>
+<div class="paragraph">
+<p>None</p>
+</div>
+<div class="paragraph">
+<p><strong>Security Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>TBD</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>TBD</p>
+</div>
+<div class="paragraph">
+<p><strong>Comments:</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="houses_and_utility_poles_use_case"><a class="anchor" href="#houses_and_utility_poles_use_case"></a>6.7. Use Case Name</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Howard Trickey</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation:</strong> A utility company (e.g., electricity supplier) may want to know the location of all of the houses (and other buildings) that it serves, and the utility pole that is closest to each house. This use case shows that a POI might be a private house or some other kind of object that has a location in the world.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary</strong></p>
+</div>
+<div class="paragraph">
+<p>Employees of the utility company can use a service to look up a house by address, and be presented with the utility pole that is closest to it. They might also look up utility poles closest to a particular address, and from the results, choose one to see all of the houses closest to that utility pole.</p>
+</div>
+<div class="paragraph">
+<p><a href="#houses_and_utility_poles_detail">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Use Cases</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Roles:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#role_functional-beneficiary">Functional Beneficiary</a> - the employee searching for houses or poles</p>
+</li>
+<li>
+<p><a href="#role_maintenance-operator">Maintenance Operator</a> - responsible for keeping the houses and poles data updated</p>
+</li>
+<li>
+<p><a href="#role_supplier">Supplier</a> - supplies data for houses, address-to-latitude/longitude mapping, utility pole locations</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Devices:</strong></p>
+</div>
+<div class="paragraph">
+<p><a href="#device_web-browser">Web Browser</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Data:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>List of all the houses in a region, with address and (latitude,longitude) attributes.</p>
+</li>
+<li>
+<p>List of all the utility poles in a region, with (latitude,longitude) attribute.</p>
+</li>
+<li>
+<p>Relation closest_to(house, pole) stating that the given pole is closest to the given house.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Dependencies:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify any dependencies of this use case. Dependencies are described in the <a href="#bibliography-section">Bibliography</a> and  <a href="#terms-and-definitions-section">Terms and Definitions</a> sections of this document. Each listed dependency should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Requirements:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify the requirements derived from this use case. Requirements are described in the <a href="#requirements-section">Requirements section</a> of this document. Each listed requirement should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Variants:</strong></p>
+</div>
+<div class="paragraph">
+<p>This use case could be enhanced with things such as substations and power line routing along the utility poles.</p>
+</div>
+<div class="paragraph">
+<p><strong>Security Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>This may be sensitive data from an infrastructure security point of view, in which case adequate access controls to the service need to be in place.</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>Probably none. If this service were made publicly available then public laws may require that a person could request that their house be deleted from the database.</p>
+</div>
+<div class="paragraph">
+<p><strong>Comments:</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="package_drop_off_and_pick_up_use_case"><a class="anchor" href="#package_drop_off_and_pick_up_use_case"></a>6.8. Package Drop-off and Pick Up Services</h3>
 <div class="paragraph">
 <p><strong>Contributed By:</strong> Christine Perey, based on commercial package delivery and return services (e.g., Amazon)</p>
 </div>
@@ -1064,15 +1547,439 @@ This use case is somewhat related to the last mile logistics use case.</p>
 <p><strong>Comments:</strong></p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="poi_publication_use_case"><a class="anchor" href="#poi_publication_use_case"></a>6.9. POI Publication</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Koen De Baets, Digitaal Vlaanderen (Government of Flanders)</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation:</strong> A diverse group of (governmental) agencies have data that might be of interest to a broad audience (e.g., citizens, visitors, researchers, other agencies). The publisher wants to make this data publicly available in a uniform and user friendly way.</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary</strong>
+Multiple data sets from different sources, each having its own data model, are mapped and/or geocoded to a single POI data model. The data model should have a set of generic attributes to minimize loosing any richness of the source data. All POI’s from different sources are combined and available to end users as single service.</p>
+</div>
+<div class="paragraph">
+<p>In addition, services that search data would be able to present to the user a single result after retrieving data from multiple original data sources.</p>
+</div>
+<div class="paragraph">
+<p><a href="#poi_publication_detail">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Use Cases</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify any use cases which are related to this one and describe the nature of that relation. Include a hyperlink to each use case.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Roles:</strong>
+POI Publisher
+&lt;List all stakeholders that are involved in the use case. Stakeholders are described in the <a href="#stakeholders-section">Stakeholders Section</a> of this document. Each listed stakeholder should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Devices:</strong>
+Personal Computers, Mobile</p>
+</div>
+<div class="paragraph">
+<p><strong>Data:</strong>
+Geo-referenced data</p>
+</div>
+<div class="paragraph">
+<p><strong>Dependencies:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify any dependencies of this use case. Dependencies are described in the <a href="#bibliography-section">Bibliography</a> and  <a href="#terms-and-definitions-section">Terms and Definitions</a> sections of this document. Each listed dependency should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Requirements:</strong>
+Data Source (Provenance)
+Location
+Publication Date
+Version
+Label
+Description (including HTML Tags)</p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify the requirements derived from this use case. Requirements are described in the <a href="#requirements-section">Requirements section</a> of this document. Each listed requirement should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Variants:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Describe possible use case variants, if applicable&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Security Considerations:</strong>
+None, the sources are public and licensed under open data agreement/policy</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Considerations:</strong>
+None, the sources are public and licensed under open data agreement/policy</p>
+</div>
+<div class="paragraph">
+<p><strong>Comments:</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use-case-smart_tourism"><a class="anchor" href="#use-case-smart_tourism"></a>6.10. Smart Tourism</h3>
+<div class="paragraph">
+<p><strong>Contributed By:</strong> Timo Ruohomäki, Forum Virium Helsinki Oy</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation:</strong> &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Summary</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Provide a summary of the use case. The full use case description should be available through the following link&gt;</p>
+</div>
+<div class="paragraph">
+<p><a href="#use-case-name_detail">Click to view</a> full use case description</p>
+</div>
+<div class="paragraph">
+<p><strong>Related Use Cases</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify any use cases which are related to this one and describe the nature of that relation. Include a hyperlink to each use case.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Roles:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;List all stakeholders that are involved in the use case. Stakeholders are described in the <a href="#stakeholders-section">Stakeholders Section</a> of this document. Each listed stakeholder should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Devices:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Data:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors, vehicle data&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Dependencies:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify any dependencies of this use case. Dependencies are described in the <a href="#bibliography-section">Bibliography</a> and  <a href="#terms-and-definitions-section">Terms and Definitions</a> sections of this document. Each listed dependency should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Requirements:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Identify the requirements derived from this use case. Requirements are described in the <a href="#requirements-section">Requirements section</a> of this document. Each listed requirement should be hyperlinked to its description.&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Variants:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Describe possible use case variants, if applicable&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Security Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Describe any issues related to security; if there are none, say "none" and justify&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Considerations:</strong></p>
+</div>
+<div class="paragraph">
+<p>&lt;Describe any issues related to privacy; if there are none, say "none" and justify&gt;</p>
+</div>
+<div class="paragraph">
+<p><strong>Comments:</strong></p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="detailed-use-case-section"><a class="anchor" href="#detailed-use-case-section"></a>7. POI Detailed Use Cases</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="last-mile-logistics_detail"><a class="anchor" href="#last-mile-logistics_detail"></a>7.1. Last Mile Logistics Use Case</h3>
+<h3 id="choose_restaurant_detail"><a class="anchor" href="#choose_restaurant_detail"></a>7.1. Choose Restaurant Use Case</h3>
 <div class="paragraph">
-<p>The last mile has often found to be the most challenging factor in the logistics chain and the most demanding regarding to the service level. The delivery drivers need to consider the nearest parking spot to the recipient, avoid road constructions or use temporary routes and, in large buildings, find the most suitable access point. On construction sites, the suitable loading areas change often and, as a safety measure, the delivery routes need to be planned in advance. The traffic flows and entrance and exit points are included in the detailed site logistics plan.</p>
+<p>A user of a map system (on a computer, a phone, in a car, etc.) may want to find
+a restaurant to eat in or get delivery from.
+They will have some set of requirements that the restaurant should satisfy
+for it to be a good choice for them.
+The user requirements may include some or all of the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Near a particular location in the world (maybe the user&#8217;s
+current location, maybe somewhere they are intending to travel to).</p>
+</li>
+<li>
+<p>Serves cuisines that the user can eat and likes.</p>
+</li>
+<li>
+<p>Is open during the hours the user intends to visit,
+and/or serve the type of meal (breakfast, lunch, dinner, etc.) the user wants.</p>
+</li>
+<li>
+<p>Has service style the user prefers (take-out vs dine-in).</p>
+</li>
+<li>
+<p>Has a price level the user prefers.</p>
+</li>
+<li>
+<p>Has a bar and/or serves alcohol.</p>
+</li>
+<li>
+<p>Has delivery.</p>
+</li>
+<li>
+<p>Has order-ahead with pickup.</p>
+</li>
+<li>
+<p>Requires reservations or reservations recommended.</p>
+</li>
+<li>
+<p>Will have a busyness level that the user prefers at the time of intended vist.</p>
+</li>
+<li>
+<p>Has good reviews.</p>
+</li>
+<li>
+<p>Accepts particular payment methods.</p>
+</li>
+<li>
+<p>Has an ambience the user prefers (family-friendly, upscale, romantic, etc.).</p>
+</li>
+<li>
+<p>Has an all-you-can eat buffet.</p>
+</li>
+<li>
+<p>Shows sports on TV.</p>
+</li>
+<li>
+<p>Has a happy hour.</p>
+</li>
+<li>
+<p>Is Handicap-accessible.</p>
+</li>
+<li>
+<p>Has available free parking.</p>
+</li>
+<li>
+<p>Has Covid-related requirements (vaccination and/or masks).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Given these requirements, the user will want to browse restaurants in a particular
+locality or in a particular time-from or distance-from a particular (latitude, longitude),
+and examine whether or not those restaurants have the required attributes.</p>
+</div>
+<div class="paragraph">
+<p>As a final part of this use case, the user may want to execute the transaction by doing one of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Get navigation directions from their current location to the chosen restaurant.</p>
+</li>
+<li>
+<p>Place an order for delivery from the chosen restaurant.</p>
+</li>
+<li>
+<p>Place an order for pickup from the chosen restaurant and get navigation directions to it.</p>
+</li>
+<li>
+<p>Save the restaurant in a list of "favorites".</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_restaurant_attribute_details"><a class="anchor" href="#_restaurant_attribute_details"></a>7.1.1. Restaurant Attribute Details</h4>
+<div class="sect4">
+<h5 id="_food_served"><a class="anchor" href="#_food_served"></a>Food Served</h5>
+<div class="paragraph">
+<p>There are a number of dimensions along which one can describe the food served by a restaurant. Here is an example taxonomy:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Regional</p>
+<div class="ulist">
+<ul>
+<li>
+<p>African</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Cape Verdean, East African, Eritrean, Ethiopian, North African, Seychelles, South African, West African, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Asian</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Central Asian</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Kazakhstani, Turkmen, Uzbeki</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>East Asian</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Chinese, Japanese, Korean, Mongolian, Taiwanese, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>South Asian</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Indian, Nepalese, Pakistani, Sri Lankan, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>South-East Asian</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Burmese, Cambodian, Filipino, Indonesian, Laotian, Malaysian, Singaporean, Thai, Vietnamese, Tibetan, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>European</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Austrian, Belgian, British, Dutch, French, German, Greek, Irish, Italian, Maltese,
+Portguese, Danish, Finnish, Icelandic, Norwegian, Swedish, Spanish, Swiss, Turkish, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>East European</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Armenian, Bulgarian, Croation, Czech, Georgian, Hungarian, Lithuanian, Polish, Romanian, Russian, Serbian, Ukranian, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Middle Eastern</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Egyptian, Georgian, Israeli, Lebanese, Persian, Syrian, Turkish, Yemenite, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>North American</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Californian, Native American, New American, New England, Puerto Rican, Southern US, Southwestern US, Traditional American, Canadian, Cuban, Dominican, Haitian, Jamaican, Costa Rican, Guatemalen, Honduran, Nicaraguan, Salvadoran, Mexican, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Oceanian</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Australian, New Zealand, Polynesian, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Cooking style</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Barbecue, Carvery, Grill, Hot Pot, Wok, Down-home Cooking, Fusion, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dietary</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Gluten-free, Halal, Health Food, Jewish, Kosher, Macrobiotic, Non-vegetarian, Organic, Raw Food, Vegan, Vegetarian, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dining style</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Box lunch, Beer Garden, Buffet, Carvery, Family-friendly, Fast food, Fine dining, Gastropub, Small Plates, Stand bar, Street food, Tavern, Pub, Cafe, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Meal type</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Breakfast, Brunch, Lunch, Dinner, Late-night Meal</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Dishes Served</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fried Chicken, Pizza, Salad, Sandwich, Seafood, Soup, Steak, Noodles, Sushi, Dim Sum, Curry, Fish and Chips, Pancakes, Hamburger,
+Hot dog, Cheesesteak, Chicken Wings, Coffee, Alcohol, &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="construction-site_detail"><a class="anchor" href="#construction-site_detail"></a>7.2. Construction Site Use Case</h3>
+<div class="paragraph">
+<p>The last mile has often found to be the most challenging factor in the logistics chain and the most demanding regarding to the service level. This is especially the case in developing areas, e.g. construction sites. The delivery drivers need to consider the nearest parking spot to the recipient, avoid road constructions or use temporary routes and, in large buildings, find the most suitable access point. On construction sites, the suitable loading areas change often and, as a safety measure, the delivery routes need to be planned in advance. The traffic flows and entrance and exit points are included in the detailed site logistics plan.</p>
 </div>
 <div class="paragraph">
 <p>The logistics plan heavily relies on geospatial referencing. The entrance and exit points, routes within the site and loading areas are all geospatial features. This information may change with short notice, but up-to-date information about the site logistics need to be maintained by the site logistics planner and shared with the logistics operators, drivers and first responders.</p>
@@ -1082,13 +1989,210 @@ This use case is somewhat related to the last mile logistics use case.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="poi_publication_detail"><a class="anchor" href="#poi_publication_detail"></a>7.2. POI PUblication Use Case</h3>
+<h3 id="country_covid_requirements_detail"><a class="anchor" href="#country_covid_requirements_detail"></a>7.3. Country Covid Requirements Use Case</h3>
+<div class="paragraph">
+<p>This use case proposes a service that users can consult via a web browser in order to find out what the rules are for entering, possibly quarantining, and then staying in any of the countries of the world.</p>
+</div>
+<div class="paragraph">
+<p>A user should be able to enter a country name in a form, and then be shown the following information:</p>
+</div>
+<div class="sect3">
+<h4 id="_for_entry_to_the_country"><a class="anchor" href="#_for_entry_to_the_country"></a>7.3.1. For Entry to the Country</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Is there a testing requirement? If so</p>
+<div class="ulist">
+<ul>
+<li>
+<p>What kind of tests are allowed?</p>
+</li>
+<li>
+<p>What must the test documentation show?</p>
+</li>
+<li>
+<p>Within what time period prior to arrival (or plane boarding) must the test be taken?</p>
+</li>
+<li>
+<p>Are there exemptions to testing? If so, what documentation is needed?</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Is there a vaccine requirement? If so</p>
+<div class="ulist">
+<ul>
+<li>
+<p>What vaccines are accepted? Are boosters required too, if eligible?</p>
+</li>
+<li>
+<p>What documentation is acceptable?</p>
+</li>
+<li>
+<p>Are there exemptions to testing? If so, what documentation is needed?</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Is there a quarantine requirement? If so</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Who is required to quarantine?</p>
+</li>
+<li>
+<p>How long is the quarantine period? Is there an early out possibility?</p>
+</li>
+<li>
+<p>What places are acceptable for quarantining in?</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_once_in_a_country"><a class="anchor" href="#_once_in_a_country"></a>7.3.2. Once in a Country</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>If one gets Covid, are there quarantining requirements? If so</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>same questions as in previous section for quarantine</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Are there masking requirements? If so</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In what places are masks required?</p>
+</li>
+<li>
+<p>Is the type of allowable mask specified?</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_geopolitical_complications"><a class="anchor" href="#_geopolitical_complications"></a>7.3.3. Geopolitical Complications</h4>
+<div class="paragraph">
+<p>A complication of this use case is that the set of countries in the world is not well-defined. Some countries' laws prohibit the recognition of other countries. Therefore, depending on where the user of this service is and perhaps where the serving machines for the service is, the set of countries that the service recognizes may be different for different users.</p>
+</div>
+<div class="paragraph">
+<p>While this use case posits just having a point on a map to associate with each country, a variant might be to outline the borders of a country on a map as part of what is shown to the user. This would open up even more geopolitical complications, as different countries have different laws about what their borders are, and the service may, just as in the previous paragraph, have to adapt the display according to where the user and/or servers are.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="covid_testing_center_detail"><a class="anchor" href="#covid_testing_center_detail"></a>7.4. Covid Testing Center Use Case</h3>
 <div class="paragraph">
 <p>&lt;insert narrative text&gt;</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="package_drop_off_and_pick_up_detail"><a class="anchor" href="#package_drop_off_and_pick_up_detail"></a>7.3. Package Drop off and Pick Up Services Use Case</h3>
+<h3 id="EV-charging-station_detail"><a class="anchor" href="#EV-charging-station_detail"></a>7.5. Electrical Vehicle Charging Stations</h3>
+<div class="paragraph">
+<p>&lt;insert narrative text&gt;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="military_detail"><a class="anchor" href="#military_detail"></a>7.6. Military Use Case</h3>
+<div class="sect3">
+<h4 id="_scenario"><a class="anchor" href="#_scenario"></a>7.6.1. Scenario</h4>
+<div class="paragraph">
+<p>One Army unit is deploying to assist with setting up Covid testing and emergency hospitals while another unit is deploying to a war-torn area where infrastructure has been destroyed and potential hazardous materials may have been released. Each unit has a need for Points of Interest (POI), however these POI will be different depending on the mission and the operational setting. A vast feature data set is available with a complex/robust data schema however these end users are seeking situational awareness for their operation and a geospatial engineer team is responsible for leveraging the feature dataset to generate sets of POI to support each mission. These users only require a limited set of features that are easily represented by intuitive symbols and a select set of attributes that support the mission and can be easily displayed on a mobile device. The end user loads the prepared dataset or connects to a service to cache the POI. The end user reviews POI data over imagery and over a map background to familiarize themselves with on the area. In a sparse area the user will turn on a full set of POI while in dense urban areas the user selects from a list of POI to display.</p>
+</div>
+<div class="paragraph">
+<p>In both scenarios the users also have a need to collect POI via a simple select the symbol from a list and drop it on the map with a second step of select the symbol from the map and add detail via a drop-down menu with a list of list attributes. The collected and revised POI will be uploaded and validated by the geospatial engineer team and persistent information will be added to the master feature dataset.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_what_is_a_poi"><a class="anchor" href="#_what_is_a_poi"></a>7.6.2. What is a POI?</h4>
+<div class="paragraph">
+<p>A POI provides a simplified, mission-specific, view of Feature data.</p>
+</div>
+<div class="paragraph">
+<p><strong>POI for Situational Awareness</strong></p>
+</div>
+<div class="paragraph">
+<p><em>A POI is a simplified view of a mission-specific subset of a Feature dataset</em></p>
+</div>
+<div class="paragraph">
+<p>For this military situation awareness use case, POIs are a simplified set of point features that the user community needs visually represented with options to search, filter, and view labels and attributes. POIs are derived from a more complex geospatial data model and simplified to better enable systems with limited geospatial capabilities. While traditional feature data carries attributes that are often null or contain a “no information” value, POIs should only carry the most relevant and well populated information. In addition to traditional attributes the POI will contains 3 pre-calculate fields that can simplify search, filter, categorize and symbolize the POIs.</p>
+</div>
+<div class="paragraph">
+<p><strong>POI for Data Collection</strong></p>
+</div>
+<div class="paragraph">
+<p><em>A POI is a collection of mission-specific Feature Types to be used by field operators to collect data.</em></p>
+</div>
+<div class="paragraph">
+<p>POIs, when combined with an identified symbol set, play a key role in enabling end user data collection. An end user with a known symbol set loaded on a device and a capability to select the icon and place it on the map can perform data collection in the field. The end user may also select the collected symbol and fill form fields with additional details. The collected data may be encrypted and stored on the device, shared across the network, or pushed to the server when connectivity is available.</p>
+</div>
+<div id="military_use_case_figure_1" class="imageblock text-center">
+<div class="content">
+<img src="./images/DataCollectionUseCase.png" alt="DataCollectionUseCase">
+</div>
+<div class="title">Figure 1. POIs for Collection and Use</div>
+</div>
+<div class="paragraph">
+<p>The left image in <a href="#military_use_case_figure_1">Figure 1</a> shows POIs dropped on a Feature data set capturing new or enhanced data. The right image shows those POIs dropped on an image for use by operations personnel.</p>
+</div>
+<div class="paragraph">
+<p>The attributes of these POIs are shown in <a href="#military_poi_contents">Figure 2</a>.</p>
+</div>
+<div id="military_poi_contents" class="imageblock text-center">
+<div class="content">
+<img src="./images/Military_POI.png" alt="Military POI">
+</div>
+<div class="title">Figure 2. Military POI Contents</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="houses_and_utility_poles_detail"><a class="anchor" href="#houses_and_utility_poles_detail"></a>7.7. Houses and Utility Poles Use Case</h3>
+<div class="paragraph">
+<p>This use case is about the private use of a POI database containing two different kinds of POIs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Buildings (houses, commercial establishments, etc.)</p>
+</li>
+<li>
+<p>Utility Poles (that carry wires for power, cable, phone, etc.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A company may want to know where all the houses are, where all the utility poles are, and which utility pole is deemed nearest the "point of attachment" to each of the buildings that it serves. It could use this information to handle requests to add or drop service, or repair service interruption.</p>
+</div>
+<div class="paragraph">
+<p>An important part of the use case is being able to look up a house by its address. This is not trivial, because there are many ways to express an address and a lookup service should not expect its users to know the one true canonical way to represent any particular address. Also, in some countries, the addressing system is not all that developed (e.g., use of numbers on roads may not be present much of the time).</p>
+</div>
+<div class="paragraph">
+<p>There may be the need for a <em>geocoder</em> : a function to take any form of address to the (latitude,longitude) represented by that address.</p>
+</div>
+<div class="paragraph">
+<p>There may be the need for a function that returns all the houses within a given distance of a given (latitude,longitude), and similarly for utility poles.</p>
+</div>
+<div class="paragraph">
+<p>The other important part of this use case is that it requires the maintenance of a <em>relation</em> between POIs: the relation <em>closest_to(house, pole)</em> that says that a given pole is deemed closest to a given house. This might not necessarily be the one that minimizes the distance between the points for the pole and house, because a corner house may be approximately the same distance to two separate poles and the utility company might choose a slightly farther pole to be "closest" for reasons related to, say, house orientation.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="package_drop_off_and_pick_up_detail"><a class="anchor" href="#package_drop_off_and_pick_up_detail"></a>7.8. Package Drop off and Pick Up Services Use Case</h3>
 <div class="paragraph">
 <p>For commercial or residential customers, package delivery and pick up logistics requires considerable attention to detail (e.g., pick up location, restrictions, time), and tracing (tracking) for efficient space use, billing and insurance purposes. Customers may end up waiting for either a delivery or a pick up that is late, or miss the connection if the delivery is early, and fuel consumption associated with individual addresses may be greater than services using a pooled location (individually-secured containers). Space in delivery vehicles can also be calculated and optimized when the package details are associated with the point of interest. Some service providers use systems to manage a "multi-customer" delivery and return location.</p>
 </div>
@@ -1097,6 +2201,24 @@ This use case is somewhat related to the last mile logistics use case.</p>
 </div>
 <div class="paragraph">
 <p>In addition to maintaining the static metadata for a cubicle or group of cubicles, there is dynamic data such as the weight of a package (if the cubicle is equipped with weight sensing), a unique access code for a cubicle (to be assigned each time there is a new drop off or pick up scheduled), and time of cubicle access (occupancy status). The dynamic information for each unit (PoI) can be integrated with a real-time route planning system, to release a cubicle for a future customer&#8217;s use and customer back end (e.g., for billing).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="poi_publication_detail"><a class="anchor" href="#poi_publication_detail"></a>7.9. POI Publication Use Case</h3>
+<div class="paragraph">
+<p>A diverse group of (governmental) agencies publishes open data which is licensed for public benefit. The original data provider (source) provides data on their own. They can publish it on their web site or they can provide an API so that the government agency can retrieve the data from their server (from the source). Data sets compiled in this manner might be of interest to a broad audience (e.g., citizens, visitors, researchers, other agencies). The public agency wants to make this geo-located data publicly available in a uniform and user friendly way.</p>
+</div>
+<div class="paragraph">
+<p>Multiple data sets from different sources, each having its own data model, are mapped and/or geocoded to a single POI data model. The POI data model should have a set of generic attributes to minimize loosing any richness of the source data. All POI’s from different sources are combined and available to end users as single service.</p>
+</div>
+<div class="paragraph">
+<p>In addition, services that search data need to present to the user a single result after retrieving data from multiple original data sources.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="use_case_details_smart-tourism"><a class="anchor" href="#use_case_details_smart-tourism"></a>7.10. Smart Tourism Use Case</h3>
+<div class="paragraph">
+<p>&lt;insert narrative text&gt;</p>
 </div>
 </div>
 </div>
@@ -1454,7 +2576,72 @@ This use case is somewhat related to the last mile logistics use case.</p>
 <div class="paragraph">
 <p>One purpose of a Use Case is to derive operational requirements for the planned solution. These are not requiremetents in the software development sense of the term. Rather, they are a further refinement of the Use Cases. They capture a set of functional capabilties which, if supported, would be sufficient to enable performance of the tasks described in the Use Cases.</p>
 </div>
+<div class="sect2">
+<h3 id="requirement_simple_geometry"><a class="anchor" href="#requirement_simple_geometry"></a>11.1. Simple Geometry</h3>
+<div class="paragraph">
+<p>A POI is meant to be a simple represenation of a point of interest. Therefore, the geometry of a POI must be simple.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>A POI SHALL include a geometry property</p>
+</li>
+<li>
+<p>The geometry property SHALL be restricted to one of the following geometries from ISO 19107: GM_POINT, GM_CURVE, or GM_SURFACE</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="requirement_feature_of_interest"><a class="anchor" href="#requirement_feature_of_interest"></a>11.2. Features of Interest</h3>
+<div class="paragraph">
+<p>A POI is a representation of a real-world object. Real-world objects are modeled as Features. Therefore, a POI must have one or more associated Features. The POI is a simplified representation of the Feature or aggregate of the Features (if more than one)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="requirement_symbology"><a class="anchor" href="#requirement_symbology"></a>11.3. Symbology</h3>
+<div class="paragraph">
+<p>A POI should support simple simbolization of itself. This symbolization should be customizable based on the norms of the user community.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="requirement_mandatory_properties"><a class="anchor" href="#requirement_mandatory_properties"></a>11.4. Mandatory Properties</h3>
+<div class="paragraph">
+<p>A POI shall include the following properties.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>a unique identifier</p>
+</li>
+<li>
+<p>a link to the represented Feature(s)</p>
+</li>
+<li>
+<p>symbology</p>
+</li>
+<li>
+<p>geometry</p>
+</li>
+<li>
+<p>valid date and time</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="requirement_data_model"><a class="anchor" href="#requirement_data_model"></a>11.5. Data Model</h3>
+<div class="paragraph">
+<p>A POI SHALL provide access to a data model which allows client software to interpret properties unique to that POI.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="requirement_feature_navigation"><a class="anchor" href="#requirement_feature_navigation"></a>11.6. Navigation to Feature(s) of Interest</h3>
+<div class="paragraph">
+<p>POI SHALL be designed so that a client can easily navigate to the Feature(s) of Interest or a more expressive representation of same.</p>
+</div>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1607,7 +2794,7 @@ Place other Annex material in sequential annexes beginning with "B" and leave fi
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-06 16:56:31 UTC
+Last updated 2022-03-31 00:17:08 +0100
 </div>
 </div>
 </body>

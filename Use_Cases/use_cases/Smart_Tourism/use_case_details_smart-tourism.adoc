@@ -1,0 +1,4 @@
+[[use_case_details_smart-tourism]]
+=== Smart Tourism Use Case
+
+<insert narrative text>

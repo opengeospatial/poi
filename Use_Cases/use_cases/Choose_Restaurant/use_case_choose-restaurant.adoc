@@ -1,0 +1,61 @@
+[[choose_restaurant_use_case]]
+=== Choose Restaurant
+
+*Contributed By:* Howard Trickey
+
+*Motivation:* People using a map service that contains POIs may want to find a restaurant to eat in.
+This is good example of the general use case of finding and choosing POIs with particular services.
+
+*Summary*
+
+In order to choose a restaurant to eat in or get delivery from, users need to find restaurants near them
+and information about those restaurants to help decide which, if any, they want to use.
+
+<<choose_restaurant_detail,Click to view>> full use case description
+
+*Related Use Cases*
+
+*Roles:*
+
+* Restaurant owner or operator
+* User (person choosing a restaurant)
+* Government entities responsible for regulating restaurants, search services, phones, automobiles
+
+_TODO: link stakeholders to the <<stakeholders-section,Stakeholders Section>> of this document._
+
+*Devices:*
+
+Users may want to choose a restaurant using a computer, a mobile phone, or an in-auto navigation system.
+
+*Data:*
+
+The data will be attributes of restaurants such as: location, name, type of cuisine, business hours, price level, etc.
+
+*Dependencies:*
+
+_TODO: Add any dependencies from the <<bibliography-section,Bibliography>> and  <<terms-and-definitions-section,Terms and Definitions>> sections of this document._
+
+*Requirements:*
+
+_TODO: Add requirements from the <<requirements-section,Requirements section>> of this document._
+
+*Variants:*
+
+Many "Choose _X_" use cases will be similar, differing mainly in the specialized attributes needed to make a choice for POIs in category _X_. For example:
+
+* Choose Lodging
+* Choose Clothes Store
+* Choose Electronics Store
++
+...
+
+*Security Considerations:*
+
+A user should not be able to discover what any other particular user did while choosing a restaurant.
+
+*Privacy Considerations:*
+
+An restaurant listed must be a publicly visitable place. There may be other privacy laws, in certain countries,
+that require that a POI listing be deleted upon request by the POI owner.
+
+*Comments:*

@@ -3,3 +3,41 @@
 
 One purpose of a Use Case is to derive operational requirements for the planned solution. These are not requiremetents in the software development sense of the term. Rather, they are a further refinement of the Use Cases. They capture a set of functional capabilties which, if supported, would be sufficient to enable performance of the tasks described in the Use Cases. 
 
+[[requirement_simple_geometry]]
+=== Simple Geometry
+
+A POI is meant to be a simple represenation of a point of interest. Therefore, the geometry of a POI must be simple. 
+
+. A POI SHALL include a geometry property
+. The geometry property SHALL be restricted to one of the following geometries from ISO 19107: GM_POINT, GM_CURVE, or GM_SURFACE
+
+[[requirement_feature_of_interest]]
+=== Features of Interest
+
+A POI is a representation of a real-world object. Real-world objects are modeled as Features. Therefore, a POI must have one or more associated Features. The POI is a simplified representation of the Feature or aggregate of the Features (if more than one) 
+
+[[requirement_symbology]]
+=== Symbology
+
+A POI should support simple simbolization of itself. This symbolization should be customizable based on the norms of the user community.
+
+[[requirement_mandatory_properties]]
+=== Mandatory Properties
+
+A POI shall include the following properties.
+
+. a unique identifier
+. a link to the represented Feature(s)
+. symbology
+. geometry
+. valid date and time 
+
+[[requirement_data_model]]
+=== Data Model
+
+A POI SHALL provide access to a data model which allows client software to interpret properties unique to that POI.
+
+[[requirement_feature_navigation]]
+=== Navigation to Feature(s) of Interest
+
+POI SHALL be designed so that a client can easily navigate to the Feature(s) of Interest or a more expressive representation of same.

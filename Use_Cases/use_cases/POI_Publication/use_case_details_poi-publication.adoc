@@ -1,0 +1,8 @@
+[[poi_publication_detail]]
+=== POI Publication Use Case
+
+A diverse group of (governmental) agencies publishes open data which is licensed for public benefit. The original data provider (source) provides data on their own. They can publish it on their web site or they can provide an API so that the government agency can retrieve the data from their server (from the source). Data sets compiled in this manner might be of interest to a broad audience (e.g., citizens, visitors, researchers, other agencies). The public agency wants to make this geo-located data publicly available in a uniform and user friendly way.
+
+Multiple data sets from different sources, each having its own data model, are mapped and/or geocoded to a single POI data model. The POI data model should have a set of generic attributes to minimize loosing any richness of the source data. All POI’s from different sources are combined and available to end users as single service.
+
+In addition, services that search data need to present to the user a single result after retrieving data from multiple original data sources.

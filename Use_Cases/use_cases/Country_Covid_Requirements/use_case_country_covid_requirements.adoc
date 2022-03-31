@@ -1,0 +1,56 @@
+[[country_covid_requirements_use_case]]
+=== Country Covid Requirements
+
+*Contributed By:* Howard Trickey
+
+*Motivation:* People might want to know what the requirements are related to Covid that they need to be prepared for if they intend to visit a particular country. This use case shows that a POI might be a _whole country_.
+
+*Summary*
+
+A user can use a service to look up, by country name, what the requirements are to visit a country with respect to Covid precautions: vaccinations required, tests required, etc.
+
+<<country_requirements_covid_detail,Click to view>> full use case description
+
+*Related Use Cases*
+
+*Roles:*
+
+* <<role_functional-beneficiary,Functional Beneficiary>> - the user searching for Covid requirements
+* <<role_maintenance-operator,Maintenance Operator>> - responsible for keeping the per-country requirements updated
+* <<role_supplier,Supplier>> - supplies the Covid requirements for some or all countries
+* <<role_regulator,Regulator>> - has input or legal requirements over what constitutes a country
+
+
+*Devices:*
+
+<<device_web-browser,Web Browser>>
+
+*Data:*
+
+* List of the world's countries and a representative geographic point for each
+* For each country, an up-to-date set of requirements for vaccination, testing,
+quarantining, and masking, for entry to and staying in the country.
+
+*Dependencies:*
+
+<Identify any dependencies of this use case. Dependencies are described in the <<bibliography-section,Bibliography>> and  <<terms-and-definitions-section,Terms and Definitions>> sections of this document. Each listed dependency should be hyperlinked to its description.>
+
+*Requirements:*
+
+<Identify the requirements derived from this use case. Requirements are described in the <<requirements-section,Requirements section>> of this document. Each listed requirement should be hyperlinked to its description.>
+
+*Variants:*
+
+A variant use case would be looking up other kinds of information about a country - for example, population or economic data.
+
+Another variant use case would be lookup up information over different-sized region classifications - for example, states, provinces, or cities.
+
+*Security Considerations:*
+
+The information about Covid requirements might be harmful (or at least, annoying) to users if wrong, so there should be security mechanisms in place to ensure that only data from authorized sources is shown to users.
+
+*Privacy Considerations:*
+
+Users should be able to assume that their inquiries cannot be tracked back to them, unless the service very clearly warns otherwise.
+
+*Comments:*

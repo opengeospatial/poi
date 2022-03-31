@@ -1,8 +1,0 @@
-[[last-mile-logistics_detail]]
-=== Last Mile Logistics Use Case
-
-The last mile has often found to be the most challenging factor in the logistics chain and the most demanding regarding to the service level. The delivery drivers need to consider the nearest parking spot to the recipient, avoid road constructions or use temporary routes and, in large buildings, find the most suitable access point. On construction sites, the suitable loading areas change often and, as a safety measure, the delivery routes need to be planned in advance. The traffic flows and entrance and exit points are included in the detailed site logistics plan.
-
-The logistics plan heavily relies on geospatial referencing. The entrance and exit points, routes within the site and loading areas are all geospatial features. This information may change with short notice, but up-to-date information about the site logistics need to be maintained by the site logistics planner and shared with the logistics operators, drivers and first responders.
-
-In addition to maintaining the location information, logistics planning involves additional attributes that are maintained as part of the process. The entrance and exit points may have opening hours, routes sometimes have weight and height limits and contact information for the loading deck manager and final recipients need to be easily accessible. It is unlikely that a comprehensive list of all the attributes can be created since cases many have unique needs.
