@@ -21,7 +21,16 @@ A pedestrian may be looking for a meeting room in a building they are not famili
 ** etc.
 * Accessible spaces (e.g. unrestricted areas, etc.)
 
+==== Scenario 2: 
+There is an emergency situation in a multi storey building, and firefighters need to get to a room to help evacuating some people. In addition to information of scenario 1, their navigation system may require the description of the:
 
-
-
+* Openings
+** Emergency exits
+** Number of exits per floor
+** size of exits (may have influence on the type of tools to carry for intervention)
+* Rooms
+** Dropped ceilings
+** Storage rooms
+* Extinguishers
+* Hazardous installations/materials 
 
