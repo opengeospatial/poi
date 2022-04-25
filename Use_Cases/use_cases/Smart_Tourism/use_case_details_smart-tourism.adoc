@@ -1,4 +1,11 @@
 [[use_case_details_smart-tourism]]
 === Smart Tourism Use Case
 
-<insert narrative text>
+The Smart Tourism use case focuses on creating location-based mobile services for tourists. The ultimate goal is to create an open data ecosystem for tourism applications. The data ecosystem may involve both public and private entities. The services are expected to guide tourists to experience the city in a new way, suggesting interesting attractions, thematic walks or other nearby services. Once deployed, the API's single entry point allows for other cities to be added to an application as long as the same data is made available.
+
+The tourist attractions have various attributes that would enrich the potential applications. Accessibility of tourist attractions is not only seen as a human right but also a business opportunity for destinations and companies to embrace all visitors and enhance their revenues. [Accessible tourism](https://www.unwto.org/accessibility) has been defined by the United Nations World Tourism Organization (UNWTO) as one of the tasks it promotes as part of the ethics, culture and social responsibility. Opening hours are highly relevant and need to be maintained by the stakeholders that operate the tourist attractions in order to react on special occasions such as public holidays or maintenance activities.
+
+The following functionalities are expected from the Smart Tourism API:
+- Describes all the POIs available in a given city
+- Description of all the events that are being or have been undertaken
+- Routes or collections as minimal description of a group of ordered POIs
