@@ -1,0 +1,352 @@
+== POI
+
+include::../requirements/REQ_GUID.adoc[]
+
+include::../requirements/REQ_Location.adoc[]
+
+include::../requirements/REQ_Objects.adoc[]
+
+POI extends <<poiproperties,POIProperties>> and adds the objects in the table below.
+
+|====
+^| **Name** ^| **Type** ^| **Multiplicity**
+|label |<<poiproperties,POIProperties>> | 0..*
+|description |<<poiproperties,POIProperties>> | 0..*
+|category |<<poiproperties,POIProperties>> | 0..*
+|time |<<poiproperties,POIProperties>> | 0..*
+|link |<<poiproperties,POIProperties>> | 0..*
+|location |<<location,Location>> | 1
+| metadata |<<poiproperties,POIProperties>> | 0..*
+|====
+
+=== Location
+
+Location is of type <<poiproperties,POIProperties>> and provides a flexible description of the geographic location of a POI. A Location can be represented in a variety of ways, such as the geographic coordinates of the center of the POI, the civic address, line, bounding box, polygon, or undetermined. A location is a __mandatory__ part of a POI and has child properties describing the geometry, civic address or spatially related POIs.
+
+|====
+^| **Name** ^| **Type** ^| **Multiplicity**
+|<<point,point>> |<<gml_ce_geometry,geometry>> | 0..*
+|<<line,line>> |<<gml_ce_geometry,geometry>> |0..*
+|<<polygon,polygon>> |<<gml_ce_geometry,geometry>> |	0..*
+|<<address,address>> |<<poiproperties,POIProperties>> | 0..*
+|<<relationship,relationship>> |<<relationshiptype,Relationship>> | 0..*
+|<<undetermined,undetermined>> |null | 0..1
+|====
+
+=== point
+
+The point object is derived from <<poiproperties,POIProperties>> and adds a single geometry object whose type is determined by the encoding. It describes a single coordinate set, the interpretation of which is influenced by the CRS attribute.
+
+The point object locates a point within the POI and is the most common way of specifying a location. For most places, such as cities, businesses, tourist sites, or events, a point location can be useful for many types of software applications where additional detail is unnecessary, such as driving directions or computing rough distances. Therefore, even if the POI is also specified with a polygon or a line, it is good practice to include a point whose term property is "centroid".
+
+|====
+^| *Name* ^| *Type* ^| *Multiplicity*
+|Point |<<gml_ce_geometry,geometry>> | 1
+|====
+
+It is __recommended__ to use the term property to discriminate between different Point object categories.
+
+**Recommended Terms**
+
+|====
+^| **Name** ^| **Details**
+| centroid | The centroid of the Location
+| navigation point | Generic navigation point
+| entrance | Navigation point to the entrance
+|====
+
+=== line
+
+The line object is derived from <<poiproperties,POIProperties>> and adds a single linear geometry object whose type is determined by the encoding. It describes a list of two or more coordinate sets, the interpretation of which is influenced by the CRS attribute.
+
+|====
+^| **Name** ^| **Type** ^| **Multiplicity**
+|LineString |<<gml_ce_geometry,geometry>> | 1
+|====
+
+A Line object can be used to describe a linear feature, such as a road, a bike route, a river, etc.
+
+=== polygon
+
+The polygon object is derived from <<poiproperties,POIProperties>> and adds a single area geometry object whose type is determined by the encoding.
+
+|====
+^| *Name* ^| *Type* ^| *Multiplicity*
+|SimplePolygon |<<gml_ce_geometry,geometry>> | 1
+|====
+
+=== address
+
+The Address object is of type <<poiproperties,POIProperties>> and describes a civic address such as a mailing address or a street address. It’s value is determined by the type property, and should be either vCard (text/directory) or free text (text/plain).
+
+=== relationship
+
+relationship is a <<relationshiptype,Relationship>> property that describes the spatial relationship between this POI and another.
+
+=== undetermined
+
+An undetermined property represents a location that is as of yet unknown or unspecified. This can be used to describe a POI prior to the final location being resolved. The undetermined object has no properties.
+
+If a Location neither includes a geometry nor an address, then it __must__ include the undetermined property.
+
+=== label
+
+A human-readable name. This object can be repeated to indicate different names for the POI. Those labels may be used to describe synonyms, different languages, or names used by different communities.
+
+The label object inherits from object <<poiproperties,POIProperties>> and specifies a human-readable name. The language of label __may__ be indicated using the lang property. Multiple labels __may__ be discriminated with the term property (e.g. primary, colloquial, etc.). The first label encountered per language is considered the primary label for that language.
+
+It is __recommended__ to use the term property to discriminate between different categories of label entities.
+
+.Label Relations
+
+|====
+^| *Name* ^| *Definition* 
+|primary |The primary label
+|note |An annotation label
+|====
+
+include::../requirements/REQ_label-value.adoc[]
+
+=== description
+
+A human-readable narrative description that can be discrimintated with the language attribute. <<description,description>> is of type <<poiproperties,POIProperties>> and specifies a human readable description. The language the description is in __may__ be indicated using the lang property. The first description encountered per language is considered the primary description for that language.
+
+include::../requirements/REQ_description-value.adoc[]
+
+=== category
+
+The category property classifies the POI using keywords. Category is adopted from the atom:category object <<RFC4087,RFC4087>>, and works in much the same way. A category should specify the type of POI, such as city, restaurant, etc. The category’s term property is the keyword, or tag.  The <<scheme,scheme>>, if specified, is the classification scheme to which the value belongs. To emulate a "folksonomy" or "free tagging", the scheme __shall__ be "free". This tagging system __may__ be more formally structured using the scheme property to specify the URI identifying a dictionary of terms or a web resource containing definitions of the terms and values.
+
+Multiple categories are allowed to accommodate the fact that POIs may be more than one thing. For example, a casino might be a gambling hall, a restaurant, and a concert venue. A grocery store may also be a bank and a pharmacy.
+
+The href property __may__ be used to provide a resolvable link to a more comprehensive definition of the category.
+
+It is __recommended__ to utilize the value property when describing human readable categorical descriptions.
+
+include::../requirements/REQ_category-term.adoc[]
+
+=== link
+
+A link to another POI, or any other web resource. The link object is of type <<poiproperties,POIProperties>> and adopted from the atom:link object <<RFC4087,RFC4087>> which works in much the same way. A link is a generic way to define a relationship between the POI and other Web-accessible resources.
+
+Links are a powerful way to describe a host of relationships. One could argue that just as Web pages obtain most of their value by the links between them, a POI obtains value from the number of links between it and others. Links in POIs are perhaps even more important than links in Web pages or Atom feeds, as POIs are inherently place-based objects with natural relationships in space and time that should be expressed. Those spatial relationships are mostly covered by the <<relationship,relationship>> property, which is in many ways a specialization of the generic Link. But there are many more semi-spatial and non-spatial relationships that can be expressed using link.
+
+include::../requirements/REQ_link-href.adoc[]
+
+This specification proposes a number of key words for defining the relationship of a link to the POI. A key word may be used to populate the <<term,term>> property. Useful key word relations from the IANA registry are listed below in italics. Those relations in bold are defined only in this specification.
+
+.Link Relations
+
+|====
+^| *Name* ^| *Description*
+|__alternate__ |an identical POI. Often used as a permalink
+|__canonical__ |the preferred version of a POI with highly similar content. For example, there could be many different perceptions of a neighborhood boundary POI, but the city’s neighborhood map could be the canonical version of this POI.
+|__describedby__ |more information about this POI
+|__edit__ |resource that can be used to edit the POI’s context
+|__enclosure__ |a related resource that is potentially large and might require special handling
+|__icon__ |a small graphic representing the POI
+|__latest-version__ |points to a resource containing the latest version
+|__related__ |a related resource
+|__search__ |resource that can be used to search through the link’s context and related resources
+|**__parent__** |a parent POI, often the enclosing geographic object, or the object this POI in under the domain of (such as a field office-corporate headquarters relationship)
+|**__child__** |a child POI, often a geography object enclosed or under the domain of this POI
+|**__historic__** |links to a POI or other web resource that describes this place at a previous point in time
+|**__future__** |links to a POI or other web resource that describes this place at a later point in time
+|====
+
+=== time
+
+A POI exists within a certain context. Time is one of those contexts. The POI may have a known time when it came into being, and can therefore have a start date. The POI might no longer exist at a known point in time (in the future or in the past), and will therefore have an end date. There can be even more complex cases, where a POI exists on a regularly scheduled sequence of times. This data model supports that case by allowing one to set the MIME type (type property) to ``text/calendar``, and specify the time period using the iCalendar specification <<RFC5545,RFC5545>>.
+
+When the MIME type attribute is undetermined or ``text/plain``, the content of the value property is assumed to be in the dateTime format <<ISO8601,ISO8601>>. When the MIME type attribute is ``text/calendar``, the value content is expected to conform to the iCalendar specification <<RFC5545,RFC5545>>.
+
+include::../requirements/REQ_time-value.adoc[]
+
+This specification proposes a number of key words for defining the semantics of the time specified in the value property. A key word may be used to populate the <<term,term>> property.
+
+.Time Relations
+
+|====
+^| *Name* ^| *Definition*
+|start |when the POI came into being
+|end |Time when the POI ceased to exist
+|instant |A single time when an event happened
+|open |A recuring time period when a POI is open
+|====
+
+=== Metadata
+
+The Metadata property is not strictly constrained in this specification. However, Dublin Core or <<ISO19115,ISO19115>> metadata should be used whenever possible.
+
+include::../requirements/REQ_metadata-type.adoc[]
+
+== POIProperties
+
+POIProperties is an abstract base object that provides the common base for most other core POI classes. It provides properties related to unique ids, source, authorship, rights, and modification times for creation, deletion and updating.
+
+The <<category,category>>, <<link,link>>, <<label,label>>, <<author,author>>, <<rights,rights>> and <<time,time>> properties in addition to the geometry elements <<point,point>>, <<line,line>> and <<polygon,polygon>> entities are all instances of <<poiproperties,POIProperties>>.
+
+This base type allows the POI class, POIS grouping class and most child classes to carry distinct information about their provenance, 
+source and history.
+
+include::../requirements/REQ_POIProperties.adoc[]
+
+|====
+^| *Name* ^| *Type* ^| *Multiplicity*
+|<<id,id>> |string | 0..1
+|<<href,href>> |URI | 0..1
+|<<value,value>> |string | 0..1
+|<<base,base>> |URI | 0..1
+|<<type,type>> |string | 0..1
+|<<lang,lang>> |string | 0..1
+|<<created,created>> |dateTime | 0..1
+|<<updated,updated>> |dateTime | 0..1
+|<<deleted,deleted>> |dateTime | 0..1
+|<<author,author>> |<<poiproperties,POIProperties>> | 0..1
+|<<rights,rights>> |<<poiproperties,POIProperties>> | 0..1
+|<<term,term>> |string | 0..1
+|<<scheme,scheme>> |URI | 0..1
+|====
+
+=== id
+
+A unique identifier for this location. Can be a URI fragment. Refer to xml:base <<XMLBASE,XMLBASE>> for more information on usage.
+
+The id property is __mandatory__ for the <<poi,POI>> object. It is __recommended__ that id be a URL - preferably a deferenceable URL - or that a URL can be constructed by appending id to base URI.
+
+=== href
+
+The href property __may__ serve as an absolute reference to retrieve the POI information when the <<id,id>> and base do not combine to form a deferenceable URL.
+
+=== value
+
+The value property is the __recommended__ location for arbitrary strings (e.g. label, description, etc.). Many entities derived from <<poiproperties,POIProperties>> will not require this property (e.g. <<link,link>>, <<rights,rights>>, geometry properties).
+
+=== base
+
+XML base when id is not absolute. Refer to xml:base <<XMLBASE,XMLBASE>> for more information on usage.
+
+=== type
+
+MIME type as specified in <<RFC2046,RFC2046>>.
+
+=== lang
+
+Language type as specified in <<RFC3066,RFC3066>>.
+
+=== created
+
+This property is for capturing the time at which the POI record was created in the computing environment. Any information about the existence of the POI as a human concept should use the <<time,time>> property.
+
+=== updated
+
+Time this POI information was last changed <<ISO8601,ISO8601>> also refer to atom:updated <<RFC4087,RFC4087>>. This property is for capturing the time at which the POI record was updated in the computing environment. Any information about the existence of the POI as a human concept should use the <<time,time>> property.
+
+=== deleted
+
+This property is for capturing the time at which the POI record was deleted from the computing environment. Any information about the existence of the POI as a human concept should use the <<time,time>> property.
+
+=== author
+
+Specifies the author’s identification information, which should at minimum be the author’s name populated in the <<value,value>> property. When the <<type,type>> (MIME type) property (MIME type) is undetermined or ``text/plain``, the content of the value property is assumed to be free text. When the <<type,type>> property is ``text/vcard``, <<value,value>> should be encoded in VCard format <<RFC6350,RFC6350>>.
+
+Multiple authors can be specified by nesting author properties, and their authorship role __may__ be discriminated with the <<term,term>> property (e.g. primary, publisher, editor, etc.).
+
+.Author Relations
+
+|====
+^| *Name* ^| *Definition*
+|``primary`` |Primary author
+|``secondary`` |Secondary author
+|``contributor`` |A contributing author
+|``editor`` |Editor
+|``publisher`` |Publisher
+|====
+
+=== rights
+
+The rights object is of type <<poiproperties,POIProperties>> and specifies rights such as license restrictions, trademarks, and copyright. The language the rights are in __may__ be indicated using the lang property. Multiple rightss __may__ be discriminated with the term property (e.g. common, opensource, etc.). The first right encountered per language is considered the primary right for that language.
+
+=== term
+
+A machine-readable character string to designate any number of discrete choices.
+
+=== scheme
+
+An absolute reference to the schema enumerating the discrete choices in term.
+
+= Relationship
+
+Relationship is derived from <<poiproperties,POIProperties>> and adds a targetPOI property to describes the spatial relationship between this POI and another. It establishes 1-to-1 or 1-to-many relationships between POIs.
+
+|====
+^| *Name* ^| *Type* ^| *Multiplicity*
+|<<targetpoi,targetPOI>> |URI | 1
+|====
+
+== targetPOI
+
+Each targetPOI property __must__ be a URI that defines a link to another POI, and the Relationship’s <<term,term>> __must__ be assigned one of 8 keywords that describe the geo-spatial relationship to the POI indicated by the targetPOI property.
+
+<<ISO13249-3,ISO13249-3>> (SQL/MM Spatial) supports the general purpose relates operator from <<ISO19107,ISO19107>>, which tests if two geometries (a and b) are related by testing the dimension of the intersections of their boundaries, interiors and exteriors. Points have a dimension of zero, curves one and surfaces two.
+
+NOTE:: diagram of the 8 allowed terms is missing.
+
+SQL/MM also supports the 19107 operator equals, which tests if two geometries are spatially equal. More formally, their symmetric difference __must__ be empty. SQL/MM then adds seven semantic operators to test the relationship between geometries a and b. These relationships are expressed in terms of the boundary, interior and exterior intersections to avoid ambiguities.
+
+.Relationship Relations
+
+|====
+^| *Name* ^| *Definition*
+|equals |A equals B tests if the geometries are spatially equal. More formally, their symmetric difference __must__ be empty. The test for equivalence may be limited to the resolution of the coordinate system or the accuracy of the data.
+|disjoint |A disjoint B tests if A and B have NO points in common.
+|intersects |A intersects B tests if A and B have ANY points in common.
+|crosses |A crosses B if their interiors intersect with a dimension less that the larger of the dimension of A or B and the intersection of the interior of a with the exterior of B is not null (so for two lines, the intersection has to be at a finite number of points). Surfaces cannot cross anything. Points cannot be crossed by anything.
+|overlaps |A overlaps B tests if part of their respective interiors intersect, and if this intersection is the same dimension as the interiors of the original geometries. (This last bit rules out crosses). Some of their interior __must__ intersect with the exterior of the other one and vice versa (i.e., one cannot be within the other). This bit rules out within and contains. Overlap only applies if the two 
+geometries are of the same dimension.
+|within |A within B if their intersection equals A. e.g. a POI describing a store may state that it is contained within a shopping mall.
+|contains |A contains B is equivalent to B within A. e.g. a POI describing a mall may state that it contains POIs for each store that is within the mall.
+|touches |A touches B means one’s boundary intersects with the other’s interior or boundary. Interiors cannot intersect. Points cannot touch. e.g. a POI representing a store within a mall may state that it is next door to another POI which represents the store next door.
+|====
+
+= Geometry
+
+Geometry is the base object from which all geometry entities are derived. It combines a coordinate system description with a set of 
+coordinates.
+
+|====
+^| *Name* ^| *Type* ^| *Multiplicity*
+|<<srsName,srsName>> |URI | 0..1
+|<<poslist,PosList>> |string | 1
+|====
+
+=== PosList
+
+A coordinate set whose format is determined by the geometry type - Point, LineString, or SimplePolygon.
+
+=== Coordinate Reference Systems
+
+In all of the objects that specify geodetic coordinates, an srsName property is included in order to indicate the coordinate reference system (CRS) being used. The srsName value is a URI <<RFC3986,RFC3986>> indicating the CRS used and is http://www.opengis.net/def/crs/OGC/1.3/CRS84[http://www.opengis.net/def/crs/OGC/1.3/CRS84] by default. This default is the URI for the World Geodetic System 84 (WGS84) in 2 dimensions, longitude and latitude. The CRS used influences the interpretation of the coordinate set.
+
+The default CRS refers to WGS84 geographic longitude and latitude expressed in decimal degrees, namely EPSG 4326, without the degrees symbol, "°". The values of latitude and longitude are bounded by ±90° and ±180° respectively. Positive latitudes are north of the equator, negative latitudes are south of the equator. Positive longitudes are east of the Prime Meridian, negative longitudes are west of the Prime Meridian. Latitude and longitude are expressed in that sequence, namely latitude before longitude.
+
+The most recent version of the EPSG Geodetic Parameter Dataset should be used. A CRS must be specified using URI notation only, and implementations do not need to support user-defined CRSs. This specification does not assign responsibilities for coordinate transformations from and to other Coordinate Reference Systems.
+
+NOTE:: The term coordinate set as used throughout this document refers to coordinates as influenced by the rules laid out above.
+
+== POIS
+
+The POIS object is mainly present for convenience when a set of POI objects needs to be grouped together. 
+
+include::../requirements/REQ_POIS-properties.adoc[]
+
+include::../requirements/REQ_POIS-POI.adoc[]
+
+POIS extends <<poiproperties,POIProperties>> and adds the properties in the table below.
+
+|====
+^| *Name* ^| *Type* ^| *Multiplicity*
+|poi |<<poi,POI>> | 0..*
+|====
+
+
