@@ -24,7 +24,7 @@ In this Standard we extend the General Feature Model to support the concept of a
 
 [poi_uml_model,reftext='POI UML Model']
 .POI UML Model
-image::../images/POI.png[align="center"]
+image::../images/POI-2.png[align="center"]
 
 *AbstractFeature:* The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model.
 
@@ -38,7 +38,11 @@ image::../images/POI.png[align="center"]
 
 *FeatureModel:* The data model for the FeatureOfInterest. This class identifies and describes all of the attributes of the FeatureOfInterest.
 
-*Mapping:* A logical mapping of attributes in the FeatureModel into associated attributes in the POI. All POI attributes must come from the AbstractPOI class or be mapped in from a FeatureOfInterest.  
+*DataRecord:* A collection of data entities, each identified by a field name. This class is being used as a summation of the FeatureModel of the Feature of Interest. It should be populated from the Feature of Interest properties. But the exact means of that population is out of scope for this standard. 
+
+*AbstractDataComponent:* The Abstract root class of all data components in the SWE Common data model. All entities in a DataRecord are descended from AbstractDataComponent. Of the attributes inherited, the definition attribute is of particular interest. This attribute associates a external Web-accessible Definition with each entity. This attribute should be made mandatory for a POI.
+
+*Definition:* A Web-accessible definition for a property of the Feature of Interest as represented in the POI. This could be a simple text definition, an ontology, or any other semantic representation appropriate for the implementing technology. Definitions are derived from the FeatureModel for the Feature of Interest. 
 
 Geometry
 
