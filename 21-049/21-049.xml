@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.0.6">
+<bibdata type="standard">
+<title language="en" format="text/plain">OGC Points of Interest</title>
+<contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2022</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype></ext></bibdata><misc-container><presentation-metadata><name>TOC Heading Levels</name><value>3</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>3</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>3</value></presentation-metadata></misc-container>
+<boilerplate>
+  <copyright-statement>
+    <clause>
+      <title>Copyright notice</title>
+
+      <p align="center" id="_609a02a1-fa53-7a69-1cb9-ff2ed59292e2">Copyright
+        © 2022 Open Geospatial Consortium<br/>
+        To obtain additional rights of use, visit
+        <link target="http://www.ogc.org/legal/">http://www.ogc.org/legal/</link></p>
+    </clause>
+    <clause>
+      <title>Note</title>
+      <p align="left" id="_11e88dba-9912-1a89-a82d-7291bf232191">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+      <p align="left" id="_15067213-c07b-cba0-7e18-395ab2e00ab3">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+    </clause>
+  </copyright-statement>
+  <license-statement>
+    <clause>
+      <title>License Agreement</title>
+
+      <p id="_e8566381-218f-c22d-320d-4d0371bfd58f">Permission is hereby granted by the Open Geospatial
+        Consortium, (“Licensor”), free of charge and subject to the terms set
+        forth below, to any person obtaining a copy of this Intellectual Property and
+        any associated documentation, to deal in the Intellectual Property without
+        restriction (except as set forth below), including without limitation the
+        rights to implement, use, copy, modify, merge, publish, distribute, and/or
+        sublicense copies of the Intellectual Property, and to permit persons to whom
+        the Intellectual Property is furnished to do so, provided that all copyright notices
+        on the intellectual property are retained intact and that each person to whom
+        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+
+      <p id="_52ebb386-d365-27d0-d76d-a59ac165fc4d">If you modify the Intellectual Property, all copies of
+        the modified Intellectual Property must include, in addition to the above
+        copyright notice, a notice that the Intellectual Property includes
+        modifications that have not been approved or adopted by LICENSOR.</p>
+
+      <p id="_178f14b4-0718-a5b8-09cd-84f8f4b756ed">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
+        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
+        THE INTELLECTUAL PROPERTY IS PROVIDED “AS
+        IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
+        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
+        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
+        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
+        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER’S OWN RISK. IN NO
+        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
+        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
+        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
+        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
+        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
+        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
+        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+
+      <p id="_2ad7fe27-9ae4-52c5-9dd9-faa4004247fb">This license is effective until terminated. You may
+        terminate it at any time by destroying the Intellectual Property together with
+        all copies in any form. The license will also terminate if you fail to comply
+        with any term or condition of this Agreement. Except as provided in the
+        following sentence, no such termination of this license shall require the
+        termination of any third party end-user sublicense to the Intellectual Property
+        which is in force as of the date of notice of such termination. In addition,
+        should the Intellectual Property, or the operation of the Intellectual
+        Property, infringe, or in LICENSOR’s sole opinion be
+        likely to infringe, any patent, copyright, trademark or other right of a third
+        party, you agree that LICENSOR, in its sole discretion, may terminate this
+        license without any compensation or liability to you, your licensees or any
+        other party. You agree upon termination of any kind to destroy or cause to be
+        destroyed the Intellectual Property together with all copies in any form,
+        whether held by you or by any third party.</p>
+
+      <p id="_3254c815-179c-5f54-9a01-b8e964837171">Except as contained in this notice, the name of
+        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
+        Property shall not be used in advertising or otherwise to promote the sale, use
+        or other dealings in this Intellectual Property without prior written
+        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
+        all times be the sole entity that may authorize you or any third party to use
+        certification marks, trademarks or other special designations to indicate
+        compliance with any LICENSOR standards or specifications.
+        This Agreement is
+        governed by the laws of the Commonwealth of Massachusetts. The application to
+        this Agreement of the United Nations Convention on Contracts for the
+        International Sale of Goods is hereby expressly excluded. In the event any
+        provision of this Agreement shall be deemed unenforceable, void or invalid, such
+        provision shall be modified so as to make it valid and enforceable, and as so
+        modified the entire Agreement shall remain in full force and effect. No
+        decision, action or inaction by LICENSOR shall be construed to be a waiver of
+        any rights or remedies available to it.</p>
+
+      <p id="_4fa1ef5b-3dd5-7a05-3c68-bca93a0f14bb">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
+    </clause>
+  </license-statement>
+
+  <legal-statement>
+    
+    
+    <clause>
+      <title>Notice</title>
+      <p id="_a156d1c4-313c-340a-8480-366345e3e0d2">This document is an OGC Member approved international standard. This document is available on a royalty free, non-discriminatory basis. Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
+      </p>
+    </clause>
+    
+
+
+    
+
+  </legal-statement>
+
+
+
+
+  <feedback-statement>
+    
+    <clause id="boilerplate-standard-feedback">
+      <p id="_bbc1a653-f270-135d-9455-af930feb3587">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</link></p>
+    </clause>
+    
+  </feedback-statement>
+</boilerplate>
+<preface><foreword id="_755d5a3e-020d-66ef-80cc-74d5c8fb4b0b" obligation="informative">
+<title>Preface</title>
+<pagebreak/>
+<table id="_fd897406-07ef-2d6e-edf0-d977b64f2f10"><tbody><tr><td valign="middle" align="right"/></tr><tr><td valign="middle" align="right"><strong>Open Geospatial Consortium</strong></td>
+</tr><tr><td valign="middle" align="right">Submission Date: &lt;yyyy-mm-dd&gt;</td>
+</tr><tr><td valign="middle" align="right">Approval Date:   &lt;yyyy-mm-dd&gt;</td>
+</tr><tr><td valign="middle" align="right">Publication Date:   &lt;2022-05-11&gt;</td>
+</tr><tr><td valign="middle" align="right">External identifier of this OGC® document: <link target="http://www.opengis.net/doc/IS/poi/1.0"/></td>
+</tr><tr><td valign="middle" align="right">Internal reference number of this OGC® document:    21-049</td>
+</tr><tr><td valign="middle" align="right">Version: 0.1</td>
+</tr><tr><td valign="middle" align="right">Category: OGC® Implementation Standard</td>
+</tr><tr><td valign="middle" align="right">Editor:   Matthew Brian John Purss</td>
+</tr></tbody>
+</table>
+
+<table id="_eb472f4c-08b9-7944-ae7a-f7f7c127daa6"><tbody><tr><td valign="middle" align="center"><strong>OGC Points of Interest</strong></td>
+</tr></tbody>
+</table>
+
+<table id="_fc5508e7-16f1-27a3-660c-a2e19f4726a7"><tbody><tr><td valign="middle" align="center"><strong>Copyright notice</strong></td>
+</tr><tr><td valign="middle" align="center">Copyright © 2021 Open Geospatial Consortium</td>
+</tr><tr><td valign="middle" align="center">To obtain additional rights of use, visit <link target="http://www.ogc.org/legal/"/></td>
+</tr></tbody>
+</table>
+
+<table id="_75840b8e-3399-c094-647e-d6ea1d12f883"><tbody><tr><td valign="middle" align="center"><strong>Warning</strong></td>
+</tr></tbody>
+</table>
+
+<p id="_6a6c093b-4bd9-0b39-80c5-8232f3e2e1df">This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+<p id="_a0122116-2f90-2c57-1753-f45479c4bbf7">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+
+<table id="_9596f302-e9cc-3ffa-a6c7-0f0f2f0ec02e" width="50%"><tbody><tr><td valign="middle" align="left">Document type:   OGC® Standard</td>
+</tr><tr><td valign="middle" align="left">Document subtype:   </td>
+</tr><tr><td valign="middle" align="left">Document stage:   	Draft</td>
+</tr><tr><td valign="middle" align="left">Document language: 	English</td>
+</tr></tbody>
+</table>
+
+<pagebreak/>
+<p id="_b81b50bb-bee4-dce9-830b-b8196fd98d2e">License Agreement</p>
+
+<p id="_56761275-5d20-dea3-27f6-108736683b53">Permission is hereby granted by the Open Geospatial Consortium, (“Licensor”), free of charge and subject to the terms set forth below, to any person obtaining a copy of this Intellectual Property and any associated documentation, to deal in the Intellectual Property without restriction (except as set forth below), including without limitation the rights to implement, use, copy, modify, merge, publish, distribute, and/or sublicense copies of the Intellectual Property, and to permit persons to whom the Intellectual Property is furnished to do so, provided that all copyright notices on the intellectual property are retained intact and that each person to whom the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+
+<p id="_554cb03c-7550-b4b1-2410-602eec319626">If you modify the Intellectual Property, all copies of the modified Intellectual Property must include, in addition to the above copyright notice, a notice that the Intellectual Property includes modifications that have not been approved or adopted by LICENSOR.</p>
+
+<p id="_bc4dc318-c7a6-fe30-20ab-e17bde24e459">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.</p>
+
+<p id="_a17bfe27-3fe0-616e-da89-6df3d3db1bd3">THE INTELLECTUAL PROPERTY IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER’S OWN RISK. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+
+<p id="_812106eb-dade-9f9b-a23f-f6b229e10cfb">This license is effective until terminated. You may terminate it at any time by destroying the Intellectual Property together with all copies in any form. The license will also terminate if you fail to comply with any term or condition of this Agreement. Except as provided in the following sentence, no such termination of this license shall require the termination of any third party end-user sublicense to the Intellectual Property which is in force as of the date of notice of such termination. In addition, should the Intellectual Property, or the operation of the Intellectual Property, infringe, or in LICENSOR’s sole opinion be likely to infringe, any patent, copyright, trademark or other right of a third party, you agree that LICENSOR, in its sole discretion, may terminate this license without any compensation or liability to you, your licensees or any other party. You agree upon termination of any kind to destroy or cause to be destroyed the Intellectual Property together with all copies in any form, whether held by you or by any third party.</p>
+
+<p id="_43dfeade-d545-bc39-71d6-9e203d13d49a">Except as contained in this notice, the name of LICENSOR or of any other holder of a copyright in all or part of the Intellectual Property shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Intellectual Property without prior written authorization of LICENSOR or such copyright holder. LICENSOR is and shall at all times be the sole entity that may authorize you or any third party to use certification marks, trademarks or other special designations to indicate compliance with any LICENSOR standards or specifications. This Agreement is governed by the laws of the Commonwealth of Massachusetts. The application to this Agreement of the United Nations Convention on Contracts for the International Sale of Goods is hereby expressly excluded. In the event any provision of this Agreement shall be deemed unenforceable, void or invalid, such provision shall be modified so as to make it valid and enforceable, and as so modified the entire Agreement shall remain in full force and effect. No decision, action or inaction by LICENSOR shall be construed to be a waiver of any rights or remedies available to it.</p>
+
+<pagebreak/>
+
+<pagebreak/>
+<p id="_bd0af746-0ccf-afcc-3dde-a13f577e14df"><strong>i.    Abstract</strong></p>
+
+<p id="_ec041560-41a7-3de1-af70-a23246f0a43b">&lt;Insert Abstract Text here&gt;</p>
+
+<p id="_8050caf3-64fe-bd5f-22ad-feaf6cf94e24"><strong>ii.    Keywords</strong></p>
+
+<p id="_5613dd38-1f00-1ad0-213e-ab3e203a6984">The following are keywords to be used by search engines and document catalogues.</p>
+
+<p id="_169e2362-8291-1410-fe4d-a125930afcfa">ogcdoc, OGC document, poi, gazetteer, pointsofinterest, placesofinterest</p>
+
+<p id="_ef602ac6-acc8-fe52-d922-a2b9325766a1"><strong>iii.   Preface</strong><note id="_22be9a9d-fcce-ad12-0a29-25055934e700"><p id="_85368ac3-db1a-82ef-62e6-16e3ad1c3046">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
+</note></p>
+
+
+
+<p id="_889e1cae-4cb1-4177-8f76-7c07fe63d376">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_03cec2fb-5478-6647-9958-c3dad96edd85">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+
+<p id="_42b40aba-14db-7cfa-3f9b-a4d001abca8e"><strong>iv.    Security Considerations</strong></p>
+
+<p id="_1aa5d691-b572-7bb1-c9dc-279651dd2ea0">No security considerations have been made for this Standard.</p>
+
+<p id="_b68b52de-5118-a471-2bf6-886dc2cfcf9f"><strong>v.    Submitting organizations</strong></p>
+
+<p id="_91ef9fbb-bc25-eb99-2949-ecb7e11414d1">The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
+
+<p id="_6dce9bc5-d19b-2851-c063-342e0e0b7c80">Organization name(s)</p>
+
+<p id="_b175be57-6649-3ae2-63c5-2ebc8c3e2cc2"><strong>vi.     Submitters</strong></p>
+
+<p id="_6a1aeaff-a145-f372-b78e-a03b630241e9">All questions regarding this submission should be directed to the editor or the submitters:</p>
+
+<table id="_d011a954-fc47-a408-984d-5ebaedbcee92"><tbody><tr><td valign="middle" align="left"><strong>Name</strong></td>
+<td valign="middle" align="left"><strong>Affiliation</strong></td>
+</tr><tr><td valign="middle" align="left"/><td valign="middle" align="left"/></tr></tbody>
+</table>
+</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative"><title>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause></preface><sections>
+<clause id="scope-section" type="scope" obligation="normative">
+<title>Scope</title>
+<p id="_03a504c8-4134-6f20-4eb1-1b1097ff248b">This document describes a data model and <hi>XML</hi><fn reference="1"><p id="_cc0e8bb1-f18b-3043-ad95-85d11dd0cde6">Are we going to bother with an XML Schema or move straight to JSON?</p>
+</fn> syntax for representing information about points of interest (POI).</p>
+
+<p id="_66dbf76a-58f8-c5b8-34e0-3c8cb78bbef8">In the most broad terms, a “point of interest” is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three dimensional model of a building with names in various languages, information about open and closed hours, and a civic address. POI data has many uses including navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers.</p>
+
+<p id="_7c856e14-bb68-268f-8fd2-5c5b537a67fb">POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.</p>
+
+<p id="_cd01ad0a-da18-056a-14c7-007036284dee">To achieve these goals, this document describes a generic data model that may be instantiated in a variety of serializations, including <hi>XML</hi><fn reference="1"><p id="_368d85ed-d3f0-389a-3d9b-095a86db6e40">Are we going to bother with an XML Schema or move straight to JSON?</p>
+</fn>, JSON and RDF<fn reference="2"><p id="_23441de1-e2d7-41b5-b732-9d0686793334">Are we going to specify an RDF encoding?</p>
+</fn>.</p>
+
+<p id="_349bbc9b-7652-ef64-d068-d42adbbad220">Here is an example of a simple POI serialized in <hi>XML</hi><fn reference="1"><p id="_ce7ffba0-286d-95b9-d895-64de6c941e53">Are we going to bother with an XML Schema or move straight to JSON?</p>
+</fn>:</p>
+
+<sourcecode id="_0383c46b-82eb-2b5f-875a-72f3733b0e58">&lt;?xml version="1.0" encoding="UTF-8"  standalone="yes"?&gt;
+&lt;poi id="http://www.rajsingh.org/pois/45343489"&gt;
+&lt;label term="primary"&gt;
+&lt;value&gt;Boston&lt;/value&gt;
+&lt;/label&gt;
+&lt;description term="source" href="http://en.wikipedia.org/wiki/Boston"&gt;
+&lt;value&gt;Boston is the capital of and largest city in Massachusetts, and is one of the oldest
+  cities in the United States. The largest city in New England, Boston is regarded as the
+  unofficial "Capital of New England" for its economic and cultural impact on the entire
+  New England region. The city proper had a population of 617,594 according to the 2010
+  U.S. Census.
+&lt;/value&gt;
+&lt;author id="http://en.wikipedia.org" term="publisher" type="text/plain"&gt;
+  &lt;value&gt;Wikipedia&lt;/value&gt;
+&lt;/author&gt;
+&lt;/description&gt;
+&lt;category term="city" scheme="http://www.usgs.gov/placetypes"&gt;
+&lt;value&gt;seat of a first-order administrative division&lt;/value&gt;
+&lt;/category&gt;
+&lt;link term="canonical" href="http://www.rajsingh.org/pois/45343489.xml"
+	type="text/xml" scheme="http://www.iana.org/assignments/link-relations/link-relations.xml"/&gt;
+&lt;link term="related" href="http://en.wikipedia.org/wiki/Boston"
+	type="text/html" scheme="http://www.iana.org/assignments/link-relations/link-relations.xml"/&gt;
+&lt;link term="related" href="http://www.geonames.org/maps/google_42.358_-71.06.html"
+	type="text/html" scheme="http://www.iana.org/assignments/link-relations/link-relations.xml"/&gt;
+&lt;location&gt;
+&lt;point term="centroid"&gt;
+  &lt;Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
+	&lt;posList&gt;42.358 -71.06&lt;/posList&gt;
+  &lt;/Point&gt;
+&lt;/point&gt;
+&lt;/location&gt;
+&lt;/poi&gt;</sourcecode>
+
+
+<p id="_22bc20ed-5dc1-fad6-00ac-5e65a67b1d8a">Here is an example of a simple POI serialized in <hi>JSON</hi><fn reference="3"><p id="_ad6ba030-72b7-30c3-b7ee-73b9b7f35d74">What are we missing in this JSON schema representation?</p>
+</fn>:</p>
+
+<sourcecode id="_acd2ab10-83f1-8231-ede3-db1b58e69523">{
+	"poi_id": {
+		"value": "45343489",
+		"href": "http://www.rajsingh.org/pois/45343489"
+	},
+	"label": {
+	    "type": "primary",
+		"value": "Boston"
+	},
+	"description": {
+	    "type": "source",
+		"value": "Boston is the capital of and largest city in Massachusetts, and is one of the oldest cities in the United States. The largest city in New England, Boston is regarded as the unofficial "Capital of New England" for its economic and cultural impact on the entire New England region. The city proper had a population of 617,594 according to the 2010 U.S. Census.",
+		"href": "http://en.wikipedia.org/wiki/Boston",
+		"author": "Wikipedia"
+	},
+	"category": {
+		"type": "city",
+		"value": "seat of a first-order administrative division",
+		"href": "http://www.usgs.gov/placetypes"
+	},
+	"links": [
+		{
+			"href": "http://www.rajsingh.org/pois/45343489.json",
+			"rel": "canonical",
+			"type": "application/json",
+			"title": "Canonical POI Reference",
+			"hreflang": "en"
+		},
+		{
+			"href": "http://en.wikipedia.org/wiki/Boston",
+			"rel": "related",
+			"type": "text/html",
+			"title": "Wikipedia Reference",
+			"hreflang": "en"
+		},
+		{
+			"href": "http://www.geonames.org/maps/google_42.358_-71.06.html",
+			"rel": "related",
+			"type": "text/html",
+			"title": "Map of Boston",
+			"hreflang": "en"
+		}
+	],
+	"location": {
+		"geometry": {
+    		"type": "Point",
+    		"coordinates": [42.358, -71.06]
+  		},
+	}
+}</sourcecode>
+
+</clause>
+
+<clause id="conformance-section" type="conformance" obligation="normative">
+<title>Conformance</title>
+<p id="_12e50e71-32c9-4841-9afc-c19b6e3ab821">This standard defines XXXX.</p>
+
+<p id="_b116691a-08b1-0620-ae3d-86e5f3a8a421">Requirements for N standardization target types are considered:</p>
+
+<ul id="_7e05e339-83a3-d931-6767-a7c123e12b74"><li><p id="_1bd63b7e-eb98-ad43-1de4-c21d99d60ac2">AAAA</p>
+</li>
+<li><p id="_b6bc9b8a-bd3e-ce9e-7522-1f98d4945205">BBBB</p>
+</li>
+</ul>
+
+<p id="_c881dc19-eab9-6206-0bbd-c6f07d4bb744">Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.</p>
+
+<p id="_7552ac2a-6499-a44e-13ca-4abd7e2a63c4">In order to conform to this OGC® interface standard, a software implementation shall choose to implement:</p>
+
+<ul id="_85556d81-fbe8-6680-06da-7a660f86b7d0"><li><p id="_28d16a05-e578-c5ec-eb3f-87a36de9e044">Any one of the conformance levels specified in Annex A (normative).</p>
+</li>
+<li><p id="_0b67bb92-65e2-2183-4a16-11664b0f122f">Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).</p>
+</li>
+</ul>
+
+<p id="_595f6be4-4135-af56-59ba-b377f03b0a65">All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.</p>
+</clause>
+
+
+
+<terms id="_terms_and_definitions" obligation="normative">
+<title>Terms and definitions</title><p id="_ee54798a-6d3c-92e7-3294-4b4b783213f1">No terms and definitions are listed in this document.</p>
+
+<p id="_e121d56d-3d8e-dcc1-f805-ab86e97f8faa">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+
+<p id="_0562efc9-6d75-d498-e3d0-459c7aa50c71">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+
+<p id="_850da6d6-65b5-d326-1cf4-9f80a7b1c216">For the purposes of this document, the following additional terms and definitions apply.</p>
+
+<dl id="coordinate"><dt>coordinate</dt>
+<dd><p id="_cee00b03-4330-874f-939f-ad68a678f89d">sequence of n numbers designating the <em>position</em> of a <em>point</em> in n-dimensional space</p>
+</dd>
+</dl>
+
+<termsource status="identical" type="authoritative"><origin bibitemid="ISO19111" type="inline" citeas="ISO19111"/></termsource>
+
+<dl id="coordinate_set"><dt>coordinate set</dt>
+<dd><p id="_7251b354-9593-e9aa-b413-0392e3d34126">individual parts of a coordinate</p>
+</dd>
+</dl>
+
+<example id="_54f449e0-83e4-709e-c1be-8496b221d0ae"><p id="_dc1cb6ee-a2c8-42ec-95f7-fb7a8cb784e2">coordinate pair of latitude and longitude values.</p>
+</example>
+
+<dl id="coordinate_reference_system"><dt>coordinate reference system</dt>
+<dd><p id="_98e1026d-1333-68d4-db80-64118e7804a6"><em>coordinate system</em> that is related to an object by a <em>datum</em> (<xref target="datum"/>)</p>
+</dd>
+</dl>
+
+<note id="_56a5e8ac-5341-55e3-65dd-9603a8c7ca4c"><p id="_d0933c8b-59b0-525b-9653-44efa88b20c7">Geodetic and vertical datums are referred to as reference frames.</p>
+</note>
+
+<note id="_b1f9f5d9-99c5-7025-06e5-34c83fb1899e"><p id="_295e4172-a4da-827f-cacb-c16a5b378e1e">For geodetic and vertical <em>datums</em> (<xref target="datum"/>), the object will be the Earth.
+In planetary applications, geodetic and vertical reference frames may be applied to other celestial bodies.</p>
+</note>
+
+<termsource status="identical" type="authoritative"><origin bibitemid="ISO19111" type="inline" citeas="ISO19111"><localityStack><locality type="clause"><referenceFrom>3.1.9</referenceFrom></locality></localityStack></origin>
+</termsource>
+
+<dl id="coordinate_system"><dt>coordinate system</dt>
+<dd><p id="_9763feb6-edf9-d6d6-8693-bbbee792fcb0">set of mathematical rules for specifying how <em>coordinates</em> are to be assigned to <em>points</em></p>
+</dd>
+</dl>
+
+<termsource status="identical" type="authoritative"><origin bibitemid="ISO19111" type="inline" citeas="ISO19111"><localityStack><locality type="clause"><referenceFrom>3.1.11</referenceFrom></locality></localityStack></origin>
+</termsource>
+
+<dl id="datum"><dt>datum</dt>
+<dd><admitted><expression>
+<name>reference frame</name>
+</expression>
+</admitted>
+
+</dd>
+</dl>
+
+<p id="_7b1693c5-6277-c6e8-b5fd-e61a937708d9">parameter or set of parameters that realize the <em>positions</em> of the origin, the scale, and the orientation of a <em>coordinate system</em> (<xref target="coordinate_system"/>)</p>
+
+<termsource status="identical" type="authoritative"><origin bibitemid="ISO19111" type="inline" citeas="ISO19111"><localityStack><locality type="clause"><referenceFrom>3.1.15</referenceFrom></locality></localityStack></origin>
+</termsource>
+
+<dl id="geolocation"><dt>geolocation</dt>
+<dd><p id="_006890f1-e5ca-5341-a45a-d290df3b2a6e">identification of the real world geographic <em>location</em> of an object</p>
+</dd>
+</dl>
+
+<dl id="location"><dt>location</dt>
+<dd><p id="_2e98817d-9bcb-10d8-c282-60bab19036b1">particular <em>place</em> or <em>position</em></p>
+</dd>
+</dl>
+
+<note id="_91b220ad-edfa-40ff-59b1-79f931c13668"><p id="_8edade9f-7894-085b-82b4-9e63ba192ab2">A <em>location</em> identifies a geographic <em>place</em>.</p>
+</note>
+
+<note id="_62fbf74a-0df7-8325-e8e0-23567881e473"><p id="_fa3f609a-d4e8-f168-b9e5-0bbdbd71ab51"><em>Locations</em> are physically fixed points, typically on the surface of the Earth, although <em>locations</em> can be relative to other, non-earth centric coordinate reference systems.</p>
+</note>
+
+<note id="_8b83dd8d-9491-5c19-b5a8-6491e54db7d0"><p id="_318152c6-0781-3f98-a7da-ed1d337e26df"><em>Locations</em> can be a single point, a centroid, a minimum bounding rectangle, or a set of vectors.</p>
+</note>
+
+<note id="_48c48655-89fc-e2a0-f1bb-9a7a5c6040f0"><p id="_ded0eb3b-26b9-7790-3036-ae4102de302b">A <em>location</em> should be persistent over time and does not change.</p>
+</note>
+
+<note id="_12373813-1061-5199-cba3-533013a15f8d"><p id="_c8eea46e-29c4-9c18-1c2c-93fa6b92ce8f">Multiple <em>POIs</em> may share the same <em>location</em>.</p>
+</note>
+
+<note id="_1506b816-bd67-c4e7-3c3b-b9379d965bb2"><p id="_d8e981f5-d09c-4956-0468-f26607acba46">When a <em>POI</em> physically moves it is understood to have acquired a new <em>location</em>.</p>
+</note>
+
+<termsource status="identical" type="authoritative"><origin bibitemid="ISO19112" type="inline" citeas="ISO19112"><localityStack><locality type="clause"><referenceFrom>3.1.3</referenceFrom></locality></localityStack></origin>
+</termsource>
+
+<dl id="place"><dt>place</dt>
+<dd><p id="_49d7e41d-3b4e-dc34-44f2-fe2e7fd65f81">semantic description of a <em>location</em></p>
+</dd>
+</dl>
+
+<note id="_b224950c-41c0-66fa-dccd-0f1e6512a1c0"><p id="_d063599c-d718-e96a-f38d-65911664bf3f">A <em>place</em> is a human construct which typically has a coarse level of spatial granularity.</p>
+</note>
+
+<note id="_7c456c7c-7218-efe0-45d4-5cf329eb8875"><p id="_45ee99f8-7018-211a-75af-3b52d178433e">A <em>place</em> is generally a larger scale administrative construct, either informally or formally defined.</p>
+</note>
+
+<note id="_6f446bcf-c6b1-d117-f066-5f56df69915c"><p id="_372efad5-2887-fe05-0d2f-d475b08eebf6">A <em>place</em> can be informally or colloquially defined, such as the Home Counties in the United Kingdom and the Bay Area in the United States.</p>
+</note>
+
+<note id="_f89c27e6-8273-559a-343c-71fb86fed280"><p id="_2bbc1242-c922-8058-2d84-ae1dd3112a67"><em>Places</em> have spatial relationships; with parents, children, adjacencies and contained by semantics.</p>
+</note>
+
+<note id="_a02e283f-b19b-6c38-b39f-3e3998c5e388"><p id="_fa2b39f1-b8ff-1530-5725-bb81cb47351e"><em>Places</em> have the same attribute set as <em>POIs</em>, although often with differing interpretations based on scale; for example, the address of a <em>Place</em> or its URI might refer to the address of the administrative or governing body of the <em>place</em>.</p>
+</note>
+
+<note id="_c6c6f042-b62c-2a2f-0840-a85cd3235b03"><p id="_7d435e5a-f124-fa87-3232-0cc9d6176df2">A <em>place</em> typically contains multiple <em>POIs</em> and can also be coterminous with a <em>POI</em>. In the former case, a <em>place</em>, such as a city or a neighborhood, will contain multiple <em>POIs</em>. In the latter case, a <em>place</em> and a <em>POI</em> will occupy the same <em>position</em> and extent, such as in the case of Yellowstone National Park, which is both a <em>Place</em> and a <em>POI</em>.</p>
+</note>
+
+<example id="_44a01e08-558e-2d50-32d0-5de53d416f22"><p id="_ac449819-b496-a930-91f8-342d6ef82481">Countries, states, counties, districts, neighborhoods and postal codes or telephone area codes are all places.</p>
+</example>
+
+<dl id="point"><dt>point</dt>
+<dd><p id="_5492e98f-b94d-ffbc-8bd0-021633dcbf99">0-dimensional geometric primitive, representing a <em>position</em></p>
+</dd>
+</dl>
+
+<termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas="ISO19107"/></termsource>
+
+<dl id="point_of_interest"><dt>point of interest</dt>
+<dd><admitted><expression>
+<name>POI</name>
+</expression>
+</admitted>
+
+</dd>
+</dl>
+
+<p id="_d9ab508b-a8a0-7bce-e9f8-2a9921ce449a"><em>location</em> where one can find a <em>place</em>, product or service</p>
+
+<note id="_11838de4-cd05-00db-8fe6-fbeded6f8895"><p id="_ca0d827d-6377-bd1d-075e-86b5fcccf8a8">A <em>POI</em> is typically identified by <em>name</em> rather than by an <em>address</em>.</p>
+</note>
+
+<note id="_2b3820c6-2d98-c33b-3d21-1aedb683cd05"><p id="_2e311def-b325-86bf-4fc1-9468d6c86424">A <em>POI</em> is characterized by <em>type</em>, which may be used as a <em>reference point</em> or a target in a <em>location</em> based service request.</p>
+</note>
+
+<note id="_b6b8e272-803a-d08a-be58-12879453f764"><p id="_0a83eba6-3e9d-83e6-94c3-8984551ca1cd">A <em>POI</em> does not exclude the labeling, identification, and tracking of persons and other physical objects that have no permanent location.</p>
+</note>
+
+<example id="_6af03ad3-b64e-a585-3cfc-a86156497622"><p id="_e79ed8f6-32e7-a526-b5fc-fa7db1870369">destination of a route; such as, Boston</p>
+</example>
+
+<dl id="position"><dt>position</dt>
+<dd><p id="_4cc351df-cc0b-474d-e4a0-0cf0114ee690">data type that describes a <em>point</em> or <em>geometry</em> potentially occupied by an object or person</p>
+</dd>
+</dl>
+
+<termsource status="identical" type="authoritative"><origin bibitemid="ISO19133" type="inline" citeas="ISO19133"/></termsource>
+
+<dl id="route"><dt>route</dt>
+<dd><p id="_909df393-217a-e34a-6597-f4e3a9ee38fb">sequence of <em>links</em> and / or partial <em>links</em> that describe a <em>path</em>, usually between two <em>positions</em>, within a <em>network</em></p>
+</dd>
+</dl>
+
+<termsource status="identical" type="authoritative"><origin bibitemid="19134:2007" type="inline" citeas=""/></termsource>
+</terms>
+
+<clause id="_conventions" obligation="normative">
+<title>Conventions</title>
+<p id="_f287e0a4-ca0e-ef98-6e01-5d09472b62aa">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+
+<clause id="_identifiers" obligation="normative">
+<title>Identifiers</title>
+<p id="_34025c5d-dda4-c61f-5774-94f51d938b80">The normative provisions in this standard are denoted by the URI</p>
+
+<p id="_f0191874-4eeb-2c92-18f2-f1367cf61a60"><tt><link target="http://www.opengis.net/spec/{standard}/{m.n}"/></tt></p>
+
+<p id="_52250454-5ac3-4fce-7c83-eb454adf6103">All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p>
+</clause>
+</clause>
+
+<clause id="_poi_conceptual_model_informative" obligation="normative">
+<title>POI Conceptual Model (Informative)</title>
+<clause id="_overview" obligation="normative">
+<title>Overview</title>
+<p id="_3ec61727-95bb-5aa0-cde0-475eb7254127">This clause specifies the underlying POI conceptual model for which an encoding can be created. It defines the mandatory requirements for encoding and the necessary semantics of how that encoding should be interpreted.</p>
+</clause>
+
+<clause id="_core_conceptual_model" obligation="normative">
+<title>Core Conceptual Model</title>
+<p id="_183667a2-362f-d194-6ace-d99b75b1d230">The Point of Interest data model consists of a <strong><xref target="poi-definition">POI</xref></strong> object and a <strong><xref target="pois-definition">POIS</xref></strong> grouping object. Each POI has a number of properties described in the <strong><xref target="poiproperties-definition">POIProperties</xref></strong> object for capturing descriptive information, along with a <strong><xref target="location-definition">Location</xref></strong> object describing its location and a <strong><xref target="position-definition">Position</xref></strong> object describing its geometry and positional accuracy. In order to maximize the flexibility with which POI, POIs and their sub-entities can be described, each inherit its properties from a single common object. In practical terms, this allows properties such as update time, authorship, links and other categorizations to be described at multiple
+levels of granularity within the data model.</p>
+
+<figure id="_ca4ac73b-f6fc-5816-ad83-38a2fa27eda1"><image src="./figures/core.png" id="_4036bc2d-0f3f-f84a-53ff-2bf950914706" mimetype="image/png" height="auto" width="auto"/></figure>
+
+<p id="_b5a7bf9d-d665-1000-1283-9bb1e62e86d2">The classes of the core data model are described in more detail below.</p>
+</clause>
+
+<clause id="_poi" obligation="normative">
+<title>POI</title>
+<p id="_fd5ad5f9-25bc-7aae-d350-b4bbe5fadc0a">A POI is defined as having the following conceptual properties:</p>
+
+<ul id="_11e1bbd6-6e15-adc0-c62e-21df278cfe29"><li><p id="_8a03db15-ee28-39b1-f112-9f9bccaa443a">a globally unique ID</p>
+</li>
+<li><p id="_bb7cbfb6-dd5e-c096-8376-c92d62dd3544">labels</p>
+</li>
+<li><p id="_55c3c173-384d-7aa3-da43-2cc289e279e7">descriptions</p>
+</li>
+<li><p id="_d9de6c00-f593-9a93-d5bf-a029d7c16695">location</p>
+</li>
+<li><p id="_6116f438-c678-d67c-d271-1d1d5019c383">tags/keywords/categories</p>
+</li>
+<li><p id="_5ee4ae89-ab4e-9727-07d2-ea12968fec10">links to related information</p>
+</li>
+<li><p id="_1c267dca-af46-8b19-1d37-0e52b824e993">time</p>
+</li>
+<li><p id="_9c58858e-e44d-96f8-ec71-b16388ea02a3">authors</p>
+</li>
+<li><p id="_253c810d-8c95-6ccb-3d1d-0991f200d1e4">rights</p>
+</li>
+<li><p id="_6b27c80a-98f0-0f25-4614-4cf9e7ce69a9">metadata</p>
+</li>
+</ul>
+
+<p id="_821f06cc-646f-f064-802b-afc54b7cce19">While a POI may be near meaningless without a label and location, from a computational perspective there are use cases in which any of these properties should be optional. Therefore, the only mandatory characteristic of a POI is that it have a globally unique identification property in the format of a URI.</p>
+</clause>
+
+<clause id="_labels_and_descriptions" obligation="normative">
+<title>Labels and Descriptions</title>
+<p id="_e98fcb65-8196-1027-1553-2bd854ada8a1">Labels (place names) and descriptions are largely self-explanatory properties. A place may have multiple labels, as it may be known differently by different people, in different languages or in different times or contexts. Multiple descriptions are important for the same reasons.</p>
+</clause>
+
+<clause id="_location" obligation="normative">
+<title>Location</title>
+<p id="_6980b2a4-495a-a0f3-3f3b-a1c97d2f68f8">The most common way of expressing the location of a POI is as a point defined by latitude and longitude coordinates in decimal degrees. This specification enhances that basic definition, allowing a POI’s location to be determined by either a point, line, polygon or civic address. A POI may also use more than one location definition property to more clearly specify multiple locational concepts, such as a building’s address, boundary, centroid, and entrance. A POI is most useful when its location is well-known, but this is not always possible, so the model supports the ability to express location relative to other POIs. This feature may be used alone, or in addition to, an absolute location.</p>
+</clause>
+
+<clause id="_categories" obligation="normative">
+<title>Categories</title>
+<p id="_ba8d79aa-bf74-2d7c-ffd6-e8975bce6116">Tagging, or categorizing a POI is a common practice in wide use by personal navigation systems, government gazetteers such as the USGS Geographic Names Information System, and businesses like Yelp!. Therefore the POI specification supports structured categorization, where the identifying term comes from a dictionary — or registry of terms — and it also supports “free” tagging, where the identifying term is simply that — a word or phrase with no reference to a structured information model.</p>
+</clause>
+
+<clause id="_links" obligation="normative">
+<title>Links</title>
+<p id="_c0d916ef-d856-4b59-7f64-0bb414e3d3c4">Links to related information allow a POI reference content that may exist in external repositories, such as images, web pages, maps, reviews, 3D models, and even other POI data repositories.</p>
+</clause>
+
+<clause id="_time" obligation="normative">
+<title>Time</title>
+<p id="_074e4432-79aa-b697-cbda-877ecf2ba602">Time plays an important role as no place stays the same forever. A POI may have a start time and/or an end time. The POI data record (and also all its child properties) may also have start, end and last updated time stamps.</p>
+</clause>
+
+<clause id="_authors_and_rights" obligation="normative">
+<title>Authors and Rights</title>
+<p id="_8792575f-1299-a09c-2450-fa3b9f753bd8">Identifying authors and licensing terms are important aspects of any information sharing system. These two are so important that they are separated from any more universal metadata definition system used by the following mechanism.</p>
+</clause>
+
+<clause id="_metadata" obligation="normative">
+<title>Metadata</title>
+<p id="_f81615d7-5f85-d756-72dd-2578d40bdf27">Metadata and provenance is a such a broad, generic area of work that one approach could not work for all POIs. Therefore, if a POI contains metadata it must also define the metadata information model it uses.</p>
+</clause>
+
+<clause id="_property_inheritance" obligation="normative">
+<title>Property Inheritance</title>
+<p id="_f3de8ab4-dbaf-5986-4290-87b54d438abd">In many cases, POI information is nested in a heirarchical system. Any property of a POI applies to all its child properties, unless that property is re-defined in the child. For example, if a POI has an author property of “A”, and the POI has a description property of “D”, the author of D is A, unless D has an author property itself. Then the author of D is whatever D defines it to be. One useful feature of inheritance is that if only one property of a POI has a different author, it is easy to express that fact precisely without adding a lot of duplicative author information to every property in the POI.</p>
+</clause>
+
+<clause id="_pois" obligation="normative">
+<title>POIS</title>
+<p id="_63a5677a-5d78-1ea8-06fc-79b77e645a09">Multiple POIs may be grouped into a POIS object, which serves only as a container object such that a group of POIs can inherit properties — for example authorship, licensing or categorization. The POIS object is expected to be useful only as a dynamic aggregation mechanism when information is being shared between systems. It is not expected to be of any particular use as a way to permanently model POI information in a database.</p>
+
+<p id="_e9454335-1e18-07c3-1d4a-2d6f8144ceb9">Following sections provide additional detail on the properties described above.</p>
+</clause>
+</clause>
+
+<clause id="_poi_2" obligation="normative">
+<title>POI</title>
+<p id="_12e53f8a-80bf-22b6-070c-262b523550b5">A Point of Interest (POI) is a Feature. Therefore, it is important to understand what a POI inherits from the OGC Feature model.</p>
+
+<p id="_577067c1-3a05-a73d-23c5-44fb05ccb167">The OGC Feature Model is defined in ISO 19109:2015 Geographic Information — Rules for application schema. A UML model showing applicable portions of the General Feature Model is provided in <xref target="feature_model">Figure 1</xref>.</p>
+
+<figure id="_e52ca9ce-46e7-f3ff-df29-aeddafaeeb25">
+<name>Feature Model</name>
+<image src="../images/Features.png" id="_746a0c03-d753-dd64-940c-81486dc4d450" mimetype="image/png" height="auto" width="auto" alt="feature_model"/></figure>
+
+<p id="_06d5a282-b749-4ddc-0e73-9ad3af7e1168">The most relevant classes defined by this model are described below:</p>
+
+<p id="_0a82d3b8-aa80-96ac-a22e-6d92a3d30efa"><strong>FeatureType:</strong> describe</p>
+
+<p id="_0280224e-9a85-0e4f-fbc7-56316ebf3836"><strong>AnyFeature:</strong> describe</p>
+
+<p id="_b541c4f6-7890-b8f8-a509-44519a8bc011"><strong>PropertyType:</strong> describe</p>
+
+<p id="_23267c5c-d556-78de-ca63-0394f3ab49b1"><strong>AttributeType:</strong> describe</p>
+
+<p id="_14ed04c1-fd9b-57a3-6a05-22a978f12cde"><strong>SpatialAttributeType:</strong> do we want to restrict GM_Object to just points, lines, and areas?</p>
+
+<p id="_087b52da-822d-9375-73aa-574c1097cd3a">In this Standard we extend the General Feature Model to support the concept of a Point of Interest.</p>
+
+<figure id="_2eb40db3-3f94-a110-83c2-ac0fdd4b2a2d">
+<name>POI UML Model</name>
+<image src="../images/POI-2.png" id="_15fdc204-a045-295f-6093-82a45a33adcc" mimetype="image/png" height="auto" width="auto" alt="poi_uml_model"/></figure>
+
+<p id="_72b18a81-ca32-08e2-b9b2-e8a7382365ca"><strong>AbstractFeature:</strong> The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model.</p>
+
+<p id="_6446bfbe-ee72-2b7e-2323-c4470880f4ff"><strong>AbstractFeatureWithLifespan:</strong> Adds temporality to AbstractFeature. This class was copied from the CityGML 3.0 Conceptual Model.</p>
+
+<p id="_a3cfcba4-892d-2e09-7efa-fc34687ea5a3"><strong>AbstractPOI:</strong> The abstract model for a Point of Interest. All POI instances will contain these attributes.</p>
+
+<p id="_bcaf1fe8-6ecd-a943-a625-bf525f453a12"><strong>POI:</strong> A POI instance. This class inherits everything from the AbstractPOI, identifies the associated FeatureOfInterest, then adds attributes from the Feature of Interest.</p>
+
+<p id="_6a49396a-5adb-20eb-4ef9-1c285594be3b"><strong>FeatureOfInterest:</strong> This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly syopsys of this Feature.</p>
+
+<p id="_2c9b8544-d2e8-01a6-8cc0-24a9ec0e1a04"><strong>FeatureModel:</strong> The data model for the FeatureOfInterest. This class identifies and describes all of the attributes of the FeatureOfInterest.</p>
+
+<p id="_088ca50f-4139-b317-2196-03316e7ced15"><strong>DataRecord:</strong> A collection of data entities, each identified by a field name. This class is being used as a summation of the FeatureModel of the Feature of Interest. It should be populated from the Feature of Interest properties. But the exact means of that population is out of scope for this standard.</p>
+
+<p id="_122287f0-df0b-f044-54d5-ea98eb1cd12c"><strong>AbstractDataComponent:</strong> The Abstract root class of all data components in the SWE Common data model. All entities in a DataRecord are descended from AbstractDataComponent. Of the attributes inherited, the definition attribute is of particular interest. This attribute associates a external Web-accessible Definition with each entity. This attribute should be made mandatory for a POI.</p>
+
+<p id="_aa602d74-2f05-cc74-5f31-2b250ccba9d1"><strong>Definition:</strong> A Web-accessible definition for a property of the Feature of Interest as represented in the POI. This could be a simple text definition, an ontology, or any other semantic representation appropriate for the implementing technology. Definitions are derived from the FeatureModel for the Feature of Interest.</p>
+
+<p id="_8fd82d96-999b-8119-563f-fec765d433da">Geometry</p>
+
+<p id="_56924ac1-2e9e-14b6-5a7d-2fc44d944f12">The OGC Geometry model is defined in ISO 19107:2003 — Geographic Information — Spatial schema. While there is a new version of this standard, it has not been widely implemented. So the 2003 version has been used in this Standard.</p>
+
+<figure id="_2e78e40d-04b2-b7e7-8ed1-ab0a5cfc17f6">
+<name>Geometry Model</name>
+<image src="../images/Geometry.png" id="_85909e3d-92e3-f827-ca4b-8c534c75905c" mimetype="image/png" height="auto" width="auto" alt="geometry_model"/></figure>
+
+<p id="_97217b1c-3c0e-6278-6b1b-acc169392f1d"><strong>GM_Object:</strong> Root class for all OGC geometries.</p>
+
+<p id="_6eceaba1-d67f-cbac-f4c0-8b2b8c117576"><strong>GM_Point:</strong> The geometric primitive for Points</p>
+
+<p id="_b16bea48-574c-3f3a-6e77-b9568535f96b"><strong>GM_LineString:</strong> The geometric primitive for line strings.</p>
+
+<p id="_3bb3b157-7ed8-ee71-19de-99c2466f18d0"><strong>GM_Polygon:</strong> The geometric primitive for areas.</p>
+</clause>
+
+<clause id="_media_types_for_any_data_encodings" obligation="normative">
+<title>Media Types for any data encoding(s)</title>
+<p id="_9edcb2e8-b4ab-3495-e76a-87c21ea5743d">A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in <link target="http://www.iana.org/assignments/media-types/index.html"/> then this section may be used to define a new MIME type for registration with IANA.</p>
+</clause>
+
+
+
+
+
+
+
+
+</sections><annex id="_conformance_class_abstract_test_suite_normative" obligation="informative">
+<title>Conformance Class Abstract Test Suite (Normative)</title>
+<note id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"><p id="_2f41c6a6-7963-8015-59ca-d74fafa8ae41">Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
+</note>
+
+<clause id="_conformance_class_a" obligation="informative">
+<title>Conformance Class A</title>
+<clause id="_requirement_1" obligation="informative">
+<title>Requirement 1</title>
+<requirement id="_5bbb472c-11f6-71bb-e0cb-984db40069de" type="pseudocode"><label>/req/req-class-a/req-name-1</label><verification exclude="false"><dl id="_26b5e8cf-15c9-e503-c474-f92d2801893c"><dt>Test purpose</dt>
+<dd><p id="_d47d8426-5d28-1c1c-2ac5-d2cb76633cdb">Verify that…​</p>
+</dd>
+<dt>Test method</dt>
+<dd><p id="_82b50db0-7bcd-8066-e386-e61f2727f4c2">Inspect…​</p>
+</dd>
+</dl>
+</verification></requirement>
+</clause>
+
+<clause id="_requirement_2" obligation="informative">
+<title>Requirement 2</title>
+</clause>
+</clause>
+</annex><annex id="_title" obligation="informative">
+<title>Title</title>
+<note id="_9c04cf83-97ee-5129-1540-d560e28d0909"><p id="_782ab42d-4816-bdd6-9432-7b67e87b5b37">Place other Annex material in sequential annexes beginning with “B” and leave final two annexes for the Revision History and Bibliography</p>
+</note>
+</annex><annex id="_revision_history" obligation="informative">
+<title>Revision History</title>
+<table id="_6699be8d-a663-b6c2-cfeb-e8fc2152d9b1" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
+<th valign="middle" align="left">Release</th>
+<th valign="middle" align="left">Editor</th>
+<th valign="middle" align="left">Primary clauses modified</th>
+<th valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">2021-06-17</td>
+<td valign="middle" align="left">0.0.1</td>
+<td valign="middle" align="left">Matthew Purss</td>
+<td valign="middle" align="left">all</td>
+<td valign="middle" align="left">initial version</td>
+</tr><tr><td valign="middle" align="left">2021-07-08</td>
+<td valign="middle" align="left">0.0.1</td>
+<td valign="middle" align="left">Matthew Purss</td>
+<td valign="middle" align="left">Clause 1</td>
+<td valign="middle" align="left">initial scope text inserted from original POI draft standard</td>
+</tr><tr><td valign="middle" align="left">2021-07-09</td>
+<td valign="middle" align="left">0.0.1</td>
+<td valign="middle" align="left">Matthew Purss</td>
+<td valign="middle" align="left">Clause 4</td>
+<td valign="middle" align="left">initial terms inserted from original POI draft standard (and reformatted to meet formal definition requirements)</td>
+</tr></tbody>
+</table>
+</annex><bibliography><references id="_references" normative="true" obligation="informative">
+<title>Normative references</title><p id="_a437018e-9e23-468b-4c59-ef929f6ca06c">There are no normative references in this document.</p>
+<p id="_8b47c4e0-b14d-0444-f759-44ce3f9ed4a7">The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.</p>
+
+<note id="_631dd80a-9528-66e5-8ec7-b739b8e620e9"><p id="_f5422558-6c27-81f9-6be9-09c060b84558">Insert References here. If there are no references, leave this section empty.</p>
+
+<p id="_7d5f8d79-21e0-9a94-bcdb-b0ab421b6dde">References are to follow the Springer LNCS style, with the exception that optional information may be appended to references: DOIs are added after the date and web resource references may include an access date at the end of the reference in parentheses. See examples from Springer and OGC below.</p>
+</note>
+
+</references><references id="Bibliography" normative="false" obligation="informative">
+<title>Bibliography</title><bibitem id="BCP47">
+  <formattedref format="application/x-isodoc+xml">A. Phillips; M. Davis. Tags for Identifying Languages September 2009. IETF Best Current Practice.</formattedref>
+  <docidentifier>BCP47</docidentifier>
+  <docnumber>47</docnumber>
+</bibitem><bibitem id="IRI">
+  <formattedref format="application/x-isodoc+xml">M. Duerst, M. Suignard. Internationalized Resource Identifiers (IRI). January 2005. Internet RFC 3987.</formattedref>
+  <docidentifier>IRI</docidentifier>
+  
+</bibitem><bibitem id="ISO13249-3">
+  <formattedref format="application/x-isodoc+xml">Information technology — Database languages — SQL multimedia and application packages — Part 3: Spatial. International Organization for Standardization. ISO13249-3:2011. 2011.</formattedref>
+  <docidentifier type="ISO">ISO13249-3</docidentifier>
+  <docnumber>13249-3</docnumber>
+</bibitem><bibitem id="ISO19107">
+  <formattedref format="application/x-isodoc+xml">Geographic information — Spatial schema. International Organization for Standardization. 2003. ISO 19107:2003.</formattedref>
+  <docidentifier type="ISO">ISO19107</docidentifier>
+  <docnumber>19107</docnumber>
+</bibitem><bibitem id="ISO19111">
+  <formattedref format="application/x-isodoc+xml">Geographic information — Spatial referencing by coordinates. International Organization for Standardization. 2007. ISO 19115:2007.</formattedref>
+  <docidentifier type="ISO">ISO19111</docidentifier>
+  <docnumber>19111</docnumber>
+</bibitem><bibitem id="ISO19112">
+  <formattedref format="application/x-isodoc+xml">Geographic information. Spatial referencing by geographic identifiers. International Organization for Standardization. 2003. ISO 19112:2003.</formattedref>
+  <docidentifier type="ISO">ISO19112</docidentifier>
+  <docnumber>19112</docnumber>
+</bibitem><bibitem id="ISO19115">
+  <formattedref format="application/x-isodoc+xml">Geographic information — Metadata. International Organization for Standardization. 2003. ISO 19115:2003.</formattedref>
+  <docidentifier type="ISO">ISO19115</docidentifier>
+  <docnumber>19115</docnumber>
+</bibitem><bibitem id="ISO19133">
+  <formattedref format="application/x-isodoc+xml">Geographic information — Location-based services — Tracking and navigation. International Organization for Standardization. 2005. ISO 19133:2005.</formattedref>
+  <docidentifier type="ISO">ISO19133</docidentifier>
+  <docnumber>19133</docnumber>
+</bibitem><bibitem id="ISO8601">
+  <formattedref format="application/x-isodoc+xml">Representation of dates and times. International Organization for Standardization. 2004. ISO 8601:2004.</formattedref>
+  <docidentifier type="ISO">ISO8601</docidentifier>
+  <docnumber>8601</docnumber>
+</bibitem><bibitem id="NIMA-TR8350-2">
+  <formattedref format="application/x-isodoc+xml">US National Imagery and Mapping Agency, “Department of Defense (DoD) World Geodetic System 1984 (WGS 84), Third Edition”, NIMA TR8350.2, January 2000.</formattedref>
+  <docidentifier>NIMA-TR8350-2</docidentifier>
+  <docnumber>8350-2</docnumber>
+</bibitem><bibitem id="RFC2046">
+  <formattedref format="application/x-isodoc+xml">N. Freed; N. Borenstein. Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types. November 1996. Internet RFC 2046.</formattedref>
+  <docidentifier>RFC2046</docidentifier>
+  <docnumber>2046</docnumber>
+</bibitem><bibitem id="RFC2119">
+  <formattedref format="application/x-isodoc+xml">S. Bradner. Key words for use in RFCs to Indicate Requirement Levels. March 1997. Internet RFC 2119.</formattedref>
+  <docidentifier>RFC2119</docidentifier>
+  <docnumber>2119</docnumber>
+</bibitem><bibitem id="RFC3986">
+  <formattedref format="application/x-isodoc+xml">T. Berners-Lee; R. Fielding; L. Masinter. Uniform Resource Identifier (URI): Generic Syntax. January 2005. Internet RFC 3986.</formattedref>
+  <docidentifier>RFC3986</docidentifier>
+  <docnumber>3986</docnumber>
+</bibitem><bibitem id="RFC4087">
+  <formattedref format="application/x-isodoc+xml">M. Nottingham, R. Sayre. The Atom Syndication Format.. IETF RFC 4087 December 2005.</formattedref>
+  <docidentifier>RFC4087</docidentifier>
+  <docnumber>4087</docnumber>
+</bibitem><bibitem id="RFC5545">
+  <formattedref format="application/x-isodoc+xml">B. Desruisseaux. Internet Calendaring and Scheduling Core Object Specification (iCalendar). September 2009. Internet RFC 5545.</formattedref>
+  <docidentifier>RFC5545</docidentifier>
+  <docnumber>5545</docnumber>
+</bibitem><bibitem id="RFC6350">
+  <formattedref format="application/x-isodoc+xml">S. Perreault. vCard Format Specification. IETF RFC 6350 August 2011.</formattedref>
+  <docidentifier>RFC6350</docidentifier>
+  <docnumber>6350</docnumber>
+</bibitem><bibitem id="RFC3066">
+  <formattedref format="application/x-isodoc+xml">H. Alvestrand. Tags for the Identification of Languages. IETF RFC 3066 January 2001.</formattedref>
+  <docidentifier>RFC3066</docidentifier>
+  <docnumber>3066</docnumber>
+</bibitem><bibitem id="XML11">
+  <formattedref format="application/x-isodoc+xml">Eve Maler; et al. Extensible Markup Language (XML) 1.1 (Second Edition). 16 August 2006. W3C Recommendation.</formattedref>
+  <docidentifier>XML11</docidentifier>
+  <docnumber>11</docnumber>
+</bibitem><bibitem id="XMLBASE">
+  <formattedref format="application/x-isodoc+xml">Jonathan Marsh, Richard Tobin. XML Base (Second Edition). 28 January 2009. W3C Recommendation.</formattedref>
+  <docidentifier>XMLBASE</docidentifier>
+  
+</bibitem><bibitem id="XMLSCHEMA11-2">
+  <formattedref format="application/x-isodoc+xml">Henry S. Thompson; et al. W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes. 30 January 2009. W3C Working Draft. (Work in progress.)</formattedref>
+  <docidentifier>XMLSCHEMA11-2</docidentifier>
+  <docnumber>11-2</docnumber>
+</bibitem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</references></bibliography>
+</ogc-standard>

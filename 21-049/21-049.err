@@ -1,0 +1,206 @@
+21-049/21-049.err errors
+
+
+== Document Attributes
+
+(): 'book' is not a legal document type: reverting to 'standard'
+(): '' is not a permitted subtype of Standard: reverting to 'implementation'
+(): Version required for standard
+
+
+== AsciiDoc Input
+
+(ID _references): Section not marked up as [bibliography]!
+	#<Asciidoctor::Section@504420 {level: 1, title: "References", blocks: 3}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="Smith81"/>],
+<em>Identification of Common Molecular Subsequences</em>.
+Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195–197 (1981)
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="May06"/>],
+<em>ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services</em>.
+May, P., Ehrlich, H.C., Steinke, T. In: Nagel, W.E., Walter,
+W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148–1158. Springer,
+Heidelberg (2006)
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="Grid"/>], <em>The Grid: Blueprint for a New Computing Infrastructure.</em>,
+Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="Czajkowski01"/>],
+<em>Grid Information Services for Distributed Resource Sharing.</em>
+Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
+Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="Foster02"/>],
+<em>The Physiology of the Grid: an Open Grid Services Architecture for Distributed Systems Integration.</em>
+Foster, I., Kesselman, C., Nick, J., Tuecke, S. Technical report, Global Grid Forum (2002)
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="NCBI"/>], <em>National Center for Biotechnology Information</em>, <link target="http://www.ncbi.nlm.nih.gov"/>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="ISO19101-1"/>], Geographic information&#8201;&#8212;&#8201;Reference model&#8201;&#8212;&#8201;Part 1: Fundamentals
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="ISO19115-1"/>], <em>Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;Part 1: Fundamentals</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="ISO19157"/>], <em>Geographic information&#8201;&#8212;&#8201;Data quality</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="ISO19139"/>], <em>Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;XML schema implementation</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="ISO19115-3"/>], <em>Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;Part 3: XML schemas</em> (2016)
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="OGC15-097"/>], <em>OGC Geospatial User Feedback Standard: Conceptual Model</em> (2016)
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="OGC12-019"/>], <em>OGC City Geography Markup Language (CityGML) Encoding Standard</em> (2012)
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="OGC14-005r3"/>], <em>OGC IndoorGML</em> (2014)
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+(Section: References): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="OGC06121r9"/>], <em>OGC Web Service Common Implementation Specification</em>, April 7, 2010. <link target="http://portal.opengeospatial.org/files/?artifact_id=38867"/>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+
+
+== Crossreferences
+
+(XML Line 000408): 19134:2007 does not have a corresponding anchor ID in the bibliography!
+	<origin bibitemid="19134:2007" type="inline" citeas=""/>
+
+
+== Anchors
+
+(XML Line 000434): Crossreference target poi-definition is undefined
+	<xref target="poi-definition">POI</xref>
+(XML Line 000434): Crossreference target pois-definition is undefined
+	<xref target="pois-definition">POIS</xref>
+(XML Line 000434): Crossreference target poiproperties-definition is undefined
+	<xref target="poiproperties-definition">POIProperties</xref>
+(XML Line 000434): Crossreference target location-definition is undefined
+	<xref target="location-definition">Location</xref>
+(XML Line 000434): Crossreference target position-definition is undefined
+	<xref target="position-definition">Position</xref>
+(XML Line 000523): Crossreference target feature_model is undefined
+	<xref target="feature_model">Figure 1</xref>
+
+
+== Style
+
+(): Abstract is missing!
+(): Keywords are missing!
+(): Submitting Organizations is missing!
+(): Submitters is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000013): Table should have title
+	<table id="_fd897406-07ef-2d6e-edf0-d977b64f2f10"><tbody><tr><td valign="middle" align="right"/></tr><tr><td valign="middle" align="right"><strong>Open Geospatial Consortium</strong></td>
+	</tr><tr><td valign="middle" align="right">Submission Date: &lt;yyyy-mm-dd&gt;</td>
+	</tr><tr><td valign="middle" align="right">Approval Date:   &lt;yyyy-mm-dd&gt;</td>
+	</tr><tr><td valign="middle" align="right">Publication Date:   &lt;2022-05-11&gt;</td>
+	</tr><tr><td valign="middle" align="right">External identifier of this OGC® document: <link target="http://www.opengis.net/doc/IS/poi/1.0"/></td>
+(XML Line 000025): Table should have title
+	<table id="_eb472f4c-08b9-7944-ae7a-f7f7c127daa6"><tbody><tr><td valign="middle" align="center"><strong>OGC Points of Interest</strong></td>
+	</tr></tbody>
+	</table>
+(XML Line 000029): Table should have title
+	<table id="_fc5508e7-16f1-27a3-660c-a2e19f4726a7"><tbody><tr><td valign="middle" align="center"><strong>Copyright notice</strong></td>
+	</tr><tr><td valign="middle" align="center">Copyright © 2021 Open Geospatial Consortium</td>
+	</tr><tr><td valign="middle" align="center">To obtain additional rights of use, visit <link target="http://www.ogc.org/legal/"/></td>
+	</tr></tbody>
+	</table>
+(XML Line 000035): Table should have title
+	<table id="_75840b8e-3399-c094-647e-d6ea1d12f883"><tbody><tr><td valign="middle" align="center"><strong>Warning</strong></td>
+	</tr></tbody>
+	</table>
+(XML Line 000043): Table should have title
+	<table id="_9596f302-e9cc-3ffa-a6c7-0f0f2f0ec02e" width="50%"><tbody><tr><td valign="middle" align="left">Document type:   OGC® Standard</td>
+	</tr><tr><td valign="middle" align="left">Document subtype:   </td>
+	</tr><tr><td valign="middle" align="left">Document stage:   	Draft</td>
+	</tr><tr><td valign="middle" align="left">Document language: 	English</td>
+	</tr></tbody>
+(XML Line 000101): Table should have title
+	<table id="_d011a954-fc47-a408-984d-5ebaedbcee92"><tbody><tr><td valign="middle" align="left"><strong>Name</strong></td>
+	<td valign="middle" align="left"><strong>Affiliation</strong></td>
+	</tr><tr><td valign="middle" align="left"/><td valign="middle" align="left"/></tr></tbody>
+	</table>
+(XML Line 000411): Hanging paragraph in clause
+	<clause id="_conventions" obligation="normative">
+	<title>Conventions</title>
+	<p id="_f287e0a4-ca0e-ef98-6e01-5d09472b62aa">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+	
+	<clause id="_identifiers" obligation="normative">
+(XML Line 000437): Figure should have title
+	<figure id="_ca4ac73b-f6fc-5816-ad83-38a2fa27eda1">
+	  <image src="./figures/core.png" id="_4036bc2d-0f3f-f84a-53ff-2bf950914706" mimetype="image/png" height="auto" width="auto"/>
+	</figure>
+(XML Line 000587): Hanging paragraph in clause
+	<annex id="_conformance_class_abstract_test_suite_normative" obligation="informative">
+	<title>Conformance Class Abstract Test Suite (Normative)</title>
+	<note id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"><p id="_2f41c6a6-7963-8015-59ca-d74fafa8ae41">Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
+	</note>
+	
+(XML Line 000620): Table should have title
+	<table id="_6699be8d-a663-b6c2-cfeb-e8fc2152d9b1" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
+	<th valign="middle" align="left">Release</th>
+	<th valign="middle" align="left">Editor</th>
+	<th valign="middle" align="left">Primary clauses modified</th>
+	<th valign="middle" align="left">Description</th>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000009:113): element "ext" incomplete; missing required element "editorialgroup"
+(XML Line 000224:104): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000373:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000395:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000403:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000407:15): element "admitted" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
+(XML Line 000417:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000448:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000482:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000485:15): element "admitted" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
+(XML Line 000512:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000519:109): value of attribute "bibitemid" is invalid; must be an XML name without colons
+(XML Line 000519:109): IDREF "19134:2007" without matching ID
+(XML Line 000519:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
