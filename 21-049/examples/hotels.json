@@ -7,7 +7,7 @@
   "properties": {
     "POI": {
       "featureId": "207383",
-      "name": {"type": "string"},
+      "name": "gezellige Parkhotel",
       "description": "In De Pannes art deco wijk ligt het gezellige Parkhotel op slechts 200 m van zee. Je kan heerlijk ontspannen in de 2000 m2 grote tuin. Het hotel biedt 40 rookvrije kamers en een heerlijk ontbijtbuffet met verse ontbijtproducten aan.",
       "__Commnent_1__" : "Identifiers are implementations of MD_Identifier",
       "identifiers": [
@@ -120,7 +120,7 @@
       "metadata": {
         "href": "https://metadata.geopunt.be/zoekdienst/apps/tabsearch/?uuid=c5da8a65-ed16-441b-a856-3d399b8cb5ff"
       },
-      "__Comment_7__" : "Constraints could be based on MD_Consraints if it proves sufficient",  
+      "__Comment_7__" : "Constraints could be based on MD_Constraints if it proves sufficient",  
       "Constraints": [
         {
           "type" : "license",

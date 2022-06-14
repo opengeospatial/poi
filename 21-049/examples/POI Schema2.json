@@ -26,29 +26,130 @@
         }
       }
     },
+    "MD_Identifier": {
+      "type": "object",
+      "required": [
+        "code"  
+      ],
+      "properties": {
+        "authority": {"type": "string"},
+        "code": {"type": "string"},
+        "codeSpace": {"type": "string"},
+        "description": {"type": "string"},
+        "version": {"type": "string"}
+      }
+    },
+    "CI_Date": {
+      "type": "object",
+      "required": [
+        "code"  
+      ],
+      "properties": {
+        "code": {"type": "string"},
+        "dateType": {"type": "string"}
+      }
+    },
+    "MD_Keyword": {
+      "type": "object",
+      "required": [
+        "value"  
+      ],
+      "properties": {
+        "authority": {"type": "string"},
+        "type": {"type": "string"},
+        "thesaurusName": {"type": "string"},
+        "value": {"type": "string"}
+      }
+    },
+    "CI_Telephone": {
+      "type": "object",
+      "required": [
+        "number"  
+      ],
+      "properties": {
+        "number": {"type": "string"},
+        "numberType": {"type": "string"}
+      }
+    },
+    "CI_Address": {
+      "type": "object",
+      "required": [
+      ],
+      "properties": {
+        "administrativeArea": {"type": "string"},
+        "city": {"type": "string"},
+        "country": {"type": "string"},
+        "deliveryPoint": {"type": "string"},
+        "email": {"type": "string"},
+        "postalCode": {"type": "string"}
+      }
+    },
+    "CI_Contact": {
+      "type": "object",
+      "required": [
+      ],
+      "properties": {
+        "address": {
+          "$ref": "#/properties/CI_Address" 
+        },
+        "contactInstructions": {"type": "string"},
+        "contactType": {"type": "string"},
+        "hoursOfService": {"type": "string"},
+        "onlineResource": {"type": "string"},
+        "phone": {
+          "$ref": "#/properties/CI_Telephone" 
+        }
+      } 
+    },
+    "reference": {
+      "type": "object",
+      "required": [
+        "href"
+      ],
+      "properties": {
+        "href": {"type": "string"},
+        "created": {"type": "string"},
+        "updated": {"type": "string"},
+        "term": {"type": "string"},
+        "typedescription": {"type": "string"},
+        "value": {"type": "string"}
+        }
+    },
     "POI": {
       "type": "object",
       "id": "#PointOfInterest",
       "required": [
           "featureId",
-          "identifier",
+          "identifiers",
           "name"
       ],
       "properties": {
         "featureId": {"type": "number"},
-        "identifier": {"type": "string"},
         "name": {"type": "string"},
         "description": {"type": "string"},
-        "creationDate": {"type": "string"},
-        "terminationDate": {"type": "string"},
-        "validFrom": {"type": "string"},
-        "validTo": {"type": "string"},
-        "authors": {"type": "string"},
-        "categories": {"type": "string"},
+        "identifiers": {
+          "$ref": "#/properties/MD_Identifier"        
+        },
+        "dates": {
+           "$ref": "#/properties/CI_Date"        
+        },
+        "labels": {
+           "$ref": "#/properties/MD_Identifier"        
+        },
+        "categories": {
+           "$ref": "#/properties/MD_Keyword"        
+        },
+        "contactInfo": {
+           "$ref": "#/properties/CI_Contact" 
+        },
         "metadata": {"type": "string"},
-        "rights": {"type": "string"},
-        "contactInfo": {"type": "string"},
-        "featureOfInterest": {"type": "string"},
+        "constraints": {"type": "string"},
+        "links": {
+           "$ref": "#/properties/reference"  
+        },
+        "featureOfInterest": {
+           "$ref": "#/properties/reference"  
+        },
         "summary": {
           "$ref": "#/properties/DataRecord"
         }
