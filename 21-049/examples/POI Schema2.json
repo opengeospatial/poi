@@ -1,0 +1,472 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://geojson.org/schema/GeoJSON.json",
+  "description": "A draft JSON Schema for OGC POI.",
+  "title": "PointOfInterest",
+  "properties": {
+    "DataRecord": {
+      "type": "object",
+      "id": "#DataRecord",
+      "label": "words",
+      "description": "words",
+      "properties": {
+        "field": {
+          "type": "object",
+          "requried": [
+            "name",
+            "type"
+          ],
+          "properties": {
+            "name": {"type": "string"},
+            "type": {"type": "string"},
+            "definition": {"type": "string"},
+            "label": {"type": "string"},
+            "uom": {"type": "string"}
+          }
+        }
+      }
+    },
+    "POI": {
+      "type": "object",
+      "id": "#PointOfInterest",
+      "required": [
+          "featureId",
+          "identifier",
+          "name"
+      ],
+      "properties": {
+        "featureId": {"type": "number"},
+        "identifier": {"type": "string"},
+        "name": {"type": "string"},
+        "description": {"type": "string"},
+        "creationDate": {"type": "string"},
+        "terminationDate": {"type": "string"},
+        "validFrom": {"type": "string"},
+        "validTo": {"type": "string"},
+        "authors": {"type": "string"},
+        "categories": {"type": "string"},
+        "metadata": {"type": "string"},
+        "rights": {"type": "string"},
+        "contactInfo": {"type": "string"},
+        "featureOfInterest": {"type": "string"},
+        "summary": {
+          "$ref": "#/properties/DataRecord"
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "title": "GeoJSON Point",
+      "type": "object",
+      "required": [
+        "type",
+        "coordinates"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Point"
+          ]
+        },
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "bbox": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    {
+      "title": "GeoJSON LineString",
+      "type": "object",
+      "required": [
+        "type",
+        "coordinates"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "LineString"
+          ]
+        },
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "bbox": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    {
+      "title": "GeoJSON Polygon",
+      "type": "object",
+      "required": [
+        "type",
+        "coordinates"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Polygon"
+          ]
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 4,
+            "items": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "bbox": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+     {
+      "title": "GeoJSON Feature",
+      "type": "object",
+      "required": [
+        "type",
+        "properties",
+        "geometry"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Feature"
+          ]
+        },
+        "id": {
+          "oneOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "properties": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/properties/POI"
+            }
+          ]
+        },
+        "geometry": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "title": "GeoJSON Point",
+              "type": "object",
+              "required": [
+                "type",
+                "coordinates"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Point"
+                  ]
+                },
+                "coordinates": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "bbox": {
+                  "type": "array",
+                  "minItems": 4,
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            {
+              "title": "GeoJSON LineString",
+              "type": "object",
+              "required": [
+                "type",
+                "coordinates"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "LineString"
+                  ]
+                },
+                "coordinates": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": {
+                    "type": "array",
+                    "minItems": 2,
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "bbox": {
+                  "type": "array",
+                  "minItems": 4,
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            {
+              "title": "GeoJSON Polygon",
+              "type": "object",
+              "required": [
+                "type",
+                "coordinates"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Polygon"
+                  ]
+                },
+                "coordinates": {
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "minItems": 4,
+                    "items": {
+                      "type": "array",
+                      "minItems": 2,
+                      "items": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                },
+                "bbox": {
+                  "type": "array",
+                  "minItems": 4,
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "GeoJSON FeatureCollection",
+      "type": "object",
+      "required": [
+        "type",
+        "features"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "FeatureCollection"
+          ]
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "title": "GeoJSON Feature",
+            "type": "object",
+            "required": [
+              "type",
+              "properties",
+              "geometry"
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "Feature"
+                ]
+              },
+              "id": {
+                "oneOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "properties": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "$ref": "#/properties/POI"
+                  }
+                ]
+              },
+              "geometry": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "title": "GeoJSON Point",
+                    "type": "object",
+                    "required": [
+                      "type",
+                      "coordinates"
+                    ],
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "Point"
+                        ]
+                      },
+                      "coordinates": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": {
+                          "type": "number"
+                        }
+                      },
+                      "bbox": {
+                        "type": "array",
+                        "minItems": 4,
+                        "items": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "title": "GeoJSON LineString",
+                    "type": "object",
+                    "required": [
+                      "type",
+                      "coordinates"
+                    ],
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "LineString"
+                        ]
+                      },
+                      "coordinates": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": {
+                          "type": "array",
+                          "minItems": 2,
+                          "items": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "bbox": {
+                        "type": "array",
+                        "minItems": 4,
+                        "items": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "title": "GeoJSON Polygon",
+                    "type": "object",
+                    "required": [
+                      "type",
+                      "coordinates"
+                    ],
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "Polygon"
+                        ]
+                      },
+                      "coordinates": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "minItems": 4,
+                          "items": {
+                            "type": "array",
+                            "minItems": 2,
+                            "items": {
+                              "type": "number"
+                            }
+                          }
+                        }
+                      },
+                      "bbox": {
+                        "type": "array",
+                        "minItems": 4,
+                        "items": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
+               
+               
