@@ -7,8 +7,8 @@
     "DataRecord": {
       "type": "object",
       "id": "#DataRecord",
-      "label": "words",
-      "description": "words",
+      "label": {"type": "string"},
+      "description": {"type": "string"},
       "properties": {
         "field": {
           "type": "object",
@@ -25,6 +25,28 @@
           }
         }
       }
+    },
+    "DateTime": {
+      "type": "string"  
+    },
+    "ScopedName": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "scope": {"type": "string"},
+        "name": {"type": "string"}
+      }  
+    },
+    "GenericName": {
+      "type": "object",  
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {"type": "string"}
+      }  
     },
     "MD_Identifier": {
       "type": "object",
@@ -119,14 +141,29 @@
       "type": "object",
       "id": "#PointOfInterest",
       "required": [
-          "featureId",
-          "identifiers",
-          "name"
+          "featureId"
       ],
       "properties": {
         "featureId": {"type": "number"},
-        "name": {"type": "string"},
         "description": {"type": "string"},
+        "name": {
+          "$ref": "#/properties/GenericName"        
+        },
+        "identifier": {
+          "$ref": "#/properties/ScopedName"        
+        },
+        "creationDate": {
+           "$ref": "#/properties/DateTime"        
+        },
+        "terminationDate": {
+           "$ref": "#/properties/DateTime"        
+        },
+        "validFrom" : {
+           "$ref": "#/properties/DateTime"        
+        },
+        "validTo": {
+           "$ref": "#/properties/DateTime"        
+        },
         "identifiers": {
           "$ref": "#/properties/MD_Identifier"        
         },
