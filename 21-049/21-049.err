@@ -134,10 +134,10 @@ https://www.metanorma.com/author/iso/topics/markup/#bibliographies
 == Metanorma XML Style Warning
 
 (XML Line 000013): Table should have title
-	<table id="_fd897406-07ef-2d6e-edf0-d977b64f2f10"><tbody><tr><td valign="middle" align="right"/></tr><tr><td valign="middle" align="right"><strong>Open Geospatial Consortium</strong></td>
+	<table id="_daf7b4b8-17c5-db58-abd5-c708fe8246bc"><tbody><tr><td valign="middle" align="right"/></tr><tr><td valign="middle" align="right"><strong>Open Geospatial Consortium</strong></td>
 	</tr><tr><td valign="middle" align="right">Submission Date: &lt;yyyy-mm-dd&gt;</td>
 	</tr><tr><td valign="middle" align="right">Approval Date:   &lt;yyyy-mm-dd&gt;</td>
-	</tr><tr><td valign="middle" align="right">Publication Date:   &lt;2022-05-11&gt;</td>
+	</tr><tr><td valign="middle" align="right">Publication Date:   &lt;2022-07-13&gt;</td>
 	</tr><tr><td valign="middle" align="right">External identifier of this OGC® document: <link target="http://www.opengis.net/doc/IS/poi/1.0"/></td>
 (XML Line 000025): Table should have title
 	<table id="_eb472f4c-08b9-7944-ae7a-f7f7c127daa6"><tbody><tr><td valign="middle" align="center"><strong>OGC Points of Interest</strong></td>

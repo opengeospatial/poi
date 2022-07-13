@@ -4,26 +4,25 @@
   "description": "A draft JSON Schema for OGC POI.",
   "title": "PointOfInterest",
   "properties": {
-    "DataRecord": {
+    "POIProperty": {
       "type": "object",
-      "id": "#DataRecord",
-      "label": {"type": "string"},
-      "description": {"type": "string"},
+      "id": "#POIProperty",
+      "required": [
+        "cardinality",
+        "valueDomain",
+        "valueType",
+        "definition"
+      ],
       "properties": {
-        "field": {
-          "type": "object",
-          "requried": [
-            "name",
-            "type"
-          ],
-          "properties": {
-            "name": {"type": "string"},
-            "type": {"type": "string"},
-            "definition": {"type": "string"},
-            "label": {"type": "string"},
-            "uom": {"type": "string"}
-          }
-        }
+        "cardinality": {"type": "string"},
+        "valueDomain": {"type": "string"},
+        "valueType": {"type": "string"},
+        "constrainedBy": {"type": "string"},
+        "definition": {"type": "string"},
+        "description": {"type": "string"},
+        "designation": {"type": "string"},
+        "name": {"type": "string"},
+        "value": {"type": "object"}
       }
     },
     "DateTime": {
@@ -83,6 +82,61 @@
         "value": {"type": "string"}
       }
     },
+    "MD_Constraints": {
+      "type": "object",
+      "required": [
+       ],
+      "properties": {
+        "constraintApplicationScope": {"type": "string"},
+        "graphic": {
+          "$ref": "#/properties/reference" 
+        },
+        "reference": {          
+          "$ref": "#/properties/CI_Citation" 
+        },
+        "releasability": {          
+          "$ref": "#/properties/MD_Releasability" 
+        },
+        "responsibleParty": {          
+          "$ref": "#/properties/CI_Responsibility" 
+        },
+        "useLimitation": {"type": "string"},
+        "MD_SecurityConstraints": {
+          "type": "object",
+          "required": [
+            "classification"      
+          ],
+          "properties": {
+            "classification": {"type": "string"},
+            "classificationSystem": {"type": "string"},
+            "handlingDescription": {"type": "string"},
+            "userNote": {"type": "string"}
+          }
+         },
+        "MD_LegalConstraints": {
+          "type": "object",
+          "required": [
+          ],
+          "properties": {
+            "accessConstraints": {"type": "string"},
+            "otherConstraints": {"type": "string"},
+            "useConstraints": {"type": "string"}
+          }            
+        }
+      }
+    },
+    "MD_Releasability": {
+      "type": "object",
+      "required": [
+      ],
+      "properties": {
+        "addressee": {
+          "$ref": "#/properties/CI_Responsibility"
+        },
+        "disseminationConstraints": {"type": "string"},
+        "statement": {"type": "string"} 
+      }  
+    },
     "CI_Telephone": {
       "type": "object",
       "required": [
@@ -106,6 +160,20 @@
         "postalCode": {"type": "string"}
       }
     },
+    "CI_OnlineResource": {
+      "type": "object",
+      "required": [
+      ],
+      "properties": {
+        "applicationProfile": {"type": "string"},
+        "description": {"type": "string"},
+        "function": {"type": "string"},
+        "linkage": {"type": "string"},
+        "name": {"type": "string"},
+        "protocol": {"type": "string"},
+        "protocolRequest": {"type": "string"}
+        }
+    },
     "CI_Contact": {
       "type": "object",
       "required": [
@@ -122,6 +190,65 @@
           "$ref": "#/properties/CI_Telephone" 
         }
       } 
+    },
+    "CI_Responsibility": {
+      "type": "object",
+      "required": [
+        "role"
+      ],
+      "properties": {
+        "role": {"type": "string"},
+        "name": {"type": "string"},
+        "positionName": {"type": "string"},
+        "contactInfo": {
+          "$ref": "#/properties/CI_Contact" 
+        }
+      }        
+    },
+    "CI_Citation": {
+      "type": "object",
+      "required": [
+      ],
+      "properties": {
+        "title": {"type": "string"},
+        "alternateTitle": {"type": "string"},
+        "citedResponsibleParty": {
+          "$ref": "#/properties/CI_Responsibility"
+        },
+        "date": {
+          "$ref": "#/properties/DateTime"
+        },
+        "edition": {"type": "string"},
+        "editionDate": {
+          "$ref": "#/properties/DateTime"
+        },
+        "graphic": {
+          "$ref": "#/properties/reference"
+        },
+        "identifier": {
+          "$ref": "#/properties/MD_Identifier"
+        },
+        "ISMN": {"type": "string"},
+        "ISSN": {"type": "string"},
+        "onlineResource": {
+          "$ref": "#/properties/CI_OnlineResource"
+        },
+        "otherCitationDetails": {"type": "string"},
+        "presentationForm": {"type": "string"},
+        "series": {
+          "$ref": "#/properties/CI_Series"
+        }
+      } 
+    },
+    "CI_Series": {
+      "type": "object",
+      "required": [
+      ],
+      "properties": {
+        "issueIdentification": {"type": "string"},
+        "name": {"type": "string"},
+        "page": {"type": "string"}
+        }
     },
     "reference": {
       "type": "object",
@@ -144,7 +271,7 @@
           "featureId"
       ],
       "properties": {
-        "featureId": {"type": "number"},
+        "featureID": {"type": "number"},
         "description": {"type": "string"},
         "name": {
           "$ref": "#/properties/GenericName"        
@@ -164,31 +291,26 @@
         "validTo": {
            "$ref": "#/properties/DateTime"        
         },
-        "identifiers": {
-          "$ref": "#/properties/MD_Identifier"        
+        "contactInfo": {
+           "$ref": "#/properties/CI_Responsibility" 
         },
-        "dates": {
-           "$ref": "#/properties/CI_Date"        
+        "hasFeatureOfInterest": {
+           "$ref": "#/properties/reference"  
         },
-        "labels": {
-           "$ref": "#/properties/MD_Identifier"        
+        "hasMetadata": {
+           "$ref": "#/properties/reference"  
         },
-        "categories": {
+        "hasProperty": {
+           "$ref": "#/properties/POIProperty"  
+        },
+        "keywordss": {
            "$ref": "#/properties/MD_Keyword"        
         },
-        "contactInfo": {
-           "$ref": "#/properties/CI_Contact" 
+        "constraints": {
+           "$ref": "#/properties/MD_Constraints"                    
         },
-        "metadata": {"type": "string"},
-        "constraints": {"type": "string"},
-        "links": {
+        "symbology": {
            "$ref": "#/properties/reference"  
-        },
-        "featureOfInterest": {
-           "$ref": "#/properties/reference"  
-        },
-        "summary": {
-          "$ref": "#/properties/DataRecord"
         }
       }
     }

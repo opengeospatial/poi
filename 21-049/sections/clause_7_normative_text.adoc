@@ -6,7 +6,7 @@ The OGC Feature Model is defined in ISO 19109:2015 Geographic Information - Rule
 
 [feature_model,reftext='Feature Model']
 .Feature Model
-image::../images/Features.png[align="center"]
+image::./images/Features.png[align="center"]
 
 The most relevant classes defined by this model are described below:
 
@@ -24,7 +24,7 @@ In this Standard we extend the General Feature Model to support the concept of a
 
 [poi_uml_model,reftext='POI UML Model']
 .POI UML Model
-image::../images/POI-2.png[align="center"]
+image::./images/POI-2.png[align="center"]
 
 *AbstractFeature:* The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model.
 
@@ -50,7 +50,7 @@ The OGC Geometry model is defined in ISO 19107:2003 - Geographic Information - S
 
 [geometry_model,reftext='Geometry Model']
 .Geometry Model
-image::../images/Geometry.png[align="center"]
+image::./images/Geometry.png[align="center"]
 
 *GM_Object:* Root class for all OGC geometries.
 
