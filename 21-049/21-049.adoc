@@ -17,7 +17,7 @@
 |[big]*Open Geospatial Consortium*
 |Submission Date: <yyyy-mm-dd>
 |Approval Date:   <yyyy-mm-dd>
-|Publication Date:   <2022-07-13>
+|Publication Date:   <2022-07-24>
 |External identifier of this OGC(R) document: http://www.opengis.net/doc/IS/poi/1.0
 |Internal reference number of this OGC(R) document:    21-049
 |Version: 0.1
@@ -89,8 +89,6 @@ include::sections/clause_3_references.adoc[]
 include::sections/clause_4_terms_and_definitions.adoc[]
 
 include::sections/clause_5_conventions.adoc[]
-
-include::sections/clause_6_informative_text.adoc[]
 
 include::sections/clause_7_normative_text.adoc[]
 

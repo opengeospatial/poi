@@ -1,17 +1,36 @@
 [[conformance-section]]
 == Conformance
-This standard defines XXXX.
 
-Requirements for N standardization target types are considered:
+NOTE: this text was lifted from CityGML. It needs to be modified to address POI
 
-* AAAA
-* BBBB
+This standard defines a Conceptual Model which is independent of any encoding or formatting techniques. The Standardization Targets for this standard are:
 
-Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.
+. Conceptual Models (extended versions of this conceptual model)
+. Implementation Specifications (encodings of this conceptual model)
 
-In order to conform to this OGC® interface standard, a software implementation shall choose to implement:
+=== Conceptual Models
 
-* Any one of the conformance levels specified in Annex A (normative).
-* Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).
+A Conceptual Model standardization target is a version of the POI Conceptual Model (CM) tailored for a specific user community. This tailoring can include:
 
-All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.
+. Omission of one or more of the optional UML packages
+. Reduction of the multiplicity for an attribute or association
+. Restriction on the valid values for an attribute
+. Additional concepts documented through ADEs.
+
+Of these options, actions #1, #2, and #3 can be performed when creating an implementation specification. Only action #4 requires an extension of the POI conceptual model. These extensions are accomplished using the ADE mechanism described in Section 10 Application Domain Extensions (ADE).
+
+Extensions of the CityGML Conceptual Model conform with the ADE Conformance Class.
+
+=== Implementation Specifications
+
+Implementation Specifications define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Specifications provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in Annex A (normative) of this document. 
+
+Since this standard is agnostic to the implementing technologies, the specific techniques to be used for conformance testing cannot be specified. Implementation Specifications need to provide evidence of conformance which is appropriate for the implementing technologies. This evidence should be provided as an annex to the Implementation Specification document.
+
+=== Conformance Classes
+
+This standard identifies seventeen (17) conformance classes. One conformance class is defined for each package in the UML model. Each conformance class is defined by one requirements class. The tests in Annex A are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in Annex A for the Core requirements class.
+
+Of these seventeen conformance classes, only the Core conformance class is mandatory. All other conformance classes are optional. In the case where a conformance class has a dependency on another conformance class, that conformance class should also be implemented.
+
+The CityGML Conceptual Model is defined by the CityGML UML model. This standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.

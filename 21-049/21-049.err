@@ -11,116 +11,119 @@
 == AsciiDoc Input
 
 (ID _references): Section not marked up as [bibliography]!
-	#<Asciidoctor::Section@504420 {level: 1, title: "References", blocks: 3}>
+	#<Asciidoctor::Section@504420 {level: 1, title: "References", blocks: 2}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="Smith81"/>],
-<em>Identification of Common Molecular Subsequences</em>.
-Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195–197 (1981)
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="rfc2045-6"/> <em>IETF: RFC 2045 &amp; 2046</em>, Multipurpose Internet Mail Extensions (MIME). (November 1996),
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="May06"/>],
-<em>ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services</em>.
-May, P., Ehrlich, H.C., Steinke, T. In: Nagel, W.E., Walter,
-W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148–1158. Springer,
-Heidelberg (2006)
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="rfc3986"/> <em>IETF: RFC 3986, Uniform Resource Identifier (URI): Generic Syntax</em>. (January 2005)
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="Grid"/>], <em>The Grid: Blueprint for a New Computing Infrastructure.</em>,
-Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="iso19103"/> <em>ISO: ISO 19103:2015, Geographic Information &#8211; Conceptual Schema Language</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="Czajkowski01"/>],
-<em>Grid Information Services for Distributed Resource Sharing.</em>
-Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
-Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="iso19107"/> <em>ISO: ISO 19107:2003, Geographic Information &#8211; Spatial Schema</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="Foster02"/>],
-<em>The Physiology of the Grid: an Open Grid Services Architecture for Distributed Systems Integration.</em>
-Foster, I., Kesselman, C., Nick, J., Tuecke, S. Technical report, Global Grid Forum (2002)
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="iso19108"/> <em>ISO: ISO 19108:2002/Cor 1:2006, Geographic information &#8211; Temporal schema &#8212; Technical Corrigendum 1</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="NCBI"/>], <em>National Center for Biotechnology Information</em>, <link target="http://www.ncbi.nlm.nih.gov"/>
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="iso19109"/> <em>ISO: ISO 19109:2015, Geographic Information &#8211; Rules for Application Schemas</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="ISO19101-1"/>], Geographic information&#8201;&#8212;&#8201;Reference model&#8201;&#8212;&#8201;Part 1: Fundamentals
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="iso19111"/> <em>ISO: ISO 19111:2019, Geographic information &#8211; Referencing by coordinates</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="ISO19115-1"/>], <em>Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;Part 1: Fundamentals</em>
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="iso19505"/> <em>ISO: ISO/IEC 19505-2:2012, Information technology &#8212; Object Management Group Unified Modeling Language (OMG UML) &#8212; Part 2: Superstructure</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="ISO19157"/>], <em>Geographic information&#8201;&#8212;&#8201;Data quality</em>
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="iso19507"/> <em>ISO/IEC 19507:2012, Information technology &#8212; Object Management Group Object Constraint Language (OCL)</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="ISO19139"/>], <em>Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;XML schema implementation</em>
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="ogc18-126"/> <em>OGC: The OpenGIS&#174; Abstract Specification Topic 5: Features, OGC document 08-126</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="ISO19115-3"/>], <em>Geographic information&#8201;&#8212;&#8201;Metadata&#8201;&#8212;&#8201;Part 3: XML schemas</em> (2016)
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="ogc99-108"/> <em>OGC: The OpenGIS&#8482; Abstract Specification Topic 8: Relationships Between Features, OGC document 99-108r2</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
 (Section: References): no anchor on reference, markup may be malformed: see
 https://www.metanorma.com/author/topics/document-format/bibliography/ ,
 https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="OGC15-097"/>], <em>OGC Geospatial User Feedback Standard: Conceptual Model</em> (2016)
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
-(Section: References): no anchor on reference, markup may be malformed: see
-https://www.metanorma.com/author/topics/document-format/bibliography/ ,
-https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="OGC12-019"/>], <em>OGC City Geography Markup Language (CityGML) Encoding Standard</em> (2012)
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
-(Section: References): no anchor on reference, markup may be malformed: see
-https://www.metanorma.com/author/topics/document-format/bibliography/ ,
-https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="OGC14-005r3"/>], <em>OGC IndoorGML</em> (2014)
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
-(Section: References): no anchor on reference, markup may be malformed: see
-https://www.metanorma.com/author/topics/document-format/bibliography/ ,
-https://www.metanorma.com/author/iso/topics/markup/#bibliographies
-: [<bookmark id="OGC06121r9"/>], <em>OGC Web Service Common Implementation Specification</em>, April 7, 2010. <link target="http://portal.opengeospatial.org/files/?artifact_id=38867"/>
-	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 15}>
+: <bookmark id="ogc99-110"/> <em>OGC: The OpenGIS&#8482; Abstract Specification Topic 10: Feature Collections, OGC document 99-110</em>
+	#<Asciidoctor::List@504440 {context: :ulist, style: nil, items: 12}>
+(Section: Terms and Definitions): term reference not in expected format:OGC Definitions Register at <link target="http://www.opengis.net/def/glossary/term/ApplicationSchema"/>
+	#<Asciidoctor::Block@504460 {context: :paragraph, content_model: :simple, style: nil, lines: 1}>
 
 
 == Crossreferences
 
-(XML Line 000408): 19134:2007 does not have a corresponding anchor ID in the bibliography!
-	<origin bibitemid="19134:2007" type="inline" citeas=""/>
+(XML Line 000355): ISO1901:2014 does not have a corresponding anchor ID in the bibliography!
+	<origin bibitemid="ISO1901:2014" type="inline" citeas=""/>
+(XML Line 000375): mdaguide does not have a corresponding anchor ID in the bibliography!
+	<origin bibitemid="mdaguide" type="inline" citeas=""/>
+(XML Line 000381): mdaguide does not have a corresponding anchor ID in the bibliography!
+	<origin bibitemid="mdaguide" type="inline" citeas=""/>
+(XML Line 000387): mdaguide does not have a corresponding anchor ID in the bibliography!
+	<origin bibitemid="mdaguide" type="inline" citeas=""/>
 
 
 == Anchors
 
-(XML Line 000434): Crossreference target poi-definition is undefined
-	<xref target="poi-definition">POI</xref>
-(XML Line 000434): Crossreference target pois-definition is undefined
-	<xref target="pois-definition">POIS</xref>
-(XML Line 000434): Crossreference target poiproperties-definition is undefined
-	<xref target="poiproperties-definition">POIProperties</xref>
-(XML Line 000434): Crossreference target location-definition is undefined
-	<xref target="location-definition">Location</xref>
-(XML Line 000434): Crossreference target position-definition is undefined
-	<xref target="position-definition">Position</xref>
-(XML Line 000523): Crossreference target feature_model is undefined
+(XML Line 000398): Crossreference target feature_model is undefined
 	<xref target="feature_model">Figure 1</xref>
+(XML Line 000476): Crossreference target CharacterString-section is undefined
+	<xref target="CharacterString-section">CharacterString</xref>
+(XML Line 000479): Crossreference target ID-section is undefined
+	<xref target="ID-section">ID</xref>
+(XML Line 000482): Crossreference target ScopedName-section is undefined
+	<xref target="ScopedName-section">ScopedName</xref>
+(XML Line 000485): Crossreference target GenericName-section is undefined
+	<xref target="GenericName-section">GenericName</xref>
+(XML Line 000517): Crossreference target DateTime-section is undefined
+	<xref target="DateTime-section">DateTime</xref>
+(XML Line 000520): Crossreference target DateTime-section is undefined
+	<xref target="DateTime-section">DateTime</xref>
+(XML Line 000523): Crossreference target DateTime-section is undefined
+	<xref target="DateTime-section">DateTime</xref>
+(XML Line 000526): Crossreference target DateTime-section is undefined
+	<xref target="DateTime-section">DateTime</xref>
+(XML Line 000576): Crossreference target CI_Responsibility-section is undefined
+	<xref target="CI_Responsibility-section">CI_Responsibility</xref>
+(XML Line 000578): Crossreference target URI-section is undefined
+	<xref target="URI-section">URI</xref>
+(XML Line 000580): Crossreference target URI-section is undefined
+	<xref target="URI-section">URI</xref>
+(XML Line 000584): Crossreference target MD_Keywords-section is undefined
+	<xref target="MD_Keywords-section">MD_Keywords</xref>
+(XML Line 000586): Crossreference target MD_Constraints-section is undefined
+	<xref target="MD_Constraints-section">MD_Constraints</xref>
+(XML Line 000588): Crossreference target URI-section is undefined
+	<xref target="URI-section">URI</xref>
+(XML Line 000612): Crossreference target FeatureModel-section is undefined
+	<xref target="FeatureModel-section">FeatureModel</xref>
+(XML Line 000648): Crossreference target Any-section is undefined
+	<xref target="Any-section">Any</xref>
 
 
 == Style
@@ -134,10 +137,10 @@ https://www.metanorma.com/author/iso/topics/markup/#bibliographies
 == Metanorma XML Style Warning
 
 (XML Line 000013): Table should have title
-	<table id="_daf7b4b8-17c5-db58-abd5-c708fe8246bc"><tbody><tr><td valign="middle" align="right"/></tr><tr><td valign="middle" align="right"><strong>Open Geospatial Consortium</strong></td>
+	<table id="_351696ae-2602-d7d2-af2f-f4d47f29900c"><tbody><tr><td valign="middle" align="right"/></tr><tr><td valign="middle" align="right"><strong>Open Geospatial Consortium</strong></td>
 	</tr><tr><td valign="middle" align="right">Submission Date: &lt;yyyy-mm-dd&gt;</td>
 	</tr><tr><td valign="middle" align="right">Approval Date:   &lt;yyyy-mm-dd&gt;</td>
-	</tr><tr><td valign="middle" align="right">Publication Date:   &lt;2022-07-13&gt;</td>
+	</tr><tr><td valign="middle" align="right">Publication Date:   &lt;2022-07-24&gt;</td>
 	</tr><tr><td valign="middle" align="right">External identifier of this OGC® document: <link target="http://www.opengis.net/doc/IS/poi/1.0"/></td>
 (XML Line 000025): Table should have title
 	<table id="_eb472f4c-08b9-7944-ae7a-f7f7c127daa6"><tbody><tr><td valign="middle" align="center"><strong>OGC Points of Interest</strong></td>
@@ -164,23 +167,139 @@ https://www.metanorma.com/author/iso/topics/markup/#bibliographies
 	<td valign="middle" align="left"><strong>Affiliation</strong></td>
 	</tr><tr><td valign="middle" align="left"/><td valign="middle" align="left"/></tr></tbody>
 	</table>
-(XML Line 000411): Hanging paragraph in clause
-	<clause id="_conventions" obligation="normative">
-	<title>Conventions</title>
-	<p id="_f287e0a4-ca0e-ef98-6e01-5d09472b62aa">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+(XML Line 000213): Hanging paragraph in clause
+	<clause id="conformance-section" type="conformance" obligation="normative">
+	<title>Conformance</title>
+	<note id="_dd6e02df-bab5-0133-8f18-b54f4cedbac8"><p id="_1935412d-2513-9d12-238b-ea2eb47221bf">this text was lifted from CityGML. It needs to be modified to address POI</p>
+	</note>
 	
-	<clause id="_identifiers" obligation="normative">
-(XML Line 000437): Figure should have title
-	<figure id="_ca4ac73b-f6fc-5816-ad83-38a2fa27eda1">
-	  <image src="./figures/core.png" id="_4036bc2d-0f3f-f84a-53ff-2bf950914706" mimetype="image/png" height="auto" width="auto"/>
-	</figure>
-(XML Line 000587): Hanging paragraph in clause
+(XML Line 000454): Table should have title
+	<table id="AbstractFeature-section"><tbody><tr><td valign="middle" align="left"><p id="_efd03a27-0119-6848-4051-b96014e17e6f"><strong>AbstractFeature</strong></p>
+	</td>
+	</tr><tr><td valign="middle" align="left"><table id="_7d01d6b9-485b-831e-d079-06a12921eb53"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left">AbstractFeature is the abstract superclass of all feature types within the PoI Model.</td>
+	</tr><tr><td valign="middle" align="left">    Subclass of:</td>
+(XML Line 000456): Table should have title
+	<table id="_7d01d6b9-485b-831e-d079-06a12921eb53"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left">AbstractFeature is the abstract superclass of all feature types within the PoI Model.</td>
+	</tr><tr><td valign="middle" align="left">    Subclass of:</td>
+	<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+	</tr><tr><td valign="middle" align="left">    Stereotype:</td>
+(XML Line 000465): Table should have title
+	<table id="_dc4a2e31-63f9-4ca9-4f7b-72a9ff75b503"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	</table>
+(XML Line 000471): Table should have title
+	<table id="_3f6e658f-9594-c730-f9e2-8fd988506254"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"> description «property»</td>
+(XML Line 000495): Table should have title
+	<table id="AbstractFeatureWithLifespan-section"><tbody><tr><td valign="middle" align="left"><p id="_8f3c38f6-88c5-8406-9d87-a69456de795c"><strong>AbstractFeatureWithLifespan</strong></p>
+	</td>
+	</tr><tr><td valign="middle" align="left"><table id="_70b5fbd4-f4ed-4606-1a8c-986f22dde9d5"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left">AbstractFeatureWithLifespan is the base class for all PoI features. This class allows the optional specification of the real-world and database times for the existence of each feature.</td>
+	</tr><tr><td valign="middle" align="left">    Subclass of:</td>
+(XML Line 000497): Table should have title
+	<table id="_70b5fbd4-f4ed-4606-1a8c-986f22dde9d5"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left">AbstractFeatureWithLifespan is the base class for all PoI features. This class allows the optional specification of the real-world and database times for the existence of each feature.</td>
+	</tr><tr><td valign="middle" align="left">    Subclass of:</td>
+	<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+	</tr><tr><td valign="middle" align="left">    Stereotype:</td>
+(XML Line 000506): Table should have title
+	<table id="_eb10468c-cc40-387c-69ff-ed90d11fdbef"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	</table>
+(XML Line 000512): Table should have title
+	<table id="_3b77af06-10d7-02cd-c664-b9b9f834ea57"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"> creationDate «property»</td>
+(XML Line 000536): Table should have title
+	<table id="AbstractPOI-section"><tbody><tr><td valign="middle" align="left"><p id="_5a054b4d-32b2-5fa5-37d9-21817374f71d"><strong>AbstractPOI</strong></p>
+	</td>
+	</tr><tr><td valign="middle" align="left"><table id="_3f61c1d3-8ec4-76e6-77b5-7103dcbdecbe"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left">A POI is defined as having the following conceptual properties:
+	
+(XML Line 000538): Table should have title
+	<table id="_3f61c1d3-8ec4-76e6-77b5-7103dcbdecbe"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left">A POI is defined as having the following conceptual properties:
+	
+	·	    a globally unique ID
+	·	    labels
+(XML Line 000560): Table should have title
+	<table id="_3908beba-64ab-b053-65e4-13f31470aa38"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"> hasProperty</td>
+(XML Line 000571): Table should have title
+	<table id="_2408f0dd-1e35-5e83-d3b6-e341eff2d3ee"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"> contactInfo «property»</td>
+(XML Line 000597): Table should have title
+	<table id="FeatureOfInterest-section"><tbody><tr><td valign="middle" align="left"><p id="_8d0e7269-074b-e39a-6974-ec3228d8b2a3"><strong>FeatureOfInterest</strong></p>
+	</td>
+	</tr><tr><td valign="middle" align="left"><table id="_12b71e71-8793-6dbf-5c49-60106b68c991"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
+	<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+(XML Line 000599): Table should have title
+	<table id="_12b71e71-8793-6dbf-5c49-60106b68c991"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
+	<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+	</tr><tr><td valign="middle" align="left">    Stereotype:</td>
+	<td valign="middle" align="left">«FeatureType»</td>
+(XML Line 000607): Table should have title
+	<table id="_577bcc1a-5662-15f1-dda5-f1fe96f1b2f9"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"> describedBy</td>
+(XML Line 000616): Table should have title
+	<table id="_abacd9a1-db57-11d3-f276-53e0073c5266"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	</table>
+(XML Line 000627): Table should have title
+	<table id="POIProperty-section"><tbody><tr><td valign="middle" align="left"><p id="_30bf5450-b09b-3511-0b65-1be7e63755c5"><strong>POIProperty</strong></p>
+	</td>
+	</tr><tr><td valign="middle" align="left"><table id="_de15a990-b2ab-0ff4-0de0-0c0e7e499e0e"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
+	<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+(XML Line 000629): Table should have title
+	<table id="_de15a990-b2ab-0ff4-0de0-0c0e7e499e0e"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+	<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
+	<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+	</tr><tr><td valign="middle" align="left">    Stereotype:</td>
+	<td valign="middle" align="left">«DataType»</td>
+(XML Line 000637): Table should have title
+	<table id="_a5a4b83c-7b56-41f3-ad18-a3a08b24c1eb"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	</table>
+(XML Line 000643): Table should have title
+	<table id="_eeba0ef3-6c01-e401-3486-ed064c432f18"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+	<th valign="middle" align="left"><strong>Definition</strong></th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"> value «property»</td>
+(XML Line 000664): Hanging paragraph in clause
 	<annex id="_conformance_class_abstract_test_suite_normative" obligation="informative">
 	<title>Conformance Class Abstract Test Suite (Normative)</title>
 	<note id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"><p id="_2f41c6a6-7963-8015-59ca-d74fafa8ae41">Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
 	</note>
 	
-(XML Line 000620): Table should have title
+(XML Line 000697): Table should have title
 	<table id="_6699be8d-a663-b6c2-cfeb-e8fc2152d9b1" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
 	<th valign="middle" align="left">Release</th>
 	<th valign="middle" align="left">Editor</th>
@@ -192,15 +311,38 @@ https://www.metanorma.com/author/iso/topics/markup/#bibliographies
 
 (XML Line 000009:113): element "ext" incomplete; missing required element "editorialgroup"
 (XML Line 000224:104): element "clause" not allowed here; expected the element end-tag or element "submitters"
-(XML Line 000373:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
-(XML Line 000395:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
-(XML Line 000403:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
-(XML Line 000407:15): element "admitted" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
-(XML Line 000417:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
-(XML Line 000448:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
-(XML Line 000482:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
-(XML Line 000485:15): element "admitted" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
-(XML Line 000512:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
-(XML Line 000519:109): value of attribute "bibitemid" is invalid; must be an XML name without colons
-(XML Line 000519:109): IDREF "19134:2007" without matching ID
-(XML Line 000519:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000345:56): element "clause" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
+(XML Line 000364:68): element "clause" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
+(XML Line 000371:58): element "clause" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
+(XML Line 000415:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000423:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000426:15): element "admitted" not allowed here; expected the element end-tag or element "admonition", "bookmark", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "toc" or "ul"
+(XML Line 000453:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000471:111): value of attribute "bibitemid" is invalid; must be an XML name without colons
+(XML Line 000471:111): IDREF "ISO1901:2014" without matching ID
+(XML Line 000471:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000491:107): IDREF "mdaguide" without matching ID
+(XML Line 000491:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000497:107): IDREF "mdaguide" without matching ID
+(XML Line 000497:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000503:107): IDREF "mdaguide" without matching ID
+(XML Line 000503:53): element "termsource" not allowed here; expected the element end-tag or element "admonition", "bookmark", "definitions", "dl", "example", "figure", "form", "formula", "hr", "imagemap", "note", "ol", "p", "pagebreak", "passthrough", "permission", "pre", "quote", "recommendation", "requirement", "review", "sourcecode", "svgmap", "table", "term", "terms", "toc" or "ul"
+(XML Line 000572:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000581:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000585:9): element "table" incomplete; missing required element "tbody"
+(XML Line 000587:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000613:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000622:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000626:9): element "table" incomplete; missing required element "tbody"
+(XML Line 000628:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000654:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000676:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000687:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000715:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000723:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000732:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000736:9): element "table" incomplete; missing required element "tbody"
+(XML Line 000745:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000753:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 000757:9): element "table" incomplete; missing required element "tbody"
+(XML Line 000759:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"

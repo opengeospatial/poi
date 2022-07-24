@@ -5,67 +5,6 @@ This document also uses terms defined in the OGC Standard for Modular specificat
 
 For the purposes of this document, the following additional terms and definitions apply.
 
-////
-[[boundary]]
-boundary::
-
-set that represents the limit of an entity
-
-NOTE: _Boundary_ is most commonly used in the context of geometry, where the set is a collection of points or a collection of objects
-that represent those points. In other domains, the term is used metaphorically to describe the transition between an entity and the rest of its domain of discourse.
-
-[.source]
-<<ISO19107,clause 4.6>>
-////
-
-
-[[coordinate]]
-coordinate::
-sequence of n numbers designating the _position_ of a _point_ in n-dimensional space 
-
-[.source]
-<<ISO19111>>
-#ISO19111,clause xxxx - get definition clause#
-
-[[coordinate_set]]
-coordinate set::
-individual parts of a coordinate
-
-[example]
-coordinate pair of latitude and longitude values.
-
-[[coordinate_reference_system]]
-coordinate reference system::
-_coordinate system_ that is related to an object by a _datum_ (<<datum>>)
-
-NOTE: Geodetic and vertical datums are referred to as reference frames.
-
-NOTE: For geodetic and vertical _datums_ (<<datum>>), the object will be the Earth.
-In planetary applications, geodetic and vertical reference frames may be applied to other celestial bodies.
-
-[.source]
-<<ISO19111,clause 3.1.9>>
-
-[[coordinate_system]]
-coordinate system::
-set of mathematical rules for specifying how _coordinates_ are to be assigned to _points_
-
-[.source]
-<<ISO19111,clause 3.1.11>>
-
-[[datum]]
-datum::
-alt:[reference frame]
-
-parameter or set of parameters that realize the _positions_ of the origin, the scale, and the orientation of a _coordinate system_ (<<coordinate_system>>)
-
-[.source]
-<<ISO19111,clause 3.1.15>>
-
-[[geolocation]]
-geolocation::
-identification of the real world geographic _location_ of an object
-
 [[location]]
 location::
 particular _place_ or _position_
@@ -84,25 +23,6 @@ NOTE: When a _POI_ physically moves it is understood to have acquired a new _loc
 
 [.source]
 <<ISO19112,clause 3.1.3>>
-
-[[place]]
-place::
-semantic description of a _location_
-
-NOTE: A _place_ is a human construct which typically has a coarse level of spatial granularity. 
-
-NOTE: A _place_ is generally a larger scale administrative construct, either informally or formally defined. 
-
-NOTE: A _place_ can be informally or colloquially defined, such as the Home Counties in the United Kingdom and the Bay Area in the United States.
-
-NOTE: _Places_ have spatial relationships; with parents, children, adjacencies and contained by semantics.
-
-NOTE: _Places_ have the same attribute set as _POIs_, although often with differing interpretations based on scale; for example, the address of a _Place_ or its URI might refer to the address of the administrative or governing body of the _place_. 
-
-NOTE: A _place_ typically contains multiple _POIs_ and can also be coterminous with a _POI_. In the former case, a _place_, such as a city or a neighborhood, will contain multiple _POIs_. In the latter case, a _place_ and a _POI_ will occupy the same _position_ and extent, such as in the case of Yellowstone National Park, which is both a _Place_ and a _POI_.
-
-[example]
-Countries, states, counties, districts, neighborhoods and postal codes or telephone area codes are all places. 
 
 [[point]]
 point::
@@ -135,17 +55,56 @@ data type that describes a _point_ or _geometry_ potentially occupied by an obje
 <<ISO19133>>
 #ISO19133,clause xxxx - get definition clause#
 
-[[route]]
-route::
-sequence of _links_ and / or partial _links_ that describe a _path_, usually between two _positions_, within a _network_
-////
-[def from OGC API Routes spec ]
-route
-sequence of connected segments providing directions to travel between specific _waypoints_
+[[application-schema]] application schema::
 
-NOTE: This definition doesn’t use the definition from ISO 19134:2007 because of use of terms such as "links" and "network".
-////
+A set of conceptual schema for data required by one or more applications. An application schema contains selected parts of the base schemas presented in the ORM Information Viewpoint.
+
+Designers of application schemas may extend or restrict the types defined in the base schemas to define appropriate types for an application domain. Application schemas are information models for a specific information community.
+
 [.source]
-<<19134:2007>>
-#19134:2007,clause xxxx - get definition clause#
+OGC Definitions Register at http://www.opengis.net/def/glossary/term/ApplicationSchema
 
+[[codelist]] codelist::
+
+A value domain including a code for each permissible value.
+
+[[conceptual-model]] conceptual model::
+
+model that defines concepts of a universe of discourse
+
+[.source]
+<<ISO1901:2014>>
+#ISO 19101-1:2014,clause 4.1.5 - get definition clause#
+
+[[conceptual-schema]] conceptual schema::
+
+. formal description of a conceptual model [ISO 19101-1:2014, 4.1.6]
+. base schema. Formal description of the model of any geospatial information. Application schemas are built from conceptual schemas.
+
+OGC Definitions Register at http://www.opengis.net/def/glossary/term/ConceptualSchema
+
+Implementation Specification Specified on the OGC Document Types Register at http://www.opengis.net/def/doc-type/is
+
+[[platform]] Platform (Model Driven Architecture)::
+
+the set of resources on which a system is realized.
+
+[.source]
+<<mdaguide>>
+#Object Management Group, Model Driven Architecture Guide rev. 2.0#
+
+[[platform-independent-model]] Platform Independent Model:
+
+a model that is independent of a specific platform
+
+[.source]
+<<mdaguide>>
+#Object Management Group, Model Driven Architecture Guide rev. 2.0#
+
+[[platform-specific-model]] Platform Specific Model:
+
+a model of a system that is defined in terms of a specific platform
+
+[.source]
+<<mdaguide>>
+#Object Management Group, Model Driven Architecture Guide rev. 2.0#

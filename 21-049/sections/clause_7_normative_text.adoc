@@ -1,5 +1,7 @@
 == POI
 
+=== Class Model
+
 A Point of Interest (POI) is a Feature. Therefore, it is important to understand what a POI inherits from the OGC Feature model.
 
 The OGC Feature Model is defined in ISO 19109:2015 Geographic Information - Rules for application schema. A UML model showing applicable portions of the General Feature Model is provided in <<feature_model,Figure 1>>. 
@@ -10,15 +12,13 @@ image::./images/Features.png[align="center"]
 
 The most relevant classes defined by this model are described below:
 
-*FeatureType:* describe
+*FeatureType:* This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema
 
-*AnyFeature:* describe
+*AnyFeature:* The class AnyFeature is an instance of the «metaclass» FeatureType (ISO 19109). It represents the set of all classes which are feature types. 
 
-*PropertyType:* describe
+In an implementation this abstract class shall be substituted by a concrete class representing a feature type from an application schema associated with a domain of discourse (ISO 19109, ISO 19101).
 
-*AttributeType:* describe
-
-*SpatialAttributeType:* do we want to restrict GM_Object to just points, lines, and areas?
+*AttributeType:* characteristic of a feature
 
 In this Standard we extend the General Feature Model to support the concept of a Point of Interest. 
 
@@ -32,19 +32,13 @@ image::./images/POI-2.png[align="center"]
 
 *AbstractPOI:* The abstract model for a Point of Interest. All POI instances will contain these attributes.
 
-*POI:* A POI instance. This class inherits everything from the AbstractPOI, identifies the associated FeatureOfInterest, then adds attributes from the Feature of Interest.
+*POIProperty:* The abstract model for a Property of a Feature of Interest which is to be represented in a POI.
 
-*FeatureOfInterest:* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly syopsys of this Feature.
+*POI:* A POI instance. 
 
-*FeatureModel:* The data model for the FeatureOfInterest. This class identifies and describes all of the attributes of the FeatureOfInterest.
+*FeatureOfInterest:* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.
 
-*DataRecord:* A collection of data entities, each identified by a field name. This class is being used as a summation of the FeatureModel of the Feature of Interest. It should be populated from the Feature of Interest properties. But the exact means of that population is out of scope for this standard. 
-
-*AbstractDataComponent:* The Abstract root class of all data components in the SWE Common data model. All entities in a DataRecord are descended from AbstractDataComponent. Of the attributes inherited, the definition attribute is of particular interest. This attribute associates a external Web-accessible Definition with each entity. This attribute should be made mandatory for a POI.
-
-*Definition:* A Web-accessible definition for a property of the Feature of Interest as represented in the POI. This could be a simple text definition, an ontology, or any other semantic representation appropriate for the implementing technology. Definitions are derived from the FeatureModel for the Feature of Interest. 
-
-Geometry
+=== Geometry
 
 The OGC Geometry model is defined in ISO 19107:2003 - Geographic Information - Spatial schema. While there is a new version of this standard, it has not been widely implemented. So the 2003 version has been used in this Standard.
 
@@ -59,4 +53,6 @@ image::./images/Geometry.png[align="center"]
 *GM_LineString:* The geometric primitive for line strings.
 
 *GM_Polygon:* The geometric primitive for areas.
+
+include::clause_7-1_data_model.adoc[]
 

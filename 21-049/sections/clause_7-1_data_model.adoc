@@ -1,0 +1,158 @@
+[[data_dictionary_section]]
+=== POI Data Dictionary
+
+The POI UML model is the normative definition of the POI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the POI Conceptual Model.
+
+[[AbstractFeature-section]]
+[cols="1a"]
+|===
+|*AbstractFeature* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeature is the abstract superclass of all feature types within the PoI Model. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} description «property»  !<<CharacterString-section,CharacterString>>  [0..1] !Provides further information on the feature.
+ 
+!{set:cellbgcolor:#FFFFFF} featureID «property»  !<<ID-section,ID>>  !Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
+ 
+!{set:cellbgcolor:#FFFFFF} identifer «property»  !<<ScopedName-section,ScopedName>>  [0..1] !Specifies the unique identifier of the feature that is valid globally.
+ 
+!{set:cellbgcolor:#FFFFFF} name «property»  !<<GenericName-section,GenericName>>  [0..*] !Specifies the name of the feature.
+!===
+|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
+|=== 
+
+[[AbstractFeatureWithLifespan-section]]
+[cols="1a"]
+|===
+|*AbstractFeatureWithLifespan* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeatureWithLifespan is the base class for all PoI features. This class allows the optional specification of the real-world and database times for the existence of each feature. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} creationDate «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature was added to the containing model.
+ 
+!{set:cellbgcolor:#FFFFFF} terminationDate «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature was removed from the containing model.
+ 
+!{set:cellbgcolor:#FFFFFF} validFrom «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature started to exist in the real world.
+ 
+!{set:cellbgcolor:#FFFFFF} validTo «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature ended to exist in the real world.
+!===
+|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
+|=== 
+
+[[AbstractPOI-section]]
+[cols="1a"]
+|===
+|*AbstractPOI* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A POI is defined as having the following conceptual properties:
+
+·	    a globally unique ID
+·	    labels
+·	    descriptions
+·	    location
+·	    tags/keywords/categories
+·	    links to related information
+·	    time
+·	    authors
+·	    rights
+·	    metadata
+
+While a POI may be near meaningless without a label and location, from a computational perspective there are use cases in which any of these properties should be optional. Therefore, the only mandatory characteristic of a POI is that it have a globally unique identification property in the format of a URI.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF} hasProperty  !  <<POIProperty-section,POIProperty>>  [] !
+!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest  !  <<FeatureOfInterest-section,FeatureOfInterest>>  [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} contactInfo «property»  !<<CI_Responsibility-section,CI_Responsibility>>  [1..*] !
+ 
+!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest «property»  !<<URI-section,URI>>  !
+ 
+!{set:cellbgcolor:#FFFFFF} hasMetadata «property»  !<<URI-section,URI>>  [0..*] !
+ 
+!{set:cellbgcolor:#FFFFFF} hasProperty «property»  !<<POIProperty-section,POIProperty>>  [0..*] !
+ 
+!{set:cellbgcolor:#FFFFFF} keywords «property»  !<<MD_Keywords-section,MD_Keywords>>  [0..*] !
+ 
+!{set:cellbgcolor:#FFFFFF} rights «property»  !<<MD_Constraints-section,MD_Constraints>>  [0..2] !
+ 
+!{set:cellbgcolor:#FFFFFF} symbology «property»  !<<URI-section,URI>>  [0..1] !
+!===
+|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
+|=== 
+
+[[FeatureOfInterest-section]]
+[cols="1a"]
+|===
+|*FeatureOfInterest* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF} describedBy  !  <<FeatureModel-section,FeatureModel>>  [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!===
+|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
+|=== 
+
+[[POIProperty-section]]
+[cols="1a"]
+|===
+|*POIProperty* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} value «property»  !<<Any-section,Any>>  [0..1] !
+!===
+|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
+|=== 
+
