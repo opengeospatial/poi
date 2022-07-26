@@ -115,7 +115,7 @@ include::../requirements/REQ_description-value.adoc[]
 
 === category
 
-The category property classifies the POI using keywords. Category is adopted from the atom:category object <<RFC4087,RFC4087>>, and works in much the same way. A category should specify the type of POI, such as city, restaurant, etc. The category’s term property is the keyword, or tag.  The <<scheme,scheme>>, if specified, is the classification scheme to which the value belongs. To emulate a "folksonomy" or "free tagging", the scheme __shall__ be "free". This tagging system __may__ be more formally structured using the scheme property to specify the URI identifying a dictionary of terms or a web resource containing definitions of the terms and values.
+The category property classifies the POI using keywords. Category is adopted from the atom:category object <<RFC4287,RFC4287>>, and works in much the same way. A category should specify the type of POI, such as city, restaurant, etc. The category’s term property is the keyword, or tag.  The <<scheme,scheme>>, if specified, is the classification scheme to which the value belongs. To emulate a "folksonomy" or "free tagging", the scheme __shall__ be "free". This tagging system __may__ be more formally structured using the scheme property to specify the URI identifying a dictionary of terms or a web resource containing definitions of the terms and values.
 
 Multiple categories are allowed to accommodate the fact that POIs may be more than one thing. For example, a casino might be a gambling hall, a restaurant, and a concert venue. A grocery store may also be a bank and a pharmacy.
 
@@ -127,7 +127,7 @@ include::../requirements/REQ_category-term.adoc[]
 
 === link
 
-A link to another POI, or any other web resource. The link object is of type <<poiproperties,POIProperties>> and adopted from the atom:link object <<RFC4087,RFC4087>> which works in much the same way. A link is a generic way to define a relationship between the POI and other Web-accessible resources.
+A link to another POI, or any other web resource. The link object is of type <<poiproperties,POIProperties>> and adopted from the atom:link object <<RFC4287,RFC4287>> which works in much the same way. A link is a generic way to define a relationship between the POI and other Web-accessible resources.
 
 Links are a powerful way to describe a host of relationships. One could argue that just as Web pages obtain most of their value by the links between them, a POI obtains value from the number of links between it and others. Links in POIs are perhaps even more important than links in Web pages or Atom feeds, as POIs are inherently place-based objects with natural relationships in space and time that should be expressed. Those spatial relationships are mostly covered by the <<relationship,relationship>> property, which is in many ways a specialization of the generic Link. But there are many more semi-spatial and non-spatial relationships that can be expressed using link.
 
@@ -240,7 +240,7 @@ This property is for capturing the time at which the POI record was created in t
 
 === updated
 
-Time this POI information was last changed <<ISO8601,ISO8601>> also refer to atom:updated <<RFC4087,RFC4087>>. This property is for capturing the time at which the POI record was updated in the computing environment. Any information about the existence of the POI as a human concept should use the <<time,time>> property.
+Time this POI information was last changed <<ISO8601,ISO8601>> also refer to atom:updated <<RFC4287,RFC4287>>. This property is for capturing the time at which the POI record was updated in the computing environment. Any information about the existence of the POI as a human concept should use the <<time,time>> property.
 
 === deleted
 

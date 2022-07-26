@@ -28,7 +28,7 @@
 
 * [[[RFC3986]]], T. Berners-Lee; R. Fielding; L. Masinter. Uniform Resource Identifier (URI): Generic Syntax. January 2005. Internet RFC 3986.
 
-* [[[RFC4087]]], M. Nottingham, R. Sayre. The Atom Syndication Format.. IETF RFC 4087 December 2005.
+* [[[RFC4287]]], M. Nottingham, R. Sayre. The Atom Syndication Format.. IETF RFC 4287 December 2005.
 
 * [[[RFC5545]]], B. Desruisseaux. Internet Calendaring and Scheduling Core Object Specification (iCalendar). September 2009. Internet RFC 5545.
 

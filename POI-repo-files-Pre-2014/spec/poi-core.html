@@ -948,7 +948,7 @@
 				<div class="sect2">
 					<h2 id="category">category</h2>
 					<p>
-						The category property classifies the POI using keywords. Category is adopted from the atom:category object <a href="#RFC4087">[RFC4087]</a>, and works in much the same way. A category should specify the type of POI, such as city, restaurant, etc. The category’s term property is the keyword, or tag.  The <a href="#scheme">scheme</a>, if specified, is the classification scheme to which the value belongs. To emulate a "folksonomy" or "free tagging", the scheme <em>shall</em> be "free". This tagging system <em>may</em> be more formally structured using the scheme property to specify the URI identifying a dictionary of terms or a web resource containing definitions of the terms and values.
+						The category property classifies the POI using keywords. Category is adopted from the atom:category object <a href="#RFC4287">[RFC4287]</a>, and works in much the same way. A category should specify the type of POI, such as city, restaurant, etc. The category’s term property is the keyword, or tag.  The <a href="#scheme">scheme</a>, if specified, is the classification scheme to which the value belongs. To emulate a "folksonomy" or "free tagging", the scheme <em>shall</em> be "free". This tagging system <em>may</em> be more formally structured using the scheme property to specify the URI identifying a dictionary of terms or a web resource containing definitions of the terms and values.
 					</p>
 					<p>
 						Multiple categories are allowed to accommodate the fact that POIs may be more than one thing. For example, a casino might be a gambling hall, a restaurant, and a concert venue. A grocery store may also be a bank and a pharmacy.
@@ -973,7 +973,7 @@
 				<div class="sect2">
 					<h2 id="link">link</h2>
 					<p>
-						A link to another POI, or any other web resource. The link object is of type <a href="#poiproperties">POIProperties</a> and adopted from the atom:link object <a href="#RFC4087">[RFC4087]</a> which works in much the same way. A link is a generic way to define a relationship between the POI and other Web-accessible resources.
+						A link to another POI, or any other web resource. The link object is of type <a href="#poiproperties">POIProperties</a> and adopted from the atom:link object <a href="#RFC4287">[RFC4287]</a> which works in much the same way. A link is a generic way to define a relationship between the POI and other Web-accessible resources.
 					</p>
 					<p>
 						Links are a powerful way to describe a host of relationships. One could argue that just as Web pages obtain most of their value by the links between them, a POI obtains value from the number of links between it and others. Links in POIs are perhaps even more important than links in Web pages or Atom feeds, as POIs are inherently place-based objects with natural relationships in space and time that should be expressed. Those spatial relationships are mostly covered by the <a href="#relationship">relationship</a> property, which is in many ways a specialization of the generic Link. But there are many more semi-spatial and non-spatial relationships that can be expressed using link.
@@ -1442,7 +1442,7 @@
 				<div class="sect2">
 					<h2 id="updated">updated</h2>
 					<p>
-						Time this POI information was last changed <a href="#ISO8601">[ISO8601]</a> also refer to atom:updated <a href="#RFC4087">[RFC4087]</a>. This property is for capturing the time at which the POI record was updated in the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#time">time</a> property.
+						Time this POI information was last changed <a href="#ISO8601">[ISO8601]</a> also refer to atom:updated <a href="#RFC4287">[RFC4287]</a>. This property is for capturing the time at which the POI record was updated in the computing environment. Any information about the existence of the POI as a human concept should use the <a href="#time">time</a> property.
 					</p>
 				</div>
 				<div class="sect2">
@@ -1998,7 +1998,7 @@
 				</li>
 				<li>
 					<p>
-						<a id="RFC4087" name="RFC4087"></a>[RFC4087] M. Nottingham, R. Sayre. <a href="http://www.ietf.org/rfc/rfc4087.txt">The Atom Syndication Format.</a>. IETF RFC 4087 December 2005.
+						<a id="RFC4287" name="RFC4287"></a>[RFC4287] M. Nottingham, R. Sayre. <a href="http://www.ietf.org/rfc/rfc4287.txt">The Atom Syndication Format.</a>. IETF RFC 4287 December 2005.
 					</p>
 				</li>
 				<li>

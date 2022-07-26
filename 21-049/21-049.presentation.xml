@@ -898,10 +898,10 @@ While a POI may be near meaningless without a label and location, from a computa
   <formattedref format="application/x-isodoc+xml">T. Berners-Lee; R. Fielding; L. Masinter. Uniform Resource Identifier (URI): Generic Syntax. January 2005. Internet RFC 3986.</formattedref>
   <docidentifier type="metanorma-ordinal">[13]</docidentifier><docidentifier>RFC3986</docidentifier>
   <docnumber>3986</docnumber>
-</bibitem><bibitem id="RFC4087">
-  <formattedref format="application/x-isodoc+xml">M. Nottingham, R. Sayre. The Atom Syndication Format.. IETF RFC 4087 December 2005.</formattedref>
-  <docidentifier type="metanorma-ordinal">[14]</docidentifier><docidentifier>RFC4087</docidentifier>
-  <docnumber>4087</docnumber>
+</bibitem><bibitem id="RFC4287">
+  <formattedref format="application/x-isodoc+xml">M. Nottingham, R. Sayre. The Atom Syndication Format.. IETF RFC 4287 December 2005.</formattedref>
+  <docidentifier type="metanorma-ordinal">[14]</docidentifier><docidentifier>RFC4287</docidentifier>
+  <docnumber>4287</docnumber>
 </bibitem><bibitem id="RFC5545">
   <formattedref format="application/x-isodoc+xml">B. Desruisseaux. Internet Calendaring and Scheduling Core Object Specification (iCalendar). September 2009. Internet RFC 5545.</formattedref>
   <docidentifier type="metanorma-ordinal">[15]</docidentifier><docidentifier>RFC5545</docidentifier>
