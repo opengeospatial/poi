@@ -1,3 +1,4 @@
+[scope]
 [[scope-section]]
 == Scope
 

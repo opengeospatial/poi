@@ -1,0 +1,107 @@
+<bibdata type="standard">
+  <fetched>2022-07-27</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Temporal schema</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Temporal schema</title>
+  <uri type="src">https://www.iso.org/standard/26013.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:26013:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26013.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19108</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19108:stage-90.93:ed-1:en</docidentifier>
+  <docnumber>19108</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2002</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19108:2002/Cor 1:2006</formattedref>
+      <date type="circulated">
+        <on>2021-03-15</on>
+      </date>
+    </bibitem>
+  </relation>
+  <relation type="instance">
+    <bibitem type="standard">
+      <fetched>2022-07-27</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Temporal schema</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Temporal schema</title>
+      <uri type="src">https://www.iso.org/standard/26013.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:26013:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26013.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19108:2002</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19108:stage-90.93:ed-1:en</docidentifier>
+      <docnumber>19108</docnumber>
+      <date type="published">
+        <on>2002-09</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19108:2002 defines concepts for describing temporal characteristics of geographic information. It depends upon existing information technology standards for the interchange of temporal information. It provides a basis for defining temporal feature attributes, feature operations, and feature associations, and for defining the temporal aspects of metadata about geographic information. Since this International Standard is concerned with the temporal characteristics of geographic information as they are abstracted from the real world, it emphasizes valid time rather than transaction time.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2002</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="updates">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19108:2002/Cor 1:2006</formattedref>
+          <date type="circulated">
+            <on>2021-03-15</on>
+          </date>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext>
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number part="">ISO 19108</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

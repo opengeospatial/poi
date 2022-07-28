@@ -1,0 +1,101 @@
+<bibdata type="standard">
+  <fetched>2022-07-27</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Spatial schema</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Spatial schema</title>
+  <uri type="src">https://www.iso.org/standard/66175.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:66175:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/06/61/66175.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19107</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19107:stage-60.60:ed-2:en</docidentifier>
+  <docnumber>19107</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19107:2003</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="instance">
+    <bibitem type="standard">
+      <fetched>2022-07-27</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Spatial schema</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Spatial schema</title>
+      <uri type="src">https://www.iso.org/standard/66175.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:66175:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/06/61/66175.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19107:2019</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19107:stage-60.60:ed-2:en</docidentifier>
+      <docnumber>19107</docnumber>
+      <date type="published">
+        <on>2019-12</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>2</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This document specifies conceptual schemas for describing the spatial characteristics of geographic entities, and a set of spatial operations consistent with these schemas. It treats "vector" geometry and topology. It defines standard spatial operations for use in access, query, management, processing and data exchange of geographic information for spatial (geometric and topological) objects. Because of the nature of geographic information, these geometric coordinate spaces will normally have up to three spatial dimensions, one temporal dimension and any number of other spatially dependent parameters as needed by the applications. In general, the topological dimension of the spatial projections of the geometric objects will be at most three.</abstract>
+      <status>
+        <stage>60</stage>
+        <substage>60</substage>
+      </status>
+      <copyright>
+        <from>2019</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19107:2003</formattedref>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext>
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number part="">ISO 19107</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

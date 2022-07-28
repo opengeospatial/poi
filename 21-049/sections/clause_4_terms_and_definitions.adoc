@@ -73,7 +73,7 @@ A value domain including a code for each permissible value.
 model that defines concepts of a universe of discourse
 
 [.source]
-<<ISO1901:2014>>
+<<ISO19101:2014>>
 #ISO 19101-1:2014,clause 4.1.5 - get definition clause#
 
 [[conceptual-schema]] conceptual schema::
