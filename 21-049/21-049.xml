@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (OGC Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-08-03</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-08-10</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
 <name>Organization One</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Organization Two</name>
@@ -653,21 +653,8 @@
 
 <table id="AbstractPOI-section"><tbody><tr><td valign="middle" align="left"><p id="_f803a9e6-9a7c-c50a-2c3b-b88aed8eb961"><strong>AbstractPOI</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_ef57a71d-d26d-6aa7-63ed-7333ea007e8e"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">A POI is defined as having the following conceptual properties:
-
-·	    a globally unique ID
-·	    labels
-·	    descriptions
-·	    location
-·	    tags/keywords/categories
-·	    links to related information
-·	    time
-·	    authors
-·	    rights
-·	    metadata
-
-While a POI may be near meaningless without a label and location, from a computational perspective there are use cases in which any of these properties should be optional. Therefore, the only mandatory characteristic of a POI is that it have a globally unique identification property in the format of a URI.</td>
+</tr><tr><td valign="middle" align="left"><table id="_05db21a7-5e30-3010-45b3-70b512844430"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+<td valign="middle" align="left">A Point of Interest (POI) is a Feature which provides a concise summary of one or more associated Features. It’s purpose is to provide easy access to key information about one or more real-world objects without the need to access or understand the underlying Feature data set.</td>
 </tr><tr><td valign="middle" align="left">    Subclass of:</td>
 <td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
@@ -675,36 +662,45 @@ While a POI may be near meaningless without a label and location, from a computa
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_15359092-11f8-8669-bb74-350f58d14db8"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_fb118933-bd36-4e70-34ef-52fb2ffbc8ce"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="left"> hasProperty</td>
 <td valign="middle" align="left"><xref target="POIProperty-section">POIProperty</xref>  []</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> hasFeatureOfInterest</td>
+<td valign="middle" align="left">An association with representations of zero of more properties of a Feature of Interest. This association allows Feature Property values from the Feature of Interest to be included in a POI using a standard representation.</td>
+</tr><tr><td valign="middle" align="left"> hasFeatureOfInterest</td>
 <td valign="middle" align="left"><xref target="FeatureOfInterest-section">FeatureOfInterest</xref>  []</td>
-<td valign="middle" align="left"/></tr></tbody>
+<td valign="middle" align="left">One or more Features which are represented by this POI.</td>
+</tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_08ffa06b-35f7-65a8-0aa6-6ce0e3f10db4"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_3a27b776-f375-392b-3c9d-88a9cb4398a4"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="left"> contactInfo «property»</td>
 <td valign="middle" align="left"><xref target="CI_Responsibility-section">CI_Responsibility</xref>  [1..*]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> hasFeatureOfInterest «property»</td>
-<td valign="middle" align="left"><xref target="URI-section">URI</xref></td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> hasMetadata «property»</td>
+<td valign="middle" align="left">Contact information for the creators and maintainers of this POI.</td>
+</tr><tr><td valign="middle" align="left"> hasFeatureOfInterest «property»</td>
+<td valign="middle" align="left"><xref target="URI-section">URI</xref>  [1..*]</td>
+<td valign="middle" align="left">One or more Features which are represented by this POI.</td>
+</tr><tr><td valign="middle" align="left"> hasMetadata «property»</td>
 <td valign="middle" align="left"><xref target="URI-section">URI</xref>  [0..*]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> hasProperty «property»</td>
+<td valign="middle" align="left">An association with zero or more metadata records providing additional information about this POI and/or the associated Features of Interest.</td>
+</tr><tr><td valign="middle" align="left"> hasProperty «property»</td>
 <td valign="middle" align="left"><xref target="POIProperty-section">POIProperty</xref>  [0..*]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> keywords «property»</td>
+<td valign="middle" align="left">An association with representations of zero of more properties of a Feature of Interest. This association allows Feature Property values from the Feature of Interest to be included in a POI using a standard representation.</td>
+</tr><tr><td valign="middle" align="left"> keywords «property»</td>
 <td valign="middle" align="left"><xref target="MD_Keywords-section">MD_Keywords</xref>  [0..*]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> rights «property»</td>
+<td valign="middle" align="left">Keywords used to aid in discovery of POIs of interest.</td>
+</tr><tr><td valign="middle" align="left"> rights «property»</td>
 <td valign="middle" align="left"><xref target="MD_Constraints-section">MD_Constraints</xref>  [0..2]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> symbology «property»</td>
+<td valign="middle" align="left">Legal and security constraints applicable to this POI.</td>
+</tr><tr><td valign="middle" align="left"> symbology «property»</td>
 <td valign="middle" align="left"><xref target="URI-section">URI</xref>  [0..1]</td>
-<td valign="middle" align="left"/></tr></tbody>
+<td valign="middle" align="left">A reference to information about rendering this POI.</td>
+</tr></tbody>
 </table>
 </td>
 </tr><tr><td valign="middle" align="left"><p id="_7de6eac5-8f48-fe47-fc8c-40014865e9f3"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
@@ -722,13 +718,10 @@ While a POI may be near meaningless without a label and location, from a computa
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_fadb2d87-8d43-b205-6ed8-d62515f514bf"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_7f8f681c-1c79-d74e-8b8a-3bf4e49a3a6d"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"> describedBy</td>
-<td valign="middle" align="left"><xref target="FeatureModel-section">FeatureModel</xref>  []</td>
-<td valign="middle" align="left"/></tr></tbody>
 </table>
 </td>
 </tr><tr><td valign="middle" align="left"><table id="_e9b410ae-978b-5cbb-036b-47aca339f7b7"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
@@ -744,8 +737,11 @@ While a POI may be near meaningless without a label and location, from a computa
 
 <table id="POIProperty-section"><tbody><tr><td valign="middle" align="left"><p id="_032475e5-b695-b56f-8009-b2ec8b29601c"><strong>POIProperty</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_224c1ef4-04a1-057f-c9db-c336aad7d3b8"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
+</tr><tr><td valign="middle" align="left"><table id="_8b63ce2a-2c70-5104-c8b0-c1390483e89c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+<td valign="middle" align="left">A POIProperty provides a representation of one or more Properties of the Feature of Interest. The class contains two major parts:
+1) A description of the Property and its represented in the POI.
+2) Values generated from Properties of the Feature of Interest, encoded according to the representation defined in this class (1).</td>
+</tr><tr><td valign="middle" align="left">    Subclass of:</td>
 <td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«DataType»</td>
@@ -758,13 +754,14 @@ While a POI may be near meaningless without a label and location, from a computa
 </tr></thead>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_35cbb73a-de8a-2fa6-6f9a-ee4d1affeda5"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_99dea9ef-1c1f-fd62-d924-a447a8c25b0f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="left"> value «property»</td>
-<td valign="middle" align="left"><xref target="Any-section">Any</xref>  [0..1]</td>
-<td valign="middle" align="left"/></tr></tbody>
+<td valign="middle" align="left"><xref target="Any-section">Any</xref>  [0..*]</td>
+<td valign="middle" align="left">Representations of zero or more property values from the Feature of Interest.</td>
+</tr></tbody>
 </table>
 </td>
 </tr><tr><td valign="middle" align="left"><p id="_1e5e33a4-38b2-6b65-bd67-8ff716fed6fc"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>

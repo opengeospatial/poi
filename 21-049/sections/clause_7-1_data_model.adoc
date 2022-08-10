@@ -67,46 +67,33 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |*AbstractPOI* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A POI is defined as having the following conceptual properties:
-
-·	    a globally unique ID
-·	    labels
-·	    descriptions
-·	    location
-·	    tags/keywords/categories
-·	    links to related information
-·	    time
-·	    authors
-·	    rights
-·	    metadata
-
-While a POI may be near meaningless without a label and location, from a computational perspective there are use cases in which any of these properties should be optional. Therefore, the only mandatory characteristic of a POI is that it have a globally unique identification property in the format of a URI.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A Point of Interest (POI) is a Feature which provides a concise summary of one or more associated Features. It's purpose is to provide easy access to key information about one or more real-world objects without the need to access or understand the underlying Feature data set. 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF} hasProperty  !  <<POIProperty-section,POIProperty>>  [] !
-!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest  !  <<FeatureOfInterest-section,FeatureOfInterest>>  [] !
+!{set:cellbgcolor:#FFFFFF} hasProperty  !  <<POIProperty-section,POIProperty>>  [] !An association with representations of zero of more properties of a Feature of Interest. This association allows Feature Property values from the Feature of Interest to be included in a POI using a standard representation.
+!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest  !  <<FeatureOfInterest-section,FeatureOfInterest>>  [] !One or more Features which are represented by this POI. 
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} contactInfo «property»  !<<CI_Responsibility-section,CI_Responsibility>>  [1..*] !
+!{set:cellbgcolor:#FFFFFF} contactInfo «property»  !<<CI_Responsibility-section,CI_Responsibility>>  [1..*] !Contact information for the creators and maintainers of this POI.
  
-!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest «property»  !<<URI-section,URI>>  !
+!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest «property»  !<<URI-section,URI>>  [1..*] !One or more Features which are represented by this POI.
  
-!{set:cellbgcolor:#FFFFFF} hasMetadata «property»  !<<URI-section,URI>>  [0..*] !
+!{set:cellbgcolor:#FFFFFF} hasMetadata «property»  !<<URI-section,URI>>  [0..*] !An association with zero or more metadata records providing additional information about this POI and/or the associated Features of Interest.
  
-!{set:cellbgcolor:#FFFFFF} hasProperty «property»  !<<POIProperty-section,POIProperty>>  [0..*] !
+!{set:cellbgcolor:#FFFFFF} hasProperty «property»  !<<POIProperty-section,POIProperty>>  [0..*] !An association with representations of zero of more properties of a Feature of Interest. This association allows Feature Property values from the Feature of Interest to be included in a POI using a standard representation.
  
-!{set:cellbgcolor:#FFFFFF} keywords «property»  !<<MD_Keywords-section,MD_Keywords>>  [0..*] !
+!{set:cellbgcolor:#FFFFFF} keywords «property»  !<<MD_Keywords-section,MD_Keywords>>  [0..*] !Keywords used to aid in discovery of POIs of interest.
  
-!{set:cellbgcolor:#FFFFFF} rights «property»  !<<MD_Constraints-section,MD_Constraints>>  [0..2] !
+!{set:cellbgcolor:#FFFFFF} rights «property»  !<<MD_Constraints-section,MD_Constraints>>  [0..2] !Legal and security constraints applicable to this POI.
  
-!{set:cellbgcolor:#FFFFFF} symbology «property»  !<<URI-section,URI>>  [0..1] !
+!{set:cellbgcolor:#FFFFFF} symbology «property»  !<<URI-section,URI>>  [0..1] !A reference to information about rendering this POI. 
 !===
 |{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
@@ -124,7 +111,6 @@ While a POI may be near meaningless without a label and location, from a computa
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF} describedBy  !  <<FeatureModel-section,FeatureModel>>  [] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -139,7 +125,9 @@ While a POI may be near meaningless without a label and location, from a computa
 |*POIProperty* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A POIProperty provides a representation of one or more Properties of the Feature of Interest. The class contains two major parts:
+1) A description of the Property and its represented in the POI. 
+2) Values generated from Properties of the Feature of Interest, encoded according to the representation defined in this class (1). 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
 !===
@@ -151,7 +139,7 @@ While a POI may be near meaningless without a label and location, from a computa
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} value «property»  !<<Any-section,Any>>  [0..1] !
+!{set:cellbgcolor:#FFFFFF} value «property»  !<<Any-section,Any>>  [0..*] !Representations of zero or more property values from the Feature of Interest.
 !===
 |{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
