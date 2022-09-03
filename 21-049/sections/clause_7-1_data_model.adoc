@@ -10,12 +10,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeature is the abstract superclass of all feature types within the PoI Model. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -39,12 +35,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeatureWithLifespan is the base class for all PoI features. This class allows the optional specification of the real-world and database times for the existence of each feature. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AbstractFeature-section,AbstractFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -68,7 +60,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A Point of Interest (POI) is a Feature which provides a concise summary of one or more associated Features. It's purpose is to provide easy access to key information about one or more real-world objects without the need to access or understand the underlying Feature data set. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
@@ -105,12 +97,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -128,12 +116,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A POIProperty provides a representation of one or more Properties of the Feature of Interest. The class contains two major parts:
 1) A description of the Property and its represented in the POI. 
 2) Values generated from Properties of the Feature of Interest, encoded according to the representation defined in this class (1). 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AttributeType-section,AttributeType>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===

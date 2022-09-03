@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (OGC Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-08-10</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-09-02</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
 <name>Organization One</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Organization Two</name>
@@ -147,118 +147,21 @@
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
 </foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative"><title>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause></preface><sections>
 
-<clause id="scope-section" type="scope" obligation="normative">
+<clause id="_scope" type="scope" obligation="normative">
 <title>Scope</title>
-<p id="_03a504c8-4134-6f20-4eb1-1b1097ff248b">This document describes a data model and <hi>XML</hi><fn reference="1"><p id="_cc0e8bb1-f18b-3043-ad95-85d11dd0cde6">Are we going to bother with an XML Schema or move straight to JSON?</p>
-</fn> syntax for representing information about points of interest (POI).</p>
+<p id="_6adfc5ca-2e37-46fa-38dc-f81ff62613ed">This document describes a data model for representing information about points of interest (POI).</p>
 
-<p id="_66dbf76a-58f8-c5b8-34e0-3c8cb78bbef8">In the most broad terms, a “point of interest” is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three dimensional model of a building with names in various languages, information about open and closed hours, and a civic address. POI data has many uses including navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers.</p>
+<p id="_672fbb46-d256-70bf-1e65-516a30b04cb6">In the most broad terms, a “point of interest” is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
 
-<p id="_7c856e14-bb68-268f-8fd2-5c5b537a67fb">POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.</p>
+<p id="_67a06ff0-32a1-ce6f-43d0-efcacccdf93a">POI data has many uses including navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers.</p>
 
-<p id="_cd01ad0a-da18-056a-14c7-007036284dee">To achieve these goals, this document describes a generic data model that may be instantiated in a variety of serializations, including <hi>XML</hi><fn reference="1"><p id="_368d85ed-d3f0-389a-3d9b-095a86db6e40">Are we going to bother with an XML Schema or move straight to JSON?</p>
-</fn>, JSON and RDF<fn reference="2"><p id="_23441de1-e2d7-41b5-b732-9d0686793334">Are we going to specify an RDF encoding?</p>
-</fn>.</p>
+<p id="_95e42401-ec48-797c-3c0f-f3c5aa762f2b">POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.</p>
 
-<p id="_349bbc9b-7652-ef64-d068-d42adbbad220">Here is an example of a simple POI serialized in <hi>XML</hi><fn reference="1"><p id="_ce7ffba0-286d-95b9-d895-64de6c941e53">Are we going to bother with an XML Schema or move straight to JSON?</p>
-</fn>:</p>
-
-<sourcecode id="_0383c46b-82eb-2b5f-875a-72f3733b0e58">&lt;?xml version="1.0" encoding="UTF-8"  standalone="yes"?&gt;
-&lt;poi id="http://www.rajsingh.org/pois/45343489"&gt;
-&lt;label term="primary"&gt;
-&lt;value&gt;Boston&lt;/value&gt;
-&lt;/label&gt;
-&lt;description term="source" href="http://en.wikipedia.org/wiki/Boston"&gt;
-&lt;value&gt;Boston is the capital of and largest city in Massachusetts, and is one of the oldest
-  cities in the United States. The largest city in New England, Boston is regarded as the
-  unofficial "Capital of New England" for its economic and cultural impact on the entire
-  New England region. The city proper had a population of 617,594 according to the 2010
-  U.S. Census.
-&lt;/value&gt;
-&lt;author id="http://en.wikipedia.org" term="publisher" type="text/plain"&gt;
-  &lt;value&gt;Wikipedia&lt;/value&gt;
-&lt;/author&gt;
-&lt;/description&gt;
-&lt;category term="city" scheme="http://www.usgs.gov/placetypes"&gt;
-&lt;value&gt;seat of a first-order administrative division&lt;/value&gt;
-&lt;/category&gt;
-&lt;link term="canonical" href="http://www.rajsingh.org/pois/45343489.xml"
-	type="text/xml" scheme="http://www.iana.org/assignments/link-relations/link-relations.xml"/&gt;
-&lt;link term="related" href="http://en.wikipedia.org/wiki/Boston"
-	type="text/html" scheme="http://www.iana.org/assignments/link-relations/link-relations.xml"/&gt;
-&lt;link term="related" href="http://www.geonames.org/maps/google_42.358_-71.06.html"
-	type="text/html" scheme="http://www.iana.org/assignments/link-relations/link-relations.xml"/&gt;
-&lt;location&gt;
-&lt;point term="centroid"&gt;
-  &lt;Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
-	&lt;posList&gt;42.358 -71.06&lt;/posList&gt;
-  &lt;/Point&gt;
-&lt;/point&gt;
-&lt;/location&gt;
-&lt;/poi&gt;</sourcecode>
-
-
-<p id="_22bc20ed-5dc1-fad6-00ac-5e65a67b1d8a">Here is an example of a simple POI serialized in <hi>JSON</hi><fn reference="3"><p id="_ad6ba030-72b7-30c3-b7ee-73b9b7f35d74">What are we missing in this JSON schema representation?</p>
-</fn>:</p>
-
-<sourcecode id="_acd2ab10-83f1-8231-ede3-db1b58e69523">{
-	"poi_id": {
-		"value": "45343489",
-		"href": "http://www.rajsingh.org/pois/45343489"
-	},
-	"label": {
-	    "type": "primary",
-		"value": "Boston"
-	},
-	"description": {
-	    "type": "source",
-		"value": "Boston is the capital of and largest city in Massachusetts, and is one of the oldest cities in the United States. The largest city in New England, Boston is regarded as the unofficial "Capital of New England" for its economic and cultural impact on the entire New England region. The city proper had a population of 617,594 according to the 2010 U.S. Census.",
-		"href": "http://en.wikipedia.org/wiki/Boston",
-		"author": "Wikipedia"
-	},
-	"category": {
-		"type": "city",
-		"value": "seat of a first-order administrative division",
-		"href": "http://www.usgs.gov/placetypes"
-	},
-	"links": [
-		{
-			"href": "http://www.rajsingh.org/pois/45343489.json",
-			"rel": "canonical",
-			"type": "application/json",
-			"title": "Canonical POI Reference",
-			"hreflang": "en"
-		},
-		{
-			"href": "http://en.wikipedia.org/wiki/Boston",
-			"rel": "related",
-			"type": "text/html",
-			"title": "Wikipedia Reference",
-			"hreflang": "en"
-		},
-		{
-			"href": "http://www.geonames.org/maps/google_42.358_-71.06.html",
-			"rel": "related",
-			"type": "text/html",
-			"title": "Map of Boston",
-			"hreflang": "en"
-		}
-	],
-	"location": {
-		"geometry": {
-    		"type": "Point",
-    		"coordinates": [42.358, -71.06]
-  		},
-	}
-}</sourcecode>
-
+<p id="_714c254a-b6ca-645d-330c-dd9b080a2fb8">To achieve these goals, this document describes a generic data model that may be instantiated in a variety of serializations, including XML, JSON and RDF.</p>
 </clause>
 
 <clause id="conformance-section" type="conformance" obligation="normative">
 <title>Conformance</title>
-<note id="_dd6e02df-bab5-0133-8f18-b54f4cedbac8"><p id="_1935412d-2513-9d12-238b-ea2eb47221bf">this text was lifted from CityGML. It needs to be modified to address POI</p>
-</note>
-
 <p id="_13f0585b-3e40-ae57-14c2-3c7a81ec2546">This standard defines a Conceptual Model which is independent of any encoding or formatting techniques. The Standardization Targets for this standard are:</p>
 
 <ol id="_dac23756-1f5f-2497-c792-eabd3e4fbcb5" type="arabic"><li><p id="_96924be3-0997-f7cc-7d84-0203a2350da0">Conceptual Models (extended versions of this conceptual model)</p>
@@ -271,19 +174,17 @@
 <title>Conceptual Models</title>
 <p id="_91d83069-ba7d-c53b-f53d-a0207c8bf901">A Conceptual Model standardization target is a version of the POI Conceptual Model (CM) tailored for a specific user community. This tailoring can include:</p>
 
-<ol id="_66132f2f-91c9-2c83-7125-2923c10d8c20" type="arabic"><li><p id="_03b13486-d7fd-5b07-ba87-9306b1c7e466">Omission of one or more of the optional UML packages</p>
+<ol id="_7a9378fa-64cd-d806-2a56-c7e20c52f0e9" type="arabic"><li><p id="_03b13486-d7fd-5b07-ba87-9306b1c7e466">Omission of one or more of the optional UML packages</p>
 </li>
 <li><p id="_565fc0a2-dda3-ca0a-58e2-667238f234da">Reduction of the multiplicity for an attribute or association</p>
 </li>
 <li><p id="_24ade4f5-01a9-4eb9-88f6-6a8bb584f592">Restriction on the valid values for an attribute</p>
 </li>
-<li><p id="_d08c5a91-3aa0-6681-48fc-bb282fe73a5f">Additional concepts documented through ADEs.</p>
+<li><p id="_5bbc1a40-98e6-de9f-8017-9e9c39db2ed1">Additional POI properties documented through the POIProperty class.</p>
 </li>
 </ol>
 
-<p id="_5544b115-2071-9d8e-dacf-c4f3e8032f89">Of these options, actions #1, #2, and #3 can be performed when creating an implementation specification. Only action #4 requires an extension of the POI conceptual model. These extensions are accomplished using the ADE mechanism described in Section 10 Application Domain Extensions (ADE).</p>
-
-<p id="_dfde958d-f3f7-899e-e9f2-c088c8b727e2">Extensions of the CityGML Conceptual Model conform with the ADE Conformance Class.</p>
+<p id="_b042a5d0-4c23-d26a-8a26-9d0b88e65227">Of these options, actions #1, #2, and #3 can be performed when creating an implementation specification. Only action #4 requires an extension of the POI conceptual model. These extensions are accomplished using the POI Property mechanism described in section &lt;TBD&gt;.</p>
 </clause>
 
 <clause id="_implementation_specifications" obligation="normative">
@@ -295,11 +196,9 @@
 
 <clause id="_conformance_classes" obligation="normative">
 <title>Conformance Classes</title>
-<p id="_ec40b93a-9715-e880-895b-33ffcf5790e9">This standard identifies seventeen (17) conformance classes. One conformance class is defined for each package in the UML model. Each conformance class is defined by one requirements class. The tests in Annex A are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in Annex A for the Core requirements class.</p>
+<p id="_a82d443d-c17a-81b7-52fa-11785522d356">This standard identifies one “Core” conformance class. This conformance class defines the conformance criteria for the requirements defined in one “Core” requirements class. The tests for each conformance class are documented in Annex A. These tests are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in Annex A for the Core requirements class.</p>
 
-<p id="_89def65d-3d72-70e7-28de-390f5ec8d7c8">Of these seventeen conformance classes, only the Core conformance class is mandatory. All other conformance classes are optional. In the case where a conformance class has a dependency on another conformance class, that conformance class should also be implemented.</p>
-
-<p id="_ec96f45d-3382-897d-39f9-eca6f6710dc5">The CityGML Conceptual Model is defined by the CityGML UML model. This standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.</p>
+<p id="_e273a129-5cc7-60df-52e7-f5039dc9b7bd">The POI Conceptual Model is defined by the POI UML model. This standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.</p>
 </clause>
 </clause>
 
@@ -345,7 +244,7 @@
 </dd>
 </dl>
 
-<termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas=""/></termsource>
+<termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas="ISO 19107"/></termsource>
 
 <dl id="point_of_interest"><dt>point of interest</dt>
 <dd><admitted><expression>
@@ -434,7 +333,7 @@
 <title>Identifiers</title>
 <p id="_35095fae-5e2d-63cd-b39b-29ddeb41285e">The normative provisions in this document are denoted by the URI</p>
 
-<p id="_80aba301-e72e-2d54-7021-ae07ebfcd4ac"><link target="http://www.opengis.net/spec/POI/1d.0"/></p>
+<p id="_80aba301-e72e-2d54-7021-ae07ebfcd4ac"><link target="http://www.opengis.net/spec/POI/1.0"/></p>
 
 <p id="_35f5625f-8478-c53a-2425-a11887ce3282">All requirements and conformance tests that appear in this document are denoted by partial URIs relative to this base.</p>
 </clause>
@@ -451,29 +350,25 @@
 
 <p id="_dba431ec-d230-0b49-0c94-9e9d205a6195">The following stereotypes are used in this model:</p>
 
-<ul id="_bfb2a159-ee1d-9864-3fd0-21121d1ce5ac"><li><p id="_cb2e3b55-f67e-f56e-47ad-72cc7c55f173">«ApplicationSchema» denotes a conceptual schema for data required by one  or more applications. In the POI Conceptual Model, every module is defined as a separate application schema to allow for modularization.</p>
+<ul id="_5001e580-fccd-e464-ad1b-4f09c6e778bf"><li><p id="_53c46b9b-1543-d6d7-6024-285bbfff6448">«FeatureType» represents features that are similar and exhibit common characteristics. Features are abstractions of real-world phenomena and have an identity.</p>
 </li>
-<li><p id="_384e79a9-de93-a367-5f13-022138c24d3f">«FeatureType» represents features that are similar and exhibit common characteristics. Features are abstractions of real-world phenomena and have an identity.</p>
+<li><p id="_1a7c0420-3a08-ed37-2cbe-d1eaf5ba4a0b">«TopLevelFeatureType» denotes features that represent the main components of the conceptual model. Top-level features may be further semantically and spatially decomposed and substructured into parts.</p>
 </li>
-<li><p id="_473430a9-a84c-0521-ff32-2e85c2875fe8">«TopLevelFeatureType» denotes features that represent the main components of the conceptual model. Top-level features may be further semantically and spatially decomposed and substructured into parts.</p>
+<li><p id="_382aef6d-4f7c-da61-208f-3fda81b4bd04">«Type» denotes classes that are not directly instantiable, but are used as an abstract collection of operation, attribute and relation signatures. The stereotype is used in the POI Conceptual Model only for classes that are imported from the ISO standards 19107, 19109, 19111, and 19123.</p>
 </li>
-<li><p id="_badadf79-1913-3515-bc38-cde04f7ae651">«Type» denotes classes that are not directly instantiable, but are used as an abstract collection of operation, attribute and relation signatures. The stereotype is used in the POI Conceptual Model only for classes that are imported from the ISO standards 19107, 19109, 19111, and 19123.</p>
+<li><p id="_672d201c-d80b-378b-016a-44298b3e2d3b">«ObjectType» represents objects that have an identity, but are not features.</p>
 </li>
-<li><p id="_3784839e-764a-93f1-fad8-adf7435822c2">«ObjectType» represents objects that have an identity, but are not features.</p>
+<li><p id="_dc8e4ebd-1cfb-f969-da04-1d38aa363197">«DataType» defines a set of properties that lack identity. A data type is a classifier with no operations, whose primary purpose is to hold information.</p>
 </li>
-<li><p id="_e6f6457d-3c86-08cb-f03b-01f4d481a730">«DataType» defines a set of properties that lack identity. A data type is a classifier with no operations, whose primary purpose is to hold information.</p>
+<li><p id="_21ff94d7-c2e1-7920-22fb-a0580da0c128">«Enumeration» enumerates the valid attribute values in a fixed list of named literal values. Enumerations are specified in the POI Conceptual Model.</p>
 </li>
-<li><p id="_76568f9f-80c3-1fc1-af18-df498964d9bc">«Enumeration» enumerates the valid attribute values in a fixed list of named literal values. Enumerations are specified in the POI Conceptual Model.</p>
+<li><p id="_a399f199-1a5b-01c0-b7f3-9f602ffe422a">«BasicType» defines a basic data type.</p>
 </li>
-<li><p id="_d6558377-283c-887c-1bb2-a4291f8f639c">«BasicType» defines a basic data type.</p>
+<li><p id="_348de391-111f-0996-17fc-b0789285b8da">«CodeList» enumerates the valid attribute values. In contrast to Enumeration, the list of values is open and, thus, not given inline in the POI UML Model. The allowed values can be provided within an external code list.</p>
 </li>
-<li><p id="_fb49e380-9bbe-38cd-b193-29f4b4a0f729">«CodeList» enumerates the valid attribute values. In contrast to Enumeration, the list of values is open and, thus, not given inline in the POI UML Model. The allowed values can be provided within an external code list.</p>
+<li><p id="_4aaaec46-e9e0-cec8-68c9-2affa42fb80c">«Union» is a list of attributes. The semantics are that only one of the attributes can be present at any time.</p>
 </li>
-<li><p id="_881ceefb-9380-3cf6-c6b9-d3a8fd7fc5f5">«Union» is a list of attributes. The semantics are that only one of the attributes can be present at any time.</p>
-</li>
-<li><p id="_33e425d1-9fd9-cc34-986b-6258c5219c25">«Property» denotes attributes and association roles. This stereotype does not add further semantics to the conceptual model, but is required to be able to add tagged values to the attributes and association roles that are relevant for the encoding.</p>
-</li>
-<li><p id="_1701c694-d2da-dbbc-4d84-f9819b174254">«Version» denotes that the value of an association role that ends at a feature type is a specific version of the feature, not the feature in general.</p>
+<li><p id="_76274183-4589-7706-830c-4e7e00781457">«Property» denotes attributes and association roles. This stereotype does not add further semantics to the conceptual model, but is required to be able to add tagged values to the attributes and association roles that are relevant for the encoding.</p>
 </li>
 </ul>
 
@@ -481,25 +376,21 @@
 
 <p id="_c4237e13-f0de-c7dd-d5d3-4cf51c43d216"><image src="data:image/png;base64,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" id="_0d6cccef-3d64-3fdf-f9e3-d9a6fc90aa2a" mimetype="image/png" height="auto" width="auto"/></p>
 
-<p id="_a5d6c3e7-6cb5-ebe2-5546-855bd654abc9">Classes painted in yellow belong to the Requirements Class which is subject of discussion in that clause of the standard in which the UML diagram is given. For example, in the context of <xref target="rc_core_section"/>, which introduces the <em>CityGML Core</em> module, the yellow color is used to denote classes that are defined in the <em>CityGML Core</em> Requirements Class. Likewise, the yellow classes shown in the UML diagram in <xref target="rc_building-model_section"/> are associated with the <em>Building</em> Requirements Class that is subject of discussion in that chapter.</p>
+<p id="_8b1430cf-7195-08ab-53cd-d7d8625c85c0">Classes painted in yellow belong to the POI Requirements Class.</p>
 
-<p id="_871717f5-3035-74b1-0e6d-cbfe655d65de"><image src="data:image/png;base64,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" id="_4832cd0b-f959-fe20-1daa-4baaa3bacfb1" mimetype="image/png" height="auto" width="auto"/></p>
+<p id="_871717f5-3035-74b1-0e6d-cbfe655d65de"><image src="data:image/png;base64,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" id="_4832cd0b-f959-fe20-1daa-4baaa3bacfb1" mimetype="image/png" height="auto" width="auto"/></p>
 
-<p id="_bfa22df5-6a92-0f90-db32-8672cddd51b2">Classes painted in blue belong to a Requirements Class different to that associated with the yellow color. In order to explicitly denote to which Requirements Class these classes belong, their class names are preceded by the UML package name of that Requirements Class. For example, in the context of the <em>Building</em> Requirements Class, classes from the <em>CityGML Core</em> and the <em>Construction</em> Requirements Classes are painted in blue and their class names are preceded by <em>Core</em> and <em>Construction</em>, respectively.</p>
+<p id="_76927c27-0d17-2608-65b4-87fd9da5c6c3">Classes painted in green are defined in the ISO standards 19107, 19111, or 19123. Their class names are preceded by the UML package name, in which the classes are defined.</p>
 
-<p id="_2b0167d4-5b0b-a137-9d0a-0df3520068a5"><image src="data:image/png;base64,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" id="_10bb40cf-c0a0-7907-145f-16cd9ad2e88f" mimetype="image/png" height="auto" width="auto"/></p>
+<p id="_2b0167d4-5b0b-a137-9d0a-0df3520068a5"><image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAAA5CAIAAAAgDYdCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAhdEVYdENyZWF0aW9uIFRpbWUAMjAyMDowNToxNSAxNjo0Nzo0NPu7J9IAAASNSURBVHhe7Z09cupKEIXHbwdeAXJAsQAWQOHgRkSERBSJIyfOFFFEzpwQOaGIFDoicnBVWoAWoHKAtBJed0/rF0kgcV/wLudLbA3TPaMzZ3qGKlf54XQ6GQCM+Ud/grsHVgApdEAUeXx81A/AHUDLrQt/OlXvCg8PD0mS6AP42xkMBpkBcEAABVYACqwAFFgBKLACUGAFoMAKQIEVgAIrAAVWAMrfYoV4Nx8MXF+fbuXPZvuf0NsKse+SXMx8vlPR/gMFJeV8F+tjBZ8/JVz/qC09aB+iHd+V0e1DLgnlc/08YbzLtHJ3hfYCZenSRJRFW5hynzRp3qc+6mp6WsF3J0tvtA+SJAlmZrPsqeSNxMdDaBb7JHmfTldf/EM/uBWnR7Z497b0zJolSYK18ZZvVhNawMkmmqlW0WY5qa5UTI6ebEJ94gCbSLJo50ofHm3DC5D1qY3qRC8rxLutR0vwPnXowVm9Lkx4+F32Ql4zdHsUd4a+3VlLjn42dz9/tIVIdx1tLUopEpM23pK3dLZj7C+ups4sWo6VlrohlEvZ6jj+0GRGTyyJcZ5nY9XE/6RJLl5XqtXHemy87+LrsoUKa2wTjWfPjs0inc/62E7DJ8d5GpEE1KcmqiO9rKDz0CczfU+Sr5VooIhXxKHj0NuSImziaEYbg1uib3LHeUuOWJ7jv16GUaoAy0H7wG4t2lm0cynUcFUoD0540fAjSfZk0c0na1KNbRiigWq2ep6GNBn2JR8C5pnKCk8rPkamqFW2dEXGi/2eX6WKdI6OIk25j6QVZNgSxagu9LFCPo8muMCyEDKr8Mce5OHh02r0ZctJXYslc7i1uBD/psNANK1Vs4wNFpVYk5rYuiGaqGRrgHf8grqEoUeHwKRY6rRW1ENa0etnXrEDaUX59mzTWR8hT0vTqonqSB8riJ4XoLONyiofX4KtmFYjK9J5S0az1cINdR6kSbtRir3s5h44q3eqBUGwJ0vwu2UndrctSp6iCsSz3UatJs3Tkimujmqk1wEhDtS9TvA1unyM8q1yY4YfPDuLXMSsSiTSlnqft6Q0W21MFV3pfEUsxV7j5m5k3yUcZ0qW4DsBr5UMVNBKPLj41T55Z8qeohPmlYJrS0o+fy5vlstR7fSygtwU2fS0fLT96V5ga2iKvO94SE3p5rPXr6OZrl64HNNEz1tsTyYvdlLaBVtFuFEiO31lqYmtG+Impr/I9amjY1+OJBZl+sIXRauV3FDoEtnuhPz9uNQ3dNbdGGfWuiqqlV5W4JtisF9ESypHk+VhtA7KFze2ypgL8tvPSDcHH6S2/0a+e3AZrLTk5MXOJkgb19Io/T+qN8VWzmNrh7gJkUQylkWh6hfomw4mB7PeBxcKWjbZwZbutQ2dpRMlzcS7KqoV/JnrXUP2xJ+5giqwAlBgBaDACkCBFYACKwAFVgAKrAAUWAEosAJQYAWgwApAgRWAAisABVYACqwAFFgBKLACUGAFoMAKQIEVgAIrAAVWAAqsABRYASiwAlBgBaDACiDlVAb/MOiuaPuHQeBuwQEBBGP+BU2oP+y9DlozAAAAAElFTkSuQmCC" id="_10bb40cf-c0a0-7907-145f-16cd9ad2e88f" mimetype="image/png" height="auto" width="auto"/></p>
 
-<p id="_9290a060-c705-6501-5021-49bce8909d50">Classes painted in green are defined in the ISO standards 19107, 19111, or 19123. Their class names are preceded by the UML package name, in which the classes are defined.</p>
+<p id="_3323fb20-0bd6-7e82-5a16-f6ba1f0c60f5">Classes painted in grey are defined in the ISO standard 19109. In the context of this standard, this only applies to the class <em>AnyFeature</em>. <em>AnyFeature</em> is an instance of the metaclass <em>FeatureType</em> and acts as super class of all classes in the CityGML UML model with the stereotype «FeatureType». A metaclass is a class whose instances are classes.</p>
 
-<p id="_18ead2c5-5026-80d9-2c75-158977c0b5bb"><image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAAA5CAIAAAAgDYdCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAhdEVYdENyZWF0aW9uIFRpbWUAMjAyMDowNToxNSAxNjo0Nzo0NPu7J9IAAASNSURBVHhe7Z09cupKEIXHbwdeAXJAsQAWQOHgRkSERBSJIyfOFFFEzpwQOaGIFDoicnBVWoAWoHKAtBJed0/rF0kgcV/wLudLbA3TPaMzZ3qGKlf54XQ6GQCM+Ud/grsHVgApdEAUeXx81A/AHUDLrQt/OlXvCg8PD0mS6AP42xkMBpkBcEAABVYACqwAFFgBKLACUGAFoMAKQIEVgAIrAAVWAMrfYoV4Nx8MXF+fbuXPZvuf0NsKse+SXMx8vlPR/gMFJeV8F+tjBZ8/JVz/qC09aB+iHd+V0e1DLgnlc/08YbzLtHJ3hfYCZenSRJRFW5hynzRp3qc+6mp6WsF3J0tvtA+SJAlmZrPsqeSNxMdDaBb7JHmfTldf/EM/uBWnR7Z497b0zJolSYK18ZZvVhNawMkmmqlW0WY5qa5UTI6ebEJ94gCbSLJo50ofHm3DC5D1qY3qRC8rxLutR0vwPnXowVm9Lkx4+F32Ql4zdHsUd4a+3VlLjn42dz9/tIVIdx1tLUopEpM23pK3dLZj7C+ups4sWo6VlrohlEvZ6jj+0GRGTyyJcZ5nY9XE/6RJLl5XqtXHemy87+LrsoUKa2wTjWfPjs0inc/62E7DJ8d5GpEE1KcmqiO9rKDz0CczfU+Sr5VooIhXxKHj0NuSImziaEYbg1uib3LHeUuOWJ7jv16GUaoAy0H7wG4t2lm0cynUcFUoD0540fAjSfZk0c0na1KNbRiigWq2ep6GNBn2JR8C5pnKCk8rPkamqFW2dEXGi/2eX6WKdI6OIk25j6QVZNgSxagu9LFCPo8muMCyEDKr8Mce5OHh02r0ZctJXYslc7i1uBD/psNANK1Vs4wNFpVYk5rYuiGaqGRrgHf8grqEoUeHwKRY6rRW1ENa0etnXrEDaUX59mzTWR8hT0vTqonqSB8riJ4XoLONyiofX4KtmFYjK9J5S0az1cINdR6kSbtRir3s5h44q3eqBUGwJ0vwu2UndrctSp6iCsSz3UatJs3Tkimujmqk1wEhDtS9TvA1unyM8q1yY4YfPDuLXMSsSiTSlnqft6Q0W21MFV3pfEUsxV7j5m5k3yUcZ0qW4DsBr5UMVNBKPLj41T55Z8qeohPmlYJrS0o+fy5vlstR7fSygtwU2fS0fLT96V5ga2iKvO94SE3p5rPXr6OZrl64HNNEz1tsTyYvdlLaBVtFuFEiO31lqYmtG+Impr/I9amjY1+OJBZl+sIXRauV3FDoEtnuhPz9uNQ3dNbdGGfWuiqqlV5W4JtisF9ESypHk+VhtA7KFze2ypgL8tvPSDcHH6S2/0a+e3AZrLTk5MXOJkgb19Io/T+qN8VWzmNrh7gJkUQylkWh6hfomw4mB7PeBxcKWjbZwZbutQ2dpRMlzcS7KqoV/JnrXUP2xJ+5giqwAlBgBaDACkCBFYACKwAFVgAKrAAUWAEosAJQYAWgwApAgRWAAisABVYACqwAFFgBKLACUGAFoMAKQIEVgAIrAAVWAAqsABRYASiwAlBgBaDACiDlVAb/MOiuaPuHQeBuwQEBBGP+BU2oP+y9DlozAAAAAElFTkSuQmCC" id="_419c5bc2-c674-bc07-e94c-5dddf0637248" mimetype="image/png" height="auto" width="auto"/></p>
+<p id="_18ead2c5-5026-80d9-2c75-158977c0b5bb"><image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAAA7CAIAAABtxSZJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAhdEVYdENyZWF0aW9uIFRpbWUAMjAyMDowNToxNSAxNjo0Nzo0NPu7J9IAAAQnSURBVHhe7Z09cuJAEIXF3sB3AAeUTyBOAE4ckW6GQkicOXRGYkKTOSVyYjgBOgHlwOgu2p6eN9Lo1zJmXVvL+xLmTz3dPW9Go6rdci9N04CQIPiFX3LxUAoEUArEIXcFn6urK3SQC0CWGwufpuVrY6/Hi+QF4S83XxAEUAoEUAoEUAoEUAoEUAoEUAoEUAoEUAoEUAoEUAr/PMlq1OtFO9T+Hl+XgnrWG62SvOYqdSS7KGrpPh8NniSryPhrXI5Wu7xX/HLto5XL8y5qD+asnCsz57Jz6qkQL5addLpbTtYHlH8ekcdgcZhuj2maHqeHxWSA3bWLBpP1DdqDxeTH1j+nc2b6832aPo9Rq3C+DEsyfKotZY5PoX0yfJJMak1L2jWzfeFMW7KhQTDbmvrW9qPbe0CazAAfjNWuzNhs5maABWcitD1Zs7KdSU9u2FqQalawmGH2wbxUi/M/DyCPwIvJGC/7WYq0mBkzrTxhKw2BZ24XLBftlGf5HBmJkpTx6/D76tHZw9BMKdPZmsaLxEvRWwIvuaWQ7LNZQIjb4fp0rBe1FnP7td2OvBO45zynijR2GNSc8TK3C4N5yQ0rdNs2bdGCjdSbS8eh7Ibmk2jJWSlb9u24R22hmM8GxApKaXrqC2L6INOtH1dH1OWgel2LI/fjfhCM703na/ENkrxt4iAcDuTEu74JXHe8Wcqb+naf7p/NkxnmVNzP+3Zs/O6mCae3MmowlJwcPuRMP76LTW3r305NoircXPtmleTjlAPV+S8+mRPbONccctlPoSlSBxxtCDyjxrLPZ7O0cPIXxGD+MJMbw+MG9Wp+az1dDOSiNllrRVcvXssbXBpH5TtysltF0WiEsfV0WNQaLzTLp1EQVreQDe2RlugSeC1fmqXKNz4mdSPEcWxr1fzW7EecZIpchHR7HY9b84aL5Yjx8mjudYtg+PKiR2ET7Yta3li6dLO7se4pr/0L3w2Fte4WstISaYlugdfTfZY6viEFmVkOhozxnTklluZ7bbdcxJpzi8261ezmLck++/Q3Ogbj+b053P086qqFQzkL2/e9Lqqxac/vEvbUnkT6DZmsfjuv1HG0yx58lGNej91WrP/v6j+00xxyiaZIqy+AroEXsXZa8tkJ7FFHtaVMfp9xFa/mbrfZDVtuNdqE60zWb+80LTfe7GPD/JqnvXl9F/KvEjewiDdF+OTdpLKvgaKztslRcqomvmpTvZ81keaZ8S6BTYGb3oYM5HbqZmlHRqLEf+Z64fjL/Z0XBPmvoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBSIw/wfWg/+waCLou0PBpGLhS8IAigFogTBH6v4dPfML0xKAAAAAElFTkSuQmCC" id="_419c5bc2-c674-bc07-e94c-5dddf0637248" mimetype="image/png" height="auto" width="auto"/></p>
 
-<p id="_0c644466-23a1-123a-2aca-1d996d3c3ea7">Classes painted in grey are defined in the ISO standard 19109. In the context of this standard, this only applies to the class <em>AnyFeature</em>. <em>AnyFeature</em> is an instance of the metaclass <em>FeatureType</em> and acts as super class of all classes in the CityGML UML model with the stereotype «FeatureType». A metaclass is a class whose instances are classes.</p>
+<p id="_eedb53d2-e880-da7a-23f9-a6ee359df497">The color white is used for notes and <xref target="iso19507">Object Constraint Language</xref> (OCL) constraints that are provided in the UML diagrams.</p>
 
-<p id="_ea1fb066-0f8d-9d92-af54-bd2e2e0a1bbf"><image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAAA7CAIAAABtxSZJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAhdEVYdENyZWF0aW9uIFRpbWUAMjAyMDowNToxNSAxNjo0Nzo0NPu7J9IAAAQnSURBVHhe7Z09cuJAEIXF3sB3AAeUTyBOAE4ckW6GQkicOXRGYkKTOSVyYjgBOgHlwOgu2p6eN9Lo1zJmXVvL+xLmTz3dPW9Go6rdci9N04CQIPiFX3LxUAoEUArEIXcFn6urK3SQC0CWGwufpuVrY6/Hi+QF4S83XxAEUAoEUAoEUAoEUAoEUAoEUAoEUAoEUAoEUAoEUAr/PMlq1OtFO9T+Hl+XgnrWG62SvOYqdSS7KGrpPh8NniSryPhrXI5Wu7xX/HLto5XL8y5qD+asnCsz57Jz6qkQL5addLpbTtYHlH8ekcdgcZhuj2maHqeHxWSA3bWLBpP1DdqDxeTH1j+nc2b6832aPo9Rq3C+DEsyfKotZY5PoX0yfJJMak1L2jWzfeFMW7KhQTDbmvrW9qPbe0CazAAfjNWuzNhs5maABWcitD1Zs7KdSU9u2FqQalawmGH2wbxUi/M/DyCPwIvJGC/7WYq0mBkzrTxhKw2BZ24XLBftlGf5HBmJkpTx6/D76tHZw9BMKdPZmsaLxEvRWwIvuaWQ7LNZQIjb4fp0rBe1FnP7td2OvBO45zynijR2GNSc8TK3C4N5yQ0rdNs2bdGCjdSbS8eh7Ibmk2jJWSlb9u24R22hmM8GxApKaXrqC2L6INOtH1dH1OWgel2LI/fjfhCM703na/ENkrxt4iAcDuTEu74JXHe8Wcqb+naf7p/NkxnmVNzP+3Zs/O6mCae3MmowlJwcPuRMP76LTW3r305NoircXPtmleTjlAPV+S8+mRPbONccctlPoSlSBxxtCDyjxrLPZ7O0cPIXxGD+MJMbw+MG9Wp+az1dDOSiNllrRVcvXssbXBpH5TtysltF0WiEsfV0WNQaLzTLp1EQVreQDe2RlugSeC1fmqXKNz4mdSPEcWxr1fzW7EecZIpchHR7HY9b84aL5Yjx8mjudYtg+PKiR2ET7Yta3li6dLO7se4pr/0L3w2Fte4WstISaYlugdfTfZY6viEFmVkOhozxnTklluZ7bbdcxJpzi8261ezmLck++/Q3Ogbj+b053P086qqFQzkL2/e9Lqqxac/vEvbUnkT6DZmsfjuv1HG0yx58lGNej91WrP/v6j+00xxyiaZIqy+AroEXsXZa8tkJ7FFHtaVMfp9xFa/mbrfZDVtuNdqE60zWb+80LTfe7GPD/JqnvXl9F/KvEjewiDdF+OTdpLKvgaKztslRcqomvmpTvZ81keaZ8S6BTYGb3oYM5HbqZmlHRqLEf+Z64fjL/Z0XBPmvoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBQIoBSIw/wfWg/+waCLou0PBpGLhS8IAigFogTBH6v4dPfML0xKAAAAAElFTkSuQmCC" id="_7f181200-094a-4d94-1d2f-0a109d1301c5" mimetype="image/png" height="auto" width="auto"/></p>
-
-<p id="_b1132526-cc64-7178-f1d9-08a0dac1c947">The color white is used for notes and <xref target="iso19507">Object Constraint Language</xref> (OCL) constraints that are provided in the UML diagrams.</p>
-
-<p id="_c2e0fd61-b7c9-10e1-47aa-738fa88fd913">The example UML diagram in <xref target="figure-2"/> demonstrates the UML notation and coloring scheme used throughout this standard. In this example, the yellow classes are associated with the <em>CityGML Building</em> module, the blue classes are from the <em>CityGML Core</em> and <em>Construction</em> modules, and the green class depicts a geometry element defined by ISO 19107.</p>
+<p id="_46f8bbff-58e4-bdcc-3ab1-a12c9c86962f">The example UML diagram in <xref target="figure-2"/> demonstrates the UML notation and coloring scheme used throughout this standard. In this example, the yellow classes are associated with the <em>CityGML Building</em> module, the blue classes are from the <em>CityGML Core</em> and <em>Construction</em> modules, and the green class depicts a geometry element defined by ISO 19107.</p>
 
 <figure id="figure-2">
 <name>Example UML diagram demonstrating the UML notation and coloring scheme used throughout the CityGML Standard.</name>
@@ -571,22 +462,16 @@
 
 <table id="AbstractFeature-section"><tbody><tr><td valign="middle" align="left"><p id="_9a86c2e5-62b3-7de7-bb44-a2926ea2529e"><strong>AbstractFeature</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_4b936ad4-50c1-fd1c-78b3-87f0cdb8859f"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_619a7d7c-2e2a-1763-159b-9abd6d2ea086"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">AbstractFeature is the abstract superclass of all feature types within the PoI Model.</td>
 </tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+<td valign="middle" align="left"><xref target="AnyFeature-section">AnyFeature</xref></td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«FeatureType»</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_82a447ef-8856-302f-3c2f-544bf3baaff6"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
-<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_184f9f36-628c-65a5-5450-0cedec8d3f74"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_fbbce54d-d42a-59bf-5c08-db71f3291188"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -605,29 +490,23 @@
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><p id="_3c3f70eb-6a9d-ed85-a88f-46b0e0d917a1"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
+</tr><tr><td valign="middle" align="left"><p id="_f44979c5-4e19-425a-4ba2-f86e4c1625f4"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
 </td>
 </tr></tbody>
 </table>
 
 <table id="AbstractFeatureWithLifespan-section"><tbody><tr><td valign="middle" align="left"><p id="_32465972-9f8b-da10-ebe6-abffd05ece03"><strong>AbstractFeatureWithLifespan</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_4c127943-1027-436e-608a-4f749f8f6a30"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_a736511f-ffc2-2d11-2008-fc4724602dbd"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">AbstractFeatureWithLifespan is the base class for all PoI features. This class allows the optional specification of the real-world and database times for the existence of each feature.</td>
 </tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+<td valign="middle" align="left"><xref target="AbstractFeature-section">AbstractFeature</xref></td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«FeatureType»</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_815e8eaa-7ced-edc6-131e-26be32085f0b"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
-<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_983395eb-67cc-cb21-f3f0-56378f0cef01"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_cb8c86f5-ec6b-dddb-7ad1-ef371a9544e4"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -646,17 +525,17 @@
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><p id="_2a5c00b7-8892-188b-61c8-c9679ac9fe62"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
+</tr><tr><td valign="middle" align="left"><p id="_435cb1c4-a799-516c-9862-e802a418b01c"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
 </td>
 </tr></tbody>
 </table>
 
 <table id="AbstractPOI-section"><tbody><tr><td valign="middle" align="left"><p id="_f803a9e6-9a7c-c50a-2c3b-b88aed8eb961"><strong>AbstractPOI</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_05db21a7-5e30-3010-45b3-70b512844430"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_7ecd36a3-4e9a-1bcc-988b-9b5e0bc36ed2"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">A Point of Interest (POI) is a Feature which provides a concise summary of one or more associated Features. It’s purpose is to provide easy access to key information about one or more real-world objects without the need to access or understand the underlying Feature data set.</td>
 </tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+<td valign="middle" align="left"><xref target="AbstractFeatureWithLifespan-section">AbstractFeatureWithLifespan</xref></td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«FeatureType»</td>
 </tr></tbody>
@@ -710,51 +589,39 @@
 
 <table id="FeatureOfInterest-section"><tbody><tr><td valign="middle" align="left"><p id="_4dbc83a2-1543-27e7-8cd0-86a0f54c1d59"><strong>FeatureOfInterest</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_d8c48280-8151-07cd-2f8e-3acac3632dfd"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_eb9a3b18-bdb3-daf2-7fb1-122929a3a3d5"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+<td valign="middle" align="left"><xref target="AnyFeature-section">AnyFeature</xref></td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«FeatureType»</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_7f8f681c-1c79-d74e-8b8a-3bf4e49a3a6d"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
-<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_e9b410ae-978b-5cbb-036b-47aca339f7b7"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_959031d7-ff73-6f62-7db2-6d293548cc51"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><p id="_4dc4512c-1bc1-105b-cee5-27150dc2f06c"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
+</tr><tr><td valign="middle" align="left"><p id="_d3b7ab25-ac54-ea07-6a72-aefe4c424e87"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
 </td>
 </tr></tbody>
 </table>
 
 <table id="POIProperty-section"><tbody><tr><td valign="middle" align="left"><p id="_032475e5-b695-b56f-8009-b2ec8b29601c"><strong>POIProperty</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_8b63ce2a-2c70-5104-c8b0-c1390483e89c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_1e80c5a4-57d1-476e-335e-3a28cbe6527f"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">A POIProperty provides a representation of one or more Properties of the Feature of Interest. The class contains two major parts:
 1) A description of the Property and its represented in the POI.
 2) Values generated from Properties of the Feature of Interest, encoded according to the representation defined in this class (1).</td>
 </tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+<td valign="middle" align="left"><xref target="AttributeType-section">AttributeType</xref></td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«DataType»</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_fd8b66e2-2e85-b558-f46c-2e4ea58e82e5"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
-<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_99dea9ef-1c1f-fd62-d924-a447a8c25b0f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_12d09932-7158-0104-591c-677b2db6d012"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -764,7 +631,7 @@
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><p id="_1e5e33a4-38b2-6b65-bd67-8ff716fed6fc"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
+</tr><tr><td valign="middle" align="left"><p id="_1db9394f-6fd2-6877-a03f-9aeedf2654d6"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
 </td>
 </tr></tbody>
 </table>
@@ -3580,7 +3447,7 @@ Equivalent to STEP’s and SQL’s Unknown.</td>
     <number>66</number>  </series>  <series type="main">    
 <title format="text/plain" language="en" script="Latn">RFC</title>
     <number>3986</number>  </series></bibitem>
- <bibitem id="iso19103" type="standard">  <fetched>2022-07-27</fetched>  
+ <bibitem id="ISO19103" type="standard">  <fetched>2022-07-27</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Conceptual schema language</title>
@@ -3606,7 +3473,7 @@ Equivalent to STEP’s and SQL’s Unknown.</td>
       </relation>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO/CD 19103</formattedref>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
   </relation>  <place>Geneva</place></bibitem>
- <bibitem id="iso19107" type="standard">  <fetched>2022-07-27</fetched>  
+ <bibitem id="ISO19107" type="standard">  <fetched>2022-07-27</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Spatial schema</title>
@@ -3630,7 +3497,7 @@ Equivalent to STEP’s and SQL’s Unknown.</td>
           </organization>        </owner>      </copyright>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO 19107:2003</formattedref>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
   </relation>  <place>Geneva</place></bibitem>
- <bibitem id="iso19108" type="standard">  <fetched>2022-07-27</fetched>  
+ <bibitem id="ISO19108" type="standard">  <fetched>2022-07-27</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Temporal schema</title>
@@ -3654,7 +3521,7 @@ Equivalent to STEP’s and SQL’s Unknown.</td>
           </organization>        </owner>      </copyright>      <relation type="updates">        <bibitem type="standard">          <formattedref format="text/plain">ISO 19108:2002/Cor 1:2006</formattedref>          <date type="circulated">            <on>2021-03-15</on>          </date>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
   </relation>  <place>Geneva</place></bibitem>
- <bibitem id="iso19109" type="standard">  <fetched>2022-07-27</fetched>  
+ <bibitem id="ISO19109" type="standard">  <fetched>2022-07-27</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Rules for application schema</title>
@@ -3680,7 +3547,7 @@ Equivalent to STEP’s and SQL’s Unknown.</td>
       </relation>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO/AWI 19109</formattedref>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
   </relation>  <place>Geneva</place></bibitem>
- <bibitem id="iso19111" type="standard">  <fetched>2022-07-27</fetched>  
+ <bibitem id="ISO19111" type="standard">  <fetched>2022-07-27</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Referencing by coordinates</title>

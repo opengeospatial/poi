@@ -62,9 +62,3 @@ Metadata and provenance is a such a broad, generic area of work that one approac
 === Property Inheritance
 
 In many cases, POI information is nested in a heirarchical system. Any property of a POI applies to all its child properties, unless that property is re-defined in the child. For example, if a POI has an author property of "A", and the POI has a description property of "D", the author of D is A, unless D has an author property itself. Then the author of D is whatever D defines it to be. One useful feature of inheritance is that if only one property of a POI has a different author, it is easy to express that fact precisely without adding a lot of duplicative author information to every property in the POI.
-
-=== POIS
-
-Multiple POIs may be grouped into a POIS object, which serves only as a container object such that a group of POIs can inherit properties - for example authorship, licensing or categorization. The POIS object is expected to be useful only as a dynamic aggregation mechanism when information is being shared between systems. It is not expected to be of any particular use as a way to permanently model POI information in a database.
-
-Following sections provide additional detail on the properties described above.

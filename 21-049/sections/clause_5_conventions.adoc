@@ -4,7 +4,7 @@
 === Identifiers
 The normative provisions in this document are denoted by the URI
 
-http://www.opengis.net/spec/POI/1d.0
+http://www.opengis.net/spec/POI/1.0
 
 All requirements and conformance tests that appear in this document are denoted by partial URIs relative to this base.
 
@@ -21,7 +21,6 @@ All associations between model elements in the POI Conceptual Model are uni-dire
 
 The following stereotypes are used in this model:
 
-* &#171;ApplicationSchema&#187; denotes a conceptual schema for data required by one  or more applications. In the POI Conceptual Model, every module is defined as a separate application schema to allow for modularization.
 * &#171;FeatureType&#187; represents features that are similar and exhibit common characteristics. Features are abstractions of real-world phenomena and have an identity.
 * &#171;TopLevelFeatureType&#187; denotes features that represent the main components of the conceptual model. Top-level features may be further semantically and spatially decomposed and substructured into parts.
 * &#171;Type&#187; denotes classes that are not directly instantiable, but are used as an abstract collection of operation, attribute and relation signatures. The stereotype is used in the POI Conceptual Model only for classes that are imported from the ISO standards 19107, 19109, 19111, and 19123.
@@ -32,17 +31,12 @@ The following stereotypes are used in this model:
 * &#171;CodeList&#187; enumerates the valid attribute values. In contrast to Enumeration, the list of values is open and, thus, not given inline in the POI UML Model. The allowed values can be provided within an external code list.
 * &#171;Union&#187; is a list of attributes. The semantics are that only one of the attributes can be present at any time.
 * &#171;Property&#187; denotes attributes and association roles. This stereotype does not add further semantics to the conceptual model, but is required to be able to add tagged values to the attributes and association roles that are relevant for the encoding.
-* &#171;Version&#187; denotes that the value of an association role that ends at a feature type is a specific version of the feature, not the feature in general.
 
 In order to enhance the readability of the POI UML diagrams, classes are depicted in different colors. The following coloring scheme is applied:
 
 image:images/ColorScheme_yellow.png[align="center"]
 
-Classes painted in yellow belong to the Requirements Class which is subject of discussion in that clause of the standard in which the UML diagram is given. For example, in the context of <<rc_core_section>>, which introduces the _CityGML Core_ module, the yellow color is used to denote classes that are defined in the _CityGML Core_ Requirements Class. Likewise, the yellow classes shown in the UML diagram in <<rc_building-model_section>> are associated with the _Building_ Requirements Class that is subject of discussion in that chapter.
-
-image:images/ColorScheme_blue.png[align="center"]
-
-Classes painted in blue belong to a Requirements Class different to that associated with the yellow color. In order to explicitly denote to which Requirements Class these classes belong, their class names are preceded by the UML package name of that Requirements Class. For example, in the context of the _Building_ Requirements Class, classes from the _CityGML Core_ and the _Construction_ Requirements Classes are painted in blue and their class names are preceded by _Core_ and _Construction_, respectively.
+Classes painted in yellow belong to the POI Requirements Class. 
 
 image:images/ColorScheme_green.png[align="center"]
 

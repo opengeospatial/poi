@@ -1,8 +1,6 @@
 [[conformance-section]]
 == Conformance
 
-NOTE: this text was lifted from CityGML. It needs to be modified to address POI
-
 This standard defines a Conceptual Model which is independent of any encoding or formatting techniques. The Standardization Targets for this standard are:
 
 . Conceptual Models (extended versions of this conceptual model)
@@ -15,11 +13,9 @@ A Conceptual Model standardization target is a version of the POI Conceptual Mod
 . Omission of one or more of the optional UML packages
 . Reduction of the multiplicity for an attribute or association
 . Restriction on the valid values for an attribute
-. Additional concepts documented through ADEs.
+. Additional POI properties documented through the POIProperty class.
 
-Of these options, actions #1, #2, and #3 can be performed when creating an implementation specification. Only action #4 requires an extension of the POI conceptual model. These extensions are accomplished using the ADE mechanism described in Section 10 Application Domain Extensions (ADE).
-
-Extensions of the CityGML Conceptual Model conform with the ADE Conformance Class.
+Of these options, actions #1, #2, and #3 can be performed when creating an implementation specification. Only action #4 requires an extension of the POI conceptual model. These extensions are accomplished using the POI Property mechanism described in section <TBD>.
 
 === Implementation Specifications
 
@@ -29,8 +25,6 @@ Since this standard is agnostic to the implementing technologies, the specific t
 
 === Conformance Classes
 
-This standard identifies seventeen (17) conformance classes. One conformance class is defined for each package in the UML model. Each conformance class is defined by one requirements class. The tests in Annex A are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in Annex A for the Core requirements class.
+This standard identifies one "Core" conformance class. This conformance class defines the conformance criteria for the requirements defined in one "Core" requirements class. The tests for each conformance class are documented in Annex A. These tests are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in Annex A for the Core requirements class.
 
-Of these seventeen conformance classes, only the Core conformance class is mandatory. All other conformance classes are optional. In the case where a conformance class has a dependency on another conformance class, that conformance class should also be implemented.
-
-The CityGML Conceptual Model is defined by the CityGML UML model. This standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.
+The POI Conceptual Model is defined by the POI UML model. This standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.
