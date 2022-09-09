@@ -88,39 +88,29 @@
       },
       "keywords": [
         {
-          "authority": "POI SWG",
           "thesaurusName": "https://www.ogc.org/def-server",
           "type": "Lable",
-          "term": "primary",
-          "value": "Parkhotel De Panne"
+          "keyword": "Parkhotel De Panne"
         },
         {
-          "authority": "POI SWG",
           "thesaurusName": "https://www.ogc.org/def-server",
           "type": "note",
-          "term": "note",
-          "value": "Toeristische regio: Kust"
+          "keyword": "Toeristische regio: Kust"
         },
         {
-          "authority": "POI SWG",
           "thesaurusName": "https://www.ogc.org/def-server",
           "type": "Thema",
-          "term": "CultuurSportEnToerisme",
-          "value": "Cultuur, sport en toerisme"
+          "keyword": "Cultuur, sport en toerisme"
         },
         {
-          "authority": "POI SWG",
           "thesaurusName": "https://www.ogc.org/def-server",
           "type": "Categorie",
-          "term": "Toerisme",
-          "value": "Toerisme"
+          "keyword": "Toerisme"
         },
         {
-          "authority": "POI SWG",
           "thesaurusName": "https://www.ogc.org/def-server",
           "type": "Type",
-          "term": "Hotel",
-          "value": "Hotel"
+          "keyword": "Hotel"
         }
       ],
       "Constraints": [

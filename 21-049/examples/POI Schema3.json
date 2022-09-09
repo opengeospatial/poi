@@ -433,7 +433,7 @@
         "definition": {"type": "string"},
         "description": {"type": "string"},
         "designation": {"type": "string"},
-        "name": {"type": "string"},
+        "name": {"$ref": "#/properties/GenericName"},
         "value": {"type": "object"}
       }
     },
@@ -475,23 +475,22 @@
     "CI_Date": {
       "type": "object",
       "required": [
-        "code"  
+        "date"  
       ],
       "properties": {
-        "code": {"type": "string"},
+        "date": {"$ref":"#/properties/DateTime"},
         "dateType": {"type": "string"}
       }
     },
     "MD_Keyword": {
       "type": "object",
       "required": [
-        "value"  
+        "keyword"  
       ],
       "properties": {
-        "authority": {"type": "string"},
         "type": {"type": "string"},
         "thesaurusName": {"type": "string"},
-        "value": {"type": "string"}
+        "keyword": {"type": "string"}
       }
     },
     "MD_Constraints": {
@@ -575,6 +574,7 @@
     "CI_OnlineResource": {
       "type": "object",
       "required": [
+          "linkage"
       ],
       "properties": {
         "applicationProfile": {"type": "string"},
@@ -620,6 +620,7 @@
     "CI_Citation": {
       "type": "object",
       "required": [
+          "title"
       ],
       "properties": {
         "title": {"type": "string"},
@@ -640,7 +641,7 @@
         "identifier": {
           "$ref": "#/properties/MD_Identifier"
         },
-        "ISMN": {"type": "string"},
+        "ISBN": {"type": "string"},
         "ISSN": {"type": "string"},
         "onlineResource": {
           "$ref": "#/properties/CI_OnlineResource"
@@ -680,7 +681,9 @@
       "type": "object",
       "id": "#PointOfInterest",
       "required": [
-          "featureId"
+          "featureId",
+          "contactInfo",
+          "hasFeatureOfInterest"
       ],
       "properties": {
         "featureID": {"type": "number"},
