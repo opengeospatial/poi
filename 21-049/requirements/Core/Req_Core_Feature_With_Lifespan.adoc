@@ -1,0 +1,96 @@
+[[req_core_feature_with_lifespan]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-featurewithlifespan
+[.component,class=part]
+--
+An encoding of the AbstractFeatureWithLifespan class SHALL be a compliant extension of the <<req_core_abstract_feature,AbstractFeature>> class.
+--
+
+[.component,class=part]
+--
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_creationdate,/req/core/req-featurewithlifespan-creationdate>>.
+--
+
+[.component,class=part]
+--
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_terminationdate,/req/core/req-featurewithlifespan-terminationdate>>.
+--
+
+[.component,class=part]
+--
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_validfrom,/req/core/req-featurewithlifespan-validfrom>>.
+--
+
+[.component,class=part]
+--
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_validto,/req/core/req-featurewithlifespan-validto>>.
+--
+
+====
+
+[[req_core_feature_with_lifespan_creationdate]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-featurewithlifespan-creationdate
+[.component,class=part]
+--
+An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `creationDate` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `creationDate` attribute SHALL be a valid implementation of the DateTime class from ISO 19103.
+--
+====
+
+[[req_core_feature_with_lifespan_terminationdate]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-featurewithlifespan-terminationdate
+[.component,class=part]
+--
+An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `terminationDate` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `terminationDate` attribute SHALL be a valid implementation of the DateTime class from ISO 19103.
+--
+====
+
+[[req_core_feature_with_lifespan_validfrom]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-featurewithlifespan-validfrom
+[.component,class=part]
+--
+An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `validFrom` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `validFrom` attribute SHALL be a valid implementation of the DateTime class from ISO 19103.
+--
+====
+
+[[req_core_feature_with_lifespan_validto]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-featurewithlifespan-validto
+[.component,class=part]
+--
+An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `validTo` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `validTo` attribute SHALL be a valid implementation of the DateTime class from ISO 19103.
+--
+====
+

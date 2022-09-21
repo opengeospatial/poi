@@ -1,0 +1,94 @@
+[[req_core_abstract_feature]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-abstractfeature
+[.component,class=part]
+--
+An encoding of the AbstractFeature class SHALL be a compliant extension of the AnyFeature class defined in <<iso19109,ISO 19109>>.
+--
+
+[.component,class=part]
+--
+An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature_description,/req/core/req-abstractfeature-description>>.
+--
+
+[.component,class=part]
+--
+An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature_featureID,/req/core/req-abstractfeature-featureID>>.
+--
+
+[.component,class=part]
+--
+An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature_identifier,/req/core/req-abstractfeature-identifier>>.
+--
+
+[.component,class=part]
+--
+An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature_name,/req/core/req-abstractfeature-name>>.
+--
+====
+
+[[req_core_abstract_feature-description]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-abstractfeature-description
+[.component,class=part]
+--
+An encoding of the AbstractFeature class SHALL include zero or one `description` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `description` attribute SHALL be a valid implementation of the CharacterString class from ISO 19103.
+--
+====
+
+[[req_core_abstract_feature-featureid]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-abstractfeature-featureid
+[.component,class=part]
+--
+An encoding of the AbstractFeature class SHALL include one `featureID` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `featureID` attribute SHALL be a valid implementation of the ID class from ISO 19103.
+--
+====
+
+[[req_core_abstract_feature-identifier]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-abstractfeature-identifier
+[.component,class=part]
+--
+An encoding of the AbstractFeature class SHALL include zero or one `identifier` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `identifier` attribute SHALL be a valid implementation of the ScopedName class from ISO 19103.
+--
+====
+
+[[req_core_abstract_feature-name]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-abstractfeature-name
+[.component,class=part]
+--
+An encoding of the AbstractFeature class SHALL include zero or more `name` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `name` attribute SHALL be a valid implementation of the GenericName class from ISO 19103.
+--
+====

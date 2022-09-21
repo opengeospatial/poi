@@ -3,6 +3,8 @@
 
 The POI UML model is the normative definition of the POI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the POI Conceptual Model.
 
+include::../requirements/Req_Core.adoc[]
+
 [[AbstractFeature-section]]
 [cols="1a"]
 |===
@@ -28,6 +30,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
+include::../requirements/core/Req_Core_AbstractFeature.adoc[]
+
 [[AbstractFeatureWithLifespan-section]]
 [cols="1a"]
 |===
@@ -52,6 +56,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !===
 |{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
+
+include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
 
 [[AbstractPOI-section]]
 [cols="1a"]
@@ -90,6 +96,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
+include::../requirements/core/Req_Core_POI.adoc[]
+
 [[FeatureOfInterest-section]]
 [cols="1a"]
 |===
@@ -106,6 +114,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !===
 |{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
+
+include::../requirements/core/Req_Core_FeatureOfInterest.adoc[]
 
 [[POIProperty-section]]
 [cols="1a"]
@@ -127,4 +137,6 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !===
 |{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
+
+include::../requirements/core/Req_Core_POI-Property.adoc[]
 

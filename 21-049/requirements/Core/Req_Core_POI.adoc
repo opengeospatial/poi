@@ -1,21 +1,63 @@
-[[req_core_POI_contactinfo]]
+[[req_core_POI_class]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-poi-class
+[.component,class=part]
+--
+An encoding of the POI class SHALL comply with requirement <<req_core_feature_with_lifespan,/req/core/req-poi-feature-with-lifespan>>.
+--
+
+[.component,class=part]
+--
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_contactInfo,/req/core/req-poi-contactInfo>>.
+--
+
+[.component,class=part]
+--
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_featureOfInterest,/req/core/req-poi-featureOfInterest>>.
+--
+
+[.component,class=part]
+--
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_metadata,/req/core/req-poi-metadata>>.
+--
+
+[.component,class=part]
+--
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_property,/req/core/req-poi-property>>.
+--
+
+[.component,class=part]
+--
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_keywords,/req/core/req-poi-Keywords>>.
+--
+
+[.component,class=part]
+--
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_rights,/req/core/req-poi-rights>>.
+--
+
+[.component,class=part]
+--
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_symbology,/req/core/req-poi-symbology>>.
+--
+
+====
+
+[[req_core_POI_contactInfo]]
 [requirement]
 ====
 [%metadata]
 label:: /req/core/req-poi-contactInfo
-[.component,class=conditions]
+[.component,class=part]
 --
-. None
+An encoding of the POI class SHALL include one or more `contactInfo` attributes.
 --
 
 [.component,class=part]
 --
-. An encoding of the POI class SHALL include one or more `contactInfo` attributes.
---
-
-[.component,class=part]
---
-. Encodings of the `contactInfo` attribute SHALL be a valid implementation of the CI_Responsibility class from ISO 19115-1:2014
+Encodings of the `contactInfo` attribute SHALL be a valid implementation of the CI_Responsibility class from ISO 19115-1:2014
 --
 ====
 
@@ -24,11 +66,6 @@ label:: /req/core/req-poi-contactInfo
 ====
 [%metadata]
 label:: /req/core/req-poi-featureOfInterest
-[.component,class=conditions]
---
-. None
---
-
 [.component,class=part]
 --
 An encoding of the POI class SHALL include one or more `featureOfInterest` attributes.
@@ -38,25 +75,21 @@ An encoding of the POI class SHALL include one or more `featureOfInterest` attri
 --
 Encodings of the `featureOfInterest` attribute SHALL be a resolvable Uniform Resource Identifier (URI) for a Feature resource.
 --
+====
 
 [[req_core_POI_metadata]]
 [requirement]
 ====
 [%metadata]
 label:: /req/core/req-poi-metadata
-[.component,class=conditions]
+[.component,class=part]
 --
-. None
+An encoding of the POI class SHALL include zero or more `metadata` attributes.
 --
 
 [.component,class=part]
 --
-. An encoding of the POI class SHALL include zero or more `metadata` attributes.
---
-
-[.component,class=part]
---
-. Encodings of the `metadata` attribute SHALL be a resolvable Uniform Resource Identifier (URI) for a Metadata resource.
+Encodings of the `metadata` attribute SHALL be a resolvable Uniform Resource Identifier (URI) for a Metadata resource.
 --
 ====
 
@@ -65,19 +98,14 @@ label:: /req/core/req-poi-metadata
 ====
 [%metadata]
 label:: /req/core/req-poi-property
-[.component,class=conditions]
+[.component,class=part]
 --
-. None
+An encoding of the POI class SHALL include zero or more `property` attributes.
 --
 
 [.component,class=part]
 --
-. An encoding of the POI class SHALL include zero or more `property` attributes.
---
-
-[.component,class=part]
---
-. Encodings of the `contactInfo` attribute SHALL be a valid implementation of the POIProperty class from this standard.
+Encodings of the `contactInfo` attribute SHALL be a valid implementation of the POIProperty class from this standard.
 --
 ====
 
@@ -86,19 +114,14 @@ label:: /req/core/req-poi-property
 ====
 [%metadata]
 label:: /req/core/req-poi-keywords
-[.component,class=conditions]
+[.component,class=part]
 --
-. None
+An encoding of the POI class SHALL include zero or more `keyword` attributes.
 --
 
 [.component,class=part]
 --
-. An encoding of the POI class SHALL include zero or more `keyword` attributes.
---
-
-[.component,class=part]
---
-. Encodings of the `keyword` attribute SHALL be a valid implementation of the MD_Keyword class from ISO 19115-1:2014
+Encodings of the `keyword` attribute SHALL be a valid implementation of the MD_Keyword class from ISO 19115-1:2014
 --
 ====
 
@@ -107,19 +130,14 @@ label:: /req/core/req-poi-keywords
 ====
 [%metadata]
 label:: /req/core/req-poi-rights
-[.component,class=conditions]
+[.component,class=part]
 --
-. None
+An encoding of the POI class SHALL include zero, one, or two `rights` attributes.
 --
 
 [.component,class=part]
 --
-. An encoding of the POI class SHALL include zero, one, or two `rights` attributes.
---
-
-[.component,class=part]
---
-. Encodings of the `rights` attribute SHALL be a valid implementation of the MD_Constraints class from ISO 19115-1:2014
+Encodings of the `rights` attribute SHALL be a valid implementation of the MD_Constraints class from ISO 19115-1:2014
 --
 ====
 
@@ -128,18 +146,13 @@ label:: /req/core/req-poi-rights
 ====
 [%metadata]
 label:: /req/core/req-poi-symbology
-[.component,class=conditions]
+[.component,class=part]
 --
-. None
+An encoding of the POI class SHALL include zero or one `symbology` attributes.
 --
 
 [.component,class=part]
 --
-. An encoding of the POI class SHALL include zero or one `symbology` attributes.
---
-
-[.component,class=part]
---
-. Encodings of the `symbology` attribute SHALL be a resolvable Uniform Resource Identifier (URI) for a sybology resource.
+Encodings of the `symbology` attribute SHALL be a resolvable Uniform Resource Identifier (URI) for a sybology resource.
 --
 ====

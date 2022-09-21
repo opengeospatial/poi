@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (OGC Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-09-02</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-09-20</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
 <name>Organization One</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Organization Two</name>
@@ -147,7 +147,7 @@
   </feedback-statement>
 </boilerplate>
 <preface><abstract id="_abstract" displayorder="1"><title depth="1">I.<tab/>Abstract</title><p id="_ea8b918b-259f-ad32-41cd-bf6720709423">&#x3c;Insert Abstract Text here&#x3e;</p>
-</abstract><clause id="_19e877f8-e7ee-4734-a019-194fdd14225d" type="keywords" displayorder="2">
+</abstract><clause id="_08c829b4-69d2-4cd5-8c4a-29715144b426" type="keywords" displayorder="2">
 <title depth="1">II.<tab/>Keywords</title>
 <p>The following are keywords to be used by search engines and
     document catalogues.</p>
@@ -160,7 +160,7 @@
 <p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_bafd548d-c655-42ce-a8ef-88ec28f35723" type="submitting_orgs" displayorder="5">
+</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_fbc5ec96-062f-4832-a593-594dbb6b5cd8" type="submitting_orgs" displayorder="5">
 <title depth="1">V.<tab/>Submitting Organizations</title>
 <p>The following organizations submitted this Document to the
    Open Geospatial Consortium (OGC):</p>
@@ -482,6 +482,17 @@
 <title depth="2">6.3.<tab/>POI Data Dictionary</title>
 <p id="_1fdbeec5-8663-23e6-91b4-b9ed8dce4454">The POI UML model is the normative definition of the POI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the POI Conceptual Model.</p>
 
+<table id="http___www.opengis.net_spec_GeoPOI_1.0_req_req-class-core" obligation="requirement" type="recommendclass" class="requirement"> 
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirements class 1</p></th></tr></thead><tbody><tr><td>Obligation</td><td>requirement</td></tr><tr><td colspan="2"><p id="_2a8d3dbe-4cd3-f047-f94f-fd1c2a62fe55">Requirements Class</p><ul id="_3e8e3376-aae9-49e9-60b2-b57e42f842b5"><li><p id="_3c35dc6e-ccc8-675e-0134-b33d8db0a08e">urn:iso:ts:iso:19103</p>
+</li>
+<li><p id="_015be510-1ed6-7f72-ec9b-9b3f65e487d3">urn:iso:ts:iso:19107</p>
+</li>
+<li><p id="_e0c8ea65-1274-b1ae-e312-b703ff9517bf">urn:iso:ts:iso:19108</p>
+</li>
+<li><p id="_d946ab76-f7b1-39d6-311c-3d5f187fe74d">urn:iso:ts:iso:19109</p>
+</li>
+</ul></td></tr></tbody></table>
+
 <table id="AbstractFeature-section"><name>Table 1</name><tbody><tr><td valign="middle" align="left"><p id="_9a86c2e5-62b3-7de7-bb44-a2926ea2529e"><strong>AbstractFeature</strong></p>
 </td>
 </tr><tr><td valign="middle" align="left"><table id="_619a7d7c-2e2a-1763-159b-9abd6d2ea086"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
@@ -517,6 +528,47 @@
 </tr></tbody>
 </table>
 
+<table id="req_core_abstract_feature" class="requirement" type="recommend"> 
+
+
+
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 1</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-abstractfeature</p></td></tr><tr><td>A</td><td><p id="_d77a724b-6cd9-e700-d131-e0bf50e175e1">An encoding of the AbstractFeature class SHALL be a compliant extension of the AnyFeature class defined in <xref target="iso19109">ISO 19109</xref>.</p>
+</td></tr><tr><td>B</td><td><p id="_730d64a1-707d-d6a8-a8f7-368a2d2b8acf">An encoding of the AbstractFeature class SHALL comply with requirement <xref target="req_core_abstractfeature_description">/req/core/req-abstractfeature-description</xref>.</p>
+</td></tr><tr><td>C</td><td><p id="_f04dca3d-ba7d-3b71-5835-2c4d39de497c">An encoding of the AbstractFeature class SHALL comply with requirement <xref target="req_core_abstractfeature_featureID">/req/core/req-abstractfeature-featureID</xref>.</p>
+</td></tr><tr><td>D</td><td><p id="_cb89a9ca-b814-d0fc-3e6e-09d7f604f392">An encoding of the AbstractFeature class SHALL comply with requirement <xref target="req_core_abstractfeature_identifier">/req/core/req-abstractfeature-identifier</xref>.</p>
+</td></tr><tr><td>E</td><td><p id="_9ae14558-83a8-9851-38ec-eddd985fb4bf">An encoding of the AbstractFeature class SHALL comply with requirement <xref target="req_core_abstractfeature_name">/req/core/req-abstractfeature-name</xref>.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_abstract_feature-description" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 2</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-abstractfeature-description</p></td></tr><tr><td>A</td><td><p id="_1b6cee07-a027-3d17-6b27-e7213c569d3c">An encoding of the AbstractFeature class SHALL include zero or one <tt>description</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_778051d0-b427-6fd8-8560-bccd9b83b230">Encodings of the <tt>description</tt> attribute SHALL be a valid implementation of the CharacterString class from ISO 19103.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_abstract_feature-featureid" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 3</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-abstractfeature-featureid</p></td></tr><tr><td>A</td><td><p id="_1c9a34ce-227c-8ba1-f85a-666d6aa4d76e">An encoding of the AbstractFeature class SHALL include one <tt>featureID</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_3e18353c-d733-6224-349f-f1504a28028c">Encodings of the <tt>featureID</tt> attribute SHALL be a valid implementation of the ID class from ISO 19103.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_abstract_feature-identifier" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 4</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-abstractfeature-identifier</p></td></tr><tr><td>A</td><td><p id="_16e344da-9720-f295-4873-572441470acb">An encoding of the AbstractFeature class SHALL include zero or one <tt>identifier</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_ca636b3d-8502-5ff4-bca4-620a8c6e6a1a">Encodings of the <tt>identifier</tt> attribute SHALL be a valid implementation of the ScopedName class from ISO 19103.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_abstract_feature-name" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 5</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-abstractfeature-name</p></td></tr><tr><td>A</td><td><p id="_2cc9cbd9-2c30-d777-2cad-c018a437c01f">An encoding of the AbstractFeature class SHALL include zero or more <tt>name</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_c8f9dc68-5d8a-1c49-ed37-3ecc72b80e73">Encodings of the <tt>name</tt> attribute SHALL be a valid implementation of the GenericName class from ISO 19103.</p>
+</td></tr></tbody></table>
+
 <table id="AbstractFeatureWithLifespan-section"><name>Table 2</name><tbody><tr><td valign="middle" align="left"><p id="_32465972-9f8b-da10-ebe6-abffd05ece03"><strong>AbstractFeatureWithLifespan</strong></p>
 </td>
 </tr><tr><td valign="middle" align="left"><table id="_a736511f-ffc2-2d11-2008-fc4724602dbd"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
@@ -551,6 +603,47 @@
 </td>
 </tr></tbody>
 </table>
+
+<table id="req_core_feature_with_lifespan" class="requirement" type="recommend"> 
+
+
+
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 6</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-featurewithlifespan</p></td></tr><tr><td>A</td><td><p id="_4a8b0281-615b-0468-a0f0-8d63f63b90a5">An encoding of the AbstractFeatureWithLifespan class SHALL be a compliant extension of the <xref target="req_core_abstract_feature">AbstractFeature</xref> class.</p>
+</td></tr><tr><td>B</td><td><p id="_8be79e68-9b0a-89f2-4f55-a28960f90813">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_feature_with_lifespan_creationdate">/req/core/req-featurewithlifespan-creationdate</xref>.</p>
+</td></tr><tr><td>C</td><td><p id="_3f883708-4ac2-d543-371f-b5cfe2ef50cc">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_feature_with_lifespan_terminationdate">/req/core/req-featurewithlifespan-terminationdate</xref>.</p>
+</td></tr><tr><td>D</td><td><p id="_704f710a-c074-87a0-c468-a8bfa669bbdb">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_feature_with_lifespan_validfrom">/req/core/req-featurewithlifespan-validfrom</xref>.</p>
+</td></tr><tr><td>E</td><td><p id="_3d734d50-a8db-bae6-1e12-aea017313cec">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_feature_with_lifespan_validto">/req/core/req-featurewithlifespan-validto</xref>.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_feature_with_lifespan_creationdate" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 7</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-featurewithlifespan-creationdate</p></td></tr><tr><td>A</td><td><p id="_05f15e84-b58f-c11e-f06c-20a60425b9d0">An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one <tt>creationDate</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_e245f6ed-1632-5d06-d8e7-db4305ae730e">Encodings of the <tt>creationDate</tt> attribute SHALL be a valid implementation of the DateTime class from ISO 19103.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_feature_with_lifespan_terminationdate" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 8</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-featurewithlifespan-terminationdate</p></td></tr><tr><td>A</td><td><p id="_31492f3c-6c56-9e59-18cc-c7c04e61af1b">An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one <tt>terminationDate</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_375c180d-92dd-4571-e8ff-b780c0d30b99">Encodings of the <tt>terminationDate</tt> attribute SHALL be a valid implementation of the DateTime class from ISO 19103.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_feature_with_lifespan_validfrom" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 9</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-featurewithlifespan-validfrom</p></td></tr><tr><td>A</td><td><p id="_7a58418e-cc52-c453-cffb-3b75cca1af85">An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one <tt>validFrom</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_56c60949-30e0-450e-29be-615e86b59428">Encodings of the <tt>validFrom</tt> attribute SHALL be a valid implementation of the DateTime class from ISO 19103.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_feature_with_lifespan_validto" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 10</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-featurewithlifespan-validto</p></td></tr><tr><td>A</td><td><p id="_cc3be0a7-525a-cb5a-020f-5bd7fed086c3">An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one <tt>validTo</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_9ae8b1f0-bb3e-759b-2c03-8ee6c48770b1">Encodings of the <tt>validTo</tt> attribute SHALL be a valid implementation of the DateTime class from ISO 19103.</p>
+</td></tr></tbody></table>
 
 <table id="AbstractPOI-section"><name>Table 3</name><tbody><tr><td valign="middle" align="left"><p id="_f803a9e6-9a7c-c50a-2c3b-b88aed8eb961"><strong>AbstractPOI</strong></p>
 </td>
@@ -609,6 +702,74 @@
 </tr></tbody>
 </table>
 
+<table id="req_core_POI_class" class="requirement" type="recommend"> 
+
+
+
+
+
+
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 11</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi-class</p></td></tr><tr><td>A</td><td><p id="_3b0ab795-90f6-64b8-34ea-273137b4d0ec">An encoding of the POI class SHALL comply with requirement <xref target="req_core_feature_with_lifespan">/req/core/req-poi-feature-with-lifespan</xref>.</p>
+</td></tr><tr><td>B</td><td><p id="_45c2e746-cb5e-ccfb-cbac-f27a5293d8ba">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_contactInfo">/req/core/req-poi-contactInfo</xref>.</p>
+</td></tr><tr><td>C</td><td><p id="_36dbc44a-6987-536b-3455-cf1fa349b906">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_featureOfInterest">/req/core/req-poi-featureOfInterest</xref>.</p>
+</td></tr><tr><td>D</td><td><p id="_447fa7df-c566-6aee-a8a1-e6446921de1a">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_metadata">/req/core/req-poi-metadata</xref>.</p>
+</td></tr><tr><td>E</td><td><p id="_0585efea-588c-ab7b-1a2c-b95b2cdb5e2e">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_property">/req/core/req-poi-property</xref>.</p>
+</td></tr><tr><td>F</td><td><p id="_c5e84d1a-3aae-5b56-6fac-2b27e47e0234">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_keywords">/req/core/req-poi-Keywords</xref>.</p>
+</td></tr><tr><td>G</td><td><p id="_e9b7bd7b-cc05-e1fc-dd75-e1a5a4ae4118">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_rights">/req/core/req-poi-rights</xref>.</p>
+</td></tr><tr><td>H</td><td><p id="_d872ec83-11b8-ea54-f0cd-ce58e13e711a">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_symbology">/req/core/req-poi-symbology</xref>.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_POI_contactInfo" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 12</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi-contactInfo</p></td></tr><tr><td>A</td><td><p id="_ea5e2598-8dc3-fcef-1485-81a1d060838f">An encoding of the POI class SHALL include one or more <tt>contactInfo</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_4e64345a-58e5-21a8-f3a4-931b1e6554ad">Encodings of the <tt>contactInfo</tt> attribute SHALL be a valid implementation of the CI_Responsibility class from ISO 19115-1:2014</p>
+</td></tr></tbody></table>
+
+<table id="req_core_POI_featureOfInterest" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 13</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi-featureOfInterest</p></td></tr><tr><td>A</td><td><p id="_ed86c1f2-0c16-85f9-32b3-6881b2d8ffb7">An encoding of the POI class SHALL include one or more <tt>featureOfInterest</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_ca18fe72-d53e-9f5b-66af-5000635384e4">Encodings of the <tt>featureOfInterest</tt> attribute SHALL be a resolvable Uniform Resource Identifier (URI) for a Feature resource.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_POI_metadata" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 14</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi-metadata</p></td></tr><tr><td>A</td><td><p id="_8acb3a29-57ca-dc62-ce25-19c771b20366">An encoding of the POI class SHALL include zero or more <tt>metadata</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_ad6f0602-8b5e-a426-0878-aa29c12809fc">Encodings of the <tt>metadata</tt> attribute SHALL be a resolvable Uniform Resource Identifier (URI) for a Metadata resource.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_POI_property" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 15</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi-property</p></td></tr><tr><td>A</td><td><p id="_80523207-9b45-2555-f780-a6c8b680e2db">An encoding of the POI class SHALL include zero or more <tt>property</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_9c8762f9-1a06-072d-6ecb-c8013e34e598">Encodings of the <tt>contactInfo</tt> attribute SHALL be a valid implementation of the POIProperty class from this standard.</p>
+</td></tr></tbody></table>
+
+<table id="req_core_POI_keywords" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 16</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi-keywords</p></td></tr><tr><td>A</td><td><p id="_493c8585-290e-53c4-256d-b04952d46f10">An encoding of the POI class SHALL include zero or more <tt>keyword</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_6ad054dc-9638-464e-4518-c6031af83dcb">Encodings of the <tt>keyword</tt> attribute SHALL be a valid implementation of the MD_Keyword class from ISO 19115-1:2014</p>
+</td></tr></tbody></table>
+
+<table id="req_core_POI_rights" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 17</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi-rights</p></td></tr><tr><td>A</td><td><p id="_039377ca-3dd5-3a45-36e6-25e0c7b24b0e">An encoding of the POI class SHALL include zero, one, or two <tt>rights</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_7b26e246-abb8-d990-add6-409aafb82d51">Encodings of the <tt>rights</tt> attribute SHALL be a valid implementation of the MD_Constraints class from ISO 19115-1:2014</p>
+</td></tr></tbody></table>
+
+<table id="req_core_POI_symbology" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 18</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi-symbology</p></td></tr><tr><td>A</td><td><p id="_5eb204b7-07f9-d1d0-2272-7070984c8279">An encoding of the POI class SHALL include zero or one <tt>symbology</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_d7f57038-66e4-df3b-ed52-5418b7d43ed7">Encodings of the <tt>symbology</tt> attribute SHALL be a resolvable Uniform Resource Identifier (URI) for a sybology resource.</p>
+</td></tr></tbody></table>
+
 <table id="FeatureOfInterest-section"><name>Table 4</name><tbody><tr><td valign="middle" align="left"><p id="_4dbc83a2-1543-27e7-8cd0-86a0f54c1d59"><strong>FeatureOfInterest</strong></p>
 </td>
 </tr><tr><td valign="middle" align="left"><table id="_eb9a3b18-bdb3-daf2-7fb1-122929a3a3d5"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
@@ -629,6 +790,11 @@
 </td>
 </tr></tbody>
 </table>
+
+<table id="req_core_feature_of_interest" class="requirement" type="recommend"> 
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 19</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-feature-of-interest</p></td></tr><tr><td>A</td><td><p id="_a02ddc42-9810-6a71-af59-5fb31f6d847a">An encoding of the FeatureOfInterest class SHALL be a compliant extension of the AnyFeature class defined in <xref target="iso19109">ISO 19109</xref>.</p>
+</td></tr></tbody></table>
 
 <table id="POIProperty-section"><name>Table 5</name><tbody><tr><td valign="middle" align="left"><p id="_032475e5-b695-b56f-8009-b2ec8b29601c"><strong>POIProperty</strong></p>
 </td>
@@ -657,6 +823,13 @@
 </td>
 </tr></tbody>
 </table>
+
+<table id="req_core_POI-property_class" class="requirement" type="recommend"> 
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 20</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi_property-class</p></td></tr><tr><td>A</td><td><p id="_500691a5-5687-f396-b8b8-6aa4774721b7">An encoding of the POI-Property class SHALL be a compliant extension of the AttributeType class defined in <xref target="iso19109">ISO 19109</xref>.</p>
+</td></tr><tr><td>B</td><td><p id="_67f5ce1c-8a32-d1a9-b0b7-5fe1daab3f0d">An encoding of the POI class SHALL include zero or more <tt>value</tt> attributes of any type.</p>
+</td></tr></tbody></table>
 </clause>
 
 <clause id="iso_data_dictionary_section" obligation="normative">

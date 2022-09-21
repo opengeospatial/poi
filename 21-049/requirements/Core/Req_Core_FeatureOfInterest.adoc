@@ -1,0 +1,10 @@
+[[req_core_feature_of_interest]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-feature-of-interest
+[.component,class=part]
+--
+An encoding of the FeatureOfInterest class SHALL be a compliant extension of the AnyFeature class defined in <<iso19109,ISO 19109>>.
+--
+====
