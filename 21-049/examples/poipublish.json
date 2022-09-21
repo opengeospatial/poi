@@ -1,0 +1,206 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    45.1491802,
+                    -94.69078971
+                ]
+            },
+            "properties": {
+                "featureId": 693842,
+                "name": {
+                    "name": "Bob’s Quickstop"
+                },
+                "contactInfo": {
+                    "role": "POI Provider"
+                },
+                "hasFeatureOfInterest": {
+                    "href": ""
+                }
+            },
+            "address": {
+                "deliveryPoint": "400 Atlantic Ave",
+                "city": "Grove City",
+                "administrativeArea": "Minnesota",
+                "country": "United States of America",
+                "postalCode": "56243"
+            },
+            "phone": {
+                "number": "+1 (320) 555-5555"
+            },
+            "onlineResource": "http://bobsquickstop.com",
+            "hoursOfService": {
+                "type": "iCalendarAvailability",
+                "description": "M-F: 5am-8pm, Sat: 6am-7pm, Sun: closed",
+                "value": [
+                    "BEGIN:VAVAILABILITY",
+                    "UID:uid1",
+                    "DTSTAMP:20220101T000000Z",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid2",
+                    "DTSTART;TZID=America/Chicago:20220103T050000",
+                    "DTEND;TZID=America/Chicago:20220103T200000",
+                    "RRULE;FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR",
+                    "END:AVAILABLE",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid3",
+                    "DTSTART;TZID=America/Chicago:20220101T060000",
+                    "DTEND;TZID=America/Chicago:20220101T190000",
+                    "RRULE;FREQ=WEEKLY;BYDAY=SA",
+                    "END:AVAILABLE",
+                    "END:VAVALABILITY"
+                ]
+            },
+            "category": "Convenience Store"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    51.4822803,
+                    -0.179262
+                ]
+            },
+            "properties": {
+                "featureId": 430983,
+                "name": {
+                    "name": "La Casa"
+                },
+                "contactInfo": {
+                    "role": "POI Provider"
+                },
+                "hasFeatureOfInterest": {
+                    "href": ""
+                }
+            },
+            "address": {
+                "deliveryPoint": "12 King’s Rd",
+                "city": "London",
+                "country": "United Kingdom",
+                "postalCode": "SW10 0JQ"
+            },
+            "phone": {
+                "number": "+44 20 5555 5555"
+            },
+            "onlineResource": "http://lacasatuscan.com",
+            "hoursOfService": {
+                "type": "iCalendarAvailability",
+                "description": "M: closed, T-F: 12-2:45pm, 6-9:45pm, Sat: 12-3:15pm, 6-9:45pm, Sun: 12-3:15pm, 6-9:15pm",
+                "value": [
+                    "BEGIN:VAVAILABILITY",
+                    "UID:uid4",
+                    "DTSTAMP:20220101T000000Z",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid5",
+                    "DTSTART;TZID=Europe/London:20220104T120000",
+                    "DTEND;TZID=Europe/London:20220104T144500",
+                    "RRULE;FREQ=WEEKLY;BYDAY=TU,WE,TH,FR",
+                    "END:AVAILABLE",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid6",
+                    "DTSTART;TZID=Europe/London:20220104T180000",
+                    "DTEND;TZID=Europe/London:20220104T214500",
+                    "RRULE;FREQ=WEEKLY;BYDAY=TU,WE,TH,FR",
+                    "END:AVAILABLE",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid7",
+                    "DTSTART;TZID=Europe/London:20220101T120000",
+                    "DTEND;TZID=Europe/London:20220101T151500",
+                    "RRULE;FREQ=WEEKLY;BYDAY=SA",
+                    "END:AVAILABLE",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid8",
+                    "DTSTART;TZID=Europe/London:20220101T180000",
+                    "DTEND;TZID=Europe/London:20220101T214500",
+                    "RRULE;FREQ=WEEKLY;BYDAY=SA",
+                    "END:AVAILABLE",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid9",
+                    "DTSTART;TZID=Europe/London:20220102T120000",
+                    "DTEND;TZID=Europe/London:20220102T151500",
+                    "RRULE;FREQ=WEEKLY;BYDAY=SU",
+                    "END:AVAILABLE",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid10",
+                    "DTSTART;TZID=Europe/London:20220102T180000",
+                    "DTEND;TZID=Europe/London:20220102T211500",
+                    "RRULE;FREQ=WEEKLY;BYDAY=SU",
+                    "END:AVAILABLE",
+                    "END:VAVALABILITY"
+                ]
+            },
+            "category": "Tuscan Restaurant"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    45.7434213,
+                    4.8718219
+                ]
+            },
+            "properties": {
+                "featureId": 123894,
+                "name": {
+                    "name": "Pots and Pans Déstockage"
+                },
+                "contactInfo": {
+                    "role": "POI Provider"
+                },
+                "hasFeatureOfInterest": {
+                    "href": ""
+                }
+            },
+            "address": {
+                "deliveryPoint": "35 Rue Antoine Lumière",
+                "city": "Lyon",
+                "country": "France",
+                "postalCode": "69008"
+            },
+            "phone": {
+                "number": "+33 4 55 55 55 55"
+            },
+            "hoursOfService": {
+                "type": "iCalendarAvailability",
+                "description": "M: 11am-7:30pm, T-Sat: 10am-7:30pm, Sun: closed; closed Aug 1 - Aug 31",
+                "value": [
+                    "BEGIN:VAVAILABILITY",
+                    "UID:uid11",
+                    "DTSTAMP:20220101T000000Z",
+                    "PRIORITY:0",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid12",
+                    "DTSTART;TZID=Europe/Paris:20220103T110000",
+                    "DTEND;TZID=Europe/Paris:20220103T193000",
+                    "RRULE;FREQ=WEEKLY;BYDAY=MO",
+                    "END:AVAILABLE",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid13",
+                    "DTSTART;TZID=Europe/Paris:20220104T100000",
+                    "DTEND;TZID=Europe/Paris:20220104T193000",
+                    "RRULE;FREQ=WEEKLY;BYDAY=TU,WE,TH,FR,SA",
+                    "END:AVAILABLE",
+                    "END:VAVALABILITY",
+                    "BEGIN:VAVAILABILITY",
+                    "UID:uid14",
+                    "DTSTAMP:20220101T000000Z",
+                    "PRIORITY:5",
+                    "BEGIN:AVAILABLE",
+                    "UID:uid15",
+                    "DTSTART;TZID=Europe/Paris:20220801T000000",
+                    "DTEND;TZID=Europe/Paris:20220831T235959",
+                    "RRULE;FREQ=YEARLY;BYMONTH=8",
+                    "END:AVAILABLE",
+                    "END:VAVALABILITY",
+                ]
+            },
+            "category": "Kitchen Supply Store"
+        }
+    ]
+}
