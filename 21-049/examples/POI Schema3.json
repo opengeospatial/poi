@@ -136,7 +136,7 @@
               "type": "null"
             },
             {
-              "type": "object"
+              "$ref": "#/properties/POI"
             }
           ]
         },

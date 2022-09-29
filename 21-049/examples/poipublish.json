@@ -197,7 +197,7 @@
                     "DTEND;TZID=Europe/Paris:20220831T235959",
                     "RRULE;FREQ=YEARLY;BYMONTH=8",
                     "END:AVAILABLE",
-                    "END:VAVALABILITY",
+                    "END:VAVALABILITY"
                 ]
             },
             "category": "Kitchen Supply Store"
