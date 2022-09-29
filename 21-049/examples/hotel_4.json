@@ -1,0 +1,163 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [125.6, 10.1]
+  },
+  "properties": {
+    "POI": {
+      "featureId": "207383",
+      "description": "In De Pannes art deco wijk ligt het gezellige Parkhotel op slechts 200 m van zee. Je kan heerlijk ontspannen in de 2000 m2 grote tuin. Het hotel biedt 40 rookvrije kamers en een heerlijk ontbijtbuffet met verse ontbijtproducten aan.",
+      "name": {
+        "name": "Parkhotel De Panne"
+        },
+      "identifier": {
+        "authority" : "POI SWG",
+        "codeSpace": "URI",
+        "value" : "207383"
+      },
+      "creationDate": {
+        "dateTime": "2017-11-07T14:54:00"
+      },
+      "terminationDate": {
+        "dateTime" : "2020-06-02T08:12:00"
+      },
+      "validFrom": {
+        "dateTime": "2017-11-07T14:54:00"       
+      },
+      "validTo": {
+        "dateTime": "2020-06-02T08:12:00"
+      },
+      "contactInfo": [
+        {
+          "role": "pointOfContact",
+          "name": "agentschap Digitaal Vlaanderen",
+          "contactInfo": {
+            "phone": [
+              {  
+              "numbertype": "voice",
+              "number": "+32 9 276 15 00"
+              }
+            ],
+            "address": {
+              "city": "Brussel",      
+              "country": "België",
+              "deliveryPoint": "Havenlaan 88",
+              "email": "digitaal.vlaanderen@vlaanderen.be",
+              "postalcode": "1000"
+            }
+          }
+        },
+        {
+          "role": "owner",
+          "name": "Toerisme Vlaanderen",
+          "contactInfo": {
+            "onlineResource": "http://www.toerismevlaanderen.be"
+          }
+        },
+        {
+          "role": "author",
+          "contactInfo": {
+            "phone": [
+              {  
+              "numbertype": "voice",
+              "number": "+32 58 41 41 41"
+              }
+            ],
+            "address": {
+              "city": "De Panne",      
+              "country": "Belgium",
+              "deliveryPoint": "30 A. Dumontlaan",
+              "email": "info@parkhoteldepanne.be",
+              "postalcode": "8660"
+            }
+          }
+        }
+      ],
+      "hasFeatureOfInterest": [
+        {
+          "href": "http://www.parkhoteldepanne.be/",
+          "created": "2020-06-02T08:12:00",
+          "updated": "2020-06-02T08:12:00",
+          "term": "related",
+          "typedescription": "Bijkomende informatie",
+          "value": "Website van Parkhotel De Panne"
+        }
+      ],
+      "hasMetadata": {
+        "href": "https://metadata.geopunt.be/zoekdienst/apps/tabsearch/?uuid=c5da8a65-ed16-441b-a856-3d399b8cb5ff"
+      },
+      "keywords": [
+        {
+          "thesaurusName": "https://www.ogc.org/def-server",
+          "type": "alternate",
+          "keyword": "BV Parkhotel De Panne"
+        },
+        {
+          "thesaurusName": "https://www.ogc.org/def-server",
+          "type": "note",
+          "keyword": "Toeristische regio: Kust"
+        },
+        {
+          "thesaurusName": "https://data.vlaanderen.be/doc/poi/thema",
+          "type": "theme",
+          "keyword": "Cultuur, sport en toerisme"
+        },
+        {
+          "thesaurusName": "https://data.vlaanderen.be/doc/poi/categorie",
+          "type": "category",
+          "keyword": "Toerisme"
+        },
+        {
+          "thesaurusName": "https://data.vlaanderen.be/doc/poi/type",
+          "type": "poitype",
+          "keyword": "Hotel"
+        }
+      ],
+      "Constraints": [
+        {
+          "type" : "license",
+          "term": "Modellicentie_Gratis_Hergebruik",
+          "typedescription": "Data die vrij beschikbaar wordt gesteld volgens de modellicentie voor gratis hergebruik",
+          "value": "Modellicentie voor gratis hergebruik"
+        }
+      ],
+      "links": [
+        {
+          "href": "http://www.parkhoteldepanne.be/",
+          "created": "2020-06-02T08:12:00",
+          "updated": "2020-06-02T08:12:00",
+          "term": "related",
+          "typedescription": "Bijkomende informatie",
+          "value": "Website van Parkhotel De Panne"
+        },
+        {
+          "href": "http://www.visitflanders.com",
+          "created": "2020-06-02T08:12:00",
+          "updated": "2020-06-02T08:12:00",
+          "term": "related",
+          "typedescription": "Bijkomende informatie",
+          "value": "Meer info op Visit Flanders"
+        },
+        {
+          "href": "http://data.toerismevlaanderen.be/",
+          "created": "2020-06-02T08:12:00",
+          "updated": "2020-06-02T08:12:00",
+          "term": "related",
+          "typedescription": "Bijkomende informatie",
+          "value": "Open dataportaal van Toerisme Vlaanderen"
+        }
+      ],
+	  "address": [
+		{
+		  "street": "A. Dumontlaan",
+		  "streetnumber": "30",
+		  "boxnumber": "",
+		  "postalcode": "8660",
+		  "municipality": "De Panne",
+		  "typedescription": "Adres volgens CRAB databank"
+		}
+	  ]
+	}
+  }
+}
