@@ -1,0 +1,1875 @@
+[appendix]
+[[iso_data_dictionary_section]]
+== ISO Data Dictionary
+
+ISO Technical Committee 211 maintains a harmonized UML model which covers many of their standards. All of the TC211 Standards which are relevant to the POI Standard are included. Therefore the full UML model for POI consists of the classes defined in the POI UML model as well as those which referenced from the TC211 Hamonized UML model.
+
+The Data Dictionary tables in this section were software generated from the TC211 Hamonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.
+
+[[AnyFeature-section]]
+=== Class AnyFeature <<iso19109,(ISO 19109:2015)>>
+
+[cols="1a"]
+|===
+|*AnyFeature* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AnyFeature is an abstract class that is the generalization of all feature types. AnyFeature is an instance of the «metaclass» FeatureType [cf. ISO 19109]. 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «FeatureType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   
+!<<FeatureType-section,FeatureType>>  
+[1..1]
+!
+!===
+|===
+
+[[AttributeType-section]]
+=== Class AttributeType <<iso19109,(ISO 19109:2015)>>
+
+[cols="1a"]
+|===
+|*AttributeType* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! feature attribute
+characteristic of a feature [cf. ISO 19109]. 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «Metaclass»
+!===
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!{set:cellbgcolor:#FFFFFF} TBD   !<<CI_Citation-section,CI_Citation>>  [0..*] !publications that describe usage of data
+!===
+!===
+|===
+
+[[FeatureType-section]]
+=== Class FeatureType <<iso19109,(ISO 19109:2015)>>
+
+[cols="1a"]
+|===
+|*FeatureType* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! feature: abstraction of real world phenomena [cf. ISO 19109]. +
+This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «Metaclass»
+!===
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+!{set:cellbgcolor:#FFFFFF} TBD   !<<CI_Citation-section,CI_Citation>>  [0..*] !publications that describe usage of data
+!===
+!===
+|===
+
+=== Geometry
+The following classes are defined in <<iso19107,(ISO 19107: 2003)>>
+
+[[GM_Object-section]]
+[cols="1a"]
+|===
+|*GM_Object* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! GM_Object is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects. GM_Object instances are sets of direct positions in a particular coordinate reference system. A GM_Object can be regarded as an infinite set of points that satisfies the set operation interfaces for a set of direct positions, TransfiniteSet<DirectPosition>. Since an infinite collection class cannot be implemented directly, a Boolean test for inclusion shall be provided by the GM_Object interface. This international standard concentrates on vector geometry classes, but future work may use GM_Object as a root class without modification.
+NOTE As a type, GM_Object does not have a well-defined default state or value representation as a data type. Instantiated subclasses of GM_Object will. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! none 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! dimension() >  boundary().dimension (Invariant):     
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! boundary().notEmpty() implies boundary().dimension() = dimension() -1 (Invariant):     
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! boundary().isEmpty() = isCycle() (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   
+!<<Geometry-section,Geometry>> [1..1]
+!
+!{set:cellbgcolor:#FFFFFF}   
+!TransfiniteSet<<<DirectPosition-section,DirectPosition>>>  
+[1..1]
+!
+!{set:cellbgcolor:#FFFFFF}   
+!<<CV_DomainObject-section,CV_DomainObject>>  
+[1..1]
+!
+!{set:cellbgcolor:#FFFFFF} CRS  
+!<<CRS-section,CRS>>  
+[0..1]
+!
+!{set:cellbgcolor:#FFFFFF} CRS  
+!<<SC_CRS-section,SC_CRS>>  
+[0..1]
+!
+!===
+|=== 
+
+[[GM_Point-section]]
+[cols="1a"]
+|===
+|*GM_Point* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! GM_Point is the basic data type for a geometric object consisting of one and only one point.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GM_Primitive-section,GM_Primitive>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   
+!<<Point-section,Point>>  
+[1..1]
+!
+!{set:cellbgcolor:#FFFFFF} composite  
+!<<GM_CompositePoint-section,GM_CompositePoint>>  
+[0..*]
+!
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} position   !<<DirectPosition-section,DirectPosition>> [1..1]  !The attribute "position" shall be the DirectPosition of this GM_Point.
+GM_Point::position [1] : DirectPosition
+NOTE In most cases, the state of a GM_Point is fully determined by its position attribute. The only exception to this is if the GM_Point has been subclassed to provide additional non-geometric information such as symbology.
+!===
+|=== 
+
+[[GM_LineString-section]]
+[cols="1a"]
+|===
+|*GM_LineString* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! TBD  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GM_Primitive-section,GM_Primitive>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   
+!<<Point-section,Point>>  
+[1..1]
+!
+!{set:cellbgcolor:#FFFFFF} composite  
+!<<GM_CompositePoint-section,GM_CompositePoint>>  
+[0..*]
+!
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} TBD   !<<DirectPosition-section,DirectPosition>> [1..1]  !TBD
+!===
+|=== 
+
+[[GM_Polygon-section]]
+[cols="1a"]
+|===
+|*GM_Polygon* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! TBD.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GM_Primitive-section,GM_Primitive>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   
+!<<Point-section,Point>>  
+[1..1]
+!
+!{set:cellbgcolor:#FFFFFF} TBD  
+!<<GM_CompositePoint-section,GM_CompositePoint>>  
+[0..*]
+!
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} TBD   !<<DirectPosition-section,DirectPosition>> [1..1]  !Definition TBD
+!===
+|=== 
+
+=== Citation and responsible party information
+The following classes are defined in ISO 19115-1 Edition 1
+
+[[CI_Address-section]]
+[cols="1a"]
+|===
+|*CI_Address* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! location of the responsible individual or organisation 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None  
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} administrativeArea   !<<CharacterString-section,CharacterString>>  [0..1] !state, province of the location
+ 
+!{set:cellbgcolor:#FFFFFF} city   !<<CharacterString-section,CharacterString>>  [0..1] !city of the location
+ 
+!{set:cellbgcolor:#FFFFFF} country   !<<CharacterString-section,CharacterString>>  [0..1] !country of the physical address
+ 
+!{set:cellbgcolor:#FFFFFF} deliveryPoint   !<<CharacterString-section,CharacterString>>  [0..*] !address line for the location 
+Example Street number and name, suite number, etc
+ 
+!{set:cellbgcolor:#FFFFFF} electronicMailAddress   !<<CharacterString-section,CharacterString>>  [0..*] !address of the electronic mailbox of the responsible organisation or individual
+ 
+!{set:cellbgcolor:#FFFFFF} postalCode   !<<CharacterString-section,CharacterString>>  [0..1] !ZIP or other postal code
+!===
+|=== 
+
+[[CI_Citation-section]]
+[cols="1a"]
+|===
+|*CI_Citation* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! standardized resource reference 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None  
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} alternateTitle   !<<CharacterString-section,CharacterString>>  [0..*] !short name or other language name by which the cited information is known. Example: DCW as an alternative title for Digital Chart of the World
+ 
+!{set:cellbgcolor:#FFFFFF} citedResponsibleParty   !<<CI_Responsibility-section,CI_Responsibility>>  [0..*] !roles, name, contact, and position information for an individual or organisation that is responsible for the resource
+ 
+!{set:cellbgcolor:#FFFFFF} date   !<<CI_Date-section,CI_Date>>  [0..*] !reference date for the cited resource
+ 
+!{set:cellbgcolor:#FFFFFF} edition   !<<CharacterString-section,CharacterString>>  [0..1] !version of the cited resource
+ 
+!{set:cellbgcolor:#FFFFFF} editionDate   !<<DateTime-section,DateTime>>  [0..1] !date of the edition
+ 
+!{set:cellbgcolor:#FFFFFF} graphic   !<<MD_BrowseGraphic-section,MD_BrowseGraphic>>  [0..*] !citation graphic or logo for cited party
+ 
+!{set:cellbgcolor:#FFFFFF} identifier   !<<MD_Identifier-section,MD_Identifier>>  [0..*] !value uniquely identifying an object within a namespace
+ 
+!{set:cellbgcolor:#FFFFFF} ISBN   !<<CharacterString-section,CharacterString>>  [0..1] !international Standard Book Number
+ 
+!{set:cellbgcolor:#FFFFFF} ISSN   !<<CharacterString-section,CharacterString>>  [0..1] !international Standard Serial Number
+ 
+!{set:cellbgcolor:#FFFFFF} onlineResource   !<<CI_OnlineResource-section,CI_OnlineResource>>  [0..*] !online reference to the cited resource
+ 
+!{set:cellbgcolor:#FFFFFF} otherCitationDetails   !<<CharacterString-section,CharacterString>>  [0..*] !other information required to complete the citation that is not recorded elsewhere
+ 
+!{set:cellbgcolor:#FFFFFF} presentationForm   !<<CI_PresentationFormCode-section,CI_PresentationFormCode>>  [0..*] !mode in which the resource is represented
+ 
+!{set:cellbgcolor:#FFFFFF} series   !<<CI_Series-section,CI_Series>>  [0..1] !information about the series, or aggregate resource, of which the resource is a part
+ 
+!{set:cellbgcolor:#FFFFFF} title   !<<CharacterString-section,CharacterString>>  !name by which the cited resource is known
+!===
+|=== 
+
+[[CI_Contact-section]]
+[cols="1a"]
+|===
+|*CI_Contact* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information required to enable contact with the responsible person and/or organisation 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  None
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} address   !<<CI_Address-section,CI_Address>>  [0..*] !physical and email address at which the organisation or individual may be contacted
+ 
+!{set:cellbgcolor:#FFFFFF} contactInstructions   !<<CharacterString-section,CharacterString>>  [0..1] !supplemental instructions on how or when to contact the individual or organisation
+ 
+!{set:cellbgcolor:#FFFFFF} contactType   !<<CharacterString-section,CharacterString>>  [0..1] !type of contact
+ 
+!{set:cellbgcolor:#FFFFFF} hoursOfService   !<<CharacterString-section,CharacterString>>  [0..*] !time period (including time zone) when individuals can contact the organisation or individual
+ 
+!{set:cellbgcolor:#FFFFFF} onlineResource   !<<CI_OnlineResource-section,CI_OnlineResource>>  [0..*] !on-line information that can be used to contact the individual or organisation
+ 
+!{set:cellbgcolor:#FFFFFF} phone   !<<CI_Telephone-section,CI_Telephone>>  [0..*] !telephone numbers at which the organisation or individual may be contacted
+!===
+|=== 
+
+[[CI_Date-section]]
+[cols="1a"]
+|===
+|*CI_Date* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! reference date and event used to describe it 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «DataType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} date   !<<DateTime-section,DateTime>>  !reference date for the cited resource
+ 
+!{set:cellbgcolor:#FFFFFF} dateType   !<<CI_DateTypeCode-section,CI_DateTypeCode>>  !event used for reference date
+!===
+|=== 
+
+[[CI_DateTypeCode-section]]
+[cols="1a"]
+|===
+|*CI_DateTypeCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! identification of when a given event occurred 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} adopted   ! literal !date identifies when resource was adopted
+ 
+!{set:cellbgcolor:#FFFFFF} creation   ! literal !date identifies when the resource was brought into existence
+ 
+!{set:cellbgcolor:#FFFFFF} deprecated   ! literal !date identifies when resource was deprecated
+ 
+!{set:cellbgcolor:#FFFFFF} distribution   ! literal !date identifies when an instance of the resource was distributed
+ 
+!{set:cellbgcolor:#FFFFFF} expiry   ! literal !date identifies when resource expires
+ 
+!{set:cellbgcolor:#FFFFFF} inForce   ! literal !date identifies when resource became in force
+ 
+!{set:cellbgcolor:#FFFFFF} lastRevision   ! literal !date identifies when resource was last reviewed
+ 
+!{set:cellbgcolor:#FFFFFF} lastUpdate   ! literal !date identifies when resource was last updated
+ 
+!{set:cellbgcolor:#FFFFFF} nextUpdate   ! literal !date identifies when resource will be next updated
+ 
+!{set:cellbgcolor:#FFFFFF} publication   ! literal !date identifies when the resource was issued
+ 
+!{set:cellbgcolor:#FFFFFF} released   ! literal !the date that the resource shall be released for public access
+ 
+!{set:cellbgcolor:#FFFFFF} revision   ! literal !date identifies when the resource was examined or re-examined and improved or amended
+ 
+!{set:cellbgcolor:#FFFFFF} superseded   ! literal !date identifies when resource was superseded or replaced by another resource
+ 
+!{set:cellbgcolor:#FFFFFF} unavailable   ! literal !date identifies when resource became not available or obtainable
+ 
+!{set:cellbgcolor:#FFFFFF} validityBegins   ! literal !time at which the data is considered to become valid. Note: There could be quite a delay between creation and validity begins
+ 
+!{set:cellbgcolor:#FFFFFF} validityExpires   ! literal !time at which the data is no longer considered to be valid
+!===
+|=== 
+
+[[CI_Individual-section]]
+[cols="1a"]
+|===
+|*CI_Individual* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information about the party if the party is an individual 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: !<<CI_Party-section,CI_Party>>
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! count (name + positionName) > 0 (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   ! <<CI_Organisation-section,CI_Organisation>>   [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} positionName   !<<CharacterString-section,CharacterString>>  [0..1] !position of the individual in an organisation
+!===
+|=== 
+
+[[CI_OnLineFunctionCode-section]]
+[cols="1a"]
+|===
+|*CI_OnLineFunctionCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! function performed by the resource 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} browseGraphic   ! literal !browse graphic provided
+ 
+!{set:cellbgcolor:#FFFFFF} browsing   ! literal !online browsing provided
+ 
+!{set:cellbgcolor:#FFFFFF} completeMetadata   ! literal !complete metadata provided
+ 
+!{set:cellbgcolor:#FFFFFF} download   ! literal !online instructions for transferring data from one storage device or system to another
+ 
+!{set:cellbgcolor:#FFFFFF} emailService   ! literal !online email service provided
+ 
+!{set:cellbgcolor:#FFFFFF} fileAccess   ! literal !online file access provided
+ 
+!{set:cellbgcolor:#FFFFFF} information   ! literal !online information about the resource
+ 
+!{set:cellbgcolor:#FFFFFF} offlineAccess   ! literal !online instructions for requesting the resource from the provider
+ 
+!{set:cellbgcolor:#FFFFFF} order   ! literal !online order process for obtaining the resource
+ 
+!{set:cellbgcolor:#FFFFFF} search   ! literal !online search interface for seeking out information about the resource
+ 
+!{set:cellbgcolor:#FFFFFF} upload   ! literal !online resource upload capability provided
+!===
+|=== 
+
+[[CI_OnlineResource-section]]
+[cols="1a"]
+|===
+|*CI_OnlineResource* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information about on-line sources from which the resource, specification, or community profile name and extended metadata elements can be obtained 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «DataType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} applicationProfile   !<<CharacterString-section,CharacterString>>  [0..1] !name of an application profile that can be used with the online resource
+ 
+!{set:cellbgcolor:#FFFFFF} description   !<<CharacterString-section,CharacterString>>  [0..1] !detailed text description of what the online resource is/does
+ 
+!{set:cellbgcolor:#FFFFFF} function   !<<CI_OnLineFunctionCode-section,CI_OnLineFunctionCode>>  [0..1] !code for function performed by the online resource
+ 
+!{set:cellbgcolor:#FFFFFF} linkage   !<<CharacterString-section,CharacterString>>  !location (address) for on-line access using a Uniform Resource Locator/Uniform Resource Identifier address or similar addressing scheme such as http://www.statkart.no/isotc211
+ 
+!{set:cellbgcolor:#FFFFFF} name   !<<CharacterString-section,CharacterString>>  [0..1] !name of the online resource
+ 
+!{set:cellbgcolor:#FFFFFF} protocol   !<<CharacterString-section,CharacterString>>  [0..1] !connection protocol to be used e.g. http, ftp, file,http get KVP, http POST, etc…
+ 
+!{set:cellbgcolor:#FFFFFF} protocolRequest   !<<CharacterString-section,CharacterString>>  [0..1] !protocol used by the accessed resource(to be used mainly for POST requests).
+Example
+POST/XML:
+<GetFeature   service="WFS"  version="2.0.0" outputFormat="application/gml+xml; version=3.2" xmlns=http://www.opengis.net/wfs/2.0 xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xsi:schemaLocation="http://www.opengis.net/wfs/2.0http://schemas.opengis.net/wfs/2.0.0/wfs.xsd">
+<Query typeNames="Roads"/>
+</GetFeature>
+!===
+|=== 
+
+[[CI_Organisation-section]]
+[cols="1a"]
+|===
+|*CI_Organisation* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information about the party if the party is an organisation 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: !<<CI_Party-section,CI_Party>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! count (name + logo) > 0 (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF} individual ! <<CI_Individual-section,CI_Individual>> [0..*] !an individual in the named organisation
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} logo   !<<MD_BrowseGraphic-section,MD_BrowseGraphic>>  [0..*] !Graphic identifying organization
+!===
+|=== 
+
+[[CI_Party-section]]
+[cols="1a"]
+|===
+|*CI_Party* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information about the individual and/or organisation of the party 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «abstract»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   ! <<CI_Responsibility-section,CI_Responsibility>>   [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} contactInfo   !<<CI_Contact-section,CI_Contact>>  [0..*] !contact information for the party
+ 
+!{set:cellbgcolor:#FFFFFF} name   !<<CharacterString-section,CharacterString>>  [0..1] !name of the party (individual or organization)
+!===
+|=== 
+
+[[CI_PresentationFormCode-section]]
+[cols="1a"]
+|===
+|*CI_PresentationFormCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! mode in which the data is represented 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} audioDigital   !literal !digital audio recording
+ 
+!{set:cellbgcolor:#FFFFFF} audioHardcopy   !literal !audio recording delivered by analog media, such as a magnetic tape
+ 
+!{set:cellbgcolor:#FFFFFF} diagramDigital   !literal !information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and recorded in digital format
+ 
+!{set:cellbgcolor:#FFFFFF} diagramHardcopy   !literal !information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and printed on paper, photographic material, or other media
+ 
+!{set:cellbgcolor:#FFFFFF} documentDigital   !literal !digital representation of a primarily textual item (can contain illustrations also)
+ 
+!{set:cellbgcolor:#FFFFFF} documentHardcopy   !literal !representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media
+ 
+!{set:cellbgcolor:#FFFFFF} imageDigital   !literal !likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format
+ 
+!{set:cellbgcolor:#FFFFFF} imageHardcopy   !literal !likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user
+ 
+!{set:cellbgcolor:#FFFFFF} mapDigital   !literal !map represented in raster or vector form
+ 
+!{set:cellbgcolor:#FFFFFF} mapHardcopy   !literal !map printed on paper, photographic material, or other media for use directly by the human user
+ 
+!{set:cellbgcolor:#FFFFFF} modelDigital   !literal !multi-dimensional digital representation of a feature, process, etc.
+ 
+!{set:cellbgcolor:#FFFFFF} modelHardcopy   !literal !3-dimensional, physical model
+ 
+!{set:cellbgcolor:#FFFFFF} multimediaDigital   !literal !information representation using simultaneously various digital modes for text, sound, image
+ 
+!{set:cellbgcolor:#FFFFFF} multimediaHardcopy   !literal !information representation using simultaneously various analog modes for text, sound, image
+ 
+!{set:cellbgcolor:#FFFFFF} physicalObject   !literal !a physical object. Eg. Rock or mineral sample, microscope slide
+ 
+!{set:cellbgcolor:#FFFFFF} profileDigital   !literal !vertical cross-section in digital form
+ 
+!{set:cellbgcolor:#FFFFFF} profileHardcopy   !literal !vertical cross-section printed on paper, etc.
+ 
+!{set:cellbgcolor:#FFFFFF} tableDigital   !literal !digital representation of facts or figures systematically displayed, especially in columns
+ 
+!{set:cellbgcolor:#FFFFFF} tableHardcopy   !literal !representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media
+ 
+!{set:cellbgcolor:#FFFFFF} videoDigital   !literal !digital video recording
+ 
+!{set:cellbgcolor:#FFFFFF} videoHardcopy   !literal !video recording on film
+!===
+|=== 
+
+[[CI_Responsibility-section]]
+[cols="1a"]
+|===
+|*CI_Responsibility* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information about the party and their role 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  None
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF} party ! <<CI_Party-section,CI_Party>> [1..*] !information about the party
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} extent   !<<EX_Extent-section,EX_Extent>>  [0..*] !spatial or temporal extent of the role
+ 
+!{set:cellbgcolor:#FFFFFF} role   !<<CI_RoleCode-section,CI_RoleCode>>  !function performed by the responsible party
+!===
+|=== 
+
+[[CI_RoleCode-section]]
+[cols="1a"]
+|===
+|*CI_RoleCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! function performed by the responsible party 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} author   ! literal !party who authored the resource
+ 
+!{set:cellbgcolor:#FFFFFF} coAuthor   ! literal !party who jointly authors the resource
+ 
+!{set:cellbgcolor:#FFFFFF} collaborator   ! literal !party who assists with the generation of the resource other than the principal investigator
+ 
+!{set:cellbgcolor:#FFFFFF} contributor   ! literal !party contributing to the resource
+ 
+!{set:cellbgcolor:#FFFFFF} custodian   ! literal !party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource
+ 
+!{set:cellbgcolor:#FFFFFF} distributor   ! literal !party who distributes the resource
+ 
+!{set:cellbgcolor:#FFFFFF} editor   ! literal !party who reviewed or modified the resource to improve the content
+ 
+!{set:cellbgcolor:#FFFFFF} funder   ! literal !party providing monetary support for the resource
+ 
+!{set:cellbgcolor:#FFFFFF} mediator   ! literal !a class of entity that mediates access to the resource and for whom the resource is intended or useful
+ 
+!{set:cellbgcolor:#FFFFFF} originator   ! literal !party who created the resource
+ 
+!{set:cellbgcolor:#FFFFFF} owner   ! literal !party that owns the resource
+ 
+!{set:cellbgcolor:#FFFFFF} pointOfContact   ! literal !party who can be contacted for acquiring knowledge about or acquisition of the resource
+ 
+!{set:cellbgcolor:#FFFFFF} principalInvestigator   ! literal !key party responsible for gathering information and conducting research
+ 
+!{set:cellbgcolor:#FFFFFF} processor   ! literal !party who has processed the data in a manner such that the resource has been modified
+ 
+!{set:cellbgcolor:#FFFFFF} publisher   ! literal !party who published the resource
+ 
+!{set:cellbgcolor:#FFFFFF} resourceProvider   ! literal !party that supplies the resource
+ 
+!{set:cellbgcolor:#FFFFFF} rightsHolder   ! literal !party owning or managing rights over the resource
+ 
+!{set:cellbgcolor:#FFFFFF} sponsor   ! literal !party who speaks for the resource
+ 
+!{set:cellbgcolor:#FFFFFF} stakeholder   ! literal !party who has an interest in the resource or the use of the resource
+ 
+!{set:cellbgcolor:#FFFFFF} user   ! literal !party who uses the resource
+!===
+|=== 
+
+[[CI_Series-section]]
+[cols="1a"]
+|===
+|*CI_Series* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information about the series, or aggregate resource, to which a resource belongs 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «DataType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} issueIdentification   !<<CharacterString-section,CharacterString>>  [0..1] !information identifying the issue of the series
+ 
+!{set:cellbgcolor:#FFFFFF} name   !<<CharacterString-section,CharacterString>>  [0..1] !name of the series, or aggregate resource, of which the resource is a part
+ 
+!{set:cellbgcolor:#FFFFFF} page   !<<CharacterString-section,CharacterString>>  [0..1] !details on which pages of the publication the article was published
+!===
+|=== 
+
+[[CI_Telephone-section]]
+[cols="1a"]
+|===
+|*CI_Telephone* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! telephone numbers for contacting the responsible individual or organisation 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «DataType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} number   !<<CharacterString-section,CharacterString>>  !telephone number by which individuals can contact responsible organisation or individual
+ 
+!{set:cellbgcolor:#FFFFFF} numberType   !<<CI_TelephoneTypeCode-section,CI_TelephoneTypeCode>>  [0..1] !type of telephone responsible organisation or individual
+!===
+|=== 
+
+[[CI_TelephoneTypeCode-section]]
+[cols="1a"]
+|===
+|*CI_TelephoneTypeCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! type of telephone 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} facsimile   ! literal !telephone provides facsimile service
+ 
+!{set:cellbgcolor:#FFFFFF} sms   ! literal !telephone provides sms service
+ 
+!{set:cellbgcolor:#FFFFFF} voice   ! literal !telephone provides voice service
+!===
+|===   
+
+=== Constraint information
+The following classes are defined in ISO 19115-1 Edition 1
+
+[[MD_ClassificationCode-section]]
+[cols="1a"]
+|===
+|*MD_ClassificationCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! name of the handling restrictions on the resource 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} confidential   ! literal !available for someone who can be entrusted with information
+ 
+!{set:cellbgcolor:#FFFFFF} forOfficialUseOnly   ! literal !unclassified information that may be exempt from mandatory release to the public
+ 
+!{set:cellbgcolor:#FFFFFF} limitedDistribution   ! literal !desimination limited by designating body
+ 
+!{set:cellbgcolor:#FFFFFF} protected   ! literal !compromise of the information could cause damage
+ 
+!{set:cellbgcolor:#FFFFFF} restricted   ! literal !not for general disclosure
+ 
+!{set:cellbgcolor:#FFFFFF} secret   ! literal !kept or meant to be kept private, unknown, or hidden from all but a select group of people
+ 
+!{set:cellbgcolor:#FFFFFF} sensitiveButUnclassified   ! literal !although unclassified, requires strict controls over its distribution
+ 
+!{set:cellbgcolor:#FFFFFF} topSecret   ! literal !of the highest secrecy
+ 
+!{set:cellbgcolor:#FFFFFF} unclassified   ! literal !available for general disclosure
+!===
+|=== 
+
+[[MD_Constraints-section]]
+[cols="1a"]
+|===
+|*MD_Constraints* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! restrictions on the access and use of a resource or metadata 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   ! <<MD_Identification-section,MD_Identification>>   [] !
+!{set:cellbgcolor:#FFFFFF}   ! <<MD_Metadata-section,MD_Metadata>>   [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} constraintApplicationScope   !<<MD_Scope-section,MD_Scope>>  [0..1] !Spatial and temporal extent of the application of the constraint restrictions
+ 
+!{set:cellbgcolor:#FFFFFF} graphic   !<<MD_BrowseGraphic-section,MD_BrowseGraphic>>  [0..*] !graphic /symbol indicating the constraint 
+ 
+!{set:cellbgcolor:#FFFFFF} reference   !<<CI_Citation-section,CI_Citation>>  [0..*] !citation/URL for the limitation or constraint, eg. copyright statement, license agreement, etc
+ 
+!{set:cellbgcolor:#FFFFFF} releasability   !<<MD_Releasability-section,MD_Releasability>>  [0..1] !information concerning the parties to whom the resource can or cannot be released
+ 
+!{set:cellbgcolor:#FFFFFF} responsibleParty   !<<CI_Responsibility-section,CI_Responsibility>>  [0..*] !party responsible for the resource constraints
+ 
+!{set:cellbgcolor:#FFFFFF} useLimitation   !<<CharacterString-section,CharacterString>>  [0..*] !limitation affecting the fitness for use of the resource or metadata. Example, "not to be used for navigation"
+!===
+|=== 
+
+[[MD_LegalConstraints-section]]
+[cols="1a"]
+|===
+|*MD_LegalConstraints* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! restrictions and legal prerequisites for accessing and using the resource or metadata 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<MD_Constraints-section,MD_Constraints>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None 
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! otherConstraints: only documented if accessConstraints or useConstraints = "otherRestrictions" (Invariant):     
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! If MD_LegalConstraints used then count of (accessConstraints + useConstraints + otherConstraints + useLimitation + releasability ) > 0 (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} accessConstraints   !<<MD_RestrictionCode-section,MD_RestrictionCode>>  [0..*] !access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource or metadata
+ 
+!{set:cellbgcolor:#FFFFFF} otherConstraints   !<<CharacterString-section,CharacterString>>  [0..*] !other restrictions and legal prerequisites for accessing and using the resource or metadata
+ 
+!{set:cellbgcolor:#FFFFFF} useConstraints   !<<MD_RestrictionCode-section,MD_RestrictionCode>>  [0..*] !constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata
+!===
+|=== 
+
+[[MD_Releasability-section]]
+[cols="1a"]
+|===
+|*MD_Releasability* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information about resource release constraints 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None 
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! count (addressee + statement) > 0 (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} addressee   !<<CI_Responsibility-section,CI_Responsibility>>  [0..*] !party to which the release statement applies
+ 
+!{set:cellbgcolor:#FFFFFF} disseminationConstraints   !<<MD_RestrictionCode-section,MD_RestrictionCode>>  [0..*] !component in determining releasability
+ 
+!{set:cellbgcolor:#FFFFFF} statement   !<<CharacterString-section,CharacterString>>  [0..1] !release statement
+!===
+|=== 
+
+[[MD_RestrictionCode-section]]
+[cols="1a"]
+|===
+|*MD_RestrictionCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! limitation(s) placed upon the access or use of the data 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} confidential   ! literal !not available to the public contains information that could be prejudicial to a commercial, industrial, or national interest
+ 
+!{set:cellbgcolor:#FFFFFF} copyright   ! literal !exclusive right to the publication, production, or sale of the rights to a literary, dramatic, musical, or artistic work, or to the use of a commercial print or label, granted by law for a specified period of time to an author, composer, artist, distributor
+ 
+!{set:cellbgcolor:#FFFFFF} in-confidence   ! literal !with trust
+ 
+!{set:cellbgcolor:#FFFFFF} intellectualPropertyRights   ! literal !rights to financial benefit from and control of distribution of non-tangible property that is a result of creativity
+ 
+!{set:cellbgcolor:#FFFFFF} licence   ! literal !formal permission to do something
+ 
+!{set:cellbgcolor:#FFFFFF} licenceDistributor   ! literal !formal permission required for a person or an entity to commercialize or distribute the resource
+ 
+!{set:cellbgcolor:#FFFFFF} licenceEndUser   ! literal !formal permission required for a person or an entity to use the resource and that may differ from the person that orders or purchases it
+ 
+!{set:cellbgcolor:#FFFFFF} licenceUnrestricted   ! literal !formal permission not required to use the resource
+ 
+!{set:cellbgcolor:#FFFFFF} otherRestrictions   ! literal !limitation not listed
+ 
+!{set:cellbgcolor:#FFFFFF} patent   ! literal !government has granted exclusive right to make, sell, use or license an invention or discovery
+ 
+!{set:cellbgcolor:#FFFFFF} patentPending   ! literal !produced or sold information awaiting a patent
+ 
+!{set:cellbgcolor:#FFFFFF} private   ! literal !protects rights of individual or organisations from observation, intrusion, or attention of others
+ 
+!{set:cellbgcolor:#FFFFFF} restricted   ! literal !withheld from general circulation or disclosure
+ 
+!{set:cellbgcolor:#FFFFFF} sensitiveButUnclassified   ! literal !although unclassified, requires strict controls over its distribution.
+ 
+!{set:cellbgcolor:#FFFFFF} statutory   ! literal !prescribed by law
+ 
+!{set:cellbgcolor:#FFFFFF} trademark   ! literal !a name, symbol, or other device identifying a product, officially registered and legally restricted to the use of the owner or manufacturer
+ 
+!{set:cellbgcolor:#FFFFFF} unrestricted   ! literal !no constraints exist
+!===
+|=== 
+
+[[MD_SecurityConstraints-section]]
+[cols="1a"]
+|===
+|*MD_SecurityConstraints* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! handling restrictions imposed on the resource or metadata for national security or similar security concerns 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<MD_Constraints-section,MD_Constraints>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} classification   !<<MD_ClassificationCode-section,MD_ClassificationCode>>  !name of the handling restrictions on the resource or metadata
+ 
+!{set:cellbgcolor:#FFFFFF} classificationSystem   !<<CharacterString-section,CharacterString>>  [0..1] !name of the classification system
+ 
+!{set:cellbgcolor:#FFFFFF} handlingDescription   !<<CharacterString-section,CharacterString>>  [0..1] !additional information about the restrictions on handling the resource or metadata
+ 
+!{set:cellbgcolor:#FFFFFF} userNote   !<<CharacterString-section,CharacterString>>  [0..1] !explanation of the application of the legal constraints or other restrictions and legal prerequisites for obtaining and using the resource or metadata
+!===
+|===   
+
+=== Identification information
+The following classes are defined in ISO 19115-1 Edition 1
+
+[[DS_AssociationTypeCode-section]]
+[cols="1a"]
+|===
+|*DS_AssociationTypeCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! justification for the correlation of two resources 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} collectiveTitle   ! literal !common title with holdings note NOTE: title identifies elements of a series collectively, combined with information about what volumes are available at the source cited
+ 
+!{set:cellbgcolor:#FFFFFF} crossReference   ! literal !reference from one resource to another
+ 
+!{set:cellbgcolor:#FFFFFF} dependency   ! literal !associate through a dependency
+ 
+!{set:cellbgcolor:#FFFFFF} isComposedOf   ! literal !reference to resources that are parts of this data set
+ 
+!{set:cellbgcolor:#FFFFFF} largerWorkCitation   ! literal !reference to a master resource of which this one is a part
+ 
+!{set:cellbgcolor:#FFFFFF} partOfSeamlessDatabase   ! literal !part of same structured set of data held in a computer
+ 
+!{set:cellbgcolor:#FFFFFF} revisionOf   ! literal !resource is a revision of associated resource
+ 
+!{set:cellbgcolor:#FFFFFF} series   ! literal !associated through a common heritage such as produced to a common product specification
+ 
+!{set:cellbgcolor:#FFFFFF} stereoMate   ! literal !part of a set of imagery that when used together, provides three-dimensional images
+!===
+|=== 
+
+[[DS_InitiativeTypeCode-section]]
+[cols="1a"]
+|===
+|*DS_InitiativeTypeCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! type of aggregation activity in which resources are related 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} campaign   ! literal !series of organized planned actions
+ 
+!{set:cellbgcolor:#FFFFFF} collection   ! literal !accumulation of resources assembled for a specific purpose
+ 
+!{set:cellbgcolor:#FFFFFF} exercise   ! literal !specific performance of a function or group of functions
+ 
+!{set:cellbgcolor:#FFFFFF} experiment   ! literal !process designed to find if something is effective or valid
+ 
+!{set:cellbgcolor:#FFFFFF} investigation   ! literal !search or systematic inquiry
+ 
+!{set:cellbgcolor:#FFFFFF} mission   ! literal !specific operation of a data collection system
+ 
+!{set:cellbgcolor:#FFFFFF} operation   ! literal !action that is part of a series of actions
+ 
+!{set:cellbgcolor:#FFFFFF} platform   ! literal !vehicle or other support base that holds a sensor
+ 
+!{set:cellbgcolor:#FFFFFF} process   ! literal !method of doing something involving a number of steps
+ 
+!{set:cellbgcolor:#FFFFFF} program   ! literal !specific planned activity
+ 
+!{set:cellbgcolor:#FFFFFF} project   ! literal !organized undertaking, research, or development
+ 
+!{set:cellbgcolor:#FFFFFF} sensor   ! literal !device or piece of equipment which detects or records
+ 
+!{set:cellbgcolor:#FFFFFF} study   ! literal !examination or investigation
+ 
+!{set:cellbgcolor:#FFFFFF} task   ! literal !piece of work
+ 
+!{set:cellbgcolor:#FFFFFF} trial   ! literal !process of testing to discover or demonstrate something
+!===
+|=== 
+
+[[MD_AssociatedResource-section]]
+[cols="1a"]
+|===
+|*MD_AssociatedResource* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! associated resource information 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! GP_AssociatedResource 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None 
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! count of (name + metadataReference) > 0 (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF} ! <<MD_Identification-section,MD_Identification>>   [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} associationType   !<<DS_AssociationTypeCode-section,DS_AssociationTypeCode>>  !type of relation between the resources
+ 
+!{set:cellbgcolor:#FFFFFF} initiativeType   !<<DS_InitiativeTypeCode-section,DS_InitiativeTypeCode>>  [0..1] !type of initiative under which the associated resource was produced 
+ 
+!{set:cellbgcolor:#FFFFFF} metadataReference   !<<CI_Citation-section,CI_Citation>>  [0..1] !reference to the metadata of the associated resource
+ 
+!{set:cellbgcolor:#FFFFFF} name   !<<CI_Citation-section,CI_Citation>>  [0..1] !citation information about the associated resource
+!===
+|=== 
+
+[[MD_DataIdentification-section]]
+[cols="1a"]
+|===
+|*MD_DataIdentification* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information required to identify a resource 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<MD_Identification-section,MD_Identification>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None 
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! defaultLocale documented if resource includes textual information
+ (Invariant):     
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! defaultLocale.PT_Locale.characterEncoding default value is UTF-8 (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} defaultLocale   !<<PT_Locale-section,PT_Locale>>  [0..1] !language and character set used within the resource
+ 
+!{set:cellbgcolor:#FFFFFF} environmentDescription   !<<CharacterString-section,CharacterString>>  [0..1] !description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size
+ 
+!{set:cellbgcolor:#FFFFFF} otherLocale   !<<PT_Locale-section,PT_Locale>>  [0..*] !alternate localised language(s) and character set (s) used within the resource
+ 
+!{set:cellbgcolor:#FFFFFF} supplementalInformation   !<<CharacterString-section,CharacterString>>  [0..1] !any other descriptive information about the resource
+!===
+|=== 
+
+[[MD_Identification-section]]
+[cols="1a"]
+|===
+|*MD_Identification* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! basic information required to uniquely identify a resource or resources 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! GP_Identification 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «abstract»
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! (MD_Metadata.metadataScope.MD_MetadataScope.resourceScope) = 'dataset' implies count (extent.geographicElement.EX_GeographicBoundingBox + extent.geographicElement.EX_GeographicDescription) >= 1
+
+ (Invariant):     
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! (MD_Metadata.metadataScope.MD_Scope.resourceScope) = ('dataset' or 'series') implies topicCategory is mandatory (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF} resourceMaintenance  ! <<MD_MaintenanceInformation-section,MD_MaintenanceInformation>>   [0..*] !information about the frequency of resource updates, and the scope of those updates
+!{set:cellbgcolor:#FFFFFF} associatedResource  ! <<MD_AssociatedResource-section,MD_AssociatedResource>>   [0..*] !associated resource information
+!{set:cellbgcolor:#FFFFFF} resourceSpecificUsage  ! <<MD_Usage-section,MD_Usage>>   [0..*] !basic information about specific application(s) for which the resource(s) has/have been or is being used by different users
+!{set:cellbgcolor:#FFFFFF}   ! <<MD_Metadata-section,MD_Metadata>>   [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} abstract   !<<CharacterString-section,CharacterString>>  !brief narrative summary of the content of the resource(s)
+ 
+!{set:cellbgcolor:#FFFFFF} additionalDocumentation   !<<CI_Citation-section,CI_Citation>>  [0..*] !other documentation associated with the resource
+EXAMPLE Related articles, publications,
+user guides, data dictionaries.
+ 
+!{set:cellbgcolor:#FFFFFF} citation   !<<CI_Citation-section,CI_Citation>>  !citation for the resource(s)
+ 
+!{set:cellbgcolor:#FFFFFF} credit   !<<CharacterString-section,CharacterString>>  [0..*] !recognition of those who contributed to the resource(s)
+ 
+!{set:cellbgcolor:#FFFFFF} extent   !<<EX_Extent-section,EX_Extent>>  [0..*] !spatial and temporal extent of the resource
+ 
+!{set:cellbgcolor:#FFFFFF} pointOfContact   !<<CI_Responsibility-section,CI_Responsibility>>  [0..*] !identification of, and means of communication with, person(s) and organisation(s) associated with the resource(s)
+ 
+!{set:cellbgcolor:#FFFFFF} processingLevel   !<<MD_Identifier-section,MD_Identifier>>  [0..1] !code that identifies the level of processing in the producers coding system of a resource eg. NOAA level 1B
+ 
+!{set:cellbgcolor:#FFFFFF} purpose   !<<CharacterString-section,CharacterString>>  [0..1] !summary of the intentions with which the resource(s) was developed
+ 
+!{set:cellbgcolor:#FFFFFF} spatialRepresentationType   !<<MD_SpatialRepresentationTypeCode-section,MD_SpatialRepresentationTypeCode>>  [0..*] !method used to spatially represent geographic information
+ 
+!{set:cellbgcolor:#FFFFFF} spatialResolution   !<<MD_Resolution-section,MD_Resolution>>  [0..*] !factor which provides a general understanding of the density of spatial data in the resource or describes the range of resolutions in which a digital resource may be used
+NOTE: this element should be repeated when describing upper and lower range
+ 
+!{set:cellbgcolor:#FFFFFF} status   !<<MD_ProgressCode-section,MD_ProgressCode>>  [0..*] !status of the resource(s)
+ 
+!{set:cellbgcolor:#FFFFFF} temporalResolution   !<<TM_Duration-section,TM_Duration>>  [0..*] !smallest resolvable temporal period in a resource
+ 
+!{set:cellbgcolor:#FFFFFF} topicCategory   !<<MD_TopicCategoryCode-section,MD_TopicCategoryCode>>  [0..*] !main theme(s) of the resource
+!===
+|=== 
+
+[[MD_KeywordClass-section]]
+[cols="1a"]
+|===
+|*MD_KeywordClass* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! specification of a class to categorize keywords in a domain-specific vocabulary that has a binding to a formal ontology 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  None
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   ! <<MD_Keywords-section,MD_Keywords>>   [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} className   !<<CharacterString-section,CharacterString>>  !character string to label the keyword category in natural language
+ 
+!{set:cellbgcolor:#FFFFFF} conceptIdentifier   !<<URI-section,URI>>  [0..1] !URI of concept in ontology specified by the ontology attribute; this concept is labeled by the className: CharacterString.
+ 
+!{set:cellbgcolor:#FFFFFF} ontology   !<<CI_Citation-section,CI_Citation>>  !a reference that binds the keyword class to a formal conceptualization of a knowledge domain for use in semantic processingNOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology
+!===
+|=== 
+
+[[MD_Keywords-section]]
+[cols="1a"]
+|===
+|*MD_Keywords* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! keywords, their type and reference source NOTE: When the resource described is a service, one instance of MD_Keyword shall refer to the service taxonomy defined in ISO 19119, 8.3) 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None 
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! When the resource described is a service, one instance of MD_Keyword shall refer to the service taxonomy defined in ISO 19119 (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   ! <<MD_Identification-section,MD_Identification>>   [] !
+!{set:cellbgcolor:#FFFFFF} keywordClass  ! <<MD_Keywords-section,MD_Keywords>>   [0..1] !association of a MD_Keywords instance with a MD_KeywordClass to provide user-defined categorization of groups of keywords that extend or are orthogonal to the standardized KeywordTypeCodes and are associated with an ontology that allows additional semantic query processing
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} keyword   !<<CharacterString-section,CharacterString>>  [1..*] !commonly used word(s) or formalised word(s) or phrase(s) used to describe the subject
+ 
+!{set:cellbgcolor:#FFFFFF} thesaurusName   !<<CI_Citation-section,CI_Citation>>  [0..1] !name of the formally registered thesaurus or a similar authoritative source of keywords
+ 
+!{set:cellbgcolor:#FFFFFF} type   !<<MD_KeywordTypeCode-section,MD_KeywordTypeCode>>  [0..1] !subject matter used to group similar keywords
+!===
+|=== 
+
+[[MD_KeywordTypeCode-section]]
+[cols="1a"]
+|===
+|*MD_KeywordTypeCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! methods used to group similar keywords 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! TaxonomyKeywords 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} dataCentre   ! literal !keyword identifies a a repository or archive that manages and distributes data
+ 
+!{set:cellbgcolor:#FFFFFF} discipline   ! literal !keyword identifies a branch of instruction or specialized learning
+ 
+!{set:cellbgcolor:#FFFFFF} featureType   ! literal !keyword identifies a resource containing or about a collection of feature instances with common characteristics
+ 
+!{set:cellbgcolor:#FFFFFF} instrument   ! literal !keyword identifies a device used to measure or compare physical properties
+ 
+!{set:cellbgcolor:#FFFFFF} place   ! literal !keyword identifies a location
+ 
+!{set:cellbgcolor:#FFFFFF} platform   ! literal !keyword identifies a structure upon which an instrument is mounted
+ 
+!{set:cellbgcolor:#FFFFFF} process   ! literal !keyword identifies a series of actions or natural occurrences
+ 
+!{set:cellbgcolor:#FFFFFF} product   ! literal !keyword identifies a type of product
+ 
+!{set:cellbgcolor:#FFFFFF} project   ! literal !keyword identifies an endeavour undertaken to create or modify a product or service
+ 
+!{set:cellbgcolor:#FFFFFF} service   ! literal !keyword identifies an activity carried out by one party for the benefit of another
+ 
+!{set:cellbgcolor:#FFFFFF} stratum   ! literal !keyword identifies the layer(s) of any deposited substance or levels within an ordered system
+ 
+!{set:cellbgcolor:#FFFFFF} subTopicCategory   ! literal !refinement of a topic category for the purpose of geographic data classification
+ 
+!{set:cellbgcolor:#FFFFFF} taxon   ! literal !keyword identifies a taxonomy of the resource
+ 
+!{set:cellbgcolor:#FFFFFF} temporal   ! literal !keyword identifies a time period related to the resource
+ 
+!{set:cellbgcolor:#FFFFFF} theme   ! literal !keyword identifies a particular subject or topic
+!===
+|=== 
+
+[[MD_ProgressCode-section]]
+[cols="1a"]
+|===
+|*MD_ProgressCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! status of the resource 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} accepted   ! literal !agreed to by sponsor
+ 
+!{set:cellbgcolor:#FFFFFF} completed   ! literal !has been completed
+ 
+!{set:cellbgcolor:#FFFFFF} deprecated   ! literal !resource superseded and will become obsolete, use only for historical purposes
+ 
+!{set:cellbgcolor:#FFFFFF} final   ! literal !progress concluded and no changes will be accepted
+ 
+!{set:cellbgcolor:#FFFFFF} historicalArchive   ! literal !stored in an offline storage facility
+ 
+!{set:cellbgcolor:#FFFFFF} notAccepted   ! literal !rejected by sponsor
+ 
+!{set:cellbgcolor:#FFFFFF} obsolete   ! literal !no longer relevant
+ 
+!{set:cellbgcolor:#FFFFFF} onGoing   ! literal !continually being updated
+ 
+!{set:cellbgcolor:#FFFFFF} pending   ! literal !committed to, but not yet addressed
+ 
+!{set:cellbgcolor:#FFFFFF} planned   ! literal !fixed date has been established upon or by which the resource will be created or updated
+ 
+!{set:cellbgcolor:#FFFFFF} proposed   ! literal !suggested that development needs to be undertaken
+ 
+!{set:cellbgcolor:#FFFFFF} required   ! literal !needs to be generated or updated
+ 
+!{set:cellbgcolor:#FFFFFF} retired   ! literal !item is no longer recommended for use. It has not been superseded by another item
+ 
+!{set:cellbgcolor:#FFFFFF} superseded   ! literal !replaced by new
+ 
+!{set:cellbgcolor:#FFFFFF} tentative   ! literal !provisional changes likely before resource becomes final or complete
+ 
+!{set:cellbgcolor:#FFFFFF} underDevelopment   ! literal !currently in the process of being created
+ 
+!{set:cellbgcolor:#FFFFFF} valid   ! literal !acceptable under specific conditions
+ 
+!{set:cellbgcolor:#FFFFFF} withdrawn   ! literal !removed from consideration
+!===
+|=== 
+
+[[MD_RepresentativeFraction-section]]
+[cols="1a"]
+|===
+|*MD_RepresentativeFraction* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! derived from ISO 19103 Scale where MD_RepresentativeFraction.denominator = 1 / Scale.measure And Scale.targetUnits = Scale.sourceUnits 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «DataType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} denominator   !<<Integer-section,Integer>>  !the number below the line in a vulgar fraction
+!===
+|=== 
+
+[[MD_Resolution-section]]
+[cols="1a"]
+|===
+|*MD_Resolution* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! level of detail expressed as a scale factor, a distance or an angle 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «Union»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} angularDistance   !<<Angle-section,Angle>>  !Angular sampling measure
+ 
+!{set:cellbgcolor:#FFFFFF} distance   !<<Distance-section,Distance>>  !horizontal ground sample distance
+ 
+!{set:cellbgcolor:#FFFFFF} equivalentScale   !<<MD_RepresentativeFraction-section,MD_RepresentativeFraction>>  !level of detail expressed as the scale of a comparable hardcopy map or chart
+ 
+!{set:cellbgcolor:#FFFFFF} levelOfDetail   !<<CharacterString-section,CharacterString>>  !brief textual description of the spatial resolution of the resource
+ 
+!{set:cellbgcolor:#FFFFFF} vertical   !<<Distance-section,Distance>>  !Vertical sampling distance
+!===
+|=== 
+
+[[MD_SpatialRepresentationTypeCode-section]]
+[cols="1a"]
+|===
+|*MD_SpatialRepresentationTypeCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! method used to represent geographic information in the resource 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} grid   ! literal !grid data is used to represent geographic data
+ 
+!{set:cellbgcolor:#FFFFFF} stereoModel   ! literal !three-dimensional view formed by the intersecting homologous rays of an overlapping pair of images
+ 
+!{set:cellbgcolor:#FFFFFF} textTable   ! literal !textual or tabular data is used to represent geographic data
+ 
+!{set:cellbgcolor:#FFFFFF} tin   ! literal !triangulated irregular network
+ 
+!{set:cellbgcolor:#FFFFFF} vector   ! literal !vector data is used to represent geographic data
+ 
+!{set:cellbgcolor:#FFFFFF} video   ! literal !scene from a video recording
+!===
+|=== 
+
+[[MD_Usage-section]]
+[cols="1a"]
+|===
+|*MD_Usage* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! brief description of ways in which the resource(s) is/are currently or has been used 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! GP_Usage 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} additionalDocumentation   !<<CI_Citation-section,CI_Citation>>  [0..*] !publications that describe usage of data
+ 
+!{set:cellbgcolor:#FFFFFF} identifiedIssues   !<<CI_Citation-section,CI_Citation>>  [0..1] !citation of a description of known issues associated with the resource along with proposed solutions if available
+ 
+!{set:cellbgcolor:#FFFFFF} response   !<<CharacterString-section,CharacterString>>  [0..*] !response to the user-determined limitationsE.G.. 'this has been fixed in version x'
+ 
+!{set:cellbgcolor:#FFFFFF} specificUsage   !<<CharacterString-section,CharacterString>>  !brief description of the resource and/or resource series usage
+ 
+!{set:cellbgcolor:#FFFFFF} usageDateTime   !<<TM_Primitive-section,TM_Primitive>>  [0..*] !date and time of the first use or range of uses of the resource and/or resource series
+ 
+!{set:cellbgcolor:#FFFFFF} userContactInfo   !<<CI_Responsibility-section,CI_Responsibility>>  [0..*] !identification of and means of communicating with person(s) and organisation(s) using the resource(s)
+ 
+!{set:cellbgcolor:#FFFFFF} userDeterminedLimitations   !<<CharacterString-section,CharacterString>>  [0..1] !applications, determined by the user for which the resource and/or resource series is not suitable
+!===
+|=== 
+
+[[MD_TopicCategoryCode-section]]
+[cols="1a"]
+|===
+|*MD_TopicCategoryCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! high-level geographic data thematic classification to assist in the grouping and search of available geographic data sets. NOTE 1 Can be used to group keywords as well. Listed examples are not exhaustive. NOTE 2: It is understood there are overlaps between general categories and the user is encouraged to select the one most appropriate. 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! enumeration 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} farming   ! literal !rearing of animals and/or cultivation of plantsExamples: agriculture, irrigation, aquaculture, plantations, herding, pests and diseases affecting crops and livestock
+ 
+!{set:cellbgcolor:#FFFFFF} biota   ! literal !flora and/or fauna in natural environment Examples: wildlife, vegetation, biological sciences, ecology, wilderness, sealife, wetlands, habitat
+ 
+!{set:cellbgcolor:#FFFFFF} boundaries   ! literal !legal land descriptions Examples: political and administrative boundaries
+ 
+!{set:cellbgcolor:#FFFFFF} climatologyMeteorologyAtmosphere   ! literal  !processes and phenomena of the atmosphere Examples: cloud cover, weather, climate, atmospheric conditions, climate change, precipitation
+ 
+!{set:cellbgcolor:#FFFFFF} economy   ! literal !economic activities, conditions and employment Examples: production, labour, revenue, commerce, industry, tourism and ecotourism, forestry, fisheries, commercial or subsistence hunting, exploration and exploitation of resources such as minerals, oil and gas
+ 
+!{set:cellbgcolor:#FFFFFF} elevation   ! literal !height above or below a vertical datumExamples: altitude, bathymetry, digital elevation models, slope, derived products
+ 
+!{set:cellbgcolor:#FFFFFF} environment   ! literal !environmental resources, protection and conservation Examples: environmental pollution, waste storage and treatment, environmental impact assessment, monitoring environmental risk, nature reserves, landscape
+ 
+!{set:cellbgcolor:#FFFFFF} geoscientificInformation   ! literal  !information pertaining to earth sciences Examples: geophysical features and processes, geology, minerals, sciences dealing with the composition, structure and origin of the earth's rocks, risks of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrogeology, erosion
+ 
+!{set:cellbgcolor:#FFFFFF} health   ! literal !health, health services, human ecology, and safety Examples: disease and illness, factors affecting health, hygiene, substance abuse, mental and physical health, health services
+ 
+!{set:cellbgcolor:#FFFFFF} imageryBaseMapsEarthCover   ! literal !base maps Examples: land cover, topographic maps, imagery, unclassified images, annotations
+ 
+!{set:cellbgcolor:#FFFFFF} intelligenceMilitary   ! literal !military bases, structures, activities Examples: barracks, training grounds, military transportation, information collection
+ 
+!{set:cellbgcolor:#FFFFFF} inlandWaters   ! literal !inland water features, drainage systems and their characteristics Examples: rivers and glaciers, salt lakes, water utilization plans, dams, currents, floods, water quality, hydrographic charts
+ 
+!{set:cellbgcolor:#FFFFFF} location   ! literal !positional information and services Examples: addresses, geodetic networks, control points, postal zones and services, place names
+ 
+!{set:cellbgcolor:#FFFFFF} oceans   ! literal !features and characteristics of salt water bodies (excluding inland waters) Examples: tides, tidal waves, coastal information, reefs
+ 
+!{set:cellbgcolor:#FFFFFF} planningCadastre   ! literal !information used for appropriate actions for future use of the land Examples: land use maps, zoning maps, cadastral surveys, land ownership
+ 
+!{set:cellbgcolor:#FFFFFF} society   ! literal !characteristics of society and cultures Examples: settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information
+ 
+!{set:cellbgcolor:#FFFFFF} structure   ! literal !man-made construction Examples: buildings, museums, churches, factories, housing, monuments, shops, towers
+ 
+!{set:cellbgcolor:#FFFFFF} transportation   ! literal !means and aids for conveying persons and/or goods Examples: roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways
+ 
+!{set:cellbgcolor:#FFFFFF} utilitiesCommunication   ! literal !energy, water and waste systems and communications infrastructure and servicesExamples: hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks
+ 
+!{set:cellbgcolor:#FFFFFF} extraTerrestrial   ! literal !region more than 100 km above the surface of the Earth
+ 
+!{set:cellbgcolor:#FFFFFF} disaster   ! literal !Information related to disasters
+Examples: site of the disaster, evacuation zone, disaster-prevention facility, disaster relief activities
+!===
+|===   
+
+=== Name types
+The following classes are defined in ISO 19103 Edition 1
+
+[[GenericName-section]]
+[cols="1a"]
+|===
+|*GenericName* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Generic Name is the abstract class for all names in a NameSpace. Each instance of a GenericName is either a LocalName or a ScopedName. A LocalName references a local object directly accessible from the NameSpace. A ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace. 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  interface
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF} scope  ! <<NameSpace-section,NameSpace>>   [1] !
+!===
+|=== 
+
+[[LocalName-section]]
+[cols="1a"]
+|===
+|*LocalName* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A LocalName references a local object directly accessible from the NameSpace. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GenericName-section,GenericName>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|=== 
+
+[[MemberName-section]]
+[cols="1a"]
+|===
+|*MemberName* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A MemberName is a LocalName that references either an attribute slot in a record or  recordType or an attribute, operation, or association role in an object instance or  type description in some form of schema.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<LocalName-section,LocalName>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} aName   !<<CharacterString-section,CharacterString>>  !The stored value "aName" is the returned value for the "aName()" operation.  
+ 
+!{set:cellbgcolor:#FFFFFF} attributeType   !<<TypeName-section,TypeName>>  !The allowable type for this member.  
+!===
+|=== 
+
+[[NameSpace-section]]
+[cols="1a"]
+|===
+|*NameSpace* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A Name Space is a domain in which "names" given by character strings (possibly under local constrains constraints enforced by the Name Space) can be mapped to objects via a getObejct operation. Examples include objects which form a Name Space for their attributes, operations and associations, or Schemas that form Name Spaces for their included data types or classes. 
+Not all methods for NameSpaces need to be made publicly accessible. 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF} name  ! <<GenericName-section,GenericName>>   [0..*] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} acceptableClassList   !<<TypeName-section,TypeName>>  !
+ 
+!{set:cellbgcolor:#FFFFFF} isGlobal   !<<Boolean-section,Boolean>>  !
+!===
+|=== 
+
+[[ScopedName-section]]
+[cols="1a"]
+|===
+|*ScopedName* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace. ScopedName contains a LocalName as head and a GenericName, which might be a LocalName or a ScopedName, as tail. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GenericName-section,GenericName>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|=== 
+
+[[TypeName-section]]
+[cols="1a"]
+|===
+|*TypeName* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A TypeName is a LocalName that references either a recordType or object type in some form of schema. The stored value "aName" is the returned value for the "aName()" operation. This is the types name. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<LocalName-section,LocalName>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} aName   !<<CharacterString-section,CharacterString>>  !The stored value "aName" is the returned value for the "aName()" operation.  
+!===
+|===   
+
+=== Primitive types
+The following classes are defined in ISO 19103 Edition 1
+
+==== Date and Time
+
+[[Date-section]]
+[cols="1a"]
+|===
+|*Date* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} century   !<<CharacterString-section,CharacterString>>  !
+ 
+!{set:cellbgcolor:#FFFFFF} day   !<<CharacterString-section,CharacterString>>  !
+ 
+!{set:cellbgcolor:#FFFFFF} month   !<<CharacterString-section,CharacterString>>  !
+ 
+!{set:cellbgcolor:#FFFFFF} year   !<<CharacterString-section,CharacterString>>  !
+!===
+|=== 
+
+[[DateTime-section]]
+[cols="1a"]
+|===
+|*DateTime* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Date-section,Date>> and <<Time-section,Time>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|=== 
+
+[[Time-section]]
+[cols="1a"]
+|===
+|*Time* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} hour   !<<CharacterString-section,CharacterString>>  !
+ 
+!{set:cellbgcolor:#FFFFFF} minute   !<<CharacterString-section,CharacterString>>  !
+ 
+!{set:cellbgcolor:#FFFFFF} second   !<<CharacterString-section,CharacterString>>  !
+ 
+!{set:cellbgcolor:#FFFFFF} timeZone   !<<CharacterString-section,CharacterString>>  !
+!===
+|===   
+
+==== Numerics 
+
+[[Decimal-section]]
+[cols="1a"]
+|===
+|*Decimal* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The usually finite representation of a decimal number. It differs from the common binary Real implementation in that it can represent 1/10 (one-tenth) without error, while binary real representation can only represent powers of 1/2 (one-half) exactly. Since many currencies are decimal, these representations are preferred in dealing with such moneys. This is also true for mile markers, which are often given in decimals.
+
+Can be thought of as an integer part followed by a fractional part given in multiples of powers of 1/10 (tenths). 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Number-section,Number>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|=== 
+
+[[Integer-section]]
+[cols="1a"]
+|===
+|*Integer* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! An exact integer value, with no fractional part.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Number-section,Number>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|=== 
+
+[[Number-section]]
+[cols="1a"]
+|===
+|*Number* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The base type for all number data, giving the basic algebraic operations. Since all concrete types have finite representations, some part of this algebra for most types exhibit some inaccuracy. For example, Integers cannot divide very well, and reals and decimals cannot avoid certain types of inaccuracies that depend on their representation semantics.  
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|=== 
+
+[[Real-section]]
+[cols="1a"]
+|===
+|*Real* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The common binary Real finite implementation using base 2. Since such reals can approximate any measure where absolute accuracy is not possible, this form of numeric is most often used for measures. In cases were absolute accuracy is needed, such as currencies, then a decimal representation may be preferred (assuming the currency is decimal, such as the US dollar, British pound, etc.). Where there are no subunits possible, Integer numbers may be preferred.  
+
+Can be thought of as an integer part followed by a fractional part given in multiples of powers of 1/2 (halves). 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Number-section,Number>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|=== 
+
+[[UnlimitedInteger-section]]
+[cols="1a"]
+|===
+|*UnlimitedInteger* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! -- Infinite if and only if value is not specified
+{[ isInfinte = True ] = [ value = Null ]}
+-- value is either infinite or non-negative
+{value <> Null implies value >= 0} 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} isInfinite   !<<Boolean-section,Boolean>>  !
+ 
+!{set:cellbgcolor:#FFFFFF} value   !<<Integer-section,Integer>>  [0..1] !
+!===
+|=== 
+
+[[Vector-section]]
+[cols="1a"]
+|===
+|*Vector* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! an ordered set of numbers called coordinates that represent a position in a coordinate system. The coordinates may be in a space of any number of dimensions, as for instance in an "nth degree" polynomial spline. 
+
+Example (123, 514, 150) 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface  
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} coordinates   !<<Number-section,Number>>  [1..*] !list of numbers representing the vector
+ 
+!{set:cellbgcolor:#FFFFFF} dimension   !<<Integer-section,Integer>>  !dimension in Euclidian space
+!===
+|===   
+
+==== Text
+
+[[CharacterSetCode-section]]
+[cols="1a"]
+|===
+|*CharacterSetCode* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} ISO10646-1   ! literal !
+ 
+!{set:cellbgcolor:#FFFFFF} ISO10646-2   ! literal !
+ 
+!{set:cellbgcolor:#FFFFFF} ISO8859   ! literal !
+!===
+|=== 
+
+[[Character-section]]
+[cols="1a"]
+|===
+|*Character* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! symbol  from a standard character-set.  
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface  
+!===
+|=== 
+
+[[CharacterString-section]]
+[cols="1a"]
+|===
+|*CharacterString* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Characterstring  is a family  of  datatypes which  represent strings of symbols  from  standard character-sets. 
+
+Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.1.5. 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface  
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   ! <<CharacterString-section,CharacterString>>   [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} characterSet   !<<CharacterSetCode-section,CharacterSetCode>>  !character set of the string
+ 
+!{set:cellbgcolor:#FFFFFF} maxLength   !<<Integer-section,Integer>>  !maximum length of all instances of CharacterString
+ 
+!{set:cellbgcolor:#FFFFFF} size   !<<Integer-section,Integer>>  !number of characters in the string
+ 
+!{set:cellbgcolor:#FFFFFF} value   !<<Character-section,Character>>  [0..*] !
+!===
+|=== 
+
+[[URI-section]]
+[cols="1a"]
+|===
+|*URI* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Uniform Resource Identifier (URI), is a compact string of characters used to identify or name a resource. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<CharacterString-section,CharacterString>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|===   
+
+==== Truth
+
+[[ContinuousTruth-section]]
+[cols="1a"]
+|===
+|*ContinuousTruth* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Any of the interpretations of truth as a continuous range of possible values, usually expressed as a measure. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Truth-section,Truth>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|=== 
+
+[[DiscreteTruth-section]]
+[cols="1a"]
+|===
+|*DiscreteTruth* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Truth-section,Truth>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   ! <<Boolean-section,Boolean>>   [] ! Realization
+!{set:cellbgcolor:#FFFFFF}   ! <<Logical-section,Logical>>   [] ! Realization
+!===
+|=== 
+
+[[Probability-section]]
+[cols="1a"]
+|===
+|*Probability* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Continuous truth as a probability. The value (between 0.0 and 1.0) is a measure of belief (in the single occurrence case), or a measure of the distribution of occurrences (in the set case). The fine details of the semantics is the scope of probability and statistics, and the reader is directed towards his text of choice.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<ContinuousTruth-section,ContinuousTruth>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} value   !<<Real-section,Real>>  !
+!===
+|=== 
+
+[[Truth-section]]
+[cols="1a"]
+|===
+|*Truth* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The root or truth classification trees. The only constant between the subclasses here is that 1.0 is TRUE, and 0.0 is FALSE. This makes Probability work nicely. Other algebraic tricks may be more appropriate to other version of "truth calculus", but for consistency sake, this value mapping should always be available. For example, the following semantic mappings to simple Booleans always work:
+
+{truthValue() > 0} = possibly true
+{truthValue() = 0} = never true
+
+{truthValue() < 1} = possibly false
+{truthValue() = 1} = never false
+
+{truthValue() < 1}AND{truthValue() > 0} = uncertain 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
+!===
+|=== 
+
+[[Boolean-section]]
+[cols="1a"]
+|===
+|*Boolean* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! boolean is the mathematical datatype associated with two-valued logic 
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! enumeration 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   ! <<DiscreteTruth-section,DiscreteTruth>>   [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} true   ! literal !one of two possible values of Boolean denoting the primitive value of true
+ 
+!{set:cellbgcolor:#FFFFFF} false   ! literal !one of two possible values of Boolean denoting the primitive value of false 
+!===
+|=== 
+
+[[Logical-section]]
+[cols="1a"]
+|===
+|*Logical* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Handy for a weak sort of 3 valued logic, where truth or falsity is not attributable to all well-formed statements.  
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! enumeration  
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF}   ! <<DiscreteTruth-section,DiscreteTruth>>   [] !
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
+ 
+!{set:cellbgcolor:#FFFFFF} TRUE   ! literal !
+ 
+!{set:cellbgcolor:#FFFFFF} FALSE   ! literal !
+ 
+!{set:cellbgcolor:#FFFFFF} MAYBE   ! literal !The interpretation of MAYBE is a point of semantic variation. One opinion would have it be interpreted as UNKNOWN, implying that certainty exist, but we just don't know what it is at the moment. This is not always appropriate. Even in such a black and white world, a logical when used as a static (class-wide) attribute, would be three valued: always true, always false, and sometimes. Thus, MAYBE can be interpreted as "maybe true, maybe not."
+
+In such cases a probability statement might be more appropriate, just not always available. 
+
+Equivalent to STEP's and SQL's Unknown.
+!===
+|===     
+
+
+
+
+
+
+
+
+

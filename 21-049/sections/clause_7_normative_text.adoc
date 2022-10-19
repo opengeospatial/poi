@@ -1,6 +1,6 @@
 == POI
 
-=== Class Model
+=== Feature Model
 
 A Point of Interest (POI) is a Feature. Therefore, it is important to understand what a POI inherits from the OGC Feature model.
 
@@ -20,6 +20,10 @@ In an implementation this abstract class shall be substituted by a concrete clas
 
 *AttributeType:* characteristic of a feature
 
+NOTE: insert POI feature requirement here.
+
+=== POI Class Model
+
 In this Standard we extend the General Feature Model to support the concept of a Point of Interest. 
 
 [poi_uml_model,reftext='POI UML Model']
@@ -28,7 +32,7 @@ image::./images/POI-2.png[align="center"]
 
 *AbstractFeature:* The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model.
 
-*AbstractFeatureWithLifespan:* Adds temporality to AbstractFeature. This class was copied from the CityGML 3.0 Conceptual Model.
+*AbstractFeatureWithLifespan:* Adds temporality to AbstractFeature. This class was borrowed from the CityGML 3.0 Conceptual Model.
 
 *AbstractPOI:* The abstract model for a Point of Interest. All POI instances will contain these attributes.
 
@@ -38,13 +42,19 @@ image::./images/POI-2.png[align="center"]
 
 *FeatureOfInterest:* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.
 
+NOTE: insert POI class requirement here
+
 === Geometry
 
 The OGC Geometry model is defined in ISO 19107:2003 - Geographic Information - Spatial schema. While there is a new version of this standard, it has not been widely implemented. So the 2003 version has been used in this Standard.
 
+The OGC Geometry Model is calable of representing very complex geometries. Much  more complex than are needed for a POI. Therefore, POI geometries are restricted to Points, lines, and Polygons. <<geometry_model,Figure 2>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
+
 [geometry_model,reftext='Geometry Model']
 .Geometry Model
 image::./images/Geometry.png[align="center"]
+
+The key classes desecribed in this figure are:
 
 *GM_Object:* Root class for all OGC geometries.
 
@@ -53,4 +63,7 @@ image::./images/Geometry.png[align="center"]
 *GM_LineString:* The geometric primitive for line strings.
 
 *GM_Polygon:* The geometric primitive for areas.
+
+NOTE: insert geometry requirement here
+
 
