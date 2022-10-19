@@ -1,0 +1,19 @@
+[[req_core_geometry]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-geometry
+[.component,class=part]
+--
+The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in <<iso19107,ISO 19107>>.
+--
+
+[.component,class=part]
+--
+POI Spatial geometry properties SHALL be one or more of the following:
+
+* <<GM_Point-section,GM_Point>>
+* <<GM_LineString-section,GM_LineString>>
+* <<GM_Polygon-section,GM_Polygon>>
+--
+====

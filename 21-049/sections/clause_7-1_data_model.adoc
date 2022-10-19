@@ -3,8 +3,6 @@
 
 The POI UML model is the normative definition of the POI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the POI Conceptual Model.
 
-include::../requirements/Req_Core.adoc[]
-
 [[AbstractFeature-section]]
 [cols="1a"]
 |===
@@ -104,7 +102,7 @@ include::../requirements/core/Req_Core_POI.adoc[]
 |*FeatureOfInterest* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling (SOSA). 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===

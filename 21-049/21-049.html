@@ -980,28 +980,49 @@ destination of a route; such as, Boston
 <p>The most relevant classes defined by this model are described below:</p>
 </div>
 <div class="paragraph">
-<p><strong>FeatureType:</strong> This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema</p>
+<p><strong><a href="#FeatureType-section">FeatureType:</a></strong> This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema</p>
 </div>
 <div class="paragraph">
-<p><strong>AnyFeature:</strong> The class AnyFeature is an instance of the «metaclass» FeatureType (ISO 19109). It represents the set of all classes which are feature types.</p>
+<p><strong><a href="#AnyFeature-section">AnyFeature:</a></strong> The class AnyFeature is an instance of the «metaclass» FeatureType (ISO 19109). It represents the set of all classes which are feature types.</p>
 </div>
 <div class="paragraph">
 <p>In an implementation this abstract class shall be substituted by a concrete class representing a feature type from an application schema associated with a domain of discourse (ISO 19109, ISO 19101).</p>
 </div>
 <div class="paragraph">
-<p><strong>AttributeType:</strong> characteristic of a feature</p>
+<p><strong><a href="#AttributeType-section">AttributeType:</a></strong> characteristic of a feature</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-insert POI feature requirement here.
-</td>
-</tr>
-</table>
+<div id="req_core_general_feature_model" class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">label</dt>
+<dd>
+<p>/req/core/req-generalfeaturemodel</p>
+</dd>
+</dl>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>A encoding of the POI Conceptual Model SHALL be compliant with the General Feature Model defined in <a href="#iso19109">ISO 19109</a>.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>A POI instance SHALL include a spatial geometry property using the SpatialAttributeType attribute type and <a href="#GM_Object-section">GM_Object</a> class.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>The spatial geometry properties of all POI instances SHALL be defined using the <a href="#GM_Object-section">GM_Object</a> class.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1016,82 +1037,22 @@ insert POI feature requirement here.
 <div class="title">Figure 4. POI UML Model</div>
 </div>
 <div class="paragraph">
-<p><strong>AbstractFeature:</strong> The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model.</p>
+<p><strong><a href="#AbstractFeature-section">AbstractFeature:</a></strong> The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model.</p>
 </div>
 <div class="paragraph">
-<p><strong>AbstractFeatureWithLifespan:</strong> Adds temporality to AbstractFeature. This class was borrowed from the CityGML 3.0 Conceptual Model.</p>
+<p><strong><a href="#AbstractFeatureWithLifespan-section">AbstractFeatureWithLifespan:</a></strong> Adds temporality to AbstractFeature. This class was borrowed from the CityGML 3.0 Conceptual Model.</p>
 </div>
 <div class="paragraph">
-<p><strong>AbstractPOI:</strong> The abstract model for a Point of Interest. All POI instances will contain these attributes.</p>
+<p><strong><a href="#AbstractPOI-section">AbstractPOI:</a></strong> The abstract model for a Point of Interest. All POI instances will contain these attributes.</p>
 </div>
 <div class="paragraph">
-<p><strong>POIProperty:</strong> The abstract model for a Property of a Feature of Interest which is to be represented in a POI.</p>
+<p><strong><a href="#POIProperty-section">POIProperty:</a></strong> The abstract model for a Property of a Feature of Interest which is to be represented in a POI.</p>
 </div>
 <div class="paragraph">
-<p><strong>POI:</strong> A POI instance.</p>
+<p><strong><a href="#POI-section">POI:</a></strong> A POI instance.</p>
 </div>
 <div class="paragraph">
-<p><strong>FeatureOfInterest:</strong> This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-insert POI class requirement here
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_geometry">Geometry</h3>
-<div class="paragraph">
-<p>The OGC Geometry model is defined in ISO 19107:2003 - Geographic Information - Spatial schema. While there is a new version of this standard, it has not been widely implemented. So the 2003 version has been used in this Standard.</p>
-</div>
-<div class="paragraph">
-<p>The OGC Geometry Model is calable of representing very complex geometries. Much  more complex than are needed for a POI. Therefore, POI geometries are restricted to Points, lines, and Polygons. <a href="#geometry_model">Figure 2</a> provides a UML model of the classes from ISO 19107 which are applicable to POIs.</p>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./images/Geometry.png" alt="geometry_model">
-</div>
-<div class="title">Figure 5. Geometry Model</div>
-</div>
-<div class="paragraph">
-<p>The key classes desecribed in this figure are:</p>
-</div>
-<div class="paragraph">
-<p><strong>GM_Object:</strong> Root class for all OGC geometries.</p>
-</div>
-<div class="paragraph">
-<p><strong>GM_Point:</strong> The geometric primitive for Points</p>
-</div>
-<div class="paragraph">
-<p><strong>GM_LineString:</strong> The geometric primitive for line strings.</p>
-</div>
-<div class="paragraph">
-<p><strong>GM_Polygon:</strong> The geometric primitive for areas.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-insert geometry requirement here
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="data_dictionary_section">POI Data Dictionary</h3>
-<div class="paragraph">
-<p>The POI UML model is the normative definition of the POI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the POI Conceptual Model.</p>
+<p><strong><a href="#FeatureOfInterest-section">FeatureOfInterest:</a></strong> This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.</p>
 </div>
 <div id="http://www.opengis.net/spec/GeoPOI/1.0/req/req-class-core" class="exampleblock">
 <div class="content">
@@ -1119,6 +1080,81 @@ insert geometry requirement here
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_geometry">Geometry</h3>
+<div class="paragraph">
+<p>The OGC Geometry model is defined in ISO 19107:2003 - Geographic Information - Spatial schema. While there is a new version of this standard, it has not been widely implemented. So the 2003 version has been used in this Standard.</p>
+</div>
+<div class="paragraph">
+<p>The OGC Geometry Model is calable of representing very complex geometries. Much  more complex than are needed for a POI. Therefore, POI geometries are restricted to Points, lines, and Polygons. <a href="#geometry_model">Figure 2</a> provides a UML model of the classes from ISO 19107 which are applicable to POIs.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/Geometry.png" alt="geometry_model">
+</div>
+<div class="title">Figure 5. Geometry Model</div>
+</div>
+<div class="paragraph">
+<p>The key classes desecribed in this figure are:</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="#GM_Object-section">GM_Object:</a></strong> Root class for all OGC geometries.</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="#GM_Point-section">GM_Point:</a></strong> The geometric primitive for Points</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="#GM_LineString-section">GM_LineString:</a></strong> The geometric primitive for line strings.</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="#GM_Polygon-section">GM_Polygon:</a></strong> The geometric primitive for areas.</p>
+</div>
+<div id="req_core_geometry" class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">label</dt>
+<dd>
+<p>/req/core/req-geometry</p>
+</dd>
+</dl>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in <a href="#iso19107">ISO 19107</a>.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>POI Spatial geometry properties SHALL be one or more of the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#GM_Point-section">GM_Point</a></p>
+</li>
+<li>
+<p><a href="#GM_LineString-section">GM_LineString</a></p>
+</li>
+<li>
+<p><a href="#GM_Polygon-section">GM_Polygon</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="data_dictionary_section">POI Data Dictionary</h3>
+<div class="paragraph">
+<p>The POI UML model is the normative definition of the POI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the POI Conceptual Model.</p>
 </div>
 <table id="AbstractFeature-section" class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1965,7 +2001,7 @@ insert geometry requirement here
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Definition:</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling (SOSA).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass of:</p></td>
@@ -2179,6 +2215,534 @@ Ensure that there is a conformance class for each requirements class and a test 
 </div>
 <div class="paragraph">
 <p>The Data Dictionary tables in this section were software generated from the TC211 Hamonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.</p>
+</div>
+<div class="sect2">
+<h3 id="_general_feature_model_iso_191092015">General Feature Model <a href="#iso19109">(ISO 19109:2015)</a></h3>
+<table id="AnyFeature-section" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>AnyFeature</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Definition:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AnyFeature is an abstract class that is the generalization of all feature types. AnyFeature is an instance of the «metaclass» FeatureType [cf. ISO 19109].</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«FeatureType»</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Role name</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Target class and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#FeatureType-section">FeatureType</a>
+[1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+<table id="AttributeType-section" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>AttributeType</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Definition:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">feature attribute
+characteristic of a feature [cf. ISO 19109].</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Metaclass»</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Attribute</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Value type and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> TBD</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_Citation-section">CI_Citation</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">publications that describe usage of data</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+<table id="FeatureType-section" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>FeatureType</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Definition:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">feature: abstraction of real world phenomena [cf. ISO 19109].<br>
+This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Metaclass»</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Attribute</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Value type and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> TBD</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_Citation-section">CI_Citation</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">publications that describe usage of data</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_geometry_2">Geometry</h3>
+<div class="paragraph">
+<p>The following classes are defined in <a href="#iso19107">(ISO 19107: 2003)</a></p>
+</div>
+<table id="GM_Object-section" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>GM_Object</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Definition:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Object is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects. GM_Object instances are sets of direct positions in a particular coordinate reference system. A GM_Object can be regarded as an infinite set of points that satisfies the set operation interfaces for a set of direct positions, TransfiniteSet&lt;DirectPosition&gt;. Since an infinite collection class cannot be implemented directly, a Boolean test for inclusion shall be provided by the GM_Object interface. This international standard concentrates on vector geometry classes, but future work may use GM_Object as a root class without modification.
+NOTE As a type, GM_Object does not have a well-defined default state or value representation as a data type. Instantiated subclasses of GM_Object will.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass Of:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">none</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«type»</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Constraint:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dimension() &gt;  boundary().dimension (Invariant):</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Constraint:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">boundary().notEmpty() implies boundary().dimension() = dimension() -1 (Invariant):</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Constraint:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">boundary().isEmpty() = isCycle() (Invariant):</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Role name</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Target class and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Geometry-section">Geometry</a> [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">TransfiniteSet&lt;<a href="#DirectPosition-section">DirectPosition</a>&gt;
+[1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CV_DomainObject-section">CV_DomainObject</a>
+[1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> CRS</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CRS-section">CRS</a>
+[0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> CRS</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#SC_CRS-section">SC_CRS</a>
+[0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+<table id="GM_Point-section" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>GM_Point</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Definition:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Point is the basic data type for a geometric object consisting of one and only one point.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass Of:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#GM_Primitive-section">GM_Primitive</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«type»</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Role name</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Target class and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Point-section">Point</a>
+[1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> composite</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#GM_CompositePoint-section">GM_CompositePoint</a>
+[0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Attribute</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Value type and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> position</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#DirectPosition-section">DirectPosition</a> [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">The attribute "position" shall be the DirectPosition of this GM_Point.
+GM_Point::position [1] : DirectPosition
+NOTE In most cases, the state of a GM_Point is fully determined by its position attribute. The only exception to this is if the GM_Point has been subclassed to provide additional non-geometric information such as symbology.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+<table id="GM_LineString-section" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>GM_LineString</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Definition:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TBD</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass Of:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#GM_Primitive-section">GM_Primitive</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«type»</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Role name</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Target class and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Point-section">Point</a>
+[1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> composite</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#GM_CompositePoint-section">GM_CompositePoint</a>
+[0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Attribute</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Value type and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> TBD</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#DirectPosition-section">DirectPosition</a> [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">TBD</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+<table id="GM_Polygon-section" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>GM_Polygon</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Definition:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TBD.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass Of:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#GM_Primitive-section">GM_Primitive</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«type»</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Role name</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Target class and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Point-section">Point</a>
+[1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> TBD</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#GM_CompositePoint-section">GM_CompositePoint</a>
+[0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 15.7894%;">
+<col style="width: 21.0526%;">
+<col style="width: 63.158%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"> <strong>Attribute</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Value type and multiplicity</strong></th>
+<th class="tableblock halign-left valign-top" style="background-color: #DDDDDD;"><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> TBD</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#DirectPosition-section">DirectPosition</a> [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Definition TBD</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_citation_and_responsible_party_information">Citation and responsible party information</h3>

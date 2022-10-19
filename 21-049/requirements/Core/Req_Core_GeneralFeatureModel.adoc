@@ -1,0 +1,20 @@
+[[req_core_general_feature_model]]
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-generalfeaturemodel
+[.component,class=part]
+--
+A encoding of the POI Conceptual Model SHALL be compliant with the General Feature Model defined in <<iso19109,ISO 19109>>.
+--
+
+[.component,class=part]
+--
+A POI instance SHALL include a spatial geometry property using the SpatialAttributeType attribute type and <<GM_Object-section,GM_Object>> class.
+--
+
+[.component,class=part]
+--
+The spatial geometry properties of all POI instances SHALL be defined using the <<GM_Object-section,GM_Object>> class.
+--
+====
