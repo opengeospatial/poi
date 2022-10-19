@@ -1,8 +1,12 @@
 # About OGC Points of Interest (PoI) GitHub Repository
 
-This repository contains files about and for the purpose of developing one or more PoI specifications following the Open Geospatial Consortium processes and policies.
+This repository is the development space for the draft OGC Point of Interest (POI) Standard. Development of this Standard is taking place in the 21-049 directory. The current draft is available in https://github.com/opengeospatial/poi/blob/main/21-049/21-049.html[HTML] and https://github.com/opengeospatial/poi/blob/main/21-049/21-049.pdf[PDF] formats.
 
-The repo contains files from the following sources:
+Current drafts are generated using the asciidoctor tool chain. Ultimately they will be generated using the Metanorma tool chain. Since formatting of the asciidoc files was done anticipating Metanorma, the current asciidoctor versions may look a bit odd.
+
+This repository also contains legacy files about and for the purpose of developing the PoI specification(s).
+
+These files are from the following sources:
 
 1. All contents of this repo beginning from when it was created by the transfer of work from the W3C to end of 2014 when the activity of the POI SWG stopped. These files were moved into a https://github.com/opengeospatial/poi/tree/main/POI-repo-files-Pre-2014[dedicated folder] in order to preserve the prior work of the OGC POI SWG. At the same time as the files were put into their folder on this repo, all the issues created prior to the end of 2014 are labelled and closed.
 
@@ -10,3 +14,4 @@ The repo contains files from the following sources:
 This is the origin of one file at the top level of this repo, the https://github.com/opengeospatial/poi/blob/main/Draft_PoI_SWG_charter.adoc[Draft PoI SWG charter template]
 
 3. A folder containing the template for the new POI draft specification.
+
