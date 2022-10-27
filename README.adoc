@@ -1,6 +1,6 @@
 # About OGC Points of Interest (PoI) GitHub Repository
 
-This repository is the development space for the draft OGC Point of Interest (POI) Standard. Development of this Standard is taking place in the 21-049 directory. The current draft is available in https://github.com/opengeospatial/poi/blob/main/21-049/21-049.html[HTML] and https://github.com/opengeospatial/poi/blob/main/21-049/21-049.pdf[PDF] formats.
+This repository is the development space for the draft OGC Point of Interest (POI) Standard. Development of this Standard is taking place in the 21-049 directory. The current draft is available in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/21-049/21-049.html[HTML] and https://github.com/opengeospatial/poi/blob/main/21-049/21-049.pdf[PDF] formats.
 
 Current drafts are generated using the asciidoctor tool chain. Ultimately they will be generated using the Metanorma tool chain. Since formatting of the asciidoc files was done anticipating Metanorma, the current asciidoctor versions may look a bit odd.
 
