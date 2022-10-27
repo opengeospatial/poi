@@ -34,17 +34,13 @@ The following stereotypes are used in this model:
 
 In order to enhance the readability of the POI UML diagrams, classes are depicted in different colors. The following coloring scheme is applied:
 
-image:images/ColorScheme_yellow.png[align="center"]
-
-Classes painted in yellow belong to the POI Requirements Class. 
-
 image:images/ColorScheme_green.png[align="center"]
 
-Classes painted in green are defined in the ISO standards 19107, 19111, or 19123. Their class names are preceded by the UML package name, in which the classes are defined.
+Classes painted in green belong to the POI Requirements Class. 
 
-image:images/ColorScheme_grey.png[align="center"]
+image:images/ColorScheme_yellow.png[align="center"]
 
-Classes painted in grey are defined in the ISO standard 19109. In the context of this standard, this only applies to the class _AnyFeature_. _AnyFeature_ is an instance of the metaclass _FeatureType_ and acts as super class of all classes in the CityGML UML model with the stereotype &#171;FeatureType&#187;. A metaclass is a class whose instances are classes.
+Classes painted in yellow are defined in the ISO standards 19107, 19109, or 19115. Their class names are preceded by the UML package name, in which the classes are defined.
 
 image:images/ColorScheme_white.png[align="center"]
 
@@ -53,6 +49,6 @@ The color white is used for notes and <<iso19507,Object Constraint Language>> (O
 The example UML diagram in <<figure-2>> demonstrates the UML notation and coloring scheme used throughout this standard. In this example, the yellow classes are associated with the _CityGML Building_ module, the blue classes are from the _CityGML Core_ and _Construction_ modules, and the green class depicts a geometry element defined by ISO 19107.
 
 [[figure-2]]
-.Example UML diagram demonstrating the UML notation and coloring scheme used throughout the CityGML Standard.
+.Example UML diagram demonstrating the UML notation and coloring scheme used throughout the POI Standard.
 image::images/UML_Notation_Example.png[align="center"]
 
