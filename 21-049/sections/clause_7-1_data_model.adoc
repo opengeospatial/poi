@@ -19,13 +19,12 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
  
 !{set:cellbgcolor:#FFFFFF} description «property»  !<<CharacterString-section,CharacterString>>  [0..1] !Provides further information on the feature.
  
-!{set:cellbgcolor:#FFFFFF} featureID «property»  !<<ID-section,ID>>  !Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
+!{set:cellbgcolor:#FFFFFF} featureID «property»  !<<ID-section,ID>>  [1..1] !Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
  
 !{set:cellbgcolor:#FFFFFF} identifer «property»  !<<ScopedName-section,ScopedName>>  [0..1] !Specifies the unique identifier of the feature that is valid globally.
  
 !{set:cellbgcolor:#FFFFFF} name «property»  !<<GenericName-section,GenericName>>  [0..*] !Specifies the name of the feature.
 !===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
 include::../requirements/core/Req_Core_AbstractFeature.adoc[]
@@ -50,9 +49,8 @@ include::../requirements/core/Req_Core_AbstractFeature.adoc[]
  
 !{set:cellbgcolor:#FFFFFF} validFrom «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature started to exist in the real world.
  
-!{set:cellbgcolor:#FFFFFF} validTo «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature ended to exist in the real world.
+!{set:cellbgcolor:#FFFFFF} validTo «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature ceased to exist in the real world.
 !===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
 include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
@@ -63,15 +61,15 @@ include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
 |*AbstractPOI* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A Point of Interest (POI) is a Feature which provides a concise summary of one or more associated Features. It's purpose is to provide easy access to key information about one or more real-world objects without the need to access or understand the underlying Feature data set. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A Point of Interest (POI) is a Feature which provides a concise summary of one or more associated Features. Its purpose is to provide easy access to key information about one or more real-world objects without the need to access or understand the underlying Feature data set. 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF} hasProperty  !  <<POIProperty-section,POIProperty>>  [] !An association with representations of zero of more properties of a Feature of Interest. This association allows Feature Property values from the Feature of Interest to be included in a POI using a standard representation.
-!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest  !  <<FeatureOfInterest-section,FeatureOfInterest>>  [] !One or more Features which are represented by this POI. 
+!{set:cellbgcolor:#FFFFFF} hasProperty  !  <<POIProperty-section,POIProperty>>  [0..*] !An association with representations of zero of more properties of a Feature of Interest. This association allows Feature Property values from the Feature of Interest to be included in a POI using a standard representation.
+!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest  !  <<FeatureOfInterest-section,FeatureOfInterest>>  [1..*] !One or more Features which are represented by this POI. 
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -91,7 +89,6 @@ include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
  
 !{set:cellbgcolor:#FFFFFF} symbology «property»  !<<URI-section,URI>>  [0..1] !A reference to information about rendering this POI. 
 !===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
 include::../requirements/core/Req_Core_POI.adoc[]
@@ -106,11 +103,6 @@ include::../requirements/core/Req_Core_POI.adoc[]
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
-!===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
 include::../requirements/core/Req_Core_FeatureOfInterest.adoc[]
@@ -133,7 +125,6 @@ include::../requirements/core/Req_Core_FeatureOfInterest.adoc[]
  
 !{set:cellbgcolor:#FFFFFF} value «property»  !<<Any-section,Any>>  [0..*] !Representations of zero or more property values from the Feature of Interest.
 !===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
 include::../requirements/core/Req_Core_POI-Property.adoc[]

@@ -14,16 +14,17 @@ The Data Dictionary tables in this section were software generated from the TC21
 |*AnyFeature* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AnyFeature is an abstract class that is the generalization of all feature types. AnyFeature is an instance of the «metaclass» FeatureType [cf. ISO 19109]. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The class AnyFeature is
+an instance of the «metaclass» FeatureType (ISO 19109). It represents the set
+of all classes which are feature types. +
++ 
+In an implementation this abstract class shall be substituted by a concrete class representing a feature type from an application schema associated with a domain of discourse (ISO 19109, ISO 19101). 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «FeatureType»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   
-!<<FeatureType-section,FeatureType>>  
-[1..1]
-!
+!{set:cellbgcolor:#FFFFFF} !<<FeatureType-section,FeatureType>> [1..1] !
 !===
 |===
 
@@ -33,14 +34,29 @@ The Data Dictionary tables in this section were software generated from the TC21
 |*AttributeType* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! feature attribute
-characteristic of a feature [cf. ISO 19109]. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! feature attribute +
+characteristic of a feature +
+NOTE: A feature attribute has a name, a data type, and a value domain associated to it.  A feature attribute for a feature instance also has an attribute value taken from the value domain.  +
+EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' which belongs to the data type 'text'.  A feature attribute named 'length' may have an attribute value '82.4' which belongs to the data type 'real'.+ 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<PropertyType-section,PropertyType>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «Metaclass»
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! name is mandatory (Invariant): 
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]<o:p></o:p>
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity* !*Definition*
+!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! <<MD_Metadata-section,MD_Metadata>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! <<MD_Metadata-section,MD_Metadata>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF} characterizeBy  ! <<AttributeType-section,AttributeType>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! <<MD_Metadata-section,MD_Metadata>>   [0..*] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF} TBD   !<<CI_Citation-section,CI_Citation>>  [0..*] !publications that describe usage of data
+!{set:cellbgcolor:#DDDDDD}
+*Attribute* !*Value type and multiplicity* !*Definition*
+!{set:cellbgcolor:#FFFFFF} cardinality   !<<Multiplicity-section,Multiplicity>>  [1..1]!
+!{set:cellbgcolor:#FFFFFF} valueDomain !<<CharacterString-section,CharacterString>> [1..1] !
+!{set:cellbgcolor:#FFFFFF} valueType   !<<TypeName-section,TypeName>> [1..1] !
 !===
 |===
 
@@ -50,14 +66,25 @@ characteristic of a feature [cf. ISO 19109].
 |*FeatureType* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! feature: abstraction of real world phenomena [cf. ISO 19109]. +
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! feature: abstraction of real world phenomena +
+NOTE: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant. +
 This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<IdentifiedType-section,IdentifiedType>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «Metaclass»
+!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! name is mandatory (Invariant):     
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+!===
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity* !*Definition*
+!{set:cellbgcolor:#FFFFFF}  ! <<NS_AvoidList-section,NS_AvoidList>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF} superType  ! <<FeatureType-section,FeatureType>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF} featureTypeMetadata  ! <<MD_Metadata-section,MD_Metadata>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF} carrierOfCharacteristics  ! <<PropertyType-section,PropertyType>>   [0..*] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF} TBD   !<<CI_Citation-section,CI_Citation>>  [0..*] !publications that describe usage of data
+!{set:cellbgcolor:#FFFFFF} isAbstract   !<<Boolean-section,Boolean>>  !
 !===
 |===
 
@@ -141,27 +168,14 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 |*GM_LineString* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! TBD  
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A GM_LineString (Figure 16) consists of sequence of line segments, each having a parameterization like the one for GM_LineSegment (See 6.4.11). The class essentially combines a Sequence<GM_LineSegments> into a single object, with the obvious savings of storage space.
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GM_Primitive-section,GM_Primitive>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   
-!<<Point-section,Point>>  
-[1..1]
-!
-!{set:cellbgcolor:#FFFFFF} composite  
-!<<GM_CompositePoint-section,GM_CompositePoint>>  
-[0..*]
-!
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} TBD   !<<DirectPosition-section,DirectPosition>> [1..1]  !TBD
+!{set:cellbgcolor:#FFFFFF} controlPoint   !<<GM_PointArray-section,GM_PointArray>> [1..1]!
 !===
 |=== 
 
@@ -171,27 +185,20 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 |*GM_Polygon* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! TBD.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A GM_Polygon (Figure 21) is a surface patch that is defined by a set of boundary curves and an underlying surface to which these curves adhere. The default is that the curves are coplanar and the polygon uses planar interpolation in its interior.  
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GM_Primitive-section,GM_Primitive>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   
-!<<Point-section,Point>>  
-[1..1]
-!
-!{set:cellbgcolor:#FFFFFF} TBD  
-!<<GM_CompositePoint-section,GM_CompositePoint>>  
-[0..*]
-!
+!{set:cellbgcolor:#FFFFFF} surface  ! <<GM_PolyhedralSurface-section,GM_PolyhedralSurface>>   [0..1] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} TBD   !<<DirectPosition-section,DirectPosition>> [1..1]  !Definition TBD
+!{set:cellbgcolor:#FFFFFF} boundary   !<<GM_SurfaceBoundary-section,GM_SurfaceBoundary>>  !
+!{set:cellbgcolor:#FFFFFF} spanningSurface   !<<GM_Surface-section,GM_Surface>>  [0..1] !
 !===
 |=== 
 
