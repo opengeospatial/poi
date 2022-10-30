@@ -999,7 +999,7 @@ The following classes are defined in ISO 19115-1 Edition 1
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} associationType   !<<DS_AssociationTypeCode-section,DS_AssociationTypeCode>>  !type of relation between the resources
+!{set:cellbgcolor:#FFFFFF} associationType   !<<DS_AssociationTypeCode-section,DS_AssociationTypeCode>> [1..1] !type of relation between the resources
  
 !{set:cellbgcolor:#FFFFFF} initiativeType   !<<DS_InitiativeTypeCode-section,DS_InitiativeTypeCode>>  [0..1] !type of initiative under which the associated resource was produced 
  
@@ -1062,13 +1062,13 @@ The following classes are defined in ISO 19115-1 Edition 1
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} abstract   !<<CharacterString-section,CharacterString>>  !brief narrative summary of the content of the resource(s)
+!{set:cellbgcolor:#FFFFFF} abstract   !<<CharacterString-section,CharacterString>> [1..1] !brief narrative summary of the content of the resource(s)
  
 !{set:cellbgcolor:#FFFFFF} additionalDocumentation   !<<CI_Citation-section,CI_Citation>>  [0..*] !other documentation associated with the resource
 EXAMPLE Related articles, publications,
 user guides, data dictionaries.
  
-!{set:cellbgcolor:#FFFFFF} citation   !<<CI_Citation-section,CI_Citation>>  !citation for the resource(s)
+!{set:cellbgcolor:#FFFFFF} citation  !<<CI_Citation-section,CI_Citation>> [1..1]  !citation for the resource(s)
  
 !{set:cellbgcolor:#FFFFFF} credit   !<<CharacterString-section,CharacterString>>  [0..*] !recognition of those who contributed to the resource(s)
  
@@ -1111,11 +1111,11 @@ NOTE: this element should be repeated when describing upper and lower range
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} className   !<<CharacterString-section,CharacterString>>  !character string to label the keyword category in natural language
+!{set:cellbgcolor:#FFFFFF} className   !<<CharacterString-section,CharacterString>> [1..1]  !character string to label the keyword category in natural language
  
 !{set:cellbgcolor:#FFFFFF} conceptIdentifier   !<<URI-section,URI>>  [0..1] !URI of concept in ontology specified by the ontology attribute; this concept is labeled by the className: CharacterString.
  
-!{set:cellbgcolor:#FFFFFF} ontology   !<<CI_Citation-section,CI_Citation>>  !a reference that binds the keyword class to a formal conceptualization of a knowledge domain for use in semantic processingNOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology
+!{set:cellbgcolor:#FFFFFF} ontology   !<<CI_Citation-section,CI_Citation>> [1..1]  !a reference that binds the keyword class to a formal conceptualization of a knowledge domain for use in semantic processingNOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology
 !===
 |=== 
 
@@ -1133,7 +1133,7 @@ NOTE: this element should be repeated when describing upper and lower range
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
 !{set:cellbgcolor:#FFFFFF}   ! <<MD_Identification-section,MD_Identification>>   [] !
-!{set:cellbgcolor:#FFFFFF} keywordClass  ! <<MD_Keywords-section,MD_Keywords>>   [0..1] !association of a MD_Keywords instance with a MD_KeywordClass to provide user-defined categorization of groups of keywords that extend or are orthogonal to the standardized KeywordTypeCodes and are associated with an ontology that allows additional semantic query processing
+!{set:cellbgcolor:#FFFFFF} keywordClass  ! <<MD_KeywordClass-section,MD_KeywordClass>>   [0..1] !association of a MD_Keywords instance with a MD_KeywordClass to provide user-defined categorization of groups of keywords that extend or are orthogonal to the standardized KeywordTypeCodes and are associated with an ontology that allows additional semantic query processing
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -1257,7 +1257,7 @@ NOTE: this element should be repeated when describing upper and lower range
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} denominator   !<<Integer-section,Integer>>  !the number below the line in a vulgar fraction
+!{set:cellbgcolor:#FFFFFF} denominator   !<<Integer-section,Integer>> [1..1] !the number below the line in a vulgar fraction
 !===
 |=== 
 
@@ -1333,7 +1333,7 @@ NOTE: this element should be repeated when describing upper and lower range
  
 !{set:cellbgcolor:#FFFFFF} response   !<<CharacterString-section,CharacterString>>  [0..*] !response to the user-determined limitationsE.G.. 'this has been fixed in version x'
  
-!{set:cellbgcolor:#FFFFFF} specificUsage   !<<CharacterString-section,CharacterString>>  !brief description of the resource and/or resource series usage
+!{set:cellbgcolor:#FFFFFF} specificUsage   !<<CharacterString-section,CharacterString>> [1..1] !brief description of the resource and/or resource series usage
  
 !{set:cellbgcolor:#FFFFFF} usageDateTime   !<<TM_Primitive-section,TM_Primitive>>  [0..*] !date and time of the first use or range of uses of the resource and/or resource series
  
