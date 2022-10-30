@@ -6,7 +6,8 @@ ISO Technical Committee 211 maintains a harmonized UML model which covers many o
 
 The Data Dictionary tables in this section were software generated from the TC211 Hamonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.
 
-=== General Feature Model <<iso19109,(ISO 19109:2015)>>
+=== General Feature Model 
+The following classes are defined in <<iso19109,(ISO 19109:2015)>>
 
 [[AnyFeature-section]]
 [cols="1a"]
@@ -272,7 +273,7 @@ Example Street number and name, suite number, etc
  
 !{set:cellbgcolor:#FFFFFF} series   !<<CI_Series-section,CI_Series>>  [0..1] !information about the series, or aggregate resource, of which the resource is a part
  
-!{set:cellbgcolor:#FFFFFF} title   !<<CharacterString-section,CharacterString>>  !name by which the cited resource is known
+!{set:cellbgcolor:#FFFFFF} title   !<<CharacterString-section,CharacterString>> [1..1] !name by which the cited resource is known
 !===
 |=== 
 
@@ -316,9 +317,9 @@ Example Street number and name, suite number, etc
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} date   !<<DateTime-section,DateTime>>  !reference date for the cited resource
+!{set:cellbgcolor:#FFFFFF} date   !<<DateTime-section,DateTime>> [1..1] !reference date for the cited resource
  
-!{set:cellbgcolor:#FFFFFF} dateType   !<<CI_DateTypeCode-section,CI_DateTypeCode>>  !event used for reference date
+!{set:cellbgcolor:#FFFFFF} dateType   !<<CI_DateTypeCode-section,CI_DateTypeCode>> [1..1] !event used for reference date
 !===
 |=== 
 
@@ -377,13 +378,13 @@ Example Street number and name, suite number, etc
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information about the party if the party is an individual 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: !<<CI_Party-section,CI_Party>>
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  None
 !{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! count (name + positionName) > 0 (Invariant):     
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   ! <<CI_Organisation-section,CI_Organisation>>   [] !
+!{set:cellbgcolor:#FFFFFF}   ! <<CI_Organisation-section,CI_Organisation>>   [1..1] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -449,7 +450,7 @@ Example Street number and name, suite number, etc
  
 !{set:cellbgcolor:#FFFFFF} function   !<<CI_OnLineFunctionCode-section,CI_OnLineFunctionCode>>  [0..1] !code for function performed by the online resource
  
-!{set:cellbgcolor:#FFFFFF} linkage   !<<CharacterString-section,CharacterString>>  !location (address) for on-line access using a Uniform Resource Locator/Uniform Resource Identifier address or similar addressing scheme such as http://www.statkart.no/isotc211
+!{set:cellbgcolor:#FFFFFF} linkage   !<<CharacterString-section,CharacterString>> [1..1] !location (address) for on-line access using a Uniform Resource Locator/Uniform Resource Identifier address or similar addressing scheme such as http://www.statkart.no/isotc211
  
 !{set:cellbgcolor:#FFFFFF} name   !<<CharacterString-section,CharacterString>>  [0..1] !name of the online resource
  
@@ -472,7 +473,7 @@ POST/XML:
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! information about the party if the party is an organisation 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: !<<CI_Party-section,CI_Party>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  
+!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! None 
 !{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! count (name + logo) > 0 (Invariant):     
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
@@ -589,7 +590,7 @@ POST/XML:
  
 !{set:cellbgcolor:#FFFFFF} extent   !<<EX_Extent-section,EX_Extent>>  [0..*] !spatial or temporal extent of the role
  
-!{set:cellbgcolor:#FFFFFF} role   !<<CI_RoleCode-section,CI_RoleCode>>  !function performed by the responsible party
+!{set:cellbgcolor:#FFFFFF} role   !<<CI_RoleCode-section,CI_RoleCode>> [1..1] !function performed by the responsible party
 !===
 |=== 
 
@@ -682,7 +683,7 @@ POST/XML:
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} number   !<<CharacterString-section,CharacterString>>  !telephone number by which individuals can contact responsible organisation or individual
+!{set:cellbgcolor:#FFFFFF} number   !<<CharacterString-section,CharacterString>> [1..1] !telephone number by which individuals can contact responsible organisation or individual
  
 !{set:cellbgcolor:#FFFFFF} numberType   !<<CI_TelephoneTypeCode-section,CI_TelephoneTypeCode>>  [0..1] !type of telephone responsible organisation or individual
 !===
