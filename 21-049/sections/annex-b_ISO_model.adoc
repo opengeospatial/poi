@@ -1416,7 +1416,7 @@ The following classes are defined in ISO 19103 Edition 1
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF} scope  ! <<NameSpace-section,NameSpace>>   [1] !
+!{set:cellbgcolor:#FFFFFF} scope  ! <<NameSpace-section,NameSpace>>   [1..1] !
 !===
 |=== 
 
@@ -1446,9 +1446,9 @@ The following classes are defined in ISO 19103 Edition 1
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} aName   !<<CharacterString-section,CharacterString>>  !The stored value "aName" is the returned value for the "aName()" operation.  
+!{set:cellbgcolor:#FFFFFF} aName   !<<CharacterString-section,CharacterString>> [1..1]  !The stored value "aName" is the returned value for the "aName()" operation.  
  
-!{set:cellbgcolor:#FFFFFF} attributeType   !<<TypeName-section,TypeName>>  !The allowable type for this member.  
+!{set:cellbgcolor:#FFFFFF} attributeType   !<<TypeName-section,TypeName>> [1..1] !The allowable type for this member.  
 !===
 |=== 
 
@@ -1473,7 +1473,7 @@ Not all methods for NameSpaces need to be made publicly accessible.
  
 !{set:cellbgcolor:#FFFFFF} acceptableClassList   !<<TypeName-section,TypeName>>  !
  
-!{set:cellbgcolor:#FFFFFF} isGlobal   !<<Boolean-section,Boolean>>  !
+!{set:cellbgcolor:#FFFFFF} isGlobal   !<<Boolean-section,Boolean>> [1..1] !
 !===
 |=== 
 
@@ -1503,7 +1503,7 @@ Not all methods for NameSpaces need to be made publicly accessible.
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} aName   !<<CharacterString-section,CharacterString>>  !The stored value "aName" is the returned value for the "aName()" operation.  
+!{set:cellbgcolor:#FFFFFF} aName   !<<CharacterString-section,CharacterString>> [1..1]  !The stored value "aName" is the returned value for the "aName()" operation.  
 !===
 |===   
 
@@ -1525,13 +1525,13 @@ The following classes are defined in ISO 19103 Edition 1
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} century   !<<CharacterString-section,CharacterString>>  !
+!{set:cellbgcolor:#FFFFFF} century   !<<CharacterString-section,CharacterString>> [1..1] !
  
-!{set:cellbgcolor:#FFFFFF} day   !<<CharacterString-section,CharacterString>>  !
+!{set:cellbgcolor:#FFFFFF} day   !<<CharacterString-section,CharacterString>> [1..1]  !
  
-!{set:cellbgcolor:#FFFFFF} month   !<<CharacterString-section,CharacterString>>  !
+!{set:cellbgcolor:#FFFFFF} month   !<<CharacterString-section,CharacterString>> [1..1] !
  
-!{set:cellbgcolor:#FFFFFF} year   !<<CharacterString-section,CharacterString>>  !
+!{set:cellbgcolor:#FFFFFF} year   !<<CharacterString-section,CharacterString>>  [1..1] !
 !===
 |=== 
 
@@ -1560,13 +1560,13 @@ The following classes are defined in ISO 19103 Edition 1
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} hour   !<<CharacterString-section,CharacterString>>  !
+!{set:cellbgcolor:#FFFFFF} hour   !<<CharacterString-section,CharacterString>>  [1..1] !
  
-!{set:cellbgcolor:#FFFFFF} minute   !<<CharacterString-section,CharacterString>>  !
+!{set:cellbgcolor:#FFFFFF} minute   !<<CharacterString-section,CharacterString>>  [1..1] !
  
-!{set:cellbgcolor:#FFFFFF} second   !<<CharacterString-section,CharacterString>>  !
+!{set:cellbgcolor:#FFFFFF} second   !<<CharacterString-section,CharacterString>>  [1..1] !
  
-!{set:cellbgcolor:#FFFFFF} timeZone   !<<CharacterString-section,CharacterString>>  !
+!{set:cellbgcolor:#FFFFFF} timeZone   !<<CharacterString-section,CharacterString>>  [1..1] !
 !===
 |===   
 
@@ -1639,7 +1639,7 @@ Can be thought of as an integer part followed by a fractional part given in mult
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} isInfinite   !<<Boolean-section,Boolean>>  !
+!{set:cellbgcolor:#FFFFFF} isInfinite   !<<Boolean-section,Boolean>> [1..1]  !
  
 !{set:cellbgcolor:#FFFFFF} value   !<<Integer-section,Integer>>  [0..1] !
 !===
@@ -1662,7 +1662,7 @@ Example (123, 514, 150)
  
 !{set:cellbgcolor:#FFFFFF} coordinates   !<<Number-section,Number>>  [1..*] !list of numbers representing the vector
  
-!{set:cellbgcolor:#FFFFFF} dimension   !<<Integer-section,Integer>>  !dimension in Euclidian space
+!{set:cellbgcolor:#FFFFFF} dimension   !<<Integer-section,Integer>> [1..1]  !dimension in Euclidian space
 !===
 |===   
 
@@ -1720,11 +1720,11 @@ Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} characterSet   !<<CharacterSetCode-section,CharacterSetCode>>  !character set of the string
+!{set:cellbgcolor:#FFFFFF} characterSet   !<<CharacterSetCode-section,CharacterSetCode>> [1..1]  !character set of the string
  
-!{set:cellbgcolor:#FFFFFF} maxLength   !<<Integer-section,Integer>>  !maximum length of all instances of CharacterString
+!{set:cellbgcolor:#FFFFFF} maxLength   !<<Integer-section,Integer>> [1..1]  !maximum length of all instances of CharacterString
  
-!{set:cellbgcolor:#FFFFFF} size   !<<Integer-section,Integer>>  !number of characters in the string
+!{set:cellbgcolor:#FFFFFF} size   !<<Integer-section,Integer>> [1..1]  !number of characters in the string
  
 !{set:cellbgcolor:#FFFFFF} value   !<<Character-section,Character>>  [0..*] !
 !===
@@ -1788,7 +1788,7 @@ Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} value   !<<Real-section,Real>>  !
+!{set:cellbgcolor:#FFFFFF} value   !<<Real-section,Real>> [1..1]  !
 !===
 |=== 
 
