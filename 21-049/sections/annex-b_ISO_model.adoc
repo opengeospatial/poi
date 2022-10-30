@@ -888,7 +888,7 @@ The following classes are defined in ISO 19115-1 Edition 1
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} classification   !<<MD_ClassificationCode-section,MD_ClassificationCode>>  !name of the handling restrictions on the resource or metadata
+!{set:cellbgcolor:#FFFFFF} classification   !<<MD_ClassificationCode-section,MD_ClassificationCode>> [1..1] !name of the handling restrictions on the resource or metadata
  
 !{set:cellbgcolor:#FFFFFF} classificationSystem   !<<CharacterString-section,CharacterString>>  [0..1] !name of the classification system
  
