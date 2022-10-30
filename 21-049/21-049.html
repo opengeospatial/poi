@@ -584,6 +584,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a id="ISO19111"></a>[ISO 19111] <em>ISO: ISO 19111:2019, Geographic information – Referencing by coordinates</em></p>
 </li>
 <li>
+<p><a id="ISO19115"></a>[ISO 19115] <em>ISO: ISO 19115-1:2014, Geographic Information — Metadata — Part 1: Fundamentals</em></p>
+</li>
+<li>
 <p><a id="ogc18-126"></a>[OGC 08-126] <em>OGC: The OpenGIS® Abstract Specification Topic 5: Features, OGC document 08-126</em></p>
 </li>
 <li>
@@ -2714,9 +2717,6 @@ Abby&#8217;s car has the colour red, where "colour red" is a <em>property</em> (
 <div class="paragraph">
 <p>A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in <a href="http://www.iana.org/assignments/media-types/index.html" class="bare">http://www.iana.org/assignments/media-types/index.html</a> then this section may be used to define a new MIME type for registration with IANA.</p>
 </div>
-<div class="paragraph">
-<p>Unresolved directive in 21-049.adoc - include::./sections/clause_12_security_considerations.adoc[]</p>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -2776,7 +2776,10 @@ Ensure that there is a conformance class for each requirements class and a test 
 <p>The Data Dictionary tables in this section were software generated from the TC211 Hamonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.</p>
 </div>
 <div class="sect2">
-<h3 id="_general_feature_model_iso_191092015">General Feature Model <a href="#iso19109">(ISO 19109:2015)</a></h3>
+<h3 id="_general_feature_model">General Feature Model</h3>
+<div class="paragraph">
+<p>The following classes are defined in <a href="#iso19109">(ISO 19109:2015)</a></p>
+</div>
 <table id="AnyFeature-section" class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
@@ -3574,7 +3577,7 @@ Example Street number and name, suite number, etc</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> title</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">name by which the cited resource is known</p></td>
 </tr>
 </tbody>
@@ -3705,12 +3708,12 @@ Example Street number and name, suite number, etc</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> date</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#DateTime-section">DateTime</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#DateTime-section">DateTime</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">reference date for the cited resource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> dateType</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_DateTypeCode-section">CI_DateTypeCode</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_DateTypeCode-section">CI_DateTypeCode</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">event used for reference date</p></td>
 </tr>
 </tbody>
@@ -3873,7 +3876,7 @@ Example Street number and name, suite number, etc</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">None</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Constraint:</p></td>
@@ -3899,7 +3902,7 @@ Example Street number and name, suite number, etc</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_Organisation-section">CI_Organisation</a>   []</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_Organisation-section">CI_Organisation</a>   [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -4093,7 +4096,7 @@ Example Street number and name, suite number, etc</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> linkage</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">location (address) for on-line access using a Uniform Resource Locator/Uniform Resource Identifier address or similar addressing scheme such as <a href="http://www.statkart.no/isotc211" class="bare">http://www.statkart.no/isotc211</a></p></td>
 </tr>
 <tr>
@@ -4148,7 +4151,7 @@ POST/XML:
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">None</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Constraint:</p></td>
@@ -4512,7 +4515,7 @@ POST/XML:
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> role</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_RoleCode-section">CI_RoleCode</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_RoleCode-section">CI_RoleCode</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">function performed by the responsible party</p></td>
 </tr>
 </tbody>
@@ -4776,7 +4779,7 @@ POST/XML:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> number</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">telephone number by which individuals can contact responsible organisation or individual</p></td>
 </tr>
 <tr>
@@ -5381,7 +5384,7 @@ POST/XML:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> classification</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_ClassificationCode-section">MD_ClassificationCode</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_ClassificationCode-section">MD_ClassificationCode</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">name of the handling restrictions on the resource or metadata</p></td>
 </tr>
 <tr>
@@ -5702,7 +5705,7 @@ POST/XML:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> associationType</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#DS_AssociationTypeCode-section">DS_AssociationTypeCode</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#DS_AssociationTypeCode-section">DS_AssociationTypeCode</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">type of relation between the resources</p></td>
 </tr>
 <tr>
@@ -5902,7 +5905,7 @@ POST/XML:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> abstract</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">brief narrative summary of the content of the resource(s)</p></td>
 </tr>
 <tr>
@@ -5914,7 +5917,7 @@ user guides, data dictionaries.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> citation</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_Citation-section">CI_Citation</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_Citation-section">CI_Citation</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">citation for the resource(s)</p></td>
 </tr>
 <tr>
@@ -6041,7 +6044,7 @@ NOTE: this element should be repeated when describing upper and lower range</p><
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> className</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">character string to label the keyword category in natural language</p></td>
 </tr>
 <tr>
@@ -6051,7 +6054,7 @@ NOTE: this element should be repeated when describing upper and lower range</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> ontology</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_Citation-section">CI_Citation</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CI_Citation-section">CI_Citation</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">a reference that binds the keyword class to a formal conceptualization of a knowledge domain for use in semantic processingNOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology</p></td>
 </tr>
 </tbody>
@@ -6113,7 +6116,7 @@ NOTE: this element should be repeated when describing upper and lower range</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> keywordClass</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Keywords-section">MD_Keywords</a>   [0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_KeywordClass-section">MD_KeywordClass</a>   [0..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">association of a MD_Keywords instance with a MD_KeywordClass to provide user-defined categorization of groups of keywords that extend or are orthogonal to the standardized KeywordTypeCodes and are associated with an ontology that allows additional semantic query processing</p></td>
 </tr>
 </tbody>
@@ -6464,7 +6467,7 @@ NOTE: this element should be repeated when describing upper and lower range</p><
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> denominator</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Integer-section">Integer</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Integer-section">Integer</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">the number below the line in a vulgar fraction</p></td>
 </tr>
 </tbody>
@@ -6687,7 +6690,7 @@ NOTE: this element should be repeated when describing upper and lower range</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> specificUsage</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">brief description of the resource and/or resource series usage</p></td>
 </tr>
 <tr>
@@ -6915,7 +6918,7 @@ Examples: site of the disaster, evacuation zone, disaster-prevention facility, d
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> scope</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#NameSpace-section">NameSpace</a>   [1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#NameSpace-section">NameSpace</a>   [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -7006,12 +7009,12 @@ Examples: site of the disaster, evacuation zone, disaster-prevention facility, d
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> aName</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">The stored value "aName" is the returned value for the "aName()" operation.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> attributeType</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#TypeName-section">TypeName</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#TypeName-section">TypeName</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">The allowable type for this member.</p></td>
 </tr>
 </tbody>
@@ -7093,7 +7096,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> isGlobal</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Boolean-section">Boolean</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Boolean-section">Boolean</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -7184,7 +7187,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> aName</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">The stored value "aName" is the returned value for the "aName()" operation.</p></td>
 </tr>
 </tbody>
@@ -7245,22 +7248,22 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> century</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> day</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> month</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> year</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a>  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -7347,22 +7350,22 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> hour</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a>  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> minute</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a>  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> second</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a>  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> timeZone</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterString-section">CharacterString</a>  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -7554,7 +7557,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> isInfinite</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Boolean-section">Boolean</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Boolean-section">Boolean</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
@@ -7618,7 +7621,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> dimension</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Integer-section">Integer</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Integer-section">Integer</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">dimension in Euclidian space</p></td>
 </tr>
 </tbody>
@@ -7791,17 +7794,17 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> characterSet</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterSetCode-section">CharacterSetCode</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CharacterSetCode-section">CharacterSetCode</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">character set of the string</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> maxLength</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Integer-section">Integer</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Integer-section">Integer</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">maximum length of all instances of CharacterString</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> size</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Integer-section">Integer</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Integer-section">Integer</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">number of characters in the string</p></td>
 </tr>
 <tr>
@@ -7996,7 +7999,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> value</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Real-section">Real</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Real-section">Real</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -8267,7 +8270,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-10-29 00:51:33 +0100
+Last updated 2022-10-30 17:07:58 +0100
 </div>
 </div>
 </body>

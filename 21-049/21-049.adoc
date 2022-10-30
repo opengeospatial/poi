@@ -9,7 +9,7 @@
 :docnumber: 21-049
 :received-date: 2029-03-30
 :issued-date: 2029-03-30
-:published-date: 2022-10-28
+:published-date: 2022-10-30
 :fullname: Charles Heazel
 :fullname_2: Matthew Brian, John Purss
 :docsubtype: implementation
@@ -41,8 +41,6 @@ include::./sections/clause_7_normative_text.adoc[]
 include::./sections/clause_7-1_data_model.adoc[]
 
 include::./sections/clause_8_media_types.adoc[]
-
-include::./sections/clause_12_security_considerations.adoc[]
 
 include::sections/annex-a.adoc[]
 
