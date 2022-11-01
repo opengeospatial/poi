@@ -237,9 +237,9 @@ Example Street number and name, suite number, etc
  
 !{set:cellbgcolor:#FFFFFF} editionDate   !<<DateTime-section,DateTime>>  [0..1] !date of the edition
  
-!{set:cellbgcolor:#FFFFFF} graphic   !<<MD_BrowseGraphic-section,MD_BrowseGraphic>>  [0..*] !citation graphic or logo for cited party
+!{set:cellbgcolor:#FFFFFF} graphic   !MD_BrowseGraphic  [0..*] !citation graphic or logo for cited party
  
-!{set:cellbgcolor:#FFFFFF} identifier   !<<MD_Identifier-section,MD_Identifier>>  [0..*] !value uniquely identifying an object within a namespace
+!{set:cellbgcolor:#FFFFFF} identifier   !MD_Identifier  [0..*] !value uniquely identifying an object within a namespace
  
 !{set:cellbgcolor:#FFFFFF} ISBN   !<<CharacterString-section,CharacterString>>  [0..1] !international Standard Book Number
  
@@ -465,7 +465,7 @@ POST/XML:
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} logo   !<<MD_BrowseGraphic-section,MD_BrowseGraphic>>  [0..*] !Graphic identifying organization
+!{set:cellbgcolor:#FFFFFF} logo   !MD_BrowseGraphic  [0..*] !Graphic identifying organization
 !===
 |=== 
 
@@ -568,7 +568,7 @@ POST/XML:
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} extent   !<<EX_Extent-section,EX_Extent>>  [0..*] !spatial or temporal extent of the role
+!{set:cellbgcolor:#FFFFFF} extent   !EX_Extent  [0..*] !spatial or temporal extent of the role
  
 !{set:cellbgcolor:#FFFFFF} role   !<<CI_RoleCode-section,CI_RoleCode>> [1..1] !function performed by the responsible party
 !===
