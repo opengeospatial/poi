@@ -7,7 +7,7 @@ ISO Technical Committee 211 maintains a harmonized UML model which covers many o
 The Data Dictionary tables in this section were software generated from the TC211 Hamonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.
 
 === General Feature Model 
-The following classes are defined in <<iso19109,(ISO 19109:2015)>>
+The following classes are defined in <<ISO19109,(ISO 19109:2015)>>
 
 [[AnyFeature-section]]
 [cols="1a"]
@@ -90,7 +90,7 @@ This class describes how a feature class shall be constructed in an Application 
 |===
 
 === Geometry
-The following classes are defined in <<iso19107,(ISO 19107: 2003)>>
+The following classes are defined in <<ISO19107,(ISO 19107: 2003)>>
 
 [[GM_Object-section]]
 [cols="1a"]
@@ -184,7 +184,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 |=== 
 
 === Citation and responsible party information
-The following classes are defined in ISO 19115-1 Edition 1
+The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 
 [[CI_Address-section]]
 [cols="1a"]
@@ -691,7 +691,7 @@ POST/XML:
 |===   
 
 === Constraint information
-The following classes are defined in ISO 19115-1 Edition 1
+The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 
 [[MD_ClassificationCode-section]]
 [cols="1a"]
@@ -879,7 +879,7 @@ The following classes are defined in ISO 19115-1 Edition 1
 |===   
 
 === Identification information
-The following classes are defined in ISO 19115-1 Edition 1
+The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 
 [[DS_AssociationTypeCode-section]]
 [cols="1a"]
@@ -1382,7 +1382,7 @@ Examples: site of the disaster, evacuation zone, disaster-prevention facility, d
 |===   
 
 === Name types
-The following classes are defined in ISO 19103 Edition 1
+The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 
 [[GenericName-section]]
 [cols="1a"]
@@ -1488,7 +1488,7 @@ Not all methods for NameSpaces need to be made publicly accessible.
 |===   
 
 === Primitive types
-The following classes are defined in ISO 19103 Edition 1
+The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 
 ==== Date and Time
 

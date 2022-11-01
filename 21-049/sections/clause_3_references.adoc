@@ -10,3 +10,4 @@ The following normative documents contain provisions that, through reference in 
 * [[[ISO19109,ISO 19109]]] _ISO: ISO 19109:2015, Geographic Information – Rules for Application Schemas_
 * [[[ISO19111,ISO 19111]]] _ISO: ISO 19111:2019, Geographic information – Referencing by coordinates_
 * [[[ISO19115,ISO 19115]]] _ISO: ISO 19115-1:2014, Geographic Information — Metadata — Part 1: Fundamentals_
+* [[[ISO19507,ISO 19507]]] _ISO: ISO 19507:2012, Information technology - Object Management Group Object Constraint Language (OCL)_
