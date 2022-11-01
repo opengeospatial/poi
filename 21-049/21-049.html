@@ -587,13 +587,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a id="ISO19115"></a>[ISO 19115] <em>ISO: ISO 19115-1:2014, Geographic Information — Metadata — Part 1: Fundamentals</em></p>
 </li>
 <li>
-<p><a id="ogc18-126"></a>[OGC 08-126] <em>OGC: The OpenGIS® Abstract Specification Topic 5: Features, OGC document 08-126</em></p>
-</li>
-<li>
-<p><a id="ogc99-108"></a>[OGC 88-018] <em>OGC: The OpenGIS™ Abstract Specification Topic 8: Relationships Between Features, OGC document 99-108r2</em></p>
-</li>
-<li>
-<p><a id="ogc99-110"></a>[OGC 99-119] <em>OGC: The OpenGIS™ Abstract Specification Topic 10: Feature Collections, OGC document 99-110</em></p>
+<p><a id="ISO19507"></a>[ISO 19507] <em>ISO: ISO 19507:2012, Information technology - Object Management Group Object Constraint Language (OCL)</em></p>
 </li>
 </ul>
 </div>
@@ -1471,8 +1465,10 @@ Abby&#8217;s car has the colour red, where "colour red" is a <em>property</em> (
 <div class="paragraph">
 <p>The normative provisions in this document are denoted by the URI</p>
 </div>
-<div class="paragraph">
-<p><a href="http://www.opengis.net/spec/POI/1.0" class="bare">http://www.opengis.net/spec/POI/1.0</a></p>
+<div class="literalblock">
+<div class="content">
+<pre>http://www.opengis.net/spec/POI/1.0</pre>
+</div>
 </div>
 <div class="paragraph">
 <p>All requirements and conformance tests that appear in this document are denoted by partial URIs relative to this base.</p>
@@ -1652,7 +1648,7 @@ Abby&#8217;s car has the colour red, where "colour red" is a <em>property</em> (
 <p><strong><a href="#POIProperty-section">POIProperty:</a></strong> The abstract model for a Property of a Feature of Interest which is to be represented in a POI.</p>
 </div>
 <div class="paragraph">
-<p><strong><a href="#POI-section">POI:</a></strong> A POI instance.</p>
+<p><strong>POI:</strong> A POI instance.</p>
 </div>
 <div class="paragraph">
 <p><strong><a href="#FeatureOfInterest-section">FeatureOfInterest:</a></strong> This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.</p>
@@ -1813,7 +1809,7 @@ Abby&#8217;s car has the colour red, where "colour red" is a <em>property</em> (
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> featureID «property»</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#ID-section">ID</a>  [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">ID  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.</p></td>
 </tr>
 <tr>
@@ -2674,7 +2670,7 @@ Abby&#8217;s car has the colour red, where "colour red" is a <em>property</em> (
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> value «property»</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Any-section">Any</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Any  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Representations of zero or more property values from the Feature of Interest.</p></td>
 </tr>
 </tbody>
@@ -2778,7 +2774,7 @@ Ensure that there is a conformance class for each requirements class and a test 
 <div class="sect2">
 <h3 id="_general_feature_model">General Feature Model</h3>
 <div class="paragraph">
-<p>The following classes are defined in <a href="#iso19109">(ISO 19109:2015)</a></p>
+<p>The following classes are defined in <a href="#ISO19109">(ISO 19109:2015)</a></p>
 </div>
 <table id="AnyFeature-section" class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2863,7 +2859,7 @@ EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' w
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass Of:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#PropertyType-section">PropertyType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PropertyType</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
@@ -2894,12 +2890,12 @@ EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' w
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> featureAttributeMetadata</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Metadata-section">MD_Metadata</a>   [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_Metadata   [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> featureAttributeMetadata</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Metadata-section">MD_Metadata</a>   [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_Metadata   [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
@@ -2909,7 +2905,7 @@ EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' w
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> featureAttributeMetadata</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Metadata-section">MD_Metadata</a>   [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_Metadata   [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -2932,7 +2928,7 @@ EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' w
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> cardinality</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Multiplicity-section">Multiplicity</a>  [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Multiplicity  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
@@ -2975,7 +2971,7 @@ This class describes how a feature class shall be constructed in an Application 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass Of:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#IdentifiedType-section">IdentifiedType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IdentifiedType</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
@@ -3005,7 +3001,7 @@ This class describes how a feature class shall be constructed in an Application 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#NS_AvoidList-section">NS_AvoidList</a>   [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">NS_AvoidList  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
@@ -3015,12 +3011,12 @@ This class describes how a feature class shall be constructed in an Application 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> featureTypeMetadata</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Metadata-section">MD_Metadata</a>   [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_Metadata   [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> carrierOfCharacteristics</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#PropertyType-section">PropertyType</a>   [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">PropertyType   [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -3055,7 +3051,7 @@ This class describes how a feature class shall be constructed in an Application 
 <div class="sect2">
 <h3 id="_geometry_2">Geometry</h3>
 <div class="paragraph">
-<p>The following classes are defined in <a href="#iso19107">(ISO 19107: 2003)</a></p>
+<p>The following classes are defined in <a href="#ISO19107">(ISO 19107: 2003)</a></p>
 </div>
 <table id="GM_Object-section" class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -3119,31 +3115,27 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Geometry-section">Geometry</a> [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Geometry [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">TransfiniteSet&lt;<a href="#DirectPosition-section">DirectPosition</a>&gt;
-[1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">TransfiniteSet&lt;DirectPosition&gt;  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CV_DomainObject-section">CV_DomainObject</a>
-[1..1]</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> CRS</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#CRS-section">CRS</a>
-[0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">CV_DomainObject  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> CRS</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#SC_CRS-section">SC_CRS</a>
-[0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">CRS  [0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> CRS</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">SC_CRS [0..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -3174,7 +3166,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass Of:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#GM_Primitive-section">GM_Primitive</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Primitive</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
@@ -3200,14 +3192,12 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Point-section">Point</a>
-[1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Point  [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> composite</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#GM_CompositePoint-section">GM_CompositePoint</a>
-[0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">GM_CompositePoint [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -3230,7 +3220,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> position</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#DirectPosition-section">DirectPosition</a> [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">DirectPosition [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">The attribute "position" shall be the DirectPosition of this GM_Point.
 GM_Point::position [1] : DirectPosition
 NOTE In most cases, the state of a GM_Point is fully determined by its position attribute. The only exception to this is if the GM_Point has been subclassed to provide additional non-geometric information such as symbology.</p></td>
@@ -3263,7 +3253,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass Of:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#GM_Primitive-section">GM_Primitive</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Primitive</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
@@ -3289,7 +3279,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> controlPoint</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#GM_PointArray-section">GM_PointArray</a> [1..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">GM_PointArray [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -3320,7 +3310,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;Subclass Of:</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#GM_Primitive-section">GM_Primitive</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GM_Primitive</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">&#160;&#160;&#160;&#160;StereoType:</p></td>
@@ -3346,7 +3336,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> surface</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#GM_PolyhedralSurface-section">GM_PolyhedralSurface</a>   [0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">GM_PolyhedralSurface   [0..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -3369,12 +3359,12 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> boundary</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#GM_SurfaceBoundary-section">GM_SurfaceBoundary</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">GM_SurfaceBoundary</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> spanningSurface</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#GM_Surface-section">GM_Surface</a>  [0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">GM_Surface  [0..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -3386,7 +3376,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 <div class="sect2">
 <h3 id="_citation_and_responsible_party_information">Citation and responsible party information</h3>
 <div class="paragraph">
-<p>The following classes are defined in ISO 19115-1 Edition 1</p>
+<p>The following classes are defined in <a href="#ISO19115">(ISO 19115-1 Edition 1)</a></p>
 </div>
 <table id="CI_Address-section" class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -3537,12 +3527,12 @@ Example Street number and name, suite number, etc</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> graphic</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_BrowseGraphic-section">MD_BrowseGraphic</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_BrowseGraphic  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">citation graphic or logo for cited party</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> identifier</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Identifier-section">MD_Identifier</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_Identifier  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">value uniquely identifying an object within a namespace</p></td>
 </tr>
 <tr>
@@ -4200,7 +4190,7 @@ POST/XML:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> logo</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_BrowseGraphic-section">MD_BrowseGraphic</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_BrowseGraphic  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Graphic identifying organization</p></td>
 </tr>
 </tbody>
@@ -4510,7 +4500,7 @@ POST/XML:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> extent</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#EX_Extent-section">EX_Extent</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">EX_Extent  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">spatial or temporal extent of the role</p></td>
 </tr>
 <tr>
@@ -4859,7 +4849,7 @@ POST/XML:
 <div class="sect2">
 <h3 id="_constraint_information">Constraint information</h3>
 <div class="paragraph">
-<p>The following classes are defined in ISO 19115-1 Edition 1</p>
+<p>The following classes are defined in <a href="#ISO19115">(ISO 19115-1 Edition 1)</a></p>
 </div>
 <table id="MD_ClassificationCode-section" class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -5004,7 +4994,7 @@ POST/XML:
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Metadata-section">MD_Metadata</a>   []</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_Metadata   []</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -5027,12 +5017,12 @@ POST/XML:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> constraintApplicationScope</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Scope-section">MD_Scope</a>  [0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_Scope  [0..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Spatial and temporal extent of the application of the constraint restrictions</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> graphic</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_BrowseGraphic-section">MD_BrowseGraphic</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_BrowseGraphic  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">graphic /symbol indicating the constraint</p></td>
 </tr>
 <tr>
@@ -5411,7 +5401,7 @@ POST/XML:
 <div class="sect2">
 <h3 id="_identification_information">Identification information</h3>
 <div class="paragraph">
-<p>The following classes are defined in ISO 19115-1 Edition 1</p>
+<p>The following classes are defined in <a href="#ISO19115">(ISO 19115-1 Edition 1)</a></p>
 </div>
 <table id="DS_AssociationTypeCode-section" class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -5786,7 +5776,7 @@ POST/XML:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> defaultLocale</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#PT_Locale-section">PT_Locale</a>  [0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">PT_Locale  [0..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">language and character set used within the resource</p></td>
 </tr>
 <tr>
@@ -5796,7 +5786,7 @@ POST/XML:
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> otherLocale</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#PT_Locale-section">PT_Locale</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">PT_Locale  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">alternate localised language(s) and character set (s) used within the resource</p></td>
 </tr>
 <tr>
@@ -5867,7 +5857,7 @@ POST/XML:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> resourceMaintenance</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_MaintenanceInformation-section">MD_MaintenanceInformation</a>   [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_MaintenanceInformation   [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">information about the frequency of resource updates, and the scope of those updates</p></td>
 </tr>
 <tr>
@@ -5882,7 +5872,7 @@ POST/XML:
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Metadata-section">MD_Metadata</a>   []</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_Metadata  []</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 </tbody>
@@ -5927,7 +5917,7 @@ user guides, data dictionaries.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> extent</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#EX_Extent-section">EX_Extent</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">EX_Extent  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">spatial and temporal extent of the resource</p></td>
 </tr>
 <tr>
@@ -5937,7 +5927,7 @@ user guides, data dictionaries.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> processingLevel</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#MD_Identifier-section">MD_Identifier</a>  [0..1]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">MD_Identifier  [0..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">code that identifies the level of processing in the producers coding system of a resource eg. NOAA level 1B</p></td>
 </tr>
 <tr>
@@ -5963,7 +5953,7 @@ NOTE: this element should be repeated when describing upper and lower range</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> temporalResolution</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#TM_Duration-section">TM_Duration</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">TM_Duration  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">smallest resolvable temporal period in a resource</p></td>
 </tr>
 <tr>
@@ -6520,12 +6510,12 @@ NOTE: this element should be repeated when describing upper and lower range</p><
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> angularDistance</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Angle-section">Angle</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Angle</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Angular sampling measure</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> distance</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Distance-section">Distance</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Distance</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">horizontal ground sample distance</p></td>
 </tr>
 <tr>
@@ -6540,7 +6530,7 @@ NOTE: this element should be repeated when describing upper and lower range</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> vertical</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#Distance-section">Distance</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Distance</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Vertical sampling distance</p></td>
 </tr>
 </tbody>
@@ -6695,7 +6685,7 @@ NOTE: this element should be repeated when describing upper and lower range</p><
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> usageDateTime</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#TM_Primitive-section">TM_Primitive</a>  [0..*]</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">TM_Primitive  [0..*]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">date and time of the first use or range of uses of the resource and/or resource series</p></td>
 </tr>
 <tr>
@@ -6871,7 +6861,7 @@ Examples: site of the disaster, evacuation zone, disaster-prevention facility, d
 <div class="sect2">
 <h3 id="_name_types">Name types</h3>
 <div class="paragraph">
-<p>The following classes are defined in ISO 19103 Edition 1</p>
+<p>The following classes are defined in <a href="#ISO19103">(ISO 19103:2015)</a></p>
 </div>
 <table id="GenericName-section" class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -7091,7 +7081,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"> acceptableClassList</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#TypeName-section">TypeName</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="#TypeName-section">TypeName</a> [1..1]</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"></td>
 </tr>
 <tr>
@@ -7199,7 +7189,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 <div class="sect2">
 <h3 id="_primitive_types">Primitive types</h3>
 <div class="paragraph">
-<p>The following classes are defined in ISO 19103 Edition 1</p>
+<p>The following classes are defined in <a href="#ISO19103">(ISO 19103:2015)</a></p>
 </div>
 <div class="sect3">
 <h4 id="_date_and_time">Date and Time</h4>
@@ -8270,7 +8260,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-10-30 17:07:58 +0100
+Last updated 2022-11-01 22:14:27 +0100
 </div>
 </div>
 </body>
