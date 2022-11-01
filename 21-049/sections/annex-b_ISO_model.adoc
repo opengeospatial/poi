@@ -39,23 +39,23 @@ In an implementation this abstract class shall be substituted by a concrete clas
 characteristic of a feature +
 NOTE: A feature attribute has a name, a data type, and a value domain associated to it.  A feature attribute for a feature instance also has an attribute value taken from the value domain.  +
 EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' which belongs to the data type 'text'.  A feature attribute named 'length' may have an attribute value '82.4' which belongs to the data type 'real'.+ 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<PropertyType-section,PropertyType>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! PropertyType 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «Metaclass»
 !{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! name is mandatory (Invariant): 
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]<o:p></o:p>
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! <<MD_Metadata-section,MD_Metadata>>   [0..*] !
-!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! <<MD_Metadata-section,MD_Metadata>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! MD_Metadata   [0..*] !
+!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! MD_Metadata   [0..*] !
 !{set:cellbgcolor:#FFFFFF} characterizeBy  ! <<AttributeType-section,AttributeType>>   [0..*] !
-!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! <<MD_Metadata-section,MD_Metadata>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! MD_Metadata   [0..*] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD}
 *Attribute* !*Value type and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF} cardinality   !<<Multiplicity-section,Multiplicity>>  [1..1]!
+!{set:cellbgcolor:#FFFFFF} cardinality   !Multiplicity  [1..1]!
 !{set:cellbgcolor:#FFFFFF} valueDomain !<<CharacterString-section,CharacterString>> [1..1] !
 !{set:cellbgcolor:#FFFFFF} valueType   !<<TypeName-section,TypeName>> [1..1] !
 !===
@@ -70,17 +70,17 @@ EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' w
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! feature: abstraction of real world phenomena +
 NOTE: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant. +
 This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<IdentifiedType-section,IdentifiedType>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! IdentifiedType 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «Metaclass»
 !{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! name is mandatory (Invariant):     
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF}  ! <<NS_AvoidList-section,NS_AvoidList>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF}  ! NS_AvoidList  [0..*] !
 !{set:cellbgcolor:#FFFFFF} superType  ! <<FeatureType-section,FeatureType>>   [0..*] !
-!{set:cellbgcolor:#FFFFFF} featureTypeMetadata  ! <<MD_Metadata-section,MD_Metadata>>   [0..*] !
-!{set:cellbgcolor:#FFFFFF} carrierOfCharacteristics  ! <<PropertyType-section,PropertyType>>   [0..*] !
+!{set:cellbgcolor:#FFFFFF} featureTypeMetadata  ! MD_Metadata   [0..*] !
+!{set:cellbgcolor:#FFFFFF} carrierOfCharacteristics  ! PropertyType   [0..*] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -109,25 +109,11 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   
-!<<Geometry-section,Geometry>> [1..1]
-!
-!{set:cellbgcolor:#FFFFFF}   
-!TransfiniteSet<<<DirectPosition-section,DirectPosition>>>  
-[1..1]
-!
-!{set:cellbgcolor:#FFFFFF}   
-!<<CV_DomainObject-section,CV_DomainObject>>  
-[1..1]
-!
-!{set:cellbgcolor:#FFFFFF} CRS  
-!<<CRS-section,CRS>>  
-[0..1]
-!
-!{set:cellbgcolor:#FFFFFF} CRS  
-!<<SC_CRS-section,SC_CRS>>  
-[0..1]
-!
+!{set:cellbgcolor:#FFFFFF}   !Geometry [1..1]!
+!{set:cellbgcolor:#FFFFFF}   !TransfiniteSet<DirectPosition>  [1..1]!
+!{set:cellbgcolor:#FFFFFF}   !CV_DomainObject  [1..1]!
+!{set:cellbgcolor:#FFFFFF} CRS  !CRS  [0..1]!
+!{set:cellbgcolor:#FFFFFF} CRS  !SC_CRS [0..1]!
 !===
 |=== 
 
@@ -138,26 +124,20 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! GM_Point is the basic data type for a geometric object consisting of one and only one point.  
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GM_Primitive-section,GM_Primitive>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! GM_Primitive 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   
-!<<Point-section,Point>>  
-[1..1]
-!
-!{set:cellbgcolor:#FFFFFF} composite  
-!<<GM_CompositePoint-section,GM_CompositePoint>>  
-[0..*]
-!
+!{set:cellbgcolor:#FFFFFF}   !Point  [1..1]!
+!{set:cellbgcolor:#FFFFFF} composite  !GM_CompositePoint [0..*]!
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} position   !<<DirectPosition-section,DirectPosition>> [1..1]  !The attribute "position" shall be the DirectPosition of this GM_Point.
+!{set:cellbgcolor:#FFFFFF} position   !DirectPosition [1..1]  !The attribute "position" shall be the DirectPosition of this GM_Point.
 GM_Point::position [1] : DirectPosition
 NOTE In most cases, the state of a GM_Point is fully determined by its position attribute. The only exception to this is if the GM_Point has been subclassed to provide additional non-geometric information such as symbology.
 !===
@@ -170,13 +150,13 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A GM_LineString (Figure 16) consists of sequence of line segments, each having a parameterization like the one for GM_LineSegment (See 6.4.11). The class essentially combines a Sequence<GM_LineSegments> into a single object, with the obvious savings of storage space.
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GM_Primitive-section,GM_Primitive>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! GM_Primitive 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF} controlPoint   !<<GM_PointArray-section,GM_PointArray>> [1..1]!
+!{set:cellbgcolor:#FFFFFF} controlPoint   !GM_PointArray [1..1]!
 !===
 |=== 
 
@@ -187,19 +167,19 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A GM_Polygon (Figure 21) is a surface patch that is defined by a set of boundary curves and an underlying surface to which these curves adhere. The default is that the curves are coplanar and the polygon uses planar interpolation in its interior.  
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<GM_Primitive-section,GM_Primitive>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! GM_Primitive 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF} surface  ! <<GM_PolyhedralSurface-section,GM_PolyhedralSurface>>   [0..1] !
+!{set:cellbgcolor:#FFFFFF} surface  ! GM_PolyhedralSurface   [0..1] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF} boundary   !<<GM_SurfaceBoundary-section,GM_SurfaceBoundary>>  !
-!{set:cellbgcolor:#FFFFFF} spanningSurface   !<<GM_Surface-section,GM_Surface>>  [0..1] !
+!{set:cellbgcolor:#FFFFFF} boundary   !GM_SurfaceBoundary  !
+!{set:cellbgcolor:#FFFFFF} spanningSurface   !GM_Surface  [0..1] !
 !===
 |=== 
 
