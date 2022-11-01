@@ -1006,11 +1006,11 @@ The following classes are defined in ISO 19115-1 Edition 1
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} defaultLocale   !<<PT_Locale-section,PT_Locale>>  [0..1] !language and character set used within the resource
+!{set:cellbgcolor:#FFFFFF} defaultLocale   !PT_Locale  [0..1] !language and character set used within the resource
  
 !{set:cellbgcolor:#FFFFFF} environmentDescription   !<<CharacterString-section,CharacterString>>  [0..1] !description of the resource in the producer's processing environment, including items such as the software, the computer operating system, file name, and the dataset size
  
-!{set:cellbgcolor:#FFFFFF} otherLocale   !<<PT_Locale-section,PT_Locale>>  [0..*] !alternate localised language(s) and character set (s) used within the resource
+!{set:cellbgcolor:#FFFFFF} otherLocale   !PT_Locale  [0..*] !alternate localised language(s) and character set (s) used within the resource
  
 !{set:cellbgcolor:#FFFFFF} supplementalInformation   !<<CharacterString-section,CharacterString>>  [0..1] !any other descriptive information about the resource
 !===
@@ -1033,10 +1033,10 @@ The following classes are defined in ISO 19115-1 Edition 1
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF} resourceMaintenance  ! <<MD_MaintenanceInformation-section,MD_MaintenanceInformation>>   [0..*] !information about the frequency of resource updates, and the scope of those updates
+!{set:cellbgcolor:#FFFFFF} resourceMaintenance  ! MD_MaintenanceInformation   [0..*] !information about the frequency of resource updates, and the scope of those updates
 !{set:cellbgcolor:#FFFFFF} associatedResource  ! <<MD_AssociatedResource-section,MD_AssociatedResource>>   [0..*] !associated resource information
 !{set:cellbgcolor:#FFFFFF} resourceSpecificUsage  ! <<MD_Usage-section,MD_Usage>>   [0..*] !basic information about specific application(s) for which the resource(s) has/have been or is being used by different users
-!{set:cellbgcolor:#FFFFFF}   ! <<MD_Metadata-section,MD_Metadata>>   [] !
+!{set:cellbgcolor:#FFFFFF}   ! MD_Metadata  [] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -1052,11 +1052,11 @@ user guides, data dictionaries.
  
 !{set:cellbgcolor:#FFFFFF} credit   !<<CharacterString-section,CharacterString>>  [0..*] !recognition of those who contributed to the resource(s)
  
-!{set:cellbgcolor:#FFFFFF} extent   !<<EX_Extent-section,EX_Extent>>  [0..*] !spatial and temporal extent of the resource
+!{set:cellbgcolor:#FFFFFF} extent   !EX_Extent  [0..*] !spatial and temporal extent of the resource
  
 !{set:cellbgcolor:#FFFFFF} pointOfContact   !<<CI_Responsibility-section,CI_Responsibility>>  [0..*] !identification of, and means of communication with, person(s) and organisation(s) associated with the resource(s)
  
-!{set:cellbgcolor:#FFFFFF} processingLevel   !<<MD_Identifier-section,MD_Identifier>>  [0..1] !code that identifies the level of processing in the producers coding system of a resource eg. NOAA level 1B
+!{set:cellbgcolor:#FFFFFF} processingLevel   !MD_Identifier  [0..1] !code that identifies the level of processing in the producers coding system of a resource eg. NOAA level 1B
  
 !{set:cellbgcolor:#FFFFFF} purpose   !<<CharacterString-section,CharacterString>>  [0..1] !summary of the intentions with which the resource(s) was developed
  
@@ -1067,7 +1067,7 @@ NOTE: this element should be repeated when describing upper and lower range
  
 !{set:cellbgcolor:#FFFFFF} status   !<<MD_ProgressCode-section,MD_ProgressCode>>  [0..*] !status of the resource(s)
  
-!{set:cellbgcolor:#FFFFFF} temporalResolution   !<<TM_Duration-section,TM_Duration>>  [0..*] !smallest resolvable temporal period in a resource
+!{set:cellbgcolor:#FFFFFF} temporalResolution   !TM_Duration  [0..*] !smallest resolvable temporal period in a resource
  
 !{set:cellbgcolor:#FFFFFF} topicCategory   !<<MD_TopicCategoryCode-section,MD_TopicCategoryCode>>  [0..*] !main theme(s) of the resource
 !===
@@ -1254,15 +1254,15 @@ NOTE: this element should be repeated when describing upper and lower range
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} angularDistance   !<<Angle-section,Angle>>  !Angular sampling measure
+!{set:cellbgcolor:#FFFFFF} angularDistance   !Angle  !Angular sampling measure
  
-!{set:cellbgcolor:#FFFFFF} distance   !<<Distance-section,Distance>>  !horizontal ground sample distance
+!{set:cellbgcolor:#FFFFFF} distance   !Distance  !horizontal ground sample distance
  
 !{set:cellbgcolor:#FFFFFF} equivalentScale   !<<MD_RepresentativeFraction-section,MD_RepresentativeFraction>>  !level of detail expressed as the scale of a comparable hardcopy map or chart
  
 !{set:cellbgcolor:#FFFFFF} levelOfDetail   !<<CharacterString-section,CharacterString>>  !brief textual description of the spatial resolution of the resource
  
-!{set:cellbgcolor:#FFFFFF} vertical   !<<Distance-section,Distance>>  !Vertical sampling distance
+!{set:cellbgcolor:#FFFFFF} vertical   !Distance  !Vertical sampling distance
 !===
 |=== 
 
@@ -1315,7 +1315,7 @@ NOTE: this element should be repeated when describing upper and lower range
  
 !{set:cellbgcolor:#FFFFFF} specificUsage   !<<CharacterString-section,CharacterString>> [1..1] !brief description of the resource and/or resource series usage
  
-!{set:cellbgcolor:#FFFFFF} usageDateTime   !<<TM_Primitive-section,TM_Primitive>>  [0..*] !date and time of the first use or range of uses of the resource and/or resource series
+!{set:cellbgcolor:#FFFFFF} usageDateTime   !TM_Primitive  [0..*] !date and time of the first use or range of uses of the resource and/or resource series
  
 !{set:cellbgcolor:#FFFFFF} userContactInfo   !<<CI_Responsibility-section,CI_Responsibility>>  [0..*] !identification of and means of communicating with person(s) and organisation(s) using the resource(s)
  
@@ -1451,7 +1451,7 @@ Not all methods for NameSpaces need to be made publicly accessible.
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} acceptableClassList   !<<TypeName-section,TypeName>>  !
+!{set:cellbgcolor:#FFFFFF} acceptableClassList   !<<TypeName-section,TypeName>> [1..1] !
  
 !{set:cellbgcolor:#FFFFFF} isGlobal   !<<Boolean-section,Boolean>> [1..1] !
 !===
