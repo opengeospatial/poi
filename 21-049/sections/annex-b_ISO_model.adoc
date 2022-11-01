@@ -739,15 +739,15 @@ The following classes are defined in ISO 19115-1 Edition 1
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
 !{set:cellbgcolor:#FFFFFF}   ! <<MD_Identification-section,MD_Identification>>   [] !
-!{set:cellbgcolor:#FFFFFF}   ! <<MD_Metadata-section,MD_Metadata>>   [] !
+!{set:cellbgcolor:#FFFFFF}   ! MD_Metadata   [] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} constraintApplicationScope   !<<MD_Scope-section,MD_Scope>>  [0..1] !Spatial and temporal extent of the application of the constraint restrictions
+!{set:cellbgcolor:#FFFFFF} constraintApplicationScope   !MD_Scope  [0..1] !Spatial and temporal extent of the application of the constraint restrictions
  
-!{set:cellbgcolor:#FFFFFF} graphic   !<<MD_BrowseGraphic-section,MD_BrowseGraphic>>  [0..*] !graphic /symbol indicating the constraint 
+!{set:cellbgcolor:#FFFFFF} graphic   !MD_BrowseGraphic  [0..*] !graphic /symbol indicating the constraint 
  
 !{set:cellbgcolor:#FFFFFF} reference   !<<CI_Citation-section,CI_Citation>>  [0..*] !citation/URL for the limitation or constraint, eg. copyright statement, license agreement, etc
  
