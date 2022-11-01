@@ -38,7 +38,7 @@ image::./images/POI-2.png[align="center"]
 
 *<<POIProperty-section,POIProperty:>>* The abstract model for a Property of a Feature of Interest which is to be represented in a POI.
 
-*<<POI-section,POI:>>* A POI instance. 
+*POI:* A POI instance. 
 
 *<<FeatureOfInterest-section,FeatureOfInterest:>>* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.
 
