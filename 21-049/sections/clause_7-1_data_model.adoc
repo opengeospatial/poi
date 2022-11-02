@@ -4,6 +4,7 @@
 The POI UML model is the normative definition of the POI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the POI Conceptual Model.
 
 [[AbstractFeature-section]]
+.Abstract Feature Class
 [cols="1a"]
 |===
 |*AbstractFeature* 
@@ -30,6 +31,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 include::../requirements/core/Req_Core_AbstractFeature.adoc[]
 
 [[AbstractFeatureWithLifespan-section]]
+.Abstract Feature With Lifespan Class
 [cols="1a"]
 |===
 |*AbstractFeatureWithLifespan* 
@@ -56,6 +58,7 @@ include::../requirements/core/Req_Core_AbstractFeature.adoc[]
 include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
 
 [[AbstractPOI-section]]
+.Abstract POI Class
 [cols="1a"]
 |===
 |*AbstractPOI* 
@@ -94,6 +97,7 @@ include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
 include::../requirements/core/Req_Core_POI.adoc[]
 
 [[FeatureOfInterest-section]]
+.Feature of Interest Class
 [cols="1a"]
 |===
 |*FeatureOfInterest* 
@@ -108,6 +112,7 @@ include::../requirements/core/Req_Core_POI.adoc[]
 include::../requirements/core/Req_Core_FeatureOfInterest.adoc[]
 
 [[POIProperty-section]]
+.POI Property Class
 [cols="1a"]
 |===
 |*POIProperty* 

@@ -10,6 +10,7 @@ The Data Dictionary tables in this section were software generated from the TC21
 The following classes are defined in <<ISO19109,(ISO 19109:2015)>>
 
 [[AnyFeature-section]]
+.Any Feature Class
 [cols="1a"]
 |===
 |*AnyFeature* 
@@ -30,6 +31,7 @@ In an implementation this abstract class shall be substituted by a concrete clas
 |===
 
 [[AttributeType-section]]
+.Attribute Type Class
 [cols="1a"]
 |===
 |*AttributeType* 
@@ -62,6 +64,7 @@ EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' w
 |===
 
 [[FeatureType-section]]
+.Feature Type Class
 [cols="1a"]
 |===
 |*FeatureType* 
@@ -90,9 +93,10 @@ This class describes how a feature class shall be constructed in an Application 
 |===
 
 === Geometry
-The following classes are defined in <<ISO19107,(ISO 19107: 2003)>>
+The following classes are defined in <<ISO19107,(ISO 19107:2003)>>
 
 [[GM_Object-section]]
+.GM_Object Class
 [cols="1a"]
 |===
 |*GM_Object* 
@@ -118,6 +122,7 @@ NOTE As a type, GM_Object does not have a well-defined default state or value re
 |=== 
 
 [[GM_Point-section]]
+.GM_Point Class
 [cols="1a"]
 |===
 |*GM_Point* 
@@ -144,6 +149,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 |=== 
 
 [[GM_LineString-section]]
+.GM_LineString Class
 [cols="1a"]
 |===
 |*GM_LineString* 
@@ -161,6 +167,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 |=== 
 
 [[GM_Polygon-section]]
+.GM_Polygon Class
 [cols="1a"]
 |===
 |*GM_Polygon* 
@@ -187,6 +194,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 
 [[CI_Address-section]]
+.CI_Address Class
 [cols="1a"]
 |===
 |*CI_Address* 
@@ -215,6 +223,7 @@ Example Street number and name, suite number, etc
 |=== 
 
 [[CI_Citation-section]]
+.CI_Citation Class
 [cols="1a"]
 |===
 |*CI_Citation* 
@@ -258,6 +267,7 @@ Example Street number and name, suite number, etc
 |=== 
 
 [[CI_Contact-section]]
+.CI_Contact Class
 [cols="1a"]
 |===
 |*CI_Contact* 
@@ -285,6 +295,7 @@ Example Street number and name, suite number, etc
 |=== 
 
 [[CI_Date-section]]
+.CI_Date Class
 [cols="1a"]
 |===
 |*CI_Date* 
@@ -304,6 +315,7 @@ Example Street number and name, suite number, etc
 |=== 
 
 [[CI_DateTypeCode-section]]
+.CI_DateTypeCode Codelist
 [cols="1a"]
 |===
 |*CI_DateTypeCode* 
@@ -351,6 +363,7 @@ Example Street number and name, suite number, etc
 |=== 
 
 [[CI_Individual-section]]
+.CI_Individual Class
 [cols="1a"]
 |===
 |*CI_Individual* 
@@ -375,6 +388,7 @@ Example Street number and name, suite number, etc
 |=== 
 
 [[CI_OnLineFunctionCode-section]]
+.CI_OnLineFunctionCode Codelist
 [cols="1a"]
 |===
 |*CI_OnLineFunctionCode* 
@@ -412,6 +426,7 @@ Example Street number and name, suite number, etc
 |=== 
 
 [[CI_OnlineResource-section]]
+.CI_OnlineResource Class
 [cols="1a"]
 |===
 |*CI_OnlineResource* 
@@ -446,6 +461,7 @@ POST/XML:
 |=== 
 
 [[CI_Organisation-section]]
+.CI_Organisation Class
 [cols="1a"]
 |===
 |*CI_Organisation* 
@@ -470,6 +486,7 @@ POST/XML:
 |=== 
 
 [[CI_Party-section]]
+.CI_Party Class
 [cols="1a"]
 |===
 |*CI_Party* 
@@ -494,6 +511,7 @@ POST/XML:
 |=== 
 
 [[CI_PresentationFormCode-section]]
+.CI_PresentationFormCode Codelist
 [cols="1a"]
 |===
 |*CI_PresentationFormCode* 
@@ -551,6 +569,7 @@ POST/XML:
 |=== 
 
 [[CI_Responsibility-section]]
+.CI_Responsibility Class
 [cols="1a"]
 |===
 |*CI_Responsibility* 
@@ -575,6 +594,7 @@ POST/XML:
 |=== 
 
 [[CI_RoleCode-section]]
+.CI_RoleCode Codelist
 [cols="1a"]
 |===
 |*CI_RoleCode* 
@@ -630,6 +650,7 @@ POST/XML:
 |=== 
 
 [[CI_Series-section]]
+.CI_Series Class
 [cols="1a"]
 |===
 |*CI_Series* 
@@ -651,6 +672,7 @@ POST/XML:
 |=== 
 
 [[CI_Telephone-section]]
+.CI_Telephone Class
 [cols="1a"]
 |===
 |*CI_Telephone* 
@@ -670,6 +692,7 @@ POST/XML:
 |=== 
 
 [[CI_TelephoneTypeCode-section]]
+.CI_TelephoneTypeCode Codelist
 [cols="1a"]
 |===
 |*CI_TelephoneTypeCode* 
@@ -694,6 +717,7 @@ POST/XML:
 The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 
 [[MD_ClassificationCode-section]]
+.MD_Classification Class
 [cols="1a"]
 |===
 |*MD_ClassificationCode* 
@@ -727,6 +751,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 |=== 
 
 [[MD_Constraints-section]]
+.MD_Constraints Class
 [cols="1a"]
 |===
 |*MD_Constraints* 
@@ -760,6 +785,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 |=== 
 
 [[MD_LegalConstraints-section]]
+.MD_LegalConstraints Class
 [cols="1a"]
 |===
 |*MD_LegalConstraints* 
@@ -784,6 +810,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 |=== 
 
 [[MD_Releasability-section]]
+.MD_Releasability Class
 [cols="1a"]
 |===
 |*MD_Releasability* 
@@ -806,6 +833,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 |=== 
 
 [[MD_RestrictionCode-section]]
+.MD_RestrictionCode Codelist
 [cols="1a"]
 |===
 |*MD_RestrictionCode* 
@@ -855,6 +883,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 |=== 
 
 [[MD_SecurityConstraints-section]]
+.MD_SecurityConstraints Class
 [cols="1a"]
 |===
 |*MD_SecurityConstraints* 
@@ -882,6 +911,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 
 [[DS_AssociationTypeCode-section]]
+.DS_AssociationTypeCode Codelist
 [cols="1a"]
 |===
 |*DS_AssociationTypeCode* 
@@ -915,6 +945,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 |=== 
 
 [[DS_InitiativeTypeCode-section]]
+.DS_InitiativeTypeCode Codelist
 [cols="1a"]
 |===
 |*DS_InitiativeTypeCode* 
@@ -960,6 +991,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 |=== 
 
 [[MD_AssociatedResource-section]]
+.MD_AssociatedResource Class
 [cols="1a"]
 |===
 |*MD_AssociatedResource* 
@@ -990,6 +1022,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 |=== 
 
 [[MD_DataIdentification-section]]
+.MD_DataIdentification Class
 [cols="1a"]
 |===
 |*MD_DataIdentification* 
@@ -1017,6 +1050,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
 |=== 
 
 [[MD_Identification-section]]
+.MD_Identification Class
 [cols="1a"]
 |===
 |*MD_Identification* 
@@ -1074,6 +1108,7 @@ NOTE: this element should be repeated when describing upper and lower range
 |=== 
 
 [[MD_KeywordClass-section]]
+.MD_KeywordClass Class
 [cols="1a"]
 |===
 |*MD_KeywordClass* 
@@ -1100,6 +1135,7 @@ NOTE: this element should be repeated when describing upper and lower range
 |=== 
 
 [[MD_Keywords-section]]
+.MD_Keywords Class
 [cols="1a"]
 |===
 |*MD_Keywords* 
@@ -1128,6 +1164,7 @@ NOTE: this element should be repeated when describing upper and lower range
 |=== 
 
 [[MD_KeywordTypeCode-section]]
+.MD_KeywordTypeCode Codelist
 [cols="1a"]
 |===
 |*MD_KeywordTypeCode* 
@@ -1174,6 +1211,7 @@ NOTE: this element should be repeated when describing upper and lower range
 |=== 
 
 [[MD_ProgressCode-section]]
+.MD_ProgressCode Codelist
 [cols="1a"]
 |===
 |*MD_ProgressCode* 
@@ -1225,6 +1263,7 @@ NOTE: this element should be repeated when describing upper and lower range
 |=== 
 
 [[MD_RepresentativeFraction-section]]
+.MD_REpresentativeFraction Class
 [cols="1a"]
 |===
 |*MD_RepresentativeFraction* 
@@ -1242,6 +1281,7 @@ NOTE: this element should be repeated when describing upper and lower range
 |=== 
 
 [[MD_Resolution-section]]
+.MD_Resolution Class
 [cols="1a"]
 |===
 |*MD_Resolution* 
@@ -1267,6 +1307,7 @@ NOTE: this element should be repeated when describing upper and lower range
 |=== 
 
 [[MD_SpatialRepresentationTypeCode-section]]
+.MD_SpatialRepresentationTypeCode Codelist
 [cols="1a"]
 |===
 |*MD_SpatialRepresentationTypeCode* 
@@ -1294,6 +1335,7 @@ NOTE: this element should be repeated when describing upper and lower range
 |=== 
 
 [[MD_Usage-section]]
+.MD_Usage Class
 [cols="1a"]
 |===
 |*MD_Usage* 
@@ -1324,6 +1366,7 @@ NOTE: this element should be repeated when describing upper and lower range
 |=== 
 
 [[MD_TopicCategoryCode-section]]
+.MD_TopicCategoryCode Codelist
 [cols="1a"]
 |===
 |*MD_TopicCategoryCode* 
@@ -1385,6 +1428,7 @@ Examples: site of the disaster, evacuation zone, disaster-prevention facility, d
 The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 
 [[GenericName-section]]
+.Generic Name Class
 [cols="1a"]
 |===
 |*GenericName* 
@@ -1401,6 +1445,7 @@ The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 |=== 
 
 [[LocalName-section]]
+.Local Name Class
 [cols="1a"]
 |===
 |*LocalName* 
@@ -1413,6 +1458,7 @@ The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 |=== 
 
 [[MemberName-section]]
+.Member Name Class
 [cols="1a"]
 |===
 |*MemberName* 
@@ -1433,6 +1479,7 @@ The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 |=== 
 
 [[NameSpace-section]]
+.Namespace Class
 [cols="1a"]
 |===
 |*NameSpace* 
@@ -1458,6 +1505,7 @@ Not all methods for NameSpaces need to be made publicly accessible.
 |=== 
 
 [[ScopedName-section]]
+.Scoped Name Class
 [cols="1a"]
 |===
 |*ScopedName* 
@@ -1470,6 +1518,7 @@ Not all methods for NameSpaces need to be made publicly accessible.
 |=== 
 
 [[TypeName-section]]
+.Type Name Class
 [cols="1a"]
 |===
 |*TypeName* 
@@ -1493,6 +1542,7 @@ The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 ==== Date and Time
 
 [[Date-section]]
+.Date Class
 [cols="1a"]
 |===
 |*Date* 
@@ -1516,6 +1566,7 @@ The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 |=== 
 
 [[DateTime-section]]
+.DateTime Class
 [cols="1a"]
 |===
 |*DateTime* 
@@ -1528,6 +1579,7 @@ The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 |=== 
 
 [[Time-section]]
+.Time Class
 [cols="1a"]
 |===
 |*Time* 
@@ -1553,6 +1605,7 @@ The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 ==== Numerics 
 
 [[Decimal-section]]
+.Decimal Class
 [cols="1a"]
 |===
 |*Decimal* 
@@ -1567,6 +1620,7 @@ Can be thought of as an integer part followed by a fractional part given in mult
 |=== 
 
 [[Integer-section]]
+.Integer Class
 [cols="1a"]
 |===
 |*Integer* 
@@ -1579,6 +1633,7 @@ Can be thought of as an integer part followed by a fractional part given in mult
 |=== 
 
 [[Number-section]]
+.Number Class
 [cols="1a"]
 |===
 |*Number* 
@@ -1590,6 +1645,7 @@ Can be thought of as an integer part followed by a fractional part given in mult
 |=== 
 
 [[Real-section]]
+.Real Class
 [cols="1a"]
 |===
 |*Real* 
@@ -1604,6 +1660,7 @@ Can be thought of as an integer part followed by a fractional part given in mult
 |=== 
 
 [[UnlimitedInteger-section]]
+.Unlimited Integer Class
 [cols="1a"]
 |===
 |*UnlimitedInteger* 
@@ -1626,6 +1683,7 @@ Can be thought of as an integer part followed by a fractional part given in mult
 |=== 
 
 [[Vector-section]]
+.Vector Class
 [cols="1a"]
 |===
 |*Vector* 
@@ -1649,6 +1707,7 @@ Example (123, 514, 150)
 ==== Text
 
 [[CharacterSetCode-section]]
+.Character Set Code Codelist
 [cols="1a"]
 |===
 |*CharacterSetCode* 
@@ -1670,6 +1729,7 @@ Example (123, 514, 150)
 |=== 
 
 [[Character-section]]
+.Character Class
 [cols="1a"]
 |===
 |*Character* 
@@ -1681,6 +1741,7 @@ Example (123, 514, 150)
 |=== 
 
 [[CharacterString-section]]
+.Character String Class
 [cols="1a"]
 |===
 |*CharacterString* 
@@ -1711,6 +1772,7 @@ Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.
 |=== 
 
 [[URI-section]]
+.URI Class
 [cols="1a"]
 |===
 |*URI* 
@@ -1725,6 +1787,7 @@ Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.
 ==== Truth
 
 [[ContinuousTruth-section]]
+.Continuous Truth Class
 [cols="1a"]
 |===
 |*ContinuousTruth* 
@@ -1737,6 +1800,7 @@ Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.
 |=== 
 
 [[DiscreteTruth-section]]
+.Discrete Truth Class
 [cols="1a"]
 |===
 |*DiscreteTruth* 
@@ -1755,6 +1819,7 @@ Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.
 |=== 
 
 [[Probability-section]]
+.Probability Class
 [cols="1a"]
 |===
 |*Probability* 
@@ -1773,6 +1838,7 @@ Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.
 |=== 
 
 [[Truth-section]]
+.Truth Class
 [cols="1a"]
 |===
 |*Truth* 
@@ -1792,6 +1858,7 @@ Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.
 |=== 
 
 [[Boolean-section]]
+.Boolean Enumeration
 [cols="1a"]
 |===
 |*Boolean* 
@@ -1816,6 +1883,7 @@ Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.
 |=== 
 
 [[Logical-section]]
+.Logical Enumeration
 [cols="1a"]
 |===
 |*Logical* 

@@ -1,3 +1,9 @@
 [bibliography]
 [[Bibliography]]
 == Bibliography
+
+* [[ISO11404,ISO 11404:2007]] ISO: ISO 11404:2007, Information technology - General-Purpose Datatypes (GPD)
+* [[ISO19156,ISO 19156:2011]] ISO: ISO 19156:2011, Geographic information Observations and measurements
+* [[ISO19117,ISO 19117:2012]] ISO: ISO 19117:2012, Geographic information - Portrayal
+* [[ISO19119,ISO 19119:2016]] ISO: ISO 19119:2016, Geographic information - Services
+
