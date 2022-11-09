@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (OGC Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-11-02</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-11-09</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
 <name>Organization One</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Organization Two</name>
@@ -147,7 +147,7 @@
   </feedback-statement>
 </boilerplate>
 <preface><abstract id="_abstract" displayorder="1"><title depth="1">I.<tab/>Abstract</title><p id="_ea8b918b-259f-ad32-41cd-bf6720709423">&#x3c;Insert Abstract Text here&#x3e;</p>
-</abstract><clause id="_f7a2679c-1b9a-4bd4-aa27-f964c8f69064" type="keywords" displayorder="2">
+</abstract><clause id="_f82fdc54-908b-4686-9793-308207c4bcf4" type="keywords" displayorder="2">
 <title depth="1">II.<tab/>Keywords</title>
 <p>The following are keywords to be used by search engines and
     document catalogues.</p>
@@ -160,7 +160,7 @@
 <p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_b8ac37f9-45d8-4852-bce9-0b21a8c45213" type="submitting_orgs" displayorder="5">
+</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_280fac2a-66ea-44d1-aa21-7d4fe8d4decf" type="submitting_orgs" displayorder="5">
 <title depth="1">V.<tab/>Submitting Organizations</title>
 <p>The following organizations submitted this Document to the
    Open Geospatial Consortium (OGC):</p>
@@ -1052,7 +1052,7 @@ with the is type of relation. An ISO 19107 geometry is also a <em>position</em> 
 
 
 
-<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 8</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-featurewithlifespan</p></td></tr><tr><td>A</td><td><p id="_33a77f29-b405-6129-a46b-a3f23c6c2237">An encoding of the AbstractFeatureWithLifespan class SHALL be a compliant extension of the <xref target="req_core_abstract_feature">AbstractFeature</xref> class.</p>
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 8</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-featurewithlifespan</p></td></tr><tr><td>A</td><td><p id="_9a59788a-f607-8707-47d0-e8dfd07bd697">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_abstract_feature">/req/core/req-abstractfeature</xref>.</p>
 </td></tr><tr><td>B</td><td><p id="_b2394ba4-003a-4f86-fa4c-f32cb4b5377d">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_feature_with_lifespan_creationdate">/req/core/req-featurewithlifespan-creationdate</xref>.</p>
 </td></tr><tr><td>C</td><td><p id="_4b72d539-5e7d-9608-a7c0-44feb5e723e9">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_feature_with_lifespan_terminationdate">/req/core/req-featurewithlifespan-terminationdate</xref>.</p>
 </td></tr><tr><td>D</td><td><p id="_5ef1ce56-cc9d-fb4f-bc3f-c32d72ef8356">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_feature_with_lifespan_validfrom">/req/core/req-featurewithlifespan-validfrom</xref>.</p>
@@ -1158,7 +1158,7 @@ with the is type of relation. An ISO 19107 geometry is also a <em>position</em> 
 </td></tr><tr><td>C</td><td><p id="_db9d2bba-4ef1-28db-34b1-d1653fb1947a">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_featureOfInterest">/req/core/req-poi-featureOfInterest</xref>.</p>
 </td></tr><tr><td>D</td><td><p id="_c635cafc-c3d8-023b-517a-f0936102b7de">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_metadata">/req/core/req-poi-metadata</xref>.</p>
 </td></tr><tr><td>E</td><td><p id="_7e52bb99-0672-7730-2332-0511024bf96f">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_property">/req/core/req-poi-property</xref>.</p>
-</td></tr><tr><td>F</td><td><p id="_b5ae6cb4-9637-4d00-651b-eeb937d0465f">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_keywords">/req/core/req-poi-Keywords</xref>.</p>
+</td></tr><tr><td>F</td><td><p id="_415a175e-7aa9-7daa-1c9a-8d196114d962">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_keywords">/req/core/req-poi-keywords</xref>.</p>
 </td></tr><tr><td>G</td><td><p id="_2cf1cb98-ea6b-85d6-77cf-e3ef860a3428">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_rights">/req/core/req-poi-rights</xref>.</p>
 </td></tr><tr><td>H</td><td><p id="_9cb1b03c-f9d4-22ed-eafe-8ede7c951bf7">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_symbology">/req/core/req-poi-symbology</xref>.</p>
 </td></tr></tbody></table>
@@ -1188,7 +1188,7 @@ with the is type of relation. An ISO 19107 geometry is also a <em>position</em> 
 
 
 <thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 17</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi-property</p></td></tr><tr><td>A</td><td><p id="_e2789557-26ce-6a0f-f494-0384eecc55d1">An encoding of the POI class SHALL include zero or more <tt>property</tt> attributes.</p>
-</td></tr><tr><td>B</td><td><p id="_87438954-de1c-d775-6f75-4d9da6bc0885">Encodings of the <tt>contactInfo</tt> attribute SHALL be a valid implementation of the POIProperty class from this standard.</p>
+</td></tr><tr><td>B</td><td><p id="_e2e9a238-6539-44a6-ff3e-bb25d31e725d">Encodings of the <tt>property</tt> attribute SHALL be a valid implementation of the POIProperty class from this standard.</p>
 </td></tr></tbody></table>
 
 <table id="req_core_POI_keywords" class="requirement" type="recommend"> 
@@ -1264,8 +1264,14 @@ with the is type of relation. An ISO 19107 geometry is also a <em>position</em> 
 <table id="req_core_POI-property_class" class="requirement" type="recommend"> 
 
 
-<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 22</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi_property-class</p></td></tr><tr><td>A</td><td><p id="_140ee009-4982-92e5-cc0a-0b2d84e95fa8">An encoding of the POI-Property class SHALL be a compliant extension of the AttributeType class defined in <xref target="iso19109">ISO 19109</xref>.</p>
-</td></tr><tr><td>B</td><td><p id="_f159ce76-09b6-9ac5-54c3-30a31461ce68">An encoding of the POI class SHALL include zero or more <tt>value</tt> attributes of any type.</p>
+
+
+
+<thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 22</p></th></tr></thead><tbody><tr><td colspan="2"><p class="RecommendationLabel">/req/core/req-poi_property-class</p></td></tr><tr><td>A</td><td><p id="_82ba1257-a9d3-0cfe-363b-a5218511482c">An encoding of the POIProperty class SHALL include zero or more <tt>value</tt> attributes.</p>
+</td></tr><tr><td>B</td><td><p id="_c7610bcc-de5a-41be-040f-d1314eaeb910">An encoding of the POIProperty class SHALL convey the semantics (meaning) of each <tt>value</tt> attribute.</p>
+</td></tr><tr><td>C</td><td><p id="_ef0f5aff-6f72-d49a-bb5c-fa3a68c51fec">An encoding of the POIProperty class SHALL represent the cardinality of each <tt>value</tt> attribute.</p>
+</td></tr><tr><td>D</td><td><p id="_3a6d0d7e-61b3-6bfd-5868-fb40dde94ed2">An encoding of the POIProperty class SHALL represent the data type of each <tt>value</tt> attribute.</p>
+</td></tr><tr><td>E</td><td><p id="_ed6ed2d5-2627-34a2-1fd7-a1bc58a68cc9">A data type is typically a member of a set (domain) of data types. An encoding of the POIProperty class SHALL identify the domain of each data type used in that encoding.</p>
 </td></tr></tbody></table>
 </clause>
 </clause>

@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (OGC Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-11-02</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-11-09</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
 <name>Organization One</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Organization Two</name>
@@ -937,7 +937,7 @@ with the is type of relation. An ISO 19107 geometry is also a <em>position</em> 
 
 <requirement id="req_core_feature_with_lifespan"> <label>/req/core/req-featurewithlifespan</label>
 
-<component exclude="false" class="part"><p id="_33a77f29-b405-6129-a46b-a3f23c6c2237">An encoding of the AbstractFeatureWithLifespan class SHALL be a compliant extension of the <xref target="req_core_abstract_feature">AbstractFeature</xref> class.</p>
+<component exclude="false" class="part"><p id="_9a59788a-f607-8707-47d0-e8dfd07bd697">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_abstract_feature">/req/core/req-abstractfeature</xref>.</p>
 </component>
 <component exclude="false" class="part"><p id="_b2394ba4-003a-4f86-fa4c-f32cb4b5377d">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_feature_with_lifespan_creationdate">/req/core/req-featurewithlifespan-creationdate</xref>.</p>
 </component>
@@ -1045,7 +1045,7 @@ with the is type of relation. An ISO 19107 geometry is also a <em>position</em> 
 </component>
 <component exclude="false" class="part"><p id="_7e52bb99-0672-7730-2332-0511024bf96f">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_property">/req/core/req-poi-property</xref>.</p>
 </component>
-<component exclude="false" class="part"><p id="_b5ae6cb4-9637-4d00-651b-eeb937d0465f">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_keywords">/req/core/req-poi-Keywords</xref>.</p>
+<component exclude="false" class="part"><p id="_415a175e-7aa9-7daa-1c9a-8d196114d962">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_keywords">/req/core/req-poi-keywords</xref>.</p>
 </component>
 <component exclude="false" class="part"><p id="_2cf1cb98-ea6b-85d6-77cf-e3ef860a3428">An encoding of the POI class SHALL comply with requirement <xref target="req_core_POI_rights">/req/core/req-poi-rights</xref>.</p>
 </component>
@@ -1077,7 +1077,7 @@ with the is type of relation. An ISO 19107 geometry is also a <em>position</em> 
 
 <component exclude="false" class="part"><p id="_e2789557-26ce-6a0f-f494-0384eecc55d1">An encoding of the POI class SHALL include zero or more <tt>property</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_87438954-de1c-d775-6f75-4d9da6bc0885">Encodings of the <tt>contactInfo</tt> attribute SHALL be a valid implementation of the POIProperty class from this standard.</p>
+<component exclude="false" class="part"><p id="_e2e9a238-6539-44a6-ff3e-bb25d31e725d">Encodings of the <tt>property</tt> attribute SHALL be a valid implementation of the POIProperty class from this standard.</p>
 </component></requirement>
 
 <requirement id="req_core_POI_keywords"> <label>/req/core/req-poi-keywords</label>
@@ -1152,9 +1152,15 @@ with the is type of relation. An ISO 19107 geometry is also a <em>position</em> 
 
 <requirement id="req_core_POI-property_class"> <label>/req/core/req-poi_property-class</label>
 
-<component exclude="false" class="part"><p id="_140ee009-4982-92e5-cc0a-0b2d84e95fa8">An encoding of the POI-Property class SHALL be a compliant extension of the AttributeType class defined in <xref target="iso19109">ISO 19109</xref>.</p>
+<component exclude="false" class="part"><p id="_82ba1257-a9d3-0cfe-363b-a5218511482c">An encoding of the POIProperty class SHALL include zero or more <tt>value</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_f159ce76-09b6-9ac5-54c3-30a31461ce68">An encoding of the POI class SHALL include zero or more <tt>value</tt> attributes of any type.</p>
+<component exclude="false" class="part"><p id="_c7610bcc-de5a-41be-040f-d1314eaeb910">An encoding of the POIProperty class SHALL convey the semantics (meaning) of each <tt>value</tt> attribute.</p>
+</component>
+<component exclude="false" class="part"><p id="_ef0f5aff-6f72-d49a-bb5c-fa3a68c51fec">An encoding of the POIProperty class SHALL represent the cardinality of each <tt>value</tt> attribute.</p>
+</component>
+<component exclude="false" class="part"><p id="_3a6d0d7e-61b3-6bfd-5868-fb40dde94ed2">An encoding of the POIProperty class SHALL represent the data type of each <tt>value</tt> attribute.</p>
+</component>
+<component exclude="false" class="part"><p id="_ed6ed2d5-2627-34a2-1fd7-a1bc58a68cc9">A data type is typically a member of a set (domain) of data types. An encoding of the POIProperty class SHALL identify the domain of each data type used in that encoding.</p>
 </component></requirement>
 </clause>
 </clause>

@@ -5,7 +5,7 @@
 label:: /req/core/req-featurewithlifespan
 [.component,class=part]
 --
-An encoding of the AbstractFeatureWithLifespan class SHALL be a compliant extension of the <<req_core_abstract_feature,AbstractFeature>> class.
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_abstract_feature,/req/core/req-abstractfeature>>.
 --
 
 [.component,class=part]

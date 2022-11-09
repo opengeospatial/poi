@@ -1,19 +1,4 @@
-////
-[cols="1,4",width="90%"]
-|===
-2+|*Requirements Class* {set:cellbgcolor:#CACCCE}
-2+|http://www.opengis.net/spec/GeoPOI/1.0/req/req-class-core {set:cellbgcolor:#FFFFFF}
-|Target type |Token
-|Dependency |urn:iso:ts:iso:19103
-|Dependency |urn:iso:ts:iso:19107
-|Dependency |urn:iso:ts:iso:19108
-|Dependency |urn:iso:ts:iso:19109
-|*Requirement 1* {set:cellbgcolor:#CACCCE} 
-{set:cellbgcolor:#FFFFFF}
-|===
-////
-
-
+[[req_core]]
 [requirement,type="class",id="http://www.opengis.net/spec/GeoPOI/1.0/req/req-class-core",obligation="requirement"]
 ====
 

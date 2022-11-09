@@ -169,11 +169,11 @@ https://www.metanorma.com/author/iso/topics/markup/#bibliographies
 (XML Line 000632): Crossreference target iso19109 is undefined
 	<xref target="iso19109">ISO 19109</xref>
 (XML Line 000660): normalised identifier in <requirement id="http___www.opengis.net_spec_GeoPOI_1.0_req_req-class-core" obligation="requirement" type="class"/> from http://www.opengis.net/spec/GeoPOI/1.0/req/req-class-core
-	<requirement id="http___www.opengis.net_spec_GeoPOI_1.0_req_req-class-core" obligation="requirement" type="class"> <description><p id="_2e0f2618-3a65-4ab1-83e7-5da4989d06b7">Requirements Class</p><ul id="_1269cfc7-2efe-48a9-b476-86f2d69b24a2"><li><p id="_b59fcac4-75e8-4ea2-8941-0f3084ca78fa">urn:iso:ts:iso:19103</p>
+	<requirement id="http___www.opengis.net_spec_GeoPOI_1.0_req_req-class-core" obligation="requirement" type="class"> <description><p id="_85c3730f-8484-4006-ac8b-0c63367243e9">Requirements Class</p><ul id="_07a005b3-46ca-4cca-82a5-e4d9e550a4bd"><li><p id="_617b43e7-534c-401e-85f1-84c3ca9a201f">urn:iso:ts:iso:19103</p>
 	</li>
-	<li><p id="_8c43d40d-f1f6-4009-b67d-9896035d5707">urn:iso:ts:iso:19107</p>
+	<li><p id="_d70ef811-9f59-40af-970b-1da0f53340b1">urn:iso:ts:iso:19107</p>
 	</li>
-	<li><p id="_c15ee796-27f5-4593-a4a2-bfb01a440ed6">urn:iso:ts:iso:19108</p>
+	<li><p id="_1212e2d6-78e7-41bf-ba87-5409fc20e934">urn:iso:ts:iso:19108</p>
 (XML Line 000678): Crossreference target geometry_model is undefined
 	<xref target="geometry_model">Figure 2</xref>
 (XML Line 000699): Crossreference target iso19107 is undefined
@@ -190,21 +190,19 @@ https://www.metanorma.com/author/iso/topics/markup/#bibliographies
 	<xref target="req_core_abstractfeature_name">/req/core/req-abstractfeature-name</xref>
 (XML Line 001069): Crossreference target iso19109 is undefined
 	<xref target="iso19109">ISO 19109</xref>
-(XML Line 001105): Crossreference target iso19109 is undefined
-	<xref target="iso19109">ISO 19109</xref>
-(XML Line 001150): Crossreference target ISO19109 is undefined
+(XML Line 001156): Crossreference target ISO19109 is undefined
 	<xref target="ISO19109">(ISO 19109:2015)</xref>
-(XML Line 001274): Crossreference target ISO19107 is undefined
+(XML Line 001280): Crossreference target ISO19107 is undefined
 	<xref target="ISO19107">(ISO 19107:2003)</xref>
-(XML Line 001415): Crossreference target ISO19115 is undefined
+(XML Line 001421): Crossreference target ISO19115 is undefined
 	<xref target="ISO19115">(ISO 19115-1 Edition 1)</xref>
-(XML Line 002157): Crossreference target ISO19115 is undefined
+(XML Line 002163): Crossreference target ISO19115 is undefined
 	<xref target="ISO19115">(ISO 19115-1 Edition 1)</xref>
-(XML Line 002433): Crossreference target ISO19115 is undefined
+(XML Line 002439): Crossreference target ISO19115 is undefined
 	<xref target="ISO19115">(ISO 19115-1 Edition 1)</xref>
-(XML Line 003177): Crossreference target ISO19103 is undefined
+(XML Line 003183): Crossreference target ISO19103 is undefined
 	<xref target="ISO19103">(ISO 19103:2015)</xref>
-(XML Line 003327): Crossreference target ISO19103 is undefined
+(XML Line 003333): Crossreference target ISO19103 is undefined
 	<xref target="ISO19103">(ISO 19103:2015)</xref>
 
 
@@ -281,877 +279,877 @@ https://www.metanorma.com/author/iso/topics/markup/#bibliographies
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> value «property»</td>
-(XML Line 001117): Hanging paragraph in clause
+(XML Line 001123): Hanging paragraph in clause
 	<annex id="_conformance_class_abstract_test_suite_normative" obligation="informative">
 	<title>Conformance Class Abstract Test Suite (Normative)</title>
 	<note id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"><p id="_2f41c6a6-7963-8015-59ca-d74fafa8ae41">Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
 	</note>
 	
-(XML Line 001142): Hanging paragraph in clause
+(XML Line 001148): Hanging paragraph in clause
 	<annex id="iso_data_dictionary_section" obligation="informative">
 	<title>ISO Data Dictionary</title>
 	<p id="_5ddef049-5c0a-33d2-6df8-9ca0411e123a">ISO Technical Committee 211 maintains a harmonized UML model which covers many of their standards. All of the TC211 Standards which are relevant to the POI Standard are included. Therefore the full UML model for POI consists of the classes defined in the POI UML model as well as those which referenced from the TC211 Hamonized UML model.</p>
 	
 	<p id="_9f304088-aeda-9f32-2715-359d83f36d12">The Data Dictionary tables in this section were software generated from the TC211 Hamonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.</p>
-(XML Line 001156): Table should have title
+(XML Line 001162): Table should have title
 	<table id="_c35e7982-a137-ce39-4e96-e5d45b79aba7"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">The class AnyFeature is
 	an instance of the «metaclass» FeatureType (ISO 19109). It represents the set
 	of all classes which are feature types.<br/>
 	+
-(XML Line 001167): Table should have title
+(XML Line 001173): Table should have title
 	<table id="_7277ea9c-1624-27ff-df93-2d37754a1561"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="FeatureType-section">FeatureType</xref> [1..1]</td>
-(XML Line 001182): Table should have title
+(XML Line 001188): Table should have title
 	<table id="_ed57e4e2-9064-716c-7f62-9f663ef39183"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">feature attribute<br/>
 	characteristic of a feature<br/>
 	NOTE: A feature attribute has a name, a data type, and a value domain associated to it.  A feature attribute for a feature instance also has an attribute value taken from the value domain. <br/>
 	EXAMPLE: A feature attribute named ‘color’ may have an attribute value ‘green’ which belongs to the data type ‘text’.  A feature attribute named ‘length’ may have an attribute value ‘82.4’ which belongs to the data type ‘real’.+</td>
-(XML Line 001198): Table should have title
+(XML Line 001204): Table should have title
 	<table id="_2d3e63ab-465c-5b2f-2294-db8a5c50c8c8"><tbody><tr><td valign="middle" align="left"> <strong>Role name</strong></td>
 	<td valign="middle" align="left"><strong>Target class and multiplicity</strong></td>
 	<td valign="middle" align="left"><strong>Definition</strong></td>
 	</tr><tr><td valign="middle" align="left"> featureAttributeMetadata</td>
 	<td valign="middle" align="left">MD_Metadata   [0..*]</td>
-(XML Line 001212): Table should have title
+(XML Line 001218): Table should have title
 	<table id="_892c8511-1f7d-6ee4-414a-9a6cd481a8ee"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"><strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> cardinality</td>
-(XML Line 001232): Table should have title
+(XML Line 001238): Table should have title
 	<table id="_b9a07a6d-c453-259d-dfda-029ff69eb42f"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">feature: abstraction of real world phenomena<br/>
 	NOTE: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant.<br/>
 	This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-(XML Line 001245): Table should have title
+(XML Line 001251): Table should have title
 	<table id="_54ce0064-8d7e-ec79-5b6d-5f0cf3e57627"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left">NS_AvoidList  [0..*]</td>
-(XML Line 001259): Table should have title
+(XML Line 001265): Table should have title
 	<table id="_000f0c10-a95a-9d69-866b-0ebadc5079a5"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> isAbstract</td>
-(XML Line 001280): Table should have title
+(XML Line 001286): Table should have title
 	<table id="_8495dc6c-d7f8-5a65-b9cc-44ad52c335df"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">GM_Object is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects. GM_Object instances are sets of direct positions in a particular coordinate reference system. A GM_Object can be regarded as an infinite set of points that satisfies the set operation interfaces for a set of direct positions, TransfiniteSet&lt;DirectPosition&gt;. Since an infinite collection class cannot be implemented directly, a Boolean test for inclusion shall be provided by the GM_Object interface. This international standard concentrates on vector geometry classes, but future work may use GM_Object as a root class without modification.
 	NOTE As a type, GM_Object does not have a well-defined default state or value representation as a data type. Instantiated subclasses of GM_Object will.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left">none</td>
-(XML Line 001296): Table should have title
+(XML Line 001302): Table should have title
 	<table id="_de51bc99-0a68-f635-210c-5daa3b382a71"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left">Geometry [1..1]</td>
-(XML Line 001317): Table should have title
+(XML Line 001323): Table should have title
 	<table id="_8d9c23be-fc4b-b017-7b57-d91455c8289b"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">GM_Point is the basic data type for a geometric object consisting of one and only one point.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left">GM_Primitive</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 001326): Table should have title
+(XML Line 001332): Table should have title
 	<table id="_fa8608ef-f210-a81a-f4e0-eb88c1bcfaa7"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left">Point  [1..1]</td>
-(XML Line 001336): Table should have title
+(XML Line 001342): Table should have title
 	<table id="_0b8dee5c-65d6-372c-3d1e-6d15485ec568"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> position</td>
-(XML Line 001355): Table should have title
+(XML Line 001361): Table should have title
 	<table id="_957c2586-c6bd-896e-71c9-e2d3680a69ca"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">A GM_LineString (Figure 16) consists of sequence of line segments, each having a parameterization like the one for GM_LineSegment (See 6.4.11). The class essentially combines a Sequence&lt;GM_LineSegments&gt; into a single object, with the obvious savings of storage space.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left">GM_Primitive</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 001364): Table should have title
+(XML Line 001370): Table should have title
 	<table id="_a12bbfa5-da76-cdc7-8270-80d6e80339d6"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> controlPoint</td>
-(XML Line 001380): Table should have title
+(XML Line 001386): Table should have title
 	<table id="_1acfc599-24c1-262c-e191-e8289bceb975"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">A GM_Polygon (Figure 21) is a surface patch that is defined by a set of boundary curves and an underlying surface to which these curves adhere. The default is that the curves are coplanar and the polygon uses planar interpolation in its interior.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left">GM_Primitive</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 001389): Table should have title
+(XML Line 001395): Table should have title
 	<table id="_f3079224-3b78-153b-a0c0-fc268af17683"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> surface</td>
-(XML Line 001398): Table should have title
+(XML Line 001404): Table should have title
 	<table id="_b209b6ac-0a59-5345-e979-4368ca33c943"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> boundary</td>
-(XML Line 001421): Table should have title
+(XML Line 001427): Table should have title
 	<table id="_f8ddf367-1d9e-fffb-a0b4-2a33763cea90"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">location of the responsible individual or organisation</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">None</td>
 	</tr></tbody>
-(XML Line 001428): Table should have title
+(XML Line 001434): Table should have title
 	<table id="_e32699d3-04f7-7751-7f55-0314969359a9"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> administrativeArea</td>
-(XML Line 001461): Table should have title
+(XML Line 001467): Table should have title
 	<table id="_1fe14a94-2735-4cc1-b8e0-bcb4d07ad82b"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">standardized resource reference</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">None</td>
 	</tr></tbody>
-(XML Line 001468): Table should have title
+(XML Line 001474): Table should have title
 	<table id="_305a4589-7320-e72f-49da-5361dd298bc6"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> alternateTitle</td>
-(XML Line 001524): Table should have title
+(XML Line 001530): Table should have title
 	<table id="_230b6861-82f0-1fce-adf8-ee8013314f19"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">information required to enable contact with the responsible person and/or organisation</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">None</td>
 	</tr></tbody>
-(XML Line 001531): Table should have title
+(XML Line 001537): Table should have title
 	<table id="_272b875f-0ced-df48-c612-c3d1f8ffc15f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> address</td>
-(XML Line 001563): Table should have title
+(XML Line 001569): Table should have title
 	<table id="_8f417cb9-eaf2-6754-bb3d-6193777c4990"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">reference date and event used to describe it</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«DataType»</td>
 	</tr></tbody>
-(XML Line 001570): Table should have title
+(XML Line 001576): Table should have title
 	<table id="_8a189375-748b-9c5e-196a-3493fbeb4df8"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> date</td>
-(XML Line 001590): Table should have title
+(XML Line 001596): Table should have title
 	<table id="_717923eb-d9e5-0716-92d0-5182309bc5ec"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">identification of when a given event occurred</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 001597): Table should have title
+(XML Line 001603): Table should have title
 	<table id="_7e9f3b27-45c5-5cc1-4081-031bb917cdb0"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> adopted</td>
-(XML Line 001659): Table should have title
+(XML Line 001665): Table should have title
 	<table id="_1db8885e-4e0f-3c39-8475-a8bab5600c71"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">information about the party if the party is an individual</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="CI_Party-section">CI_Party</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 001670): Table should have title
+(XML Line 001676): Table should have title
 	<table id="_70597f6f-3379-cc90-6c79-32198ea1fafd"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="CI_Organisation-section">CI_Organisation</xref>   [1..1]</td>
-(XML Line 001678): Table should have title
+(XML Line 001684): Table should have title
 	<table id="_7d2e2522-1cee-91c5-6549-bac84337ea99"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> positionName</td>
-(XML Line 001695): Table should have title
+(XML Line 001701): Table should have title
 	<table id="_1b290ca5-a48c-519b-0278-49cff2635784"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">function performed by the resource</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 001702): Table should have title
+(XML Line 001708): Table should have title
 	<table id="_9bf59ec4-16c1-5643-8e64-df3d7ca86943"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> browseGraphic</td>
-(XML Line 001749): Table should have title
+(XML Line 001755): Table should have title
 	<table id="_4f93d729-95de-a1d7-a3a4-8f7de840b21d"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">information about on-line sources from which the resource, specification, or community profile name and extended metadata elements can be obtained</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«DataType»</td>
 	</tr></tbody>
-(XML Line 001756): Table should have title
+(XML Line 001762): Table should have title
 	<table id="_3fd8c2b7-0058-de1a-60e3-fc9a19e2ae9a"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> applicationProfile</td>
-(XML Line 001796): Table should have title
+(XML Line 001802): Table should have title
 	<table id="_7ec3a338-88c9-bd2e-1a49-1d3ee3d106a1"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">information about the party if the party is an organisation</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="CI_Party-section">CI_Party</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 001807): Table should have title
+(XML Line 001813): Table should have title
 	<table id="_d5953c05-a316-85b2-b681-85ab2370f884"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> individual</td>
-(XML Line 001817): Table should have title
+(XML Line 001823): Table should have title
 	<table id="_647ee03c-4655-7f2d-09b1-cce352f7d1bf"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> logo</td>
-(XML Line 001834): Table should have title
+(XML Line 001840): Table should have title
 	<table id="_ee15792c-7827-b568-774e-6ed378fc6f5e"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">information about the individual and/or organisation of the party</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«abstract»</td>
 	</tr></tbody>
-(XML Line 001841): Table should have title
+(XML Line 001847): Table should have title
 	<table id="_7f675ab3-2b51-9fee-234e-7bf36f368d66"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="CI_Responsibility-section">CI_Responsibility</xref>   []</td>
-(XML Line 001849): Table should have title
+(XML Line 001855): Table should have title
 	<table id="_46e7e720-fc1d-d18f-a1ac-212738265f1b"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> contactInfo</td>
-(XML Line 001869): Table should have title
+(XML Line 001875): Table should have title
 	<table id="_2ea89d75-372d-daab-30af-ebaf9d4d9654"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">mode in which the data is represented</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 001876): Table should have title
+(XML Line 001882): Table should have title
 	<table id="_51640620-6007-b7ba-4393-a0e8f9511346"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> audioDigital</td>
-(XML Line 001953): Table should have title
+(XML Line 001959): Table should have title
 	<table id="_beec56cf-3830-d9e8-28ba-0c6d999c2bb5"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">information about the party and their role</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">None</td>
 	</tr></tbody>
-(XML Line 001960): Table should have title
+(XML Line 001966): Table should have title
 	<table id="_f86f80b1-48dd-78e6-8c48-4a42169760b1"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> party</td>
-(XML Line 001970): Table should have title
+(XML Line 001976): Table should have title
 	<table id="_5f68f454-87b7-b02c-0d03-0ed39ac116c6"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> extent</td>
-(XML Line 001990): Table should have title
+(XML Line 001996): Table should have title
 	<table id="_0ca8f02e-7d2b-8853-f676-a5d287ab0d94"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">function performed by the responsible party</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 001997): Table should have title
+(XML Line 002003): Table should have title
 	<table id="_d4856438-1486-881b-c8ec-4602af325f75"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> author</td>
-(XML Line 002071): Table should have title
+(XML Line 002077): Table should have title
 	<table id="_0cad18d2-d110-7106-f1be-b9340f5018bd"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">information about the series, or aggregate resource, to which a resource belongs</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«DataType»</td>
 	</tr></tbody>
-(XML Line 002078): Table should have title
+(XML Line 002084): Table should have title
 	<table id="_4e5d4685-7d98-f051-40e6-8230fc31d9c8"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> issueIdentification</td>
-(XML Line 002101): Table should have title
+(XML Line 002107): Table should have title
 	<table id="_d6067335-7e63-c87c-774f-1f4a1a482bfe"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">telephone numbers for contacting the responsible individual or organisation</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«DataType»</td>
 	</tr></tbody>
-(XML Line 002108): Table should have title
+(XML Line 002114): Table should have title
 	<table id="_6c6745ff-d7cd-d142-f1cf-4fd127655f10"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> number</td>
-(XML Line 002128): Table should have title
+(XML Line 002134): Table should have title
 	<table id="_35404471-786b-83e3-e1c6-98c569eeb889"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">type of telephone</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 002135): Table should have title
+(XML Line 002141): Table should have title
 	<table id="_0f4045fb-56ab-3d09-e72c-3327e76812bd"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> facsimile</td>
-(XML Line 002163): Table should have title
+(XML Line 002169): Table should have title
 	<table id="_d78c3ccd-202c-a997-8ca5-634390a0c07e"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">name of the handling restrictions on the resource</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 002170): Table should have title
+(XML Line 002176): Table should have title
 	<table id="_60b5dba8-1ced-2d32-4200-ad5200f80d92"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> confidential</td>
-(XML Line 002211): Table should have title
+(XML Line 002217): Table should have title
 	<table id="_c350453c-96bb-0308-c1d5-8257194d04cd"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">restrictions on the access and use of a resource or metadata</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">None</td>
 	</tr></tbody>
-(XML Line 002218): Table should have title
+(XML Line 002224): Table should have title
 	<table id="_11929d8d-c59c-eb6a-4188-861f93d880b6"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="MD_Identification-section">MD_Identification</xref>   []</td>
-(XML Line 002227): Table should have title
+(XML Line 002233): Table should have title
 	<table id="_253ff31e-5614-0fcd-1481-874f9b01f26a"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> constraintApplicationScope</td>
-(XML Line 002259): Table should have title
+(XML Line 002265): Table should have title
 	<table id="_19b7d0d1-8968-13d2-7373-95240c66234c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">restrictions and legal prerequisites for accessing and using the resource or metadata</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="MD_Constraints-section">MD_Constraints</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 002272): Table should have title
+(XML Line 002278): Table should have title
 	<table id="_41d88299-8773-c48e-df6d-5fc14ba56030"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> accessConstraints</td>
-(XML Line 002295): Table should have title
+(XML Line 002301): Table should have title
 	<table id="_d7040e94-72e8-87b8-0004-794d6f52663c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">information about resource release constraints</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">None</td>
 	</tr><tr><td valign="middle" align="left">    Constraint:</td>
-(XML Line 002304): Table should have title
+(XML Line 002310): Table should have title
 	<table id="_9575485a-9da7-9a9b-368c-0eafcf48b7cc"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> addressee</td>
-(XML Line 002327): Table should have title
+(XML Line 002333): Table should have title
 	<table id="_e131cb48-0899-7018-d398-a0919941aba0"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">limitation(s) placed upon the access or use of the data</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 002334): Table should have title
+(XML Line 002340): Table should have title
 	<table id="_fe490ad3-a3d4-9c8e-435f-5f879c08c7b2"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> confidential</td>
-(XML Line 002399): Table should have title
+(XML Line 002405): Table should have title
 	<table id="_01537d78-6075-6820-706c-f0540f58fdf6"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">handling restrictions imposed on the resource or metadata for national security or similar security concerns</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="MD_Constraints-section">MD_Constraints</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 002408): Table should have title
+(XML Line 002414): Table should have title
 	<table id="_00d30651-e8d5-716b-e0ec-c9cdd8cd0d4f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> classification</td>
-(XML Line 002439): Table should have title
+(XML Line 002445): Table should have title
 	<table id="_857211c1-9cda-f39f-a7d5-895a92a81f46"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">justification for the correlation of two resources</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 002446): Table should have title
+(XML Line 002452): Table should have title
 	<table id="_7cd6e0fe-c7b0-c96f-d204-6b3e52107309"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> collectiveTitle</td>
-(XML Line 002487): Table should have title
+(XML Line 002493): Table should have title
 	<table id="_b61005c6-6684-7ae9-34a7-86933b4fa763"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">type of aggregation activity in which resources are related</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 002494): Table should have title
+(XML Line 002500): Table should have title
 	<table id="_db01b412-dfec-2a2c-1802-4d7430a2765e"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> campaign</td>
-(XML Line 002553): Table should have title
+(XML Line 002559): Table should have title
 	<table id="_674867ff-e49d-0db5-0e63-6283c4124230"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">associated resource information</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left">GP_AssociatedResource</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 002564): Table should have title
+(XML Line 002570): Table should have title
 	<table id="_04e6cc40-8769-2611-56a2-8b5efaabe57f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="MD_Identification-section">MD_Identification</xref>   []</td>
-(XML Line 002572): Table should have title
+(XML Line 002578): Table should have title
 	<table id="_454c1c3e-35b5-8543-ec6e-e2c31f7efbe9"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> associationType</td>
-(XML Line 002598): Table should have title
+(XML Line 002604): Table should have title
 	<table id="_5551cb2c-37dd-8f8d-9870-a7e73bae1a78"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">information required to identify a resource</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="MD_Identification-section">MD_Identification</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 002612): Table should have title
+(XML Line 002618): Table should have title
 	<table id="_2b57b842-f1f5-5b77-0ef2-ef9c9d4b822c"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> defaultLocale</td>
-(XML Line 002638): Table should have title
+(XML Line 002644): Table should have title
 	<table id="_8178a74b-a331-3212-85e9-85e503177cb7"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">basic information required to uniquely identify a resource or resources</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left">GP_Identification</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 002653): Table should have title
+(XML Line 002659): Table should have title
 	<table id="_d874c887-7814-01cd-a5cc-67e18ecca8ec"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> resourceMaintenance</td>
-(XML Line 002670): Table should have title
+(XML Line 002676): Table should have title
 	<table id="_afc29194-ba81-0ae8-d232-151864d3011d"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> abstract</td>
-(XML Line 002726): Table should have title
+(XML Line 002732): Table should have title
 	<table id="_132e8f03-bd18-57e3-5c80-8eb941bbe957"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">specification of a class to categorize keywords in a domain-specific vocabulary that has a binding to a formal ontology</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">None</td>
 	</tr></tbody>
-(XML Line 002733): Table should have title
+(XML Line 002739): Table should have title
 	<table id="_a91e7b30-7626-aa6c-7975-11bd2b96e201"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="MD_Keywords-section">MD_Keywords</xref>   []</td>
-(XML Line 002741): Table should have title
+(XML Line 002747): Table should have title
 	<table id="_7d2a7f05-5b3d-fe93-c95b-39f8e21d68c2"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> className</td>
-(XML Line 002764): Table should have title
+(XML Line 002770): Table should have title
 	<table id="_2244fb7f-3aaf-bec6-5aa2-8bf255e6fbf8"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">keywords, their type and reference source NOTE: When the resource described is a service, one instance of MD_Keyword shall refer to the service taxonomy defined in ISO 19119, 8.3)</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">None</td>
 	</tr><tr><td valign="middle" align="left">    Constraint:</td>
-(XML Line 002773): Table should have title
+(XML Line 002779): Table should have title
 	<table id="_3f8d8cf7-cab5-a8cd-e43c-aafd2bbf5ed8"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="MD_Identification-section">MD_Identification</xref>   []</td>
-(XML Line 002784): Table should have title
+(XML Line 002790): Table should have title
 	<table id="_96e43e08-5290-2203-0041-f28bea09d104"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> keyword</td>
-(XML Line 002807): Table should have title
+(XML Line 002813): Table should have title
 	<table id="_6c24d7c9-0750-bcb1-298e-27b40b4b9813"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">methods used to group similar keywords</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left">TaxonomyKeywords</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 002816): Table should have title
+(XML Line 002822): Table should have title
 	<table id="_c22ba1a4-17a4-bf94-91bf-7c5f3ae21740"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> dataCentre</td>
-(XML Line 002875): Table should have title
+(XML Line 002881): Table should have title
 	<table id="_4e619588-9907-e82a-f5b6-391632a9bbd4"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">status of the resource</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 002882): Table should have title
+(XML Line 002888): Table should have title
 	<table id="_799b5c61-3ad3-48e5-8fc7-71a295ed276d"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> accepted</td>
-(XML Line 002950): Table should have title
+(XML Line 002956): Table should have title
 	<table id="_9b0d4565-59d6-dc4e-7a6f-54382a1b43fc"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">derived from ISO 19103 Scale where MD_RepresentativeFraction.denominator = 1 / Scale.measure And Scale.targetUnits = Scale.sourceUnits</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«DataType»</td>
 	</tr></tbody>
-(XML Line 002957): Table should have title
+(XML Line 002963): Table should have title
 	<table id="_b77d1ad1-36e3-9de2-a96b-9b81b0a123c1"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> denominator</td>
-(XML Line 002974): Table should have title
+(XML Line 002980): Table should have title
 	<table id="_49d69833-26f3-b56b-00cd-afe257f24d29"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">level of detail expressed as a scale factor, a distance or an angle</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«Union»</td>
 	</tr></tbody>
-(XML Line 002981): Table should have title
+(XML Line 002987): Table should have title
 	<table id="_a06f811e-c6e2-585b-5bcb-4d235777d018"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> angularDistance</td>
-(XML Line 003010): Table should have title
+(XML Line 003016): Table should have title
 	<table id="_116321da-f77e-e9f0-de0b-04c6a1d2e8aa"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">method used to represent geographic information in the resource</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
-(XML Line 003017): Table should have title
+(XML Line 003023): Table should have title
 	<table id="_7e6101f2-93c6-cc31-cb15-db605bba86be"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> grid</td>
-(XML Line 003049): Table should have title
+(XML Line 003055): Table should have title
 	<table id="_1f41079d-f399-50c8-9c6d-3e28593602a0"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">brief description of ways in which the resource(s) is/are currently or has been used</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left">GP_Usage</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003058): Table should have title
+(XML Line 003064): Table should have title
 	<table id="_ae13b313-57f3-b335-ee58-484bf17c2104"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> additionalDocumentation</td>
-(XML Line 003093): Table should have title
+(XML Line 003099): Table should have title
 	<table id="_76905a28-23d2-d1eb-8a40-16eee291f082"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">high-level geographic data thematic classification to assist in the grouping and search of available geographic data sets. NOTE 1 Can be used to group keywords as well. Listed examples are not exhaustive. NOTE 2: It is understood there are overlaps between general categories and the user is encouraged to select the one most appropriate.</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">enumeration</td>
 	</tr></tbody>
-(XML Line 003100): Table should have title
+(XML Line 003106): Table should have title
 	<table id="_d994a40c-40f9-2aae-6226-8a9d0b2b2dd3"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> farming</td>
-(XML Line 003183): Table should have title
+(XML Line 003189): Table should have title
 	<table id="_edbca821-dac3-02ec-1281-a4e1378254f7"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">Generic Name is the abstract class for all names in a NameSpace. Each instance of a GenericName is either a LocalName or a ScopedName. A LocalName references a local object directly accessible from the NameSpace. A ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace.</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">interface</td>
 	</tr></tbody>
-(XML Line 003190): Table should have title
+(XML Line 003196): Table should have title
 	<table id="_aa33a124-9e36-66b2-1c95-63d7162813c9"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> scope</td>
-(XML Line 003206): Table should have title
+(XML Line 003212): Table should have title
 	<table id="_a41ee9da-2976-2090-7f02-eb3013494dd4"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">A LocalName references a local object directly accessible from the NameSpace.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="GenericName-section">GenericName</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003222): Table should have title
+(XML Line 003228): Table should have title
 	<table id="_e82d6b0f-4fc6-fda4-e2da-cdbcb3b01a4c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">A MemberName is a LocalName that references either an attribute slot in a record or  recordType or an attribute, operation, or association role in an object instance or  type description in some form of schema.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="LocalName-section">LocalName</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003231): Table should have title
+(XML Line 003237): Table should have title
 	<table id="_aaa8c7b1-adff-0298-e550-44369a1f609e"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> aName</td>
-(XML Line 003251): Table should have title
+(XML Line 003257): Table should have title
 	<table id="_5b5f4d85-aba8-a2bf-141d-5518a10f8f2f"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">A Name Space is a domain in which “names” given by character strings (possibly under local constrains constraints enforced by the Name Space) can be mapped to objects via a getObejct operation. Examples include objects which form a Name Space for their attributes, operations and associations, or Schemas that form Name Spaces for their included data types or classes.
 	Not all methods for NameSpaces need to be made publicly accessible.</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">interface</td>
-(XML Line 003259): Table should have title
+(XML Line 003265): Table should have title
 	<table id="_211dc05e-bfb4-a035-f110-1ace7d959c09"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> name</td>
-(XML Line 003268): Table should have title
+(XML Line 003274): Table should have title
 	<table id="_bc42d77b-6fce-e42c-f359-ae83099963bc"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> acceptableClassList</td>
-(XML Line 003286): Table should have title
+(XML Line 003292): Table should have title
 	<table id="_f48a38a7-42fb-167e-9292-4b4d463f0ea8"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace. ScopedName contains a LocalName as head and a GenericName, which might be a LocalName or a ScopedName, as tail.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="GenericName-section">GenericName</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003302): Table should have title
+(XML Line 003308): Table should have title
 	<table id="_8cd24412-3e79-de0d-10be-d42711f1ca3c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">A TypeName is a LocalName that references either a recordType or object type in some form of schema. The stored value “aName” is the returned value for the “aName()” operation. This is the types name.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="LocalName-section">LocalName</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003311): Table should have title
+(XML Line 003317): Table should have title
 	<table id="_4b9f0f73-2f35-6f51-c4fd-803f70ba8fd1"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> aName</td>
-(XML Line 003325): Hanging paragraph in clause
+(XML Line 003331): Hanging paragraph in clause
 	<clause id="_primitive_types" obligation="informative">
 	<title>Primitive types</title>
 	<p id="_75905e1e-0f8a-97a4-e381-fb38e7e7a492">The following classes are defined in <xref target="ISO19103">(ISO 19103:2015)</xref></p>
 	
 	<clause id="_date_and_time" obligation="informative">
-(XML Line 003335): Table should have title
+(XML Line 003341): Table should have title
 	<table id="_9e604b4d-8511-6f7f-8b6b-88b5a4b325ae"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">interface</td>
 	</tr></tbody>
 	</table>
-(XML Line 003341): Table should have title
+(XML Line 003347): Table should have title
 	<table id="_238e09ad-3958-84eb-6176-9d2ff12185c0"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> century</td>
-(XML Line 003363): Table should have title
+(XML Line 003369): Table should have title
 	<table id="_bd82b39f-ca9e-8b1d-d159-b5030c301b1c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="Date-section">Date</xref> and <xref target="Time-section">Time</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">interface</td>
-(XML Line 003378): Table should have title
+(XML Line 003384): Table should have title
 	<table id="_afebaaf5-3002-b68c-b5a3-8843ab242fb0"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">interface</td>
 	</tr></tbody>
 	</table>
-(XML Line 003384): Table should have title
+(XML Line 003390): Table should have title
 	<table id="_a873fe86-b2b7-5d4e-e4fb-18d49ae24701"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> hour</td>
-(XML Line 003409): Table should have title
+(XML Line 003415): Table should have title
 	<table id="_fe6438e3-36ff-692a-98f5-db1dff05e0bd"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">The usually finite representation of a decimal number. It differs from the common binary Real implementation in that it can represent 1/10 (one-tenth) without error, while binary real representation can only represent powers of 1/2 (one-half) exactly. Since many currencies are decimal, these representations are preferred in dealing with such moneys. This is also true for mile markers, which are often given in decimals.
 	
 	Can be thought of as an integer part followed by a fractional part given in multiples of powers of 1/10 (tenths).</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-(XML Line 003427): Table should have title
+(XML Line 003433): Table should have title
 	<table id="_dd3eaab7-be06-c850-4b0e-c6402e3e8a1f"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">An exact integer value, with no fractional part.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="Number-section">Number</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003443): Table should have title
+(XML Line 003449): Table should have title
 	<table id="_b568b6ea-a505-b9fa-a3aa-fa8fc6c3a657"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">The base type for all number data, giving the basic algebraic operations. Since all concrete types have finite representations, some part of this algebra for most types exhibit some inaccuracy. For example, Integers cannot divide very well, and reals and decimals cannot avoid certain types of inaccuracies that depend on their representation semantics.</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">interface</td>
 	</tr></tbody>
-(XML Line 003457): Table should have title
+(XML Line 003463): Table should have title
 	<table id="_e7202a87-5cc3-da3c-4afb-b6ee74958f76"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">The common binary Real finite implementation using base 2. Since such reals can approximate any measure where absolute accuracy is not possible, this form of numeric is most often used for measures. In cases were absolute accuracy is needed, such as currencies, then a decimal representation may be preferred (assuming the currency is decimal, such as the US dollar, British pound, etc.). Where there are no subunits possible, Integer numbers may be preferred.
 	
 	Can be thought of as an integer part followed by a fractional part given in multiples of powers of 1/2 (halves).</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-(XML Line 003475): Table should have title
+(XML Line 003481): Table should have title
 	<table id="_254586d5-9cbe-cb6c-7f61-b294278db858"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left"> — Infinite if and only if value is not specified
 	{[ isInfinte = True ] = [ value = Null ]} — value is either infinite or non-negative
 	{value &lt;&gt; Null implies value &gt;= 0}</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003484): Table should have title
+(XML Line 003490): Table should have title
 	<table id="_30379244-24ca-9398-67fb-b6e7f701ca52"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> isInfinite</td>
-(XML Line 003502): Table should have title
+(XML Line 003508): Table should have title
 	<table id="_a352af60-01c9-a1f1-086b-9fdcf6b86572"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">an ordered set of numbers called coordinates that represent a position in a coordinate system. The coordinates may be in a space of any number of dimensions, as for instance in an “nth degree” polynomial spline.
 	
 	Example (123, 514, 150)</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003511): Table should have title
+(XML Line 003517): Table should have title
 	<table id="_9dee23b2-6b50-78a8-0230-02f1def9ecf1"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> coordinates</td>
-(XML Line 003534): Table should have title
+(XML Line 003540): Table should have title
 	<table id="_78f05ecd-8524-abb8-5dd2-6d04d8685e9d"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">«CodeList»</td>
 	</tr></tbody>
 	</table>
-(XML Line 003540): Table should have title
+(XML Line 003546): Table should have title
 	<table id="_cdca089f-b674-58e4-a21c-2d875e84886e"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> ISO10646-1</td>
-(XML Line 003560): Table should have title
+(XML Line 003566): Table should have title
 	<table id="_980e13c0-bfa9-5bec-a8a0-c33170f6aeba"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">symbol  from a standard character-set.</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">interface</td>
 	</tr></tbody>
-(XML Line 003574): Table should have title
+(XML Line 003580): Table should have title
 	<table id="_6dccd745-ccad-09ec-256d-64700649ed51"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">Characterstring  is a family  of  datatypes which  represent strings of symbols  from  standard character-sets.
 	
 	Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.1.5.</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003583): Table should have title
+(XML Line 003589): Table should have title
 	<table id="_3c833a75-cc87-57de-df68-ef5d7e89da91"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>   []</td>
-(XML Line 003591): Table should have title
+(XML Line 003597): Table should have title
 	<table id="_6bdbd2eb-96cc-63bb-31b1-0514de438639"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> characterSet</td>
-(XML Line 003616): Table should have title
+(XML Line 003622): Table should have title
 	<table id="_ca96fcbb-f06c-5e65-e1fe-9ebaa0b05599"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">Uniform Resource Identifier (URI), is a compact string of characters used to identify or name a resource.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003635): Table should have title
+(XML Line 003641): Table should have title
 	<table id="_45d4d237-fbb0-9356-da9b-a66429e23729"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">Any of the interpretations of truth as a continuous range of possible values, usually expressed as a measure.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="Truth-section">Truth</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003651): Table should have title
+(XML Line 003657): Table should have title
 	<table id="_774bd8eb-2e3f-162d-a875-0cfb4a804dde"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="Truth-section">Truth</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">interface</td>
-(XML Line 003659): Table should have title
+(XML Line 003665): Table should have title
 	<table id="_ab065db0-3337-fcce-d3b0-7475baeff041"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="Boolean-section">Boolean</xref>   []</td>
-(XML Line 003677): Table should have title
+(XML Line 003683): Table should have title
 	<table id="_b5efea1c-4df0-88e5-c2f2-6b6e2794030c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">Continuous truth as a probability. The value (between 0.0 and 1.0) is a measure of belief (in the single occurrence case), or a measure of the distribution of occurrences (in the set case). The fine details of the semantics is the scope of probability and statistics, and the reader is directed towards his text of choice.</td>
 	</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 	<td valign="middle" align="left"><xref target="ContinuousTruth-section">ContinuousTruth</xref></td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
-(XML Line 003686): Table should have title
+(XML Line 003692): Table should have title
 	<table id="_754ad368-60e6-6038-8300-9875c5a1f13c"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> value</td>
-(XML Line 003702): Table should have title
+(XML Line 003708): Table should have title
 	<table id="_605508fc-76c6-8eea-52d0-f8d018fc3dba"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">The root or truth classification trees. The only constant between the subclasses here is that 1.0 is TRUE, and 0.0 is FALSE. This makes Probability work nicely. Other algebraic tricks may be more appropriate to other version of “truth calculus”, but for consistency sake, this value mapping should always be available. For example, the following semantic mappings to simple Booleans always work:
 	
 	{truthValue() &gt; 0} = possibly true
 	{truthValue() = 0} = never true
-(XML Line 003724): Table should have title
+(XML Line 003730): Table should have title
 	<table id="_8265be09-fb4b-a0a9-540d-1ac62195ca48"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">boolean is the mathematical datatype associated with two-valued logic</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">enumeration</td>
 	</tr></tbody>
-(XML Line 003731): Table should have title
+(XML Line 003737): Table should have title
 	<table id="_edfa490f-559e-3938-fa30-395620a0b6da"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="DiscreteTruth-section">DiscreteTruth</xref>   []</td>
-(XML Line 003739): Table should have title
+(XML Line 003745): Table should have title
 	<table id="_8f0a690b-e784-a260-dc3c-69d9feb6f7ea"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> true</td>
-(XML Line 003759): Table should have title
+(XML Line 003765): Table should have title
 	<table id="_8518b42a-f7c1-5b70-11c4-4de464ea377e"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 	<td valign="middle" align="left">Handy for a weak sort of 3 valued logic, where truth or falsity is not attributable to all well-formed statements.</td>
 	</tr><tr><td valign="middle" align="left">    StereoType:</td>
 	<td valign="middle" align="left">enumeration</td>
 	</tr></tbody>
-(XML Line 003766): Table should have title
+(XML Line 003772): Table should have title
 	<table id="_80ab5dc8-538d-2a4a-076c-ef48a4cb2ada"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 	<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="DiscreteTruth-section">DiscreteTruth</xref>   []</td>
-(XML Line 003774): Table should have title
+(XML Line 003780): Table should have title
 	<table id="_1fc1c43d-f788-1c41-f1ad-e3e094491d3f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 	<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 	<th valign="middle" align="left"><strong>Definition</strong></th>
 	</tr></thead>
 	<tbody><tr><td valign="middle" align="left"> TRUE</td>
-(XML Line 003800): Table should have title
+(XML Line 003806): Table should have title
 	<table id="_6699be8d-a663-b6c2-cfeb-e8fc2152d9b1" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
 	<th valign="middle" align="left">Release</th>
 	<th valign="middle" align="left">Editor</th>
@@ -1298,145 +1296,145 @@ https://www.metanorma.com/author/iso/topics/markup/#bibliographies
 (XML Line 001108:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
 (XML Line 001129:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
 (XML Line 001140:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001211:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001222:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001237:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001253:51): element "table" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
-(XML Line 001267:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001287:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001300:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001314:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001335:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001351:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001372:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001381:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001391:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001410:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001419:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001435:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001444:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001453:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001476:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001483:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001516:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001523:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001579:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001586:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001618:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001625:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001645:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001652:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001714:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001725:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001733:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001750:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001757:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001804:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001811:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001851:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001862:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001872:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001889:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001896:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001904:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001924:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 001931:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002008:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002015:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002025:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002045:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002052:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002126:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002133:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002156:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002163:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002183:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002190:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002218:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002225:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002266:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002273:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002282:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002314:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002327:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002350:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002359:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002382:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002389:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002454:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002463:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002494:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002501:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002542:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002549:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002608:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002619:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002627:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002653:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002667:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002693:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002708:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002725:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002781:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002788:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002796:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002819:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002828:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002839:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002862:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002871:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002930:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 002937:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003005:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003012:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003029:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003036:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003065:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003072:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003104:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003113:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003148:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003155:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003238:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003245:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003261:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003277:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003286:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003306:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003314:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003323:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003341:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003357:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003366:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003390:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001217:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001228:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001243:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001259:51): element "table" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 001273:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001293:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001306:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001320:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001341:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001357:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001378:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001387:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001397:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001416:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001425:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001441:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001450:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001459:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001482:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001489:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001522:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001529:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001585:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001592:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001624:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001631:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001651:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001658:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001720:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001731:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001739:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001756:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001763:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001810:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001817:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001857:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001868:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001878:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001895:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001902:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001910:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001930:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 001937:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002014:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002021:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002031:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002051:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002058:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002132:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002139:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002162:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002169:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002189:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002196:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002224:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002231:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002272:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002279:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002288:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002320:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002333:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002356:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002365:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002388:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002395:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002460:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002469:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002500:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002507:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002548:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002555:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002614:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002625:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002633:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002659:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002673:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002699:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002714:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002731:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002787:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002794:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002802:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002825:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002834:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002845:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002868:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002877:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002936:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 002943:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003011:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003018:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003035:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003042:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003071:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003078:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003110:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003119:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003154:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003161:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003244:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003251:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003267:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003283:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003292:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003312:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003320:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003329:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003347:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003363:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003372:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
 (XML Line 003396:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003418:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003433:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003402:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003424:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
 (XML Line 003439:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003464:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003482:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003498:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003512:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003530:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003539:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003557:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003566:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003589:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003445:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003470:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003488:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003504:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003518:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003536:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003545:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003563:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003572:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
 (XML Line 003595:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003615:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003629:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003638:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003646:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003671:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003690:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003706:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003714:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003732:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003741:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003757:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003779:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003786:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003794:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003814:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003821:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
-(XML Line 003829:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003601:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003621:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003635:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003644:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003652:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003677:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003696:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003712:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003720:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003738:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003747:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003763:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003785:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003792:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003800:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003820:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003827:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"
+(XML Line 003835:93): element "table" not allowed here; expected the element end-tag, text or element "add", "bookmark", "br", "concept", "del", "dl", "em", "eref", "figure", "fn", "hi", "hr", "image", "index", "index-xref", "keyword", "link", "ol", "p", "pagebreak", "ruby", "smallcap", "stem", "strike", "strong", "sub", "sup", "svg", "tt", "ul", "underline" or "xref"

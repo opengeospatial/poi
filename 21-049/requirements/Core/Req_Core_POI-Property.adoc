@@ -5,11 +5,27 @@
 label:: /req/core/req-poi_property-class
 [.component,class=part]
 --
-An encoding of the POI-Property class SHALL be a compliant extension of the AttributeType class defined in <<iso19109,ISO 19109>>.
+An encoding of the POIProperty class SHALL include zero or more `value` attributes.
 --
 
 [.component,class=part]
 --
-An encoding of the POI class SHALL include zero or more `value` attributes of any type.
+An encoding of the POIProperty class SHALL convey the semantics (meaning) of each `value` attribute.
 --
+
+[.component,class=part]
+--
+An encoding of the POIProperty class SHALL represent the cardinality of each `value` attribute.
+--
+
+[.component,class=part]
+--
+An encoding of the POIProperty class SHALL represent the data type of each `value` attribute. 
+--
+
+[.component,class=part]
+--
+A data type is typically a member of a set (domain) of data types. An encoding of the POIProperty class SHALL identify the domain of each data type used in that encoding.
+--
+
 ====

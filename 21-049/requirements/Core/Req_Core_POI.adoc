@@ -30,7 +30,7 @@ An encoding of the POI class SHALL comply with requirement <<req_core_POI_proper
 
 [.component,class=part]
 --
-An encoding of the POI class SHALL comply with requirement <<req_core_POI_keywords,/req/core/req-poi-Keywords>>.
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_keywords,/req/core/req-poi-keywords>>.
 --
 
 [.component,class=part]
@@ -105,7 +105,7 @@ An encoding of the POI class SHALL include zero or more `property` attributes.
 
 [.component,class=part]
 --
-Encodings of the `contactInfo` attribute SHALL be a valid implementation of the POIProperty class from this standard.
+Encodings of the `property` attribute SHALL be a valid implementation of the POIProperty class from this standard.
 --
 ====
 
