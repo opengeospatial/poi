@@ -1,0 +1,7 @@
+[[construction_site_use_case_section]]
+== Construction Site Use Case
+
+//Insert clause content here
+
+Clause content.
+

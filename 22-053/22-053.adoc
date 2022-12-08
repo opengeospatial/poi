@@ -1,0 +1,53 @@
+= User guide for OGC Points of Interest
+:doctype: user-guide
+:comment: ### Document status/stage; mandatory. Visit: https://www.metanorma.org/author/ogc/authoring/ for permitted types
+:status: draft
+:committee: technical
+:docnumber: 22-053
+:draft: 0.1.1
+:comment: ### Date on which the standard was updated; mandatory
+:received-date: 2022-12-01
+:comment: ### Date on which the standard was approved by the issuing authority; mandatory
+:issued-date: 2017-06-29
+:comment: ### Date on which the standard was published; mandatory
+:published-date: 2017-01-23
+:comment: ###  Year when the copyright for the document was issued; optional
+:copyright-year: 2022
+:comment: ### External link referencing the document; optional. If not provided, a default value is created following this structure: "http://www.opengis.net/doc/{abbrevation of doctype}/{abbrev}/{version}"
+:external-id: http://www.opengis.net/doc/PER/POI_UG/1.0
+:comment: ### Author one
+:fullname: Charles Heazel
+:comment: ### Author two
+:fullname_2: Matthew Brian, John Purss
+:comment: ### Role of the authors; optional. Supply only if correspoding author is an editor
+:role_2: editor
+:comment: ### Comma delimited keywords; mandatory
+:keywords: ogcdoc, OGC document, API, openapi, html
+:comment: ### Semicolon-delimited list of the submitting organizations; mandatory
+:submitting-organizations: organization_1; organization_2; organization_3; etc.
+:comment: ### Metanorma flavor; mandatory
+:mn-document-class: ogc
+:comment: ### Desired output formats; mandatory
+:mn-output-extensions: xml,html,doc,pdf
+:comment: ### Directory name used as prefix for the location of image files; optional
+:imagesdir: images
+:comment: ### Enable local relaton cache for quick inclusion of prefetched references; optional. For further information, visit: https://www.metanorma.org/author/ref/document-attributes/#caches, https://www.metanorma.org/author/topics/building/reference-lookup/#lookup-result-caching
+:local-cache-only:
+
+// Clauses
+include::sections/00-preface.adoc[]
+include::sections/01-introduction.adoc[]
+include::sections/02-usage.adoc[]
+include::sections/03-scope.adoc[]
+include::sections/04-normative-references.adoc[]
+include::sections/06-choose-restaurant-use-case.adoc[]
+include::sections/06-construction-site-use-case.adoc[]
+include::sections/06-country-covid-requirements-use-case.adoc[]
+include::sections/06-covid-test-center-use-case.adoc[]
+include::sections/06-ev-charging-stations-use-case.adoc[]
+include::sections/06-indoor-navigation-use-case.adoc[]
+include::sections/06-military-use-case.adoc[]
+include::sections/06-houses-and-utility-poles-use-case.adoc[]
+include::sections/06-package-dropoff-pickup-service-use-case.adoc[]
+include::sections/06-poi-publication-use-case.adoc[]
+include::sections/06-smart-tourism-use-case.adoc[]

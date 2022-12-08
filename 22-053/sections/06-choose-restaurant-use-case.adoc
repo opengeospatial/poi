@@ -1,0 +1,7 @@
+[[choose_restaurant_use_case_section]]
+== Choose Restaurant Use Case
+
+//Insert clause content here
+
+Clause content.
+

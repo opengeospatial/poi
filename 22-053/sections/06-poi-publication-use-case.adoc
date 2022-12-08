@@ -1,0 +1,7 @@
+[[poi_publication_use_case_section]]
+== POI Publication Use Case
+
+//Insert clause content here
+
+Clause content.
+

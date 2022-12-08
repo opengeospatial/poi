@@ -1,0 +1,7 @@
+[[military_use_case_section]]
+== Military Use Case
+
+//Insert clause content here
+
+Clause content.
+

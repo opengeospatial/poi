@@ -1,0 +1,9 @@
+[[ug_usage_section]]
+== How To Use This Resource
+
+The Users Guide to the CityGML 3.0 Conceptual Model Standard is not intended to be read from start to finnish. Rather, it is a resource structured to provide quick answers to questions which an implementer may have about the CityGML 3.0 Standard. 
+
+The CityGML 3.0 Standard includes hyperlinks which can be used to navigate directly to relevant sections of the Users Guide. 
+
+Some content in the Users Guide has been copied from the CityGML 3.0 Conceptual Model Standard to make the content more accessible to the user. In order to make clear which content in the Users Guide has been copied, the copied text is provided within grey boxes.
+

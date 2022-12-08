@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.0.6">
+<bibdata type="standard">
+<title language="en" format="text/plain">User guide for OGC Points of Interest</title>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/PER/POI_UG/1.0</docidentifier><docidentifier type="ogc-internal">22-053</docidentifier><docnumber>22-053</docnumber><date type="published"><on>2017-01-23</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2022-12-01</on></date><contributor><role type="author"/><organization>
+<name>organization_1</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>organization_2</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>organization_3</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>etc.</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Charles Heazel</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Matthew Brian, John Purss</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><version><draft>0.1.1</draft></version><language current="true">en</language><script current="true">Latn</script><status><stage language="">draft</stage><stage language="en">Draft</stage></status><copyright><from>2022</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>html</keyword><ext><doctype language="">user-guide</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Table of contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
+</localized-string><localized-string key="internal_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+<p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+<p>For the purposes of this document, the following additional terms and definitions apply.</p>
+</localized-string><localized-string key="norm_with_refs_pref" language="en">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+<p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+<p>For the purposes of this document, the terms and definitions given in % additionally apply.</p>
+</localized-string><localized-string key="internal_external_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+<p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+<p>For the purposes of this document, the terms and definitions given in % and the following additionally apply.</p>
+</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">Example</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="toc_figures" language="en">List of figures</localized-string><localized-string key="toc_tables" language="en">List of tables</localized-string><localized-string key="toc_recommendations" language="en">List of recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="subject" language="en">Subject</localized-string><localized-string key="inherits" language="en">Inherits</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="admitted" language="en">ADMITTED</localized-string><localized-string key="submitters" language="en">Submitters</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="security_empty" language="en">No security considerations have been made for this document.</localized-string><localized-string key="stage_dict.draft" language="en">Draft</localized-string><localized-string key="stage_dict.work-item-draft" language="en">Work Item Draft</localized-string><localized-string key="stage_dict.swg-draft" language="en">Candidate SWG Draft</localized-string><localized-string key="stage_dict.oab-review" language="en">Candidate OAB Review Draft</localized-string><localized-string key="stage_dict.public-rfc" language="en">Candidate Public RFC Draft</localized-string><localized-string key="stage_dict.tc-vote" language="en">Candidate TC Vote Draft</localized-string><localized-string key="stage_dict.approved" language="en">Approved</localized-string><localized-string key="stage_dict.published" language="en">Published</localized-string><localized-string key="stage_dict.deprecated" language="en">Deprecated</localized-string><localized-string key="stage_dict.rescinded" language="en">Rescinded</localized-string><localized-string key="stage_dict.retired" language="en">Retired</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings>
+<boilerplate>
+  <copyright-statement>
+    <clause>
+      <title depth="1">Copyright notice</title>
+
+      <p align="center" id="_609a02a1-fa53-7a69-1cb9-ff2ed59292e2">Copyright
+        © 2022 Open Geospatial Consortium<br/>
+        To obtain additional rights of use, visit
+        <link target="http://www.ogc.org/legal/">http://www.ogc.org/legal/</link></p>
+    </clause>
+    <clause>
+      <title depth="1">Note</title>
+      <p align="left" id="_11e88dba-9912-1a89-a82d-7291bf232191">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+      <p align="left" id="_15067213-c07b-cba0-7e18-395ab2e00ab3">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+    </clause>
+  </copyright-statement>
+  <license-statement>
+    <clause>
+      <title depth="1">License Agreement</title>
+
+      <p id="_e8566381-218f-c22d-320d-4d0371bfd58f">Permission is hereby granted by the Open Geospatial
+        Consortium, (“Licensor”), free of charge and subject to the terms set
+        forth below, to any person obtaining a copy of this Intellectual Property and
+        any associated documentation, to deal in the Intellectual Property without
+        restriction (except as set forth below), including without limitation the
+        rights to implement, use, copy, modify, merge, publish, distribute, and/or
+        sublicense copies of the Intellectual Property, and to permit persons to whom
+        the Intellectual Property is furnished to do so, provided that all copyright notices
+        on the intellectual property are retained intact and that each person to whom
+        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+
+      <p id="_52ebb386-d365-27d0-d76d-a59ac165fc4d">If you modify the Intellectual Property, all copies of
+        the modified Intellectual Property must include, in addition to the above
+        copyright notice, a notice that the Intellectual Property includes
+        modifications that have not been approved or adopted by LICENSOR.</p>
+
+      <p id="_178f14b4-0718-a5b8-09cd-84f8f4b756ed">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
+        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
+        THE INTELLECTUAL PROPERTY IS PROVIDED “AS
+        IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
+        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
+        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
+        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
+        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER’S OWN RISK. IN NO
+        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
+        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
+        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
+        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
+        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
+        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
+        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+
+      <p id="_2ad7fe27-9ae4-52c5-9dd9-faa4004247fb">This license is effective until terminated. You may
+        terminate it at any time by destroying the Intellectual Property together with
+        all copies in any form. The license will also terminate if you fail to comply
+        with any term or condition of this Agreement. Except as provided in the
+        following sentence, no such termination of this license shall require the
+        termination of any third party end-user sublicense to the Intellectual Property
+        which is in force as of the date of notice of such termination. In addition,
+        should the Intellectual Property, or the operation of the Intellectual
+        Property, infringe, or in LICENSOR’s sole opinion be
+        likely to infringe, any patent, copyright, trademark or other right of a third
+        party, you agree that LICENSOR, in its sole discretion, may terminate this
+        license without any compensation or liability to you, your licensees or any
+        other party. You agree upon termination of any kind to destroy or cause to be
+        destroyed the Intellectual Property together with all copies in any form,
+        whether held by you or by any third party.</p>
+
+      <p id="_3254c815-179c-5f54-9a01-b8e964837171">Except as contained in this notice, the name of
+        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
+        Property shall not be used in advertising or otherwise to promote the sale, use
+        or other dealings in this Intellectual Property without prior written
+        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
+        all times be the sole entity that may authorize you or any third party to use
+        certification marks, trademarks or other special designations to indicate
+        compliance with any LICENSOR standards or specifications.
+        This Agreement is
+        governed by the laws of the Commonwealth of Massachusetts. The application to
+        this Agreement of the United Nations Convention on Contracts for the
+        International Sale of Goods is hereby expressly excluded. In the event any
+        provision of this Agreement shall be deemed unenforceable, void or invalid, such
+        provision shall be modified so as to make it valid and enforceable, and as so
+        modified the entire Agreement shall remain in full force and effect. No
+        decision, action or inaction by LICENSOR shall be construed to be a waiver of
+        any rights or remedies available to it.</p>
+
+      <p id="_4fa1ef5b-3dd5-7a05-3c68-bca93a0f14bb">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
+    </clause>
+  </license-statement>
+
+  <legal-statement>
+    
+    <clause>
+      <title depth="1">Notice</title>
+      <p id="_64cd6a1e-b42a-1d67-a46a-682ea4ad73ae">This document is not an OGC Standard. This document is an OGC User Guide and is therefore not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</p>
+      <p id="_4372936d-b228-917f-b16d-56d993e5f2dc">Further, an OGC User Guide should not be referenced as required or mandatory technology in procurements.</p>
+    </clause>
+    
+
+  </legal-statement>
+
+
+
+
+  <feedback-statement>
+    
+  </feedback-statement>
+</boilerplate>
+<preface><clause id="_099da279-9407-4499-b03a-0e10021390f5" type="keywords" displayorder="1">
+<title depth="1">I.<tab/>Keywords</title>
+<p>The following are keywords to be used by search engines and
+    document catalogues.</p>
+<p>ogcdoc, OGC document, API, openapi, html</p></clause>
+<clause type="security" id="_3a09f4f4-84f8-f5b1-320b-1073abee5ebb" obligation="informative" displayorder="2"><title depth="1">II.<tab/>Security considerations</title><p id="_e88b1376-d0f4-5147-cf72-d44500f21228">No security considerations have been made for this document.</p></clause><clause id="_01e6207a-61b5-468a-830a-fb359edb5356" type="submitting_orgs" displayorder="3">
+<title depth="1">III.<tab/>Submitting Organizations</title>
+<p>The following organizations submitted this Document to the
+   Open Geospatial Consortium (OGC):</p>
+ <ul><li>organization_1</li>
+<li>organization_2</li>
+<li>organization_3</li>
+<li>etc.</li></ul>
+ </clause>
+<clause id="abstract_section" obligation="informative" displayorder="4">
+<title depth="1">IV.<tab/>Abstract</title>
+<p id="_742c4ce3-1001-bfb9-a427-385adbb783da">CityGML is an open conceptual data model for the storage and exchange of virtual 3D city models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO fundation assures that the man-made features described in the City Models share the same spatial-temporal universe as the surrounding countryside within which they reside.</p>
+
+<p id="_29875725-ec3d-fc0b-4371-61624013cea3">The aim of the development of CityGML is to reach a common definition of the basic entities, attributes, and relations of a 3D city model. This is especially important with respect to the cost-effective sustainable maintenance of 3D city models, allowing the reuse of the same data in different application fields.</p>
+
+<p id="_6a74a855-8c6b-6afc-4851-895970e0d264">This Users Guide provides extended explanations and examples for the individual concepts that are defined in the CityGML 3.0 Conceptual Model Standard. Both documents, the Conceptual Model Standard and the Users Guide, are mutually linked to facilitate navigation between corresponding sections in these documents.</p>
+</clause></preface><sections>
+
+<clause id="ug_introduction_section" obligation="normative" displayorder="7">
+<title depth="1">3.<tab/>Introduction</title>
+<p id="_4036cb44-f2ff-44de-6d9a-2aa69d1a3ec7">An increasing number of cities and companies are building virtual 3D city models for different application areas like urban planning, mobile telecommunication, disaster management, 3D cadastre, tourism, vehicle and pedestrian navigation, facility management and environmental simulations. Furthermore, in the implementation of the European Environmental Noise Directive (END, 2002/49/EC) 3D geoinformation and 3D city models play an important role.</p>
+
+<p id="_d00f20d4-8fb3-1830-bba8-c144229a1d38">In recent years, most virtual 3D city models have been defined as purely graphical or geometrical models, neglecting the semantic and topological aspects. Thus, these models could almost only be used for visualisation purposes but not for thematic queries, analysis tasks, or spatial data mining. Since the limited reusability of models inhibits the broader use of 3D city models, a more general modelling approach had to be taken in order to satisfy the information needs of the various application fields.</p>
+
+<p id="_a46843b6-cfe3-7caf-7ee2-e78cebe178ce">CityGML is a common semantic information model for the representation of 3D urban objects that can be shared over different applications. The latter capability is especially important with respect to the cost-effective sustain-able maintenance of 3D city models, allowing the possibility of selling the same data to customers from different application fields. The targeted application areas explicitly include city planning, architectural design, tourist and leisure activities, environmental simulation, mobile telecommunication, disaster management, homeland securi-ty, real estate management, vehicle and pedestrian navigation, and training simulators.</p>
+
+<p id="_a46a0391-a923-a5e5-3121-ff18440028c5">CityGML is an open conceptual data model for the storage and exchange of virtual 3D city models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO fundation assures that the man-made features described in the City Models share the same spatial-temporal universe as the surrounding countryside within which they reside.</p>
+
+<p id="_fb48f112-be62-1bb3-3d30-a37af1de991e">CityGML defines the classes and relations for the most relevant topographic objects in cities and regional models with respect to their geometrical, topological, semantical, and appearance properties. “City” is broadly defined to comprise not just built structures, but also elevation, vegetation, water bodies, “city furniture”, and more. Included are generalisation hierarchies between thematic classes, aggregations, relations between objects, and spatial properties. CityGML is applicable for large areas and small regions and can represent the terrain and 3D objects in different levels of detail simultaneously. Since either simple, single scale models without topology and few semantics or very complex multi-scale models with full topology and fine-grained semantical differenti-ations can be represented, CityGML enables lossless information exchange between different GI systems and users.</p>
+
+<p id="_3f58cc8c-50bf-7c46-0ce7-3b8d5acb0fa2">The CityGML 3.0 standard consists of several parts: 1) The CityGML 3.0 Conceptual Model standard that defines the conceptual model in UML and that is described in more detail within this Users Guide. 2) A separate Encoding standard for each Encoding to be defined. This will be the GML Encoding in the beginning, further encoding specifications (e.g. relational database schema, JSON-based representation) will follow in the future.</p>
+</clause>
+
+<clause id="ug_usage_section" obligation="normative" displayorder="8">
+<title depth="1">4.<tab/>How To Use This Resource</title>
+<p id="_324f3739-096e-755e-5119-457ed65987cd">The Users Guide to the CityGML 3.0 Conceptual Model Standard is not intended to be read from start to finnish. Rather, it is a resource structured to provide quick answers to questions which an implementer may have about the CityGML 3.0 Standard.</p>
+
+<p id="_226a6e5d-c93d-ef4d-a2eb-9ed73e0d6de4">The CityGML 3.0 Standard includes hyperlinks which can be used to navigate directly to relevant sections of the Users Guide.</p>
+
+<p id="_7de24740-4b9d-3915-7159-a60ba2fcb190">Some content in the Users Guide has been copied from the CityGML 3.0 Conceptual Model Standard to make the content more accessible to the user. In order to make clear which content in the Users Guide has been copied, the copied text is provided within grey boxes.</p>
+</clause>
+
+<clause id="ug_scope_section" type="scope" obligation="normative" displayorder="5">
+<title depth="1">1.<tab/>Scope</title>
+<p id="_ad1ab14b-4078-5f1c-aded-e0f85a9978c7">This document provides Engineering Guidance on the use of the CityGML 3.0 Conceptual Model Standard.</p>
+
+<p id="_252eadd3-1095-0b55-a276-e1e4b60fe981">The OGC Conceptual Model Standard specifies the representation of virtual 3D city and landscape models. The CityGML 3.0 Conceptual Model is expected to be the basis for a number of future Encoding Standards in which subsets of the Conceptual Model can be implemented. These Encoding Standards will enable both storage and exchange of data.</p>
+
+<p id="_899be643-9438-ca7b-60f6-99cb02faa838">The CityGML 3.0 Conceptual Model Standard was designed to be concise and easy to use. As a result, most non-normative content has been removed. The purpose of this Users Guide is to capture that non-normative content and make it easy to access if and when needed.</p>
+</clause>
+
+
+
+<clause id="choose_restaurant_use_case_section" obligation="normative" displayorder="9">
+<title depth="1">5.<tab/>Choose Restaurant Use Case</title>
+<p id="_219f35fb-6f12-01a3-02a7-a4727bba130d">Clause content.</p>
+</clause>
+
+<clause id="construction_site_use_case_section" obligation="normative" displayorder="10">
+<title depth="1">6.<tab/>Construction Site Use Case</title>
+<p id="_47a0b6ad-95a8-14f5-da34-0d71df964a87">Clause content.</p>
+</clause>
+
+<clause id="country_covid_requirements_use_case_section" obligation="normative" displayorder="11">
+<title depth="1">7.<tab/>Country Covid Requirements Use Case</title>
+<p id="_8f02a2eb-07c9-5ad0-ef3c-52cadb7bf672">Clause content.</p>
+
+<p id="_f182a96c-6d73-ad82-26f3-9ed9dc03ad3c">Unresolved directive in 22-053.adoc — include::22-053/sections/06-covid-test-center-use-case.adoc[]</p>
+</clause>
+
+<clause id="ev_charging_stations_use_case_section" obligation="normative" displayorder="12">
+<title depth="1">8.<tab/>Electrical Vehicle Charging Stations Use Case</title>
+<p id="_1a900c39-de7c-3401-613d-ec3bbc54677d">Clause content.</p>
+</clause>
+
+<clause id="indoor_navigation_use_case_section" obligation="normative" displayorder="13">
+<title depth="1">9.<tab/>Indoor Navigation Use Case</title>
+<p id="_3682629d-933c-f480-f44f-1c8fc041658a">Clause content.</p>
+</clause>
+
+<clause id="military_use_case_section" obligation="normative" displayorder="14">
+<title depth="1">10.<tab/>Military Use Case</title>
+<p id="_da0ba625-61cb-cca5-291d-10fef1f63eaf">Clause content.</p>
+</clause>
+
+<clause id="houses_and_untiilty_poles_use_case_section" obligation="normative" displayorder="15">
+<title depth="1">11.<tab/>Houses and Utility Poles Use Case</title>
+<p id="_5977e9dc-d685-1700-062e-e3be0a59516a">Clause content.</p>
+</clause>
+
+<clause id="package_dropoff_pickup_service_use_case_section" obligation="normative" displayorder="16">
+<title depth="1">12.<tab/>Package Drop-off and Pick Up Service Use Case</title>
+<p id="_e4652751-4f35-3668-d849-3eca63aca24b">Clause content.</p>
+</clause>
+
+<clause id="poi_publication_use_case_section" obligation="normative" displayorder="17">
+<title depth="1">13.<tab/>POI Publication Use Case</title>
+<p id="_19241943-ee98-a0d6-0a21-c0ae4a1feb4a">Clause content.</p>
+</clause>
+
+<clause id="smart_tourism_use_case_section" obligation="normative" displayorder="18">
+<title depth="1">14.<tab/>Smart Tourism Use Case</title>
+<p id="_12115274-1f09-043c-f0c4-cfca618b8dee">Clause content.</p>
+</clause>
+</sections><bibliography><references id="_references" normative="true" obligation="informative" displayorder="6">
+<title depth="1">2.<tab/>Normative references</title><p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<bibitem id="openapi"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.2</strong>, 2018 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md"/></formattedref><docidentifier>Open API Initiative</docidentifier></bibitem>
+<bibitem id="gmlsf"><formattedref format="application/x-isodoc+xml">van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3, <strong>Geography Markup Language (GML) Simple Features Profile</strong>, 2012 <link target="http://portal.opengeospatial.org/files/?artifact_id=42729"/></formattedref><docidentifier>GMLSF</docidentifier></bibitem>
+<bibitem id="html5"><formattedref format="application/x-isodoc+xml">W3C: <strong>HTML5</strong>, W3C Recommendation, 2019 <link target="http://www.w3.org/TR/html5/"/></formattedref><docidentifier>HTML5</docidentifier><docnumber>5</docnumber></bibitem>
+<bibitem id="schema"><formattedref format="application/x-isodoc+xml"><strong>Schema.org:</strong> <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>Schema.org</docidentifier></bibitem>
+
+ <bibitem id="rfc2616" type="standard">  <fetched>2022-12-01</fetched>  
+<title format="text/plain" language="en" script="Latn">Hypertext Transfer Protocol — HTTP/1.1</title>
+  <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.2616.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc2616</uri>  <docidentifier type="RFC" primary="true">RFC 2616</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC RFC2616</docidentifier>  <docidentifier type="DOI">DOI 10.17487/RFC2616</docidentifier>  <docnumber>RFC2616</docnumber>  <date type="published">    <on>1999</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Internet Engineering Task Force</name>
+      <abbreviation>IETF</abbreviation>    </organization>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">R. Fielding</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">J. Gettys</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">J. Mogul</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">H. Frystyk</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">L. Masinter</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">P. Leach</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">T. Berners-Lee</completename>      </name>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_db2c7126-f7cf-b6d8-ed63-6a7ab2600982">HTTP has been in use by the World-Wide Web global information initiative since 1990. This specification defines the protocol referred to as “HTTP/1.1”, and is an update to RFC 2068. [STANDARDS-TRACK]</p>
+  </abstract>  <series type="main">    
+<title format="text/plain" language="en" script="Latn">RFC</title>
+    <number>2616</number>  </series></bibitem>
+ <bibitem id="rfc2818" type="standard">  <fetched>2022-12-01</fetched>  
+<title format="text/plain" language="en" script="Latn">HTTP Over TLS</title>
+  <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.2818.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc2818</uri>  <docidentifier type="RFC" primary="true">RFC 2818</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC RFC2818</docidentifier>  <docidentifier type="DOI">DOI 10.17487/RFC2818</docidentifier>  <docnumber>RFC2818</docnumber>  <date type="published">    <on>2000</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Internet Engineering Task Force</name>
+      <abbreviation>IETF</abbreviation>    </organization>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">E. Rescorla</completename>      </name>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_42bfeab7-f87b-a3a8-983e-90aa4de81cb3">This memo describes how to use Transport Layer Security (TLS) to secure Hypertext Transfer Protocol (HTTP) connections over the Internet. This memo provides information for the Internet community.</p>
+  </abstract>  <series type="main">    
+<title format="text/plain" language="en" script="Latn">RFC</title>
+    <number>2818</number>  </series></bibitem>
+ <bibitem id="rfc3339" type="standard">  <fetched>2022-12-01</fetched>  
+<title format="text/plain" language="en" script="Latn">Date and Time on the Internet: Timestamps</title>
+  <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.3339.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc3339</uri>  <docidentifier type="RFC" primary="true">RFC 3339</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC RFC3339</docidentifier>  <docidentifier type="DOI">DOI 10.17487/RFC3339</docidentifier>  <docnumber>RFC3339</docnumber>  <date type="published">    <on>2002</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Internet Engineering Task Force</name>
+      <abbreviation>IETF</abbreviation>    </organization>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">G. Klyne</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">C. Newman</completename>      </name>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_6fe0c169-e5d4-258f-d58d-a958dfb062f4">This document defines a date and time format for use in Internet protocols that is a profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.</p>
+  </abstract>  <series type="main">    
+<title format="text/plain" language="en" script="Latn">RFC</title>
+    <number>3339</number>  </series></bibitem>
+ <bibitem id="rfc8288" type="standard">  <fetched>2022-12-01</fetched>  
+<title format="text/plain" language="en" script="Latn">Web Linking</title>
+  <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.8288.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc8288</uri>  <docidentifier type="RFC" primary="true">RFC 8288</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC RFC8288</docidentifier>  <docidentifier type="DOI">DOI 10.17487/RFC8288</docidentifier>  <docnumber>RFC8288</docnumber>  <date type="published">    <on>2017</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Internet Engineering Task Force</name>
+      <abbreviation>IETF</abbreviation>    </organization>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">M. Nottingham</completename>      </name>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_d15f4536-9181-2bbf-20a9-90130345cc12">This specification defines a model for the relationships between resources on the Web (“links”) and the type of those relationships (“link relation types”).</p>
+    <p id="_ff1c69c2-c22d-a0dd-89b8-8a830bb4262e">It also defines the serialisation of such links in HTTP headers with the Link header field.</p>
+  </abstract>  <series type="main">    
+<title format="text/plain" language="en" script="Latn">RFC</title>
+    <number>8288</number>  </series></bibitem>
+ <bibitem id="rfc7946" type="standard">  <fetched>2022-12-01</fetched>  
+<title format="text/plain" language="en" script="Latn">The GeoJSON Format</title>
+  <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.7946.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc7946</uri>  <docidentifier type="RFC" primary="true">RFC 7946</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC RFC7946</docidentifier>  <docidentifier type="DOI">DOI 10.17487/RFC7946</docidentifier>  <docnumber>RFC7946</docnumber>  <date type="published">    <on>2016</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Internet Engineering Task Force</name>
+      <abbreviation>IETF</abbreviation>    </organization>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">H. Butler</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">M. Daly</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">A. Doyle</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">S. Gillies</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">S. Hagen</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">T. Schaub</completename>      </name>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_cd66b142-d3ea-d242-3d71-e486cc3ebf0f">GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON). It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents. GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.</p>
+  </abstract>  <series type="main">    
+<title format="text/plain" language="en" script="Latn">RFC</title>
+    <number>7946</number>  </series></bibitem>
+</references></bibliography>
+</ogc-standard>

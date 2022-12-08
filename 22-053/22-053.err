@@ -1,0 +1,20 @@
+22-053/22-053.err errors
+
+
+== Style
+
+(): Abstract is missing!
+(): Preface is missing!
+(): Submitters is missing!
+
+
+== Document Attributes
+
+(): Version required for user-guide
+
+
+== Metanorma XML Syntax
+
+(XML Line 000133:65): element "clause" not allowed here; expected element "abstract" or "foreword"
+(XML Line 000140:102): element "clause" not allowed here; expected element "abstract" or "foreword"
+(XML Line 000140:269): element "preface" incomplete; missing required element "foreword"
