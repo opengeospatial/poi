@@ -81,5 +81,46 @@ So one could use a POIProperty like this for a phone number:
             numberType: voice
 ....
 
+Besides *CI_Telephone*, some other types in the informative Annex that might often appear as nonstandard attributes are:
+
+[none]
+* Date, Time, Decimal, Integer, Number, Real, Vector, CharacterString, URI, Boolean, DateTime, CI_Address, CI_Contact, CI_Date, CI_OnlineResource, CI_Organisation, MD_Identification, MD_Keywords, 
+
+The above examples showed the values in an implementation-agnostic form. In any particular use of this standard, an implementation technology will be chosen to serialize POI values. Accompanying this User Guide is an example *POI Schema3.json* schema that specifies how to serialize POIs as JSON objects. Using that schema, a POI with a telephone number and a public visibility flag would be serialized as follows:
+
+....
+   {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": {45.14, -94.69}},
+      "properties": {
+         "featureID": 693842,
+         "name": {"name" : "Midtown Library"},
+         "contactInfo" : {"role": "city representative"},
+         "hasFeatureOfInterest": {"href": ""},
+         "hasProperty" : [
+            {
+               "definition": "Telephone number by which individuals can contact responsible the POI.",
+               "cardinality": 1,
+               "valueDomain": "text",
+               "valueType": "CI_Telephone",
+               "value": {"number": "+1 555 555-5555"}
+            },
+            {
+               "definition": "True if a POI is publicly visitible.",
+               "cardinality": 1,
+               "valueDomain": "boolean",
+               "valueType": "Boolean",
+               "value": true,
+            }
+         ]
+      }
+   }
+....
+
+Note that while this works out of the box with standard schemas, it leads to very verbose representations of attribute values in POI instances.
+
 === Extending the Implementation Schema
 
+A second approach to dealing with nonstandard attributes is to extend the schema used to implement the POI-CM in a particular implementation technology.
+
+As a concrete example, suppose JSON is the implementation technology.
