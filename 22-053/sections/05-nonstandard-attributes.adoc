@@ -123,4 +123,72 @@ Note that while this works out of the box with standard schemas, it leads to ver
 
 A second approach to dealing with nonstandard attributes is to extend the schema used to implement the POI-CM in a particular implementation technology.
 
-As a concrete example, suppose JSON is the implementation technology.
+As a concrete example, suppose JSON is the implementation technology. Part of the supplied example JSON schema for this standard is:
+
+....
+    "POI": {
+      "type": "object",
+      "id": "#PointOfInterest",
+      "required": [
+          "featureId",
+          "contactInfo",
+          "hasFeatureOfInterest"
+      ],
+      "properties": {
+        "featureID": {"type": "number"},
+        "description": {"type": "string"},
+        "name": {
+          "$ref": "#/properties/GenericName"        
+        },
+        "identifier": {
+          "$ref": "#/properties/ScopedName"        
+        },
+        "creationDate": {
+           "$ref": "#/properties/DateTime"        
+        },
+        "terminationDate": {
+           "$ref": "#/properties/DateTime"        
+        },
+        "validFrom" : {
+           "$ref": "#/properties/DateTime"        
+        },
+        "validTo": {
+           "$ref": "#/properties/DateTime"        
+        },
+        "contactInfo": {
+           "$ref": "#/properties/CI_Responsibility" 
+        },
+        "hasFeatureOfInterest": {
+           "$ref": "#/properties/reference"  
+        },
+        "hasMetadata": {
+           "$ref": "#/properties/reference"  
+        },
+        "hasProperty": {
+           "$ref": "#/properties/POIProperty"  
+        },
+        "keywords": {
+           "$ref": "#/properties/MD_Keyword"        
+        },
+        "constraints": {
+           "$ref": "#/properties/MD_Constraints"                    
+        },
+        "symbology": {
+           "$ref": "#/properties/reference"  
+        },
+        "links": {
+           "$ref": "#/properties/reference"  
+        }
+      }
+    }     
+....
+
+One could consider adding new properties to this list to represent the attributes that are needed for a specific use case that a community of interest wants to agree upon. For example, one could add
+
+....
+        "telephoneNumber": {
+           "$ref": "#/properties/CI_Telephone"        
+        },
+....
+
+in the above list and then a property `"telephone"` could be used directly in a POI instead of as a self-describing attribute in the *hasProperty" value of a POI. The example schema already includes a schema fragment for *CI_Telephone*, and another of other useful ones (see previous section). If you need a type that isn't already provided, that type could also be inserted into the schema.
