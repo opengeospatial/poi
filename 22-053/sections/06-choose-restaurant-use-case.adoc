@@ -1,7 +1,35 @@
 [[choose_restaurant_use_case_section]]
 == Choose Restaurant Use Case
 
-//Insert clause content here
+=== Use Case Overview
 
-Clause content.
+The *Choose Restaurant* use case is where a system is desired to help users find restaurants near them and information abou those restaurants to decide which, if any, they want to use.
+
+In order to choose a restaurant to eat in or get delivery from, users need to be able to POIs that are restaurants, with certain constraints (e.g., within a certain distance from a point on earth where the user is or expects to be). From that set of possibilities, they may wish to examine further information about each restaurant, to narrow down the choice. This information may include some or all of the following:
+
+* Serves cuisines that the user can eat and likes.
+* Is open during the hours the user intends to visit,
+and/or serve the type of meal (breakfast, lunch, dinner, etc.) the user wants.
+* Has service style the user prefers (take-out vs dine-in).
+* Has a price level the user prefers.
+* Has a bar and/or serves alcohol.
+* Has delivery.
+* Has order-ahead with pickup.
+* Requires reservations or reservations recommended.
+* Will have a busyness level that the user prefers at the time of intended vist.
+* Has good reviews.
+* Accepts particular payment methods.
+* Has an ambience the user prefers (family-friendly, upscale, romantic, etc.).
+* Has an all-you-can eat buffet.
+* Shows sports on TV.
+* Has a happy hour.
+* Is Handicap-accessible.
+* Has available free parking.
+* Has health-related requirements (vaccination and/or masks).
+
+To support this use case, a system will need a comprehensive set of restaurant POIs, each with attributes to help answer some or all of the information needs listed above.
+
+The POI-CM standard specifies a way to represent a POI with its name, and its (latitude, longitude) position on earth. The rest of the information needed will have to be specified using non-standard attributes, as described in the [insert reference here] section above.
+
+=== Nonstandard Attributes for Restaurant POIs
 
