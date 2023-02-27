@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">User guide for OGC Points of Interest</title>
-<docidentifier type="ogc-external">http://www.opengis.net/doc/PER/POI_UG/1.0</docidentifier><docidentifier type="ogc-internal">22-053</docidentifier><docnumber>22-053</docnumber><date type="published"><on>2017-01-23</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2022-12-01</on></date><contributor><role type="author"/><organization>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/PER/POI_UG/1.0</docidentifier><docidentifier type="ogc-internal">22-053</docidentifier><docnumber>22-053</docnumber><date type="published"><on>2017-01-23</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2023-02-08</on></date><contributor><role type="author"/><organization>
 <name>organization_1</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>organization_2</name>
@@ -132,44 +132,44 @@
 </boilerplate>
 <preface><clause id="abstract_section" obligation="informative">
 <title>Abstract</title>
-<p id="_742c4ce3-1001-bfb9-a427-385adbb783da">CityGML is an open conceptual data model for the storage and exchange of virtual 3D city models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO fundation assures that the man-made features described in the City Models share the same spatial-temporal universe as the surrounding countryside within which they reside.</p>
+<p id="_497eb1d7-c4ca-4c80-d749-fb7188efa7b1">POI-CM is an open conceptual data model for representing information about points of interest (POI). It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p>
 
-<p id="_29875725-ec3d-fc0b-4371-61624013cea3">The aim of the development of CityGML is to reach a common definition of the basic entities, attributes, and relations of a 3D city model. This is especially important with respect to the cost-effective sustainable maintenance of 3D city models, allowing the reuse of the same data in different application fields.</p>
+<p id="_293d61e8-4696-fe49-c0ab-fadc793ab447">The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.” In the broadest terms, a point of interest is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
 
-<p id="_6a74a855-8c6b-6afc-4851-895970e0d264">This Users Guide provides extended explanations and examples for the individual concepts that are defined in the CityGML 3.0 Conceptual Model Standard. Both documents, the Conceptual Model Standard and the Users Guide, are mutually linked to facilitate navigation between corresponding sections in these documents.</p>
+<p id="_48ee43bd-1142-53b7-5a7b-de06930a4a6e">This Users Guide provides extended explanations and examples for the individual concepts that are defined in the POI Conceptual Model Standard. Both the Conceptual Model Standard and this Users Guide are mutually linked to facilitate navigation between corresponding sections in these documents.</p>
 </clause><clause type="security" id="_3a09f4f4-84f8-f5b1-320b-1073abee5ebb" obligation="informative"><title>Security considerations</title><p id="_e88b1376-d0f4-5147-cf72-d44500f21228">No security considerations have been made for this document.</p></clause></preface><sections>
 
 <clause id="ug_introduction_section" obligation="normative">
 <title>Introduction</title>
-<p id="_4036cb44-f2ff-44de-6d9a-2aa69d1a3ec7">An increasing number of cities and companies are building virtual 3D city models for different application areas like urban planning, mobile telecommunication, disaster management, 3D cadastre, tourism, vehicle and pedestrian navigation, facility management and environmental simulations. Furthermore, in the implementation of the European Environmental Noise Directive (END, 2002/49/EC) 3D geoinformation and 3D city models play an important role.</p>
+<p id="_c2478c2e-ffa2-a9ff-f1e4-600335204190">There are many systems and applications that need to have information about locations in the world. For example, such “point of interest” (POI) data is needed in navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers, among many others.</p>
 
-<p id="_d00f20d4-8fb3-1830-bba8-c144229a1d38">In recent years, most virtual 3D city models have been defined as purely graphical or geometrical models, neglecting the semantic and topological aspects. Thus, these models could almost only be used for visualisation purposes but not for thematic queries, analysis tasks, or spatial data mining. Since the limited reusability of models inhibits the broader use of 3D city models, a more general modelling approach had to be taken in order to satisfy the information needs of the various application fields.</p>
+<p id="_dcd98b43-9cc8-e37b-4d9f-c0abde52b930">POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.</p>
 
-<p id="_a46843b6-cfe3-7caf-7ee2-e78cebe178ce">CityGML is a common semantic information model for the representation of 3D urban objects that can be shared over different applications. The latter capability is especially important with respect to the cost-effective sustain-able maintenance of 3D city models, allowing the possibility of selling the same data to customers from different application fields. The targeted application areas explicitly include city planning, architectural design, tourist and leisure activities, environmental simulation, mobile telecommunication, disaster management, homeland securi-ty, real estate management, vehicle and pedestrian navigation, and training simulators.</p>
+<p id="_82826df8-cfa2-dc6d-2341-ef23acad6d1d">POI-CM is a common semantic information model for the representation of POI objects that can be shared over different applications. The latter capability is especially important with respect to the cost-effective sustainable maintenance of POI set models, allowing the possibility of selling the same data to customers from different application fields.</p>
 
-<p id="_a46a0391-a923-a5e5-3121-ff18440028c5">CityGML is an open conceptual data model for the storage and exchange of virtual 3D city models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO fundation assures that the man-made features described in the City Models share the same spatial-temporal universe as the surrounding countryside within which they reside.</p>
+<p id="_32e2cf0b-95a4-9d56-5c0c-06b33318a07a">POI-CM is an open conceptual data model for the storage and exchange of POI models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO fundation assures that the features described in the POI Models share the same spatial-temporal universe as features described by related standards (e.g., CityGML).</p>
 
-<p id="_fb48f112-be62-1bb3-3d30-a37af1de991e">CityGML defines the classes and relations for the most relevant topographic objects in cities and regional models with respect to their geometrical, topological, semantical, and appearance properties. “City” is broadly defined to comprise not just built structures, but also elevation, vegetation, water bodies, “city furniture”, and more. Included are generalisation hierarchies between thematic classes, aggregations, relations between objects, and spatial properties. CityGML is applicable for large areas and small regions and can represent the terrain and 3D objects in different levels of detail simultaneously. Since either simple, single scale models without topology and few semantics or very complex multi-scale models with full topology and fine-grained semantical differenti-ations can be represented, CityGML enables lossless information exchange between different GI systems and users.</p>
+<p id="_15006433-4441-0c2b-691f-1ab566358186">A POI is not a dataset. Rather, it is a feature type that enhances an existing dataset of features. POI-CM builds on the ISO General Feature Model (ISO 10109) and the ISO Geometry Model (ISO 19107). To avoid reinventing things, POI-CM also borrows some classes from ISO Common Data Types (ISO 19103) and OGC CityGML 3.0.</p>
 
-<p id="_3f58cc8c-50bf-7c46-0ce7-3b8d5acb0fa2">The CityGML 3.0 standard consists of several parts: 1) The CityGML 3.0 Conceptual Model standard that defines the conceptual model in UML and that is described in more detail within this Users Guide. 2) A separate Encoding standard for each Encoding to be defined. This will be the GML Encoding in the beginning, further encoding specifications (e.g. relational database schema, JSON-based representation) will follow in the future.</p>
+<p id="_271b5aaa-5685-d7d4-f386-47c7e879eff1">The POI Conceptual Model standard defines the conceptual model in UML and is the focus of this Users Guide. The the future, separate implementation standards can be published for each encoding to be defined. This separation permits generality as well as specificity. The first POI implementation standard will describe the JSON encoding. Other implementation standards (e.g. for elational database schema) are expected to follow.</p>
 </clause>
 
 <clause id="ug_usage_section" obligation="normative">
 <title>How To Use This Resource</title>
-<p id="_324f3739-096e-755e-5119-457ed65987cd">The Users Guide to the CityGML 3.0 Conceptual Model Standard is not intended to be read from start to finnish. Rather, it is a resource structured to provide quick answers to questions which an implementer may have about the CityGML 3.0 Standard.</p>
+<p id="_a310eff2-8b31-1320-c7aa-d1a4668c6be1">The Users Guide to the POI Conceptual Model Standard is not intended to be read from start to finish. Rather, it is a resource structured to provide quick answers to questions that an implementer may have about the POI-CM Standard.</p>
 
-<p id="_226a6e5d-c93d-ef4d-a2eb-9ed73e0d6de4">The CityGML 3.0 Standard includes hyperlinks which can be used to navigate directly to relevant sections of the Users Guide.</p>
+<p id="_20d38b02-0784-fc66-55d6-06c5ce44a3b4">The POI-CM Standard includes hyperlinks that can be used to navigate directly to relevant sections of the Users Guide.</p>
 
-<p id="_7de24740-4b9d-3915-7159-a60ba2fcb190">Some content in the Users Guide has been copied from the CityGML 3.0 Conceptual Model Standard to make the content more accessible to the user. In order to make clear which content in the Users Guide has been copied, the copied text is provided within grey boxes.</p>
+<p id="_ecebc6c7-790d-336c-e76c-2bc18a14a9e3">Some content in the Users Guide has been copied from the POI Conceptual Model Standard to make the content more accessible to the user. In order to make clear which content in the Users Guide has been copied, the copied text is provided within grey boxes.</p>
 </clause>
 
 <clause id="ug_scope_section" type="scope" obligation="normative">
 <title>Scope</title>
-<p id="_ad1ab14b-4078-5f1c-aded-e0f85a9978c7">This document provides Engineering Guidance on the use of the CityGML 3.0 Conceptual Model Standard.</p>
+<p id="_302e439f-95fa-8ba4-aebd-2174d7fcb83a">This document provides Engineering Guidance on the use of the POI Conceptual Model Standard.</p>
 
-<p id="_252eadd3-1095-0b55-a276-e1e4b60fe981">The OGC Conceptual Model Standard specifies the representation of virtual 3D city and landscape models. The CityGML 3.0 Conceptual Model is expected to be the basis for a number of future Encoding Standards in which subsets of the Conceptual Model can be implemented. These Encoding Standards will enable both storage and exchange of data.</p>
+<p id="_9c851cb7-9780-1653-5ca7-9a7b8fe9dc5a">The OGC Conceptual Model Standard specifies the representation of points of interest (POI) models. The POI Conceptual Model is expected to be the basis for a number of future implementation standards in which subsets of the Conceptual Model can be implemented. These future standards will be published separately to enable consistent and efficient storage and exchange of data.</p>
 
-<p id="_899be643-9438-ca7b-60f6-99cb02faa838">The CityGML 3.0 Conceptual Model Standard was designed to be concise and easy to use. As a result, most non-normative content has been removed. The purpose of this Users Guide is to capture that non-normative content and make it easy to access if and when needed.</p>
+<p id="_6d4a55a7-10a5-957b-0881-b57118c85192">The POI Conceptual Model Standard was designed to be concise and easy to use. As a result, most non-normative content has been removed. The purpose of this Users Guide is to capture that non-normative content and make it easy to access if and when needed.</p>
 </clause>
 
 
@@ -186,85 +186,53 @@
 
 <clause id="country_covid_requirements_use_case_section" obligation="normative">
 <title>Country Covid Requirements Use Case</title>
-<p id="_8f02a2eb-07c9-5ad0-ef3c-52cadb7bf672">Clause content.</p>
+<p id="_54e83901-6e1f-18a6-b3cb-df538bc81f68">Clause content.</p>
+</clause>
 
-<p id="_f182a96c-6d73-ad82-26f3-9ed9dc03ad3c">Unresolved directive in 22-053.adoc — include::22-053/sections/06-covid-test-center-use-case.adoc[]</p>
+<clause id="covid_testing_center_use_case_section" obligation="normative">
+<title>Covid Testing Center Use Case</title>
+<p id="_1a900c39-de7c-3401-613d-ec3bbc54677d">Clause content.</p>
 </clause>
 
 <clause id="ev_charging_stations_use_case_section" obligation="normative">
 <title>Electrical Vehicle Charging Stations Use Case</title>
-<p id="_1a900c39-de7c-3401-613d-ec3bbc54677d">Clause content.</p>
+<p id="_3682629d-933c-f480-f44f-1c8fc041658a">Clause content.</p>
 </clause>
 
 <clause id="indoor_navigation_use_case_section" obligation="normative">
 <title>Indoor Navigation Use Case</title>
-<p id="_3682629d-933c-f480-f44f-1c8fc041658a">Clause content.</p>
+<p id="_da0ba625-61cb-cca5-291d-10fef1f63eaf">Clause content.</p>
 </clause>
 
 <clause id="military_use_case_section" obligation="normative">
 <title>Military Use Case</title>
-<p id="_da0ba625-61cb-cca5-291d-10fef1f63eaf">Clause content.</p>
+<p id="_5977e9dc-d685-1700-062e-e3be0a59516a">Clause content.</p>
 </clause>
 
 <clause id="houses_and_untiilty_poles_use_case_section" obligation="normative">
 <title>Houses and Utility Poles Use Case</title>
-<p id="_5977e9dc-d685-1700-062e-e3be0a59516a">Clause content.</p>
+<p id="_e4652751-4f35-3668-d849-3eca63aca24b">Clause content.</p>
 </clause>
 
 <clause id="package_dropoff_pickup_service_use_case_section" obligation="normative">
 <title>Package Drop-off and Pick Up Service Use Case</title>
-<p id="_e4652751-4f35-3668-d849-3eca63aca24b">Clause content.</p>
+<p id="_19241943-ee98-a0d6-0a21-c0ae4a1feb4a">Clause content.</p>
 </clause>
 
 <clause id="poi_publication_use_case_section" obligation="normative">
 <title>POI Publication Use Case</title>
-<p id="_19241943-ee98-a0d6-0a21-c0ae4a1feb4a">Clause content.</p>
+<p id="_12115274-1f09-043c-f0c4-cfca618b8dee">Clause content.</p>
 </clause>
 
 <clause id="smart_tourism_use_case_section" obligation="normative">
 <title>Smart Tourism Use Case</title>
-<p id="_12115274-1f09-043c-f0c4-cfca618b8dee">Clause content.</p>
+<p id="_95acbfa7-a7c7-37de-5b0b-c4e4b3c3ebe5">Clause content.</p>
 </clause>
 </sections><bibliography><references id="_references" normative="true" obligation="informative">
 <title>Normative references</title><p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="openapi"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.2</strong>, 2018 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md"/></formattedref><docidentifier>Open API Initiative</docidentifier></bibitem>
-<bibitem id="gmlsf"><formattedref format="application/x-isodoc+xml">van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3, <strong>Geography Markup Language (GML) Simple Features Profile</strong>, 2012 <link target="http://portal.opengeospatial.org/files/?artifact_id=42729"/></formattedref><docidentifier>GMLSF</docidentifier></bibitem>
-<bibitem id="html5"><formattedref format="application/x-isodoc+xml">W3C: <strong>HTML5</strong>, W3C Recommendation, 2019 <link target="http://www.w3.org/TR/html5/"/></formattedref><docidentifier>HTML5</docidentifier><docnumber>5</docnumber></bibitem>
 <bibitem id="schema"><formattedref format="application/x-isodoc+xml"><strong>Schema.org:</strong> <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>Schema.org</docidentifier></bibitem>
 
- <bibitem id="rfc2616" type="standard">  <fetched>2022-12-01</fetched>  
-<title format="text/plain" language="en" script="Latn">Hypertext Transfer Protocol — HTTP/1.1</title>
-  <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.2616.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc2616</uri>  <docidentifier type="RFC" primary="true">RFC 2616</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC2616</docidentifier>  <docidentifier type="DOI">10.17487/RFC2616</docidentifier>  <docnumber>RFC2616</docnumber>  <date type="published">    <on>1999-06</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
-<name>Internet Engineering Task Force</name>
-      <abbreviation>IETF</abbreviation>    </organization>  </contributor>  <contributor>    <role type="author"/>    <person>      
-<name>        <completename language="en">R. Fielding</completename>      </name>
-    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
-<name>        <completename language="en">J. Gettys</completename>      </name>
-    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
-<name>        <completename language="en">J. Mogul</completename>      </name>
-    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
-<name>        <completename language="en">H. Frystyk</completename>      </name>
-    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
-<name>        <completename language="en">L. Masinter</completename>      </name>
-    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
-<name>        <completename language="en">P. Leach</completename>      </name>
-    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
-<name>        <completename language="en">T. Berners-Lee</completename>      </name>
-    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_db2c7126-f7cf-b6d8-ed63-6a7ab2600982">HTTP has been in use by the World-Wide Web global information initiative since 1990. This specification defines the protocol referred to as “HTTP/1.1”, and is an update to RFC 2068. [STANDARDS-TRACK]</p>
-  </abstract>  <series type="main">    
-<title format="text/plain" language="en" script="Latn">RFC</title>
-    <number>2616</number>  </series></bibitem>
- <bibitem id="rfc2818" type="standard">  <fetched>2022-12-01</fetched>  
-<title format="text/plain" language="en" script="Latn">HTTP Over TLS</title>
-  <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.2818.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc2818</uri>  <docidentifier type="RFC" primary="true">RFC 2818</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC2818</docidentifier>  <docidentifier type="DOI">10.17487/RFC2818</docidentifier>  <docnumber>RFC2818</docnumber>  <date type="published">    <on>2000-05</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
-<name>Internet Engineering Task Force</name>
-      <abbreviation>IETF</abbreviation>    </organization>  </contributor>  <contributor>    <role type="author"/>    <person>      
-<name>        <completename language="en">E. Rescorla</completename>      </name>
-    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_42bfeab7-f87b-a3a8-983e-90aa4de81cb3">This memo describes how to use Transport Layer Security (TLS) to secure Hypertext Transfer Protocol (HTTP) connections over the Internet. This memo provides information for the Internet community.</p>
-  </abstract>  <series type="main">    
-<title format="text/plain" language="en" script="Latn">RFC</title>
-    <number>2818</number>  </series></bibitem>
- <bibitem id="rfc3339" type="standard">  <fetched>2022-12-01</fetched>  
+ <bibitem id="rfc3339" type="standard">  <fetched>2023-02-08</fetched>  
 <title format="text/plain" language="en" script="Latn">Date and Time on the Internet: Timestamps</title>
   <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.3339.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc3339</uri>  <docidentifier type="RFC" primary="true">RFC 3339</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC3339</docidentifier>  <docidentifier type="DOI">10.17487/RFC3339</docidentifier>  <docnumber>RFC3339</docnumber>  <date type="published">    <on>2002-07</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Internet Engineering Task Force</name>
@@ -272,22 +240,11 @@
 <name>        <completename language="en">G. Klyne</completename>      </name>
     </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en">C. Newman</completename>      </name>
-    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_6fe0c169-e5d4-258f-d58d-a958dfb062f4">This document defines a date and time format for use in Internet protocols that is a profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.</p>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_59b017af-cdd9-9339-6b2e-b20f41edbdd8">This document defines a date and time format for use in Internet protocols that is a profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.</p>
   </abstract>  <series type="main">    
 <title format="text/plain" language="en" script="Latn">RFC</title>
     <number>3339</number>  </series></bibitem>
- <bibitem id="rfc8288" type="standard">  <fetched>2022-12-01</fetched>  
-<title format="text/plain" language="en" script="Latn">Web Linking</title>
-  <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.8288.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc8288</uri>  <docidentifier type="RFC" primary="true">RFC 8288</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC8288</docidentifier>  <docidentifier type="DOI">10.17487/RFC8288</docidentifier>  <docnumber>RFC8288</docnumber>  <date type="published">    <on>2017-10</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
-<name>Internet Engineering Task Force</name>
-      <abbreviation>IETF</abbreviation>    </organization>  </contributor>  <contributor>    <role type="author"/>    <person>      
-<name>        <completename language="en">M. Nottingham</completename>      </name>
-    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_d15f4536-9181-2bbf-20a9-90130345cc12">This specification defines a model for the relationships between resources on the Web (“links”) and the type of those relationships (“link relation types”).</p>
-    <p id="_ff1c69c2-c22d-a0dd-89b8-8a830bb4262e">It also defines the serialisation of such links in HTTP headers with the Link header field.</p>
-  </abstract>  <series type="main">    
-<title format="text/plain" language="en" script="Latn">RFC</title>
-    <number>8288</number>  </series></bibitem>
- <bibitem id="rfc7946" type="standard">  <fetched>2022-12-01</fetched>  
+ <bibitem id="rfc7946" type="standard">  <fetched>2023-02-08</fetched>  
 <title format="text/plain" language="en" script="Latn">The GeoJSON Format</title>
   <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.7946.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc7946</uri>  <docidentifier type="RFC" primary="true">RFC 7946</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC7946</docidentifier>  <docidentifier type="DOI">10.17487/RFC7946</docidentifier>  <docnumber>RFC7946</docnumber>  <date type="published">    <on>2016-08</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Internet Engineering Task Force</name>
@@ -303,7 +260,7 @@
 <name>        <completename language="en">S. Hagen</completename>      </name>
     </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en">T. Schaub</completename>      </name>
-    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_cd66b142-d3ea-d242-3d71-e486cc3ebf0f">GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON). It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents. GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.</p>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_f33c905b-2aea-7503-b3fa-8b82707b6a93">GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON). It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents. GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.</p>
   </abstract>  <series type="main">    
 <title format="text/plain" language="en" script="Latn">RFC</title>
     <number>7946</number>  </series></bibitem>
