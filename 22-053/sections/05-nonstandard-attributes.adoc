@@ -215,6 +215,8 @@ There are many addressing systems in use in the world. A schema to represent the
 
 where the *country*, *adminstrativeArea* (state or province), and *city* give a structuring of three of the political areas containing the POI, and the *postalCode* is the postal or zipcode that some countries use in addresses (varies by country). The *deliveryPoint* is an unstructured way of expressing the rest of the address. E.g., it might be "123 Main St., Unit 3" or "Market Square". The language of the address should be either a common language implicit in the entire dataset (e.g., English), or a language in use in the country in question.
 
+_TODO: check out ISO 19160:1 A conceptual model for addressing_
+
 ==== Telephone Number
 
 The telephone number is the number to use to contact the POI to ask questions, get service, etc. The recommendation here is to use the *CI_Telephone* class from the Informative Annex:
@@ -225,6 +227,117 @@ The telephone number is the number to use to contact the POI to ask questions, g
       numberType: CI_TelephoneTypeCode[0..1]
 ....
 
-where the *number* contains the dial numerals needed to reach that place, starting with a country code. _TODO: find and cite a formatting standard here__
+where the *number* contains the dial numerals needed to reach that place. The _ITU-T E.164 standard_ (https://www.itu.int/rec/T-REC-E.164[ref]) specifies a suitable format for telephone numbers. It starts with a recommended *+* sign, followed by up to fifteen digits (with no spaces or other punctuation). The digits will typically be a country code, then an area code, then a local number. For example, the US local number 555-1234 with an area code of 212 would be represented by this character string:
+
+....
+   +12125551234
+....
 
 The optional *numberType* is a one of *facsimile*, *sms*, *voice*, where *voice* is the default if the *numberType* is left out.
+
+==== Opening Hours
+
+The "opening hours" of a POI are the times when the POI is "open for business", or, more generally just the times at which the general public can visit a POI. There may be more than one open interval on a day (e.g., meal times for a restaurant). Often, opening hours can be different for each day of the week, but are the same week after week. But occasionally POIs have more complicated opening hours (e.g., "closed the first Monday of every month from May to October"). Also, POIs often have special hours for vacations and holidays.
+
+There are several standards to choose from to express business hours. A simple standard, which covers the usual case of weekly hours that repeat, is the Schema.org *openingHours* property (https://schema.org/openingHours[ref]). This standard also assumes that the timezone of the opening hours is clear (presumably, the timezone of the POI in question). An example of opening hours expressed in this format is:
+
+....
+   openingHours: Tu-Fr 9:00-17:00
+   openingHours: Sa,Su 9:00-19:00
+....
+
+A more general standard, which handles non-weekly repeating as well as exceptions for vacations, holidays, etc., is the _iCalendar_ specification (https://www.rfc-editor.org/rfc/rfc5545[RFC 5545]), in particular its _Calendar Availability_ component (https://www.rfc-editor.org/rfc/rfc7953[RFC 7953]). While one could specify an entire calendar using these standards, the needs of specifying opening hours are served well enough by just giving the Availability part. For example, to specify opening hours in France that one might informally specify as "M: 11am-7:30pm, T-Sat: 10am-7:30pm, Sun: closed; closed Aug 1 - Aug 31", the value according this this standard would be:
+
+....
+   openingHours:
+      BEGIN:VAVAILABILITY
+      UID:uid11
+      DTSTAMP:20220101T000000Z
+      PRIORITY:0
+      BEGIN:AVAILABLE
+      UID:uid12
+      DTSTART;TZID=Europe/Paris:20220103T110000
+      DTEND;TZID=Europe/Paris:20220103T193000
+      RRULE;FREQ=WEEKLY;BYDAY=MO
+      END:AVAILABLE
+      BEGIN:AVAILABLE
+      UID:uid13
+      DTSTART;TZID=Europe/Paris:20220104T100000
+      DTEND;TZID=Europe/Paris:20220104T193000
+      RRULE;FREQ=WEEKLY;BYDAY=TU,WE,TH,FR,SA
+      END:AVAILABLE
+      END:VAVALABILITY
+      BEGIN:VAVAILABILITY
+      UID:uid14
+      DTSTAMP:20220101T000000Z
+      PRIORITY:5
+      BEGIN:AVAILABLE
+      UID:uid15
+      DTSTART;TZID=Europe/Paris:20220801T000000
+      DTEND;TZID=Europe/Paris:20220831T235959
+      RRULE;FREQ=YEARLY;BYMONTH=8
+      END:AVAILABLE
+      END:VAVALABILITY
+....
+
+The increased expressability of the Calendar Availability standard comes at the expense of verboseness, so implementers might like a choice between the two standards.
+
+There is no class in the Informative Annex for Opening Hours. A suggested conceptual model for Opening Hours that offers the choice between the above two standards is:
+
+....
+   OpeningHours
+     openingHoursLines: CharacterString[0..]
+     openingHoursFormat: OpeningHoursFormatCode[0..1]
+....
+
+where *OpeningHoursFormatCode* is a *CodeList* with literals *schemadotorg* and *icalendaravailability*, with the default being *schemadotorg*. Note that while technically the Calendar Availability value is one string, it is inconvenient to deal with such a long value (with line breaks) in JSON, so it is convenient to have the value be a sequence of strings that represent lines to be concatenated together, with line breakes between them, in order to form the actual specification string.  Similarly, the the schema.org format, multiple lines are convenient to be able to represent different weekday ranges that have differing time reanges.
+
+One of the two methods described earlier -- Using POIProperty or Extending the Implementation Schema -- could be used. If using the latter and using JSON for implementation, the recommendation is to use this additional schema:
+
+....
+   "openingHours": {
+      "openingHoursLines: [
+         "line" : "string"
+      ],
+      "openingHoursFormat": "string"
+   }
+....
+
+==== Category
+
+The "Category" of a POI is a word that describes the main purpose, use, or description of the POI. It is a word that would fill in the blank in the statement: "This POI is a +_______+". Example categories might be *School* or *Clothing Store*. Usually one would like the most specific category that applies (e.g.,. preferring *Men's Clothing Store* over *Clothing Store*, but the latter over *Store*).
+
+There are tens of thousands of possible categories, and there is no generally accepted list that this recommendation can confidently point to. Some examples of some standard category lists are:
+
+NAICS::
+   The North American Industry Classification System. This is used by the US Census to classify businesses according to their economic activity. They are numeric codes with English language descriptors. While they are meant to classify activities that are not necessarily connected to particular POIs, this classification system is still applicable to POIs, though maybe not at the deepest level of specificity desired. https://www.census.gov/naics/[ref]
+
+OpenStreetMap::
+   Open Street Map uses a "Free tagging system" to associate multiple key/value pairs with features (which could be POIs). While not comprehensive and endlessly extensible, it is usually possible to find a +key=attribute+ string that could be used as a category: e.g., +building=stadium+. +craft=winery+, or +shop=butcher+. https://wiki.openstreetmap.org/wiki/Map_features[ref]
+
+OGC Indoor Mapping Occupant Category::
+   The OGC Indoor Mapping OGC Community standard (https://docs.ogc.org/cs/20-094/index.html[ref]) has an https://docs.ogc.org/cs/20-094/Categories/index.html#occupant[*Occupant category*] list that has a number of useful categories for POIs.
+
+GeoNames Ontology::
+   The GeoNames geographic database (https://www.geonames.org/[ref]) has an http://www.geonames.org/ontology/documentation.html[OWL ontology] for Features (which are akin to POIs). It has many kinds of POIs but not many types of commercial shops and restaurants.
+
+None of these is comprehensive enough or granular enough to serve the use case of "I'm looking for a POI that offers this product, service or experience" for the full range of things people need to find. In the absence of anything better, the NAICS list seems best and the recommendation would be to use that as the code list. However, in order to allow for ultimate flexibility, the following schmea is recommended.:
+
+....
+   Category
+      category: CharacterString[0..1]
+      categorySystem: CategorySystemCode[0..1]
+....
+
+where *CategorySystemCode* is a *CodeList* with literals *naics*, *osm*, *ogcindoor*, *geonames*, and *custom*, where *custom* is the default if none is listed, and means that the category system is basically freeform (recommended as English language text).
+
+One of the two methods described earlier -- Using POIProperty or Extending the Implementation Schema -- could be used to use this class. If using the latter and using JSON for implementation, the recommendation is to use this additional schema:
+
+....
+   "category": {
+      "category" : "string"
+      "categorySystem": "string"
+   }
+....
+
+
