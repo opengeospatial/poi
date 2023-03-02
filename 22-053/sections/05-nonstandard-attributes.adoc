@@ -1,0 +1,343 @@
+
+[[ug_nonstandard_attributes_section]]
+== Nonstandard Attributes
+
+An _attribute_ is a named property of a feature. While this POI Conceptual Model Standard specifies some standard attributes (e.g., lifetime attributes), most applications will need to define and use some attributes that are not normatively defined by the standard. This section discusses some strategies for doing this.
+
+There are two main ways to include nonstandard attributes:
+
+1. Use this standard's *POIProperty* class to construct properties, which can than be associated with *POI* class instances using the *hasProperty* association.
+
+2. Extend the schema in the implementation technology (JSON, XML, etc.) to allow for the needed types.
+
+The rest of this section will explore these alternatives.
+
+=== Using POIProperty
+
+The UML for a POIProperty looks like this:
+
+image::../images/POIProperty.png[POIProperty UML]
+
+What this means is that a _value_ of type POIProperty is self describing: it has attributes that describe the type and usage of the value, as well as the actual value for this instance. In more detail, these are the fields of a POIProperty and how to use them:
+
+name:: If this value has a name, what is it? It is optional and not usually needed for the nonstandard attributes that this section is about.
+
+definition:: What is the a concise definition of this property? One definition is mandatory; additional definitions might be provided in multiple langauges.
+
+designation:: What additional natural language designation is needed, to complement *name*? This is optional and not usually needed. Multiple designations can support multiple languages.
+
+description:: What is a description of the this property, including information beyond the concise definition but which may assist in understanding its scope and application. Descriptions are optional, with multiple descriptions allowed to support different languages.
+
+constrainedBy:: What constraints are made on this type to ensure integrity of data? As an example, a constraint might specify acceptable combinations of attribute values in one or more feeature instances. This can be a natural language string or something expressed in a formal constraint language. Constraints are optional.
+
+cardinality:: How many items can be in the value of one instance of this property? The *cardinality* is a *Multiplicity*, which a range of numbers. It can be a single number (e.g., `1`), an inclusive range of numbers (e.g., `0..2`), or an infinite range of numbers with a minimum (e.g., `1..*`).
+
+valueDomain:: What is the underlying domain used to express values? Examples are `"text"` or `"real"`. _TODO What are the valid things to put into this field?_
+
+valueType:: What is the name of the type of this property? A valueType is a TypeName, which is defined as "a LocalName that references either a recordType or object type in some form of schema." So, when you implement the conceptual model in a particular implementation technology, this valueType needs to refer to some type defined in that schema. For example, an JSON example schema for this standard includes types such as CI_Telephone, CI_Address, etc., that could be used here.
+
+value:: The actual value of the property. It might be empty, a single value, or multiple values, depending on the *cardinality* of this property. The type of the values is give by the *valueType*.
+
+
+For example, suppose an application needed an attribute called *isPublic*, whose value is true or false depending on whether or not the POI is something the general public can visit. A particular POI could include a *hasProperty* association to a set of values, one of which would include:
+
+....
+   POIProperty
+      definition: "True if a POI is publicly visitible."
+      cardinality: 1
+      valueDomain: "boolean"
+      valueType: Boolean
+      value: true
+....
+
+As another example, a phone number may be needed for some POIs. The _Annex B (Informative) ISO Data Dictionary_ of the POI-CM standard describes a number of DataTypes that should be used if they capture the meaning of a needed but nonstandard attribute. The Annex describes a *CI_Telephone* class, with these fields:
+
+[cols="1,2,3"]
+|===
+|*Attribute*|*Value type and multiplicity*|*Definition*
+
+|number
+|CharacterString [1..1]
+|telephone number by which individuals can contact responsible organisation or individual
+
+|numberType
+|CI_TelephoneTypeCode [0..1]
+|type of telephone responsible organisation or individual
+|===
+
+The *CI_TelephoneTypeCode* can be one of `facsimile`, `sms`, or `voice`.
+
+So one could use a POIProperty like this for a phone number:
+
+....
+   POIProperty
+      definition: "Telephone number by which individuals can contact responsible the POI."
+      cardinality: 1
+      valueDomain: "text"
+      valueType: CI_Telephone
+      value:
+         CI_Telephone
+            number: "+1 555 555-5555"
+            numberType: voice
+....
+
+Besides *CI_Telephone*, some other types in the informative Annex that might often appear as nonstandard attributes are:
+
+[none]
+* Date, Time, Decimal, Integer, Number, Real, Vector, CharacterString, URI, Boolean, DateTime, CI_Address, CI_Contact, CI_Date, CI_OnlineResource, CI_Organisation, MD_Identification, MD_Keywords, 
+
+The above examples showed the values in an implementation-agnostic form. In any particular use of this standard, an implementation technology will be chosen to serialize POI values. Accompanying this User Guide is an example *POI Schema3.json* schema that specifies how to serialize POIs as JSON objects. Using that schema, a POI with a telephone number and a public visibility flag would be serialized as follows:
+
+....
+   {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": {45.14, -94.69}},
+      "properties": {
+         "featureID": 693842,
+         "name": {"name" : "Midtown Library"},
+         "contactInfo" : {"role": "city representative"},
+         "hasFeatureOfInterest": {"href": ""},
+         "hasProperty" : [
+            {
+               "definition": "Telephone number by which individuals can contact responsible the POI.",
+               "cardinality": 1,
+               "valueDomain": "text",
+               "valueType": "CI_Telephone",
+               "value": {"number": "+1 555 555-5555"}
+            },
+            {
+               "definition": "True if a POI is publicly visitible.",
+               "cardinality": 1,
+               "valueDomain": "boolean",
+               "valueType": "Boolean",
+               "value": true,
+            }
+         ]
+      }
+   }
+....
+
+Note that while this works out of the box with standard schemas, it leads to very verbose representations of attribute values in POI instances.
+
+=== Extending the Implementation Schema
+
+A second approach to dealing with nonstandard attributes is to extend the schema used to implement the POI-CM in a particular implementation technology.
+
+As a concrete example, suppose JSON is the implementation technology. Part of the supplied example JSON schema for this standard is:
+
+....
+    "POI": {
+      "type": "object",
+      "id": "#PointOfInterest",
+      "required": [
+          "featureId",
+          "contactInfo",
+          "hasFeatureOfInterest"
+      ],
+      "properties": {
+        "featureID": {"type": "number"},
+        "description": {"type": "string"},
+        "name": {
+          "$ref": "#/properties/GenericName"        
+        },
+        "identifier": {
+          "$ref": "#/properties/ScopedName"        
+        },
+        "creationDate": {
+           "$ref": "#/properties/DateTime"        
+        },
+        "terminationDate": {
+           "$ref": "#/properties/DateTime"        
+        },
+        "validFrom" : {
+           "$ref": "#/properties/DateTime"        
+        },
+        "validTo": {
+           "$ref": "#/properties/DateTime"        
+        },
+        "contactInfo": {
+           "$ref": "#/properties/CI_Responsibility" 
+        },
+        "hasFeatureOfInterest": {
+           "$ref": "#/properties/reference"  
+        },
+        "hasMetadata": {
+           "$ref": "#/properties/reference"  
+        },
+        "hasProperty": {
+           "$ref": "#/properties/POIProperty"  
+        },
+        "keywords": {
+           "$ref": "#/properties/MD_Keyword"        
+        },
+        "constraints": {
+           "$ref": "#/properties/MD_Constraints"                    
+        },
+        "symbology": {
+           "$ref": "#/properties/reference"  
+        },
+        "links": {
+           "$ref": "#/properties/reference"  
+        }
+      }
+    }     
+....
+
+One could consider adding new properties to this list to represent the attributes that are needed for a specific use case that a community of interest wants to agree upon. For example, one could add
+
+....
+        "telephoneNumber": {
+           "$ref": "#/properties/CI_Telephone"        
+        },
+....
+
+in the above list and then a property `"telephone"` could be used directly in a POI instead of as a self-describing attribute in the *hasProperty" value of a POI. The example schema already includes a schema fragment for *CI_Telephone*, and another of other useful ones (see previous section). If you need a type that isn't already provided, that type could also be inserted into the schema.
+
+=== Recommendations for Some Common Nonstandard Attributes for POIs
+
+There are a number of attributes that commonly are needed in use cases for POIs yet are not standardized in the POI-CM. This section suggests some recommended Schema and JSON encodings for these common nonstandard attributes.
+
+==== Address
+
+An address is a structured or semi-structured way of expressing where a place on earth can be found, usually referencing political areas, route (street) names, and numbers on routes. These are the things one uses to specify where mail is to be delivered, or packages are to be picked up. Special software called _geocoders_ can convert an addresses into (latitude, longitude) position on earth.
+
+There are many addressing systems in use in the world. A schema to represent them all precisely would be quite complicated.  The recommendation here is to use the *CI_Address* class from the Informative Annex:
+
+....
+   CI_Address
+      administrativeArea: CharacterString[0..1]
+      city: CharacterString[0..1]
+      country: CharacterString[0..1]
+      deliveryPoint: CharacterString[0..1]
+      electronicMailAddress: CharacterString[0..1]
+      postalCode: CharacterString[0..1]
+....
+
+where the *country*, *adminstrativeArea* (state or province), and *city* give a structuring of three of the political areas containing the POI, and the *postalCode* is the postal or zipcode that some countries use in addresses (varies by country). The *deliveryPoint* is an unstructured way of expressing the rest of the address. E.g., it might be "123 Main St., Unit 3" or "Market Square". The language of the address should be either a common language implicit in the entire dataset (e.g., English), or a language in use in the country in question.
+
+_TODO: check out ISO 19160:1 A conceptual model for addressing_
+
+==== Telephone Number
+
+The telephone number is the number to use to contact the POI to ask questions, get service, etc. The recommendation here is to use the *CI_Telephone* class from the Informative Annex:
+
+....
+   CI_Telephone
+      number: CharacterString[1..1]
+      numberType: CI_TelephoneTypeCode[0..1]
+....
+
+where the *number* contains the dial numerals needed to reach that place. The _ITU-T E.164 standard_ (https://www.itu.int/rec/T-REC-E.164[ref]) specifies a suitable format for telephone numbers. It starts with a recommended *+* sign, followed by up to fifteen digits (with no spaces or other punctuation). The digits will typically be a country code, then an area code, then a local number. For example, the US local number 555-1234 with an area code of 212 would be represented by this character string:
+
+....
+   +12125551234
+....
+
+The optional *numberType* is a one of *facsimile*, *sms*, *voice*, where *voice* is the default if the *numberType* is left out.
+
+==== Opening Hours
+
+The "opening hours" of a POI are the times when the POI is "open for business", or, more generally just the times at which the general public can visit a POI. There may be more than one open interval on a day (e.g., meal times for a restaurant). Often, opening hours can be different for each day of the week, but are the same week after week. But occasionally POIs have more complicated opening hours (e.g., "closed the first Monday of every month from May to October"). Also, POIs often have special hours for vacations and holidays.
+
+There are several standards to choose from to express business hours. A simple standard, which covers the usual case of weekly hours that repeat, is the Schema.org *openingHours* property (https://schema.org/openingHours[ref]). This standard also assumes that the timezone of the opening hours is clear (presumably, the timezone of the POI in question). An example of opening hours expressed in this format is:
+
+....
+   openingHours: Tu-Fr 9:00-17:00
+   openingHours: Sa,Su 9:00-19:00
+....
+
+A more general standard, which handles non-weekly repeating as well as exceptions for vacations, holidays, etc., is the _iCalendar_ specification (https://www.rfc-editor.org/rfc/rfc5545[RFC 5545]), in particular its _Calendar Availability_ component (https://www.rfc-editor.org/rfc/rfc7953[RFC 7953]). While one could specify an entire calendar using these standards, the needs of specifying opening hours are served well enough by just giving the Availability part. For example, to specify opening hours in France that one might informally specify as "M: 11am-7:30pm, T-Sat: 10am-7:30pm, Sun: closed; closed Aug 1 - Aug 31", the value according this this standard would be:
+
+....
+   openingHours:
+      BEGIN:VAVAILABILITY
+      UID:uid11
+      DTSTAMP:20220101T000000Z
+      PRIORITY:0
+      BEGIN:AVAILABLE
+      UID:uid12
+      DTSTART;TZID=Europe/Paris:20220103T110000
+      DTEND;TZID=Europe/Paris:20220103T193000
+      RRULE;FREQ=WEEKLY;BYDAY=MO
+      END:AVAILABLE
+      BEGIN:AVAILABLE
+      UID:uid13
+      DTSTART;TZID=Europe/Paris:20220104T100000
+      DTEND;TZID=Europe/Paris:20220104T193000
+      RRULE;FREQ=WEEKLY;BYDAY=TU,WE,TH,FR,SA
+      END:AVAILABLE
+      END:VAVALABILITY
+      BEGIN:VAVAILABILITY
+      UID:uid14
+      DTSTAMP:20220101T000000Z
+      PRIORITY:5
+      BEGIN:AVAILABLE
+      UID:uid15
+      DTSTART;TZID=Europe/Paris:20220801T000000
+      DTEND;TZID=Europe/Paris:20220831T235959
+      RRULE;FREQ=YEARLY;BYMONTH=8
+      END:AVAILABLE
+      END:VAVALABILITY
+....
+
+The increased expressability of the Calendar Availability standard comes at the expense of verboseness, so implementers might like a choice between the two standards.
+
+There is no class in the Informative Annex for Opening Hours. A suggested conceptual model for Opening Hours that offers the choice between the above two standards is:
+
+....
+   OpeningHours
+     openingHoursLines: CharacterString[0..]
+     openingHoursFormat: OpeningHoursFormatCode[0..1]
+....
+
+where *OpeningHoursFormatCode* is a *CodeList* with literals *schemadotorg* and *icalendaravailability*, with the default being *schemadotorg*. Note that while technically the Calendar Availability value is one string, it is inconvenient to deal with such a long value (with line breaks) in JSON, so it is convenient to have the value be a sequence of strings that represent lines to be concatenated together, with line breakes between them, in order to form the actual specification string.  Similarly, the the schema.org format, multiple lines are convenient to be able to represent different weekday ranges that have differing time reanges.
+
+One of the two methods described earlier -- Using POIProperty or Extending the Implementation Schema -- could be used. If using the latter and using JSON for implementation, the recommendation is to use this additional schema:
+
+....
+   "openingHours": {
+      "openingHoursLines: [
+         "line" : "string"
+      ],
+      "openingHoursFormat": "string"
+   }
+....
+
+==== Category
+
+The "Category" of a POI is a word that describes the main purpose, use, or description of the POI. It is a word that would fill in the blank in the statement: "This POI is a +_______+". Example categories might be *School* or *Clothing Store*. Usually one would like the most specific category that applies (e.g.,. preferring *Men's Clothing Store* over *Clothing Store*, but the latter over *Store*).
+
+There are tens of thousands of possible categories, and there is no generally accepted list that this recommendation can confidently point to. Some examples of some standard category lists are:
+
+NAICS::
+   The North American Industry Classification System. This is used by the US Census to classify businesses according to their economic activity. They are numeric codes with English language descriptors. While they are meant to classify activities that are not necessarily connected to particular POIs, this classification system is still applicable to POIs, though maybe not at the deepest level of specificity desired. https://www.census.gov/naics/[ref]
+
+OpenStreetMap::
+   Open Street Map uses a "Free tagging system" to associate multiple key/value pairs with features (which could be POIs). While not comprehensive and endlessly extensible, it is usually possible to find a +key=attribute+ string that could be used as a category: e.g., +building=stadium+. +craft=winery+, or +shop=butcher+. https://wiki.openstreetmap.org/wiki/Map_features[ref]
+
+OGC Indoor Mapping Occupant Category::
+   The OGC Indoor Mapping OGC Community standard (https://docs.ogc.org/cs/20-094/index.html[ref]) has an https://docs.ogc.org/cs/20-094/Categories/index.html#occupant[*Occupant category*] list that has a number of useful categories for POIs.
+
+GeoNames Ontology::
+   The GeoNames geographic database (https://www.geonames.org/[ref]) has an http://www.geonames.org/ontology/documentation.html[OWL ontology] for Features (which are akin to POIs). It has many kinds of POIs but not many types of commercial shops and restaurants.
+
+None of these is comprehensive enough or granular enough to serve the use case of "I'm looking for a POI that offers this product, service or experience" for the full range of things people need to find. In the absence of anything better, the NAICS list seems best and the recommendation would be to use that as the code list. However, in order to allow for ultimate flexibility, the following schmea is recommended.:
+
+....
+   Category
+      category: CharacterString[0..1]
+      categorySystem: CategorySystemCode[0..1]
+....
+
+where *CategorySystemCode* is a *CodeList* with literals *naics*, *osm*, *ogcindoor*, *geonames*, and *custom*, where *custom* is the default if none is listed, and means that the category system is basically freeform (recommended as English language text).
+
+One of the two methods described earlier -- Using POIProperty or Extending the Implementation Schema -- could be used to use this class. If using the latter and using JSON for implementation, the recommendation is to use this additional schema:
+
+....
+   "category": {
+      "category" : "string"
+      "categorySystem": "string"
+   }
+....
+
+
