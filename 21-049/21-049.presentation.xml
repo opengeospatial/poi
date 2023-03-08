@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (OGC Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2022-11-09</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2023-03-08</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
 <name>Organization One</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Organization Two</name>
@@ -13,7 +13,7 @@
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
 </organization></contributor><edition>1.0</edition><version><draft>0.1.1</draft></version><language current="true">en</language><script current="true">Latn</script><abstract><p>&#x3c;Insert Abstract Text here&#x3e;</p>
-</abstract><status><stage language="">draft</stage><stage language="en">Draft</stage></status><copyright><from>2022</from><owner><organization>
+</abstract><status><stage language="">draft</stage><stage language="en">Draft</stage></status><copyright><from>2023</from><owner><organization>
 <name>Open Geospatial Consortium</name>
 </organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>html</keyword><ext><doctype language="">standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Table of contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
 </localized-string><localized-string key="internal_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
@@ -31,8 +31,8 @@
     <clause>
       <title depth="1">Copyright notice</title>
 
-      <p align="center" id="_609a02a1-fa53-7a69-1cb9-ff2ed59292e2">Copyright
-        © 2022 Open Geospatial Consortium<br/>
+      <p align="center" id="_4380411b-aa89-cc2d-d393-9800128f1de1">Copyright
+        © 2023 Open Geospatial Consortium<br/>
         To obtain additional rights of use, visit
         <link target="http://www.ogc.org/legal/">http://www.ogc.org/legal/</link></p>
     </clause>
@@ -147,7 +147,7 @@
   </feedback-statement>
 </boilerplate>
 <preface><abstract id="_abstract" displayorder="1"><title depth="1">I.<tab/>Abstract</title><p id="_ea8b918b-259f-ad32-41cd-bf6720709423">&#x3c;Insert Abstract Text here&#x3e;</p>
-</abstract><clause id="_f82fdc54-908b-4686-9793-308207c4bcf4" type="keywords" displayorder="2">
+</abstract><clause id="_f3ef833d-52b1-43aa-911a-743c8b53f179" type="keywords" displayorder="2">
 <title depth="1">II.<tab/>Keywords</title>
 <p>The following are keywords to be used by search engines and
     document catalogues.</p>
@@ -160,7 +160,7 @@
 <p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_280fac2a-66ea-44d1-aa21-7d4fe8d4decf" type="submitting_orgs" displayorder="5">
+</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_8569e28e-4977-4a88-9e3f-ecc16a8bef22" type="submitting_orgs" displayorder="5">
 <title depth="1">V.<tab/>Submitting Organizations</title>
 <p>The following organizations submitted this Document to the
    Open Geospatial Consortium (OGC):</p>
@@ -227,541 +227,504 @@
 
 
 <terms id="_terms_and_definitions" obligation="normative" displayorder="8">
-<title depth="1">4.<tab/>Terms and definitions</title><p id="_ee54798a-6d3c-92e7-3294-4b4b783213f1">No terms and definitions are listed in this document.</p>
+<title depth="1">4.<tab/>Terms and definitions</title><p id="_7fe04b5b-db41-5d9b-ebe1-463b3a0c16c9">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+<p id="_e0235fe8-8273-26b4-faeb-a580ad58929f">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+<p id="_1448dc16-8929-d666-6525-0249826c75e3">For the purposes of this document, the following additional terms and definitions apply.</p>
 
-<p id="_e121d56d-3d8e-dcc1-f805-ab86e97f8faa">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+<p id="_a776ee80-dee3-5c69-b0d3-ada492773684">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
 
-<p id="_0562efc9-6d75-d498-e3d0-459c7aa50c71">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+<p id="_7cd6d3f9-4044-4c86-7190-31c1d70562a8">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
 
-<p id="_850da6d6-65b5-d326-1cf4-9f80a7b1c216">For the purposes of this document, the following additional terms and definitions apply.</p>
+<p id="_a1e71a53-230a-1bfe-81a9-98770b7317fd">For the purposes of this document, the following additional terms and definitions apply.</p>
 
-<dl id="application-schema"><dt>application schema</dt>
-<dd><p id="_5b75cf90-8302-ddff-8d40-8d30aea816b2"><em>conceptual schema</em> (<xref target="conceptual-schema">Definition List  8</xref>) for data required by one or more applications.</p>
-</dd>
-</dl>
+<term id="application-schema"><name>4.1.</name><preferred><strong>application schema::</strong></preferred>
+<definition><p id="_1070beaf-68e7-c49c-d644-3438223cfbd5"><em>conceptual schema</em> (<xref target="conceptual-schema">Clause 4.8</xref>) for data required by one or more applications.</p></definition>
 
-<note id="_b8e7fa46-3518-9c81-1952-6737b4a5e7b9"><name>NOTE  1</name><p id="_8fca0de1-4461-39d0-73ae-5821e25c33f7">An <em>application schema</em> (<xref target="application-schema">Definition List  1</xref>) contains selected parts of the base schemas presented in the ORM Information Viewpoint.</p>
-</note>
 
-<note id="_696fb8d1-3c2d-9fc9-a076-d588b0087b27"><name>NOTE  2</name><p id="_326aa5bc-8ca1-466d-a216-07f33fe46f09">Designers of <em>application schemas</em> (<xref target="application-schema">Definition List  1</xref>) may extend or restrict the types defined in the base schemas to define appropriate types for an application <em>domain</em> (<xref target="domain">Definition List  15</xref>).</p>
-</note>
 
-<note id="_64380f31-da1b-2a67-636d-3c693e32c0a3"><name>NOTE  3</name><p id="_82aafb60-a99d-98db-edbf-4e07c0eca318"><em>Application schemas</em> (<xref target="application-schema">Definition List  1</xref>) are information models for a specific information community.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19101-1:2014" type="inline" citeas=""><localityStack>
+
+
+
+
+ <termnote id="_8eeb0ab7-b1ed-76d2-00eb-849163fb088a"><name>Note 1 to entry</name><p id="_561e1952-8db2-1a1a-e816-8b3d40c5c0f5">An <em>application schema</em> (<xref target="application-schema">Clause 4.1</xref>) contains selected parts of the base schemas presented in the ORM Information Viewpoint.</p>
+</termnote><termnote id="_28c6c9c5-d458-33a6-4a4c-a696eb6929a9"><name>Note 2 to entry</name><p id="_7aeb4215-14b2-cfdf-34ad-0476af157b79">Designers of <em>application schemas</em> (<xref target="application-schema">Clause 4.1</xref>) may extend or restrict the types defined in the base schemas to define appropriate types for an application <em>domain</em> (<xref target="domain">Clause 4.15</xref>).</p>
+</termnote><termnote id="_c125f5be-675c-d4db-8eed-868cf7dd9210"><name>Note 3 to entry</name><p id="_bb730aa4-baa8-9b6b-ee95-6a10da8250bd"><em>Application schemas</em> (<xref target="application-schema">Clause 4.1</xref>) are information models for a specific information community.</p>
+</termnote><termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19101-1" type="inline" citeas="ISO 19101-1"><localityStack>
     <locality type="clause">
       <referenceFrom>4.1.2</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.1.2</origin>]</termsource>
+  </localityStack>ISO 19101-1,  Clause 4.1.2</origin>, modified
+ – OGC Definitions Register at <link target="http://www.opengis.net/def/glossary/term/ApplicationSchema"/>]</termsource></term>
 
-<dl id="attribute"><dt>attribute</dt>
-<dd><p id="_26f40488-1627-68d9-d3c9-fea23e2cc6f0">named <em>property</em> (<xref target="property">Definition List  39</xref>) of an entity</p>
-</dd>
-</dl>
+<term id="attribute"><name>4.2.</name><preferred><strong>attribute::</strong></preferred>
+<definition><p id="_3487edb4-6a23-ada3-a565-d20f5df0b9d8">named <em>property</em> (<xref target="property">Clause 4.41</xref>) of an entity</p></definition>
 
-<note id="_12b85ec5-c7cc-84ba-db5f-18b801ab48fe"><name>NOTE  4</name><p id="_9d0ea985-6048-9eea-690b-a2c9f3ef80c9">Describes a geometrical, topological, thematic, or other characteristic of an entity.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO/IEC2382:2015" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_84019e90-1b92-2d72-c555-b101f23f2c5f"><name>Note 1 to entry</name><p id="_8675295e-6033-ce2d-84db-4321f59db9a2">Describes a geometrical, topological, thematic, or other characteristic of an entity.</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO/IEC2382" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>2121440</referenceFrom>
     </locality>
-  </localityStack>,  Clause 2121440</origin>]</termsource>
+  </localityStack>,  Clause 2121440</origin>]</termsource></term>
 
-<dl id="class"><dt>class</dt>
-<dd><p id="_0326a011-1992-9cb1-262d-db26420fd731">description of a set of <em>objects</em> (<xref target="object">Definition List  31</xref>) that share the same <em>attributes</em> (<xref target="attribute">Definition List  2</xref>), <em>operations</em> (<xref target="operation">Definition List  33</xref>), methods, relationships, and semantics</p>
-</dd>
-</dl>
+<term id="class"><name>4.3.</name><preferred><strong>class::</strong></preferred>
+<definition><p id="_af39c24e-df81-26bb-070e-e075f3d8fb04">description of a set of <em>objects</em> (<xref target="object">Clause 4.31</xref>) that share the same <em>attributes</em> (<xref target="attribute">Clause 4.2</xref>), <em>operations</em> (<xref target="operation">Clause 4.33</xref>), methods, relationships, and semantics</p></definition>
 
-<note id="_9244cd7d-18f9-4c7b-de97-2057789dbe90"><name>NOTE  5</name><p id="_6c15349f-1494-27e7-2c3f-fb1973368c20">A <em>class</em> (<xref target="class">Definition List  3</xref>) may use a set of interfaces to specify collections of <em>operations</em> (<xref target="operation">Definition List  33</xref>) it provides to its environment.
+
+
+
+ <termnote id="_68ce63a8-df01-e71a-903b-c49d0f215183"><name>Note 1 to entry</name><p id="_6d8d3379-db58-4306-d526-d0e21a577605">A <em>class</em> (<xref target="class">Clause 4.3</xref>) may use a set of interfaces to specify collections of <em>operations</em> (<xref target="operation">Clause 4.33</xref>) it provides to its environment.
 The term was first used in this way in the general theory of object-oriented programming, and later adopted for use in this same sense in UML.</p>
-</note>
-
-<termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19103" type="inline" citeas=""><localityStack>
+</termnote><termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19103" type="inline" citeas="ISO 19103"><localityStack>
     <locality type="clause">
       <referenceFrom>4.27</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.27</origin>, modified
- – Note 1 to entry has been added from ISO 19117:2012, 4.2]</termsource>
+  </localityStack>ISO 19103,  Clause 4.27</origin>, modified
+ – Note 1 to entry has been added from ISO 19117:2012, 4.2]</termsource></term>
 
-<dl id="code"><dt>code</dt>
-<dd><p id="_6ed49de9-e9d6-4d17-5d40-803b992061a7">representation of a label according to a specified scheme</p>
-</dd>
-</dl>
+<term id="code"><name>4.4.</name><preferred><strong>code::</strong></preferred>
+<definition><p id="_59b75120-75a2-3d82-7805-61aba88f4abe">representation of a label according to a specified scheme</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19118:2011" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19118" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>4.3</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.3</origin>]</termsource>
+  </localityStack>,  Clause 4.3</origin>]</termsource></term>
 
-<dl id="codelist"><dt>codelist</dt>
-<dd><p id="_e2055f3a-413f-b7ab-f69e-08f679ac6afd">value <em>domain</em> (<xref target="domain">Definition List  15</xref>) including a <em>code</em> (<xref target="code">Definition List  4</xref>) for each permissible value.</p>
-</dd>
-</dl>
+<term id="codelist"><name>4.5.</name><preferred><strong>codelist::</strong></preferred>
+<definition><p id="_3d9c8a21-1da8-a8b9-fbf9-3784169d68df">value <em>domain</em> (<xref target="domain">Clause 4.15</xref>) including a <em>code</em> (<xref target="code">Clause 4.4</xref>) for each permissible value.</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19136-1:2020(E)" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19136-1" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>3.1.7</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.1.7</origin>]</termsource>
+  </localityStack>,  Clause 3.1.7</origin>]</termsource></term>
 
-<dl id="concept"><dt>concept</dt>
-<dd><p id="_286e5e2a-bd07-464f-ff73-e4d915c2298c">unit of knowledge created by a unique combination of characteristics</p>
-</dd>
-</dl>
+<term id="concept"><name>4.6.</name><preferred><strong>concept::</strong></preferred>
+<definition><p id="_14dcafe1-e0a2-82e7-ce3d-a29eb9c90227">unit of knowledge created by a unique combination of characteristics</p></definition>
 
-<note id="_9e635363-5bf1-9dab-179e-eea6f7c429f4"><name>NOTE  6</name><p id="_aca107fb-34e7-1b34-2d91-ed92c6143cd0"><em>Concepts</em> (<xref target="concept">Definition List  6</xref>) are not necessarily bound to particular languages. They are, however, influenced by the social or cultural background which often leads to different categorizations.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO1087-1:2000" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_71fffeee-8777-355f-b223-5278304a4d8e"><name>Note 1 to entry</name><p id="_cc1b390d-1a28-6317-52b2-91f754855779"><em>Concepts</em> (<xref target="concept">Clause 4.6</xref>) are not necessarily bound to particular languages. They are, however, influenced by the social or cultural background which often leads to different categorizations.</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO1087-1" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>3.2.1</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.2.1</origin>]</termsource>
+  </localityStack>,  Clause 3.2.1</origin>]</termsource></term>
 
-<dl id="conceptual-model"><dt>conceptual model</dt>
-<dd><p id="_58f6a6c7-fb22-76b8-7006-c3257feb160b">model that defines <em>concepts</em> (<xref target="concept">Definition List  6</xref>) of a universe of discourse</p>
-</dd>
-</dl>
+<term id="conceptual-model"><name>4.7.</name><preferred><strong>conceptual model::</strong></preferred>
+<definition><p id="_cab134ed-dfe9-0aca-0765-866949b122ad">model that defines <em>concepts</em> (<xref target="concept">Clause 4.6</xref>) of a universe of discourse</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19101-1:2014" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19101-1" type="inline" citeas="ISO 19101-1"><localityStack>
     <locality type="clause">
       <referenceFrom>4.1.5</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.1.5</origin>]</termsource>
+  </localityStack>ISO 19101-1,  Clause 4.1.5</origin>]</termsource></term>
 
-<dl id="conceptual-schema"><dt>conceptual schema</dt>
-<dd><ol id="_6c8b6c4a-d16b-af93-7a9d-4bd8ae558c41" type="arabic"><li><p id="_fef24c62-fb61-0ed4-98f3-545896bf8fc0">formal description of a <em>conceptual model</em> (<xref target="conceptual-model">Definition List  7</xref>) [ISO 19101-1:2014, 4.1.6]</p>
+<term id="conceptual-schema"><name>4.8.</name><preferred><strong>conceptual schema::</strong></preferred>
+<definition><ol id="_a4b4c1bc-aa5a-b4f4-ddae-0458d034ff6d" type="arabic"><li><p id="_510347ae-0fe1-d74d-2f24-10e91a88abb3">formal description of a <em>conceptual model</em> (<xref target="conceptual-model">Clause 4.7</xref>) [ISO 19101-1:2014, 4.1.6]</p>
 </li>
-<li><p id="_e628cd95-a417-124e-5551-bbb4d66492f1">base schema. Formal description of the model of any geospatial information. <em>Application schemas</em> (<xref target="application-schema">Definition List  1</xref>) are built from <em>conceptual schemas</em> (<xref target="conceptual-schema">Definition List  8</xref>).</p>
+<li><p id="_1dd6415a-bc0c-16d4-e478-241d810dee35">base schema. Formal description of the model of any geospatial information. <em>Application schemas</em> (<xref target="application-schema">Clause 4.1</xref>) are built from <em>conceptual schemas</em> (<xref target="conceptual-schema">Clause 4.8</xref>).</p>
 </li>
-</ol>
-</dd>
-</dl>
+</ol></definition>
+
+ </term>
+
+<term id="coordinate"><name>4.9.</name><preferred><strong>coordinate::</strong></preferred>
+<definition><p id="_fcc83662-eeaf-8755-296f-69f83bac9458">one of a sequence of numbers designating the <em>position</em> (<xref target="position">Clause 4.40</xref>) of a <em>point</em> (<xref target="point">Clause 4.38</xref>)</p></definition>
 
 
-<dl id="coordinate"><dt>coordinate</dt>
-<dd><p id="_0c6a5bd0-d307-fba3-dd1d-30ba773e37b8">one of a sequence of numbers designating the <em>position</em> (<xref target="position">Definition List  38</xref>) of a <em>point</em> (<xref target="point">Definition List  36</xref>)</p>
-</dd>
-</dl>
 
-<note id="_1e9e70ba-3113-32d1-1b42-813bc1d79979"><name>NOTE  7</name><p id="_740f4478-2753-4e76-5093-8a6d6e260f55">In a spatial <em>coordinate reference system</em> (<xref target="coordinate-reference-system">Definition List  10</xref>), the <em>coordinate</em> (<xref target="coordinate">Definition List  9</xref>) numbers are qualified by units.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19111:2019(E)" type="inline" citeas=""><localityStack>
+ <termnote id="_80711590-ecfd-c473-e4e0-eb6de8ff93f0"><name>Note 1 to entry</name><p id="_43e934ca-f72f-a846-39c5-9a243868e856">In a spatial <em>coordinate reference system</em> (<xref target="coordinate-reference-system">Clause 4.10</xref>), the <em>coordinate</em> (<xref target="coordinate">Clause 4.9</xref>) numbers are qualified by units.</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19111" type="inline" citeas="ISO 19111"><localityStack>
     <locality type="clause">
       <referenceFrom>3.1.5</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.1.5</origin>]</termsource>
+  </localityStack>ISO 19111,  Clause 3.1.5</origin>]</termsource></term>
 
-<dl id="coordinate-reference-system"><dt>coordinate reference system</dt>
-<dd><p id="_3d50a911-1d36-65ec-690a-d87ec5479eb0">coordinate system that is related to an <em>object</em> (<xref target="object">Definition List  31</xref>) by a <em>datum</em> (<xref target="datum">Definition List  13</xref>)</p>
-</dd>
-</dl>
+<term id="coordinate-reference-system"><name>4.10.</name><preferred><strong>coordinate reference system::</strong></preferred>
+<definition><p id="_fc163026-bcdb-cef4-7375-c47759377fba">coordinate system that is related to an <em>object</em> (<xref target="object">Clause 4.31</xref>) by a <em>datum</em> (<xref target="datum">Clause 4.13</xref>)</p></definition>
 
-<note id="_504fc032-da62-3614-485e-a71e9021d457"><name>NOTE  8</name><p id="_fc93af89-e36b-3def-d0dc-70b6f8328778">For geodetic and vertical <em>datums</em> (<xref target="datum">Definition List  13</xref>), the <em>object</em> (<xref target="object">Definition List  31</xref>) will be the Earth.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19111:2019(E)" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_bea32495-4881-60f7-6496-3983b72c927e"><name>Note 1 to entry</name><p id="_d393b779-b3a7-d139-eb24-96db3cc35b7c">For geodetic and vertical <em>datums</em> (<xref target="datum">Clause 4.13</xref>), the <em>object</em> (<xref target="object">Clause 4.31</xref>) will be the Earth.</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19111" type="inline" citeas="ISO 19111"><localityStack>
     <locality type="clause">
       <referenceFrom>3.1.9</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.1.9</origin>]</termsource>
+  </localityStack>ISO 19111,  Clause 3.1.9</origin>]</termsource></term>
 
-<dl id="coordinate-system"><dt>coordinate system</dt>
-<dd><p id="_04f58bc0-b868-6981-23ec-e5ecda6d5571">set of mathematical rules for specifying how <em>coordinates</em> (<xref target="coordinate">Definition List  9</xref>) are to be assigned to <em>points</em> (<xref target="point">Definition List  36</xref>)</p>
-</dd>
-</dl>
+<term id="coordinate-system"><name>4.11.</name><preferred><strong>coordinate system::</strong></preferred>
+<definition><p id="_e03b42be-9c26-32dd-5b49-10d763888358">set of mathematical rules for specifying how <em>coordinates</em> (<xref target="coordinate">Clause 4.9</xref>) are to be assigned to <em>points</em> (<xref target="point">Clause 4.38</xref>)</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19111:2019(E)" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19111" type="inline" citeas="ISO 19111"><localityStack>
     <locality type="clause">
       <referenceFrom>3.1.11</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.1.11</origin>]</termsource>
+  </localityStack>ISO 19111,  Clause 3.1.11</origin>]</termsource></term>
 
-<dl id="data-type"><dt>data type</dt>
-<dd><p id="_de21c2c2-2c10-a208-a5ba-3b6d18b772df">specification of a value <em>domain</em> (<xref target="domain">Definition List  15</xref>) with <em>operations</em> (<xref target="operation">Definition List  33</xref>) allowed on values in this <em>domain</em> (<xref target="domain">Definition List  15</xref>)</p>
-</dd>
-</dl>
+<term id="data-type"><name>4.12.</name><preferred><strong>data type::</strong></preferred>
+<definition><p id="_5ed78b10-c93e-e37b-77eb-101f973a2289">specification of a value <em>domain</em> (<xref target="domain">Clause 4.15</xref>) with <em>operations</em> (<xref target="operation">Clause 4.33</xref>) allowed on values in this <em>domain</em> (<xref target="domain">Clause 4.15</xref>)</p></definition>
 
-<p id="_28b310ec-60ae-6099-6b8d-15500b320edc">[example] Integer, Real, Boolean, String, Date and SG Point (conversion of data into a series of <em>codes</em> (<xref target="code">Definition List  4</xref>)).</p>
 
-<note id="_d2e33181-0832-bbab-7253-6e56425c45eb"><name>NOTE  9</name><p id="_a7d2a67a-f12f-bb91-e058-0ee25a41d5a7">Data types include primitive predefined types and user-definable types.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19103:2015" type="inline" citeas=""><localityStack>
+
+
+
+ <termnote id="_0aa55eff-7d5b-4ccc-9778-f42e8d9ccd54"><name>Note 1 to entry</name><p id="_b066e799-de73-67f0-f525-5ffb530180af">Data types include primitive predefined types and user-definable types.</p>
+</termnote><termexample id="_ea7a5095-603a-748e-d354-4247adb78fc0"><name>Example </name><p id="_a7871f9a-a06c-4e71-6a01-68d583abc3f3">Integer, Real, Boolean, String, Date and SG Point (conversion of data into a series of <em>codes</em> (<xref target="code">Clause 4.4</xref>)).</p>
+</termexample><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19103" type="inline" citeas="ISO 19103"><localityStack>
     <locality type="clause">
       <referenceFrom>4.14</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.14</origin>]</termsource>
+  </localityStack>ISO 19103,  Clause 4.14</origin>]</termsource></term>
 
-<dl id="datum"><dt>dataum</dt>
-<dd><p id="_21761288-f4cf-b877-8fca-fcd0cfec973b">parameter or set of parameters that realize the <em>position</em> (<xref target="position">Definition List  38</xref>) of the origin, the scale, and the orientation of a <em>coordinate system</em> (<xref target="coordinate-system">Definition List  11</xref>)</p>
-</dd>
-</dl>
+<term id="datum"><name>4.13.</name><preferred><strong>dataum::</strong></preferred>
+<definition><p id="_5ed243ae-7243-1e5e-610c-f9198bdcde69">parameter or set of parameters that realize the <em>position</em> (<xref target="position">Clause 4.40</xref>) of the origin, the scale, and the orientation of a <em>coordinate system</em> (<xref target="coordinate-system">Clause 4.11</xref>)</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19111:2019(E)" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19111" type="inline" citeas="ISO 19111"><localityStack>
     <locality type="clause">
       <referenceFrom>3.1.15</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.1.15</origin>]</termsource>
+  </localityStack>ISO 19111,  Clause 3.1.15</origin>]</termsource></term>
 
-<dl id="direct-position"><dt>direct position</dt>
-<dd><p id="_afa276de-ff92-73fa-5795-5ebd1feab2a0"><em>position</em> (<xref target="position">Definition List  38</xref>) described by a single set of <em>coordinates</em> (<xref target="coordinate">Definition List  9</xref>) within a <em>coordinate reference system</em> (<xref target="coordinate-reference-system">Definition List  10</xref>)</p>
-</dd>
-</dl>
+<term id="direct-position"><name>4.14.</name><preferred><strong>direct position::</strong></preferred>
+<definition><p id="_80cc3e1a-479f-727b-e5ea-2eeebd89f6ae"><em>position</em> (<xref target="position">Clause 4.40</xref>) described by a single set of <em>coordinates</em> (<xref target="coordinate">Clause 4.9</xref>) within a <em>coordinate reference system</em> (<xref target="coordinate-reference-system">Clause 4.10</xref>)</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19136-1:2020(E)" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19136-1" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>3.1.20</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.1.20</origin>]</termsource>
+  </localityStack>,  Clause 3.1.20</origin>]</termsource></term>
 
-<dl id="domain"><dt>domain</dt>
-<dd><p id="_e3fa798a-51e2-8cc9-af2a-9b2e60a0f292">well-defined set</p>
-</dd>
-</dl>
+<term id="domain"><name>4.15.</name><preferred><strong>domain::</strong></preferred>
+<definition><p id="_53c8eea9-ad6a-654c-67a9-8b51b7bacc1c">well-defined set</p></definition>
 
-<note id="_96708cc6-6f1e-5a45-b5a6-7370af33883b"><name>NOTE  10</name><p id="_0ab0adae-423c-f975-fb47-23e71584f1a8"><em>Domains</em> (<xref target="domain">Definition List  15</xref>) are used to define the <em>domain</em> (<xref target="domain">Definition List  15</xref>) set and range set of <em>attributes</em> (<xref target="attribute">Definition List  2</xref>), operators and functions.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19109:2015" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_d0195955-2959-b753-2799-925b4f97c708"><name>Note 1 to entry</name><p id="_996e559a-8b92-8d73-dc9e-f9f8579e048a"><em>Domains</em> (<xref target="domain">Clause 4.15</xref>) are used to define the <em>domain</em> (<xref target="domain">Clause 4.15</xref>) set and range set of <em>attributes</em> (<xref target="attribute">Clause 4.2</xref>), operators and functions.</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19109" type="inline" citeas="ISO 19109"><localityStack>
     <locality type="clause">
       <referenceFrom>4.8</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.8</origin>]</termsource>
+  </localityStack>ISO 19109,  Clause 4.8</origin>]</termsource></term>
 
-<dl id="_a16e8a05-1599-1cd1-da91-6b3fb5d2ec5b"><dt>domain &#x3c;general vocabulary&#x3e;</dt>
-<dd><p id="_3555a8a5-e75a-d8fc-0f5e-1ba1385decab">distinct area of human knowledge to which a terminological entry is assigned</p>
-</dd>
-</dl>
+<term id="term-domain-_lt_general-vocabulary_gt___"><name>4.16.</name><preferred><strong>domain &#x3c;general vocabulary&#x3e;::</strong></preferred>
+<definition><p id="_671aa354-27bc-5a7f-fc31-3d1d102f06aa">distinct area of human knowledge to which a terminological entry is assigned</p></definition>
 
-<note id="_72bb1e08-5f75-f1b1-6cef-a84f945b81a4"><name>NOTE  11</name><p id="_3f75651b-0f2f-9f4a-d7f4-ff765c96a0aa">Within a database or other terminology collection, a set of <em>domains</em> (<xref target="domain">Definition List  15</xref>) will generally be defined. More than one <em>domain</em> (<xref target="domain">Definition List  15</xref>) can be associated with a given <em>concept</em> (<xref target="concept">Definition List  6</xref>).</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19104:2016" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_7938d0b4-1492-b6ad-aab9-a3ba0db0412a"><name>Note 1 to entry</name><p id="_e3a85ae9-31e1-33fd-56f9-72c198b0a4b9">Within a database or other terminology collection, a set of <em>domains</em> (<xref target="domain">Clause 4.15</xref>) will generally be defined. More than one <em>domain</em> (<xref target="domain">Clause 4.15</xref>) can be associated with a given <em>concept</em> (<xref target="concept">Clause 4.6</xref>).</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19104" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>4.11</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.11</origin>]</termsource>
+  </localityStack>,  Clause 4.11</origin>]</termsource></term>
 
-<dl id="_96869895-b177-1822-f54b-210ae5324f03"><dt>domain &#x3c;ontology&#x3e;</dt>
-<dd><p id="_7c3230ab-b2df-4960-f599-22a96177f66f">restriction to constrain the subject <em>class</em> (<xref target="class">Definition List  3</xref>) which participates in a subject-predicate-object triple</p>
-</dd>
-</dl>
+<term id="term-domain-_lt_ontology_gt___"><name>4.17.</name><preferred><strong>domain &#x3c;ontology&#x3e;::</strong></preferred>
+<definition><p id="_0c6c6432-397b-59ad-aa50-e4ed08b56b37">restriction to constrain the subject <em>class</em> (<xref target="class">Clause 4.3</xref>) which participates in a subject-predicate-object triple</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="19150-4:2019(E)" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="19150-4" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>3.1.12</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.1.12</origin>]</termsource>
+  </localityStack>,  Clause 3.1.12</origin>]</termsource></term>
 
-<dl id="_a868dc01-6e34-977f-9743-4e37ec815146"><dt>domain &#x3c;postal address&#x3e;</dt>
-<dd><p id="_0b48e731-b7d3-c49d-6fe9-cacbc28bdd52">an area in which a set of specific postal address types and postal address renderings is prescribed by postal operators</p>
-</dd>
-</dl>
+<term id="term-domain-_lt_postal-address_gt___"><name>4.18.</name><preferred><strong>domain &#x3c;postal address&#x3e;::</strong></preferred>
+<definition><p id="_1395396e-ef99-fcc6-5209-138e2baaf50d">an area in which a set of specific postal address types and postal address renderings is prescribed by postal operators</p></definition>
 
-<p id="_474faf93-8eb2-6ef3-92e0-e3afa2ffb97e">[example] The most typical example of a postal address <em>domain</em> (<xref target="domain">Definition List  15</xref>) is a country where a designated postal operator provides postal delivery services.</p>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19160-4:2017(E)" type="inline" citeas=""><localityStack>
+
+
+ <termexample id="_54410bdb-58a6-c377-dac8-8301324c4e9c"><name>Example </name><p id="_e61763c7-69af-add3-d64d-52540d2269fc">The most typical example of a postal address <em>domain</em> (<xref target="domain">Clause 4.15</xref>) is a country where a designated postal operator provides postal delivery services.</p>
+</termexample><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19160-4" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>3.14</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.14</origin>]</termsource>
+  </localityStack>,  Clause 3.14</origin>]</termsource></term>
 
-<dl id="feature"><dt>feature</dt>
-<dd><p id="_46b3d768-7bc0-4b6f-a5a5-7b2194cf01c5">abstraction of real-world phenomena</p>
-</dd>
-</dl>
+<term id="feature"><name>4.19.</name><preferred><strong>feature::</strong></preferred>
+<definition><p id="_d446b0fe-eca2-db8c-f733-f9be987ec700">abstraction of real-world phenomena</p></definition>
 
-<note id="_af7f21fa-b68f-7d47-5d49-8f6b4e002de7"><name>NOTE  12</name><p id="_291547ec-4bd6-9bf2-bcdc-3293fc947ad6">A <em>feature</em> (<xref target="feature">Definition List  19</xref>) may occur as a type or an instance. In this document, <em>feature</em> (<xref target="feature">Definition List  19</xref>) instance is meant unless otherwise specified.</p>
-</note>
 
-<termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19101-1" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_a63a701e-dbd3-96a0-3767-586884ac22d7"><name>Note 1 to entry</name><p id="_5d5e981e-943c-216f-75f4-65b5b393fe14">A <em>feature</em> (<xref target="feature">Clause 4.19</xref>) may occur as a type or an instance. In this document, <em>feature</em> (<xref target="feature">Clause 4.19</xref>) instance is meant unless otherwise specified.</p>
+</termnote><termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19101-1" type="inline" citeas="ISO 19101-1"><localityStack>
     <locality type="clause">
       <referenceFrom>4.1.11</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.1.11</origin>, modified
- – Note 1 to entry has been added from ISO 19156, 4.6]</termsource>
+  </localityStack>ISO 19101-1,  Clause 4.1.11</origin>, modified
+ – Note 1 to entry has been added from ISO 19156, 4.6]</termsource></term>
 
-<dl id="feature-type"><dt>feature type</dt>
-<dd><p id="_5fb4358b-e1bd-8080-fe73-4dda6515d63f"><em>class</em> (<xref target="class">Definition List  3</xref>) of <em>features</em> (<xref target="feature">Definition List  19</xref>) having common characteristics</p>
-</dd>
-</dl>
+<term id="feature-type"><name>4.20.</name><preferred><strong>feature type::</strong></preferred>
+<definition><p id="_cc645c31-a406-eee0-9f76-f469bc497c2b"><em>class</em> (<xref target="class">Clause 4.3</xref>) of <em>features</em> (<xref target="feature">Clause 4.19</xref>) having common characteristics</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19156" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19156" type="inline" citeas="ISO 19156:2011"><localityStack>
     <locality type="clause">
       <referenceFrom>4.7</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.7</origin>]</termsource>
+  </localityStack>ISO 19156:2011,  Clause 4.7</origin>]</termsource></term>
 
-<dl id="geometric-aggregate"><dt>geometric aggregate</dt>
-<dd><p id="_d112bd3c-05d9-859b-fc87-4c8b1d0cb01d">collection of <em>geometric objects</em> (<xref target="geometric-object">Definition List  25</xref>) that has no internal structure</p>
-</dd>
-</dl>
+<term id="geometric-aggregate"><name>4.21.</name><preferred><strong>geometric aggregate::</strong></preferred>
+<definition><p id="_2b268381-8ea7-4d6d-c167-2869907037a1">collection of <em>geometric objects</em> (<xref target="geometric-object">Clause 4.25</xref>) that has no internal structure</p></definition>
 
-<note id="_060ad7ad-547c-80ec-17f4-b2ac15dccd9a"><name>NOTE  13</name><p id="_fb4a5872-1d3e-cb15-285e-4d2a1b7998ce">No assumptions about the spatial relationships between the elements can be made.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107:2019(E)" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_48881efc-dcef-a8cb-e51a-3235d98cab9e"><name>Note 1 to entry</name><p id="_f5901b50-9d8b-2534-9811-89df8175c0ca">No assumptions about the spatial relationships between the elements can be made.</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107" type="inline" citeas="ISO 19107"><localityStack>
     <locality type="clause">
       <referenceFrom>3.45</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.45</origin>]</termsource>
+  </localityStack>ISO 19107,  Clause 3.45</origin>]</termsource></term>
 
-<dl id="geometric-boundary"><dt>geometric boundary</dt>
-<dd><p id="_304a62e5-669d-f1fd-f969-111da86343ef">boundary represented by a set of <em>geometric primitives</em> (<xref target="geometric-primitive">Definition List  26</xref>) that limits the extent of a <em>geometric object</em> (<xref target="geometric-object">Definition List  25</xref>)</p>
-</dd>
-</dl>
+<term id="geometric-boundary"><name>4.22.</name><preferred><strong>geometric boundary::</strong></preferred>
+<definition><p id="_fb7b6595-9858-55e2-d366-0c2b7a2edaec">boundary represented by a set of <em>geometric primitives</em> (<xref target="geometric-primitive">Clause 4.26</xref>) that limits the extent of a <em>geometric object</em> (<xref target="geometric-object">Clause 4.25</xref>)</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107:2019(E)" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107" type="inline" citeas="ISO 19107"><localityStack>
     <locality type="clause">
       <referenceFrom>3.46</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.46</origin>]</termsource>
+  </localityStack>ISO 19107,  Clause 3.46</origin>]</termsource></term>
 
-<dl id="geometric-complex"><dt>geometric complex</dt>
-<dd><p id="_7c2d8725-0776-bd55-7759-b15af3792a4b">set of disjoint <em>geometric primitives</em> (<xref target="geometric-primitive">Definition List  26</xref>) where the boundary of each <em>geometric primitive</em> (<xref target="geometric-primitive">Definition List  26</xref>) can be represented as the union of other <em>geometric primitives</em> (<xref target="geometric-primitive">Definition List  26</xref>) of smaller dimensions within the same set</p>
-</dd>
-</dl>
+<term id="geometric-complex"><name>4.23.</name><preferred><strong>geometric complex::</strong></preferred>
+<definition><p id="_717edfa5-04a8-d730-9bff-b67fbb1dc607">set of disjoint <em>geometric primitives</em> (<xref target="geometric-primitive">Clause 4.26</xref>) where the boundary of each <em>geometric primitive</em> (<xref target="geometric-primitive">Clause 4.26</xref>) can be represented as the union of other <em>geometric primitives</em> (<xref target="geometric-primitive">Clause 4.26</xref>) of smaller dimensions within the same set</p></definition>
 
-<note id="_2204ae25-b826-dc17-e0b7-771d2822a02c"><name>NOTE  14</name><p id="_8cf1598d-658e-7f30-b85f-d32c49b9ff00">The <em>geometric primitives</em> (<xref target="geometric-primitive">Definition List  26</xref>) in the set are disjoint in the sense that no <em>direct position</em> (<xref target="direct-position">Definition List  14</xref>) is interior to more than one <em>geometric primitive</em> (<xref target="geometric-primitive">Definition List  26</xref>). The set is closed under boundary <em>operations</em> (<xref target="operation">Definition List  33</xref>), meaning that for each element in the <em>geometric complex</em> (<xref target="geometric-complex">Definition List  23</xref>), there is a collection (also a <em>geometric complex</em> (<xref target="geometric-complex">Definition List  23</xref>)) of <em>geometric primitives</em> (<xref target="geometric-primitive">Definition List  26</xref>) that represents the boundary of that element. Recall that the boundary of a <em>point</em> (<xref target="point">Definition List  36</xref>) (the only 0D primitive <em>object</em> (<xref target="object">Definition List  31</xref>) type in geometry) is empty. Thus, if the largest dimension <em>geometric primitive</em> (<xref target="geometric-primitive">Definition List  26</xref>) is a solid (3D), the composition of the boundary operator in this definition terminates after at most three steps. It is also the case that the boundary of any <em>object</em> (<xref target="object">Definition List  31</xref>) is a cycle.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107:2019(E)" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_f7ea8f40-37a0-cafc-4729-eec0cd764d64"><name>Note 1 to entry</name><p id="_1fd9bf08-e7fc-9814-6d25-cd38dbf92d67">The <em>geometric primitives</em> (<xref target="geometric-primitive">Clause 4.26</xref>) in the set are disjoint in the sense that no <em>direct position</em> (<xref target="direct-position">Clause 4.14</xref>) is interior to more than one <em>geometric primitive</em> (<xref target="geometric-primitive">Clause 4.26</xref>). The set is closed under boundary <em>operations</em> (<xref target="operation">Clause 4.33</xref>), meaning that for each element in the <em>geometric complex</em> (<xref target="geometric-complex">Clause 4.23</xref>), there is a collection (also a <em>geometric complex</em> (<xref target="geometric-complex">Clause 4.23</xref>)) of <em>geometric primitives</em> (<xref target="geometric-primitive">Clause 4.26</xref>) that represents the boundary of that element. Recall that the boundary of a <em>point</em> (<xref target="point">Clause 4.38</xref>) (the only 0D primitive <em>object</em> (<xref target="object">Clause 4.31</xref>) type in geometry) is empty. Thus, if the largest dimension <em>geometric primitive</em> (<xref target="geometric-primitive">Clause 4.26</xref>) is a solid (3D), the composition of the boundary operator in this definition terminates after at most three steps. It is also the case that the boundary of any <em>object</em> (<xref target="object">Clause 4.31</xref>) is a cycle.</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107" type="inline" citeas="ISO 19107"><localityStack>
     <locality type="clause">
       <referenceFrom>3.47</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.47</origin>]</termsource>
+  </localityStack>ISO 19107,  Clause 3.47</origin>]</termsource></term>
 
-<dl id="geometric-dimension"><dt>geometric dimension</dt>
-<dd><p id="_2a279752-02e5-d71c-8ae8-7caccf925a22">lagest number n such that each <em>poin</em> (<xref target="point">Definition List  36</xref>) in a set of <em>points</em> (<xref target="point">Definition List  36</xref>) can be associated with a subset that has that point in its interior and is topologically isomporphic to 𝔼n, Euclidean n-space</p>
-</dd>
-</dl>
+<term id="geometric-dimension"><name>4.24.</name><preferred><strong>geometric dimension::</strong></preferred>
+<definition><p id="_106e9dbe-09b0-c85c-2e5a-0aff72b3ca6e">lagest number n such that each <em>poin</em> (<xref target="point">Clause 4.38</xref>) in a set of <em>points</em> (<xref target="point">Clause 4.38</xref>) can be associated with a subset that has that point in its interior and is topologically isomporphic to 𝔼n, Euclidean n-space</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107:2019(E)" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107" type="inline" citeas="ISO 19107"><localityStack>
     <locality type="clause">
       <referenceFrom>3.48</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.48</origin>]</termsource>
+  </localityStack>ISO 19107,  Clause 3.48</origin>]</termsource></term>
 
-<dl id="geometric-object"><dt>geometric object</dt>
-<dd><p id="_4c0aa50c-64d8-ab15-dd06-35cdda08a80b">spatial <em>object</em> (<xref target="object">Definition List  31</xref>) representing a <em>geometric set</em> (<xref target="geometric-set">Definition List  27</xref>)</p>
-</dd>
-</dl>
+<term id="geometric-object"><name>4.25.</name><preferred><strong>geometric object::</strong></preferred>
+<definition><p id="_22831e1a-1e62-02ea-cfc3-29984988d05c">spatial <em>object</em> (<xref target="object">Clause 4.31</xref>) representing a <em>geometric set</em> (<xref target="geometric-set">Clause 4.27</xref>)</p></definition>
 
-<note id="_634986fe-cbbd-fee1-ed6c-aa9500b7c880"><name>NOTE  15</name><p id="_a344f100-9e52-bf4c-19bd-9c70a1f51780">A <em>geometric object</em> (<xref target="geometric-object">Definition List  25</xref>) consists of a <em>geometric primitive</em> (<xref target="geometric-primitive">Definition List  26</xref>), a collection of <em>geometric primitives</em> (<xref target="geometric-primitive">Definition List  26</xref>), or a <em>geometric complex</em> (<xref target="geometric-complex">Definition List  23</xref>) treated as a single entity. A <em>geometric object</em> (<xref target="geometric-object">Definition List  25</xref>) may be the spatial representation of an <em>object</em> (<xref target="object">Definition List  31</xref>) such as a <em>feature</em> (<xref target="feature">Definition List  19</xref>) or a significant part of a <em>feature</em> (<xref target="feature">Definition List  19</xref>).</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107:2019(E)" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_b250689a-5097-a1ae-3de1-282c3e6186b1"><name>Note 1 to entry</name><p id="_fa86e02a-a961-ebc2-5bae-41baed1dc61d">A <em>geometric object</em> (<xref target="geometric-object">Clause 4.25</xref>) consists of a <em>geometric primitive</em> (<xref target="geometric-primitive">Clause 4.26</xref>), a collection of <em>geometric primitives</em> (<xref target="geometric-primitive">Clause 4.26</xref>), or a <em>geometric complex</em> (<xref target="geometric-complex">Clause 4.23</xref>) treated as a single entity. A <em>geometric object</em> (<xref target="geometric-object">Clause 4.25</xref>) may be the spatial representation of an <em>object</em> (<xref target="object">Clause 4.31</xref>) such as a <em>feature</em> (<xref target="feature">Clause 4.19</xref>) or a significant part of a <em>feature</em> (<xref target="feature">Clause 4.19</xref>).</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107" type="inline" citeas="ISO 19107"><localityStack>
     <locality type="clause">
       <referenceFrom>3.49</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.49</origin>]</termsource>
+  </localityStack>ISO 19107,  Clause 3.49</origin>]</termsource></term>
 
-<dl id="geometric-primitive"><dt>geometric primitive (geometry)</dt>
-<dd><p id="_19c3c3ff-f017-bd5f-26b1-900ce243db23"><em>geometric object</em> (<xref target="geometric-object">Definition List  25</xref>) representing a single, connected, homogeneous (isotopic) element of space</p>
-</dd>
-</dl>
+<term id="geometric-primitive"><name>4.26.</name><preferred><strong>geometric primitive (geometry)::</strong></preferred>
+<definition><p id="_eaf3beef-0d49-7840-12be-4ebb9d297628"><em>geometric object</em> (<xref target="geometric-object">Clause 4.25</xref>) representing a single, connected, homogeneous (isotopic) element of space</p></definition>
 
-<note id="_533ab48c-20b2-d330-bdf2-91c1028232f5"><name>NOTE  16</name><p id="_a9380b9e-a9d0-3c5b-f221-1ca360d418a2"><em>Geometric primitives</em> (<xref target="geometric-primitive">Definition List  26</xref>) are non-decomposed <em>objects</em> (<xref target="object">Definition List  31</xref>) that present information about geometric configuration. They include <em>points</em> (<xref target="point">Definition List  36</xref>), curves, surfaces, and solids. Many <em>geometric objects</em> (<xref target="geometric-object">Definition List  25</xref>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a <em>geometric primitive</em> (<xref target="geometric-primitive">Definition List  26</xref>) is topological open, since the boundary <em>points</em> (<xref target="point">Definition List  36</xref>) are not isotropic to the interior <em>points</em> (<xref target="point">Definition List  36</xref>). Geometry is assumed to be closed. For <em>points</em> (<xref target="poin">[poin]</xref>), the boundary is empty.</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107:2019(E)" type="inline" citeas=""><localityStack>
+
+
+ <termnote id="_c26d7a58-1f25-9780-1bbb-2d4d9126231f"><name>Note 1 to entry</name><p id="_600a4311-9c04-3e03-3883-1c1b5bb7c878"><em>Geometric primitives</em> (<xref target="geometric-primitive">Clause 4.26</xref>) are non-decomposed <em>objects</em> (<xref target="object">Clause 4.31</xref>) that present information about geometric configuration. They include <em>points</em> (<xref target="point">Clause 4.38</xref>), curves, surfaces, and solids. Many <em>geometric objects</em> (<xref target="geometric-object">Clause 4.25</xref>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a <em>geometric primitive</em> (<xref target="geometric-primitive">Clause 4.26</xref>) is topological open, since the boundary <em>points</em> (<xref target="point">Clause 4.38</xref>) are not isotropic to the interior <em>points</em> (<xref target="point">Clause 4.38</xref>). Geometry is assumed to be closed. For <em>points</em> (<xref target="poin">[poin]</xref>), the boundary is empty.</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107" type="inline" citeas="ISO 19107"><localityStack>
     <locality type="clause">
       <referenceFrom>3.50</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.50</origin>]</termsource>
+  </localityStack>ISO 19107,  Clause 3.50</origin>]</termsource></term>
 
-<dl id="geometric-set"><dt>geometric set</dt>
-<dd><p id="_9abad675-f118-0159-22aa-3678321d796c">set of <em>points</em> (<xref target="point">Definition List  36</xref>)</p>
-</dd>
-</dl>
+<term id="geometric-set"><name>4.27.</name><preferred><strong>geometric set::</strong></preferred>
+<definition><p id="_33bbea07-d5d8-cae5-c1b6-f3db5f397553">set of <em>points</em> (<xref target="point">Clause 4.38</xref>)</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107:2019(E)" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19107" type="inline" citeas="ISO 19107"><localityStack>
     <locality type="clause">
       <referenceFrom>3.53</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.53</origin>]</termsource>
+  </localityStack>ISO 19107,  Clause 3.53</origin>]</termsource></term>
 
-<dl id="location"><dt>location</dt>
-<dd><p id="_cf6c0f00-3a36-271d-b299-e8e5de21d519">particular <em>place</em> (<xref target="place">Definition List  34</xref>) or <em>position</em> (<xref target="position">Definition List  38</xref>)</p>
-</dd>
-</dl>
+<term id="location"><name>4.28.</name><preferred><strong>location::</strong></preferred>
+<definition><p id="_a87c7c12-88c3-f88a-219b-378099eab60f">particular <em>place</em> (<xref target="place">Clause 4.34</xref>) or <em>position</em> (<xref target="position">Clause 4.40</xref>)</p></definition>
 
-<note id="_f5e0796f-3cd3-78bc-7e75-ce104a950c17"><name>NOTE  17</name><p id="_0beba1b8-5a17-f569-8509-20f569704d1a">A <em>location</em> (<xref target="location">Definition List  28</xref>) identifies a geographic <em>place</em>.</p>
-</note>
 
-<note id="_d224798b-17af-d54b-3c60-b011bf0b298c"><name>NOTE  18</name><p id="_bad7a910-dc6e-e692-edba-aee4feb070d5"><em>Locations</em> (<xref target="location">Definition List  28</xref>) are physically fixed <em>points</em> (<xref target="point">Definition List  36</xref>), typically on the surface of the Earth, although <em>locations</em> (<xref target="location">Definition List  28</xref>) can be relative to other, non-earth centric coordinate reference systems.</p>
-</note>
 
-<note id="_307afc24-9c21-e10f-b458-0c6281439575"><name>NOTE  19</name><p id="_53655a9c-3442-601f-e9e0-00c90700be48"><em>Locations</em> (<xref target="location">Definition List  28</xref>) can be a single <em>point</em> (<xref target="point">Definition List  36</xref>), a centroid, a minimum bounding rectangle, or a set of vectors.</p>
-</note>
 
-<note id="_b0cceabd-278f-29dd-a17a-2a085847f16f"><name>NOTE  20</name><p id="_10e65aaf-6b6c-556a-0d48-7e715b0edbd0">A <em>location</em> (<xref target="location">Definition List  28</xref>) should be persistent over time and does not change.</p>
-</note>
 
-<note id="_7d5da417-b634-7101-0385-59e8a1dba06d"><name>NOTE  21</name><p id="_28c90f0a-a0fc-525a-aa32-c32f07e7cc20">Multiple <em>POIs</em> (<xref target="point-of-interest">Definition List  37</xref>) may share the same <em>location</em> (<xref target="location">Definition List  28</xref>).</p>
-</note>
 
-<note id="_ee09869c-7edf-ed0a-ae43-4a08964ac7a8"><name>NOTE  22</name><p id="_8bbe2311-1d3f-9564-ca52-714f764c88f5">When a <em>POI</em> (<xref target="point-of-interest">Definition List  37</xref>) physically moves it is understood to have acquired a new <em>location</em> (<xref target="location">Definition List  28</xref>).</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19112:2019(E)" type="inline" citeas=""><localityStack>
+
+
+
+
+
+
+
+ <termnote id="_66db0c06-e5ab-2513-05da-57f66aab9d81"><name>Note 1 to entry</name><p id="_87840af0-4aad-ad33-4509-fa5cd184e6d5">A <em>location</em> (<xref target="location">Clause 4.28</xref>) identifies a geographic <em>place</em>.</p>
+</termnote><termnote id="_1ba4dce0-8a80-18ee-546a-c65540cd5bda"><name>Note 2 to entry</name><p id="_43a2b9bb-7e18-d458-181c-3af7ed556900"><em>Locations</em> (<xref target="location">Clause 4.28</xref>) are physically fixed <em>points</em> (<xref target="point">Clause 4.38</xref>), typically on the surface of the Earth, although <em>locations</em> (<xref target="location">Clause 4.28</xref>) can be relative to other, non-earth centric coordinate reference systems.</p>
+</termnote><termnote id="_d26778b3-f315-3279-a376-82ba5ea01721"><name>Note 3 to entry</name><p id="_cbaf0940-1906-d527-4d89-c50845f63b33"><em>Locations</em> (<xref target="location">Clause 4.28</xref>) can be a single <em>point</em> (<xref target="point">Clause 4.38</xref>), a centroid, a minimum bounding rectangle, or a set of vectors.</p>
+</termnote><termnote id="_9ccdbbbf-95ce-5b90-dc45-4bc4fbcea2af"><name>Note 4 to entry</name><p id="_43681eee-c8de-1747-bdb2-2ff470cdedee">A <em>location</em> (<xref target="location">Clause 4.28</xref>) should be persistent over time and does not change.</p>
+</termnote><termnote id="_eb86a896-0b41-9b3a-99ba-8563c6cbbf4e"><name>Note 5 to entry</name><p id="_1e36cd02-b6e3-42a1-a462-2279e3795f00">Multiple <em>POIs</em> (<xref target="point-of-interest">Clause 4.39</xref>) may share the same <em>location</em> (<xref target="location">Clause 4.28</xref>).</p>
+</termnote><termnote id="_de62bd2d-870f-5a8d-c1f5-25d209aa27e9"><name>Note 6 to entry</name><p id="_0ab0957c-55d3-29bc-1872-e471211783a3">When a <em>POI</em> (<xref target="point-of-interest">Clause 4.39</xref>) physically moves it is understood to have acquired a new <em>location</em> (<xref target="location">Clause 4.28</xref>).</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19112" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>3.1.3</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.1.3</origin>]</termsource>
+  </localityStack>,  Clause 3.1.3</origin>]</termsource></term>
 
-<dl id="metaclass"><dt>metaclass</dt>
-<dd><p id="_d74c97b6-41d7-401c-cf21-3e1b3c62bf47">a <em>class</em> (<xref target="class">Definition List  3</xref>) whose instances are also <em>classes</em> (<xref target="class">Definition List  3</xref>)</p>
-</dd>
-</dl>
+<term id="metaclass"><name>4.29.</name><preferred><strong>metaclass::</strong></preferred>
+<definition><p id="_25b7579f-7ec9-a574-e351-6f8b81180c62">a <em>class</em> (<xref target="class">Clause 4.3</xref>) whose instances are also <em>classes</em> (<xref target="class">Clause 4.3</xref>)</p></definition>
 
+ </term>
 
-<dl id="method"><dt>method</dt>
-<dd><p id="_0a186e1d-90d8-edfc-3fe5-4bb7d30dc861">implementation of an <em>operation</em> (<xref target="operation">Definition List  33</xref>)</p>
-</dd>
-</dl>
-
-<note id="_d8059e93-83bf-20ef-d5d2-c451329563ef"><name>NOTE  23</name><p id="_c13836b9-832e-9c0e-e185-b54928fd442e">It specifies the algorithm or procedure associated with an <em>operation</em> (<xref target="operation">Definition List  33</xref>).</p>
-</note>
-
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO/IEC19501:2005" type="inline" citeas=""/>]</termsource>
-
-<dl id="object"><dt>object</dt>
-<dd><p id="_6356e8de-4017-7aa0-efcc-87826ecc2374">entity with a well defined boundary and identity that encapsulates state and behaviour</p>
-</dd>
-</dl>
-
-<note id="_94ee9cdb-39f2-47a3-3119-845dd1ffa262"><name>NOTE  24</name><p id="_8240c55c-2ff6-bbe9-8767-33b91d09ba84">This term was first used in this way in the general theory of object oriented programming, and later adopted for use in this same sense in UML. An <em>object</em> (<xref target="object">Definition List  31</xref>) is an instance of a <em>class</em> (<xref target="class">Definition List  3</xref>). <em>Attributes</em> (<xref target="attribute">Definition List  2</xref>) and relationships represent state. <em>Operations</em> (<xref target="operation">Definition List  33</xref>), methods, and state machines represent behavior.</p>
-</note>
-
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="OMG/UML UML Semantics" type="inline" citeas="">version 1.3, 1997.</origin>]</termsource>
-
-<dl id="OGC-implementation-specification"><dt>OGC implementation specification</dt>
-<dd><p id="_55bbcd80-ab56-924e-347c-2570762dfc60"><em>OGC implementation specification</em> (<xref target="OGC-implementation-specification">Definition List  32</xref>) document type defined on the OGC Document Types Register</p>
-</dd>
-</dl>
+<term id="method"><name>4.30.</name><preferred><strong>method::</strong></preferred>
+<definition><p id="_1d068c4c-7856-8f07-6dfd-ed01a63865e3">implementation of an <em>operation</em> (<xref target="operation">Clause 4.33</xref>)</p></definition>
 
 
-<dl id="operation"><dt>operation</dt>
-<dd><p id="_033b733b-c112-ff94-7740-aa033a9d7244">specification of a transformation or query that an <em>object</em> (<xref target="object">Definition List  31</xref>) may be called to execute</p>
-</dd>
-</dl>
 
-<note id="_53cf71da-b453-be25-c90e-c6c2d667c7e2"><name>NOTE  25</name><p id="_033cc535-c2c9-143c-7e14-bf0091f94714">An <em>operation</em> (<xref target="operation">Definition List  33</xref>) has a name and a list of parameters.</p>
-</note>
 
-<note id="_fe2a02bd-4383-dbaa-a88f-94b252473a72"><name>NOTE  26</name><p id="_0f380318-c0cc-1db1-307b-4781969ffe01">See <xref target="ISO19119">clause 7.2</xref> for a discussion of <em>operation</em> (<xref target="operation">Definition List  33</xref>)</p>
-</note>
+ <termnote id="_aa050cca-5b89-785e-dedf-146c1a52aced"><name>Note 1 to entry</name><p id="_2ec1844c-6369-e48d-5f3c-70774683ac01">It specifies the algorithm or procedure associated with an <em>operation</em> (<xref target="operation">Clause 4.33</xref>).</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO/IEC19501" type="inline" citeas=""/>]</termsource></term>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19119:2016" type="inline" citeas=""><localityStack>
+<term id="object"><name>4.31.</name><preferred><strong>object::</strong></preferred>
+<definition><p id="_689fa9f8-2b7d-da36-26de-8ef0d1734a0f">entity with a well defined boundary and identity that encapsulates state and behaviour</p></definition>
+
+
+
+
+ <termnote id="_1fdf6768-a999-0227-1bfe-df926840d608"><name>Note 1 to entry</name><p id="_c1723777-5265-6010-249f-0cf6d45116c8">This term was first used in this way in the general theory of object oriented programming, and later adopted for use in this same sense in UML. An <em>object</em> (<xref target="object">Clause 4.31</xref>) is an instance of a <em>class</em> (<xref target="class">Clause 4.3</xref>). <em>Attributes</em> (<xref target="attribute">Clause 4.2</xref>) and relationships represent state. <em>Operations</em> (<xref target="operation">Clause 4.33</xref>), methods, and state machines represent behavior.</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="OMG/UML UML Semantics" type="inline" citeas="">version 1.3, 1997.</origin>]</termsource></term>
+
+<term id="OGC-implementation-specification"><name>4.32.</name><preferred><strong>OGC implementation specification::</strong></preferred>
+<definition><p id="_9d93597c-a7f2-cc58-16ab-84f97424a08a"><em>OGC implementation specification</em> (<xref target="OGC-implementation-specification">Clause 4.32</xref>) document type defined on the OGC Document Types Register</p></definition>
+
+ </term>
+
+<term id="operation"><name>4.33.</name><preferred><strong>operation::</strong></preferred>
+<definition><p id="_71dc1b72-49ba-a9f0-2465-7b168b11d50e">specification of a transformation or query that an <em>object</em> (<xref target="object">Clause 4.31</xref>) may be called to execute</p></definition>
+
+
+
+
+
+
+ <termnote id="_2ca1f594-2e2d-18a0-cba8-8e939613c90b"><name>Note 1 to entry</name><p id="_ca16983f-6853-8779-1f74-a2d5a123936a">An <em>operation</em> (<xref target="operation">Clause 4.33</xref>) has a name and a list of parameters.</p>
+</termnote><termnote id="_4797b71d-fe21-1828-11df-3c14f7d520ee"><name>Note 2 to entry</name><p id="_c67311d4-fd08-44f8-dfb2-03afe7e58cac">See <eref type="inline" bibitemid="ISO19119" citeas="ISO 19119:2016"><localityStack><locality type="clause"><referenceFrom>7.2</referenceFrom></locality></localityStack>ISO 19119:2016,  Clause 7.2</eref> for a discussion of <em>operation</em> (<xref target="operation">Clause 4.33</xref>)</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19119" type="inline" citeas="ISO 19119:2016"><localityStack>
     <locality type="clause">
       <referenceFrom>4.1.10</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.1.10</origin>]</termsource>
+  </localityStack>ISO 19119:2016,  Clause 4.1.10</origin>]</termsource></term>
 
-<dl id="place"><dt>place</dt>
-<dd><p id="_fdf4c33f-c1c7-73cb-d665-6883f85ddea8">identifiable part of any space</p>
-</dd>
-</dl>
+<term id="place"><name>4.34.</name><preferred><strong>place::</strong></preferred>
+<definition><p id="_e9676eea-90fc-0ac7-2e7c-6a05c28899e6">identifiable part of any space</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19155:2012" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19155" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>4.8</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.8</origin>]</termsource>
+  </localityStack>,  Clause 4.8</origin>]</termsource></term>
 
-<dl id="platform"><dt>Platform (Model Driven Architecture)</dt>
-<dd><p id="_047be3ba-0f3f-3884-812c-6d02fc20e7b8">the set of resources on which a system is realized.</p>
-</dd>
-</dl>
+<term id="platform"><name>4.35.</name><preferred><strong>Platform (Model Driven Architecture)::</strong></preferred>
+<definition><p id="_81ceb84a-c67c-0dd0-bab7-d63fc2eaffc5">the set of resources on which a system is realized.</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="mdaguide" type="inline" citeas=""/>]</termsource>
 
-<p id="platform-independent-model">Platform Independent Model:</p>
+ <termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="mdaguide" type="inline" citeas=""/>, modified – <hi>Object Management Group, Model Driven Architecture Guide rev. 2.0</hi>]</termsource></term>
 
-<p id="_e91fbfeb-3848-df78-53a9-445eaed1c193">a model that is independent of a specific <em>platform</em> (<xref target="platform">Definition List  35</xref>)</p>
+<term id="platform-independent-model"><name>4.36.</name><preferred><strong>Platform Independent Model:</strong></preferred>
+<definition><p id="_3e716997-0b79-fe15-32aa-3a95435f1403">a model that is independent of a specific <em>platform</em> (<xref target="platform">Clause 4.35</xref>)</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="mdaguide" type="inline" citeas=""/>]</termsource>
 
-<p id="platform-specific-model">Platform Specific Model:</p>
+ <termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="mdaguide" type="inline" citeas=""/>, modified – <hi>Object Management Group, Model Driven Architecture Guide rev. 2.0</hi>]</termsource></term>
 
-<p id="_ae2fe7ad-aee8-c726-9aa1-fbcccfd0af15">a model of a system that is defined in terms of a specific <em>platform</em> (<xref target="platform">Definition List  35</xref>)</p>
+<term id="platform-specific-model"><name>4.37.</name><preferred><strong>Platform Specific Model:</strong></preferred>
+<definition><p id="_e8680185-342a-0b36-c699-9199c5b4994d">a model of a system that is defined in terms of a specific <em>platform</em> (<xref target="platform">Clause 4.35</xref>)</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="mdaguide" type="inline" citeas=""/>]</termsource>
 
-<dl id="point"><dt>point</dt>
-<dd><p id="_55b7af2c-54db-fe0c-846d-1f64af06c8b4">0-dimensional geometric primitive, representing a <em>position</em> (<xref target="position">Definition List  38</xref>)</p>
-</dd>
-</dl>
+ <termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="mdaguide" type="inline" citeas=""/>, modified – <hi>Object Management Group, Model Driven Architecture Guide rev. 2.0</hi>]</termsource></term>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19136-1:2020(E)" type="inline" citeas=""><localityStack>
+<term id="point"><name>4.38.</name><preferred><strong>point::</strong></preferred>
+<definition><p id="_e8ebde84-8f96-9dae-814f-9ed9468d3204">0-dimensional geometric primitive, representing a <em>position</em> (<xref target="position">Clause 4.40</xref>)</p></definition>
+
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19136-1" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>3.1.47</referenceFrom>
     </locality>
-  </localityStack>,  Clause 3.1.47</origin>]</termsource>
+  </localityStack>,  Clause 3.1.47</origin>]</termsource></term>
 
-<dl id="point-of-interest"><dt>point of interest</dt>
-<dd><admitted>POI</admitted>
+<term id="point-of-interest"><name>4.39.</name><preferred><strong>point of interest::</strong></preferred><admitted>POI</admitted>
 
-</dd>
-</dl>
 
-<p id="_f3adc69a-d89c-6dec-f210-8be0233e99bc"><em>location</em> (<xref target="location">Definition List  28</xref>) where one can find a <em>place</em>, product or service</p>
 
-<note id="_83f6aeb6-fac3-6414-c03e-8ae366f9b1ff"><name>NOTE  27</name><p id="_4a253272-1d14-6c5b-a215-8068ed2957d5">A <em>POI</em> (<xref target="point-of-interest">Definition List  37</xref>) is typically identified by <em>name</em> rather than by an <em>address</em>.</p>
-</note>
+<definition><p id="_eb2cf475-cbf6-fd2c-ad77-e9aff7835f9f"><em>location</em> (<xref target="location">Clause 4.28</xref>) where one can find a <em>place</em>, product or service</p></definition>
 
-<note id="_92bfa666-8c0d-b095-d073-bf66b4d12b51"><name>NOTE  28</name><p id="_ef945e40-73cf-f2ed-cb69-ce9d42ecf735">A <em>POI</em> (<xref target="point-of-interest">Definition List  37</xref>) is characterized by <em>type</em>, which may be used as a reference <em>point</em> (<xref target="point">Definition List  36</xref>) or a target in a <em>location</em> (<xref target="location">Definition List  28</xref>) based service request.</p>
-</note>
 
-<note id="_fffec614-3082-f40f-3133-89416dde0c88"><name>NOTE  29</name><p id="_5137b339-0037-f06a-ec0c-c34727bb6bfa">A <em>POI</em> (<xref target="point-of-interest">Definition List  37</xref>) does not exclude the labeling, identification, and tracking of persons and other physical <em>objects</em> (<xref target="object">Definition List  31</xref>) that have no permanent <em>location</em> (<xref target="location">Definition List  28</xref>).</p>
-</note>
 
-<example id="_b6713f09-c1ea-0b3e-d615-f82748e90b81"><name>Example  1</name><p id="_a138bec8-bb6c-a5a2-96a9-474a08e4e791">destination of a route; such as, Boston</p>
-</example>
 
-<dl id="position"><dt>position</dt>
-<dd><p id="_23947186-c04b-9f53-630e-4d1e02f3960b">data type that describes a <em>point</em> (<xref target="point">Definition List  36</xref>) or <em>geometry</em> potentially occupied by an <em>object</em> (<xref target="object">Definition List  31</xref>) or person</p>
-</dd>
-</dl>
 
-<note id="_e316a801-15b2-4a66-5d9a-cd5b1e688fa9"><name>NOTE  30</name><p id="_707862cf-dcae-7490-782d-dda1b2144409">A <em>direct position</em> (<xref target="direct-position">Definition List  14</xref>) is a semantic subtype of <em>position</em> (<xref target="position">Definition List  38</xref>). <em>Direct positions</em> (<xref target="direct-position">Definition List  14</xref>) as described can only define
-a <em>point</em> (<xref target="point">Definition List  36</xref>), and therefore not all <em>positions</em> (<xref target="position">Definition List  38</xref>) can be represented by a <em>direct position</em> (<xref target="direct-position">Definition List  14</xref>). That is consistent
-with the is type of relation. An ISO 19107 geometry is also a <em>position</em> (<xref target="position">Definition List  38</xref>), but not a <em>direct position</em> (<xref target="direct-position">Definition List  14</xref>)</p>
-</note>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19133:2020" type="inline" citeas=""/>]</termsource>
 
-<dl id="property"><dt>property</dt>
-<dd><p id="_9368eabc-55ac-9af0-73b1-6b562aaefa55">facet or <em>attribute</em> (<xref target="attribute">Definition List  2</xref>) of an <em>object</em> (<xref target="object">Definition List  31</xref>) referenced by a name</p>
-</dd>
-</dl>
 
-<example id="_5851c81d-75b4-8b41-2a20-65b575a4c175"><name>Example  2</name><p id="_e7349574-f269-59d7-192d-a194d7471fe7">Abby’s car has the colour red, where “colour red” is a <em>property</em> (<xref target="property">Clause 4, Definition List  39</xref>) of the car.</p>
-</example>
+ <termnote id="_220dc909-992f-2563-2f14-7456803dc593"><name>Note 1 to entry</name><p id="_69cf4d0d-a81f-3d9f-eb57-321f53f9cf0e">A <em>POI</em> (<xref target="point-of-interest">Clause 4.39</xref>) is typically identified by <em>name</em> rather than by an <em>address</em>.</p>
+</termnote><termnote id="_5d11dc32-ab08-a9aa-d718-00273487f687"><name>Note 2 to entry</name><p id="_b7714f1a-4d2d-a0dd-4e97-544ab66a7a53">A <em>POI</em> (<xref target="point-of-interest">Clause 4.39</xref>) is characterized by <em>type</em>, which may be used as a reference <em>point</em> (<xref target="point">Clause 4.38</xref>) or a target in a <em>location</em> (<xref target="location">Clause 4.28</xref>) based service request.</p>
+</termnote><termnote id="_ecc98856-cac3-4414-71d1-fd6e3fe1dbe7"><name>Note 3 to entry</name><p id="_b622651e-7e9d-a8a8-de8a-e88dc8fe4d6d">A <em>POI</em> (<xref target="point-of-interest">Clause 4.39</xref>) does not exclude the labeling, identification, and tracking of persons and other physical <em>objects</em> (<xref target="object">Clause 4.31</xref>) that have no permanent <em>location</em> (<xref target="location">Clause 4.28</xref>).</p>
+</termnote><termexample id="_d3ac8841-eb29-4ed8-760c-9cff05668477"><name>Example </name><p id="_677bac40-8a83-5596-2fcd-fab66ffa9c11">destination of a route; such as, Boston</p>
+</termexample></term>
 
-<termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19143" type="inline" citeas=""><localityStack>
+<term id="position"><name>4.40.</name><preferred><strong>position::</strong></preferred>
+<definition><p id="_d0c48e6a-095b-fc28-58d7-ccf0256b3f2d">data type that describes a <em>point</em> (<xref target="point">Clause 4.38</xref>) or <em>geometry</em> potentially occupied by an <em>object</em> (<xref target="object">Clause 4.31</xref>) or person</p></definition>
+
+
+
+
+ <termnote id="_417b3b15-0a2e-a943-58b0-e83a7cf24260"><name>Note 1 to entry</name><p id="_cf1f1a7f-52f2-fa26-6d11-1e79e1643031">A <em>direct position</em> (<xref target="direct-position">Clause 4.14</xref>) is a semantic subtype of <em>position</em> (<xref target="position">Clause 4.40</xref>). <em>Direct positions</em> (<xref target="direct-position">Clause 4.14</xref>) as described can only define a <em>point</em> (<xref target="point">Clause 4.38</xref>), and therefore not all <em>positions</em>  (<xref target="position">Clause 4.40</xref>) can be represented by a <em>direct position</em> (<xref target="direct-position">Clause 4.14</xref>). That is consistent with the is type of relation. An ISO 19107 geometry is also a <em>position</em> (<xref target="position">Clause 4.40</xref>), but not a <em>direct position</em> (<xref target="direct-position">Clause 4.14</xref>)</p>
+</termnote><termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19133:2020" type="inline" citeas=""/>]</termsource></term>
+
+<term id="property"><name>4.41.</name><preferred><strong>property::</strong></preferred>
+<definition><p id="_cbd59c27-f909-56f3-541a-d64abb6834a3">facet or <em>attribute</em> (<xref target="attribute">Clause 4.2</xref>) of an <em>object</em> (<xref target="object">Clause 4.31</xref>) referenced by a name</p></definition>
+
+
+
+
+ <termexample id="_987859c6-20cd-91ec-1b53-2db7fc2e83d9"><name>Example </name><p id="_955fc6a6-bbb3-565e-cee5-e5b079d33d88">Abby’s car has the colour red, where “colour red” is a <em>property</em> (<xref target="property">Clause 4.41</xref>) of the car.</p>
+</termexample><termsource status="modified" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19143" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>4.21</referenceFrom>
     </locality>
   </localityStack>,  Clause 4.21</origin>, modified
- – Note 1 to entry has been added from ISO 19156, 4.15]</termsource>
+ – Note 1 to entry has been added from ISO 19156, 4.15]</termsource></term>
 
-<dl id="stereotype"><dt>stereotype</dt>
-<dd><p id="_8b59adee-c6a7-ea92-68ae-edd3b4c45f4c">extension of an existing <em>metaclass</em> (<xref target="metaclass">Definition List  29</xref>) that enables the use of <em>platform</em> (<xref target="platform">Definition List  35</xref>) or <em>domain</em> (<xref target="domain">Definition List  15</xref>) specific terminology or notation in place of, or in addition to, the ones used for the extended <em>metaclass</em> (<xref target="metaclass">Definition List  29</xref>)</p>
-</dd>
-</dl>
+<term id="stereotype"><name>4.42.</name><preferred><strong>stereotype::</strong></preferred>
+<definition><p id="_842a6563-1791-2276-94ed-e052c94e74d6">extension of an existing <em>metaclass</em> (<xref target="metaclass">Clause 4.29</xref>) that enables the use of <em>platform</em> (<xref target="platform">Clause 4.35</xref>) or <em>domain</em> (<xref target="domain">Clause 4.15</xref>) specific terminology or notation in place of, or in addition to, the ones used for the extended <em>metaclass</em> (<xref target="metaclass">Clause 4.29</xref>)</p></definition>
 
-<termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19150-2:2015" type="inline" citeas=""><localityStack>
+
+ <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <origin bibitemid="ISO19150-2" type="inline" citeas=""><localityStack>
     <locality type="clause">
       <referenceFrom>4.1.35</referenceFrom>
     </locality>
-  </localityStack>,  Clause 4.1.35</origin>]</termsource>
+  </localityStack>,  Clause 4.1.35</origin>]</termsource></term>
 </terms>
 
 <clause id="conventions-section" obligation="normative" displayorder="9">
@@ -1314,7 +1277,7 @@ with the is type of relation. An ISO 19107 geometry is also a <em>position</em> 
 
 <clause id="_general_feature_model" obligation="informative">
 <title depth="2">B.1.<tab/>General Feature Model</title>
-<p id="_e236cc72-6e4a-5278-7072-43894bcea8c2">The following classes are defined in <xref target="ISO19109">(ISO 19109:2015)</xref></p>
+<p id="_e236cc72-6e4a-5278-7072-43894bcea8c2">The following classes are defined in <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109">(ISO 19109:2015)</eref></p>
 
 <table id="AnyFeature-section">
 <name>Table B.1 — Any Feature Class</name>
@@ -1438,7 +1401,7 @@ This class describes how a feature class shall be constructed in an Application 
 
 <clause id="_geometry_2" obligation="informative">
 <title depth="2">B.2.<tab/>Geometry</title>
-<p id="_5f76d0ff-3f70-51ec-f309-d4b4a8127107">The following classes are defined in <xref target="ISO19107">(ISO 19107:2003)</xref></p>
+<p id="_5f76d0ff-3f70-51ec-f309-d4b4a8127107">The following classes are defined in <eref type="inline" bibitemid="ISO19107" citeas="ISO 19107">(ISO 19107:2003)</eref></p>
 
 <table id="GM_Object-section">
 <name>Table B.4 — GM_Object Class</name>
@@ -3341,7 +3304,7 @@ Examples: site of the disaster, evacuation zone, disaster-prevention facility, d
 
 <clause id="_name_types" obligation="informative">
 <title depth="2">B.6.<tab/>Name types</title>
-<p id="_d62f0b07-233c-082a-f1fa-9804045ecc85">The following classes are defined in <xref target="ISO19103">(ISO 19103:2015)</xref></p>
+<p id="_d62f0b07-233c-082a-f1fa-9804045ecc85">The following classes are defined in <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">(ISO 19103:2015)</eref></p>
 
 <table id="GenericName-section">
 <name>Table B.44 — Generic Name Class</name>
@@ -3491,7 +3454,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
 
 <clause id="_primitive_types" obligation="informative">
 <title depth="2">B.7.<tab/>Primitive types</title>
-<p id="_75905e1e-0f8a-97a4-e381-fb38e7e7a492">The following classes are defined in <xref target="ISO19103">(ISO 19103:2015)</xref></p>
+<p id="_75905e1e-0f8a-97a4-e381-fb38e7e7a492">The following classes are defined in <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">(ISO 19103:2015)</eref></p>
 
 <clause id="_date_and_time" obligation="informative">
 <title depth="3">B.7.1.<tab/>Date and Time</title>
@@ -3986,10 +3949,39 @@ Equivalent to STEP’s and SQL’s Unknown.</td>
 </tr></tbody>
 </table>
 </annex><bibliography><references id="References" normative="true" obligation="informative" displayorder="7">
-<title depth="1">3.<tab/>Normative references</title><p id="_a437018e-9e23-468b-4c59-ef929f6ca06c">There are no normative references in this document.</p>
-<p id="_8b47c4e0-b14d-0444-f759-44ce3f9ed4a7">The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.</p>
+<title depth="1">3.<tab/>Normative references</title><p id="_307b20e2-9e40-db56-abbf-2822ab2941cc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
+
+<bibitem id="rfc3986"><formattedref format="application/x-isodoc+xml">IETF: RFC 3986, Uniform Resource Identifier (URI): Generic Syntax. (January 2005)</formattedref><docidentifier type="IETF">IETF RFC 3986</docidentifier><docnumber>3986</docnumber></bibitem>
+<bibitem id="ISO19101-1"><formattedref format="application/x-isodoc+xml">ISO: ISO 19101-1:2014, Geographic information — Reference model — Part 1: Fundamentals</formattedref><docidentifier type="ISO">ISO 19101-1</docidentifier><docnumber>19101-1</docnumber><date type="published"><on>2014</on></date></bibitem>
+<bibitem id="ISO19103"><formattedref format="application/x-isodoc+xml">ISO: ISO 19103:2015, Geographic Information – Conceptual Schema Language</formattedref><docidentifier type="ISO">ISO 19103</docidentifier><docnumber>19103</docnumber><date type="published"><on>2015</on></date></bibitem>
+<bibitem id="ISO19107"><formattedref format="application/x-isodoc+xml">ISO: ISO 19107:2003, Geographic Information – Spatial Schema</formattedref><docidentifier type="ISO">ISO 19107</docidentifier><docnumber>19107</docnumber></bibitem>
+<bibitem id="ISO19108"><formattedref format="application/x-isodoc+xml">ISO: ISO 19108:2002/Cor 1:2006, Geographic information – Temporal schema — Technical Corrigendum 1</formattedref><docidentifier type="ISO">ISO 19108</docidentifier><docnumber>19108</docnumber></bibitem>
+<bibitem id="ISO19109"><formattedref format="application/x-isodoc+xml">ISO: ISO 19109:2015, Geographic Information – Rules for Application Schemas</formattedref><docidentifier type="ISO">ISO 19109</docidentifier><docnumber>19109</docnumber><date type="published"><on>2015</on></date></bibitem>
+<bibitem id="ISO19111"><formattedref format="application/x-isodoc+xml">ISO: ISO 19111:2019, Geographic information – Referencing by coordinates</formattedref><docidentifier type="ISO">ISO 19111</docidentifier><docnumber>19111</docnumber></bibitem>
+<bibitem id="ISO19115-1"><formattedref format="application/x-isodoc+xml">ISO: ISO 19115-1:2014, Geographic Information — Metadata — Part 1: Fundamentals</formattedref><docidentifier type="ISO">ISO 19115-1</docidentifier><docnumber>19115-1</docnumber><date type="published"><on>2014</on></date></bibitem>
+<bibitem id="ISO19507"><formattedref format="application/x-isodoc+xml">ISO/IEC 19507:2012, Information technology — Object Management Group Object Constraint Language (OCL)</formattedref><docidentifier type="ISO">ISO/IEC 19507</docidentifier><docnumber>19507</docnumber><date type="published"><on>2012</on></date></bibitem>
 </references><references id="Bibliography" normative="false" obligation="informative" displayorder="15">
-<title depth="1">Bibliography</title>
+<title depth="1">Bibliography</title><bibitem id="ISO11404" type="standard">
+<title format="text/plain">Information technology — General-Purpose Datatypes (GPD)</title>
+<docidentifier type="metanorma-ordinal">[1]</docidentifier><docidentifier type="ISO">ISO 11404:2007</docidentifier><docnumber>11404</docnumber><date type="published"><on>2007</on></date><contributor><role type="publisher"/><organization>
+<name>ISO</name>
+</organization></contributor></bibitem><bibitem id="ISO19156" type="standard">
+<title format="text/plain">Geographic information Observations and measurements</title>
+<docidentifier type="metanorma-ordinal">[2]</docidentifier><docidentifier type="ISO">ISO 19156:2011</docidentifier><docnumber>19156</docnumber><date type="published"><on>2011</on></date><contributor><role type="publisher"/><organization>
+<name>ISO</name>
+</organization></contributor></bibitem><bibitem id="ISO19117" type="standard">
+<title format="text/plain">Geographic information — Portrayal</title>
+<docidentifier type="metanorma-ordinal">[3]</docidentifier><docidentifier type="ISO">ISO 19117:2012</docidentifier><docnumber>19117</docnumber><date type="published"><on>2012</on></date><contributor><role type="publisher"/><organization>
+<name>ISO</name>
+</organization></contributor></bibitem><bibitem id="ISO19119" type="standard">
+<title format="text/plain">Geographic information — Services</title>
+<docidentifier type="metanorma-ordinal">[4]</docidentifier><docidentifier type="ISO">ISO 19119:2016</docidentifier><docnumber>19119</docnumber><date type="published"><on>2016</on></date><contributor><role type="publisher"/><organization>
+<name>ISO</name>
+</organization></contributor></bibitem>
+
+
+
+
 </references></bibliography>
 </ogc-standard>

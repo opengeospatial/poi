@@ -6,13 +6,13 @@
 :docnumber: 22-053
 :draft: 0.1.1
 :comment: ### Date on which the standard was updated; mandatory
-:received-date: 2023-02-08
+:received-date: 2023-03-03
 :comment: ### Date on which the standard was approved by the issuing authority; mandatory
 :issued-date: 2017-06-29
 :comment: ### Date on which the standard was published; mandatory
 :published-date: 2017-01-23
 :comment: ###  Year when the copyright for the document was issued; optional
-:copyright-year: 2022
+:copyright-year: 2023
 :comment: ### External link referencing the document; optional. If not provided, a default value is created following this structure: "http://www.opengis.net/doc/{abbrevation of doctype}/{abbrev}/{version}"
 :external-id: http://www.opengis.net/doc/PER/POI_UG/1.0
 :comment: ### Author one
@@ -40,14 +40,26 @@ include::sections/01-introduction.adoc[]
 include::sections/02-usage.adoc[]
 include::sections/03-scope.adoc[]
 include::sections/04-normative-references.adoc[]
-include::sections/06-choose-restaurant-use-case.adoc[]
-include::sections/06-construction-site-use-case.adoc[]
-include::sections/06-country-covid-requirements-use-case.adoc[]
-include::sections/06-covid-testing-center-use-case.adoc[]
-include::sections/06-ev-charging-stations-use-case.adoc[]
-include::sections/06-indoor-navigation-use-case.adoc[]
-include::sections/06-military-use-case.adoc[]
-include::sections/06-houses-and-utility-poles-use-case.adoc[]
-include::sections/06-package-dropoff-pickup-service-use-case.adoc[]
-include::sections/06-poi-publication-use-case.adoc[]
-include::sections/06-smart-tourism-use-case.adoc[]
+include::sections/05-nonstandard-attributes.adoc[]
+
+// include::sections/06-choose-restaurant-use-case.adoc[]
+
+// include::sections/06-construction-site-use-case.adoc[]
+
+// include::sections/06-country-covid-requirements-use-case.adoc[]
+
+// include::sections/06-covid-testing-center-use-case.adoc[]
+
+// include::sections/06-ev-charging-stations-use-case.adoc[]
+
+// include::sections/06-indoor-navigation-use-case.adoc[]
+
+// include::sections/06-military-use-case.adoc[]
+
+// include::sections/06-houses-and-utility-poles-use-case.adoc[]
+
+// include::sections/06-package-dropoff-pickup-service-use-case.adoc[]
+
+// include::sections/06-poi-publication-use-case.adoc[]
+
+// include::sections/06-smart-tourism-use-case.adoc[]
