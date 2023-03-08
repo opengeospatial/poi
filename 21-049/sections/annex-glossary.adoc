@@ -1,5 +1,5 @@
-[appendix]
-:appendix-caption: Annex
+[appendix,obligation="informative"]
+[heading='terms and definitions']
 [[glossary]]
 = Glossary
 
