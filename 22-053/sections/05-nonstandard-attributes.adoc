@@ -16,7 +16,7 @@ The rest of this section will explore these alternatives.
 
 The UML for a POIProperty looks like this:
 
-image::../images/POIProperty.png[POIProperty UML]
+image::images/POIProperty.png[POIProperty UML]
 
 What this means is that a _value_ of type POIProperty is self describing: it has attributes that describe the type and usage of the value, as well as the actual value for this instance. In more detail, these are the fields of a POIProperty and how to use them:
 

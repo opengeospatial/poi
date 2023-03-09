@@ -2,23 +2,11 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">User guide for OGC Points of Interest</title>
-<docidentifier type="ogc-external">http://www.opengis.net/doc/PER/POI_UG/1.0</docidentifier><docidentifier type="ogc-internal">22-053</docidentifier><docnumber>22-053</docnumber><date type="published"><on>2017-01-23</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2023-03-03</on></date><contributor><role type="author"/><organization>
-<name>organization_1</name>
-</organization></contributor><contributor><role type="author"/><organization>
-<name>organization_2</name>
-</organization></contributor><contributor><role type="author"/><organization>
-<name>organization_3</name>
-</organization></contributor><contributor><role type="author"/><organization>
-<name>etc.</name>
-</organization></contributor><contributor><role type="editor"/><person>
-<name><completename>Charles Heazel</completename></name>
-</person></contributor><contributor><role type="editor"/><person>
-<name><completename>Matthew Brian, John Purss</completename></name>
-</person></contributor><contributor><role type="publisher"/><organization>
+<docidentifier type="ogc-internal">22-053</docidentifier><docnumber>22-053</docnumber><date type="received"><on>2023-02-09</on></date><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><version><draft>0.1.1</draft></version><language current="true">en</language><script current="true">Latn</script><status><stage language="">draft</stage><stage language="en">Draft</stage></status><copyright><from>2023</from><owner><organization>
+</organization></contributor><version><revision-date>=======</revision-date><draft>0.1.1</draft></version><language current="true">en</language><script current="true">Latn</script><status><stage language="">draft</stage><stage language="en">Draft</stage></status><copyright><from>2023</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>html</keyword><ext><doctype language="">user-guide</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Table of contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
+</organization></owner></copyright><ext><doctype language="">user-guide</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Table of contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
 </localized-string><localized-string key="internal_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
 <p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
 <p>For the purposes of this document, the following additional terms and definitions apply.</p>
@@ -140,22 +128,25 @@
     
   </feedback-statement>
 </boilerplate>
-<preface><clause id="_9129ca79-3331-470f-af76-e5cbdac853a1" type="keywords" displayorder="1">
-<title depth="1">I.<tab/>Keywords</title>
-<p>The following are keywords to be used by search engines and
-    document catalogues.</p>
-<p>ogcdoc, OGC document, API, openapi, html</p></clause>
-<clause type="security" id="_3a09f4f4-84f8-f5b1-320b-1073abee5ebb" obligation="informative" displayorder="2"><title depth="1">II.<tab/>Security considerations</title><p id="_e88b1376-d0f4-5147-cf72-d44500f21228">No security considerations have been made for this document.</p></clause><clause id="_ae548f48-6b68-4f46-a287-808bee6a3a89" type="submitting_orgs" displayorder="3">
-<title depth="1">III.<tab/>Submitting Organizations</title>
-<p>The following organizations submitted this Document to the
-   Open Geospatial Consortium (OGC):</p>
- <ul><li>organization_1</li>
-<li>organization_2</li>
-<li>organization_3</li>
-<li>etc.</li></ul>
- </clause>
-<clause id="abstract_section" obligation="informative" displayorder="4">
-<title depth="1">IV.<tab/>Abstract</title>
+<preface><foreword id="_bf00a461-299c-d831-f792-6b50a448764e" obligation="informative" displayorder="1">
+<title depth="1">I.<tab/>Preface</title>
+<p id="_2e4ed34b-29b5-8c1c-2c9c-d9997bc3fd26">&#x3e;&#x3e;&#x3e;&#x3e;&#x3e;&#x3e;&#x3e; Stashed changes
+:comment: <hi># Date on which the standard was approved by the issuing authority; mandatory :issued-date: 2017-06-29 :comment: </hi># Date on which the standard was published; mandatory
+:published-date: 2017-01-23
+:comment: <hi>#  Year when the copyright for the document was issued; optional :copyright-year: 2023 :comment: </hi># External link referencing the document; optional. If not provided, a default value is created following this structure: “http://www.opengis.net/doc/{abbrevation of doctype}/{abbrev}/{version}”
+:external-id: <link target="http://www.opengis.net/doc/PER/POI_UG/1.0"/>
+:comment: <hi># Author one :fullname: Charles Heazel :comment: </hi># Author two
+:fullname_2: Matthew Brian, John Purss
+:comment: <hi># Role of the authors; optional. Supply only if correspoding author is an editor :role_2: editor :comment: </hi># Comma delimited keywords; mandatory
+:keywords: ogcdoc, OGC document, API, openapi, html
+:comment: <hi># Semicolon-delimited list of the submitting organizations; mandatory :submitting-organizations: organization_1; organization_2; organization_3; etc. :comment: </hi># Metanorma flavor; mandatory
+:mn-document-class: ogc
+:comment: <hi># Desired output formats; mandatory :mn-output-extensions: xml,html,doc,pdf :comment: </hi># Directory name used as prefix for the location of image files; optional
+:imagesdir: images
+:comment: <hi>#</hi> Enable local relaton cache for quick inclusion of prefetched references; optional. For further information, visit: <link target="https://www.metanorma.org/author/ref/document-attributes/#caches"/>, <link target="https://www.metanorma.org/author/topics/building/reference-lookup/#lookup-result-caching"/>
+:local-cache-only:</p>
+</foreword><clause type="security" id="_3a09f4f4-84f8-f5b1-320b-1073abee5ebb" obligation="informative" displayorder="2"><title depth="1">II.<tab/>Security considerations</title><p id="_e88b1376-d0f4-5147-cf72-d44500f21228">No security considerations have been made for this document.</p></clause><clause id="abstract_section" obligation="informative" displayorder="3">
+<title depth="1">III.<tab/>Abstract</title>
 <p id="_497eb1d7-c4ca-4c80-d749-fb7188efa7b1">POI-CM is an open conceptual data model for representing information about points of interest (POI). It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p>
 
 <p id="_293d61e8-4696-fe49-c0ab-fadc793ab447">The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.” In the broadest terms, a point of interest is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
@@ -163,7 +154,8 @@
 <p id="_48ee43bd-1142-53b7-5a7b-de06930a4a6e">This Users Guide provides extended explanations and examples for the individual concepts that are defined in the POI Conceptual Model Standard. Both the Conceptual Model Standard and this Users Guide are mutually linked to facilitate navigation between corresponding sections in these documents.</p>
 </clause></preface><sections>
 
-<clause id="ug_introduction_section" obligation="normative" displayorder="7">
+
+<clause id="ug_introduction_section" obligation="normative" displayorder="6">
 <title depth="1">3.<tab/>Introduction</title>
 <p id="_c2478c2e-ffa2-a9ff-f1e4-600335204190">There are many systems and applications that need to have information about locations in the world. For example, such “point of interest” (POI) data is needed in navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers, among many others.</p>
 
@@ -175,10 +167,10 @@
 
 <p id="_15006433-4441-0c2b-691f-1ab566358186">A POI is not a dataset. Rather, it is a feature type that enhances an existing dataset of features. POI-CM builds on the ISO General Feature Model (ISO 10109) and the ISO Geometry Model (ISO 19107). To avoid reinventing things, POI-CM also borrows some classes from ISO Common Data Types (ISO 19103) and OGC CityGML 3.0.</p>
 
-<p id="_271b5aaa-5685-d7d4-f386-47c7e879eff1">The POI Conceptual Model standard defines the conceptual model in UML and is the focus of this Users Guide. The the future, separate implementation standards can be published for each encoding to be defined. This separation permits generality as well as specificity. The first POI implementation standard will describe the JSON encoding. Other implementation standards (e.g. for elational database schema) are expected to follow.</p>
+<p id="_2ee0921d-f2d3-e38e-65c8-9d0dbf619cbc">The POI Conceptual Model standard defines the conceptual model in UML and is the focus of this Users Guide. The the future, separate implementation standards can be published for each encoding to be defined. This separation permits generality as well as specificity. The first POI implementation standard will describe the JSON encoding. Other implementation standards (e.g. for relational database schema) are expected to follow.</p>
 </clause>
 
-<clause id="ug_usage_section" obligation="normative" displayorder="8">
+<clause id="ug_usage_section" obligation="normative" displayorder="7">
 <title depth="1">4.<tab/>How To Use This Resource</title>
 <p id="_a310eff2-8b31-1320-c7aa-d1a4668c6be1">The Users Guide to the POI Conceptual Model Standard is not intended to be read from start to finish. Rather, it is a resource structured to provide quick answers to questions that an implementer may have about the POI-CM Standard.</p>
 
@@ -187,7 +179,7 @@
 <p id="_ecebc6c7-790d-336c-e76c-2bc18a14a9e3">Some content in the Users Guide has been copied from the POI Conceptual Model Standard to make the content more accessible to the user. In order to make clear which content in the Users Guide has been copied, the copied text is provided within grey boxes.</p>
 </clause>
 
-<clause id="ug_scope_section" type="scope" obligation="normative" displayorder="5">
+<clause id="ug_scope_section" type="scope" obligation="normative" displayorder="4">
 <title depth="1">1.<tab/>Scope</title>
 <p id="_302e439f-95fa-8ba4-aebd-2174d7fcb83a">This document provides Engineering Guidance on the use of the POI Conceptual Model Standard.</p>
 
@@ -198,7 +190,7 @@
 
 
 
-<clause id="ug_nonstandard_attributes_section" obligation="normative" displayorder="9">
+<clause id="ug_nonstandard_attributes_section" obligation="normative" displayorder="8">
 <title depth="1">5.<tab/>Nonstandard Attributes</title>
 <p id="_9f6d5abf-50f6-9a06-df7e-0c03a558a32c">An <em>attribute</em> is a named property of a feature. While this POI Conceptual Model Standard specifies some standard attributes (e.g., lifetime attributes), most applications will need to define and use some attributes that are not normatively defined by the standard. This section discusses some strategies for doing this.</p>
 
@@ -578,11 +570,11 @@
 </clause>
 </clause>
 </clause>
-</sections><bibliography><references id="_references" normative="true" obligation="informative" displayorder="6">
+</sections><bibliography><references id="_references" normative="true" obligation="informative" displayorder="5">
 <title depth="1">2.<tab/>Normative references</title><p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <bibitem id="schema"><formattedref format="application/x-isodoc+xml"><strong>Schema.org:</strong> <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>Schema.org</docidentifier></bibitem>
 
- <bibitem id="rfc3339" type="standard">  <fetched>2023-02-08</fetched>  
+ <bibitem id="rfc3339" type="standard">  <fetched>2023-03-09</fetched>  
 <title format="text/plain" language="en" script="Latn">Date and Time on the Internet: Timestamps</title>
   <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.3339.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc3339</uri>  <docidentifier type="RFC" primary="true">RFC 3339</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC RFC3339</docidentifier>  <docidentifier type="DOI">DOI 10.17487/RFC3339</docidentifier>  <docnumber>RFC3339</docnumber>  <date type="published">    <on>2002</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Internet Engineering Task Force</name>
@@ -594,7 +586,7 @@
   </abstract>  <series type="main">    
 <title format="text/plain" language="en" script="Latn">RFC</title>
     <number>3339</number>  </series></bibitem>
- <bibitem id="rfc7946" type="standard">  <fetched>2023-02-08</fetched>  
+ <bibitem id="rfc7946" type="standard">  <fetched>2023-03-09</fetched>  
 <title format="text/plain" language="en" script="Latn">The GeoJSON Format</title>
   <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.7946.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc7946</uri>  <docidentifier type="RFC" primary="true">RFC 7946</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC RFC7946</docidentifier>  <docidentifier type="DOI">DOI 10.17487/RFC7946</docidentifier>  <docnumber>RFC7946</docnumber>  <date type="published">    <on>2016</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Internet Engineering Task Force</name>
