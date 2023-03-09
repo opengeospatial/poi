@@ -64,11 +64,11 @@
 (XML Line 000735): Crossreference target iso19109 is undefined
 	<xref target="iso19109">ISO 19109</xref>
 (XML Line 000763): normalised identifier in <requirement id="http___www.opengis.net_spec_GeoPOI_1.0_req_req-class-core" obligation="requirement" type="class"/> from http://www.opengis.net/spec/GeoPOI/1.0/req/req-class-core
-	<requirement id="http___www.opengis.net_spec_GeoPOI_1.0_req_req-class-core" obligation="requirement" type="class"> <description><p id="_28662fc5-8d22-4bdf-b1ac-aba1a07d4aa9">Requirements Class</p><ul id="_ee7f55f5-10c7-41bc-b6fb-7652eb046703"><li><p id="_a5dc6c54-142c-4761-8ebc-b3b0174a2427">urn:iso:ts:iso:19103</p>
+	<requirement id="http___www.opengis.net_spec_GeoPOI_1.0_req_req-class-core" obligation="requirement" type="class"> <description><p id="_23780c05-f6b5-46c0-ad58-78b17e2f27b8">Requirements Class</p><ul id="_d30449a2-9756-45f8-8928-c1850c6dbaf7"><li><p id="_a2aafa24-b34e-465f-ba96-cee3033e62bd">urn:iso:ts:iso:19103</p>
 	</li>
-	<li><p id="_ccd0d724-ce41-41f2-a017-f1cf1f84ef7d">urn:iso:ts:iso:19107</p>
+	<li><p id="_970c15fc-b080-40bb-bdb2-d07010fb29c8">urn:iso:ts:iso:19107</p>
 	</li>
-	<li><p id="_18222c74-19e1-4217-a1a9-5c4c28ce9893">urn:iso:ts:iso:19108</p>
+	<li><p id="_944eae18-4ffe-4324-bd35-7d8da8eafabd">urn:iso:ts:iso:19108</p>
 (XML Line 000781): Crossreference target geometry_model is undefined
 	<xref target="geometry_model">Figure 2</xref>
 (XML Line 000802): Crossreference target iso19107 is undefined
