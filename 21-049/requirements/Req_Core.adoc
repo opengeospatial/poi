@@ -1,4 +1,5 @@
 [[req_core]]
+.Core Requirements Class
 [requirement,type="class",id="http://www.opengis.net/spec/GeoPOI/1.0/req/req-class-core",obligation="requirement"]
 ====
 

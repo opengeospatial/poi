@@ -1,4 +1,5 @@
 [[req_core_feature_with_lifespan]]
+.Requirement - Feature with Lifespan
 [requirement]
 ====
 [%metadata]
@@ -31,6 +32,7 @@ An encoding of the AbstractFeatureWithLifespan class SHALL comply with requireme
 ====
 
 [[req_core_feature_with_lifespan_creationdate]]
+.Requirement - Feature with Lifespan Creation Date
 [requirement]
 ====
 [%metadata]
@@ -47,6 +49,7 @@ Encodings of the `creationDate` attribute SHALL be a valid implementation of the
 ====
 
 [[req_core_feature_with_lifespan_terminationdate]]
+.Requirement - Feature with Lifespan Termination Date
 [requirement]
 ====
 [%metadata]
@@ -63,6 +66,7 @@ Encodings of the `terminationDate` attribute SHALL be a valid implementation of 
 ====
 
 [[req_core_feature_with_lifespan_validfrom]]
+.Requirement - Feature with Lifespan Valid From
 [requirement]
 ====
 [%metadata]
@@ -79,6 +83,7 @@ Encodings of the `validFrom` attribute SHALL be a valid implementation of the Da
 ====
 
 [[req_core_feature_with_lifespan_validto]]
+.Requirement - Feature with Lifespan Valid To
 [requirement]
 ====
 [%metadata]

@@ -1,11 +1,12 @@
 [[req_core_general_feature_model]]
+.Requirement - General Feature Model
 [requirement]
 ====
 [%metadata]
 label:: /req/core/req-generalfeaturemodel
 [.component,class=part]
 --
-A encoding of the POI Conceptual Model SHALL be compliant with the General Feature Model defined in <<iso19109,ISO 19109>>.
+A encoding of the POI Conceptual Model SHALL be compliant with the General Feature Model defined in <<ISO19109,ISO 19109>>.
 --
 
 [.component,class=part]

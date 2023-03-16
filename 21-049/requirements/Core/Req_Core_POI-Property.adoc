@@ -1,4 +1,5 @@
 [[req_core_POI-property_class]]
+.Requirement - POI-Property
 [requirement]
 ====
 [%metadata]

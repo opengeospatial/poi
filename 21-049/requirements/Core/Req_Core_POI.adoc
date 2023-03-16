@@ -1,4 +1,5 @@
 [[req_core_POI_class]]
+.Requirement - POI Class
 [requirement]
 ====
 [%metadata]
@@ -46,6 +47,7 @@ An encoding of the POI class SHALL comply with requirement <<req_core_POI_symbol
 ====
 
 [[req_core_POI_contactInfo]]
+.Requirement - POI Contact Information
 [requirement]
 ====
 [%metadata]
@@ -62,6 +64,7 @@ Encodings of the `contactInfo` attribute SHALL be a valid implementation of the 
 ====
 
 [[req_core_POI_featureOfInterest]]
+.Requirement - POI Feature of Interest
 [requirement]
 ====
 [%metadata]
@@ -78,6 +81,7 @@ Encodings of the `featureOfInterest` attribute SHALL be a resolvable Uniform Res
 ====
 
 [[req_core_POI_metadata]]
+.Requirement - POI Metadata
 [requirement]
 ====
 [%metadata]
@@ -94,6 +98,7 @@ Encodings of the `metadata` attribute SHALL be a resolvable Uniform Resource Ide
 ====
 
 [[req_core_POI_property]]
+.Requirement - POI Property
 [requirement]
 ====
 [%metadata]
@@ -110,6 +115,7 @@ Encodings of the `property` attribute SHALL be a valid implementation of the POI
 ====
 
 [[req_core_POI_keywords]]
+.Requirement - POI Keywords
 [requirement]
 ====
 [%metadata]
@@ -126,6 +132,7 @@ Encodings of the `keyword` attribute SHALL be a valid implementation of the MD_K
 ====
 
 [[req_core_POI_rights]]
+.Requirement - POI Rights
 [requirement]
 ====
 [%metadata]
@@ -142,6 +149,7 @@ Encodings of the `rights` attribute SHALL be a valid implementation of the MD_Co
 ====
 
 [[req_core_POI_symbology]]
+.Requirement - POI Symbology
 [requirement]
 ====
 [%metadata]

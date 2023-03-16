@@ -6,7 +6,7 @@ A Point of Interest (POI) is a Feature. Therefore, it is important to understand
 
 The OGC Feature Model is defined in ISO 19109:2015 Geographic Information - Rules for application schema. A UML model showing applicable portions of the General Feature Model is provided in <<feature_model,Figure 1>>. 
 
-[feature_model,reftext='Feature Model']
+[[feature_model,reftext='Feature Model']]
 .Feature Model
 image::./images/Features.png[align="center"]
 
@@ -26,7 +26,7 @@ include::../requirements/core/Req_Core_GeneralFeatureModel.adoc[]
 
 In this Standard we extend the General Feature Model to support the concept of a Point of Interest. 
 
-[poi_uml_model,reftext='POI UML Model']
+[[poi_uml_model,reftext='POI UML Model']]
 .POI UML Model
 image::./images/POI-2.png[align="center"]
 
@@ -50,7 +50,7 @@ The OGC Geometry model is defined in ISO 19107:2003 - Geographic Information - S
 
 The OGC Geometry Model is calable of representing very complex geometries. Much  more complex than are needed for a POI. Therefore, POI geometries are restricted to Points, lines, and Polygons. <<geometry_model,Figure 2>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
 
-[geometry_model,reftext='Geometry Model']
+[[geometry_model,reftext='Geometry Model']]
 .Geometry Model
 image::./images/Geometry.png[align="center"]
 
