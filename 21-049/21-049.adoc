@@ -1,17 +1,18 @@
-= OGC (OGC Points of Interest)
+= OGC (Points of Interest)
 :doctype: standard
 :encoding: utf-8
 :lang: en
 :status: draft
 :committee: technical
 :draft: 0.1.1
-:external-id: http://www.opengis.net/doc/IS/poi/1.0
+:external-id: http://www.opengis.net/doc/is/poi/1.0
 :docnumber: 21-049
 :received-date: 2029-03-30
 :issued-date: 2029-03-30
-:published-date: 2023-03-08
+:published-date: 2023-03-15
 :fullname: Charles Heazel
-:fullname_2: Matthew Brian, John Purss
+:fullname_2: Matthew Brian 
+:fullname_3: John Purss
 :docsubtype: implementation
 :keywords: ogcdoc, OGC document, API, openapi, html
 :submitting-organizations: Organization One; Organization Two

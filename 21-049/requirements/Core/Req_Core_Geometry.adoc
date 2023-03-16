@@ -1,11 +1,12 @@
 [[req_core_geometry]]
+.Requirement - Geometry
 [requirement]
 ====
 [%metadata]
 label:: /req/core/req-geometry
 [.component,class=part]
 --
-The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in <<iso19107,ISO 19107>>.
+The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in <<ISO19107,ISO 19107>>.
 --
 
 [.component,class=part]

@@ -27,7 +27,7 @@ named _property_ (<<property>>) of an entity
 NOTE: Describes a geometrical, topological, thematic, or other characteristic of an entity.
 
 [.source]
-<<ISO/IEC2382,clause 2121440>>
+<<ISO2382,clause 2121440>>
 
 [[class]]
 === class::
@@ -81,7 +81,7 @@ model that defines _concepts_ (<<concept>>) of a universe of discourse
 . base schema. Formal description of the model of any geospatial information. _Application schemas_ (<<application-schema>>) are built from _conceptual schemas_ (<<conceptual-schema>>).
 
 [.source]
-OGC Definitions Register at http://www.opengis.net/def/glossary/term/ConceptualSchema
+<<ogcdr,OGC Definitions Register>>
 
 [[coordinate]]
 === coordinate::
@@ -164,7 +164,7 @@ NOTE: Within a database or other terminology collection, a set of _domains_ (<<d
 restriction to constrain the subject _class_ (<<class>>) which participates in a subject-predicate-object triple 
 
 [.source]
-<<19150-4,clause 3.1.12>>
+<<ISO19150-4,clause 3.1.12>>
 
 === domain <postal address>::
 
@@ -245,7 +245,7 @@ NOTE: A _geometric object_ (<<geometric-object>>) consists of a _geometric primi
 
 _geometric object_ (<<geometric-object>>) representing a single, connected, homogeneous (isotopic) element of space
 
-NOTE: _Geometric primitives_ (<<geometric-primitive>>) are non-decomposed _objects_ (<<object>>) that present information about geometric configuration. They include _points_ (<<point>>), curves, surfaces, and solids. Many _geometric objects_ (<<geometric-object>>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a _geometric primitive_ (<<geometric-primitive>>) is topological open, since the boundary _points_ (<<point>>) are not isotropic to the interior _points_ (<<point>>). Geometry is assumed to be closed. For _points_ (<<poin>>), the boundary is empty.
+NOTE: _Geometric primitives_ (<<geometric-primitive>>) are non-decomposed _objects_ (<<object>>) that present information about geometric configuration. They include _points_ (<<point>>), curves, surfaces, and solids. Many _geometric objects_ (<<geometric-object>>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a _geometric primitive_ (<<geometric-primitive>>) is topological open, since the boundary _points_ (<<point>>) are not isotropic to the interior _points_ (<<point>>). Geometry is assumed to be closed. For _points_ (<<point>>), the boundary is empty.
 
 [.source]
 <<ISO19107,clause 3.50>>
@@ -284,7 +284,7 @@ NOTE: When a _POI_ (<<point-of-interest>>) physically moves it is understood to 
 a _class_ (<<class>>) whose instances are also _classes_ (<<class>>)
 
 [.source]
-<<UML2.5.1,clause 22>> #not sure how best to reference this https://www.omg.org/spec/UML/2.5.1/PDF#
+<<omguml,clause 22>> Object Management Group (OMG) UML Standard Version 2.5.1
 
 [[method]]
 === method::
@@ -294,7 +294,7 @@ implementation of an _operation_ (<<operation>>)
 NOTE: It specifies the algorithm or procedure associated with an _operation_ (<<operation>>).
 
 [.source]
-<<ISO/IEC19501>>
+<<ISO19501>>
 
 [[object]]
 === object::
@@ -393,7 +393,7 @@ data type that describes a _point_ (<<point>>) or _geometry_ potentially occupie
 NOTE:  A _direct position_ (<<direct-position>>) is a semantic subtype of _position_ (<<position>>). _Direct positions_ (<<direct-position>>) as described can only define a _point_ (<<point>>), and therefore not all _positions_  (<<position>>) can be represented by a _direct position_ (<<direct-position>>). That is consistent with the is type of relation. An ISO 19107 geometry is also a _position_ (<<position>>), but not a _direct position_ (<<direct-position>>)
 
 [.source]
-<<ISO19133:2020>>
+<<ISO19133>>
 
 [[property]]
 === property::
