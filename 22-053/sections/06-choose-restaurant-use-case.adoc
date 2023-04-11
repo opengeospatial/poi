@@ -29,7 +29,76 @@ and/or serve the type of meal (breakfast, lunch, dinner, etc.) the user wants.
 
 To support this use case, a system will need a comprehensive set of restaurant POIs, each with attributes to help answer some or all of the information needs listed above.
 
-The POI-CM standard specifies a way to represent a POI with its name, and its (latitude, longitude) position on earth. The rest of the information needed will have to be specified using non-standard attributes, as described in the [insert reference here] section above.
+The POI-CM standard specifies a way to represent a POI with its name, and its (latitude, longitude) position on earth. The rest of the information needed will have to be specified using non-standard attributes, as described in the xref:06-nonstandard-attributes.adoc#ug_nonstandard_attributes_section[Nonstandard Attributes] section.
 
 === Nonstandard Attributes for Restaurant POIs
 
+The most important nonstandard attributes needed for the restaurant use case are:
+
+* xref:06-nonstandard-attributes.adoc#_address[Address]
+* xref:06-nonstandard-attributes.adoc#_telephone_number[Telephone Number]
+* xref:06-nonstandard-attributes.adoc#_opening_hours[Opening Hours]
+* xref:06-nonstandard-attributes.adoc#_category[Category]
+* Website
+
+The recommended way to represent the first four of these was discussed in the xref:06-nonstandard-attributes.adoc#ug_nonstandard_attributes_section[Nonstandard Attributes] section.
+Website is intended to be the "authoritative" web page for the restaurant in question -- that is, the page that the restaurant would like users to visit if they want to learn more about their restaurant. That web page might answer many of the other attribute questions (e.g., "has a bar") in the list of the previous section.
+While one could use the *CI_Contact* type from the informative annex, a simpler recommendation is to extend the schema like by addint this:
+
+[source.JSON]
+----
+   "Website" {
+      "url" : "CharacterString[1..1]"
+   }
+----
+
+where the *url* value is a Uniform Resource Locator.
+
+_TODO: should we repeat the whole extended POI schema here?_
+
+=== Example ===
+
+Putting it all together, here is an example of a restaurant POI using JSON.
+
+[source.JSON]
+----
+{
+    "type": "Feature",
+    "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+            45.1491802,
+            -84.6907891
+        ]
+    },
+    "properties" : {
+        "featureID" : 693842,
+        "name" : {
+            "name" : "Chez Jacques"
+        },
+        "website" : {
+            "url" : "http://chezjacquesrestaurant.com"
+        },
+        "telephoneNumber" : {
+            "number" : "+13205555555"
+        },
+        "address" : {
+            "deliveryPoint" : "400 Atlantic Ave",
+            "city" : "Grove City",
+            "administrativeArea" : "Minnesota",
+            "postalCode" : "56243"
+        },
+        "category" : {
+            "category" : "French Restaurant",
+            "categorySystem" : "custom"
+        },
+        "openingHours" : {
+            "openingHoursLines" : [
+                "line" : "Mo-Fr 12:00-20:00,
+                "line" : "Sa 12:00-22:00"
+            ],
+            "openingHoursFormat" : "schemadotorg"
+        }
+    }
+}
+----
