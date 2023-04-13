@@ -1,7 +1,36 @@
 [[poi_publication_use_case_section]]
 == POI Publication Use Case
 
-//Insert clause content here
+=== Use Case Overview
+Use case on the publication of domain specific data in a common POI-datamodel on a geoportal.
 
-Clause content.
+Institutes collect and create data for their own business processes. This data might be valuable (in part) to make available to a wide audience, particularly on a geoportal. Domain-specific details are not relevant to the intended end user. For example, to the end user it is interesting to know the location of a school and whether it has preschool, but not the official institution number or the name of the schools principal.
 
+Basic information from a wide range of datasets can be mapped to the POI data model by using standard and nonstandard attributes.
+
+_TODO :
+=== Standard Attributes
+
+- Identifying attributes
+	○ hasFeatureOfInterest
+	○ CreationDate
+	○ TerminationDate
+- Descriptive attributes
+	○ Description
+	○ Name
+	○ Alternative name
+	○ Classification (non-standard)
+- Contact attributes
+- Location attributes
+- Metadata attributes
+	○ hasMetadata
+	○ Rights
+		§ Reference (voor url)
+		§ useLimitation ("gebruik en toegansbeperking")
+		§ otherConstrains (voor omschrijving)
+
+=== Nonstandard Attributes
+- Descriptive attributes
+	○ Classification (non-standard)
+- Referential attributes:
+	○ Links (non-standard)
