@@ -238,7 +238,7 @@ The telephone number is the number to use to contact the POI to ask questions, g
 .CI_Telephone Schema
 [source,JSON]
 ----
-    "CI_Telephone: {
+    "CI_Telephone": {
         "number": "CharacterString" [1..1],
         "numberType": "CI_TelephoneTypeCode" [0..1]
         }

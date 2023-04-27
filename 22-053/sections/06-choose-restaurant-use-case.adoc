@@ -1,7 +1,104 @@
 [[choose_restaurant_use_case_section]]
 == Choose Restaurant Use Case
 
-//Insert clause content here
+=== Use Case Overview
 
-Clause content.
+The *Choose Restaurant* use case is where a system is desired to help users find restaurants near them and information abou those restaurants to decide which, if any, they want to use.
 
+In order to choose a restaurant to eat in or get delivery from, users need to be able to POIs that are restaurants, with certain constraints (e.g., within a certain distance from a point on earth where the user is or expects to be). From that set of possibilities, they may wish to examine further information about each restaurant, to narrow down the choice. This information may include some or all of the following:
+
+* Serves cuisines that the user can eat and likes.
+* Is open during the hours the user intends to visit,
+and/or serve the type of meal (breakfast, lunch, dinner, etc.) the user wants.
+* Has service style the user prefers (take-out vs dine-in).
+* Has a price level the user prefers.
+* Has a bar and/or serves alcohol.
+* Has delivery.
+* Has order-ahead with pickup.
+* Requires reservations or reservations recommended.
+* Will have a busyness level that the user prefers at the time of intended vist.
+* Has good reviews.
+* Accepts particular payment methods.
+* Has an ambience the user prefers (family-friendly, upscale, romantic, etc.).
+* Has an all-you-can eat buffet.
+* Shows sports on TV.
+* Has a happy hour.
+* Is Handicap-accessible.
+* Has available free parking.
+* Has health-related requirements (vaccination and/or masks).
+
+To support this use case, a system will need a comprehensive set of restaurant POIs, each with attributes to help answer some or all of the information needs listed above.
+
+The POI-CM standard specifies a way to represent a POI with its name, and its (latitude, longitude) position on earth. The rest of the information needed will have to be specified using non-standard attributes, as described in the xref:06-nonstandard-attributes.adoc#ug_nonstandard_attributes_section[Nonstandard Attributes] section.
+
+=== Nonstandard Attributes for Restaurant POIs
+
+The most important nonstandard attributes needed for the restaurant use case are:
+
+* xref:06-nonstandard-attributes.adoc#_address[Address]
+* xref:06-nonstandard-attributes.adoc#_telephone_number[Telephone Number]
+* xref:06-nonstandard-attributes.adoc#_opening_hours[Opening Hours]
+* xref:06-nonstandard-attributes.adoc#_category[Category]
+* Website
+
+The recommended way to represent the first four of these was discussed in the xref:06-nonstandard-attributes.adoc#ug_nonstandard_attributes_section[Nonstandard Attributes] section.
+Website is intended to be the "authoritative" web page for the restaurant in question -- that is, the page that the restaurant would like users to visit if they want to learn more about their restaurant. That web page might answer many of the other attribute questions (e.g., "has a bar") in the list of the previous section.
+While one could use the *CI_Contact* type from the informative annex, a simpler recommendation is to extend the schema like by addint this:
+
+[source.JSON]
+----
+   "Website" {
+      "url" : "CharacterString[1..1]"
+   }
+----
+
+where the *url* value is a Uniform Resource Locator.
+
+_TODO: should we repeat the whole extended POI schema here?_
+
+=== Example ===
+
+Putting it all together, here is an example of a restaurant POI using JSON.
+
+[source.JSON]
+----
+{
+    "type": "Feature",
+    "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+            45.1491802,
+            -84.6907891
+        ]
+    },
+    "properties" : {
+        "featureID" : 693842,
+        "name" : {
+            "name" : "Chez Jacques"
+        },
+        "website" : {
+            "url" : "http://chezjacquesrestaurant.com"
+        },
+        "telephoneNumber" : {
+            "number" : "+13205555555"
+        },
+        "address" : {
+            "deliveryPoint" : "400 Atlantic Ave",
+            "city" : "Grove City",
+            "administrativeArea" : "Minnesota",
+            "postalCode" : "56243"
+        },
+        "category" : {
+            "category" : "French Restaurant",
+            "categorySystem" : "custom"
+        },
+        "openingHours" : {
+            "openingHoursLines" : [
+                "line" : "Mo-Fr 12:00-20:00,
+                "line" : "Sa 12:00-22:00"
+            ],
+            "openingHoursFormat" : "schemadotorg"
+        }
+    }
+}
+----
