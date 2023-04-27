@@ -8,7 +8,9 @@ Institutes collect and create data for their own business processes. This data m
 
 Basic information from a wide range of datasets can be mapped to the POI data model by using standard and nonstandard attributes.
 
-_TODO :
+
+TODO
+
 === Standard Attributes
 
 * Identifying attributes
@@ -25,26 +27,26 @@ _TODO :
 [source.JSON]
 ----
 {
-    "properties" : {
-        "POI" : {
-            "contactInfo" : {
-	            "role" : "owner" (??),
-	            "party" : {
-		            "contactInfo" : {
-			            "address" : {
+	"properties" : {
+		"POI" : {
+			"contactInfo" : {
+				"role" : "owner" (??),
+				"party" : {
+					"contactInfo" : {
+						"address" : {
 							"city" : "Ghent",
 							"country" : "Belgium",
 							"postalCode": "9040",
 							"deliveryPoint" : "Victor Braeckmanlaan 180",
-						    "electronicMailAddress" : "rozebroeken@lago.be"
+							"electronicMailAddress" : "rozebroeken@lago.be"
 						},
-			            "phone" : {
-						    "number" : "+32 9 335 28 88"
+						"phone" : {
+							"number" : "+32 9 335 28 88"
 						}
 					},
-                    "name": "Sports Centre Lago"
-                }				
-            }   
+					"name": "Sports Centre Lago"
+				}
+			}
 		}
 	}
 }
