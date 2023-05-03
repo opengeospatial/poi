@@ -3,7 +3,7 @@
 
 // Typical reference entries (without auto-fetch)
 // Reference content will display as written
-* [[[schema,Schema.org]]], *Schema.org:* http://schema.org/docs/schemas.html
+* [[[schema,nofetch(Schema.org)]]], *Schema.org:* http://schema.org/docs/schemas.html
 
 // Automatic reference fetching entries (auto-fetch)
 // To verify the reference lookup syntax for all the supported flavors,

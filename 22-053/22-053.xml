@@ -2,11 +2,23 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">User guide for OGC Points of Interest</title>
-<docidentifier type="ogc-internal">22-053</docidentifier><docnumber>22-053</docnumber><date type="received"><on>2023-02-09</on></date><contributor><role type="publisher"/><organization>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/PER/POI_UG/1.0</docidentifier><docidentifier type="ogc-internal">22-053</docidentifier><docnumber>22-053</docnumber><date type="published"><on>2017-01-23</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2023-05-03</on></date><contributor><role type="author"/><organization>
+<name>organization_1</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>organization_2</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>organization_3</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>etc.</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Charles Heazel</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Matthew Brian, John Purss</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><version><revision-date>=======</revision-date><draft>0.1.1</draft></version><language>en</language><script>Latn</script><status><stage>draft</stage></status><copyright><from>2023</from><owner><organization>
+</organization></contributor><version><draft>0.1.1</draft></version><language>en</language><script>Latn</script><status><stage>draft</stage></status><copyright><from>2023</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><ext><doctype>user-guide</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>html</keyword><ext><doctype>user-guide</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
 <boilerplate>
   <copyright-statement>
     <clause>
@@ -118,24 +130,7 @@
     
   </feedback-statement>
 </boilerplate>
-<preface><foreword id="_bf00a461-299c-d831-f792-6b50a448764e" obligation="informative">
-<title>Preface</title>
-<p id="_2e4ed34b-29b5-8c1c-2c9c-d9997bc3fd26">&gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes
-:comment: <hi># Date on which the standard was approved by the issuing authority; mandatory :issued-date: 2017-06-29 :comment: </hi># Date on which the standard was published; mandatory
-:published-date: 2017-01-23
-:comment: <hi>#  Year when the copyright for the document was issued; optional :copyright-year: 2023 :comment: </hi># External link referencing the document; optional. If not provided, a default value is created following this structure: “http://www.opengis.net/doc/{abbrevation of doctype}/{abbrev}/{version}”
-:external-id: <link target="http://www.opengis.net/doc/PER/POI_UG/1.0"/>
-:comment: <hi># Author one :fullname: Charles Heazel :comment: </hi># Author two
-:fullname_2: Matthew Brian, John Purss
-:comment: <hi># Role of the authors; optional. Supply only if correspoding author is an editor :role_2: editor :comment: </hi># Comma delimited keywords; mandatory
-:keywords: ogcdoc, OGC document, API, openapi, html
-:comment: <hi># Semicolon-delimited list of the submitting organizations; mandatory :submitting-organizations: organization_1; organization_2; organization_3; etc. :comment: </hi># Metanorma flavor; mandatory
-:mn-document-class: ogc
-:comment: <hi># Desired output formats; mandatory :mn-output-extensions: xml,html,doc,pdf :comment: </hi># Directory name used as prefix for the location of image files; optional
-:imagesdir: images
-:comment: <hi>#</hi> Enable local relaton cache for quick inclusion of prefetched references; optional. For further information, visit: <link target="https://www.metanorma.org/author/ref/document-attributes/#caches"/>, <link target="https://www.metanorma.org/author/topics/building/reference-lookup/#lookup-result-caching"/>
-:local-cache-only:</p>
-</foreword><clause id="abstract_section" obligation="informative">
+<preface><clause id="abstract_section" obligation="informative">
 <title>Abstract</title>
 <p id="_497eb1d7-c4ca-4c80-d749-fb7188efa7b1">POI-CM is an open conceptual data model for representing information about points of interest (POI). It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p>
 
@@ -143,7 +138,6 @@
 
 <p id="_48ee43bd-1142-53b7-5a7b-de06930a4a6e">This Users Guide provides extended explanations and examples for the individual concepts that are defined in the POI Conceptual Model Standard. Both the Conceptual Model Standard and this Users Guide are mutually linked to facilitate navigation between corresponding sections in these documents.</p>
 </clause><clause type="security" id="_3a09f4f4-84f8-f5b1-320b-1073abee5ebb" obligation="informative"><title>Security considerations</title><p id="_e88b1376-d0f4-5147-cf72-d44500f21228">No security considerations have been made for this document.</p></clause></preface><sections>
-
 
 <clause id="ug_introduction_section" obligation="normative">
 <title>Introduction</title>
@@ -425,9 +419,9 @@
 <title>Telephone Number</title>
 <p id="_7d7a04e4-00bb-2280-c18f-2704c6b5fd03">The telephone number is the number to use to contact the POI to ask questions, get service, etc. The recommendation here is to use the <strong>CI_Telephone</strong> class from the Informative Annex:</p>
 
-<sourcecode id="_6f283c0b-9972-8629-d8bd-129de7990a6c" lang="JSON">
+<sourcecode id="_3ad2afdb-5118-0245-7390-aa4b750d7489" lang="JSON">
 <name>CI_Telephone Schema</name>
-    "CI_Telephone: {
+    "CI_Telephone": {
         "number": "CharacterString" [1..1],
         "numberType": "CI_TelephoneTypeCode" [0..1]
         }</sourcecode>
@@ -564,7 +558,7 @@
 <title>Normative references</title><p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <bibitem id="schema"><formattedref format="application/x-isodoc+xml"><strong>Schema.org:</strong> <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>Schema.org</docidentifier></bibitem>
 
- <bibitem id="rfc3339" type="standard">  <fetched>2023-03-09</fetched>  
+ <bibitem id="rfc3339" type="standard">  <fetched>2023-05-03</fetched>  
 <title format="text/plain" language="en" script="Latn">Date and Time on the Internet: Timestamps</title>
   <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.3339.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc3339</uri>  <docidentifier type="RFC" primary="true">RFC 3339</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC3339</docidentifier>  <docidentifier type="DOI">10.17487/RFC3339</docidentifier>  <docnumber>RFC3339</docnumber>  <date type="published">    <on>2002-07</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Internet Engineering Task Force</name>
@@ -576,7 +570,7 @@
   </abstract>  <series type="main">    
 <title format="text/plain" language="en" script="Latn">RFC</title>
     <number>3339</number>  </series></bibitem>
- <bibitem id="rfc7946" type="standard">  <fetched>2023-03-09</fetched>  
+ <bibitem id="rfc7946" type="standard">  <fetched>2023-05-03</fetched>  
 <title format="text/plain" language="en" script="Latn">The GeoJSON Format</title>
   <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.7946.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc7946</uri>  <docidentifier type="RFC" primary="true">RFC 7946</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC7946</docidentifier>  <docidentifier type="DOI">10.17487/RFC7946</docidentifier>  <docnumber>RFC7946</docnumber>  <date type="published">    <on>2016-08</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Internet Engineering Task Force</name>

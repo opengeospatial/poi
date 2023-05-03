@@ -149,7 +149,7 @@
   </feedback-statement>
 </boilerplate>
 <preface><abstract id="_abstract" displayorder="1"><title depth="1">I.<tab/>Abstract</title><p id="_ea8b918b-259f-ad32-41cd-bf6720709423">&#x3c;Insert Abstract Text here&#x3e;</p>
-</abstract><clause id="_eeedc2d0-4a44-4c41-b929-60fe720c7337" type="keywords" displayorder="2">
+</abstract><clause id="_38d2b80b-5147-453a-8321-2e60fb149465" type="keywords" displayorder="2">
 <title depth="1">II.<tab/>Keywords</title>
 <p>The following are keywords to be used by search engines and
     document catalogues.</p>
@@ -162,7 +162,7 @@
 <p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_bd38d1cb-4027-4270-9d14-827b9e4059a1" type="submitting_orgs" displayorder="5">
+</foreword><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative" displayorder="4"><title depth="1">IV.<tab/>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_a0d74644-475a-4c4d-b397-165b84e3f38c" type="submitting_orgs" displayorder="5">
 <title depth="1">V.<tab/>Submitting Organizations</title>
 <p>The following organizations submitted this Document to the
    Open Geospatial Consortium (OGC):</p>
@@ -4003,8 +4003,23 @@ Equivalent to STEP’s and SQL’s Unknown.</td>
 
 <bibitem id="ogcdr"><formattedref format="application/x-isodoc+xml">at <link target="http://www.opengis.net/def/glossary/term/ConceptualSchema">www.opengis.net</link></formattedref><docidentifier type="OGC">OGC Definitions Register</docidentifier></bibitem>
 <bibitem id="omguml"><formattedref format="application/x-isodoc+xml">at <link target="https://www.omg.org/spec/UML/2.5.1/PDF">Object Management Group (OMG) UML Standard Version 2.5.1</link></formattedref><docidentifier type="OMG">OMG UML</docidentifier></bibitem>
-<bibitem id="rfc3986"><formattedref format="application/x-isodoc+xml">IETF: RFC 3986, Uniform Resource Identifier (URI): Generic Syntax. (January 2005)</formattedref><docidentifier type="IETF">IETF RFC 3986</docidentifier><docnumber>3986</docnumber></bibitem>
-<bibitem id="ISO19101-1"><formattedref format="application/x-isodoc+xml">ISO: ISO 19101-1:2014, Geographic information — Reference model — Part 1: Fundamentals</formattedref><docidentifier type="ISO">ISO 19101-1</docidentifier><docnumber>19101-1</docnumber><date type="published"><on>2014</on></date></bibitem>
+<bibitem id="rfc3986" type="standard">  <fetched>2023-03-03</fetched>  
+<title format="text/plain" language="en" script="Latn">Uniform Resource Identifier (URI): Generic Syntax</title>
+  <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.3986.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc3986</uri>  <docidentifier type="RFC" primary="true">RFC 3986</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC RFC3986</docidentifier>  <docidentifier type="DOI">DOI 10.17487/RFC3986</docidentifier>  <docnumber>RFC3986</docnumber>  <date type="published">    <on>2005</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Internet Engineering Task Force</name>
+      <abbreviation>IETF</abbreviation>    </organization>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">T. Berners-Lee</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">R. Fielding</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename language="en">L. Masinter</completename>      </name>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_3d04ed11-8416-0f67-2428-7f731ae931d7">A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource. This specification defines the generic URI syntax and a process for resolving URI references that might be in relative form, along with guidelines and security considerations for the use of URIs on the Internet. The URI syntax defines a grammar that is a superset of all valid URIs, allowing an implementation to parse the common components of a URI reference without knowing the scheme-specific requirements of every possible identifier. This specification does not define a generative grammar for URIs; that task is performed by the individual specifications of each URI scheme. [STANDARDS-TRACK]</p>
+  </abstract>  <series type="main">    
+<title format="text/plain" language="en" script="Latn">STD</title>
+    <number>66</number>  </series>  <series type="main">    
+<title format="text/plain" language="en" script="Latn">RFC</title>
+    <number>3986</number>  </series></bibitem>
+<bibitem id="ISO19101-1"><formattedref format="application/x-isodoc+xml">ISO: ISO 19101-1:2014, <em>Geographic information — Reference model — Part 1: Fundamentals</em></formattedref><docidentifier type="ISO">ISO 19101-1</docidentifier><docnumber>19101-1</docnumber><date type="published"><on>2014</on></date></bibitem>
 <bibitem id="ISO19103"><formattedref format="application/x-isodoc+xml">ISO: ISO 19103:2015, Geographic Information – Conceptual Schema Language</formattedref><docidentifier type="ISO">ISO 19103</docidentifier><docnumber>19103</docnumber><date type="published"><on>2015</on></date></bibitem>
 <bibitem id="ISO19107"><formattedref format="application/x-isodoc+xml">ISO: ISO 19107:2003, Geographic Information – Spatial Schema</formattedref><docidentifier type="ISO">ISO 19107</docidentifier><docnumber>19107</docnumber></bibitem>
 <bibitem id="ISO19108"><formattedref format="application/x-isodoc+xml">ISO: ISO 19108:2002/Cor 1:2006, Geographic information – Temporal schema — Technical Corrigendum 1</formattedref><docidentifier type="ISO">ISO 19108</docidentifier><docnumber>19108</docnumber></bibitem>
