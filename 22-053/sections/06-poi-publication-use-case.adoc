@@ -8,29 +8,61 @@ Institutes collect and create data for their own business processes. This data m
 
 Basic information from a wide range of datasets can be mapped to the POI data model by using standard and nonstandard attributes.
 
-_TODO :
+
+TODO
+
 === Standard Attributes
 
-- Identifying attributes
-	○ hasFeatureOfInterest
-	○ CreationDate
-	○ TerminationDate
-- Descriptive attributes
-	○ Description
-	○ Name
-	○ Alternative name
-	○ Classification (non-standard)
-- Contact attributes
-- Location attributes
-- Metadata attributes
-	○ hasMetadata
-	○ Rights
-		§ Reference (voor url)
-		§ useLimitation ("gebruik en toegansbeperking")
-		§ otherConstrains (voor omschrijving)
+* Identifying attributes
+** hasFeatureOfInterest
+** CreationDate
+** TerminationDate
+* Descriptive attributes
+** Description
+** Name
+** Alternative name
+** Classification (non-standard)
+* Contact attributes
+
+[source.JSON]
+----
+{
+	"properties" : {
+		"POI" : {
+			"contactInfo" : {
+				"role" : "owner" (??),
+				"party" : {
+					"contactInfo" : {
+						"address" : {
+							"city" : "Ghent",
+							"country" : "Belgium",
+							"postalCode": "9040",
+							"deliveryPoint" : "Victor Braeckmanlaan 180",
+							"electronicMailAddress" : "rozebroeken@lago.be"
+						},
+						"phone" : {
+							"number" : "+32 9 335 28 88"
+						}
+					},
+					"name": "Sports Centre Lago"
+				}
+			}
+		}
+	}
+}
+
+----
+
+* Location attributes
+* Metadata attributes
+** hasMetadata
+** Rights
+*** Reference (voor url)
+*** useLimitation ("gebruik en toegansbeperking")
+*** otherConstrains (voor omschrijving)
 
 === Nonstandard Attributes
-- Descriptive attributes
-	○ Classification (non-standard)
-- Referential attributes:
-	○ Links (non-standard)
+* Descriptive attributes
+** Classification (non-standard)
+* Referential attributes:
+** Links (non-standard)
