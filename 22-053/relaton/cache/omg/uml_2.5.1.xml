@@ -1,0 +1,72 @@
+<bibdata>
+  <fetched>2023-05-04</fetched>
+  <title type="main" format="text/plain" language="en" script="Latn">Unified Modeling Language</title>
+  <uri type="src">https://www.omg.org/spec/UML/2.5.1/About-UML</uri>
+  <uri type="pdf">https://www.omg.org/spec/UML/2.5.1/PDF</uri>
+  <docidentifier type="OMG" primary="true">UML 2.5.1</docidentifier>
+  <date type="published">
+    <on>2017-12</on>
+  </date>
+  <version>
+    <revision-date>2017-12-01</revision-date>
+    <draft>2.5.1</draft>
+  </version>
+  <abstract format="text/plain" language="en" script="Latn">A specification defining a graphical language for visualizing, specifying, constructing, and documenting the artifacts of distributed object systems.</abstract>
+  <status>
+    <stage>formal</stage>
+  </status>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 2.4.1</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 2.3</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 2.2</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 2.1.2</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 2.0</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 1.5</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 1.4</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 1.3</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 1.2</formattedref>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem>
+      <formattedref format="text/plain">OMG UML 1.1</formattedref>
+    </bibitem>
+  </relation>
+  <license>RF-Limited</license>
+  <keyword>Modeling</keyword>
+  <keyword>Software Engineering</keyword>
+  <keyword>Platform</keyword>
+</bibdata>

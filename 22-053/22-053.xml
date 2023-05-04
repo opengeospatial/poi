@@ -145,11 +145,11 @@
 
 <p id="_dcd98b43-9cc8-e37b-4d9f-c0abde52b930">POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.</p>
 
-<p id="_82826df8-cfa2-dc6d-2341-ef23acad6d1d">POI-CM is a common semantic information model for the representation of POI objects that can be shared over different applications. The latter capability is especially important with respect to the cost-effective sustainable maintenance of POI set models, allowing the possibility of selling the same data to customers from different application fields.</p>
+<p id="_abbb411b-2114-107e-aa05-7d066dfdfbef">POI-CM is a common semantic information model for the representation of POI objects that can be shared across many use cases. The ability for a POI using this conceptual model to be shared and reused is especially important with respect to the cost-effective sustainable maintenance of POI set models, allowing the possibility of selling the same data to customers from different application fields.</p>
 
-<p id="_32e2cf0b-95a4-9d56-5c0c-06b33318a07a">POI-CM is an open conceptual data model for the storage and exchange of POI models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO fundation assures that the features described in the POI Models share the same spatial-temporal universe as features described by related standards (e.g., CityGML).</p>
+<p id="_1c3f72ca-2d6e-6a4d-7cc3-3cbbfde9060b">POI-CM is an open conceptual data model for the storage and exchange of POI models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) <link target="https://github.com/ISO-TC211/HMMG">conceptual model standards</link> for spatial and temporal data. Building on the ISO fundation assures that the features described in the POI Models share the same spatial-temporal universe as features described by related standards (e.g., &lt;&lt;citygml,CityGML..).</p>
 
-<p id="_15006433-4441-0c2b-691f-1ab566358186">A POI is not a dataset. Rather, it is a feature type that enhances an existing dataset of features. POI-CM builds on the ISO General Feature Model (ISO 10109) and the ISO Geometry Model (ISO 19107). To avoid reinventing things, POI-CM also borrows some classes from ISO Common Data Types (ISO 19103) and OGC CityGML 3.0.</p>
+<p id="_15006433-4441-0c2b-691f-1ab566358186">A POI is not a dataset. Rather, it is a feature type that enhances an existing dataset of features. POI-CM builds on the ISO General Feature Model (<eref type="inline" bibitemid="iso19109" citeas="ISO 19109">ISO 10109</eref>) and the ISO Geometry Model (<eref type="inline" bibitemid="iso19107" citeas="ISO 19107">ISO 19107</eref>). To avoid reinventing things, POI-CM also borrows some classes from ISO Common Data Types (<eref type="inline" bibitemid="iso19103" citeas="ISO 19103">ISO 19103</eref>) and <eref type="inline" bibitemid="citygml" citeas="OGC CityGML 3.0">OGC CityGML 3.0</eref>.</p>
 
 <p id="_2ee0921d-f2d3-e38e-65c8-9d0dbf619cbc">The POI Conceptual Model standard defines the conceptual model in UML and is the focus of this Users Guide. The the future, separate implementation standards can be published for each encoding to be defined. This separation permits generality as well as specificity. The first POI implementation standard will describe the JSON encoding. Other implementation standards (e.g. for relational database schema) are expected to follow.</p>
 </clause>
@@ -556,8 +556,6 @@
 </clause>
 </sections><bibliography><references id="_references" normative="true" obligation="informative">
 <title>Normative references</title><p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="schema"><formattedref format="application/x-isodoc+xml"><strong>Schema.org:</strong> <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>Schema.org</docidentifier></bibitem>
-
  <bibitem id="rfc3339" type="standard">  <fetched>2023-05-03</fetched>  
 <title format="text/plain" language="en" script="Latn">Date and Time on the Internet: Timestamps</title>
   <uri type="xml">https://raw.githubusercontent.com/relaton/relaton-data-ietf/master/data/reference.RFC.3339.xml</uri>  <uri type="src">https://www.rfc-editor.org/info/rfc3339</uri>  <docidentifier type="RFC" primary="true">RFC 3339</docidentifier>  <docidentifier type="RFC" scope="anchor">RFC3339</docidentifier>  <docidentifier type="DOI">10.17487/RFC3339</docidentifier>  <docnumber>RFC3339</docnumber>  <date type="published">    <on>2002-07</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
@@ -566,7 +564,7 @@
 <name>        <completename language="en">G. Klyne</completename>      </name>
     </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en">C. Newman</completename>      </name>
-    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_59b017af-cdd9-9339-6b2e-b20f41edbdd8">This document defines a date and time format for use in Internet protocols that is a profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.</p>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_e7953d73-d84e-d6ba-2e0a-6613370b1492">This document defines a date and time format for use in Internet protocols that is a profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.</p>
   </abstract>  <series type="main">    
 <title format="text/plain" language="en" script="Latn">RFC</title>
     <number>3339</number>  </series></bibitem>
@@ -586,9 +584,14 @@
 <name>        <completename language="en">S. Hagen</completename>      </name>
     </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en">T. Schaub</completename>      </name>
-    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_f33c905b-2aea-7503-b3fa-8b82707b6a93">GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON). It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents. GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.</p>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/html" language="en" script="Latn">    <p id="_907b72eb-bd36-eace-3881-89c271901be0">GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON). It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents. GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.</p>
   </abstract>  <series type="main">    
 <title format="text/plain" language="en" script="Latn">RFC</title>
     <number>7946</number>  </series></bibitem>
+<bibitem id="iso19103"><formattedref format="application/x-isodoc+xml">ISO: ISO 19103:2015, Geographic Information – Conceptual Schema Language</formattedref><docidentifier type="ISO">ISO 19103</docidentifier><docnumber>19103</docnumber><date type="published"><on>2015</on></date></bibitem>
+<bibitem id="iso19107"><formattedref format="application/x-isodoc+xml">ISO: ISO 19107:2003, Geographic Information – Spatial Schema</formattedref><docidentifier type="ISO">ISO 19107</docidentifier><docnumber>19107</docnumber><date type="published"><on>2003</on></date></bibitem>
+<bibitem id="iso19109"><formattedref format="application/x-isodoc+xml">ISO: ISO 19109:2015, Geographic Information – Rules for Application Schemas</formattedref><docidentifier type="ISO">ISO 19109</docidentifier><docnumber>19109</docnumber><date type="published"><on>2015</on></date></bibitem>
+<bibitem id="citygml"><formattedref format="application/x-isodoc+xml">OGC: the OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard, OGC document 20-010</formattedref><docidentifier type="OGC">OGC CityGML 3.0</docidentifier><docnumber>3.0</docnumber></bibitem>
+<bibitem id="omguml"><formattedref format="application/x-isodoc+xml">OMG: the OMG® Unified Modeling Language, Version 2.5, 2015, <link target="https://www.omg.org/spec/UML"/></formattedref><docidentifier type="OMG">OMG UML</docidentifier></bibitem>
 </references></bibliography>
 </ogc-standard>

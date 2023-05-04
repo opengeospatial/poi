@@ -1407,7 +1407,7 @@ span.hi {
 
   </div>
 </div>
-      <div class="Section3" id="_8a23010e-4bc0-4bff-833f-ad827439a23e">
+      <div class="Section3" id="_f76a0a9b-aa67-41f2-a58e-fc5416943ee3">
         <h1 class="IntroTitle" id="toc0">I.&#xA0; Keywords</h1>
         <p>The following are keywords to be used by search engines and
     document catalogues.</p>
@@ -1417,7 +1417,7 @@ span.hi {
         <h1 class="IntroTitle" id="toc1">II.&#xA0; Security considerations</h1>
         <p id="_e88b1376-d0f4-5147-cf72-d44500f21228">No security considerations have been made for this document.</p>
       </div>
-      <div class="Section3" id="_303c173f-5165-46e7-89f8-f0a0ed941625">
+      <div class="Section3" id="_81c49489-f2eb-4791-831d-f736777964b6">
         <h1 class="IntroTitle" id="toc2">III.&#xA0; Submitting Organizations</h1>
         <p>The following organizations submitted this Document to the
    Open Geospatial Consortium (OGC):</p>
@@ -1441,18 +1441,21 @@ span.hi {
       </div>
       <div><h1 id="toc5">2.&#xA0; Normative references</h1>
 <p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<p id="schema" class="NormRef"><b>Schema.org:</b> <a href="http://schema.org/docs/schemas.html">http://schema.org/docs/schemas.html</a></p>
-
  <p id="rfc3339" class="NormRef">G. Klyne, C. Newman: RFC 3339, <i>Date and Time on the Internet: Timestamps</i>. <span>Internet Engineering Task Force</span> (2002). <a href="https://www.rfc-editor.org/info/rfc3339">https://www.rfc-editor.org/info/rfc3339</a></p>
  <p id="rfc7946" class="NormRef">H. Butler, M. Daly, A. Doyle, S. Gillies, S. Hagen, T. Schaub: RFC 7946, <i>The GeoJSON Format</i>. <span>Internet Engineering Task Force</span> (2016). <a href="https://www.rfc-editor.org/info/rfc7946">https://www.rfc-editor.org/info/rfc7946</a></p>
+<p id="iso19103" class="NormRef">ISO: ISO 19103:2015, Geographic Information &#x2013; Conceptual Schema Language</p>
+<p id="iso19107" class="NormRef">ISO: ISO 19107:2003, Geographic Information &#x2013; Spatial Schema</p>
+<p id="iso19109" class="NormRef">ISO: ISO 19109:2015, Geographic Information &#x2013; Rules for Application Schemas</p>
+<p id="citygml" class="NormRef">OGC: the OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard, OGC document 20-010</p>
+<p id="omguml" class="NormRef">OMG: the OMG&#xAE; Unified Modeling Language, Version 2.5, 2015, <a href="https://www.omg.org/spec/UML">https://www.omg.org/spec/UML</a></p>
 </div>
       <div id="ug_introduction_section">
         <h1 id="toc6">3.&#xA0; Introduction</h1>
         <p id="_c2478c2e-ffa2-a9ff-f1e4-600335204190">There are many systems and applications that need to have information about locations in the world. For example, such &#x201C;point of interest&#x201D; (POI) data is needed in navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers, among many others.</p>
         <p id="_dcd98b43-9cc8-e37b-4d9f-c0abde52b930">POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.</p>
-        <p id="_82826df8-cfa2-dc6d-2341-ef23acad6d1d">POI-CM is a common semantic information model for the representation of POI objects that can be shared over different applications. The latter capability is especially important with respect to the cost-effective sustainable maintenance of POI set models, allowing the possibility of selling the same data to customers from different application fields.</p>
-        <p id="_32e2cf0b-95a4-9d56-5c0c-06b33318a07a">POI-CM is an open conceptual data model for the storage and exchange of POI models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO fundation assures that the features described in the POI Models share the same spatial-temporal universe as features described by related standards (e.g., CityGML).</p>
-        <p id="_15006433-4441-0c2b-691f-1ab566358186">A POI is not a dataset. Rather, it is a feature type that enhances an existing dataset of features. POI-CM builds on the ISO General Feature Model (ISO 10109) and the ISO Geometry Model (ISO 19107). To avoid reinventing things, POI-CM also borrows some classes from ISO Common Data Types (ISO 19103) and OGC CityGML 3.0.</p>
+        <p id="_abbb411b-2114-107e-aa05-7d066dfdfbef">POI-CM is a common semantic information model for the representation of POI objects that can be shared across many use cases. The ability for a POI using this conceptual model to be shared and reused is especially important with respect to the cost-effective sustainable maintenance of POI set models, allowing the possibility of selling the same data to customers from different application fields.</p>
+        <p id="_1c3f72ca-2d6e-6a4d-7cc3-3cbbfde9060b">POI-CM is an open conceptual data model for the storage and exchange of POI models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) <a href="https://github.com/ISO-TC211/HMMG">conceptual model standards</a> for spatial and temporal data. Building on the ISO fundation assures that the features described in the POI Models share the same spatial-temporal universe as features described by related standards (e.g., &lt;&lt;citygml,CityGML..).</p>
+        <p id="_15006433-4441-0c2b-691f-1ab566358186">A POI is not a dataset. Rather, it is a feature type that enhances an existing dataset of features. POI-CM builds on the ISO General Feature Model (<a href="#iso19109">ISO 10109</a>) and the ISO Geometry Model (<a href="#iso19107">ISO 19107</a>). To avoid reinventing things, POI-CM also borrows some classes from ISO Common Data Types (<a href="#iso19103">ISO 19103</a>) and <a href="#citygml">OGC CityGML 3.0</a>.</p>
         <p id="_2ee0921d-f2d3-e38e-65c8-9d0dbf619cbc">The POI Conceptual Model standard defines the conceptual model in UML and is the focus of this Users Guide. The the future, separate implementation standards can be published for each encoding to be defined. This separation permits generality as well as specificity. The first POI implementation standard will describe the JSON encoding. Other implementation standards (e.g. for relational database schema) are expected to follow.</p>
       </div>
       <div id="ug_usage_section">
