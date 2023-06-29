@@ -28,15 +28,13 @@ In this Standard we extend the General Feature Model to support the concept of a
 
 [[poi_uml_model,reftext='POI UML Model']]
 .POI UML Model
-image::./images/POI-2.png[align="center"]
+image::./images/POI.png[align="center"]
 
 *<<AbstractFeature-section,AbstractFeature:>>* The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model.
 
 *<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan:>>* Adds temporality to AbstractFeature. This class was borrowed from the CityGML 3.0 Conceptual Model.
 
 *<<AbstractPOI-section,AbstractPOI:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
-
-*<<POIProperty-section,POIProperty:>>* The abstract model for a Property of a Feature of Interest which is to be represented in a POI.
 
 *POI:* A POI instance. 
 
