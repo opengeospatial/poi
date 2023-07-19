@@ -13,7 +13,7 @@
 :fullname: Charles Heazel
 :fullname_2: Matthew Brian 
 :fullname_3: John Purss
-:docsubtype: implementation
+:docsubtype: conceptual
 :keywords: ogcdoc, OGC document, API, openapi, html
 :submitting-organizations: Organization One; Organization Two
 :mn-document-class: ogc

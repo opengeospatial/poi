@@ -18,29 +18,9 @@ The most relevant classes defined by this model are described below:
 
 In an implementation this abstract class shall be substituted by a concrete class representing a feature type from an application schema associated with a domain of discourse (ISO 19109, ISO 19101).
 
-*<<AttributeType-section,AttributeType:>>* characteristic of a feature
+*<<AttributeType-section,AttributeType:>>*  A characteristic of a feature. The Feature Geometry is one type of attribute.
 
 include::../requirements/core/Req_Core_GeneralFeatureModel.adoc[]
-
-=== POI Class Model
-
-In this Standard we extend the General Feature Model to support the concept of a Point of Interest. 
-
-[[poi_uml_model,reftext='POI UML Model']]
-.POI UML Model
-image::./images/POI-3.png[align="center"]
-
-*<<AbstractFeature-section,AbstractFeature:>>* The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model.
-
-*<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan:>>* Adds temporality to AbstractFeature. This class was borrowed from the CityGML 3.0 Conceptual Model.
-
-*<<AbstractPOI-section,AbstractPOI:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
-
-*POI:* A POI instance. 
-
-*<<FeatureOfInterest-section,FeatureOfInterest:>>* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.
-
-include::../requirements/Req_Core.adoc[]
 
 === Geometry
 
@@ -63,4 +43,52 @@ The key classes desecribed in this figure are:
 *<<GM_Polygon-section,GM_Polygon:>>* The geometric primitive for areas.
 
 include::../requirements/core/Req_Core_Geometry.adoc[]
+
+[[anyfeature_extension-section]]
+=== POI ISO Extensions
+
+In this Standard we extend the General Feature Model to support the concept of a Point of Interest. 
+
+[[poi_uml_model_iso_estensions,reftext='POI UML Model - ISO Extensions']]
+.POI UML Model - ISO Extensions
+image::./images/ISO_Extensions.png[align="center"]
+
+These extensions include include further refinement of the AnyFeature class through the addition of identification and temporal validity attributes.
+
+*<<AbstractFeature-section,AbstractFeature:>>* The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model.
+
+*<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan:>>* Adds temporality to AbstractFeature. This class was borrowed from the CityGML 3.0 Conceptual Model.
+
+[[poi_core-section]]
+=== POI Class Model
+
+The following classes form the core of the POI model. These classes should be the same for all POIs.
+
+[[poi_uml_model_core,reftext='POI UML Model - Core']]
+.POI UML Model - Core
+image::./images/POI.png[align="center"]
+
+*<<AbstractPOI-section,AbstractPOI:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
+
+*POI:* A POI instance. 
+
+*<<FeatureOfInterest-section,FeatureOfInterest:>>* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.
+
+[[poi_payload-section]]
+=== POI Payload
+
+A POI is a representation of a Feature. The POI class provides a standard way to identify and manage a POI. However, it does not provide any information about the Feature it is representing. That is difficult to standardize since it is dependent on the data model of the Feature store being described. 
+
+Therefore, the POI model is designed to be extended with properties specific to a Feature or a Feature Collection. The POI Payload is a container for representations of Feature properties. The syntax of those representations is provided by the Payload Schema class. Where appropriate, the semantics can also be provided through the Payload Definition class. Since the schema and definitions may be the same for a large number of Features, these classes should be instantiated as referenceable resources, allowing one instance to be used by a number of POIs.
+
+[[poi_uml_model_payload,reftext='POI UML Model - Payload']]
+.POI UML Model - Payload
+image::./images/POI_Extensions.png[align="center"]
+
+*<<POI_Payload-section,POIPayload:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
+
+*<<Payload_Schema-section,PayloadSchema:>>* The Payload Schema Class represents a syntactic model (schema) for a POI payload.
+
+*<<Payload_Definition-section,PayloadDefinition:>>* The Payload Definition Class represents a semantic model (ontology) for a POI payload.
+
 

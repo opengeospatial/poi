@@ -155,7 +155,7 @@ include::../requirements/core/Req_Core_POI-Payload.adoc[]
 |*PayloadSchema* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The Payload Definition Class represents a syntactic model (schema) for a POI payload.
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The Payload Schema Class represents a syntactic model (schema) for a POI payload.
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! None 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  None
 !===

@@ -10,12 +10,11 @@ This standard defines a Conceptual Model which is independent of any encoding or
 
 A Conceptual Model standardization target is a version of the POI Conceptual Model (CM) tailored for a specific user community. This tailoring can include:
 
-. Omission of one or more of the optional UML packages
 . Reduction of the multiplicity for an attribute or association
 . Restriction on the valid values for an attribute
-. Additional POI properties documented through the POIProperty class.
+. Additional POI properties documented through the POIPayload class.
 
-Of these options, actions #1, #2, and #3 can be performed when creating an implementation specification. Only action #4 requires an extension of the POI conceptual model. These extensions are accomplished using the POI Property mechanism described in section <TBD>.
+Of these options, actions #1 and #2 can be performed when creating an implementation specification. Only action #3 requires an extension of the POI conceptual model. These extensions are accomplished using the POI Payload mechanism described in <<poi_payload-section,POI Payload>>.
 
 === Implementation Specifications
 
