@@ -16,17 +16,17 @@ An encoding of the POI class SHALL comply with requirement <<req_core_POI_contac
 
 [.component,class=part]
 --
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_definition,/req/core/req-poi-definition>>.
+--
+
+[.component,class=part]
+--
 An encoding of the POI class SHALL comply with requirement <<req_core_POI_featureOfInterest,/req/core/req-poi-featureOfInterest>>.
 --
 
 [.component,class=part]
 --
 An encoding of the POI class SHALL comply with requirement <<req_core_POI_metadata,/req/core/req-poi-metadata>>.
---
-
-[.component,class=part]
---
-An encoding of the POI class SHALL comply with requirement <<req_core_POI_property,/req/core/req-poi-property>>.
 --
 
 [.component,class=part]
@@ -41,7 +41,17 @@ An encoding of the POI class SHALL comply with requirement <<req_core_POI_rights
 
 [.component,class=part]
 --
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_schema,/req/core/req-poi-schema>>.
+--
+
+[.component,class=part]
+--
 An encoding of the POI class SHALL comply with requirement <<req_core_POI_symbology,/req/core/req-poi-symbology>>.
+--
+
+[.component,class=part]
+--
+An encoding of the POI class SHALL comply with requirement <<req_core_POI_Payload,/req/core/req-poi-payload>>.
 --
 
 ====
@@ -60,6 +70,23 @@ An encoding of the POI class SHALL include one or more `contactInfo` attributes.
 [.component,class=part]
 --
 Encodings of the `contactInfo` attribute SHALL be a valid implementation of the CI_Responsibility class from ISO 19115-1:2014
+--
+====
+
+[[req_core_POI_definition]]
+.Requirement - POI definition
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-poi-definition
+[.component,class=part]
+--
+An encoding of the POI class SHALL include no more than one `definition` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `definition` attribute SHALL be a valid implementation of the Link class from this Standard.
 --
 ====
 
@@ -97,15 +124,15 @@ Encodings of the `metadata` attribute SHALL be a resolvable Uniform Resource Ide
 --
 ====
 
-[[req_core_POI_property]]
-.Requirement - POI Property
+[[req_core_POI_Payload]]
+.Requirement - POI Payload
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi-property
+label:: /req/core/req-poi-payload
 [.component,class=part]
 --
-An encoding of the POI class SHALL include zero or more `property` attributes.
+An encoding of the POI class SHALL be associated with `payload` attributes.
 --
 
 [.component,class=part]
@@ -145,6 +172,23 @@ An encoding of the POI class SHALL include zero, one, or two `rights` attributes
 [.component,class=part]
 --
 Encodings of the `rights` attribute SHALL be a valid implementation of the MD_Constraints class from ISO 19115-1:2014
+--
+====
+
+[[req_core_POI_schema]]
+.Requirement - POI Schema
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-poi-schema
+[.component,class=part]
+--
+An encoding of the POI class SHALL include one `schema` attributes.
+--
+
+[.component,class=part]
+--
+Encodings of the `schema` attribute SHALL be a resolvable Uniform Resource Identifier (URI) for a PayloadSchema resource.
 --
 ====
 

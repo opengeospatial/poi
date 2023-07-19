@@ -1,0 +1,22 @@
+[[req_core_POI-Payload_class]]
+.Requirement - POI-Payload
+[requirement]
+====
+[%metadata]
+label:: /req/core/req-poi_payload-class
+[.component,class=part]
+--
+An encoding of the POI_Payload class SHALL represent zero or more `Properties` from the Feature of Interest that it represents.
+--
+
+[.component,class=part]
+--
+The syntax of a POI_Payload class SHALL be provided in an associated instance of the PayloadSechema class.
+--
+
+[.component,class=part]
+--
+The semantics of a POI_Payload class SHALL be provided in no more than one associated instance of the PayloadDefinition class.
+--
+
+====

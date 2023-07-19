@@ -71,7 +71,7 @@ include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF} hasProperty  !  <<POIProperty-section,POIProperty>>  [0..*] !An association with representations of zero of more properties of a Feature of Interest. This association allows Feature Property values from the Feature of Interest to be included in a POI using a standard representation.
+!{set:cellbgcolor:#FFFFFF} hasPayload  !  <<POI_Payload-section,POI_Payload>>  [0..*] !An association with a representations of zero of more properties of a Feature of Interest. This association allows Feature Property values from the Feature of Interest to be included in a POI using a standard representation.
 !{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest  !  <<FeatureOfInterest-section,FeatureOfInterest>>  [1..*] !One or more Features which are represented by this POI. 
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
@@ -80,17 +80,19 @@ include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
  
 !{set:cellbgcolor:#FFFFFF} contactInfo «property»  !<<CI_Responsibility-section,CI_Responsibility>>  [1..*] !Contact information for the creators and maintainers of this POI.
  
-!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest «property»  !<<URI-section,URI>>  [1..*] !One or more Features which are represented by this POI.
+!{set:cellbgcolor:#FFFFFF} definition «property»  !<<Link-section,Link>>  [0..1] !A reference to the semantic model of the payload for this POI. The target of this reference is an instance of the PayloadDefinition class.
  
-!{set:cellbgcolor:#FFFFFF} hasMetadata «property»  !<<URI-section,URI>>  [0..*] !An association with zero or more metadata records providing additional information about this POI and/or the associated Features of Interest.
+!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest «property»  !<<Link-section,Link>>  [1..*] !One or more Features which are represented by this POI.
  
-!{set:cellbgcolor:#FFFFFF} hasProperty «property»  !<<POIProperty-section,POIProperty>>  [0..*] !An association with representations of zero of more properties of a Feature of Interest. This association allows Feature Property values from the Feature of Interest to be included in a POI using a standard representation.
+!{set:cellbgcolor:#FFFFFF} hasMetadata «property»  !<<Link-section,Link>>  [0..*] !An association with zero or more metadata records providing additional information about this POI and/or the associated Features of Interest.
  
 !{set:cellbgcolor:#FFFFFF} keywords «property»  !<<MD_Keywords-section,MD_Keywords>>  [0..*] !Keywords used to aid in discovery of POIs of interest.
  
 !{set:cellbgcolor:#FFFFFF} rights «property»  !<<MD_Constraints-section,MD_Constraints>>  [0..2] !Legal and security constraints applicable to this POI.
  
-!{set:cellbgcolor:#FFFFFF} symbology «property»  !<<URI-section,URI>>  [0..1] !A reference to information about rendering this POI. 
+!{set:cellbgcolor:#FFFFFF} schema «property»  !<<Link-section,Link>>  [1..1] !A reference to the schema for the payload of this POI.  The target of this reference is an instance of the PayloadSchema class.
+ 
+!{set:cellbgcolor:#FFFFFF} symbology «property»  !<<Link-section,Link>>  [0..1] !A reference to information about rendering this POI. 
 !===
 |=== 
 
@@ -111,26 +113,63 @@ include::../requirements/core/Req_Core_POI.adoc[]
 
 include::../requirements/core/Req_Core_FeatureOfInterest.adoc[]
 
-[[POIProperty-section]]
-.POI Property Class
+[[POI_Payload-section]]
+.POI Payload Class
 [cols="1a"]
 |===
-|*POIProperty* 
+|*POI_Payload* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A POIProperty provides a representation of one or more Properties of the Feature of Interest. The class contains two major parts:
-1) A description of the Property and its represented in the POI. 
-2) Values generated from Properties of the Feature of Interest, encoded according to the representation defined in this class (1). 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AttributeType-section,AttributeType>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A POI_Payload provides a representation of one or more Properties of the Feature of Interest which are to be included in the POI. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! None 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} value «property»  !Any  [0..*] !Representations of zero or more property values from the Feature of Interest.
+!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
+!{set:cellbgcolor:#FFFFFF} FoI  !  <<FeatureOfInterest-section,FeatureOfInterest>>  [1..1] !An association with the Feature of Interest which is represented by this POI Payload. 
+!{set:cellbgcolor:#FFFFFF} hasDefinition  !  <<PayloadDefinition-section,PayloadDefinition>>  [1..0] !An association with a semantic model of this POI Payload.
+!{set:cellbgcolor:#FFFFFF} usesSchema  !  <<PayloadSchema-section,PayloadSchema>>  [1..1] !An association with a syntactic model (schema) of this POI Payload.
 !===
 |=== 
 
-include::../requirements/core/Req_Core_POI-Property.adoc[]
+include::../requirements/core/Req_Core_POI-Payload.adoc[]
 
+[[PayloadDefinition-section]]
+.Payload Definition Class
+[cols="1a"]
+|===
+|*PayloadDefinition* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The Payload Definition Class represents a semantic model (ontology) for a POI payload.
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! None 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  None
+!===
+|===
+
+[[PayloadSchema-section]]
+.Payload Schema Class
+[cols="1a"]
+|===
+|*PayloadSchema* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The Payload Definition Class represents a syntactic model (schema) for a POI payload.
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! None 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  None
+!===
+|===
+
+[[Link-section]]
+.Link Class
+[cols="1a"]
+|===
+|*Link* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A conceptual model based on the xlink construct. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! None 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  None
+!===
+|===
