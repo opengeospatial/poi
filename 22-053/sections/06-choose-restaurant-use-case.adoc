@@ -43,7 +43,7 @@ The most important nonstandard attributes needed for the restaurant use case are
 
 The recommended way to represent the first four of these was discussed in the xref:06-nonstandard-attributes.adoc#ug_nonstandard_attributes_section[Nonstandard Attributes] section.
 Website is intended to be the "authoritative" web page for the restaurant in question -- that is, the page that the restaurant would like users to visit if they want to learn more about their restaurant. That web page might answer many of the other attribute questions (e.g., "has a bar") in the list of the previous section.
-While one could use the *CI_Contact* type from the informative annex, a simpler recommendation is to extend the schema like by addint this:
+While one could use the *CI_Contact* type from the informative annex, a simpler recommendation is to extend the schema like by adding this:
 
 [source.JSON]
 ----
@@ -54,192 +54,122 @@ While one could use the *CI_Contact* type from the informative annex, a simpler 
 
 where the *url* value is a Uniform Resource Locator.
 
-_TODO: should we repeat the whole extended POI schema here?_
 
 === Example ===
 
 Putting it all together, here is an example of a restaurant POI using JSON.
 
+.Restaurant POI (JSON)
 [source.JSON]
 ----
 {
-    "type": "Feature",
-    "geometry" : {
-        "type" : "Point",
-        "coordinates" : [
-            45.1491802,
-            -84.6907891
-        ]
+  "type": "Feature",
+  "geometry" : {
+    "type" : "Point",
+    "coordinates" : [
+      45.1491802,
+      -84.6907891
+    ]
+  },
+  "featureID" : 693842,
+  "name" : {
+    "name" : "Chez Jacques"
+  },
+  "hasPayload" : {
+    "usesSchema" : "https://genpoijson.org/schema/interchangepoi.json",
+    "website" : {
+      "url" : "http://chezjacquesrestaurant.com"
     },
-    "properties" : {
-        "featureID" : 693842,
-        "name" : {
-            "name" : "Chez Jacques"
-        },
-        "website" : {
-            "url" : "http://chezjacquesrestaurant.com"
-        },
-        "telephoneNumber" : {
-            "number" : "+13205555555"
-        },
-        "address" : {
-            "deliveryPoint" : "400 Atlantic Ave",
-            "city" : "Grove City",
-            "administrativeArea" : "Minnesota",
-            "postalCode" : "56243"
-        },
-        "category" : {
-            "category" : "French Restaurant",
-            "categorySystem" : "custom"
-        },
-        "openingHours" : {
-            "openingHoursLines" : [
-                "line" : "Mo-Fr 12:00-20:00",
-                "line" : "Sa 12:00-22:00"
-            ],
-            "openingHoursFormat" : "schemadotorg"
+    "telephoneNumber" : {
+      "number" : "+13205555555"
+    },
+    "address" : {
+      "deliveryPoint" : "400 Atlantic Ave",
+      "city" : "Grove City",
+      "administrativeArea" : "Minnesota",
+      "postalCode" : "56243"
+    },
+    "category" : {
+      "category" : "French Restaurant",
+      "categorySystem" : "custom"
+    },
+    "openingHours" : {
+      "openingHoursLines" : [
+        "line" : "Mo-Fr 12:00-20:00",
+        "line" : "Sa 12:00-22:00"
+      ],
+      "openingHoursFormat" : "schemadotorg"
+    }
+  }
+}
+----
+
+The schema referenced in *hasPayload* might point to a JSON schema like this:
+
+.Schema for the Restaurant POI (JSON)
+[source,json]
+----
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema#",
+  "$id": "https://genpoijson.org/schema/interchangepoi.json",
+  "title": "Generic POI Payload for POI Interchange",
+  "type" : "object",
+  "properties": {
+    "telephoneNumber": {
+      "type": "object",
+      "properties": {
+        "number": {"type": "string"},
+        "numberType": {"type": "string"}
+      },
+      "required": [ "number" ]
+    },
+    "address" : {
+      "type": "object",
+      "properties": {
+        "administrativeArea": {"type": "string"},
+        "city": {"type": "string"},
+        "country": {"type": "string"},
+        "deliveryPoint": {"type": "string"},
+        "email": {"type": "string"},
+        "postalCode": {"type": "string"}
+      }
+    },
+    "category" : {
+      "type": "object",
+      "properties": {
+        "category": { "type": "string"},
+        "categorySystem": {
+          "enum" : [ "naics", "osm", "ogcindoor", "geonames", "custom" ]
         }
-    }
-}
-----
-
-
-An alternative method for representing the needed information is to lean more heavily on the *CI_Contact* type from the informative annex. Here is the specification of its fields:
-
-[cols="1,2,3"]
-|===
-|*Attribute*|*Value type and multiplicity*|*Definition*
-
-|address
-|CI_Address [0..*]
-|physical and email address at which the organisation or individual may be contacted
-
-|contactInstructions
-|CharacterString [0..1]
-|supplemental instructions on how or when to"Mo-Fr 12:00-20:00 contact the individual or organisation
-
-|hoursOfService
-|CharacterString [0..*][source.JSON]
-|time period (including time zone) when individuals can contact the organisation or individual
-
-|onlineResource
-|CI_OnlineResource [0..*]
-|on-line information that can be used to contact the individual or organisation
-
-|phone
-|CI_Telephone [0..*]
-|telephone numbers at which the organisation or individual may be contacted
-|===
-
-We have already seen the *CI_Telephone* fields in the xref:06-nonstandard-attributes.adoc#ug_nonstandard_attributes_section[Nonstandard Attributes] section.
-Here are the specs for the other types mentioned:
-
-*CI_Address*
-[cols="1,2,3"]
-|===
-|*Attribute*|*Value type and multiplicity*|*Definition*
-
-|administrativeArea
-|CharacterString [0..1]
-|state, province of the location
-
-|city
-|CharacterString [0..1]
-|city of the location
-
-|country
-|CharacterString [0..1]
-|country of the physical address
-
-|deliveryPoint
-|CharacterString [0..*]
-|on-line information that can be used to contact the individual or organisation
-
-|electronicMailAddress
-|CharacterString [0..*]
-|address of the electronic mailbox of the responsible organisation or individual
-
-|postalCode
-|CharacterString [0..1]
-|ZIP or other postal code
-|===
-
-*CI_OnlineResource*
-[cols="1,2,3"]
-|===
-|*Attribute*|*Value type and multiplicity*|*Definition*
-
-|applicationProfile
-|CharacterString [0..1]
-|name of an application profile that can be used with the online resource
-
-|description
-|CharacterString [0..1]
-|detailed text description of what the online resource is/does
-
-|function
-|CI_OnlineFunctionCode [0..1]
-|code for function performed by the online resource
-
-|linkage
-|CharacterString [1..1]
-|location (address) for on-line access using a Uniform Resource Locator/Uniform Resource Identifier address or similar addressing scheme 
-
-|name
-|CharacterString [0..1]
-|name of the online resource
-
-|protocol
-|CharacterString [0..1]
-|connection protocol to be used e.g. http, ftp, file,http get KVP, http POST, etc...
-
-|protocolRequest
-|CharacterString [0..1]
-|protocol used by the accessed resource(to be used mainly for POST requests).
-|===
-
-where *CI_OnlineFunctionCode* is one of *browseGraphic*, *browsing*, *completeMetadata*, *download*, *emailService*, *fileAccess*, *information*, or *offlineAccess*.
-
-With all of this in place, the need to associate an address, telephone number, and website can be addressed inside *CI_Contact*, leading to an example as follows:
-
-[source.JSON]
-----
-{
-    "type": "Feature",
-    "geometry" : {
-        "type" : "Point",
-        "coordinates" : [
-            45.1491802,
-            -84.6907891
-        ]
+      },
+      "required": [ "category" ]
     },
-    "properties" : {
-        "featureID" : 693842,
-        "name" : {
-            "name" : "Chez Jacques"
+    "openingHours" : {
+      "type": "object",
+      "properties": {
+        "openingHoursLines": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
-        "contactInfo" : {
-            "address" : {
-                "deliveryPoint" : "400 Atlantic Ave",
-                "city" : "Grove City",
-             "administrativeArea" : "Minnesota",
-             "postalCode" : "56243"
-            },
-            "phone" : {
-                "number" : "+13205555555"
-            },
-            "hoursOfService" {
-                "Mo-Fr 12:00-20:00",
-                "Sa 12:00-22:00"
-            },
-            "onlineResource" : {
-                "linkage" : "http://chezjacquesrestaurant.com"
-            }
-        },
-        "category" : {
-            "category" : "French Restaurant",
-            "categorySystem" : "custom"
-        },
+        "openingHoursFormat": {
+          "enum" : [ "schemadotorg", "icalendaravailability" ]
+        }
+      }
+    },
+    "website" : {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [ "url" ]
     }
+  }
 }
 ----
+
+There is no *hasDefinition" property in the Payload. If there were, it could reference a text file with a form of the commentary in this section.
