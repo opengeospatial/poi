@@ -1,6 +1,10 @@
 # About OGC Points of Interest (PoI) GitHub Repository
 
-This repository is the development space for the draft OGC Point of Interest (POI) Standard. Development of this Standard is taking place in the 21-049 directory. The current draft is available in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/21-049/21-049.html[HTML], https://github.com/opengeospatial/poi/blob/main/21-049/21-049.pdf[PDF], and https://github.com/opengeospatial/poi/blob/main/21-049/21-049.doc[Word] formats.
+This repository is the development space for the draft OGC Point of Interest (POI) Part 1: Conceptual Model Standard. Development of this Standard is taking place in the 21-049 directory. The current draft is available in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/21-049/21-049.html[HTML], https://github.com/opengeospatial/poi/blob/main/21-049/21-049.pdf[PDF], and https://github.com/opengeospatial/poi/blob/main/21-049/21-049.doc[Word] formats.
+
+This Standard is accompanied by a Users Guide. Development of the Users Guide is taking place in the 22-053 directory. The current draft is available in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/22-053/22-053.html[HTML], https://github.com/opengeospatial/poi/blob/main/22-053/22-053.pdf[PDF], and https://github.com/opengeospatial/poi/blob/main/22-053/22-053.doc[Word] formats.
+
+The POI Part 1 Standard defines a conceptual model. A conceptual model requires an Implementation Specification if it is to be implemented. The draft OGC Point of Interest (POI) Part 2: JSON Encoding Standard fills this role. Development of this Standard is taking place in the 23-045 directory. The current draft is available in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/23-045/23-045.html[HTML], https://github.com/opengeospatial/poi/blob/main/23-045/23-045.pdf[PDF], and https://github.com/opengeospatial/poi/blob/main/23-045/23-045.doc[Word] formats.
 
 Current drafts are generated using the asciidoctor tool chain. Ultimately they will be generated using the Metanorma tool chain. Since formatting of the asciidoc files was done anticipating Metanorma, the current asciidoctor versions may look a bit odd.
 

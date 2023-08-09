@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.0.6">
+<bibdata type="standard">
+<title language="en" format="text/plain">OGC Points of Interest Part 2: JSON Encoding</title>
+<uri type="xml">./23-045.xml</uri><uri type="pdf">./23-045.pdf</uri><uri type="doc">./23-045.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}</docidentifier><docidentifier type="ogc-internal">23-045</docidentifier><docnumber>23-045</docnumber><date type="published"><on>2023-08-09</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
+<name>Organization One</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Organization Two</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Charles Heazel</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Editor Two</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><edition>1.0</edition><version><draft>1.0</draft></version><language>en</language><script>Latn</script><abstract><p>&lt;Insert Abstract Text here&gt;</p>
+</abstract><status><stage>draft</stage></status><copyright><from>2023</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<boilerplate>
+  <copyright-statement>
+    <clause>
+      <title>Copyright notice</title>
+
+      <p align="center" id="_4380411b-aa89-cc2d-d393-9800128f1de1">Copyright
+        © 2023 Open Geospatial Consortium<br/>
+        To obtain additional rights of use, visit
+        <link target="http://www.ogc.org/legal/">http://www.ogc.org/legal/</link></p>
+    </clause>
+    <clause>
+      <title>Note</title>
+      <p align="left" id="_11e88dba-9912-1a89-a82d-7291bf232191">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+      <p align="left" id="_15067213-c07b-cba0-7e18-395ab2e00ab3">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+    </clause>
+  </copyright-statement>
+  <license-statement>
+    <clause>
+      <title>License Agreement</title>
+
+      <p id="_e8566381-218f-c22d-320d-4d0371bfd58f">Permission is hereby granted by the Open Geospatial
+        Consortium, (“Licensor”), free of charge and subject to the terms set
+        forth below, to any person obtaining a copy of this Intellectual Property and
+        any associated documentation, to deal in the Intellectual Property without
+        restriction (except as set forth below), including without limitation the
+        rights to implement, use, copy, modify, merge, publish, distribute, and/or
+        sublicense copies of the Intellectual Property, and to permit persons to whom
+        the Intellectual Property is furnished to do so, provided that all copyright notices
+        on the intellectual property are retained intact and that each person to whom
+        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+
+      <p id="_52ebb386-d365-27d0-d76d-a59ac165fc4d">If you modify the Intellectual Property, all copies of
+        the modified Intellectual Property must include, in addition to the above
+        copyright notice, a notice that the Intellectual Property includes
+        modifications that have not been approved or adopted by LICENSOR.</p>
+
+      <p id="_178f14b4-0718-a5b8-09cd-84f8f4b756ed">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
+        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
+        THE INTELLECTUAL PROPERTY IS PROVIDED “AS
+        IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
+        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
+        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
+        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
+        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER’S OWN RISK. IN NO
+        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
+        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
+        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
+        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
+        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
+        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
+        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+
+      <p id="_2ad7fe27-9ae4-52c5-9dd9-faa4004247fb">This license is effective until terminated. You may
+        terminate it at any time by destroying the Intellectual Property together with
+        all copies in any form. The license will also terminate if you fail to comply
+        with any term or condition of this Agreement. Except as provided in the
+        following sentence, no such termination of this license shall require the
+        termination of any third party end-user sublicense to the Intellectual Property
+        which is in force as of the date of notice of such termination. In addition,
+        should the Intellectual Property, or the operation of the Intellectual
+        Property, infringe, or in LICENSOR’s sole opinion be
+        likely to infringe, any patent, copyright, trademark or other right of a third
+        party, you agree that LICENSOR, in its sole discretion, may terminate this
+        license without any compensation or liability to you, your licensees or any
+        other party. You agree upon termination of any kind to destroy or cause to be
+        destroyed the Intellectual Property together with all copies in any form,
+        whether held by you or by any third party.</p>
+
+      <p id="_3254c815-179c-5f54-9a01-b8e964837171">Except as contained in this notice, the name of
+        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
+        Property shall not be used in advertising or otherwise to promote the sale, use
+        or other dealings in this Intellectual Property without prior written
+        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
+        all times be the sole entity that may authorize you or any third party to use
+        certification marks, trademarks or other special designations to indicate
+        compliance with any LICENSOR standards or specifications.
+        This Agreement is
+        governed by the laws of the Commonwealth of Massachusetts. The application to
+        this Agreement of the United Nations Convention on Contracts for the
+        International Sale of Goods is hereby expressly excluded. In the event any
+        provision of this Agreement shall be deemed unenforceable, void or invalid, such
+        provision shall be modified so as to make it valid and enforceable, and as so
+        modified the entire Agreement shall remain in full force and effect. No
+        decision, action or inaction by LICENSOR shall be construed to be a waiver of
+        any rights or remedies available to it.</p>
+
+      <p id="_4fa1ef5b-3dd5-7a05-3c68-bca93a0f14bb">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
+    </clause>
+  </license-statement>
+
+  <legal-statement>
+    
+    
+    <clause>
+      <title>Notice for Drafts</title>
+      <p id="_09caafd2-d047-3050-9095-b3f182faf86f">This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+      <p id="_d80fd0eb-fbfd-dec3-0ddb-92472f4d5fcf">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+    </clause>
+    
+
+
+    
+
+  </legal-statement>
+
+
+
+
+  <feedback-statement>
+    
+    <clause id="boilerplate-standard-feedback">
+      <p id="_bbc1a653-f270-135d-9455-af930feb3587">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</link></p>
+    </clause>
+    
+  </feedback-statement>
+</boilerplate>
+<preface><abstract id="_abstract"><title>Abstract</title><p id="_ea8b918b-259f-ad32-41cd-bf6720709423">&lt;Insert Abstract Text here&gt;</p>
+</abstract><foreword id="_2fc7f941-8cac-e65f-3e51-3b9f18652ea3" obligation="informative">
+<title>Preface</title>
+<note id="_b54ab49b-0988-938f-ab2d-38e2ffda33ce"><p id="_103398dd-a446-704f-572a-9ee37f3e0510">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
+</note>
+
+<p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</foreword><clause id="_security_considerations" type="security" obligation="informative">
+<title>Security considerations</title>
+<p id="_4bfc9ff4-0427-16f3-2dce-96ac965b7eae">No security considerations have been made for this Standard.</p>
+</clause><submitters id="_submitters">
+<title>Submitters</title>
+<p id="_60b1643b-76a7-f154-a489-757cf275f9ed">All questions regarding this submission should be directed to the editor or the submitters:</p>
+
+<table id="_613bb3c2-a339-d9a3-49e0-1905d282e233" unnumbered="true"><tbody><tr><td valign="middle" align="left"><strong>Name</strong></td>
+<td valign="middle" align="left"><strong>Affiliation</strong></td>
+</tr><tr><td valign="middle" align="left"/><td valign="middle" align="left"/></tr></tbody>
+</table>
+</submitters></preface><sections>
+
+<clause id="_keywords" obligation="normative">
+<title>Keywords</title>
+</clause>
+
+<foreword id="_preface">
+<title>Preface</title>
+<note id="_9e41266c-94d0-3fa5-e540-76886dafc321"><p id="_eefcfc65-9ef0-b650-bbc8-6dec41a4167a">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work. &gt;
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_94e5a2eb-2129-3e6f-5a3b-673a1371de22">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</note>
+</foreword>
+
+
+<clause id="_submitting_organizations" obligation="normative">
+<title>Submitting organizations</title>
+</clause>
+
+
+<clause id="_contributors" obligation="normative">
+<title>Contributors</title>
+<p id="_e0cd848a-9756-7dd1-7335-ee74630adab2">Additional contributors to this Standard include the following:</p>
+
+<p id="_0d24a6e2-9464-c41b-fe8b-7dc41f0e2b78">Individual name(s), Organization</p>
+</clause>
+
+<clause id="_scope" type="scope" obligation="normative">
+<title>Scope</title>
+<note id="_cb3e2e24-e83d-ad2e-163f-7e3694862596"><p id="_67ac4cc6-4887-9e23-2cf4-8f4097796c85">Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.</p>
+</note>
+</clause>
+
+<clause id="_conformance" type="conformance" obligation="normative">
+<title>Conformance</title>
+<p id="_76934ab4-721b-5d1e-2c70-4ccf41f5af08">This standard defines XXXX.</p>
+
+<p id="_bb7788d8-b5f7-3967-ba90-ce701294055e">Requirements for N standardization target types are considered:</p>
+
+<ul id="_baaeaa66-a156-4e11-6a5a-987098d1d6dc"><li><p id="_9ec0d824-f57b-ff2c-bf6c-961b9ed7ef82">AAAA</p>
+</li>
+<li><p id="_b7a4bd37-11da-0ea3-de9e-0e367dc8ebd8">BBBB</p>
+</li>
+</ul>
+
+<p id="_aefee448-a208-ae28-57eb-f11ace097352">Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.</p>
+
+<p id="_abed0e52-e436-412c-3381-f1faa336ca86">In order to conform to this OGC® interface standard, a software implementation shall choose to implement:</p>
+
+<ul id="_b3885d68-9ab4-a7c2-a745-fdc93c1e86b1"><li><p id="_f5ce9b58-2f9a-bd07-0634-ef0eb1b50bc6">Any one of the conformance levels specified in Annex A (normative).</p>
+</li>
+<li><p id="_997c1d89-545b-488b-0431-06b167b2c196">Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).</p>
+</li>
+</ul>
+
+<p id="_a4c267f7-49a9-f082-61a4-21dfb414e0e6">All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.</p>
+</clause>
+
+
+
+<terms id="_terms_and_definitions" obligation="normative">
+<title>Terms and definitions</title><p id="_7fe04b5b-db41-5d9b-ebe1-463b3a0c16c9">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+<p id="_e0235fe8-8273-26b4-faeb-a580ad58929f">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+<p id="_1448dc16-8929-d666-6525-0249826c75e3">For the purposes of this document, the following additional terms and definitions apply.</p>
+
+<p id="_a5c2011b-080b-de57-753c-94b804e5f324">This document uses the terms defined in Sub-clause 5.3 of <xref target="OGC06-121r9"/>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p>
+
+<p id="_ccf3e63b-6acc-0cd0-687c-fd7f951288d6">For the purposes of this document, the following additional terms and definitions apply.</p>
+
+<term id="term-example-term"><preferred><expression>
+<name>example term</name>
+</expression>
+</preferred>
+<definition><verbal-definition><p id="_06db0da1-214c-7f57-bd34-fd4f77edb6ed">term used for exemplary purposes</p></verbal-definition></definition>
+
+
+
+
+
+
+ <termnote id="_dba7a326-d460-4fd2-c200-c18e257c490b"><p id="_bfac9a8e-f9a1-75c6-e31d-dca8dc62be58">An example note.</p>
+</termnote><termexample id="_6e5e388f-3384-3fe0-1387-5c648e5561e6"><p id="_2d45db5a-97c4-2358-7890-3aa696c4b809">Here’s an example of an example term.</p>
+</termexample><termsource status="identical" type="authoritative"><origin bibitemid="ISO19101-1" type="inline" citeas=""/></termsource></term>
+</terms>
+
+<clause id="_conventions" obligation="normative">
+<title>Conventions</title>
+<p id="_bab93eec-640f-4fb5-865c-cac7d56729f2">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+
+<clause id="_identifiers" obligation="normative">
+<title>Identifiers</title>
+<p id="_8fdb49a6-6b17-97c3-913e-8f3631efa8d0">The normative provisions in this standard are denoted by the URI</p>
+
+<p id="_406b5205-ce18-158d-b61d-817420e98176"><tt><link target="http://www.opengis.net/spec/{standard}/{m.n}"/></tt></p>
+
+<p id="_08e57845-5770-a198-d4ec-58393b6d5140">All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p>
+</clause>
+</clause>
+
+<clause id="_clauses_not_containing_normative_material" obligation="informative">
+<title>Clauses not containing normative material</title>
+<p id="_b3d1b178-be93-bb11-38b4-3490d41fae13">Paragraph</p>
+
+<clause id="_clauses_not_containing_normative_material_sub_clause_1" obligation="informative">
+<title>Clauses not containing normative material sub-clause 1</title>
+<p id="_7f02b7a5-645f-ef74-90ba-a4205cc2e336">Paragraph</p>
+</clause>
+
+<clause id="_clauses_not_containing_normative_material_sub_clause_2" obligation="informative">
+<title>Clauses not containing normative material sub-clause 2</title>
+</clause>
+</clause>
+
+<clause id="_clause_containing_normative_material" obligation="normative">
+<title>Clause containing normative material</title>
+<p id="_3ae130b8-539c-74a9-77a1-a827b88ea9ef">Paragraph</p>
+
+<clause id="_requirement_class_a_or_requirement_a_example" obligation="normative">
+<title>Requirement Class A or Requirement A Example</title>
+<p id="_04021f5f-8801-55cc-f535-20259f29610f">Paragraph – intro text for the requirement class.</p>
+
+<p id="_64b006b8-5011-f638-e557-152604a41c44">Use the following table for Requirements Classes.</p>
+
+<requirement id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" obligation="requirement" type="class"><description><p id="_54f60f6d-8b63-3165-6782-00e2db763d59">Requirements Class</p><ul id="_3eb5bc64-ea42-4912-4e69-a7bf06435c00"><li><p id="_cc0d1486-a90b-6f8a-4893-cbe17a8a5a77"><link target="http://www.example.org/req/blah"/></p>
+</li>
+<li><p id="_2691bdd0-7f20-8fe8-34ad-a421b58b8b77">urn:iso:ts:iso:19139:clause:6</p>
+</li>
+</ul></description>
+
+<requirement id="_abefd106-cbff-e10a-f6fc-db0a6865842c" type="general"> <label>/req/req-class-a/req-name-1</label></requirement>
+
+<requirement id="_f25d41be-bdc1-a5b1-241b-eea991fa2b7e" type="general"> <label>/req/req-class-a/req-name-2</label></requirement>
+</requirement>
+
+<clause id="_requirement_1" obligation="normative">
+<title>Requirement 1</title>
+<p id="_127d6db4-872e-c554-5a85-539c8c869220">Paragraph — intro text for the requirement.</p>
+
+<p id="_c157936a-28ae-4ee3-22bb-d1c6b192832c">Use the following table for Requirements, number sequentially.</p>
+
+<requirement id="_req_req-class-a_req-name-1" obligation="requirement" type="general"> <label>/req/req-class-a/req-name-1</label><description><p id="_b7fe16db-a36c-9e3b-9ad0-6e81f930f136">Requirement ‘shall’ statement</p></description>
+</requirement>
+
+<p id="_4534e1b9-9c52-c87f-8c94-776c91e0ac85">Dictionary tables for requirements can be added as necessary. Modify the following example as needed.</p>
+
+<table id="_2d2e5fa4-2442-e6f3-1ab2-c9aacd43b8f1" width="90%"><thead><tr><th valign="middle" align="left">Names</th>
+<th valign="middle" align="left">Definition</th>
+<th valign="middle" align="left">Data types and values</th>
+<th valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">name 1</td>
+<td valign="middle" align="left">definition of name 1</td>
+<td valign="middle" align="left">float</td>
+<td valign="middle" align="left">One or more (mandatory)</td>
+</tr><tr><td valign="middle" align="left">name 2</td>
+<td valign="middle" align="left">definition of name 2</td>
+<td valign="middle" align="left">character string type, not empty</td>
+<td valign="middle" align="left">Zero or one (optional)</td>
+</tr><tr><td valign="middle" align="left">name 3</td>
+<td valign="middle" align="left">definition of name 3</td>
+<td valign="middle" align="left">GML:: Point PropertyType</td>
+<td valign="middle" align="left">One (mandatory)</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_requirement_2" obligation="normative">
+<title>Requirement 2</title>
+<p id="_78c9d633-539f-cd66-ce92-37627445b5d4">Paragraph — intro text for the requirement.</p>
+
+<p id="_5a773edf-5dae-53d6-5e9b-a1efdfab8679">Use the following table for Requirements, number sequentially.</p>
+
+<requirement id="req_core_process-execute-input-inline-object"> <label>/req/req-class-a/req-name-2</label>
+
+<component exclude="false" class="conditions"><ol id="_5801cd9d-aeae-841e-a701-4f3c022ed9f8" type="arabic"><li><p id="_04ed3153-9346-1978-65a1-d14727b40702">The process input value is specified in-line in an execute request.</p>
+</li>
+<li><p id="_cb69726d-83e5-bddf-6a44-1be2cd41dff9">The process input is defined as an object according to its schema.</p>
+</li>
+</ol>
+</component>
+<component exclude="false" class="part"><p id="_e54148bd-99d9-fbbf-ccdb-3f6aab061768">The server SHALL support process input values encoded as qualified values.</p>
+</component>
+<component exclude="false" class="part"><p id="_567ba828-366b-f263-e75c-0c20bffc96e8">The value of the <tt>value</tt> key SHALL be an <em>object</em> instance.</p>
+</component></requirement>
+</clause>
+</clause>
+</clause>
+
+<clause id="_media_types_for_any_data_encodings" obligation="normative">
+<title>Media Types for any data encoding(s)</title>
+<p id="_2b3df9af-9d5a-6120-7f7d-58fa0ddde3cc">A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in <link target="http://www.iana.org/assignments/media-types/index.html"/> then this section may be used to define a new MIME type for registration with IANA.</p>
+</clause>
+
+
+
+
+
+
+
+
+</sections><annex id="_conformance_class_abstract_test_suite_normative" obligation="informative">
+<title>Conformance Class Abstract Test Suite (Normative)</title>
+<note id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"><p id="_2f41c6a6-7963-8015-59ca-d74fafa8ae41">Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
+</note>
+
+<clause id="_conformance_class_a" obligation="informative">
+<title>Conformance Class A</title>
+<example id="ats_example1"><dl id="_15f5af59-2acb-8c62-5214-bd022c8135d7" metadata="true"><dt>label</dt>
+<dd><p id="_2911e33b-d582-a069-a4d1-a0018ea97641"><link target="http://www.opengis.net/spec/name-of-standard/1.0/conf/example1"/></p>
+</dd>
+<dt>subject</dt>
+<dd><p id="_f7086c49-3cee-5475-32ca-aad3c9fad854">Requirements Class “example1”</p>
+</dd>
+<dt>classification</dt>
+<dd><p id="_c632f525-fe27-c165-6be0-0e2d4135510f">Target Type:Web API</p>
+</dd>
+</dl>
+</example>
+
+<clause id="_example_1" obligation="informative">
+<title>Example 1</title>
+<requirement id="ats_core_api-definition-op" type="abstracttest"> <label>/conf/core/api-definition-op</label><subject>/req/req-class-a/req-name-1</subject><component class="test-purpose"><p id="_4e900c1f-4736-c517-b011-fcd72a1de669">Validate that the API Definition document can be retrieved from the expected location.</p>
+</component>
+
+<component exclude="false" class="test method"><component exclude="false" class="step"><p id="_611abb6a-639f-882e-b311-a8312aa18ce6">Construct a path for the API Definition document that ends with <tt>/api</tt>.</p>
+</component>
+<component exclude="false" class="step"><p id="_d980a6c3-2853-eb8d-884a-0a39310f6597">Issue a HTTP GET request on that path</p>
+</component>
+<component exclude="false" class="step"><p id="_e41cd559-a387-2ad3-192f-23320f6dbcdd">Validate the contents of the returned document using test <xref target="ats_core_api-definition-success">/conf/core/api-definition-success</xref>.</p>
+</component></component></requirement>
+</clause>
+
+<clause id="_example_2" obligation="informative">
+<title>Example 2</title>
+<requirement id="ats_core_http" type="abstracttest"> <label>/conf/core/http</label><subject>/req/req-class-a/req-name-2</subject><component class="test-purpose"><p id="_5e167688-cb2f-249d-25e2-99340b057b85">Validate that the resource paths advertised through the API conform with HTTP 1.1 and, where appropriate, TLS.</p>
+</component>
+
+<component exclude="false" class="test method"><component exclude="false" class="step"><p id="_cdd509dd-71ee-f05d-a1d7-363218c4a3ee">All compliance tests SHALL be configured to use the HTTP 1.1 protocol exclusively.</p>
+</component>
+<component exclude="false" class="step"><p id="_43dca150-0694-867b-7e2e-1511056bc805">For APIs which support HTTPS, all compliance tests SHALL be configured to use <xref target="rfc2818">HTTP over TLS</xref> (RFC 2818) with their HTTP 1.1 protocol.</p>
+</component></component></requirement>
+</clause>
+</clause>
+</annex><annex id="_title" obligation="informative">
+<title>Title</title>
+<note id="_9c04cf83-97ee-5129-1540-d560e28d0909"><p id="_782ab42d-4816-bdd6-9432-7b67e87b5b37">Place other Annex material in sequential annexes beginning with “B” and leave final two annexes for the Revision History and Bibliography</p>
+</note>
+</annex><annex id="_revision_history" obligation="informative">
+<title>Revision History</title>
+<table id="_5afe311c-d3e8-fb9a-9455-6031fbbc3118" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
+<th valign="middle" align="left">Release</th>
+<th valign="middle" align="left">Editor</th>
+<th valign="middle" align="left">Primary clauses modified</th>
+<th valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">2016-04-28</td>
+<td valign="middle" align="left">0.1</td>
+<td valign="middle" align="left">G. Editor</td>
+<td valign="middle" align="left">all</td>
+<td valign="middle" align="left">initial version</td>
+</tr></tbody>
+</table>
+</annex><bibliography><references id="_references" normative="true" obligation="informative">
+<title>Normative references</title><p id="_307b20e2-9e40-db56-abbf-2822ab2941cc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+
+
+<bibitem id="ogcdr"><formattedref format="application/x-isodoc+xml">at <link target="http://www.opengis.net/def/glossary/term/ConceptualSchema">www.opengis.net</link></formattedref><docidentifier type="OGC">OGC Definitions Register</docidentifier></bibitem>
+<bibitem id="rfc3986"><formattedref format="application/x-isodoc+xml">IETF: IETF RFC 3986, <em>Uniform Resource Identifier (URI): Generic Syntax</em>. (January 2005)</formattedref><docidentifier type="IETF">RFC 3986</docidentifier><docnumber>3986</docnumber></bibitem>
+<bibitem id="ISO19103"><formattedref format="application/x-isodoc+xml">ISO: ISO 19103:2015, <em>Geographic Information – Conceptual Schema Language</em></formattedref><docidentifier type="ISO">ISO 19103</docidentifier><docnumber>19103</docnumber><date type="published"><on>2015</on></date></bibitem>
+<bibitem id="ISO19107"><formattedref format="application/x-isodoc+xml">ISO: ISO 19107:2003, <em>Geographic Information – Spatial Schema</em></formattedref><docidentifier type="ISO">ISO 19107</docidentifier><docnumber>19107</docnumber></bibitem>
+<bibitem id="ISO19108"><formattedref format="application/x-isodoc+xml">ISO: ISO 19108:2002/Cor 1:2006, <em>Geographic information – Temporal schema — Technical Corrigendum 1</em></formattedref><docidentifier type="ISO">ISO 19108</docidentifier><docnumber>19108</docnumber></bibitem>
+<bibitem id="ISO19109"><formattedref format="application/x-isodoc+xml">ISO: ISO 19109:2015, <em>Geographic Information – Rules for Application Schemas</em></formattedref><docidentifier type="ISO">ISO 19109</docidentifier><docnumber>19109</docnumber><date type="published"><on>2015</on></date></bibitem>
+<bibitem id="ISO19111"><formattedref format="application/x-isodoc+xml">ISO: ISO 19111:2019, <em>Geographic information – Referencing by coordinates</em></formattedref><docidentifier type="ISO">ISO 19111</docidentifier><docnumber>19111</docnumber></bibitem>
+<bibitem id="ISO19115-1"><formattedref format="application/x-isodoc+xml">ISO: ISO 19115-1:2014, <em>Geographic Information — Metadata — Part 1: Fundamentals</em></formattedref><docidentifier type="ISO">ISO 19115-1</docidentifier><docnumber>19115-1</docnumber><date type="published"><on>2014</on></date></bibitem>
+</references><references id="Bibliography" normative="false" obligation="informative">
+<title>Bibliography</title>
+</references></bibliography>
+</ogc-standard>
