@@ -1,0 +1,105 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://geojson.org/schema/GeoJSON.json",
+	"description": "A draft JSON Schema for OGC POI Hotel-example.",
+	"title": "PointOfInterest Hotel",
+	"properties": {
+		"GenericName": {
+			"type": "object",  
+			"required": [
+				"name"
+			],
+			"properties": {
+				"name": {"type": "string"}
+			}
+		},
+		"CI_Telephone": {
+			"type": "object",
+			"required": [
+				"number"  
+			],
+			"properties": {
+				"number": {"type": "string"},
+				"numberType": {"type": "string"}
+			}
+		},
+		"CI_Address": {
+			"type": "object",
+			"required": [
+			],
+			"properties": {
+				"administrativeArea": {"type": "string"},
+				"city": {"type": "string"},
+				"country": {"type": "string"},
+				"deliveryPoint": {"type": "string"},
+				"email": {"type": "string"},
+				"postalCode": {"type": "string"}
+			}
+		},
+		"CI_OnlineResource": {
+			"type": "object",
+			"required": [
+				"linkage"
+			],
+			"properties": {
+				"applicationProfile": {"type": "string"},
+				"description": {"type": "string"},
+				"function": {"type": "string"},
+				"linkage": {"type": "string"},
+				"name": {"type": "string"},
+				"protocol": {"type": "string"},
+				"protocolRequest": {"type": "string"}
+			}
+		},
+		"CI_Contact": {
+			"type": "object",
+			"required": [
+			],
+			"properties": {
+				"address": {
+					"$ref": "#/properties/CI_Address" 
+				},
+				"contactInstructions": {"type": "string"},
+				"contactType": {"type": "string"},
+				"hoursOfService": {"type": "string"},
+				"onlineResource": {"type": "string"},
+				"phone": {
+					"$ref": "#/properties/CI_Telephone"
+				}
+			}
+		},
+		"category": {
+			"type": "object",
+			"required": [
+			],
+			"properties": {
+				"categoryType": {"type": "string"},
+				"value": {"type": "string"}
+			}
+		}
+		"POI": {
+			"type": "object",
+			"id": "#PointOfInterest",
+			"required": [
+				"featureId",
+				"contactInfo",
+				"hasFeatureOfInterest"
+			],
+			"properties": {
+				"onlineResources": {
+					"$ref": "#/properties/CI_OnlineResource"
+				},
+				"locationInfo": {
+					"$ref": "#/properties/CI_Contact"
+				},
+				"alternateName": {
+					"$ref": "#/properties/GenericName"
+				},
+				"note": {"type": "string"},
+				"categories": {
+					"$ref": "#/properties/category"
+				}
+			}
+		}
+	}
+}

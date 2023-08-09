@@ -1,0 +1,69 @@
+{
+	"POI": {
+		"schema": "https://data.vlaanderen.be/doc/implementatiemodel/poi/",
+		"hasFeatureOfInterest": [
+			{
+				"href":"https://opendata.visitflanders.org/sector/accommodation/base_registry"
+			}
+		],
+		"description": "In De […] aan.",
+		"name": {
+			"name": "Parkhotel De Panne"
+		},
+		"contactInfo": {
+			"role": "owner",
+			"party": {
+				"contactInfo": {
+					"OnlinResource": "https://www.toerismevlaanderen.be"
+				},
+				"name": "Toerisme Vlaanderen"
+			}
+		},
+		"hasMetadata": {
+			"href":"https://www.vlaanderen.be/datavindplaats/catalogus/hotels-via-poi-service-v2"
+		},
+		"rights": {
+			"otherConstraints": "Modellicentie voor gratis hergebruik"
+		},
+		"onlineResources": [
+			{
+				"description":"Website van Parkhotel De Panne",
+				"linkage":"http://www.parkhoteldepanne.be/"
+			},
+	        {
+				"linkage":"http://www.visitflanders.com",
+				"description": "Meer info op Visit Flanders"
+			}
+		],
+		"locationInfo": {
+			"address": {
+				"city":"De Panne"
+				"country":"" 
+				"deliveryPoint":"A. Dumontlaan 30"
+				"postalCode":"8660"
+				"electronicMailAddress":"info@parkhoteldepanne.be" 
+			},
+			"phone": {
+				"number":"+32 58 41 41 41"
+			}
+		}
+		"alternateName": {
+			"name": "Parkhotel De Panne"
+		},
+		"note": "Toeristische regio: Kust",
+		"categories": [
+			{
+				"categoryType": "Type",
+				"value": "Hotel"
+			},
+			{
+				"categoryType": "Category",
+				"value": "Tourism"
+			},
+			{
+				"categoryType": "Theme",
+				"value": "Culture, Sports and Tourism"
+			}
+		]
+	}
+}
