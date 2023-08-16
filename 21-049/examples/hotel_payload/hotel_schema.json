@@ -2,7 +2,7 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "https://geojson.org/schema/GeoJSON.json",
 	"description": "A draft JSON Schema for OGC POI Hotel-example.",
-	"title": "PointOfInterest Hotel",
+	"title": "PointOfInterest Payload Hotel",
 	"properties": {
 		"GenericName": {
 			"type": "object",  
@@ -77,13 +77,10 @@
 				"value": {"type": "string"}
 			}
 		}
-		"POI": {
+		"POI_Payload": {
 			"type": "object",
-			"id": "#PointOfInterest",
+			"id": "#PointOfInterest_Payload",
 			"required": [
-				"featureId",
-				"contactInfo",
-				"hasFeatureOfInterest"
 			],
 			"properties": {
 				"onlineResources": {

@@ -25,45 +25,47 @@
 		"rights": {
 			"otherConstraints": "Modellicentie voor gratis hergebruik"
 		},
-		"onlineResources": [
-			{
-				"description":"Website van Parkhotel De Panne",
-				"linkage":"http://www.parkhoteldepanne.be/"
-			},
-	        {
-				"linkage":"http://www.visitflanders.com",
-				"description": "Meer info op Visit Flanders"
+		"hasPayload": {
+			"onlineResources": [
+				{
+					"description":"Website van Parkhotel De Panne",
+					"linkage":"http://www.parkhoteldepanne.be/"
+				},
+				{					
+					"description": "Meer info op Visit Flanders",
+					"linkage":"http://www.visitflanders.com"
+				}
+			],
+			"locationInfo": {
+				"address": {
+					"city":"De Panne"
+					"country":"" 
+					"deliveryPoint":"A. Dumontlaan 30"
+					"postalCode":"8660"
+					"electronicMailAddress":"info@parkhoteldepanne.be" 
+				},
+				"phone": {
+					"number":"+32 58 41 41 41"
+				}
 			}
-		],
-		"locationInfo": {
-			"address": {
-				"city":"De Panne"
-				"country":"" 
-				"deliveryPoint":"A. Dumontlaan 30"
-				"postalCode":"8660"
-				"electronicMailAddress":"info@parkhoteldepanne.be" 
+			"alternateName": {
+				"name": "Parkhotel De Panne"
 			},
-			"phone": {
-				"number":"+32 58 41 41 41"
-			}
-		}
-		"alternateName": {
-			"name": "Parkhotel De Panne"
-		},
-		"note": "Toeristische regio: Kust",
-		"categories": [
-			{
-				"categoryType": "Type",
-				"value": "Hotel"
-			},
-			{
-				"categoryType": "Category",
-				"value": "Tourism"
-			},
-			{
-				"categoryType": "Theme",
-				"value": "Culture, Sports and Tourism"
-			}
-		]
+			"note": "Toeristische regio: Kust",
+			"categories": [
+				{
+					"categoryType": "Type",
+					"value": "Hotel"
+				},
+				{
+					"categoryType": "Category",
+					"value": "Tourism"
+				},
+				{
+					"categoryType": "Theme",
+					"value": "Culture, Sports and Tourism"
+				}
+			]
+		}	
 	}
 }
