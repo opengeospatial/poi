@@ -3,6 +3,7 @@
 [[Bibliography]]
 == Bibliography
 
+* [[[ISO19111,nofetch(ISO 19111)]]], Place holder
 * [[[ISO11404,nofetch(ISO 11404:2007)]]], Information technology - General-Purpose Datatypes (GPD)
 * [[[ISO19156,nofetch(ISO 19156:2011)]]], Geographic information Observations and measurements
 * [[[ISO19117,nofetch(ISO 19117:2012)]]], Geographic information - Portrayal
@@ -18,7 +19,6 @@
 * [[[ISO19160-4,nofetch(ISO 19160-4)]]], Place holder
 * [[[ISO19112,nofetch(ISO 19112)]]], Place holder
 * [[[ISO19501,nofetch(ISO/IEC 19501)]]], Place holder
-* [[[ISO19115,nofetch(ISO/IEC 19115)]]], Place holder
 * [[[ISO19133,nofetch(ISO 19133:2020)]]], Place holder
 * [[[ISO19143,nofetch(ISO 19143)]]], Place holder
 * [[[ISO19155,nofetch(ISO 19155)]]], Place holder

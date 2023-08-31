@@ -4,7 +4,7 @@
 === Identifiers
 The normative provisions in this document are denoted by the URI
 
- http://www.opengis.net/spec/POI/1.0
+`http://www.opengis.net/spec/POI/1.0`
 
 All requirements and conformance tests that appear in this document are denoted by partial URIs relative to this base.
 
@@ -46,7 +46,7 @@ image:images/ColorScheme_white.png[align="center"]
 
 The color white is used for notes and <<ISO19507,Object Constraint Language>> (OCL) constraints that are provided in the UML diagrams.
 
-The example UML diagram in <<figure-2>> demonstrates the UML notation and coloring scheme used throughout this standard. In this example, the yellow classes are associated with the _CityGML Building_ module, the blue classes are from the _CityGML Core_ and _Construction_ modules, and the green class depicts a geometry element defined by ISO 19107.
+The example UML diagram in <<figure-2>> demonstrates the UML notation and coloring scheme used throughout this standard. In this example, the yellow classes are associated with the _ISO Standards_, the green classes are from the _POI Example Classes_, and the white classes depicts notes.
 
 [[figure-2]]
 .Example UML diagram demonstrating the UML notation and coloring scheme used throughout the POI Standard.
