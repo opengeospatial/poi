@@ -76,7 +76,9 @@ Putting it all together, here is an example of a restaurant POI using JSON.
     "name" : "Chez Jacques"
   },
   "hasPayload" : {
-    "usesSchema" : "https://genpoijson.org/schema/interchangepoi.json",
+    "usesSchema" : {
+      "href" : "https://genpoijson.org/schema/interchangepoi.json"
+    },
     "website" : {
       "url" : "http://chezjacquesrestaurant.com"
     },
