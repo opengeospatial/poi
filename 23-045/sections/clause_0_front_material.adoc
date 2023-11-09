@@ -60,6 +60,12 @@ NOTE: The security measures discussed in the following sections only provide var
 ////
 
 == Submitting organizations
+Digital Flanders (Government of Flanders)
+HeazelTech 
+Google
+Pangera Innovations
+PEREY Research & Consulting
+US Army Geospatial Center
 
 // Submitting organizations inserted here by Metanorma
 
