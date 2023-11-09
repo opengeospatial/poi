@@ -13,7 +13,7 @@
 :fullname_2: Matthew Brian, John Purss
 :role_2: editor
 :keywords: ogcdoc, OGC document, API, openapi, html
-:submitting-organizations: organization_1; organization_2; organization_3; etc.
+:submitting-organizations: Digital Flancers; Google; HeazelTec; Pangea Innovations; PEREY Research & Consulting; US Army Geospatial Center
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf
 :imagesdir: images
