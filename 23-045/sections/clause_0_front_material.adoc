@@ -67,7 +67,7 @@ HeazelTech
 
 Google  
 
-Pangera Innovations 
+Pangea Innovations 
 
 PEREY Research & Consulting  
 
@@ -81,7 +81,12 @@ All questions regarding this submission should be directed to the editor or the 
 
 |===
 |*Name* |*Affiliation*
-|Koen |
+|Koen De Baets|Digital Flanders (Government of Flanders)
+|Chuck Heazel|HeazelTech
+|Howard Trickey|Google
+|Matthew Purss|Pangea Innovations
+|Christine Perey|PEREY Research & Consulting
+|Amy Youmans|US Army Geospatial Center
 |===
 
 == Contributors
