@@ -64,11 +64,11 @@ NOTE: The security measures discussed in the following sections only provide var
 
 Digital Flanders (Government of Flanders)
 
-HeazelTech  
+Google 
 
-Google  
+HeazelTech   
 
-Pangea Innovations 
+Pangaea Innovations 
 
 PEREY Research & Consulting  
 
@@ -83,9 +83,9 @@ All questions regarding this submission should be directed to the editor or the 
 |===
 |*Name* |*Affiliation*
 |Koen De Baets|Digital Flanders (Government of Flanders)
-|Chuck Heazel|HeazelTech
 |Howard Trickey|Google
-|Matthew Purss|Pangea Innovations
+|Chuck Heazel|HeazelTech
+|Matthew Purss|Pangaea Innovations
 |Christine Perey|PEREY Research & Consulting
 |Amy Youmans|US Army Geospatial Center
 |===
@@ -99,9 +99,9 @@ Additional contributors to this Standard include the following:
 |===
 |*Name* |*Affiliation*
 |Koen De Baets|Digital Flanders (Government of Flanders)
-|Chuck Heazel|HeazelTech
 |Howard Trickey|Google
-|Matthew Purss|Pangea Innovations
+|Chuck Heazel|HeazelTech
+|Matthew Purss|Pangaea Innovations
 |Christine Perey|PEREY Research & Consulting
 |Amy Youmans|US Army Geospatial Center
 |===
