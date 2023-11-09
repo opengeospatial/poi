@@ -60,11 +60,17 @@ NOTE: The security measures discussed in the following sections only provide var
 ////
 
 == Submitting organizations
-Digital Flanders (Government of Flanders)  
+
+Digital Flanders (Government of Flanders)
+
 HeazelTech  
+
 Google  
-Pangera Innovations  
+
+Pangera Innovations 
+
 PEREY Research & Consulting  
+
 US Army Geospatial Center  
 
 // Submitting organizations inserted here by Metanorma
@@ -75,7 +81,7 @@ All questions regarding this submission should be directed to the editor or the 
 
 |===
 |*Name* |*Affiliation*
-| |
+|Koen |
 |===
 
 == Contributors
