@@ -70,7 +70,7 @@ image::./images/POI.png[align="center"]
 
 *<<AbstractPOI-section,AbstractPOI:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
 
-*POI:* A POI instance. 
+*<<POI-section,POI:>>* A POI instance. 
 
 *<<FeatureOfInterest-section,FeatureOfInterest:>>* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.
 

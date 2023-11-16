@@ -30,39 +30,6 @@ In an implementation this abstract class shall be substituted by a concrete clas
 !===
 |===
 
-[[AttributeType-section]]
-.Attribute Type Class
-[cols="1a"]
-|===
-|*AttributeType* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! feature attribute +
-characteristic of a feature +
-NOTE: A feature attribute has a name, a data type, and a value domain associated to it.  A feature attribute for a feature instance also has an attribute value taken from the value domain.  +
-EXAMPLE: A feature attribute named 'color' may have an attribute value 'green' which belongs to the data type 'text'.  A feature attribute named 'length' may have an attribute value '82.4' which belongs to the data type 'real'.+ 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! PropertyType 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «Metaclass»
-!{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! name is mandatory (Invariant): 
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]<o:p></o:p>
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! MD_Metadata   [0..*] !
-!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! MD_Metadata   [0..*] !
-!{set:cellbgcolor:#FFFFFF} characterizeBy  ! <<AttributeType-section,AttributeType>>   [0..*] !
-!{set:cellbgcolor:#FFFFFF} featureAttributeMetadata  ! MD_Metadata   [0..*] !
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD}
-*Attribute* !*Value type and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF} cardinality   !Multiplicity  [1..1]!
-!{set:cellbgcolor:#FFFFFF} valueDomain !<<CharacterString-section,CharacterString>> [1..1] !
-!{set:cellbgcolor:#FFFFFF} valueType   !<<TypeName-section,TypeName>> [1..1] !
-!===
-|===
-
 [[FeatureType-section]]
 .Feature Type Class
 [cols="1a"]
