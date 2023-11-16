@@ -27,7 +27,7 @@ include::sections/03-scope.adoc[]
 include::sections/04-normative-references.adoc[]
 include::sections/05-nonstandard-attributes.adoc[]
 
-// include::sections/06-choose-restaurant-use-case.adoc[]
+include::sections/06-choose-restaurant-use-case.adoc[]
 
 // include::sections/06-construction-site-use-case.adoc[]
 
