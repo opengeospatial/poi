@@ -15,7 +15,7 @@
 :fullname_3: John Purss
 :docsubtype: conceptual
 :keywords: ogcdoc, OGC document, API, openapi, html
-:submitting-organizations: Organization One; Organization Two
+:submitting-organizations: Digital Flancers; Google; HeazelTec; Pangaea Innovations; PEREY Research & Consulting; US Army Geospatial Center
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf
 :local-cache-only:
