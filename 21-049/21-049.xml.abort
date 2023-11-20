@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.0.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2023-11-15</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2029-03-30</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2023-11-20</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2023-11-20</on></date><contributor><role type="author"/><organization>
 <name>Organization One</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Organization Two</name>
@@ -946,7 +946,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <clause id="data_dictionary_section" obligation="normative">
 <title>POI Data Dictionary</title>
-<p id="_9d533c05-cd55-ff96-9bbc-207a3d609b17">The POI UML model is the normative definition of the POI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the POI Conceptual Model.</p>
+<p id="_ef8cf08d-759e-98fc-40e5-3602bac7cb30">The POI UML model is the normative definition of the POI Conceptual Model. The Data Dictionary tables in this section were software generated from the UML model. As such, this section provides a normative representation of the POI Conceptual Model.</p>
 
 <table id="AbstractFeature-section"><tbody><tr><td valign="middle" align="left"><p id="_2848208a-571f-8a1b-f164-5e4f7fa90136"><strong>AbstractFeature</strong></p>
 </td>
@@ -992,7 +992,7 @@ The term was first used in this way in the general theory of object-oriented pro
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_19a3be43-bae9-53f9-e221-240c360b2bdb"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_01c550a2-dea8-22b5-2ce7-85af95d84c94"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -1008,18 +1008,6 @@ The term was first used in this way in the general theory of object-oriented pro
 </tr><tr><td valign="middle" align="left"> validTo «property»</td>
 <td valign="middle" align="left"><xref target="DateTime-section">DateTime</xref>  [0..1]</td>
 <td valign="middle" align="left">Indicates the date at which a POI feature ceased to exist in the real world.</td>
-</tr><tr><td valign="middle" align="left"> description «property»</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">Provides further information on the feature.</td>
-</tr><tr><td valign="middle" align="left"> featureID «property»</td>
-<td valign="middle" align="left"><xref target="ID-section">ID</xref></td>
-<td valign="middle" align="left">Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.</td>
-</tr><tr><td valign="middle" align="left"> identifer «property»</td>
-<td valign="middle" align="left"><xref target="ScopedName-section">ScopedName</xref>  [0..1]</td>
-<td valign="middle" align="left">Specifies the unique identifier of the feature that is valid globally.</td>
-</tr><tr><td valign="middle" align="left"> name «property»</td>
-<td valign="middle" align="left"><xref target="GenericName-section">GenericName</xref>  [0..*]</td>
-<td valign="middle" align="left">Specifies the name of the feature.</td>
 </tr></tbody>
 </table>
 </td>
@@ -1037,17 +1025,18 @@ The term was first used in this way in the general theory of object-oriented pro
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_ebb6fe8b-8a5c-b265-6e7d-737e0d64bc27"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_0fbbc82c-619e-0154-48ed-384acad2828c"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"> hasFeatureOfInterest</td>
+<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="AbstractPOI-section">AbstractPOI</xref>  []</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> hasFeatureOfInterest</td>
 <td valign="middle" align="left"><xref target="FeatureOfInterest-section">FeatureOfInterest</xref>  [0..*]</td>
 <td valign="middle" align="left">One or more Features which are represented by this POI.</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_20006fa5-c3ee-2008-8485-3f065e42eb75"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_1304846d-214b-f5be-6263-d4d0eba7e50e"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -1069,37 +1058,15 @@ The term was first used in this way in the general theory of object-oriented pro
 </tr><tr><td valign="middle" align="left"> symbology «property»</td>
 <td valign="middle" align="left"><xref target="Link-section">Link</xref>  [0..1]</td>
 <td valign="middle" align="left">A reference to information about rendering this POI.</td>
-</tr><tr><td valign="middle" align="left"> creationDate «property»</td>
-<td valign="middle" align="left"><xref target="DateTime-section">DateTime</xref>  [0..1]</td>
-<td valign="middle" align="left">Indicates the date at which a POI feature was added to the containing model.</td>
-</tr><tr><td valign="middle" align="left"> terminationDate «property»</td>
-<td valign="middle" align="left"><xref target="DateTime-section">DateTime</xref>  [0..1]</td>
-<td valign="middle" align="left">Indicates the date at which a POI feature was removed from the containing model.</td>
-</tr><tr><td valign="middle" align="left"> validFrom «property»</td>
-<td valign="middle" align="left"><xref target="DateTime-section">DateTime</xref>  [0..1]</td>
-<td valign="middle" align="left">Indicates the date at which a POI feature started to exist in the real world.</td>
-</tr><tr><td valign="middle" align="left"> validTo «property»</td>
-<td valign="middle" align="left"><xref target="DateTime-section">DateTime</xref>  [0..1]</td>
-<td valign="middle" align="left">Indicates the date at which a POI feature ceased to exist in the real world.</td>
-</tr><tr><td valign="middle" align="left"> description «property»</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">Provides further information on the feature.</td>
-</tr><tr><td valign="middle" align="left"> featureID «property»</td>
-<td valign="middle" align="left"><xref target="ID-section">ID</xref></td>
-<td valign="middle" align="left">Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.</td>
-</tr><tr><td valign="middle" align="left"> identifer «property»</td>
-<td valign="middle" align="left"><xref target="ScopedName-section">ScopedName</xref>  [0..1]</td>
-<td valign="middle" align="left">Specifies the unique identifier of the feature that is valid globally.</td>
-</tr><tr><td valign="middle" align="left"> name «property»</td>
-<td valign="middle" align="left"><xref target="GenericName-section">GenericName</xref>  [0..*]</td>
-<td valign="middle" align="left">Specifies the name of the feature.</td>
 </tr></tbody>
 </table>
 </td>
 </tr></tbody>
 </table>
 
-<table id="FeatureOfInterest-section"><tbody><tr><td valign="middle" align="left"><p id="_b8441531-7b8e-81cd-25b2-ab793df00bde"><strong>FeatureOfInterest</strong></p>
+<p id="_f6ba1f3d-e563-6254-c49e-13d4c6f4c35c">[[Example Feature-section]]</p>
+
+<table id="_fca6946a-a0bf-b65d-3c7d-417c6b7536fa"><tbody><tr><td valign="middle" align="left"><p id="_0841d169-f55f-91bb-4687-b5616a167f94"><strong>Example Feature</strong></p>
 </td>
 </tr><tr><td valign="middle" align="left"><table id="_e2f1f6f8-2e33-6e6e-410a-277ea1c88d26"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
@@ -1109,84 +1076,189 @@ The term was first used in this way in the general theory of object-oriented pro
 </tr></tbody>
 </table>
 </td>
-</tr></tbody>
+</tr><tr><td valign="middle" align="left"><table id="_c670e511-f7fd-43fb-6acc-93a8691da9ec"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
 </table>
-
-<table id="PayloadDefinition-section"><tbody><tr><td valign="middle" align="left"><p id="_d8450407-0639-4962-4470-cf998cd37b45"><strong>PayloadDefinition</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_57b028a4-9c74-691c-ad2b-42d213671ffb"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">The semantic model (ontology) for a POI payload.</td>
-</tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">None</td>
-</tr><tr><td valign="middle" align="left">    Stereotype:</td>
-<td valign="middle" align="left">«DataType»</td>
-</tr></tbody>
+</tr><tr><td valign="middle" align="left"><table id="_5a3c9f64-a22f-af39-43fd-d4bc0437e3cc"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
 </table>
 </td>
 </tr></tbody>
 </table>
 
-<table id="PayloadSchema-section"><tbody><tr><td valign="middle" align="left"><p id="_8833e054-3e0c-0391-6125-c4972efe8c82"><strong>PayloadSchema</strong></p>
+<p id="_0179266c-2dc3-9753-6063-07409a894abc">[[Example Type-section]]</p>
+
+<table id="_44bb8187-0aff-7647-fbb6-5ea37f71c6d4"><tbody><tr><td valign="middle" align="left"><p id="_e3c9c287-342c-c722-a82f-b5546c8bf200"><strong>Example Type</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_09a869b4-a538-c346-36de-e6d9be66b092"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_a6f3f4fd-981d-f093-65c4-7aa036a9cf6c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">None</td>
+<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
-<td valign="middle" align="left">«DataType»</td>
+<td valign="middle" align="left">«Type»</td>
 </tr></tbody>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_d457707f-34a9-eaa7-d902-3fc9c10843df"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_33aaf227-a140-4cc5-ff9c-8199aba14824"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
 </table>
 </td>
 </tr></tbody>
 </table>
 
-<table id="POI-section"><tbody><tr><td valign="middle" align="left"><p id="_b8fe7154-b86e-43bb-6303-b38971245400"><strong>POI</strong></p>
+<table id="FeatureOfInterest-section"><tbody><tr><td valign="middle" align="left"><p id="_278e45c3-539e-c62d-4477-ac1062a5beb1"><strong>FeatureOfInterest</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_32eeaa83-5f52-92d9-20be-b96d3246218a"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">An instance of a POI. Implements the AbstractPOI class.</td>
+</tr><tr><td valign="middle" align="left"><table id="_7b66e566-a269-0a92-9c9d-6d326a0135d2"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+<td valign="middle" align="left">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling. (SOSA)</td>
 </tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">None</td>
+<td valign="middle" align="left"><xref target="AnyFeature-section">AnyFeature</xref></td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«FeatureType»</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_ae10cc96-3fac-df75-33fc-a987d80f89ec"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_482da26e-7dc6-5f45-5b52-a9e1b094891a"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="AbstractPOI-section">AbstractPOI</xref>  []</td>
-<td valign="middle" align="left"/></tr></tbody>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_eb7dcb62-a12a-22a8-7f7b-2171f3ee46c9"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
 </table>
 </td>
 </tr></tbody>
 </table>
 
-<table id="POI_Payload-section"><tbody><tr><td valign="middle" align="left"><p id="_0babe258-6a9c-7232-7494-cc6e2f94ab7b"><strong>POI_Payload</strong></p>
+<table id="PayloadDefinition-section"><tbody><tr><td valign="middle" align="left"><p id="_56d0e80e-4028-8fde-bc7d-0196c27d3fad"><strong>PayloadDefinition</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_781cf9f4-f4cb-d477-589e-039c8fe40548"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">A representation of properties of the FoI which are to be included in the POI.</td>
+</tr><tr><td valign="middle" align="left"><table id="_6d86c616-27bd-ed66-46ae-e3301da835ca"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+<td valign="middle" align="left">The semantic model (ontology) for a POI payload.</td>
 </tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">None</td>
+<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«DataType»</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_b02906e0-ea8e-24df-dc15-f48f8bff5664"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_1cad7197-1c53-a210-fe28-64b5d66908b3"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"> FoI</td>
-<td valign="middle" align="left"><xref target="FeatureOfInterest-section">FeatureOfInterest</xref>  []</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> hasDefinition</td>
-<td valign="middle" align="left"><xref target="PayloadDefinition-section">PayloadDefinition</xref>  [0..1]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="AbstractPOI-section">AbstractPOI</xref>  []</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> usesSchema</td>
-<td valign="middle" align="left"><xref target="PayloadSchema-section">PayloadSchema</xref>  []</td>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_fc4443fe-0f46-0f8e-3451-b3e742b39971"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+</table>
+</td>
+</tr></tbody>
+</table>
+
+<table id="PayloadSchema-section"><tbody><tr><td valign="middle" align="left"><p id="_4f699561-0b19-c086-1792-a78f15b6536d"><strong>PayloadSchema</strong></p>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_bd06bb83-0007-cd4c-b6fd-eb603cb6f1d6"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
+<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+</tr><tr><td valign="middle" align="left">    Stereotype:</td>
+<td valign="middle" align="left">«DataType»</td>
+</tr></tbody>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_ca139de7-4152-7c69-321a-c1b18723e255"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_1360a530-d308-1471-8922-df6d91e239de"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+</table>
+</td>
+</tr></tbody>
+</table>
+
+<table id="POI-section"><tbody><tr><td valign="middle" align="left"><p id="_cd8aa8e1-05ea-f30e-d33c-9f1738b24c5a"><strong>POI</strong></p>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_caced4db-eff3-cec9-0130-c880603bb106"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+<td valign="middle" align="left">An instance of a POI. Implements the AbstractPOI class.</td>
+</tr><tr><td valign="middle" align="left">    Subclass of:</td>
+<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+</tr><tr><td valign="middle" align="left">    Stereotype:</td>
+<td valign="middle" align="left">«FeatureType»</td>
+</tr></tbody>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_11e41d0a-daa1-044d-9c27-a0cf89d1f3ae"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="POI-section">POI</xref>  []</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> implements</td>
+<td valign="middle" align="left"><xref target="AbstractPOI-section">AbstractPOI</xref>  []</td>
 <td valign="middle" align="left"/></tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_b60c8f25-e640-7981-bd6e-d3f3de245752"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_26949203-a267-6c5d-8ced-fd16774111c7"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+</table>
+</td>
+</tr></tbody>
+</table>
+
+<table id="POI_Payload-section"><tbody><tr><td valign="middle" align="left"><p id="_1b617987-9c28-ac2e-b0ee-610a7e2a2344"><strong>POI_Payload</strong></p>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_f1ef3c50-6fc3-77b1-5d6a-d321d52040de"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+<td valign="middle" align="left">A representation of properties of the FoI which are to be included in the POI.</td>
+</tr><tr><td valign="middle" align="left">    Subclass of:</td>
+<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+</tr><tr><td valign="middle" align="left">    Stereotype:</td>
+<td valign="middle" align="left">«DataType»</td>
+</tr></tbody>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_1ab4556a-240b-c8a4-6543-4f43573de54e"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left"> hasPayload</td>
+<td valign="middle" align="left"><xref target="POI_Payload-section">POI_Payload</xref>  [0..*]</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> usedBy</td>
+<td valign="middle" align="left"><xref target="AbstractPOI-section">AbstractPOI</xref>  []</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> usedBy</td>
+<td valign="middle" align="left"><xref target="POI_Payload-section">POI_Payload</xref>  [0..*]</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> hasDefinition</td>
+<td valign="middle" align="left"><xref target="PayloadDefinition-section">PayloadDefinition</xref>  [0..1]</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> usedBy</td>
+<td valign="middle" align="left"><xref target="POI_Payload-section">POI_Payload</xref>  [0..*]</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> usesSchema</td>
+<td valign="middle" align="left"><xref target="PayloadSchema-section">PayloadSchema</xref>  []</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="POI_Payload-section">POI_Payload</xref>  []</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> FoI</td>
+<td valign="middle" align="left"><xref target="FeatureOfInterest-section">FeatureOfInterest</xref>  []</td>
+<td valign="middle" align="left"/></tr></tbody>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_e06c2ba6-b131-d78e-e9d7-7a880085bb9a"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -1199,36 +1271,79 @@ The term was first used in this way in the general theory of object-oriented pro
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><p id="_2bff34be-6b6c-14aa-ee2b-16056c8f254f"> Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».</p>
-</td>
 </tr></tbody>
 </table>
 
-<table id="ID-section"><tbody><tr><td valign="middle" align="left"><p id="_648293cb-e1d1-2a5e-2752-0831deb47272"><strong>ID</strong></p>
+<p id="_68e1b39f-fd38-bb79-95fb-231dbc2fe331">Types Delimiter</p>
+
+<table id="ID-section"><tbody><tr><td valign="middle" align="left"><p id="_8450f113-b356-8ece-b0e0-ca369a53ef1e"><strong>ID</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_a5f0e4a3-f132-1fa9-becc-9fa60e0f0b77"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_5ff7d803-8e7f-a1c4-afc1-1b8c41bdc396"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">ID is a basic type that represents a unique identifier.</td>
 </tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">None</td>
+<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«Type»</td>
 </tr></tbody>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_1b116bbe-d35b-dfe9-5e4e-df476ae870b2"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_dc097097-1461-5077-1174-afc4065eec0e"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
 </table>
 </td>
 </tr></tbody>
 </table>
 
-<table id="Link-section"><tbody><tr><td valign="middle" align="left"><p id="_b24d5204-4bce-6626-fae6-8d763ad24742"><strong>Link</strong></p>
+<table id="Integer-section"><tbody><tr><td valign="middle" align="left"><p id="_70299286-ddbc-bcc7-9226-7b5b55e75eb4"><strong>Integer</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_ef19ae73-bffe-066f-3ebd-414896167b2f"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_1f7b9fb6-1ab3-d520-cff7-ca635e8db6fb"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">None</td>
+<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«Type»</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_a0de5ff8-c295-4a0f-5a58-88d88ac9043b"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_070f7f0d-60ad-c530-27f7-12c97e0f3d62"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_53d409f5-c39c-6ece-92ef-6b598d37047f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+</table>
+</td>
+</tr></tbody>
+</table>
+
+<table id="Link-section"><tbody><tr><td valign="middle" align="left"><p id="_97d76e03-9f92-0633-7abe-0e8a9a2516a7"><strong>Link</strong></p>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_253b1596-f940-95ca-0652-b67ca615025c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
+<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
+</tr><tr><td valign="middle" align="left">    Stereotype:</td>
+<td valign="middle" align="left">«Type»</td>
+</tr></tbody>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_6b6ace89-d461-2626-9f17-7c33e4bab78a"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_5ad10a75-95aa-68e8-af2d-7669c011fa47"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -1239,7 +1354,7 @@ The term was first used in this way in the general theory of object-oriented pro
 <td valign="middle" align="left"><xref target="String-section">String</xref>  [0..1]</td>
 <td valign="middle" align="left">A hint indicating what the language of the result of dereferencing the link should be.</td>
 </tr><tr><td valign="middle" align="left"> length</td>
-<td valign="middle" align="left"><xref target="integer-section">integer</xref></td>
+<td valign="middle" align="left"><xref target="int-section">int</xref></td>
 <td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> rel</td>
 <td valign="middle" align="left"><xref target="String-section">String</xref></td>
 <td valign="middle" align="left">The type or semantics of the relation.</td>
@@ -1255,27 +1370,26 @@ The term was first used in this way in the general theory of object-oriented pro
 </tr></tbody>
 </table>
 
-<table id="Integer-section"><tbody><tr><td valign="middle" align="left"><p id="_ec64bda1-d437-36b3-7386-935810ac7399"><strong>Integer</strong></p>
+<table id="String-section"><tbody><tr><td valign="middle" align="left"><p id="_81f2c5aa-bd4d-d054-44d9-a3d66290a5c4"><strong>String</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_0c12b226-f7ac-6ba8-ad5c-b0065de0322d"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_ed530ad9-8699-b649-bf0f-f3b6429a05ac"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">None</td>
+<td valign="middle" align="left">&lt;←section,&gt;&gt;</td>
 </tr><tr><td valign="middle" align="left">    Stereotype:</td>
 <td valign="middle" align="left">«Type»</td>
 </tr></tbody>
 </table>
 </td>
-</tr></tbody>
+</tr><tr><td valign="middle" align="left"><table id="_22f80481-36ff-c082-fb35-efc3ae890a02"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
 </table>
-
-<table id="String-section"><tbody><tr><td valign="middle" align="left"><p id="_7586adc9-0899-eae9-44c8-3ee011f067a8"><strong>String</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_ebed3240-b1c7-f0c1-1ba7-b5b6ba3aa010"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Subclass of:</td>
-<td valign="middle" align="left">None</td>
-</tr><tr><td valign="middle" align="left">    Stereotype:</td>
-<td valign="middle" align="left">«Type»</td>
-</tr></tbody>
+</tr><tr><td valign="middle" align="left"><table id="_f3432663-2980-0646-33e5-6347522809aa"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
 </table>
 </td>
 </tr></tbody>
@@ -1349,61 +1463,11 @@ In an implementation this abstract class shall be substituted by a concrete clas
 </tr></tbody>
 </table>
 
-<table id="AttributeType-section">
-<name>Attribute Type Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_3c706330-fdaa-f688-b542-763b4ef7bfe0"><strong>AttributeType</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_ed57e4e2-9064-716c-7f62-9f663ef39183"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">feature attribute<br/>
-characteristic of a feature<br/>
-NOTE: A feature attribute has a name, a data type, and a value domain associated to it.  A feature attribute for a feature instance also has an attribute value taken from the value domain. <br/>
-EXAMPLE: A feature attribute named ‘color’ may have an attribute value ‘green’ which belongs to the data type ‘text’.  A feature attribute named ‘length’ may have an attribute value ‘82.4’ which belongs to the data type ‘real’.+</td>
-</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-<td valign="middle" align="left">PropertyType</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«Metaclass»</td>
-</tr><tr><td valign="middle" align="left">    Constraint:</td>
-<td valign="middle" align="left">name is mandatory (Invariant):</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><p id="_2ac0cf20-d4b0-df06-b337-7a32e558e69f">[cols=”15,20,60”,frame=none,grid=none,options=”header”]&lt;o:p&gt;&lt;/o:p&gt;</p>
-
-<table id="_2d3e63ab-465c-5b2f-2294-db8a5c50c8c8"><tbody><tr><td valign="middle" align="left"> <strong>Role name</strong></td>
-<td valign="middle" align="left"><strong>Target class and multiplicity</strong></td>
-<td valign="middle" align="left"><strong>Definition</strong></td>
-</tr><tr><td valign="middle" align="left"> featureAttributeMetadata</td>
-<td valign="middle" align="left">MD_Metadata   [0..*]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> featureAttributeMetadata</td>
-<td valign="middle" align="left">MD_Metadata   [0..*]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> characterizeBy</td>
-<td valign="middle" align="left"><xref target="AttributeType-section">AttributeType</xref>   [0..*]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> featureAttributeMetadata</td>
-<td valign="middle" align="left">MD_Metadata   [0..*]</td>
-<td valign="middle" align="left"/></tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_892c8511-1f7d-6ee4-414a-9a6cd481a8ee"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"><strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> cardinality</td>
-<td valign="middle" align="left">Multiplicity  [1..1]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> valueDomain</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref> [1..1]</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> valueType</td>
-<td valign="middle" align="left"><xref target="TypeName-section">TypeName</xref> [1..1]</td>
-<td valign="middle" align="left"/></tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
 <table id="FeatureType-section">
 <name>Feature Type Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_bd16f209-a0c6-89c6-e224-794578de0641"><strong>FeatureType</strong></p>
+<tbody><tr><td valign="middle" align="left"><p id="_7c1da4cf-2179-fa1f-d34c-6f319d0de12d"><strong>FeatureType</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_b9a07a6d-c453-259d-dfda-029ff69eb42f"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_0f74231a-c043-5e8c-fd0c-239df9372dc5"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">feature: abstraction of real world phenomena<br/>
 NOTE: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant.<br/>
 This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema</td>
@@ -1416,7 +1480,7 @@ This class describes how a feature class shall be constructed in an Application 
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_54ce0064-8d7e-ec79-5b6d-5f0cf3e57627"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_29bdc056-77e9-3e79-279d-6592b11c50b9"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -1430,7 +1494,7 @@ This class describes how a feature class shall be constructed in an Application 
 <td valign="middle" align="left"/></tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_000f0c10-a95a-9d69-866b-0ebadc5079a5"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_75a1f147-0d24-61ef-6377-e710134c5544"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -1588,126 +1652,23 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 <title>Citation and responsible party information</title>
 <p id="_4ea60b52-03cb-cb8c-d87a-b607c4eadd7c">The following classes are defined in <eref type="inline" bibitemid="ISO19115" citeas="nofetch(ISO 19115-1">(ISO 19115-1 Edition 1)</eref></p>
 
-<table id="CI_Address-section">
-<name>CI_Address Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_4a23d854-710d-aa4d-c9ef-fb03dce8797b"><strong>CI_Address</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_f8ddf367-1d9e-fffb-a0b4-2a33763cea90"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">location of the responsible individual or organisation</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">None</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_e32699d3-04f7-7751-7f55-0314969359a9"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> administrativeArea</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">state, province of the location</td>
-</tr><tr><td valign="middle" align="left"> city</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">city of the location</td>
-</tr><tr><td valign="middle" align="left"> country</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">country of the physical address</td>
-</tr><tr><td valign="middle" align="left"> deliveryPoint</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..*]</td>
-<td valign="middle" align="left">address line for the location
-Example Street number and name, suite number, etc</td>
-</tr><tr><td valign="middle" align="left"> electronicMailAddress</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..*]</td>
-<td valign="middle" align="left">address of the electronic mailbox of the responsible organisation or individual</td>
-</tr><tr><td valign="middle" align="left"> postalCode</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">ZIP or other postal code</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="CI_Citation-section">
-<name>CI_Citation Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_9c708380-a2e3-a418-c2ed-c543acc2c91b"><strong>CI_Citation</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_1fe14a94-2735-4cc1-b8e0-bcb4d07ad82b"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">standardized resource reference</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">None</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_305a4589-7320-e72f-49da-5361dd298bc6"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> alternateTitle</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..*]</td>
-<td valign="middle" align="left">short name or other language name by which the cited information is known. Example: DCW as an alternative title for Digital Chart of the World</td>
-</tr><tr><td valign="middle" align="left"> citedResponsibleParty</td>
-<td valign="middle" align="left"><xref target="CI_Responsibility-section">CI_Responsibility</xref>  [0..*]</td>
-<td valign="middle" align="left">roles, name, contact, and position information for an individual or organisation that is responsible for the resource</td>
-</tr><tr><td valign="middle" align="left"> date</td>
-<td valign="middle" align="left"><xref target="CI_Date-section">CI_Date</xref>  [0..*]</td>
-<td valign="middle" align="left">reference date for the cited resource</td>
-</tr><tr><td valign="middle" align="left"> edition</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">version of the cited resource</td>
-</tr><tr><td valign="middle" align="left"> editionDate</td>
-<td valign="middle" align="left"><xref target="DateTime-section">DateTime</xref>  [0..1]</td>
-<td valign="middle" align="left">date of the edition</td>
-</tr><tr><td valign="middle" align="left"> graphic</td>
-<td valign="middle" align="left">MD_BrowseGraphic  [0..*]</td>
-<td valign="middle" align="left">citation graphic or logo for cited party</td>
-</tr><tr><td valign="middle" align="left"> identifier</td>
-<td valign="middle" align="left">MD_Identifier  [0..*]</td>
-<td valign="middle" align="left">value uniquely identifying an object within a namespace</td>
-</tr><tr><td valign="middle" align="left"> ISBN</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">international Standard Book Number</td>
-</tr><tr><td valign="middle" align="left"> ISSN</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">international Standard Serial Number</td>
-</tr><tr><td valign="middle" align="left"> onlineResource</td>
-<td valign="middle" align="left"><xref target="CI_OnlineResource-section">CI_OnlineResource</xref>  [0..*]</td>
-<td valign="middle" align="left">online reference to the cited resource</td>
-</tr><tr><td valign="middle" align="left"> otherCitationDetails</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..*]</td>
-<td valign="middle" align="left">other information required to complete the citation that is not recorded elsewhere</td>
-</tr><tr><td valign="middle" align="left"> presentationForm</td>
-<td valign="middle" align="left"><xref target="CI_PresentationFormCode-section">CI_PresentationFormCode</xref>  [0..*]</td>
-<td valign="middle" align="left">mode in which the resource is represented</td>
-</tr><tr><td valign="middle" align="left"> series</td>
-<td valign="middle" align="left"><xref target="CI_Series-section">CI_Series</xref>  [0..1]</td>
-<td valign="middle" align="left">information about the series, or aggregate resource, of which the resource is a part</td>
-</tr><tr><td valign="middle" align="left"> title</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref> [1..1]</td>
-<td valign="middle" align="left">name by which the cited resource is known</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
 <table id="CI_Contact-section">
 <name>CI_Contact Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_ad2d2545-6afc-4bae-b0f3-bdd2dec696a7"><strong>CI_Contact</strong></p>
+<tbody><tr><td valign="middle" align="left"><p id="_64e9a737-7e6e-21a9-2527-2452dd648539"><strong>CI_Contact</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_230b6861-82f0-1fce-adf8-ee8013314f19"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_42e0391b-f270-6bb9-6ae4-997534366038"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">information required to enable contact with the responsible person and/or organisation</td>
 </tr><tr><td valign="middle" align="left">    StereoType:</td>
 <td valign="middle" align="left">None</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_272b875f-0ced-df48-c612-c3d1f8ffc15f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_b8443e6e-9540-a388-75d8-dc5f0e9e7e91"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="left"> address</td>
-<td valign="middle" align="left"><xref target="CI_Address-section">CI_Address</xref>  [0..*]</td>
+<td valign="middle" align="left">CI_Address  [0..*]</td>
 <td valign="middle" align="left">physical and email address at which the organisation or individual may be contacted</td>
 </tr><tr><td valign="middle" align="left"> contactInstructions</td>
 <td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
@@ -1719,107 +1680,11 @@ Example Street number and name, suite number, etc</td>
 <td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..*]</td>
 <td valign="middle" align="left">time period (including time zone) when individuals can contact the organisation or individual</td>
 </tr><tr><td valign="middle" align="left"> onlineResource</td>
-<td valign="middle" align="left"><xref target="CI_OnlineResource-section">CI_OnlineResource</xref>  [0..*]</td>
+<td valign="middle" align="left">CI_OnlineResource  [0..*]</td>
 <td valign="middle" align="left">on-line information that can be used to contact the individual or organisation</td>
 </tr><tr><td valign="middle" align="left"> phone</td>
-<td valign="middle" align="left"><xref target="CI_Telephone-section">CI_Telephone</xref>  [0..*]</td>
+<td valign="middle" align="left">CI_Telephone  [0..*]</td>
 <td valign="middle" align="left">telephone numbers at which the organisation or individual may be contacted</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="CI_Date-section">
-<name>CI_Date Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_7188723b-b5ee-fd34-bb75-bcbb9b17bed7"><strong>CI_Date</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_8f417cb9-eaf2-6754-bb3d-6193777c4990"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">reference date and event used to describe it</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«DataType»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_8a189375-748b-9c5e-196a-3493fbeb4df8"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> date</td>
-<td valign="middle" align="left"><xref target="DateTime-section">DateTime</xref> [1..1]</td>
-<td valign="middle" align="left">reference date for the cited resource</td>
-</tr><tr><td valign="middle" align="left"> dateType</td>
-<td valign="middle" align="left"><xref target="CI_DateTypeCode-section">CI_DateTypeCode</xref> [1..1]</td>
-<td valign="middle" align="left">event used for reference date</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="CI_DateTypeCode-section">
-<name>CI_DateTypeCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_72324c10-0eb0-d33c-4f91-185c6d41d0b4"><strong>CI_DateTypeCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_717923eb-d9e5-0716-92d0-5182309bc5ec"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">identification of when a given event occurred</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_7e9f3b27-45c5-5cc1-4081-031bb917cdb0"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> adopted</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when resource was adopted</td>
-</tr><tr><td valign="middle" align="left"> creation</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when the resource was brought into existence</td>
-</tr><tr><td valign="middle" align="left"> deprecated</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when resource was deprecated</td>
-</tr><tr><td valign="middle" align="left"> distribution</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when an instance of the resource was distributed</td>
-</tr><tr><td valign="middle" align="left"> expiry</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when resource expires</td>
-</tr><tr><td valign="middle" align="left"> inForce</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when resource became in force</td>
-</tr><tr><td valign="middle" align="left"> lastRevision</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when resource was last reviewed</td>
-</tr><tr><td valign="middle" align="left"> lastUpdate</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when resource was last updated</td>
-</tr><tr><td valign="middle" align="left"> nextUpdate</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when resource will be next updated</td>
-</tr><tr><td valign="middle" align="left"> publication</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when the resource was issued</td>
-</tr><tr><td valign="middle" align="left"> released</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">the date that the resource shall be released for public access</td>
-</tr><tr><td valign="middle" align="left"> revision</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when the resource was examined or re-examined and improved or amended</td>
-</tr><tr><td valign="middle" align="left"> superseded</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when resource was superseded or replaced by another resource</td>
-</tr><tr><td valign="middle" align="left"> unavailable</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">date identifies when resource became not available or obtainable</td>
-</tr><tr><td valign="middle" align="left"> validityBegins</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">time at which the data is considered to become valid. Note: There could be quite a delay between creation and validity begins</td>
-</tr><tr><td valign="middle" align="left"> validityExpires</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">time at which the data is no longer considered to be valid</td>
 </tr></tbody>
 </table>
 </td>
@@ -1828,9 +1693,9 @@ Example Street number and name, suite number, etc</td>
 
 <table id="CI_Individual-section">
 <name>CI_Individual Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_bb107ff6-c9fa-1850-dd86-796ca9285f76"><strong>CI_Individual</strong></p>
+<tbody><tr><td valign="middle" align="left"><p id="_7cb2dd16-b5e9-af32-1c09-35d603980d12"><strong>CI_Individual</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_1db8885e-4e0f-3c39-8475-a8bab5600c71"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_71f5c213-578a-7d28-3887-ea1676ef1a95"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">information about the party if the party is an individual</td>
 </tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 <td valign="middle" align="left"><xref target="CI_Party-section">CI_Party</xref></td>
@@ -1841,7 +1706,7 @@ Example Street number and name, suite number, etc</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_70597f6f-3379-cc90-6c79-32198ea1fafd"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_cfd11346-72cd-c5b5-3230-90f73adb8287"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -1849,7 +1714,7 @@ Example Street number and name, suite number, etc</td>
 <td valign="middle" align="left"/></tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_7d2e2522-1cee-91c5-6549-bac84337ea99"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_dfc7fade-e68a-5557-4176-08a991e2bfe0"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -1862,112 +1727,11 @@ Example Street number and name, suite number, etc</td>
 </tr></tbody>
 </table>
 
-<table id="CI_OnLineFunctionCode-section">
-<name>CI_OnLineFunctionCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_40107018-ed92-e78a-f904-3581c4ebe4d0"><strong>CI_OnLineFunctionCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_1b290ca5-a48c-519b-0278-49cff2635784"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">function performed by the resource</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_9bf59ec4-16c1-5643-8e64-df3d7ca86943"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> browseGraphic</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">browse graphic provided</td>
-</tr><tr><td valign="middle" align="left"> browsing</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">online browsing provided</td>
-</tr><tr><td valign="middle" align="left"> completeMetadata</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">complete metadata provided</td>
-</tr><tr><td valign="middle" align="left"> download</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">online instructions for transferring data from one storage device or system to another</td>
-</tr><tr><td valign="middle" align="left"> emailService</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">online email service provided</td>
-</tr><tr><td valign="middle" align="left"> fileAccess</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">online file access provided</td>
-</tr><tr><td valign="middle" align="left"> information</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">online information about the resource</td>
-</tr><tr><td valign="middle" align="left"> offlineAccess</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">online instructions for requesting the resource from the provider</td>
-</tr><tr><td valign="middle" align="left"> order</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">online order process for obtaining the resource</td>
-</tr><tr><td valign="middle" align="left"> search</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">online search interface for seeking out information about the resource</td>
-</tr><tr><td valign="middle" align="left"> upload</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">online resource upload capability provided</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="CI_OnlineResource-section">
-<name>CI_OnlineResource Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_c9e956fc-04bb-0735-64d9-db1343f03d9a"><strong>CI_OnlineResource</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_4f93d729-95de-a1d7-a3a4-8f7de840b21d"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">information about on-line sources from which the resource, specification, or community profile name and extended metadata elements can be obtained</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«DataType»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_3fd8c2b7-0058-de1a-60e3-fc9a19e2ae9a"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> applicationProfile</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">name of an application profile that can be used with the online resource</td>
-</tr><tr><td valign="middle" align="left"> description</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">detailed text description of what the online resource is/does</td>
-</tr><tr><td valign="middle" align="left"> function</td>
-<td valign="middle" align="left"><xref target="CI_OnLineFunctionCode-section">CI_OnLineFunctionCode</xref>  [0..1]</td>
-<td valign="middle" align="left">code for function performed by the online resource</td>
-</tr><tr><td valign="middle" align="left"> linkage</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref> [1..1]</td>
-<td valign="middle" align="left">location (address) for on-line access using a Uniform Resource Locator/Uniform Resource Identifier address or similar addressing scheme such as <link target="http://www.statkart.no/isotc211"/></td>
-</tr><tr><td valign="middle" align="left"> name</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">name of the online resource</td>
-</tr><tr><td valign="middle" align="left"> protocol</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">connection protocol to be used e.g. http, ftp, file,http get KVP, http POST, etc…</td>
-</tr><tr><td valign="middle" align="left"> protocolRequest</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">protocol used by the accessed resource(to be used mainly for POST requests).
-Example
-POST/XML:
-&lt;GetFeature   service=”WFS”  version=”2.0.0” outputFormat=”application/gml+xml; version=3.2” xmlns=http://www.opengis.net/wfs/2.0 xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xsi:schemaLocation=”http://www.opengis.net/wfs/2.0http://schemas.opengis.net/wfs/2.0.0/wfs.xsd”&gt;
-&lt;Query typeNames=”Roads”/&gt;
-&lt;/GetFeature&gt;</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
 <table id="CI_Organisation-section">
 <name>CI_Organisation Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_ec0c03c3-befb-4227-90e2-b4cb22d00db8"><strong>CI_Organisation</strong></p>
+<tbody><tr><td valign="middle" align="left"><p id="_547baedf-e4ba-784f-0780-619b9299268b"><strong>CI_Organisation</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_7ec3a338-88c9-bd2e-1a49-1d3ee3d106a1"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_b9f025c2-5e73-cc39-d587-c439a5675535"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">information about the party if the party is an organisation</td>
 </tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 <td valign="middle" align="left"><xref target="CI_Party-section">CI_Party</xref></td>
@@ -1978,7 +1742,7 @@ POST/XML:
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_d5953c05-a316-85b2-b681-85ab2370f884"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_08e15038-5bda-aa16-2fca-d5a724a54320"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -1988,7 +1752,7 @@ POST/XML:
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_647ee03c-4655-7f2d-09b1-cce352f7d1bf"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_ab401f35-c372-d791-70ce-b0020d79b972"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2003,16 +1767,16 @@ POST/XML:
 
 <table id="CI_Party-section">
 <name>CI_Party Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_52a5bdf0-de7b-d1e7-6c82-6f55237e30cc"><strong>CI_Party</strong></p>
+<tbody><tr><td valign="middle" align="left"><p id="_7cddad3a-fde6-3c24-dc89-3cdca0cdaa27"><strong>CI_Party</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_ee15792c-7827-b568-774e-6ed378fc6f5e"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_6719516d-9958-7dd7-6533-84b3cf890166"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">information about the individual and/or organisation of the party</td>
 </tr><tr><td valign="middle" align="left">    StereoType:</td>
 <td valign="middle" align="left">«abstract»</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_7f675ab3-2b51-9fee-234e-7bf36f368d66"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_84426f44-971b-e97d-3d0f-47fbc62f7aba"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2020,7 +1784,7 @@ POST/XML:
 <td valign="middle" align="left"/></tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_46e7e720-fc1d-d18f-a1ac-212738265f1b"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_a3dd2772-e701-2b71-9244-0625baad27db"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2036,102 +1800,18 @@ POST/XML:
 </tr></tbody>
 </table>
 
-<table id="CI_PresentationFormCode-section">
-<name>CI_PresentationFormCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_03ceb27f-35bd-deab-c7b6-0b79854930e5"><strong>CI_PresentationFormCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_2ea89d75-372d-daab-30af-ebaf9d4d9654"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">mode in which the data is represented</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_51640620-6007-b7ba-4393-a0e8f9511346"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> audioDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">digital audio recording</td>
-</tr><tr><td valign="middle" align="left"> audioHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">audio recording delivered by analog media, such as a magnetic tape</td>
-</tr><tr><td valign="middle" align="left"> diagramDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and recorded in digital format</td>
-</tr><tr><td valign="middle" align="left"> diagramHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">information represented graphically by charts such as pie chart, bar chart, and other type of diagrams and printed on paper, photographic material, or other media</td>
-</tr><tr><td valign="middle" align="left"> documentDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">digital representation of a primarily textual item (can contain illustrations also)</td>
-</tr><tr><td valign="middle" align="left"> documentHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media</td>
-</tr><tr><td valign="middle" align="left"> imageDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format</td>
-</tr><tr><td valign="middle" align="left"> imageHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user</td>
-</tr><tr><td valign="middle" align="left"> mapDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">map represented in raster or vector form</td>
-</tr><tr><td valign="middle" align="left"> mapHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">map printed on paper, photographic material, or other media for use directly by the human user</td>
-</tr><tr><td valign="middle" align="left"> modelDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">multi-dimensional digital representation of a feature, process, etc.</td>
-</tr><tr><td valign="middle" align="left"> modelHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">3-dimensional, physical model</td>
-</tr><tr><td valign="middle" align="left"> multimediaDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">information representation using simultaneously various digital modes for text, sound, image</td>
-</tr><tr><td valign="middle" align="left"> multimediaHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">information representation using simultaneously various analog modes for text, sound, image</td>
-</tr><tr><td valign="middle" align="left"> physicalObject</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">a physical object. Eg. Rock or mineral sample, microscope slide</td>
-</tr><tr><td valign="middle" align="left"> profileDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">vertical cross-section in digital form</td>
-</tr><tr><td valign="middle" align="left"> profileHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">vertical cross-section printed on paper, etc.</td>
-</tr><tr><td valign="middle" align="left"> tableDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">digital representation of facts or figures systematically displayed, especially in columns</td>
-</tr><tr><td valign="middle" align="left"> tableHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media</td>
-</tr><tr><td valign="middle" align="left"> videoDigital</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">digital video recording</td>
-</tr><tr><td valign="middle" align="left"> videoHardcopy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">video recording on film</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
 <table id="CI_Responsibility-section">
 <name>CI_Responsibility Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_8a7e6d84-0071-edb5-a7da-ae3a6fb3e21d"><strong>CI_Responsibility</strong></p>
+<tbody><tr><td valign="middle" align="left"><p id="_53e038e5-0f9c-4829-f0ae-7ff85ef6abce"><strong>CI_Responsibility</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_beec56cf-3830-d9e8-28ba-0c6d999c2bb5"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_4d08ee35-2188-08ba-8845-1b708b5fe2e1"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">information about the party and their role</td>
 </tr><tr><td valign="middle" align="left">    StereoType:</td>
 <td valign="middle" align="left">None</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_f86f80b1-48dd-78e6-8c48-4a42169760b1"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_e57ad793-581d-74e1-7ebc-569b4bdcd4e4"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2141,7 +1821,7 @@ POST/XML:
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_5f68f454-87b7-b02c-0d03-0ed39ac116c6"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_32658647-d57d-972a-44b5-3d52eba02f2f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2149,176 +1829,8 @@ POST/XML:
 <td valign="middle" align="left">EX_Extent  [0..*]</td>
 <td valign="middle" align="left">spatial or temporal extent of the role</td>
 </tr><tr><td valign="middle" align="left"> role</td>
-<td valign="middle" align="left"><xref target="CI_RoleCode-section">CI_RoleCode</xref> [1..1]</td>
+<td valign="middle" align="left">CI_RoleCode [1..1]</td>
 <td valign="middle" align="left">function performed by the responsible party</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="CI_RoleCode-section">
-<name>CI_RoleCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_42c6a552-e39b-81e1-d3a7-9aaa8201deac"><strong>CI_RoleCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_0ca8f02e-7d2b-8853-f676-a5d287ab0d94"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">function performed by the responsible party</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_d4856438-1486-881b-c8ec-4602af325f75"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> author</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who authored the resource</td>
-</tr><tr><td valign="middle" align="left"> coAuthor</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who jointly authors the resource</td>
-</tr><tr><td valign="middle" align="left"> collaborator</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who assists with the generation of the resource other than the principal investigator</td>
-</tr><tr><td valign="middle" align="left"> contributor</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party contributing to the resource</td>
-</tr><tr><td valign="middle" align="left"> custodian</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource</td>
-</tr><tr><td valign="middle" align="left"> distributor</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who distributes the resource</td>
-</tr><tr><td valign="middle" align="left"> editor</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who reviewed or modified the resource to improve the content</td>
-</tr><tr><td valign="middle" align="left"> funder</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party providing monetary support for the resource</td>
-</tr><tr><td valign="middle" align="left"> mediator</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">a class of entity that mediates access to the resource and for whom the resource is intended or useful</td>
-</tr><tr><td valign="middle" align="left"> originator</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who created the resource</td>
-</tr><tr><td valign="middle" align="left"> owner</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party that owns the resource</td>
-</tr><tr><td valign="middle" align="left"> pointOfContact</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who can be contacted for acquiring knowledge about or acquisition of the resource</td>
-</tr><tr><td valign="middle" align="left"> principalInvestigator</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">key party responsible for gathering information and conducting research</td>
-</tr><tr><td valign="middle" align="left"> processor</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who has processed the data in a manner such that the resource has been modified</td>
-</tr><tr><td valign="middle" align="left"> publisher</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who published the resource</td>
-</tr><tr><td valign="middle" align="left"> resourceProvider</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party that supplies the resource</td>
-</tr><tr><td valign="middle" align="left"> rightsHolder</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party owning or managing rights over the resource</td>
-</tr><tr><td valign="middle" align="left"> sponsor</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who speaks for the resource</td>
-</tr><tr><td valign="middle" align="left"> stakeholder</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who has an interest in the resource or the use of the resource</td>
-</tr><tr><td valign="middle" align="left"> user</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">party who uses the resource</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="CI_Series-section">
-<name>CI_Series Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_694021cb-aca7-4835-5839-2dd21abc1803"><strong>CI_Series</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_0cad18d2-d110-7106-f1be-b9340f5018bd"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">information about the series, or aggregate resource, to which a resource belongs</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«DataType»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_4e5d4685-7d98-f051-40e6-8230fc31d9c8"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> issueIdentification</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">information identifying the issue of the series</td>
-</tr><tr><td valign="middle" align="left"> name</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">name of the series, or aggregate resource, of which the resource is a part</td>
-</tr><tr><td valign="middle" align="left"> page</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">details on which pages of the publication the article was published</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="CI_Telephone-section">
-<name>CI_Telephone Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_08b2a156-3393-8b63-bf7e-a316aa84fabf"><strong>CI_Telephone</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_d6067335-7e63-c87c-774f-1f4a1a482bfe"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">telephone numbers for contacting the responsible individual or organisation</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«DataType»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_6c6745ff-d7cd-d142-f1cf-4fd127655f10"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> number</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref> [1..1]</td>
-<td valign="middle" align="left">telephone number by which individuals can contact responsible organisation or individual</td>
-</tr><tr><td valign="middle" align="left"> numberType</td>
-<td valign="middle" align="left"><xref target="CI_TelephoneTypeCode-section">CI_TelephoneTypeCode</xref>  [0..1]</td>
-<td valign="middle" align="left">type of telephone responsible organisation or individual</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="CI_TelephoneTypeCode-section">
-<name>CI_TelephoneTypeCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_1756d6c1-be5d-b593-029a-9eb7264d0b7a"><strong>CI_TelephoneTypeCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_35404471-786b-83e3-e1c6-98c569eeb889"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">type of telephone</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_0f4045fb-56ab-3d09-e72c-3327e76812bd"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> facsimile</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">telephone provides facsimile service</td>
-</tr><tr><td valign="middle" align="left"> sms</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">telephone provides sms service</td>
-</tr><tr><td valign="middle" align="left"> voice</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">telephone provides voice service</td>
 </tr></tbody>
 </table>
 </td>
@@ -2330,75 +1842,26 @@ POST/XML:
 <title>Constraint information</title>
 <p id="_a0e0279a-b310-ed75-642c-61beba286c18">The following classes are defined in <eref type="inline" bibitemid="ISO19115" citeas="nofetch(ISO 19115-1">(ISO 19115-1 Edition 1)</eref></p>
 
-<table id="MD_ClassificationCode-section">
-<name>MD_Classification Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_2c311f86-0d90-1f60-b474-fe1f801f0d7f"><strong>MD_ClassificationCode</strong></p>
+<table id="MD_Constraints-section"><tbody><tr><td valign="middle" align="left"><p id="_8bbf8409-204a-5c9d-f44d-d728fe6c8c45"><strong>MD_Constraints</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_d78c3ccd-202c-a997-8ca5-634390a0c07e"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">name of the handling restrictions on the resource</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_60b5dba8-1ced-2d32-4200-ad5200f80d92"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> confidential</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">available for someone who can be entrusted with information</td>
-</tr><tr><td valign="middle" align="left"> forOfficialUseOnly</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">unclassified information that may be exempt from mandatory release to the public</td>
-</tr><tr><td valign="middle" align="left"> limitedDistribution</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">desimination limited by designating body</td>
-</tr><tr><td valign="middle" align="left"> protected</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">compromise of the information could cause damage</td>
-</tr><tr><td valign="middle" align="left"> restricted</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">not for general disclosure</td>
-</tr><tr><td valign="middle" align="left"> secret</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">kept or meant to be kept private, unknown, or hidden from all but a select group of people</td>
-</tr><tr><td valign="middle" align="left"> sensitiveButUnclassified</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">although unclassified, requires strict controls over its distribution</td>
-</tr><tr><td valign="middle" align="left"> topSecret</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">of the highest secrecy</td>
-</tr><tr><td valign="middle" align="left"> unclassified</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">available for general disclosure</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_Constraints-section">
-<name>MD_Constraints Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_483a377e-7df4-5145-7395-d8b7a7fb0dcd"><strong>MD_Constraints</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_c350453c-96bb-0308-c1d5-8257194d04cd"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_c5a11ace-70a0-06bd-18cd-4525e8ed02f1"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">restrictions on the access and use of a resource or metadata</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
+</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 <td valign="middle" align="left">None</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_11929d8d-c59c-eb6a-4188-861f93d880b6"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
-<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="MD_Identification-section">MD_Identification</xref>   []</td>
-<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"/><td valign="middle" align="left">MD_Metadata   []</td>
+</tr><tr><td valign="middle" align="left">    StereoType:</td>
 <td valign="middle" align="left"/></tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_253ff31e-5614-0fcd-1481-874f9b01f26a"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_295368b2-8d92-2766-9595-68c31a137bed"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
+<th valign="middle" align="left"><strong>Definition</strong></th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left">MD_Identification []</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"/><td valign="middle" align="left">MD_Metadata []</td>
+<td valign="middle" align="left"/></tr></tbody>
+</table>
+</td>
+</tr><tr><td valign="middle" align="left"><table id="_9f1be4f1-cb43-2454-42f0-76ed67c5890c"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2409,7 +1872,7 @@ POST/XML:
 <td valign="middle" align="left">MD_BrowseGraphic  [0..*]</td>
 <td valign="middle" align="left">graphic /symbol indicating the constraint</td>
 </tr><tr><td valign="middle" align="left"> reference</td>
-<td valign="middle" align="left"><xref target="CI_Citation-section">CI_Citation</xref>  [0..*]</td>
+<td valign="middle" align="left">CI_Citation  [0..*]</td>
 <td valign="middle" align="left">citation/URL for the limitation or constraint, eg. copyright statement, license agreement, etc</td>
 </tr><tr><td valign="middle" align="left"> releasability</td>
 <td valign="middle" align="left"><xref target="MD_Releasability-section">MD_Releasability</xref>  [0..1]</td>
@@ -2426,35 +1889,32 @@ POST/XML:
 </tr></tbody>
 </table>
 
-<table id="MD_LegalConstraints-section">
-<name>MD_LegalConstraints Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_463da33a-b0a4-5e2e-6136-0949406729dc"><strong>MD_LegalConstraints</strong></p>
+<table id="MD_LegalConstraints-section"><tbody><tr><td valign="middle" align="left"><p id="_45cecab7-9a15-c622-9334-01d69ccd8bfc"><strong>MD_LegalConstraints</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_19b7d0d1-8968-13d2-7373-95240c66234c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_4a746e7a-2ed9-ad4a-ec73-29abdc832edf"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">restrictions and legal prerequisites for accessing and using the resource or metadata</td>
 </tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-<td valign="middle" align="left"><xref target="MD_Constraints-section">MD_Constraints</xref></td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
 <td valign="middle" align="left">None</td>
-</tr><tr><td valign="middle" align="left">    Constraint:</td>
+</tr><tr><td valign="middle" align="left">    StereoType:</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Constraint:</td>
 <td valign="middle" align="left">otherConstraints: only documented if accessConstraints or useConstraints = “otherRestrictions” (Invariant):</td>
 </tr><tr><td valign="middle" align="left">    Constraint:</td>
 <td valign="middle" align="left">If MD_LegalConstraints used then count of (accessConstraints + useConstraints + otherConstraints + useLimitation + releasability ) &gt; 0 (Invariant):</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_41d88299-8773-c48e-df6d-5fc14ba56030"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_da3faeff-9757-e611-e429-ef1441583ae6"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="left"> accessConstraints</td>
-<td valign="middle" align="left"><xref target="MD_RestrictionCode-section">MD_RestrictionCode</xref>  [0..*]</td>
+<td valign="middle" align="left">MD_RestrictionCode  [0..*]</td>
 <td valign="middle" align="left">access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource or metadata</td>
 </tr><tr><td valign="middle" align="left"> otherConstraints</td>
 <td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..*]</td>
 <td valign="middle" align="left">other restrictions and legal prerequisites for accessing and using the resource or metadata</td>
 </tr><tr><td valign="middle" align="left"> useConstraints</td>
-<td valign="middle" align="left"><xref target="MD_RestrictionCode-section">MD_RestrictionCode</xref>  [0..*]</td>
+<td valign="middle" align="left">MD_RestrictionCode  [0..*]</td>
 <td valign="middle" align="left">constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata</td>
 </tr></tbody>
 </table>
@@ -2462,20 +1922,19 @@ POST/XML:
 </tr></tbody>
 </table>
 
-<table id="MD_Releasability-section">
-<name>MD_Releasability Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_095a168a-3c94-2f18-0d29-f3334be2cb2b"><strong>MD_Releasability</strong></p>
+<table id="MD_Releasability-section"><tbody><tr><td valign="middle" align="left"><p id="_c14658f3-21fc-d292-8af9-1c7f37d6e9cc"><strong>MD_Releasability</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_d7040e94-72e8-87b8-0004-794d6f52663c"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_59f16bef-60e9-8c57-d758-138bfd766d60"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">information about resource release constraints</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
+</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
 <td valign="middle" align="left">None</td>
-</tr><tr><td valign="middle" align="left">    Constraint:</td>
+</tr><tr><td valign="middle" align="left">    StereoType:</td>
+<td valign="middle" align="left"/></tr><tr><td valign="middle" align="left">    Constraint:</td>
 <td valign="middle" align="left">count (addressee + statement) &gt; 0 (Invariant):</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_9575485a-9da7-9a9b-368c-0eafcf48b7cc"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_4c26592e-ed32-e7b9-b750-3f38ecacd950"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2483,7 +1942,7 @@ POST/XML:
 <td valign="middle" align="left"><xref target="CI_Responsibility-section">CI_Responsibility</xref>  [0..*]</td>
 <td valign="middle" align="left">party to which the release statement applies</td>
 </tr><tr><td valign="middle" align="left"> disseminationConstraints</td>
-<td valign="middle" align="left"><xref target="MD_RestrictionCode-section">MD_RestrictionCode</xref>  [0..*]</td>
+<td valign="middle" align="left">MD_RestrictionCode  [0..*]</td>
 <td valign="middle" align="left">component in determining releasability</td>
 </tr><tr><td valign="middle" align="left"> statement</td>
 <td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
@@ -2494,104 +1953,29 @@ POST/XML:
 </tr></tbody>
 </table>
 
-<table id="MD_RestrictionCode-section">
-<name>MD_RestrictionCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_317690cc-8784-9f43-feb6-15c61f531a03"><strong>MD_RestrictionCode</strong></p>
+<table id="MD_SecurityConstraints-section"><tbody><tr><td valign="middle" align="left"><p id="_12bcd66b-9763-e7ff-4e92-5184efd3400c"><strong>MD_SecurityConstraints</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_e131cb48-0899-7018-d398-a0919941aba0"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">limitation(s) placed upon the access or use of the data</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_fe490ad3-a3d4-9c8e-435f-5f879c08c7b2"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> confidential</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">not available to the public contains information that could be prejudicial to a commercial, industrial, or national interest</td>
-</tr><tr><td valign="middle" align="left"> copyright</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">exclusive right to the publication, production, or sale of the rights to a literary, dramatic, musical, or artistic work, or to the use of a commercial print or label, granted by law for a specified period of time to an author, composer, artist, distributor</td>
-</tr><tr><td valign="middle" align="left"> in-confidence</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">with trust</td>
-</tr><tr><td valign="middle" align="left"> intellectualPropertyRights</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">rights to financial benefit from and control of distribution of non-tangible property that is a result of creativity</td>
-</tr><tr><td valign="middle" align="left"> licence</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">formal permission to do something</td>
-</tr><tr><td valign="middle" align="left"> licenceDistributor</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">formal permission required for a person or an entity to commercialize or distribute the resource</td>
-</tr><tr><td valign="middle" align="left"> licenceEndUser</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">formal permission required for a person or an entity to use the resource and that may differ from the person that orders or purchases it</td>
-</tr><tr><td valign="middle" align="left"> licenceUnrestricted</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">formal permission not required to use the resource</td>
-</tr><tr><td valign="middle" align="left"> otherRestrictions</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">limitation not listed</td>
-</tr><tr><td valign="middle" align="left"> patent</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">government has granted exclusive right to make, sell, use or license an invention or discovery</td>
-</tr><tr><td valign="middle" align="left"> patentPending</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">produced or sold information awaiting a patent</td>
-</tr><tr><td valign="middle" align="left"> private</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">protects rights of individual or organisations from observation, intrusion, or attention of others</td>
-</tr><tr><td valign="middle" align="left"> restricted</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">withheld from general circulation or disclosure</td>
-</tr><tr><td valign="middle" align="left"> sensitiveButUnclassified</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">although unclassified, requires strict controls over its distribution.</td>
-</tr><tr><td valign="middle" align="left"> statutory</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">prescribed by law</td>
-</tr><tr><td valign="middle" align="left"> trademark</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">a name, symbol, or other device identifying a product, officially registered and legally restricted to the use of the owner or manufacturer</td>
-</tr><tr><td valign="middle" align="left"> unrestricted</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">no constraints exist</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_SecurityConstraints-section">
-<name>MD_SecurityConstraints Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_4a3e38a2-f414-2eb9-12b2-a48b822dfa12"><strong>MD_SecurityConstraints</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_01537d78-6075-6820-706c-f0540f58fdf6"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_1c37eb77-fc31-5097-d565-43de263839e2"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">handling restrictions imposed on the resource or metadata for national security or similar security concerns</td>
 </tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-<td valign="middle" align="left"><xref target="MD_Constraints-section">MD_Constraints</xref></td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
 <td valign="middle" align="left">None</td>
-</tr></tbody>
+</tr><tr><td valign="middle" align="left">    StereoType:</td>
+<td valign="middle" align="left"/></tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_00d30651-e8d5-716b-e0ec-c9cdd8cd0d4f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_aacd9285-62a5-0916-7b25-d8a4ba2ee777"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="left"> classification</td>
-<td valign="middle" align="left"><xref target="MD_ClassificationCode-section">MD_ClassificationCode</xref> [1..1]</td>
+<td valign="middle" align="left">MD_ClassificationCode</td>
 <td valign="middle" align="left">name of the handling restrictions on the resource or metadata</td>
 </tr><tr><td valign="middle" align="left"> classificationSystem</td>
 <td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
 <td valign="middle" align="left">name of the classification system</td>
 </tr><tr><td valign="middle" align="left"> handlingDescription</td>
 <td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">additional information about the restrictions on handling the resource or metadata</td>
+<td valign="middle" align="left">additional information about the restrictions on handling the resource or metadata.</td>
 </tr><tr><td valign="middle" align="left"> userNote</td>
 <td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
 <td valign="middle" align="left">explanation of the application of the legal constraints or other restrictions and legal prerequisites for obtaining and using the resource or metadata</td>
@@ -2606,305 +1990,18 @@ POST/XML:
 <title>Identification information</title>
 <p id="_01690446-3ba3-9d45-888b-7b420ddd7d1f">The following classes are defined in <eref type="inline" bibitemid="ISO19115" citeas="nofetch(ISO 19115-1">(ISO 19115-1 Edition 1)</eref></p>
 
-<table id="DS_AssociationTypeCode-section">
-<name>DS_AssociationTypeCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_b3e9c90d-5980-c1fa-1c02-47f924a9efce"><strong>DS_AssociationTypeCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_857211c1-9cda-f39f-a7d5-895a92a81f46"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">justification for the correlation of two resources</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_7cd6e0fe-c7b0-c96f-d204-6b3e52107309"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> collectiveTitle</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">common title with holdings note NOTE: title identifies elements of a series collectively, combined with information about what volumes are available at the source cited</td>
-</tr><tr><td valign="middle" align="left"> crossReference</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">reference from one resource to another</td>
-</tr><tr><td valign="middle" align="left"> dependency</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">associate through a dependency</td>
-</tr><tr><td valign="middle" align="left"> isComposedOf</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">reference to resources that are parts of this data set</td>
-</tr><tr><td valign="middle" align="left"> largerWorkCitation</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">reference to a master resource of which this one is a part</td>
-</tr><tr><td valign="middle" align="left"> partOfSeamlessDatabase</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">part of same structured set of data held in a computer</td>
-</tr><tr><td valign="middle" align="left"> revisionOf</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">resource is a revision of associated resource</td>
-</tr><tr><td valign="middle" align="left"> series</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">associated through a common heritage such as produced to a common product specification</td>
-</tr><tr><td valign="middle" align="left"> stereoMate</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">part of a set of imagery that when used together, provides three-dimensional images</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="DS_InitiativeTypeCode-section">
-<name>DS_InitiativeTypeCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_57667aab-1afe-9812-b698-4923b2bc3939"><strong>DS_InitiativeTypeCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_b61005c6-6684-7ae9-34a7-86933b4fa763"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">type of aggregation activity in which resources are related</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_db01b412-dfec-2a2c-1802-4d7430a2765e"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> campaign</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">series of organized planned actions</td>
-</tr><tr><td valign="middle" align="left"> collection</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">accumulation of resources assembled for a specific purpose</td>
-</tr><tr><td valign="middle" align="left"> exercise</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">specific performance of a function or group of functions</td>
-</tr><tr><td valign="middle" align="left"> experiment</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">process designed to find if something is effective or valid</td>
-</tr><tr><td valign="middle" align="left"> investigation</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">search or systematic inquiry</td>
-</tr><tr><td valign="middle" align="left"> mission</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">specific operation of a data collection system</td>
-</tr><tr><td valign="middle" align="left"> operation</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">action that is part of a series of actions</td>
-</tr><tr><td valign="middle" align="left"> platform</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">vehicle or other support base that holds a sensor</td>
-</tr><tr><td valign="middle" align="left"> process</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">method of doing something involving a number of steps</td>
-</tr><tr><td valign="middle" align="left"> program</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">specific planned activity</td>
-</tr><tr><td valign="middle" align="left"> project</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">organized undertaking, research, or development</td>
-</tr><tr><td valign="middle" align="left"> sensor</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">device or piece of equipment which detects or records</td>
-</tr><tr><td valign="middle" align="left"> study</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">examination or investigation</td>
-</tr><tr><td valign="middle" align="left"> task</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">piece of work</td>
-</tr><tr><td valign="middle" align="left"> trial</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">process of testing to discover or demonstrate something</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_AssociatedResource-section">
-<name>MD_AssociatedResource Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_c923cf9f-07c0-4916-19ac-2a74c4e9048d"><strong>MD_AssociatedResource</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_674867ff-e49d-0db5-0e63-6283c4124230"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">associated resource information</td>
-</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-<td valign="middle" align="left">GP_AssociatedResource</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">None</td>
-</tr><tr><td valign="middle" align="left">    Constraint:</td>
-<td valign="middle" align="left">count of (name + metadataReference) &gt; 0 (Invariant):</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_04e6cc40-8769-2611-56a2-8b5efaabe57f"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
-<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="MD_Identification-section">MD_Identification</xref>   []</td>
-<td valign="middle" align="left"/></tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_454c1c3e-35b5-8543-ec6e-e2c31f7efbe9"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> associationType</td>
-<td valign="middle" align="left"><xref target="DS_AssociationTypeCode-section">DS_AssociationTypeCode</xref> [1..1]</td>
-<td valign="middle" align="left">type of relation between the resources</td>
-</tr><tr><td valign="middle" align="left"> initiativeType</td>
-<td valign="middle" align="left"><xref target="DS_InitiativeTypeCode-section">DS_InitiativeTypeCode</xref>  [0..1]</td>
-<td valign="middle" align="left">type of initiative under which the associated resource was produced</td>
-</tr><tr><td valign="middle" align="left"> metadataReference</td>
-<td valign="middle" align="left"><xref target="CI_Citation-section">CI_Citation</xref>  [0..1]</td>
-<td valign="middle" align="left">reference to the metadata of the associated resource</td>
-</tr><tr><td valign="middle" align="left"> name</td>
-<td valign="middle" align="left"><xref target="CI_Citation-section">CI_Citation</xref>  [0..1]</td>
-<td valign="middle" align="left">citation information about the associated resource</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_DataIdentification-section">
-<name>MD_DataIdentification Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_67064b82-e276-e5c2-6a13-875a172f2e84"><strong>MD_DataIdentification</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_5551cb2c-37dd-8f8d-9870-a7e73bae1a78"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">information required to identify a resource</td>
-</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-<td valign="middle" align="left"><xref target="MD_Identification-section">MD_Identification</xref></td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">None</td>
-</tr><tr><td valign="middle" align="left">    Constraint:</td>
-<td valign="middle" align="left">defaultLocale documented if resource includes textual information
- (Invariant):</td>
-</tr><tr><td valign="middle" align="left">    Constraint:</td>
-<td valign="middle" align="left">defaultLocale.PT_Locale.characterEncoding default value is UTF-8 (Invariant):</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_2b57b842-f1f5-5b77-0ef2-ef9c9d4b822c"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> defaultLocale</td>
-<td valign="middle" align="left">PT_Locale  [0..1]</td>
-<td valign="middle" align="left">language and character set used within the resource</td>
-</tr><tr><td valign="middle" align="left"> environmentDescription</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">description of the resource in the producer’s processing environment, including items such as the software, the computer operating system, file name, and the dataset size</td>
-</tr><tr><td valign="middle" align="left"> otherLocale</td>
-<td valign="middle" align="left">PT_Locale  [0..*]</td>
-<td valign="middle" align="left">alternate localised language(s) and character set (s) used within the resource</td>
-</tr><tr><td valign="middle" align="left"> supplementalInformation</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">any other descriptive information about the resource</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_Identification-section">
-<name>MD_Identification Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_7c1a66a1-42e1-50a4-ba08-0ccbdbe26c65"><strong>MD_Identification</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_8178a74b-a331-3212-85e9-85e503177cb7"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">basic information required to uniquely identify a resource or resources</td>
-</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-<td valign="middle" align="left">GP_Identification</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«abstract»</td>
-</tr><tr><td valign="middle" align="left">    Constraint:</td>
-<td valign="middle" align="left">(MD_Metadata.metadataScope.MD_MetadataScope.resourceScope) = ‘dataset’ implies count (extent.geographicElement.EX_GeographicBoundingBox + extent.geographicElement.EX_GeographicDescription) &gt;= 1
-
- (Invariant):</td>
-</tr><tr><td valign="middle" align="left">    Constraint:</td>
-<td valign="middle" align="left">(MD_Metadata.metadataScope.MD_Scope.resourceScope) = (‘dataset’ or ‘series’) implies topicCategory is mandatory (Invariant):</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_d874c887-7814-01cd-a5cc-67e18ecca8ec"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
-<th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> resourceMaintenance</td>
-<td valign="middle" align="left">MD_MaintenanceInformation   [0..*]</td>
-<td valign="middle" align="left">information about the frequency of resource updates, and the scope of those updates</td>
-</tr><tr><td valign="middle" align="left"> associatedResource</td>
-<td valign="middle" align="left"><xref target="MD_AssociatedResource-section">MD_AssociatedResource</xref>   [0..*]</td>
-<td valign="middle" align="left">associated resource information</td>
-</tr><tr><td valign="middle" align="left"> resourceSpecificUsage</td>
-<td valign="middle" align="left"><xref target="MD_Usage-section">MD_Usage</xref>   [0..*]</td>
-<td valign="middle" align="left">basic information about specific application(s) for which the resource(s) has/have been or is being used by different users</td>
-</tr><tr><td valign="middle" align="left"/><td valign="middle" align="left">MD_Metadata  []</td>
-<td valign="middle" align="left"/></tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_afc29194-ba81-0ae8-d232-151864d3011d"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> abstract</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref> [1..1]</td>
-<td valign="middle" align="left">brief narrative summary of the content of the resource(s)</td>
-</tr><tr><td valign="middle" align="left"> additionalDocumentation</td>
-<td valign="middle" align="left"><xref target="CI_Citation-section">CI_Citation</xref>  [0..*]</td>
-<td valign="middle" align="left">other documentation associated with the resource
-EXAMPLE Related articles, publications,
-user guides, data dictionaries.</td>
-</tr><tr><td valign="middle" align="left"> citation</td>
-<td valign="middle" align="left"><xref target="CI_Citation-section">CI_Citation</xref> [1..1]</td>
-<td valign="middle" align="left">citation for the resource(s)</td>
-</tr><tr><td valign="middle" align="left"> credit</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..*]</td>
-<td valign="middle" align="left">recognition of those who contributed to the resource(s)</td>
-</tr><tr><td valign="middle" align="left"> extent</td>
-<td valign="middle" align="left">EX_Extent  [0..*]</td>
-<td valign="middle" align="left">spatial and temporal extent of the resource</td>
-</tr><tr><td valign="middle" align="left"> pointOfContact</td>
-<td valign="middle" align="left"><xref target="CI_Responsibility-section">CI_Responsibility</xref>  [0..*]</td>
-<td valign="middle" align="left">identification of, and means of communication with, person(s) and organisation(s) associated with the resource(s)</td>
-</tr><tr><td valign="middle" align="left"> processingLevel</td>
-<td valign="middle" align="left">MD_Identifier  [0..1]</td>
-<td valign="middle" align="left">code that identifies the level of processing in the producers coding system of a resource eg. NOAA level 1B</td>
-</tr><tr><td valign="middle" align="left"> purpose</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">summary of the intentions with which the resource(s) was developed</td>
-</tr><tr><td valign="middle" align="left"> spatialRepresentationType</td>
-<td valign="middle" align="left"><xref target="MD_SpatialRepresentationTypeCode-section">MD_SpatialRepresentationTypeCode</xref>  [0..*]</td>
-<td valign="middle" align="left">method used to spatially represent geographic information</td>
-</tr><tr><td valign="middle" align="left"> spatialResolution</td>
-<td valign="middle" align="left"><xref target="MD_Resolution-section">MD_Resolution</xref>  [0..*]</td>
-<td valign="middle" align="left">factor which provides a general understanding of the density of spatial data in the resource or describes the range of resolutions in which a digital resource may be used
-NOTE: this element should be repeated when describing upper and lower range</td>
-</tr><tr><td valign="middle" align="left"> status</td>
-<td valign="middle" align="left"><xref target="MD_ProgressCode-section">MD_ProgressCode</xref>  [0..*]</td>
-<td valign="middle" align="left">status of the resource(s)</td>
-</tr><tr><td valign="middle" align="left"> temporalResolution</td>
-<td valign="middle" align="left">TM_Duration  [0..*]</td>
-<td valign="middle" align="left">smallest resolvable temporal period in a resource</td>
-</tr><tr><td valign="middle" align="left"> topicCategory</td>
-<td valign="middle" align="left"><xref target="MD_TopicCategoryCode-section">MD_TopicCategoryCode</xref>  [0..*]</td>
-<td valign="middle" align="left">main theme(s) of the resource</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
 <table id="MD_KeywordClass-section">
 <name>MD_KeywordClass Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_e68c99d1-51b0-f5dc-2957-44ae59642cd8"><strong>MD_KeywordClass</strong></p>
+<tbody><tr><td valign="middle" align="left"><p id="_6e5055dd-320b-6b27-e0d0-ecbe946d0192"><strong>MD_KeywordClass</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_132e8f03-bd18-57e3-5c80-8eb941bbe957"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_fb99df15-f9ff-fcdc-8e73-20db50dba35d"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">specification of a class to categorize keywords in a domain-specific vocabulary that has a binding to a formal ontology</td>
 </tr><tr><td valign="middle" align="left">    StereoType:</td>
 <td valign="middle" align="left">None</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_a91e7b30-7626-aa6c-7975-11bd2b96e201"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_3845f325-b6bf-0e34-b93e-451c74bef4ee"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2912,7 +2009,7 @@ NOTE: this element should be repeated when describing upper and lower range</td>
 <td valign="middle" align="left"/></tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_7d2a7f05-5b3d-fe93-c95b-39f8e21d68c2"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_0ffb9774-279f-0bab-9a6f-7119bf4b00f9"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2923,7 +2020,7 @@ NOTE: this element should be repeated when describing upper and lower range</td>
 <td valign="middle" align="left"><xref target="URI-section">URI</xref>  [0..1]</td>
 <td valign="middle" align="left">URI of concept in ontology specified by the ontology attribute; this concept is labeled by the className: CharacterString.</td>
 </tr><tr><td valign="middle" align="left"> ontology</td>
-<td valign="middle" align="left"><xref target="CI_Citation-section">CI_Citation</xref> [1..1]</td>
+<td valign="middle" align="left">CI_Citation [1..1]</td>
 <td valign="middle" align="left">a reference that binds the keyword class to a formal conceptualization of a knowledge domain for use in semantic processingNOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology</td>
 </tr></tbody>
 </table>
@@ -2933,9 +2030,9 @@ NOTE: this element should be repeated when describing upper and lower range</td>
 
 <table id="MD_Keywords-section">
 <name>MD_Keywords Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_47fce7b0-4a75-4877-e94b-3f4b40af1ccb"><strong>MD_Keywords</strong></p>
+<tbody><tr><td valign="middle" align="left"><p id="_64f36b94-d237-e107-959d-175f4af38a0d"><strong>MD_Keywords</strong></p>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_2244fb7f-3aaf-bec6-5aa2-8bf255e6fbf8"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
+</tr><tr><td valign="middle" align="left"><table id="_d33569a2-cf5b-f5d6-afc2-31f1229b8326"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
 <td valign="middle" align="left">keywords, their type and reference source NOTE: When the resource described is a service, one instance of MD_Keyword shall refer to the service taxonomy defined in ISO 19119, 8.3)</td>
 </tr><tr><td valign="middle" align="left">    StereoType:</td>
 <td valign="middle" align="left">None</td>
@@ -2944,18 +2041,18 @@ NOTE: this element should be repeated when describing upper and lower range</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_3f8d8cf7-cab5-a8cd-e43c-aafd2bbf5ed8"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_d7aa0fb6-97fa-c4b1-e241-8dcaf51d63f7"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Role name</strong></th>
 <th valign="middle" align="left"><strong>Target class and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left"><xref target="MD_Identification-section">MD_Identification</xref>   []</td>
+<tbody><tr><td valign="middle" align="left"/><td valign="middle" align="left">MD_Identification []</td>
 <td valign="middle" align="left"/></tr><tr><td valign="middle" align="left"> keywordClass</td>
 <td valign="middle" align="left"><xref target="MD_KeywordClass-section">MD_KeywordClass</xref>   [0..1]</td>
 <td valign="middle" align="left">association of a MD_Keywords instance with a MD_KeywordClass to provide user-defined categorization of groups of keywords that extend or are orthogonal to the standardized KeywordTypeCodes and are associated with an ontology that allows additional semantic query processing</td>
 </tr></tbody>
 </table>
 </td>
-</tr><tr><td valign="middle" align="left"><table id="_96e43e08-5290-2203-0041-f28bea09d104"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
+</tr><tr><td valign="middle" align="left"><table id="_e62f1ce3-f0fc-00c1-43dc-a4d4d54c87e3"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
 <th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
 <th valign="middle" align="left"><strong>Definition</strong></th>
 </tr></thead>
@@ -2963,382 +2060,11 @@ NOTE: this element should be repeated when describing upper and lower range</td>
 <td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [1..*]</td>
 <td valign="middle" align="left">commonly used word(s) or formalised word(s) or phrase(s) used to describe the subject</td>
 </tr><tr><td valign="middle" align="left"> thesaurusName</td>
-<td valign="middle" align="left"><xref target="CI_Citation-section">CI_Citation</xref>  [0..1]</td>
+<td valign="middle" align="left">CI_Citation [0..1]</td>
 <td valign="middle" align="left">name of the formally registered thesaurus or a similar authoritative source of keywords</td>
 </tr><tr><td valign="middle" align="left"> type</td>
-<td valign="middle" align="left"><xref target="MD_KeywordTypeCode-section">MD_KeywordTypeCode</xref>  [0..1]</td>
+<td valign="middle" align="left">MD_KeywordTypeCode [0..1]</td>
 <td valign="middle" align="left">subject matter used to group similar keywords</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_KeywordTypeCode-section">
-<name>MD_KeywordTypeCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_ca69bd96-d758-dbef-6733-18518d028479"><strong>MD_KeywordTypeCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_6c24d7c9-0750-bcb1-298e-27b40b4b9813"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">methods used to group similar keywords</td>
-</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-<td valign="middle" align="left">TaxonomyKeywords</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_c22ba1a4-17a4-bf94-91bf-7c5f3ae21740"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> dataCentre</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a a repository or archive that manages and distributes data</td>
-</tr><tr><td valign="middle" align="left"> discipline</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a branch of instruction or specialized learning</td>
-</tr><tr><td valign="middle" align="left"> featureType</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a resource containing or about a collection of feature instances with common characteristics</td>
-</tr><tr><td valign="middle" align="left"> instrument</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a device used to measure or compare physical properties</td>
-</tr><tr><td valign="middle" align="left"> place</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a location</td>
-</tr><tr><td valign="middle" align="left"> platform</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a structure upon which an instrument is mounted</td>
-</tr><tr><td valign="middle" align="left"> process</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a series of actions or natural occurrences</td>
-</tr><tr><td valign="middle" align="left"> product</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a type of product</td>
-</tr><tr><td valign="middle" align="left"> project</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies an endeavour undertaken to create or modify a product or service</td>
-</tr><tr><td valign="middle" align="left"> service</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies an activity carried out by one party for the benefit of another</td>
-</tr><tr><td valign="middle" align="left"> stratum</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies the layer(s) of any deposited substance or levels within an ordered system</td>
-</tr><tr><td valign="middle" align="left"> subTopicCategory</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">refinement of a topic category for the purpose of geographic data classification</td>
-</tr><tr><td valign="middle" align="left"> taxon</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a taxonomy of the resource</td>
-</tr><tr><td valign="middle" align="left"> temporal</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a time period related to the resource</td>
-</tr><tr><td valign="middle" align="left"> theme</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">keyword identifies a particular subject or topic</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_ProgressCode-section">
-<name>MD_ProgressCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_09cbb069-a7f5-8e1a-976b-b5e16df36a53"><strong>MD_ProgressCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_4e619588-9907-e82a-f5b6-391632a9bbd4"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">status of the resource</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_799b5c61-3ad3-48e5-8fc7-71a295ed276d"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> accepted</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">agreed to by sponsor</td>
-</tr><tr><td valign="middle" align="left"> completed</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">has been completed</td>
-</tr><tr><td valign="middle" align="left"> deprecated</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">resource superseded and will become obsolete, use only for historical purposes</td>
-</tr><tr><td valign="middle" align="left"> final</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">progress concluded and no changes will be accepted</td>
-</tr><tr><td valign="middle" align="left"> historicalArchive</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">stored in an offline storage facility</td>
-</tr><tr><td valign="middle" align="left"> notAccepted</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">rejected by sponsor</td>
-</tr><tr><td valign="middle" align="left"> obsolete</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">no longer relevant</td>
-</tr><tr><td valign="middle" align="left"> onGoing</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">continually being updated</td>
-</tr><tr><td valign="middle" align="left"> pending</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">committed to, but not yet addressed</td>
-</tr><tr><td valign="middle" align="left"> planned</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">fixed date has been established upon or by which the resource will be created or updated</td>
-</tr><tr><td valign="middle" align="left"> proposed</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">suggested that development needs to be undertaken</td>
-</tr><tr><td valign="middle" align="left"> required</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">needs to be generated or updated</td>
-</tr><tr><td valign="middle" align="left"> retired</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">item is no longer recommended for use. It has not been superseded by another item</td>
-</tr><tr><td valign="middle" align="left"> superseded</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">replaced by new</td>
-</tr><tr><td valign="middle" align="left"> tentative</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">provisional changes likely before resource becomes final or complete</td>
-</tr><tr><td valign="middle" align="left"> underDevelopment</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">currently in the process of being created</td>
-</tr><tr><td valign="middle" align="left"> valid</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">acceptable under specific conditions</td>
-</tr><tr><td valign="middle" align="left"> withdrawn</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">removed from consideration</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_RepresentativeFraction-section">
-<name>MD_REpresentativeFraction Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_d43b46cb-ef96-8d5d-2c85-1737ab38dc64"><strong>MD_RepresentativeFraction</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_9b0d4565-59d6-dc4e-7a6f-54382a1b43fc"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">derived from ISO 19103 Scale where MD_RepresentativeFraction.denominator = 1 / Scale.measure And Scale.targetUnits = Scale.sourceUnits</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«DataType»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_b77d1ad1-36e3-9de2-a96b-9b81b0a123c1"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> denominator</td>
-<td valign="middle" align="left"><xref target="Integer-section">Integer</xref> [1..1]</td>
-<td valign="middle" align="left">the number below the line in a vulgar fraction</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_Resolution-section">
-<name>MD_Resolution Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_4dede2ad-dd0f-064a-066a-b1ab1074e303"><strong>MD_Resolution</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_49d69833-26f3-b56b-00cd-afe257f24d29"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">level of detail expressed as a scale factor, a distance or an angle</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«Union»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_a06f811e-c6e2-585b-5bcb-4d235777d018"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> angularDistance</td>
-<td valign="middle" align="left">Angle</td>
-<td valign="middle" align="left">Angular sampling measure</td>
-</tr><tr><td valign="middle" align="left"> distance</td>
-<td valign="middle" align="left">Distance</td>
-<td valign="middle" align="left">horizontal ground sample distance</td>
-</tr><tr><td valign="middle" align="left"> equivalentScale</td>
-<td valign="middle" align="left"><xref target="MD_RepresentativeFraction-section">MD_RepresentativeFraction</xref></td>
-<td valign="middle" align="left">level of detail expressed as the scale of a comparable hardcopy map or chart</td>
-</tr><tr><td valign="middle" align="left"> levelOfDetail</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref></td>
-<td valign="middle" align="left">brief textual description of the spatial resolution of the resource</td>
-</tr><tr><td valign="middle" align="left"> vertical</td>
-<td valign="middle" align="left">Distance</td>
-<td valign="middle" align="left">Vertical sampling distance</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_SpatialRepresentationTypeCode-section">
-<name>MD_SpatialRepresentationTypeCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_666f4ad5-e740-801f-6d91-4590aa0aeb3a"><strong>MD_SpatialRepresentationTypeCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_116321da-f77e-e9f0-de0b-04c6a1d2e8aa"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">method used to represent geographic information in the resource</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">«CodeList»</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_7e6101f2-93c6-cc31-cb15-db605bba86be"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> grid</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">grid data is used to represent geographic data</td>
-</tr><tr><td valign="middle" align="left"> stereoModel</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">three-dimensional view formed by the intersecting homologous rays of an overlapping pair of images</td>
-</tr><tr><td valign="middle" align="left"> textTable</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">textual or tabular data is used to represent geographic data</td>
-</tr><tr><td valign="middle" align="left"> tin</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">triangulated irregular network</td>
-</tr><tr><td valign="middle" align="left"> vector</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">vector data is used to represent geographic data</td>
-</tr><tr><td valign="middle" align="left"> video</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">scene from a video recording</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_Usage-section">
-<name>MD_Usage Class</name>
-<tbody><tr><td valign="middle" align="left"><p id="_eff11c04-b253-4758-4d63-aeb8a874ac9f"><strong>MD_Usage</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_1f41079d-f399-50c8-9c6d-3e28593602a0"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">brief description of ways in which the resource(s) is/are currently or has been used</td>
-</tr><tr><td valign="middle" align="left">    Subclass Of:</td>
-<td valign="middle" align="left">GP_Usage</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">None</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_ae13b313-57f3-b335-ee58-484bf17c2104"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> additionalDocumentation</td>
-<td valign="middle" align="left"><xref target="CI_Citation-section">CI_Citation</xref>  [0..*]</td>
-<td valign="middle" align="left">publications that describe usage of data</td>
-</tr><tr><td valign="middle" align="left"> identifiedIssues</td>
-<td valign="middle" align="left"><xref target="CI_Citation-section">CI_Citation</xref>  [0..1]</td>
-<td valign="middle" align="left">citation of a description of known issues associated with the resource along with proposed solutions if available</td>
-</tr><tr><td valign="middle" align="left"> response</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..*]</td>
-<td valign="middle" align="left">response to the user-determined limitationsE.G.. ‘this has been fixed in version x’</td>
-</tr><tr><td valign="middle" align="left"> specificUsage</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref> [1..1]</td>
-<td valign="middle" align="left">brief description of the resource and/or resource series usage</td>
-</tr><tr><td valign="middle" align="left"> usageDateTime</td>
-<td valign="middle" align="left">TM_Primitive  [0..*]</td>
-<td valign="middle" align="left">date and time of the first use or range of uses of the resource and/or resource series</td>
-</tr><tr><td valign="middle" align="left"> userContactInfo</td>
-<td valign="middle" align="left"><xref target="CI_Responsibility-section">CI_Responsibility</xref>  [0..*]</td>
-<td valign="middle" align="left">identification of and means of communicating with person(s) and organisation(s) using the resource(s)</td>
-</tr><tr><td valign="middle" align="left"> userDeterminedLimitations</td>
-<td valign="middle" align="left"><xref target="CharacterString-section">CharacterString</xref>  [0..1]</td>
-<td valign="middle" align="left">applications, determined by the user for which the resource and/or resource series is not suitable</td>
-</tr></tbody>
-</table>
-</td>
-</tr></tbody>
-</table>
-
-<table id="MD_TopicCategoryCode-section">
-<name>MD_TopicCategoryCode Codelist</name>
-<tbody><tr><td valign="middle" align="left"><p id="_1c2f41b5-4452-825d-0085-a3ca6d2ab1e9"><strong>MD_TopicCategoryCode</strong></p>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_76905a28-23d2-d1eb-8a40-16eee291f082"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td valign="middle" align="left">    Definition:</td>
-<td valign="middle" align="left">high-level geographic data thematic classification to assist in the grouping and search of available geographic data sets. NOTE 1 Can be used to group keywords as well. Listed examples are not exhaustive. NOTE 2: It is understood there are overlaps between general categories and the user is encouraged to select the one most appropriate.</td>
-</tr><tr><td valign="middle" align="left">    StereoType:</td>
-<td valign="middle" align="left">enumeration</td>
-</tr></tbody>
-</table>
-</td>
-</tr><tr><td valign="middle" align="left"><table id="_d994a40c-40f9-2aae-6226-8a9d0b2b2dd3"><colgroup><col width="15.7894%"/><col width="21.0526%"/><col width="63.158%"/></colgroup><thead><tr><th valign="middle" align="left"> <strong>Attribute</strong></th>
-<th valign="middle" align="left"><strong>Value type and multiplicity</strong></th>
-<th valign="middle" align="left"><strong>Definition</strong></th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"> farming</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">rearing of animals and/or cultivation of plantsExamples: agriculture, irrigation, aquaculture, plantations, herding, pests and diseases affecting crops and livestock</td>
-</tr><tr><td valign="middle" align="left"> biota</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">flora and/or fauna in natural environment Examples: wildlife, vegetation, biological sciences, ecology, wilderness, sealife, wetlands, habitat</td>
-</tr><tr><td valign="middle" align="left"> boundaries</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">legal land descriptions Examples: political and administrative boundaries</td>
-</tr><tr><td valign="middle" align="left"> climatologyMeteorologyAtmosphere</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">processes and phenomena of the atmosphere Examples: cloud cover, weather, climate, atmospheric conditions, climate change, precipitation</td>
-</tr><tr><td valign="middle" align="left"> economy</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">economic activities, conditions and employment Examples: production, labour, revenue, commerce, industry, tourism and ecotourism, forestry, fisheries, commercial or subsistence hunting, exploration and exploitation of resources such as minerals, oil and gas</td>
-</tr><tr><td valign="middle" align="left"> elevation</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">height above or below a vertical datumExamples: altitude, bathymetry, digital elevation models, slope, derived products</td>
-</tr><tr><td valign="middle" align="left"> environment</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">environmental resources, protection and conservation Examples: environmental pollution, waste storage and treatment, environmental impact assessment, monitoring environmental risk, nature reserves, landscape</td>
-</tr><tr><td valign="middle" align="left"> geoscientificInformation</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">information pertaining to earth sciences Examples: geophysical features and processes, geology, minerals, sciences dealing with the composition, structure and origin of the earth’s rocks, risks of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrogeology, erosion</td>
-</tr><tr><td valign="middle" align="left"> health</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">health, health services, human ecology, and safety Examples: disease and illness, factors affecting health, hygiene, substance abuse, mental and physical health, health services</td>
-</tr><tr><td valign="middle" align="left"> imageryBaseMapsEarthCover</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">base maps Examples: land cover, topographic maps, imagery, unclassified images, annotations</td>
-</tr><tr><td valign="middle" align="left"> intelligenceMilitary</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">military bases, structures, activities Examples: barracks, training grounds, military transportation, information collection</td>
-</tr><tr><td valign="middle" align="left"> inlandWaters</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">inland water features, drainage systems and their characteristics Examples: rivers and glaciers, salt lakes, water utilization plans, dams, currents, floods, water quality, hydrographic charts</td>
-</tr><tr><td valign="middle" align="left"> location</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">positional information and services Examples: addresses, geodetic networks, control points, postal zones and services, place names</td>
-</tr><tr><td valign="middle" align="left"> oceans</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">features and characteristics of salt water bodies (excluding inland waters) Examples: tides, tidal waves, coastal information, reefs</td>
-</tr><tr><td valign="middle" align="left"> planningCadastre</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">information used for appropriate actions for future use of the land Examples: land use maps, zoning maps, cadastral surveys, land ownership</td>
-</tr><tr><td valign="middle" align="left"> society</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">characteristics of society and cultures Examples: settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information</td>
-</tr><tr><td valign="middle" align="left"> structure</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">man-made construction Examples: buildings, museums, churches, factories, housing, monuments, shops, towers</td>
-</tr><tr><td valign="middle" align="left"> transportation</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">means and aids for conveying persons and/or goods Examples: roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways</td>
-</tr><tr><td valign="middle" align="left"> utilitiesCommunication</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">energy, water and waste systems and communications infrastructure and servicesExamples: hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks</td>
-</tr><tr><td valign="middle" align="left"> extraTerrestrial</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">region more than 100 km above the surface of the Earth</td>
-</tr><tr><td valign="middle" align="left"> disaster</td>
-<td valign="middle" align="left">literal</td>
-<td valign="middle" align="left">Information related to disasters
-Examples: site of the disaster, evacuation zone, disaster-prevention facility, disaster relief activities</td>
 </tr></tbody>
 </table>
 </td>
