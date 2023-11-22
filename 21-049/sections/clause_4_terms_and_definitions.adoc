@@ -5,42 +5,42 @@ This document also uses terms defined in the OGC Standard for Modular specificat
 
 For the purposes of this document, the following additional terms and definitions apply.
 
-[[application-schema]] 
+[[application-schema-definition]] 
 === application schema:: 
 
-_conceptual schema_ (<<conceptual-schema>>) for data required by one or more applications. 
+_conceptual schema_ (<<conceptual-schema-definition>>) for data required by one or more applications. 
 
-NOTE: An _application schema_ (<<application-schema>>) contains selected parts of the base schemas presented in the ORM Information Viewpoint.
+NOTE: An _application schema_ (<<application-schema-definition>>) contains selected parts of the base schemas presented in the ORM Information Viewpoint.
 
-NOTE: Designers of _application schemas_ (<<application-schema>>) may extend or restrict the types defined in the base schemas to define appropriate types for an application _domain_ (<<domain>>). 
+NOTE: Designers of _application schemas_ (<<application-schema-definition>>) may extend or restrict the types defined in the base schemas to define appropriate types for an application _domain_ (<<domain-definition>>). 
 
-NOTE: _Application schemas_ (<<application-schema>>) are information models for a specific information community.
+NOTE: _Application schemas_ (<<application-schema-definition>>) are information models for a specific information community.
 
 [.source]
 <<ISO19101-1,clause 4.1.2>>, OGC Definitions Register at http://www.opengis.net/def/glossary/term/ApplicationSchema
 
-[[attribute]]
+[[attribute-definition]]
 === attribute::
 
-named _property_ (<<property>>) of an entity
+named _property_ (<<property-definition>>) of an entity
 
 NOTE: Describes a geometrical, topological, thematic, or other characteristic of an entity.
 
 [.source]
 <<ISO2382,clause 2121440>>
 
-[[class]]
+[[class-definition]]
 === class::
 
-description of a set of _objects_ (<<object>>) that share the same _attributes_ (<<attribute>>), _operations_ (<<operation>>), methods, relationships, and semantics
+description of a set of _objects_ (<<object-definition>>) that share the same _attributes_ (<<attribute-definition>>), _operations_ (<<operation-definition>>), methods, relationships, and semantics
 
-NOTE: A _class_ (<<class>>) may use a set of interfaces to specify collections of _operations_ (<<operation>>) it provides to its environment.
+NOTE: A _class_ (<<class-definition>>) may use a set of interfaces to specify collections of _operations_ (<<operation-definition>>) it provides to its environment.
 The term was first used in this way in the general theory of object-oriented programming, and later adopted for use in this same sense in UML.
 
 [.source]
 <<ISO19103,clause 4.27>>, Note 1 to entry has been added from ISO 19117:2012, 4.2
 
-[[code]]
+[[code-definition]]
 === code::
 
 representation of a label according to a specified scheme
@@ -48,104 +48,104 @@ representation of a label according to a specified scheme
 [.source]
 <<ISO19118,clause 4.3>>
 
-[[codelist]] 
+[[codelist-definition]] 
 === codelist::
 
-value _domain_ (<<domain>>) including a _code_ (<<code>>) for each permissible value.
+value _domain_ (<<domain-definition>>) including a _code_ (<<code-definition>>) for each permissible value.
 
 [.source]
 <<ISO19136-1,clause 3.1.7>>
 
-[[concept]]
+[[concept-definition]]
 === concept::
 
 unit of knowledge created by a unique combination of characteristics
 
-NOTE: _Concepts_ (<<concept>>) are not necessarily bound to particular languages. They are, however, influenced by the social or cultural background which often leads to different categorizations.
+NOTE: _Concepts_ (<<concept-definition>>) are not necessarily bound to particular languages. They are, however, influenced by the social or cultural background which often leads to different categorizations.
 
 [.source]
 <<ISO1087-1,clause 3.2.1>>
 
-[[conceptual-model]] 
+[[conceptual-model-definition]] 
 === conceptual model::
 
-model that defines _concepts_ (<<concept>>) of a universe of discourse
+model that defines _concepts_ (<<concept-definition>>) of a universe of discourse
 
 [.source]
 <<ISO19101-1,clause 4.1.5>>
 
-[[conceptual-schema]] 
+[[conceptual-schema-definition]] 
 === conceptual schema::
 
-. formal description of a _conceptual model_ (<<conceptual-model>>) [ISO 19101-1:2014, 4.1.6]
-. base schema. Formal description of the model of any geospatial information. _Application schemas_ (<<application-schema>>) are built from _conceptual schemas_ (<<conceptual-schema>>).
+. formal description of a _conceptual model_ (<<conceptual-model-definition>>) [ISO 19101-1:2014, 4.1.6]
+. base schema. Formal description of the model of any geospatial information. _Application schemas_ (<<application-schema-definition>>) are built from _conceptual schemas_ (<<conceptual-schema-definition>>).
 
 [.source]
 <<ogcdr,OGC Definitions Register>>
 
-[[coordinate]]
+[[coordinate-definition]]
 === coordinate::
 
-one of a sequence of numbers designating the _position_ (<<position>>) of a _point_ (<<point>>)
+one of a sequence of numbers designating the _position_ (<<position-definition>>) of a _point_ (<<point-definition>>)
 
-NOTE: In a spatial _coordinate reference system_ (<<coordinate-reference-system>>), the _coordinate_ (<<coordinate>>) numbers are qualified by units.
+NOTE: In a spatial _coordinate reference system_ (<<coordinate-reference-system-definition>>), the _coordinate_ (<<coordinate-definition>>) numbers are qualified by units.
 
 [.source]
 <<ISO19111,clause 3.1.5>>
 
-[[coordinate-reference-system]]
+[[coordinate-reference-system-definition]]
 === coordinate reference system::
 
-coordinate system that is related to an _object_ (<<object>>) by a _datum_ (<<datum>>)
+coordinate system that is related to an _object_ (<<object-definition>>) by a _datum_ (<<datum-definition>>)
 
-NOTE: For geodetic and vertical _datums_ (<<datum>>), the _object_ (<<object>>) will be the Earth.
+NOTE: For geodetic and vertical _datums_ (<<datum-definition>>), the _object_ (<<object-definition>>) will be the Earth.
 
 [.source]
 <<ISO19111,clause 3.1.9>>
 
-[[coordinate-system]]
+[[coordinate-system-definition]]
 === coordinate system::
 
-set of mathematical rules for specifying how _coordinates_ (<<coordinate>>) are to be assigned to _points_ (<<point>>)
+set of mathematical rules for specifying how _coordinates_ (<<coordinate-definition>>) are to be assigned to _points_ (<<point_definition>>)
 
 [.source]
 <<ISO19111,clause 3.1.11>>
 
-[[data-type]]
+[[data-type-definition]]
 === data type::
 
-specification of a value _domain_ (<<domain>>) with _operations_ (<<operation>>) allowed on values in this _domain_ (<<domain>>)
+specification of a value _domain_ (<<domain-definition>>) with _operations_ (<<operation-definition>>) allowed on values in this _domain_ (<<domain-definition>>)
 
 [example] 
-Integer, Real, Boolean, String, Date and SG Point (conversion of data into a series of _codes_ (<<code>>)).
+Integer, Real, Boolean, String, Date and SG Point (conversion of data into a series of _codes_ (<<code-cefinition>>)).
 
 NOTE: Data types include primitive predefined types and user-definable types.
 
 [.source]
 <<ISO19103,clause 4.14>>
 
-[[datum]]
+[[datum-definition]]
 === dataum::
 
-parameter or set of parameters that realize the _position_ (<<position>>) of the origin, the scale, and the orientation of a _coordinate system_ (<<coordinate-system>>)
+parameter or set of parameters that realize the _position_ (<<position-definition>>) of the origin, the scale, and the orientation of a _coordinate system_ (<<coordinate-system-definition>>)
 
 [.source]
 <<ISO19111,clause 3.1.15>>
 
-[[direct-position]]
+[[direct-position-definition]]
 === direct position::
 
-_position_ (<<position>>) described by a single set of _coordinates_ (<<coordinate>>) within a _coordinate reference system_ (<<coordinate-reference-system>>)
+_position_ (<<position-definition>>) described by a single set of _coordinates_ (<<coordinate-definition>>) within a _coordinate reference system_ (<<coordinate-reference-system-definition>>)
 
 [.source]
 <<ISO19136-1,clause 3.1.20>>
 
-[[domain]]
+[[domain-definition]]
 === domain:: 
 
 well-defined set 
 
-NOTE: _Domains_ (<<domain>>) are used to define the _domain_ (<<domain>>) set and range set of _attributes_ (<<attribute>>), operators and functions.
+NOTE: _Domains_ (<<domain-definition>>) are used to define the _domain_ (<<domain-definition>>) set and range set of _attributes_ (<<attribute-definition>>), operators and functions.
 
 [.source]
 <<ISO19109,clause 4.8>>
@@ -154,14 +154,14 @@ NOTE: _Domains_ (<<domain>>) are used to define the _domain_ (<<domain>>) set an
 
 distinct area of human knowledge to which a terminological entry is assigned 
 
-NOTE: Within a database or other terminology collection, a set of _domains_ (<<domain>>) will generally be defined. More than one _domain_ (<<domain>>) can be associated with a given _concept_ (<<concept>>).
+NOTE: Within a database or other terminology collection, a set of _domains_ (<<domain-definition>>) will generally be defined. More than one _domain_ (<<domain-definition>>) can be associated with a given _concept_ (<<concept-definition>>).
 
 [.source]
 <<ISO19104,clause 4.11>>
 
 === domain <ontology>::
 
-restriction to constrain the subject _class_ (<<class>>) which participates in a subject-predicate-object triple 
+restriction to constrain the subject _class_ (<<class-definition>>) which participates in a subject-predicate-object triple 
 
 [.source]
 <<ISO19150-4,clause 3.1.12>>
@@ -171,162 +171,162 @@ restriction to constrain the subject _class_ (<<class>>) which participates in a
 an area in which a set of specific postal address types and postal address renderings is prescribed by postal operators 
 
 [example] 
-The most typical example of a postal address _domain_ (<<domain>>) is a country where a designated postal operator provides postal delivery services.
+The most typical example of a postal address _domain_ (<<domain-definition>>) is a country where a designated postal operator provides postal delivery services.
 
 [.source]
 <<ISO19160-4,clause 3.14>>
 
-[[feature]]
+[[feature-definition]]
 === feature::
 
 abstraction of real-world phenomena
 
-NOTE: A _feature_ (<<feature>>) may occur as a type or an instance. In this document, _feature_ (<<feature>>) instance is meant unless otherwise specified.
+NOTE: A _feature_ (<<feature-definition>>) may occur as a type or an instance. In this document, _feature_ (<<feature-definition>>) instance is meant unless otherwise specified.
 
 [.source]
 <<ISO19101-1,clause 4.1.11>>, Note 1 to entry has been added from ISO 19156, 4.6
 
-[[feature-type]]
+[[feature-type-definition]]
 === feature type::
 
-_class_ (<<class>>) of _features_ (<<feature>>) having common characteristics
+_class_ (<<class-definition>>) of _features_ (<<feature-definition>>) having common characteristics
 
 [.source]
 <<ISO19156,clause 4.7>>
 
-[[geometric-aggregate]]
+[[geometric-aggregate-definition]]
 === geometric aggregate::
 
-collection of _geometric objects_ (<<geometric-object>>) that has no internal structure
+collection of _geometric objects_ (<<geometric-object-definition>>) that has no internal structure
 
 NOTE: No assumptions about the spatial relationships between the elements can be made.
 
 [.source]
 <<ISO19107,clause 3.45>>
 
-[[geometric-boundary]]
+[[geometric-boundary-definition]]
 === geometric boundary::
 
-boundary represented by a set of _geometric primitives_ (<<geometric-primitive>>) that limits the extent of a _geometric object_ (<<geometric-object>>)
+boundary represented by a set of _geometric primitives_ (<<geometric-primitive-definition>>) that limits the extent of a _geometric object_ (<<geometric-object-definition>>)
 
 [.source]
 <<ISO19107,clause 3.46>>
 
-[[geometric-complex]]
+[[geometric-complex-definition]]
 === geometric complex::
 
-set of disjoint _geometric primitives_ (<<geometric-primitive>>) where the boundary of each _geometric primitive_ (<<geometric-primitive>>) can be represented as the union of other _geometric primitives_ (<<geometric-primitive>>) of smaller dimensions within the same set
+set of disjoint _geometric primitives_ (<<geometric-primitive-definition>>) where the boundary of each _geometric primitive_ (<<geometric-primitive-definition>>) can be represented as the union of other _geometric primitives_ (<<geometric-primitive-definition>>) of smaller dimensions within the same set
 
-NOTE: The _geometric primitives_ (<<geometric-primitive>>) in the set are disjoint in the sense that no _direct position_ (<<direct-position>>) is interior to more than one _geometric primitive_ (<<geometric-primitive>>). The set is closed under boundary _operations_ (<<operation>>), meaning that for each element in the _geometric complex_ (<<geometric-complex>>), there is a collection (also a _geometric complex_ (<<geometric-complex>>)) of _geometric primitives_ (<<geometric-primitive>>) that represents the boundary of that element. Recall that the boundary of a _point_ (<<point>>) (the only 0D primitive _object_ (<<object>>) type in geometry) is empty. Thus, if the largest dimension _geometric primitive_ (<<geometric-primitive>>) is a solid (3D), the composition of the boundary operator in this definition terminates after at most three steps. It is also the case that the boundary of any _object_ (<<object>>) is a cycle.
+NOTE: The _geometric primitives_ (<<geometric-primitive-definition>>) in the set are disjoint in the sense that no _direct position_ (<<direct-position-definition>>) is interior to more than one _geometric primitive_ (<<geometric-primitive-definition>>). The set is closed under boundary _operations_ (<<operation-definition>>), meaning that for each element in the _geometric complex_ (<<geometric-complex-definition>>), there is a collection (also a _geometric complex_ (<<geometric-complex-definition>>)) of _geometric primitives_ (<<geometric-primitive-definition>>) that represents the boundary of that element. Recall that the boundary of a _point_ (<<point-definition>>) (the only 0D primitive _object_ (<<object-definition>>) type in geometry) is empty. Thus, if the largest dimension _geometric primitive_ (<<geometric-primitive-definition>>) is a solid (3D), the composition of the boundary operator in this definition terminates after at most three steps. It is also the case that the boundary of any _object_ (<<object-definition>>) is a cycle.
 
 [.source]
 <<ISO19107,clause 3.47>>
 
-[[geometric-dimension]]
+[[geometric-dimension-definition]]
 === geometric dimension::
 
-lagest number n such that each _poin_ (<<point>>) in a set of _points_ (<<point>>) can be associated with a subset that has that point in its interior and is topologically isomporphic to 𝔼n, Euclidean n-space
+lagest number n such that each _poin_ (<<point-definition>>) in a set of _points_ (<<point-definition>>) can be associated with a subset that has that point in its interior and is topologically isomporphic to 𝔼n, Euclidean n-space
 
 [.source]
 <<ISO19107,clause 3.48>>
 
-[[geometric-object]]
+[[geometric-object-definition]]
 === geometric object::
 
-spatial _object_ (<<object>>) representing a _geometric set_ (<<geometric-set>>)
+spatial _object_ (<<object-definition>>) representing a _geometric set_ (<<geometric-set-definition>>)
 
-NOTE: A _geometric object_ (<<geometric-object>>) consists of a _geometric primitive_ (<<geometric-primitive>>), a collection of _geometric primitives_ (<<geometric-primitive>>), or a _geometric complex_ (<<geometric-complex>>) treated as a single entity. A _geometric object_ (<<geometric-object>>) may be the spatial representation of an _object_ (<<object>>) such as a _feature_ (<<feature>>) or a significant part of a _feature_ (<<feature>>).
+NOTE: A _geometric object_ (<<geometric-object-definition>>) consists of a _geometric primitive_ (<<geometric-primitive-definition>>), a collection of _geometric primitives_ (<<geometric-primitive-definition>>), or a _geometric complex_ (<<geometric-complex-definition>>) treated as a single entity. A _geometric object_ (<<geometric-object-definition>>) may be the spatial representation of an _object_ (<<object-definition>>) such as a _feature_ (<<feature-definition>>) or a significant part of a _feature_ (<<feature-definition>>).
 
 [.source]
 <<ISO19107,clause 3.49>>
 
-[[geometric-primitive]]
+[[geometric-primitive-definition]]
 === geometric primitive (geometry)::
 
-_geometric object_ (<<geometric-object>>) representing a single, connected, homogeneous (isotopic) element of space
+_geometric object_ (<<geometric-object-definition>>) representing a single, connected, homogeneous (isotopic) element of space
 
-NOTE: _Geometric primitives_ (<<geometric-primitive>>) are non-decomposed _objects_ (<<object>>) that present information about geometric configuration. They include _points_ (<<point>>), curves, surfaces, and solids. Many _geometric objects_ (<<geometric-object>>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a _geometric primitive_ (<<geometric-primitive>>) is topological open, since the boundary _points_ (<<point>>) are not isotropic to the interior _points_ (<<point>>). Geometry is assumed to be closed. For _points_ (<<point>>), the boundary is empty.
+NOTE: _Geometric primitives_ (<<geometric-primitive-definition>>) are non-decomposed _objects_ (<<object-definition>>) that present information about geometric configuration. They include _points_ (<<point-definition>>), curves, surfaces, and solids. Many _geometric objects_ (<<geometric-object-definition>>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a _geometric primitive_ (<<geometric-primitive-definition>>) is topological open, since the boundary _points_ (<<point-definition>>) are not isotropic to the interior _points_ (<<point-definition>>). Geometry is assumed to be closed. For _points_ (<<point-definition>>), the boundary is empty.
 
 [.source]
 <<ISO19107,clause 3.50>>
 
-[[geometric-set]]
+[[geometric-set-definition]]
 === geometric set::
 
-set of _points_ (<<point>>)
+set of _points_ (<<point-definition>>)
 
 [.source]
 <<ISO19107,clause 3.53>>
 
-[[location]]
+[[location-definition]]
 === location::
 
-particular _place_ (<<place>>) or _position_ (<<position>>)
+particular _place_ (<<place-definition>>) or _position_ (<<position-definition>>)
 
-NOTE: A _location_ (<<location>>) identifies a geographic _place_.
+NOTE: A _location_ (<<location-definition>>) identifies a geographic _place_.
 
-NOTE: _Locations_ (<<location>>) are physically fixed _points_ (<<point>>), typically on the surface of the Earth, although _locations_ (<<location>>) can be relative to other, non-earth centric coordinate reference systems. 
+NOTE: _Locations_ (<<location-definition>>) are physically fixed _points_ (<<point-definition>>), typically on the surface of the Earth, although _locations_ (<<location-definition>>) can be relative to other, non-earth centric coordinate reference systems. 
 
-NOTE: _Locations_ (<<location>>) can be a single _point_ (<<point>>), a centroid, a minimum bounding rectangle, or a set of vectors. 
+NOTE: _Locations_ (<<location-definition>>) can be a single _point_ (<<point-definition>>), a centroid, a minimum bounding rectangle, or a set of vectors. 
 
-NOTE: A _location_ (<<location>>) should be persistent over time and does not change. 
+NOTE: A _location_ (<<location-definition>>) should be persistent over time and does not change. 
 
-NOTE: Multiple _POIs_ (<<point-of-interest>>) may share the same _location_ (<<location>>). 
+NOTE: Multiple _POIs_ (<<point-of-interest-definition>>) may share the same _location_ (<<location-definition>>). 
 
-NOTE: When a _POI_ (<<point-of-interest>>) physically moves it is understood to have acquired a new _location_ (<<location>>).
+NOTE: When a _POI_ (<<point-of-interest-definition>>) physically moves it is understood to have acquired a new _location_ (<<location-definition>>).
 
 [.source]
 <<ISO19112,clause 3.1.3>>
 
-[[metaclass]]
+[[metaclass-definition]]
 === metaclass::
 
-a _class_ (<<class>>) whose instances are also _classes_ (<<class>>)
+a _class_ (<<class-definition>>) whose instances are also _classes_ (<<class-definition>>)
 
 [.source]
 <<omguml,clause 22>> Object Management Group (OMG) UML Standard Version 2.5.1
 
-[[method]]
+[[method-definition]]
 === method::
 
-implementation of an _operation_ (<<operation>>)
+implementation of an _operation_ (<<operation-definition>>)
 
-NOTE: It specifies the algorithm or procedure associated with an _operation_ (<<operation>>).
+NOTE: It specifies the algorithm or procedure associated with an _operation_ (<<operation-definition>>).
 
 [.source]
 <<ISO19501>>
 
-[[object]]
+[[object-definition]]
 === object::
 
 entity with a well defined boundary and identity that encapsulates state and behaviour
 
-NOTE: This term was first used in this way in the general theory of object oriented programming, and later adopted for use in this same sense in UML. An _object_ (<<object>>) is an instance of a _class_ (<<class>>). _Attributes_ (<<attribute>>) and relationships represent state. _Operations_ (<<operation>>), methods, and state machines represent behavior.
+NOTE: This term was first used in this way in the general theory of object oriented programming, and later adopted for use in this same sense in UML. An _object_ (<<object-definition>>) is an instance of a _class_ (<<class-definition>>). _Attributes_ (<<attribute-definition>>) and relationships represent state. _Operations_ (<<operation-definition>>), methods, and state machines represent behavior.
 
 [.source]
 <<OMG/UML UML Semantics, version 1.3, 1997.>>
 
-[[OGC-implementation-specification]]
+[[OGC-implementation-specification-definition]]
 === OGC implementation specification::
 
-_OGC implementation specification_ (<<OGC-implementation-specification>>) document type defined on the OGC Document Types Register
+_OGC implementation specification_ (<<OGC-implementation-specification-definition>>) document type defined on the OGC Document Types Register
 
 [.source]
 OGC Definitions Register at http://www.opengis.net/def/doc-type/is
 
-[[operation]]
+[[operation-definition]]
 === operation::
 
-specification of a transformation or query that an _object_ (<<object>>) may be called to execute
+specification of a transformation or query that an _object_ (<<object-definition>>) may be called to execute
 
-NOTE: An _operation_ (<<operation>>) has a name and a list of parameters.
+NOTE: An _operation_ (<<operation-definition>>) has a name and a list of parameters.
 
-NOTE: See <<ISO19119,clause 7.2>> for a discussion of _operation_ (<<operation>>)
+NOTE: See <<ISO19119,clause 7.2>> for a discussion of _operation_ (<<operation-definition>>)
 
 [.source]
 <<ISO19119,clause 4.1.10>>
 
-[[place]]
+[[place-definition]]
 === place::
 
 identifiable part of any space
@@ -334,7 +334,7 @@ identifiable part of any space
 [.source]
 <<ISO19155,clause 4.8>>
 
-[[platform]] 
+[[platform-definition]] 
 === Platform (Model Driven Architecture)::
 
 the set of resources on which a system is realized.
@@ -343,73 +343,73 @@ the set of resources on which a system is realized.
 <<mdaguide>>, 
 #Object Management Group, Model Driven Architecture Guide rev. 2.0#
 
-[[platform-independent-model]] 
+[[platform-independent-model-definition]] 
 === Platform Independent Model:
 
-a model that is independent of a specific _platform_ (<<platform>>)
+a model that is independent of a specific _platform_ (<<platform-definition>>)
 
 [.source]
 <<mdaguide>>, 
 #Object Management Group, Model Driven Architecture Guide rev. 2.0#
 
-[[platform-specific-model]] 
+[[platform-specific-model-definition]] 
 === Platform Specific Model:
 
-a model of a system that is defined in terms of a specific _platform_ (<<platform>>)
+a model of a system that is defined in terms of a specific _platform_ (<<platform-definition>>)
 
 [.source]
 <<mdaguide>>, 
 #Object Management Group, Model Driven Architecture Guide rev. 2.0#
 
-[[point]]
+[[point-definition]]
 === point::
 
-0-dimensional geometric primitive, representing a _position_ (<<position>>)
+0-dimensional geometric primitive, representing a _position_ (<<position-definition>>)
 
 [.source]
 <<ISO19136-1,clause 3.1.47>>
 
-[[point-of-interest]]
+[[point-of-interest-definition]]
 === point of interest::
 
 alt:[POI]
 
-_location_ (<<location>>) where one can find a _place_, product or service
+_location_ (<<location-definition>>) where one can find a _place_, product or service
 
-NOTE: A _POI_ (<<point-of-interest>>) is typically identified by _name_ rather than by an _address_.
+NOTE: A _POI_ (<<point-of-interest-definition>>) is typically identified by _name_ rather than by an _address_.
 
-NOTE: A _POI_ (<<point-of-interest>>) is characterized by _type_, which may be used as a reference _point_ (<<point>>) or a target in a _location_ (<<location>>) based service request.
+NOTE: A _POI_ (<<point-of-interest-definition>>) is characterized by _type_, which may be used as a reference _point_ (<<point-definition>>) or a target in a _location_ (<<location-definition>>) based service request.
 
-NOTE: A _POI_ (<<point-of-interest>>) does not exclude the labeling, identification, and tracking of persons and other physical _objects_ (<<object>>) that have no permanent _location_ (<<location>>).
+NOTE: A _POI_ (<<point-of-interest-definition>>) does not exclude the labeling, identification, and tracking of persons and other physical _objects_ (<<object-definition>>) that have no permanent _location_ (<<location-definition>>).
 
 [example]
 destination of a route; such as, Boston
 
-[[position]]
+[[position-definition]]
 === position::
 
-data type that describes a _point_ (<<point>>) or _geometry_ potentially occupied by an _object_ (<<object>>) or person
+data type that describes a _point_ (<<point-definition>>) or _geometry_ potentially occupied by an _object_ (<<object-definition>>) or person
 
-NOTE:  A _direct position_ (<<direct-position>>) is a semantic subtype of _position_ (<<position>>). _Direct positions_ (<<direct-position>>) as described can only define a _point_ (<<point>>), and therefore not all _positions_  (<<position>>) can be represented by a _direct position_ (<<direct-position>>). That is consistent with the is type of relation. An ISO 19107 geometry is also a _position_ (<<position>>), but not a _direct position_ (<<direct-position>>)
+NOTE:  A _direct position_ (<<direct-position-definition>>) is a semantic subtype of _position_ (<<position-definition>>). _Direct positions_ (<<direct-position-definition>>) as described can only define a _point_ (<<point-definition>>), and therefore not all _positions_ (<<position-definition>>) can be represented by a _direct position_ (<<direct-position-definition>>). That is consistent with the is type of relation. An ISO 19107 geometry is also a _position_ (<<position-definition>>), but not a _direct position_ (<<direct-position-definition>>)
 
 [.source]
 <<ISO19133>>
 
-[[property]]
+[[property-definition]]
 === property::
 
-facet or _attribute_ (<<attribute>>) of an _object_ (<<object>>) referenced by a name
+facet or _attribute_ (<<attribute-definition>>) of an _object_ (<<object-definition>>) referenced by a name
 
 [example]
-Abby's car has the colour red, where "colour red" is a _property_ (<<property>>) of the car.
+Abby's car has the colour red, where "colour red" is a _property_ (<<property-definition>>) of the car.
 
 [.source]
 <<ISO19143,clause 4.21>>, Note 1 to entry has been added from ISO 19156, 4.15
 
-[[stereotype]]
+[[stereotype-definition]]
 === stereotype::
 
-extension of an existing _metaclass_ (<<metaclass>>) that enables the use of _platform_ (<<platform>>) or _domain_ (<<domain>>) specific terminology or notation in place of, or in addition to, the ones used for the extended _metaclass_ (<<metaclass>>)
+extension of an existing _metaclass_ (<<metaclass-definition>>) that enables the use of _platform_ (<<platform-definition>>) or _domain_ (<<domain-definition>>) specific terminology or notation in place of, or in addition to, the ones used for the extended _metaclass_ (<<metaclass-definition>>)
 
 [.source]
 <<ISO19150-2,clause 4.1.35>>
