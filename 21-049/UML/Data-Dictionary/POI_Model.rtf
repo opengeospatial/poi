@@ -199,13 +199,13 @@ Features of Interest.{\*\bkmkend BKM_AC115DD1_0C98_4ACF_A361_6CD2DC216F05}\par
 !===\par 
 !\{set:cellbgcolor:#DDDDDD\} *Role name* !*Target class and multiplicity*  !*Definition*\par 
 !\{set:cellbgcolor:#FFFFFF\} usedBy  !  <<AbstractPOI-section,AbstractPOI>>  \par 
-[] !\par 
+[] !Indicates a POI which is using this payload\par 
 !\{set:cellbgcolor:#FFFFFF\} hasDefinition  !  <<PayloadDefinition-section,PayloadDefinition>>  \par 
-[0..1] !\par 
+[0..1] !A reference to the semantic model of this POI payload. \par 
 !\{set:cellbgcolor:#FFFFFF\} usesSchema  !  <<PayloadSchema-section,PayloadSchema>>  \par 
-[1..*] !\par 
+[1..*] !A reference to the schema for this POI payload. \par 
 !\{set:cellbgcolor:#FFFFFF\} FoI  !  <<FeatureOfInterest-section,FeatureOfInterest>>  \par 
-[1..1] !\par 
+[1..1] !Indicates the Feature of Interest which is being summarized in this payload.\par 
 !===\par 
 |[cols="15,20,60",frame=none,grid=none,options="header"]\par 
 !===\par 

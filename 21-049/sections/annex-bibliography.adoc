@@ -3,24 +3,24 @@
 [[Bibliography]]
 == Bibliography
 
-* [[[ISO19111,nofetch(ISO 19111)]]], Place holder
-* [[[ISO11404,nofetch(ISO 11404:2007)]]], Information technology - General-Purpose Datatypes (GPD)
-* [[[ISO19156,nofetch(ISO 19156:2011)]]], Geographic information Observations and measurements
-* [[[ISO19117,nofetch(ISO 19117:2012)]]], Geographic information - Portrayal
-* [[[ISO19119,nofetch(ISO 19119:2016)]]], Geographic information - Services
-* [[[ISO2382,nofetch(ISO/IEC 2382)]]], Place holder
-* [[[ISO19118,nofetch(ISO 19118)]]], Place holder
-* [[[ISO19136-1,nofetch(ISO 19136-1)]]], Place holder
-* [[[ISO1087-1,nofetch(ISO 1087-1)]]], Place holder
-* [[[ISO19104,nofetch(ISO 19104)]]], Place holder
-* [[[ISO19150-1,nofetch(ISO 19150-1)]]], Place holder
-* [[[ISO19150-2,nofetch(ISO 19150-2)]]], Place holder
-* [[[ISO19150-4,nofetch(ISO 19150-4)]]], Place holder
-* [[[ISO19160-4,nofetch(ISO 19160-4)]]], Place holder
-* [[[ISO19112,nofetch(ISO 19112)]]], Place holder
-* [[[ISO19501,nofetch(ISO/IEC 19501)]]], Place holder
-* [[[ISO19133,nofetch(ISO 19133:2020)]]], Place holder
-* [[[ISO19143,nofetch(ISO 19143)]]], Place holder
-* [[[ISO19155,nofetch(ISO 19155)]]], Place holder
+* [[[ISO19111,ISO 19111:2019]]]
+* [[[ISO11404,ISO 11404:2007]]]
+* [[[ISO19156,ISO 19156:2011]]]
+* [[[ISO19117,ISO 19117:2012]]]
+* [[[ISO19119,ISO 19119:2016]]]
+* [[[ISO2382,ISO/IEC 2382]]]
+* [[[ISO19118,ISO 19118]]]
+* [[[ISO19136-1,ISO 19136-1]]]
+* [[[ISO1087-1,ISO 1087-1]]]
+* [[[ISO19104,ISO 19104]]]
+* [[[ISO19150-1,ISO 19150-1]]]
+* [[[ISO19150-2,ISO 19150-2]]]
+* [[[ISO19150-4,ISO 19150-4]]]
+* [[[ISO19160-4,ISO 19160-4)]]]
+* [[[ISO19112,ISO 19112]]]
+* [[[ISO19501,ISO/IEC 19501]]]
+* [[[ISO19133,ISO 19133:2020]]]
+* [[[ISO19143,ISO 19143]]]
+* [[[ISO19155,ISO 19155]]]
 * [[[mdaguide,nofetch(OMG Model Driven Architecture Guide)]]] Object Management Group, Model Driven Architecture Guide rev. 2.0
 

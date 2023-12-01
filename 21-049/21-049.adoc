@@ -7,9 +7,9 @@
 :draft: 0.1.1
 :external-id: http://www.opengis.net/doc/is/poi/1.0
 :docnumber: 21-049
-:received-date: 2023-11-22
+:received-date: 2023-12-01
 :issued-date: 2029-03-30
-:published-date: 2023-11-22
+:published-date: 2023-12-01
 :fullname: Charles Heazel
 :fullname_2: Matthew Brian 
 :fullname_3: John Purss
@@ -40,6 +40,8 @@ include::./sections/clause_5_conventions.adoc[]
 include::./sections/clause_7_normative_text.adoc[]
 
 include::./sections/clause_7-1_data_model.adoc[]
+
+include::./sections/clause_7-2_data_model.adoc[]
 
 include::sections/annex-a.adoc[]
 

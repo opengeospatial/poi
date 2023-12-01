@@ -1,0 +1,486 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2023-12-01</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Information technology - Vocabulary</title>
+  <uri type="src">https://www.iso.org/standard/63598.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:63598:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/06/35/63598.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO/IEC 2382</docidentifier>
+  <docidentifier type="iso-reference">ISO/IEC 2382(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso-iec:2382:stage-90.60:ed-1</docidentifier>
+  <docnumber>2382</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Electrotechnical Commission</name>
+      <abbreviation>IEC</abbreviation>
+      <uri>www.iec.ch</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2015</from>
+    <owner>
+      <organization>
+        <name>ISO/IEC</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-1:1993</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-1:1993</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2382-2:1976</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2382-2:1976</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2382-3:1987</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2382-3:1987</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-4:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-4:1999</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-5:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-5:1999</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2382-6:1987</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2382-6:1987</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-7:2000</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-7:2000</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-8:1998</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-8:1998</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-9:1995</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-9:1995</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2382-10:1979</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2382-10:1979</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2382-12:1988</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2382-12:1988</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-13:1996</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-13:1996</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-14:1997</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-14:1997</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-15:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-15:1999</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-16:1996</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-16:1996</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-17:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-17:1999</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-18:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-18:1999</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2382-19:1989</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2382-19:1989</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-20:1990</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-20:1990</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 2382-21:1985</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 2382-21:1985</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-23:1994</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-23:1994</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-24:1995</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-24:1995</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-25:1992</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-25:1992</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-26:1993</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-26:1993</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-27:1994</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-27:1994</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-28:1995</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-28:1995</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-29:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-29:1999</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-31:1997</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-31:1997</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-32:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-32:1999</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-34:1999</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-34:1999</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/IEC 2382-37:2012</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382-37:2012</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2023-12-01</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Information technology - Vocabulary</title>
+      <uri type="src">https://www.iso.org/standard/63598.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:63598:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/06/35/63598.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO/IEC 2382:2015</docidentifier>
+      <docidentifier type="iso-reference">ISO/IEC 2382:2015(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso-iec:2382:stage-90.60:ed-1</docidentifier>
+      <docnumber>2382</docnumber>
+      <date type="published">
+        <on>2015-05</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Electrotechnical Commission</name>
+          <abbreviation>IEC</abbreviation>
+          <uri>www.iec.ch</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This standard of vocabulary taken from the multi-part ISO/IEC 2382 standard is presented in language-specific order and is intended to facilitate international communication in information technology. It presents, in two languages, terms and definitions of selected concepts relevant to this field.
+In order to facilitate their translation into other languages, the definitions are drafted so as to avoid, as far as possible, any peculiarity attached to a language.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>60</substage>
+      </status>
+      <copyright>
+        <from>2015</from>
+        <owner>
+          <organization>
+            <name>ISO/IEC</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-1:1993</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-1:1993</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 2382-2:1976</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 2382-2:1976</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 2382-3:1987</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 2382-3:1987</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-4:1999</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-4:1999</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-5:1999</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-5:1999</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 2382-6:1987</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 2382-6:1987</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-7:2000</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-7:2000</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-8:1998</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-8:1998</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-9:1995</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-9:1995</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 2382-10:1979</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 2382-10:1979</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 2382-12:1988</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 2382-12:1988</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-13:1996</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-13:1996</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-14:1997</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-14:1997</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-15:1999</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-15:1999</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-16:1996</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-16:1996</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-17:1999</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-17:1999</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-18:1999</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-18:1999</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 2382-19:1989</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 2382-19:1989</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-20:1990</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-20:1990</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 2382-21:1985</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 2382-21:1985</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-23:1994</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-23:1994</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-24:1995</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-24:1995</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-25:1992</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-25:1992</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-26:1993</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-26:1993</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-27:1994</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-27:1994</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-28:1995</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-28:1995</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-29:1999</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-29:1999</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-31:1997</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-31:1997</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-32:1999</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-32:1999</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-34:1999</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-34:1999</docidentifier>
+        </bibitem>
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/IEC 2382-37:2012</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/IEC 2382-37:2012</docidentifier>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="1" type="IEC" identifier="ISO/IEC JTC 1">Information technology</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.020</code>
+      <text>Information technology (IT) in general</text>
+    </ics>
+    <ics>
+      <code>01.040.35</code>
+      <text>Information technology (Vocabularies)</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 2382</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

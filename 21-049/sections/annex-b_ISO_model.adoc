@@ -6,6 +6,8 @@ ISO Technical Committee 211 maintains a harmonized UML model which covers many o
 
 The Data Dictionary tables in this section were software generated from the TC211 Hamonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.
 
+Note that some of the properties in the ISO model are not populated. Since the model is normative, the missing information cannot be included in this document until it is first included in the ISO model.
+
 === General Feature Model 
 The following classes are defined in <<ISO19109,(ISO 19109:2015)>>
 
@@ -55,7 +57,7 @@ This class describes how a feature class shall be constructed in an Application 
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
-!{set:cellbgcolor:#FFFFFF} isAbstract   !<<Boolean-section,Boolean>>  !
+!{set:cellbgcolor:#FFFFFF} isAbstract   !Boolean  !
 !===
 |===
 
@@ -420,7 +422,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
  
 !{set:cellbgcolor:#FFFFFF} className   !<<CharacterString-section,CharacterString>> [1..1]  !character string to label the keyword category in natural language
  
-!{set:cellbgcolor:#FFFFFF} conceptIdentifier   !<<URI-section,URI>>  [0..1] !URI of concept in ontology specified by the ontology attribute; this concept is labeled by the className: CharacterString.
+!{set:cellbgcolor:#FFFFFF} conceptIdentifier   !URI  [0..1] !URI of concept in ontology specified by the ontology attribute; this concept is labeled by the className: CharacterString.
  
 !{set:cellbgcolor:#FFFFFF} ontology   !CI_Citation [1..1]  !a reference that binds the keyword class to a formal conceptualization of a knowledge domain for use in semantic processingNOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology
 !===
@@ -531,7 +533,7 @@ Not all methods for NameSpaces need to be made publicly accessible.
  
 !{set:cellbgcolor:#FFFFFF} acceptableClassList   !<<TypeName-section,TypeName>> [1..1] !
  
-!{set:cellbgcolor:#FFFFFF} isGlobal   !<<Boolean-section,Boolean>> [1..1] !
+!{set:cellbgcolor:#FFFFFF} isGlobal   !Boolean [1..1] !
 !===
 |=== 
 
@@ -632,323 +634,4 @@ The following classes are defined in <<ISO19103,(ISO 19103:2015)>>
 !{set:cellbgcolor:#FFFFFF} timeZone   !<<CharacterString-section,CharacterString>>  [1..1] !
 !===
 |===   
-
-==== Numerics 
-
-[[Decimal-section]]
-.Decimal Class
-[cols="1a"]
-|===
-|*Decimal* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The usually finite representation of a decimal number. It differs from the common binary Real implementation in that it can represent 1/10 (one-tenth) without error, while binary real representation can only represent powers of 1/2 (one-half) exactly. Since many currencies are decimal, these representations are preferred in dealing with such moneys. This is also true for mile markers, which are often given in decimals.
-
-Can be thought of as an integer part followed by a fractional part given in multiples of powers of 1/10 (tenths). 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Number-section,Number>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|=== 
-
-[[iso_Integer-section]]
-.Integer Class
-[cols="1a"]
-|===
-|*Integer* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! An exact integer value, with no fractional part.  
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Number-section,Number>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|=== 
-
-[[Number-section]]
-.Number Class
-[cols="1a"]
-|===
-|*Number* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The base type for all number data, giving the basic algebraic operations. Since all concrete types have finite representations, some part of this algebra for most types exhibit some inaccuracy. For example, Integers cannot divide very well, and reals and decimals cannot avoid certain types of inaccuracies that depend on their representation semantics.  
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|=== 
-
-[[Real-section]]
-.Real Class
-[cols="1a"]
-|===
-|*Real* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The common binary Real finite implementation using base 2. Since such reals can approximate any measure where absolute accuracy is not possible, this form of numeric is most often used for measures. In cases were absolute accuracy is needed, such as currencies, then a decimal representation may be preferred (assuming the currency is decimal, such as the US dollar, British pound, etc.). Where there are no subunits possible, Integer numbers may be preferred.  
-
-Can be thought of as an integer part followed by a fractional part given in multiples of powers of 1/2 (halves). 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Number-section,Number>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|=== 
-
-[[UnlimitedInteger-section]]
-.Unlimited Integer Class
-[cols="1a"]
-|===
-|*UnlimitedInteger* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! -- Infinite if and only if value is not specified
-{[ isInfinte = True ] = [ value = Null ]}
--- value is either infinite or non-negative
-{value <> Null implies value >= 0} 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} isInfinite   !<<Boolean-section,Boolean>> [1..1]  !
- 
-!{set:cellbgcolor:#FFFFFF} value   !<<Integer-section,Integer>>  [0..1] !
-!===
-|=== 
-
-[[Vector-section]]
-.Vector Class
-[cols="1a"]
-|===
-|*Vector* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! an ordered set of numbers called coordinates that represent a position in a coordinate system. The coordinates may be in a space of any number of dimensions, as for instance in an "nth degree" polynomial spline. 
-
-Example (123, 514, 150) 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface  
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} coordinates   !<<Number-section,Number>>  [1..*] !list of numbers representing the vector
- 
-!{set:cellbgcolor:#FFFFFF} dimension   !<<Integer-section,Integer>> [1..1]  !dimension in Euclidian space
-!===
-|===   
-
-==== Text
-
-[[CharacterSetCode-section]]
-.Character Set Code Codelist
-[cols="1a"]
-|===
-|*CharacterSetCode* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «CodeList»
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} ISO10646-1   ! literal !
- 
-!{set:cellbgcolor:#FFFFFF} ISO10646-2   ! literal !
- 
-!{set:cellbgcolor:#FFFFFF} ISO8859   ! literal !
-!===
-|=== 
-
-[[Character-section]]
-.Character Class
-[cols="1a"]
-|===
-|*Character* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! symbol  from a standard character-set.  
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface  
-!===
-|=== 
-
-[[CharacterString-section]]
-.Character String Class
-[cols="1a"]
-|===
-|*CharacterString* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Characterstring  is a family  of  datatypes which  represent strings of symbols  from  standard character-sets. 
-
-Semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.1.5. 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface  
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   ! <<CharacterString-section,CharacterString>>   [] !
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} characterSet   !<<CharacterSetCode-section,CharacterSetCode>> [1..1]  !character set of the string
- 
-!{set:cellbgcolor:#FFFFFF} maxLength   !<<Integer-section,Integer>> [1..1]  !maximum length of all instances of CharacterString
- 
-!{set:cellbgcolor:#FFFFFF} size   !<<Integer-section,Integer>> [1..1]  !number of characters in the string
- 
-!{set:cellbgcolor:#FFFFFF} value   !<<Character-section,Character>>  [0..*] !
-!===
-|=== 
-
-[[URI-section]]
-.URI Class
-[cols="1a"]
-|===
-|*URI* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Uniform Resource Identifier (URI), is a compact string of characters used to identify or name a resource. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<CharacterString-section,CharacterString>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|===   
-
-==== Truth
-
-[[ContinuousTruth-section]]
-.Continuous Truth Class
-[cols="1a"]
-|===
-|*ContinuousTruth* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Any of the interpretations of truth as a continuous range of possible values, usually expressed as a measure. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Truth-section,Truth>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|=== 
-
-[[DiscreteTruth-section]]
-.Discrete Truth Class
-[cols="1a"]
-|===
-|*DiscreteTruth* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<Truth-section,Truth>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   ! <<Boolean-section,Boolean>>   [] ! Realization
-!{set:cellbgcolor:#FFFFFF}   ! <<Logical-section,Logical>>   [] ! Realization
-!===
-|=== 
-
-[[Probability-section]]
-.Probability Class
-[cols="1a"]
-|===
-|*Probability* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Continuous truth as a probability. The value (between 0.0 and 1.0) is a measure of belief (in the single occurrence case), or a measure of the distribution of occurrences (in the set case). The fine details of the semantics is the scope of probability and statistics, and the reader is directed towards his text of choice.  
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<ContinuousTruth-section,ContinuousTruth>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} value   !<<Real-section,Real>> [1..1]  !
-!===
-|=== 
-
-[[Truth-section]]
-.Truth Class
-[cols="1a"]
-|===
-|*Truth* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The root or truth classification trees. The only constant between the subclasses here is that 1.0 is TRUE, and 0.0 is FALSE. This makes Probability work nicely. Other algebraic tricks may be more appropriate to other version of "truth calculus", but for consistency sake, this value mapping should always be available. For example, the following semantic mappings to simple Booleans always work:
-
-{truthValue() > 0} = possibly true
-{truthValue() = 0} = never true
-
-{truthValue() < 1} = possibly false
-{truthValue() = 1} = never false
-
-{truthValue() < 1}AND{truthValue() > 0} = uncertain 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
-!===
-|=== 
-
-[[Boolean-section]]
-.Boolean Enumeration
-[cols="1a"]
-|===
-|*Boolean* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! boolean is the mathematical datatype associated with two-valued logic 
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! enumeration 
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   ! <<DiscreteTruth-section,DiscreteTruth>>   [] !
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} true   ! literal !one of two possible values of Boolean denoting the primitive value of true
- 
-!{set:cellbgcolor:#FFFFFF} false   ! literal !one of two possible values of Boolean denoting the primitive value of false 
-!===
-|=== 
-
-[[Logical-section]]
-.Logical Enumeration
-[cols="1a"]
-|===
-|*Logical* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Handy for a weak sort of 3 valued logic, where truth or falsity is not attributable to all well-formed statements.  
-!{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! enumeration  
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   ! <<DiscreteTruth-section,DiscreteTruth>>   [] !
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} TRUE   ! literal !
- 
-!{set:cellbgcolor:#FFFFFF} FALSE   ! literal !
- 
-!{set:cellbgcolor:#FFFFFF} MAYBE   ! literal !The interpretation of MAYBE is a point of semantic variation. One opinion would have it be interpreted as UNKNOWN, implying that certainty exist, but we just don't know what it is at the moment. This is not always appropriate. Even in such a black and white world, a logical when used as a static (class-wide) attribute, would be three valued: always true, always false, and sometimes. Thus, MAYBE can be interpreted as "maybe true, maybe not."
-
-In such cases a probability statement might be more appropriate, just not always available. 
-
-Equivalent to STEP's and SQL's Unknown.
-!===
-|===     
-
-
-
-
-
-
-
-
 

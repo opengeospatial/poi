@@ -106,7 +106,7 @@ NOTE: For geodetic and vertical _datums_ (<<datum-definition>>), the _object_ (<
 [[coordinate-system-definition]]
 === coordinate system::
 
-set of mathematical rules for specifying how _coordinates_ (<<coordinate-definition>>) are to be assigned to _points_ (<<point_definition>>)
+set of mathematical rules for specifying how _coordinates_ (<<coordinate-definition>>) are to be assigned to _points_
 
 [.source]
 <<ISO19111,clause 3.1.11>>
@@ -117,7 +117,7 @@ set of mathematical rules for specifying how _coordinates_ (<<coordinate-definit
 specification of a value _domain_ (<<domain-definition>>) with _operations_ (<<operation-definition>>) allowed on values in this _domain_ (<<domain-definition>>)
 
 [example] 
-Integer, Real, Boolean, String, Date and SG Point (conversion of data into a series of _codes_ (<<code-cefinition>>)).
+Integer, Real, Boolean, String, Date and SG Point (conversion of data into a series of _codes_).
 
 NOTE: Data types include primitive predefined types and user-definable types.
 
@@ -217,7 +217,7 @@ boundary represented by a set of _geometric primitives_ (<<geometric-primitive-d
 
 set of disjoint _geometric primitives_ (<<geometric-primitive-definition>>) where the boundary of each _geometric primitive_ (<<geometric-primitive-definition>>) can be represented as the union of other _geometric primitives_ (<<geometric-primitive-definition>>) of smaller dimensions within the same set
 
-NOTE: The _geometric primitives_ (<<geometric-primitive-definition>>) in the set are disjoint in the sense that no _direct position_ (<<direct-position-definition>>) is interior to more than one _geometric primitive_ (<<geometric-primitive-definition>>). The set is closed under boundary _operations_ (<<operation-definition>>), meaning that for each element in the _geometric complex_ (<<geometric-complex-definition>>), there is a collection (also a _geometric complex_ (<<geometric-complex-definition>>)) of _geometric primitives_ (<<geometric-primitive-definition>>) that represents the boundary of that element. Recall that the boundary of a _point_ (<<point-definition>>) (the only 0D primitive _object_ (<<object-definition>>) type in geometry) is empty. Thus, if the largest dimension _geometric primitive_ (<<geometric-primitive-definition>>) is a solid (3D), the composition of the boundary operator in this definition terminates after at most three steps. It is also the case that the boundary of any _object_ (<<object-definition>>) is a cycle.
+NOTE: The _geometric primitives_ (<<geometric-primitive-definition>>) in the set are disjoint in the sense that no _direct position_ (<<direct-position-definition>>) is interior to more than one _geometric primitive_ (<<geometric-primitive-definition>>). The set is closed under boundary _operations_ (<<operation-definition>>), meaning that for each element in the _geometric complex_ (<<geometric-complex-definition>>), there is a collection (also a _geometric complex_ (<<geometric-complex-definition>>)) of _geometric primitives_ (<<geometric-primitive-definition>>) that represents the boundary of that element. Recall that the boundary of a _point_ (the only 0D primitive _object_ (<<object-definition>>) type in geometry) is empty. Thus, if the largest dimension _geometric primitive_ (<<geometric-primitive-definition>>) is a solid (3D), the composition of the boundary operator in this definition terminates after at most three steps. It is also the case that the boundary of any _object_ (<<object-definition>>) is a cycle.
 
 [.source]
 <<ISO19107,clause 3.47>>
@@ -225,7 +225,7 @@ NOTE: The _geometric primitives_ (<<geometric-primitive-definition>>) in the set
 [[geometric-dimension-definition]]
 === geometric dimension::
 
-lagest number n such that each _poin_ (<<point-definition>>) in a set of _points_ (<<point-definition>>) can be associated with a subset that has that point in its interior and is topologically isomporphic to 𝔼n, Euclidean n-space
+lagest number n such that each _point_ in a set of _points_ can be associated with a subset that has that point in its interior and is topologically isomporphic to 𝔼n, Euclidean n-space
 
 [.source]
 <<ISO19107,clause 3.48>>
@@ -245,7 +245,7 @@ NOTE: A _geometric object_ (<<geometric-object-definition>>) consists of a _geom
 
 _geometric object_ (<<geometric-object-definition>>) representing a single, connected, homogeneous (isotopic) element of space
 
-NOTE: _Geometric primitives_ (<<geometric-primitive-definition>>) are non-decomposed _objects_ (<<object-definition>>) that present information about geometric configuration. They include _points_ (<<point-definition>>), curves, surfaces, and solids. Many _geometric objects_ (<<geometric-object-definition>>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a _geometric primitive_ (<<geometric-primitive-definition>>) is topological open, since the boundary _points_ (<<point-definition>>) are not isotropic to the interior _points_ (<<point-definition>>). Geometry is assumed to be closed. For _points_ (<<point-definition>>), the boundary is empty.
+NOTE: _Geometric primitives_ (<<geometric-primitive-definition>>) are non-decomposed _objects_ (<<object-definition>>) that present information about geometric configuration. They include _points_, curves, surfaces, and solids. Many _geometric objects_ (<<geometric-object-definition>>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a _geometric primitive_ (<<geometric-primitive-definition>>) is topological open, since the boundary _points_ are not isotropic to the interior _points_. Geometry is assumed to be closed. For _points_, the boundary is empty.
 
 [.source]
 <<ISO19107,clause 3.50>>
@@ -253,7 +253,7 @@ NOTE: _Geometric primitives_ (<<geometric-primitive-definition>>) are non-decomp
 [[geometric-set-definition]]
 === geometric set::
 
-set of _points_ (<<point-definition>>)
+set of _points_ 
 
 [.source]
 <<ISO19107,clause 3.53>>
@@ -265,9 +265,9 @@ particular _place_ (<<place-definition>>) or _position_ (<<position-definition>>
 
 NOTE: A _location_ (<<location-definition>>) identifies a geographic _place_.
 
-NOTE: _Locations_ (<<location-definition>>) are physically fixed _points_ (<<point-definition>>), typically on the surface of the Earth, although _locations_ (<<location-definition>>) can be relative to other, non-earth centric coordinate reference systems. 
+NOTE: _Locations_ (<<location-definition>>) are physically fixed _points_, typically on the surface of the Earth, although _locations_ (<<location-definition>>) can be relative to other, non-earth centric coordinate reference systems. 
 
-NOTE: _Locations_ (<<location-definition>>) can be a single _point_ (<<point-definition>>), a centroid, a minimum bounding rectangle, or a set of vectors. 
+NOTE: _Locations_ (<<location-definition>>) can be a single _point_, a centroid, a minimum bounding rectangle, or a set of vectors. 
 
 NOTE: A _location_ (<<location-definition>>) should be persistent over time and does not change. 
 
@@ -378,7 +378,7 @@ _location_ (<<location-definition>>) where one can find a _place_, product or se
 
 NOTE: A _POI_ (<<point-of-interest-definition>>) is typically identified by _name_ rather than by an _address_.
 
-NOTE: A _POI_ (<<point-of-interest-definition>>) is characterized by _type_, which may be used as a reference _point_ (<<point-definition>>) or a target in a _location_ (<<location-definition>>) based service request.
+NOTE: A _POI_ (<<point-of-interest-definition>>) is characterized by _type_, which may be used as a reference _point_ or a target in a _location_ (<<location-definition>>) based service request.
 
 NOTE: A _POI_ (<<point-of-interest-definition>>) does not exclude the labeling, identification, and tracking of persons and other physical _objects_ (<<object-definition>>) that have no permanent _location_ (<<location-definition>>).
 
@@ -388,9 +388,9 @@ destination of a route; such as, Boston
 [[position-definition]]
 === position::
 
-data type that describes a _point_ (<<point-definition>>) or _geometry_ potentially occupied by an _object_ (<<object-definition>>) or person
+data type that describes a _point_ or _geometry_ potentially occupied by an _object_ (<<object-definition>>) or person
 
-NOTE:  A _direct position_ (<<direct-position-definition>>) is a semantic subtype of _position_ (<<position-definition>>). _Direct positions_ (<<direct-position-definition>>) as described can only define a _point_ (<<point-definition>>), and therefore not all _positions_ (<<position-definition>>) can be represented by a _direct position_ (<<direct-position-definition>>). That is consistent with the is type of relation. An ISO 19107 geometry is also a _position_ (<<position-definition>>), but not a _direct position_ (<<direct-position-definition>>)
+NOTE:  A _direct position_ (<<direct-position-definition>>) is a semantic subtype of _position_ (<<position-definition>>). _Direct positions_ (<<direct-position-definition>>) as described can only define a _point_, and therefore not all _positions_ (<<position-definition>>) can be represented by a _direct position_ (<<direct-position-definition>>). That is consistent with the is type of relation. An ISO 19107 geometry is also a _position_ (<<position-definition>>), but not a _direct position_ (<<direct-position-definition>>)
 
 [.source]
 <<ISO19133>>

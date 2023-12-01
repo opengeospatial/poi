@@ -1,0 +1,106 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2023-12-01</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Filter encoding</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Filter encoding</title>
+  <uri type="src">https://www.iso.org/standard/42137.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42137:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42137.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19143</docidentifier>
+  <docidentifier type="iso-reference">ISO 19143(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19143:stage-90.93:ed-1</docidentifier>
+  <docnumber>19143</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2010</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2023-12-01</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Filter encoding</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Filter encoding</title>
+      <uri type="src">https://www.iso.org/standard/42137.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42137:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42137.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19143:2010</docidentifier>
+      <docidentifier type="iso-reference">ISO 19143:2010(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19143:stage-90.93:ed-1</docidentifier>
+      <docnumber>19143</docnumber>
+      <date type="published">
+        <on>2010-10</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19143:2010 describes an XML and KVP encoding of a system neutral syntax for expressing projections, selection and sorting clauses collectively called a query expression.
+These components are modular and intended to be used together or individually by other International Standards which reference ISO 19143:2010. 
+ISO 19143:2010 defines an abstract component, named AbstractQueryExpression, from which other specifications can subclass concrete query elements to implement query operations. 
+It also defines an additional abstract query component, named AbstractAdhocQueryExpresison, which is derived from AbstractQueryExpression and from which other specifications can subclass concrete query elements which follow the following query pattern: 
+- An abstract query element from which service specifications can subclass a concrete query element that implements a query operation that allows a client to specify a list of resource types, an optional projection clause, an optional selection clause, and an optional sorting clause to query a subset of resources that satisfy the selection clause.
+This pattern is referred to as an ad hoc query pattern since the server in not aware of the query until it is submitted for processing. This is in contrast to a stored query expression, which is stored and can be invoked by name or identifier. 
+ISO 19143:2010 also describes an XML and KVP encoding of a system-neutral representation of a select clause. The XML representation is easily validated, parsed and transformed into a server-specific language required to retrieve or modify object instances stored in some persistent object store. 
+ISO 19143:2010 defines the XML encoding for the following predicates.
+- A standard set of logical predicates: and, or and not.
+- A standard set of comparison predicates: equal to, not equal to, less than, less than or equal to, greater than, greater than or equal to, like, is null and between.
+- A standard set of spatial predicates: equal, disjoint, touches, within, overlaps, crosses, intersects, contains, within a specified distance, beyond a specified distance and BBOX.
+- A standard set of temporal predicates: after, before, begins, begun by, contains, during, ends, equals, meets, met by, overlaps and overlapped by.
+- A predicate to test whether the identifier of an object matches the specified value.
+ISO 19143:2010 defines the XML encoding of metadata that allows a service to declare which conformance classes, predicates, operators, operands and functions it supports. This metadata is referred to as Filter Capabilities.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2010</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 19143</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

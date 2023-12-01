@@ -1,0 +1,118 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2023-12-01</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Terminology</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Terminology</title>
+  <uri type="src">https://www.iso.org/standard/63541.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:63541:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/06/35/63541.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19104</docidentifier>
+  <docidentifier type="iso-reference">ISO 19104(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19104:stage-90.93:ed-1</docidentifier>
+  <docnumber>19104</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2016</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/TS 19104:2008</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/TS 19104:2008</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2023-12-01</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Terminology</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Terminology</title>
+      <uri type="src">https://www.iso.org/standard/63541.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:63541:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/06/35/63541.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19104:2016</docidentifier>
+      <docidentifier type="iso-reference">ISO 19104:2016(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19104:stage-90.93:ed-1</docidentifier>
+      <docnumber>19104</docnumber>
+      <date type="published">
+        <on>2016-10</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19104:2016 specifies requirements for the collection, management and publication of terminology in the field of geographic information.
+The scope of this document includes
+-      selection of concepts, harmonization of concepts and development of concept systems,
+-      structure and content of terminological entries,
+-      term selection,
+-      definition preparation,
+-      cultural and linguistic adaptation,
+-      layout and formatting requirements in rendered documents, and
+-      establishment and management of terminology registers.
+ISO 19104:2016 is applicable to International Standards and Technical Specifications in the field of geographic information.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2016</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/TS 19104:2008</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/TS 19104:2008</docidentifier>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>01.040.35</code>
+      <text>Information technology (Vocabularies)</text>
+    </ics>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 19104</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

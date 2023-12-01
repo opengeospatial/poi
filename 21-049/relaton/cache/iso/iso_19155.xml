@@ -1,0 +1,95 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2023-12-01</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Place Identifier (PI) architecture</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Place Identifier (PI) architecture</title>
+  <uri type="src">https://www.iso.org/standard/32573.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32573:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32573.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19155</docidentifier>
+  <docidentifier type="iso-reference">ISO 19155(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19155:stage-90.20:ed-1</docidentifier>
+  <docnumber>19155</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>20</substage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2023-12-01</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Place Identifier (PI) architecture</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Place Identifier (PI) architecture</title>
+      <uri type="src">https://www.iso.org/standard/32573.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32573:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32573.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19155:2012</docidentifier>
+      <docidentifier type="iso-reference">ISO 19155:2012(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19155:stage-90.20:ed-1</docidentifier>
+      <docnumber>19155</docnumber>
+      <date type="published">
+        <on>2012-11</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19155:2012 specifies an architecture that defines a reference model with an encoding method for an identifier of a place. The concept of "place" within ISO 19155:2012 includes "places" not only in the real world but also those in the virtual world. These "places" are identified using either coordinate identifiers, geographic identifiers, or virtual world identifiers such as URI. In ISO 19155:2012, an identifier of a place is referred to as a Place Identifier (PI).
+The reference model defines a mechanism to match multiple Place Identifiers to the same place. In addition, a data structure and set of service interfaces are also defined in this reference model.
+ISO 19155:2012 is applicable to location based services, emergency management services and other application domains that require a common architecture, across specific domains, for the representation of place descriptions using coordinate, geographic, or virtual world identifiers. </abstract>
+      <status>
+        <stage>90</stage>
+        <substage>20</substage>
+      </status>
+      <copyright>
+        <from>2012</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 19155</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

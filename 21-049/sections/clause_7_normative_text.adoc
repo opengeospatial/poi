@@ -18,8 +18,6 @@ The most relevant classes defined by this model are described below:
 
 In an implementation, this abstract class shall be substituted by a concrete class representing a feature type from an application schema associated with a domain of discourse (ISO 19109, ISO 19101).
 
-*<<AttributeType-section,AttributeType:>>*  A characteristic of a feature. The Feature Geometry is one type of attribute.
-
 include::../requirements/core/Req_Core_GeneralFeatureModel.adoc[]
 
 === Geometry
@@ -87,8 +85,8 @@ image::./images/POI_Extensions.png[align="center"]
 
 *<<POI_Payload-section,POIPayload:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
 
-*<<Payload_Schema-section,PayloadSchema:>>* The Payload Schema Class represents a syntactic model (schema) for a POI payload.
+*<<PayloadSchema-section,PayloadSchema:>>* The Payload Schema Class represents a syntactic model (schema) for a POI payload.
 
-*<<Payload_Definition-section,PayloadDefinition:>>* The Payload Definition Class represents a semantic model (ontology) for a POI payload.
+*<<PayloadDefinition-section,PayloadDefinition:>>* The Payload Definition Class represents a semantic model (ontology) for a POI payload.
 
 In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. A collection of data types and concepts defined by the <<ISO19103,ISO 19103>>, <<ISO19107,ISO 19107>>, <<ISO19109,ISO 19109>>, and <<ISO19115,ISO 19115>> Standards is provided in <<iso_data_dictionary_section,Annex B>>.
