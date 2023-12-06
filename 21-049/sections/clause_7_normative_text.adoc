@@ -4,7 +4,7 @@
 
 A Point of Interest (POI) is a Feature. Therefore, it is important to understand what a POI inherits from the OGC Feature model.
 
-The OGC Feature Model is defined in ISO 19109:2015 Geographic Information - Rules for application schema. A UML model showing applicable portions of the General Feature Model is provided in <<feature_model,Figure 3>>. 
+The OGC Feature Model is defined in <<iso19109,ISO 19109:2015 Geographic Information - Rules for application schema>>. A UML model showing applicable portions of the OGC Feature Model is provided in <<feature_model,Figure 3>>. 
 
 [[feature_model,reftext='Feature Model']]
 .Feature Model
@@ -22,7 +22,7 @@ include::../requirements/core/Req_Core_GeneralFeatureModel.adoc[]
 
 === Geometry
 
-The OGC Geometry model is defined in ISO 19107:2003 - Geographic Information - Spatial schema. While there is a new version of this standard, it has not been widely implemented. Therefore, the 2003 version has been used in this Standard.
+The OGC Geometry model is defined in <<iso19107,ISO 19107:2003 - Geographic Information - Spatial schema>>. While there is a new version of this standard, it has not been widely implemented. Therefore, the 2003 version has been used in this Standard.
 
 The OGC Geometry Model is capable of representing very complex geometries. Much  more complex than are needed for a POI. Therefore, POI geometries are restricted to Points, lines, and Polygons. <<geometry_model,Figure 4>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
 
@@ -45,9 +45,9 @@ include::../requirements/core/Req_Core_Geometry.adoc[]
 [[anyfeature_extension-section]]
 === POI ISO Extensions
 
-In this Standard we extend the General Feature Model to support the concept of a Point of Interest. 
+This Standard extends the OGC Feature Model to support the concept of a Point of Interest. These extensions are illustrated in <<poi_uml_model_iso_extensions>>.  
 
-[[poi_uml_model_iso_estensions,reftext='POI UML Model - ISO Extensions']]
+[[poi_uml_model_iso_extensions,reftext='POI UML Model - ISO Extensions']]
 .POI UML Model - ISO Extensions
 image::./images/ISO_Extensions.png[align="center"]
 
@@ -60,7 +60,7 @@ These extensions include further refinement of the _AnyFeature_ class through th
 [[poi_core-section]]
 === POI Class Model
 
-The following classes form the core of the POI model. These classes should be the same for all POIs.
+The following classes form the core of the POI model. These classes are the same for all POIs.
 
 [[poi_uml_model_core,reftext='POI UML Model - Core']]
 .POI UML Model - Core

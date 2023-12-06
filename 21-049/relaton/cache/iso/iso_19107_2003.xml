@@ -1,0 +1,62 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2023-12-06</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Spatial schema</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Spatial schema</title>
+  <uri type="src">https://www.iso.org/standard/26012.html</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26012.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19107:2003</docidentifier>
+  <docidentifier type="iso-reference">ISO 19107:2003(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19107:stage-95.99:ed-1</docidentifier>
+  <docnumber>19107</docnumber>
+  <date type="published">
+    <on>2003-05</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">ISO 19107:2003 specifies conceptual schemas for describing the spatial characteristics of geographic features, and a set of spatial operations consistent with these schemas. It treats vector geometry and topology up to three dimensions. It defines standard spatial operations for use in access, query, management, processing, and data exchange of geographic information for spatial (geometric and topological) objects of up to three topological dimensions embedded in coordinate spaces of up to three axes. </abstract>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2003</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19107:2019</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19107:2019</docidentifier>
+      <date type="circulated">
+        <on>2019-10-28</on>
+      </date>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 19107</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

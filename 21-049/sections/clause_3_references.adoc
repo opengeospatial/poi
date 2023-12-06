@@ -6,7 +6,7 @@ The following normative documents contain provisions that, through reference in 
 
 * [[[ISO19101-1,ISO 19101-1:2014]]]
 * [[[ISO19103,ISO 19103]]] 
-* [[[ISO19107,ISO 19107]]] 
+* [[[ISO19107,ISO 19107:2003]]] 
 * [[[ISO19109,ISO 19109:2015]]] 
 * [[[ISO19115,ISO 19115-1:2014]]] 
 * [[[ISO19507,ISO/IEC 19507:2012)]]]

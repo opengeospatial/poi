@@ -1,10 +1,10 @@
 [[conformance-section]]
 == Conformance
 
-This standard defines a Conceptual Model which is independent of any encoding or formatting techniques. The Standardization Targets for this standard are:
+This standard defines a <<conceptual-model-definition,Conceptual Model>> which is independent of any encoding or formatting techniques. The <<standardization-target-definition>> Standardization Targets for this standard are:
 
-. Conceptual Models (extended versions of this conceptual model)
-. Implementation Specifications (encodings of this conceptual model)
+. <<conceptual-model-definition,Conceptual Models>> (extended versions of this conceptual model)
+. <<implementation-specification-definition,Implementation Specifications>> (encodings of this conceptual model)
 
 === Conceptual Models
 
@@ -28,6 +28,6 @@ POI implementations will typically be a simplified representation of a more comp
 
 === Conformance Classes
 
-This standard identifies one "Core" conformance class. This conformance class defines the conformance criteria for the requirements defined in one "Core" requirements class. The tests this conformance class are documented in Annex A. These tests are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in Annex A for the Core Requirements Class.
+This standard identifies one "Core" <<conformance-class-definition,conformance class>>. This conformance class defines the conformance criteria for the requirements defined in one "Core" <<requirements-class-definition,requirements class>>. The tests this conformance class are documented in Annex A. These tests are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in Annex A for the Core Requirements Class.
 
 The POI Conceptual Model is defined by the POI UML model. This standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.

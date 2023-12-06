@@ -1,7 +1,8 @@
 == Terms and Definitions
-This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this Standard and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
 
-This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.ogc.org/files/?artifact_id=34762&version=2[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
+This document uses the terms defined in Sub-clause 5.3 of <<OGC06-121r9>>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word "`shall`" (not "`must`") is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
+
+This document also uses terms defined in the OGC Standard for Modular specifications (<<modspec,OGC 08-131r3>>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
 
 For the purposes of this document, the following additional terms and definitions apply.
 
@@ -82,6 +83,9 @@ model that defines _concepts_ (<<concept-definition>>) of a universe of discours
 
 [.source]
 <<ogcdr,OGC Definitions Register>>
+
+[[conformance-class-definition]]
+=== conformance class::
 
 [[coordinate-definition]]
 === coordinate::
@@ -258,6 +262,10 @@ set of _points_
 [.source]
 <<ISO19107,clause 3.53>>
 
+[[implementation-specification-definition]]
+=== implemenentation specification::
+
+
 [[location-definition]]
 === location::
 
@@ -405,6 +413,13 @@ Abby's car has the colour red, where "colour red" is a _property_ (<<property-de
 
 [.source]
 <<ISO19143,clause 4.21>>, Note 1 to entry has been added from ISO 19156, 4.15
+
+[[requirements-class-definition]]
+=== requirements class::
+
+[[standardization-target-definition]]
+=== standardization target::
+
 
 [[stereotype-definition]]
 === stereotype::

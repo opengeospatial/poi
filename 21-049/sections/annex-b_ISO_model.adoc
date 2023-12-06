@@ -6,7 +6,7 @@ ISO Technical Committee 211 maintains a harmonized UML model which covers many o
 
 The Data Dictionary tables in this section were software generated from the TC211 Hamonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.
 
-Note that some of the properties in the ISO model are not populated. Since the model is normative, the missing information cannot be included in this document until it is first included in the ISO model.
+Note that some of the properties in the ISO model are not populated. Since the model is normative, the missing information cannot be included in this document until it is first included in the ISO model by TC211.
 
 === General Feature Model 
 The following classes are defined in <<ISO19109,(ISO 19109:2015)>>
