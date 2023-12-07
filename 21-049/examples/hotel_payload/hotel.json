@@ -1,6 +1,15 @@
 {
 	"POI": {
 		"schema": "https://data.vlaanderen.be/doc/implementatiemodel/poi/",
+		"type": "Feature",
+		"geometry": {
+			"type" : "Point",
+			"coordinates" : [ 
+				51.099744,
+				2.588358 
+			] 
+		},
+		"featureID": 207383,
 		"hasFeatureOfInterest": [
 			{
 				"href":"https://opendata.visitflanders.org/sector/accommodation/base_registry"
@@ -26,6 +35,7 @@
 			"otherConstraints": "Modellicentie voor gratis hergebruik"
 		},
 		"hasPayload": {
+			"usesSchema": "https://genpoijson.org/schema/publicationpoi.json",
 			"onlineResources": [
 				{
 					"description":"Website van Parkhotel De Panne",
@@ -38,16 +48,16 @@
 			],
 			"locationInfo": {
 				"address": {
-					"city":"De Panne"
-					"country":"" 
-					"deliveryPoint":"A. Dumontlaan 30"
-					"postalCode":"8660"
+					"city":"De Panne",
+					"country":"" ,
+					"deliveryPoint":"A. Dumontlaan 30",
+					"postalCode":"8660",
 					"electronicMailAddress":"info@parkhoteldepanne.be" 
 				},
 				"phone": {
 					"number":"+32 58 41 41 41"
 				}
-			}
+			},
 			"alternateName": {
 				"name": "Parkhotel De Panne"
 			},

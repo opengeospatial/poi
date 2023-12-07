@@ -1,9 +1,37 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://geojson.org/schema/GeoJSON.json",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://genpoijson.org/schema/publicationpoi.json",
 	"description": "A draft JSON Schema for OGC POI Hotel-example.",
-	"title": "PointOfInterest Payload Hotel",
-	"properties": {
+	"title": "Generic POI Payload for POI Publication on Geoportal",
+	"type": "object",
+	"properties": {		
+		"onlineResources": {
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/CI_OnlineResource"
+			}
+		},
+		"locationInfo": {
+			"$ref": "#/$defs/CI_Contact"
+		},
+		"alternateName": {
+			"$ref": "#/$defs/GenericName"
+		},
+		"note": {"type": "string"},
+		"categories": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+				],
+				"properties": {
+					"categoryType": {"type": "string"},
+					"value": {"type": "string"}
+				}
+			}
+		}
+	},
+	"$defs": {
 		"GenericName": {
 			"type": "object",  
 			"required": [
@@ -57,44 +85,14 @@
 			],
 			"properties": {
 				"address": {
-					"$ref": "#/properties/CI_Address" 
+					"$ref": "#/$defs/CI_Address" 
 				},
 				"contactInstructions": {"type": "string"},
 				"contactType": {"type": "string"},
 				"hoursOfService": {"type": "string"},
 				"onlineResource": {"type": "string"},
 				"phone": {
-					"$ref": "#/properties/CI_Telephone"
-				}
-			}
-		},
-		"category": {
-			"type": "object",
-			"required": [
-			],
-			"properties": {
-				"categoryType": {"type": "string"},
-				"value": {"type": "string"}
-			}
-		}
-		"POI_Payload": {
-			"type": "object",
-			"id": "#PointOfInterest_Payload",
-			"required": [
-			],
-			"properties": {
-				"onlineResources": {
-					"$ref": "#/properties/CI_OnlineResource"
-				},
-				"locationInfo": {
-					"$ref": "#/properties/CI_Contact"
-				},
-				"alternateName": {
-					"$ref": "#/properties/GenericName"
-				},
-				"note": {"type": "string"},
-				"categories": {
-					"$ref": "#/properties/category"
+					"$ref": "#/$defs/CI_Telephone"
 				}
 			}
 		}
