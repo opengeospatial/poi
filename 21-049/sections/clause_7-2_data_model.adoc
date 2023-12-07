@@ -10,8 +10,9 @@ The following data types are used in the POI UML model.
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Characterstring  is a family  of  datatypes which  represent strings of symbols  from  standard character-sets. The semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.1.5. (ISO 19103) 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! Object 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
+!===
 |=== 
 
 [[Integer-section]]
@@ -21,8 +22,9 @@ The following data types are used in the POI UML model.
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! An exact integer value, with no fractional part. (ISO 19103) 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! Object 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
+!===
 |=== 
 
 [[Link-section]]
@@ -32,18 +34,20 @@ The following data types are used in the POI UML model.
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A data type which allows elements to be inserted into a document in order to create and describe links between resources. (derived from XML Linking Language (XLink) Version 1.1) 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! Object 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} href  !<<CharacterString-section,CharacterString>>  [1..1] !Supplies the URI to a remote resource (or resource fragment).
+!{set:cellbgcolor:#FFFFFF} href   !<<CharacterString-section,CharacterString>>  !Supplies the URI to a remote resource (or resource fragment).
  
 !{set:cellbgcolor:#FFFFFF} hreflang   !<<CharacterString-section,CharacterString>>  [0..1] !A hint indicating what the language of the result of dereferencing the link should be.
  
-!{set:cellbgcolor:#FFFFFF} rel   !<<CharacterString-section,CharacterString>>  [0..1] !The type or semantics of the relation.
+!{set:cellbgcolor:#FFFFFF} length   !<<Integer-section,Integer>>  [0..1] !This property is included but not defined in OGC API-Features and OGC API-Common. It has been included here for compatibility with OGC Web API Standards.
+ 
+!{set:cellbgcolor:#FFFFFF} rel   !<<CharacterString-section,CharacterString>>  !The type or semantics of the relation.
  
 !{set:cellbgcolor:#FFFFFF} title   !<<CharacterString-section,CharacterString>>  [0..1] !Used to label the destination of a link such that it can be used as a human-readable identifier.
  
@@ -58,8 +62,10 @@ The following data types are used in the POI UML model.
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Uid is a basic type that represents a unique identifier. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! Object 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
+!===
 |===   
+
 
 
