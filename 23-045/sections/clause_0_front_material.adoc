@@ -30,8 +30,9 @@ Attention is drawn to the possibility that some of the elements of this document
 [abstract]
 == Abstract
 
-<Insert Abstract Text here>
+POI-CM is an open conceptual data model for representing information about points of interest (POI). It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).
 
+The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of "points of interest." In the broadest terms, a point of interest is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.
 == Keywords
 
 //Keywords inserted here by Metanorma
@@ -61,6 +62,18 @@ NOTE: The security measures discussed in the following sections only provide var
 
 == Submitting organizations
 
+Digital Flanders (Government of Flanders)
+
+Google 
+
+HeazelTech   
+
+Pangaea Innovations 
+
+PEREY Research & Consulting  
+
+US Army Geospatial Center  
+
 // Submitting organizations inserted here by Metanorma
 
 == Submitters
@@ -69,7 +82,12 @@ All questions regarding this submission should be directed to the editor or the 
 
 |===
 |*Name* |*Affiliation*
-| |
+|Koen De Baets|Digital Flanders (Government of Flanders)
+|Howard Trickey|Google
+|Chuck Heazel|HeazelTech
+|Matthew Purss|Pangaea Innovations
+|Christine Perey|PEREY Research & Consulting
+|Amy Youmans|US Army Geospatial Center
 |===
 
 == Contributors
@@ -78,4 +96,12 @@ All questions regarding this submission should be directed to the editor or the 
 
 Additional contributors to this Standard include the following:
 
-Individual name(s), Organization
+|===
+|*Name* |*Affiliation*
+|Koen De Baets|Digital Flanders (Government of Flanders)
+|Howard Trickey|Google
+|Chuck Heazel|HeazelTech
+|Matthew Purss|Pangaea Innovations
+|Christine Perey|PEREY Research & Consulting
+|Amy Youmans|US Army Geospatial Center
+|===

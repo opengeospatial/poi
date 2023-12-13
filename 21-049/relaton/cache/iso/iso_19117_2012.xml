@@ -1,0 +1,60 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2023-12-01</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Portrayal</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Portrayal</title>
+  <uri type="src">https://www.iso.org/standard/46226.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:46226:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/04/62/46226.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19117:2012</docidentifier>
+  <docidentifier type="iso-reference">ISO 19117:2012(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19117:stage-90.93:ed-2</docidentifier>
+  <docnumber>19117</docnumber>
+  <date type="published">
+    <on>2012-12</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">ISO 19117:2012 specifies a conceptual schema for describing symbols, portrayal functions that map geospatial features to symbols, and the collection of symbols and portrayal functions into portrayal catalogues. This conceptual schema can be used in the design of portrayal systems. It allows feature data to be separate from portrayal data, permitting data to be portrayed in a dataset independent manner.</abstract>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19117:2005</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19117:2005</docidentifier>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 19117</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

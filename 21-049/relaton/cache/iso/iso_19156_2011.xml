@@ -1,0 +1,64 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2023-12-01</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Observations and measurements</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Observations and measurements</title>
+  <uri type="src">https://www.iso.org/standard/32574.html</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32574.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19156:2011</docidentifier>
+  <docidentifier type="iso-reference">ISO 19156:2011(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19156:stage-95.99:ed-1</docidentifier>
+  <docnumber>19156</docnumber>
+  <date type="published">
+    <on>2011-12</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">ISO 19156:2011 defines a conceptual schema for observations, and for features involved in sampling when making observations. These provide models for the exchange of information describing observation acts and their results, both within and between different scientific and technical communities.
+Observations commonly involve sampling of an ultimate feature-of-interest. ISO 19156:2011 defines a common set of sampling feature types classified primarily by topological dimension, as well as samples for ex-situ observations. The schema includes relationships between sampling features (sub-sampling, derived samples).
+ISO 19156:2011 concerns only externally visible interfaces and places no restriction on the underlying implementations other than what is needed to satisfy the interface specifications in the actual situation.</abstract>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2011</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19156:2023</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19156:2023</docidentifier>
+      <date type="circulated">
+        <on>2023-04-27</on>
+      </date>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 19156</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

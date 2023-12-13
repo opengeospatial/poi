@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" xml:lang="en">
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style>
+<html lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style>
   <!--
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -95,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 
 blockquote, q {
   quotes: none; }
-  blockquote:before, blockquote:after, q:before, q:after {
+  blockquote::before, blockquote::after, q::before, q::after {
     content: '';
     content: none; }
 
@@ -118,8 +117,16 @@ b, strong {
 div.document-stage-band, div.document-type-band {
   background-color: #333333; }
 
-a.FootnoteRef + a.FootnoteRef:before {
+a.FootnoteRef + a.FootnoteRef::before {
   content: ", ";
+  vertical-align: super; }
+
+a.TableFootnoteRef + a.TableFootnoteRef::before {
+  content: ", ";
+  vertical-align: super; }
+
+a.TableFootnoteRef, span.TableFootnoteRef,
+a.FootnoteRef, span.FootnoteRef {
   vertical-align: super; }
 
 .addition {
@@ -129,10 +136,45 @@ a.FootnoteRef + a.FootnoteRef:before {
   color: red;
   text-decoration: line-through; }
 
+/* code highlighting with line numbers */
+table.rouge-line-table td.rouge-gutter {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  padding-right: 1em; }
+
+table.rouge-line-table td.rouge-code {
+  -moz-user-select: all;
+  -ms-user-select: all;
+  -webkit-user-select: all;
+  user-select: all; }
+
+table.rouge-line-table,
+table.rouge-line-table th,
+table.rouge-line-table td {
+  width: auto;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+table.rouge-line-table pre {
+  margin: 0;
+  padding: 0;
+  overflow-x: visible;
+  font-size: 100%; }
+
 #standard-band {
   background-color: #3D9970; }
 
 #standard {
+  border-bottom: solid 3px #3D9970; }
+
+#draft-standard-band {
+  background-color: #3D9970; }
+
+#draft-standard {
   border-bottom: solid 3px #3D9970; }
 
 #abstract-specification-topic-band {
@@ -539,6 +581,15 @@ dl {
 #toc .h3, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h3 {
   padding-left: 50px; }
 
+#toc .h4, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h4 {
+  padding-left: 70px; }
+
+#toc .h5, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h5 {
+  padding-left: 90px; }
+
+#toc .h6, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h6 {
+  padding-left: 110px; }
+
 #toc .toc-active, #toc li:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover {
   background: #00335b;
   box-shadow: inset -5px 0px 10px -5px #00335b !important; }
@@ -557,7 +608,7 @@ dl {
 #toc li a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li a {
   font-size: 14px; }
 
-#toc li:before, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:before {
+#toc li::before, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li::before {
   content: " ";
   display: none; }
 
@@ -597,7 +648,7 @@ dl {
 
 @media screen and (min-width: 768px) {
   nav {
-    marign-right: 30px; } }
+    margin-right: 30px; } }
 
 @media screen and (min-width: 768px) {
   #toggle {
@@ -653,12 +704,16 @@ dl {
     font-weight: 700;
     font-size: 1em;
     text-align: center; }
-  .figure > img {
+  .figure > img, .figure > svg {
     margin-left: auto;
     margin-right: auto;
     display: block;
     max-width: 100%;
     height: auto; }
+
+table div.figure {
+  padding: 0;
+  margin: 0; }
 
 .document-stage-band {
   left: 0;
@@ -804,7 +859,7 @@ ul, ol {
 
 ul > li {
   list-style: none; }
-  ul > li:before {
+  ul > li::before {
     content: "\2014";
     display: inline-block;
     width: 1em;
@@ -838,7 +893,7 @@ table {
   table th, table td {
     padding: 1em; }
   table td.header {
-    font-weigth: 400; }
+    font-weight: 400; }
   table thead tr th {
     background-color: #5d99d6; }
   table td, table th {
@@ -851,7 +906,7 @@ table {
 .docstage-box table td {
   border: none; }
 
-table.recommendtest {
+table.modspec {
   width: 100%;
   font-weight: 300;
   margin: 1em 0 2em 0;
@@ -859,22 +914,22 @@ table.recommendtest {
   margin-right: auto;
   padding-right: 2em;
   color: #010d16; }
-  table.recommendtest, table.recommendtest th, table.recommendtest td {
+  table.modspec, table.modspec th, table.modspec td {
     border: none !important;
     font-size: 0.95em; }
-  table.recommendtest th, table.recommendtest td {
+  table.modspec th, table.modspec td {
     padding: 1em; }
-  table.recommendtest td.header {
-    font-weigth: 400; }
-  table.recommendtest tr:nth-child(even) {
+  table.modspec td.header {
+    font-weight: 400; }
+  table.modspec tr:nth-child(even) {
     background: #ffffff; }
-  table.recommendtest tr:nth-child(odd) {
+  table.modspec tr:nth-child(odd) {
     background: #ffffff; }
-  table.recommendtest thead tr th {
+  table.modspec thead tr th {
     background-color: #5d99d6; }
-  table.recommendtest td, table.recommendtest th {
+  table.modspec td, table.modspec th {
     padding: 1em; }
-  table.recommendtest td.header {
+  table.modspec td.header {
     font-weight: 400; }
 
 td > p:first-child, th > p:first-child {
@@ -916,12 +971,15 @@ a, a:visited {
 
 a:hover {
   color: #00335b;
-  background: white;
-  box-shadow: 3px 0 0 white, -3px 0 0 white; }
+  background: #39CCCC;
+  box-shadow: 3px 0 0 #39CCCC, -3px 0 0 #39CCCC; }
 
-::selection,
-::-moz-selection {
-  background: white;
+*::selection {
+  background: #39CCCC;
+  color: #00335b; }
+
+*::-moz-selection {
+  background: #39CCCC;
   color: #00335b; }
 
 /* Bibliograhy */
@@ -935,7 +993,13 @@ p.Biblio, p.NormRef {
   font-size: 1em;
   text-align: center; }
 
-pre {
+.ListTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  text-align: left; }
+
+pre, .sourcecode {
   font-family: "Space Mono",monospace;
   font-variant-ligatures: none;
   background-color: #f7f7f7;
@@ -969,7 +1033,7 @@ pre {
   .Admonition p, .Admonition.Important p, .Admonition.Warning p {
     margin: 0; }
 
-.figure, pre, .pseudocode {
+.figure, pre, .pseudocode, .sourcecode {
   background-color: #e1eef1;
   color: #424242;
   font-size: 0.8em; }
@@ -1148,7 +1212,45 @@ span.hi {
   background-color: yellow; }
 
 -->
-</style><title>User guide for OGC Points of Interest</title>
+</style><style><!--pre.sourcecode table td { padding: 5px; }
+pre.sourcecode table pre { margin: 0; }
+pre.sourcecode, pre.sourcecode .w {
+  color: #444444;
+}
+pre.sourcecode .cp {
+  color: #CC00A3;
+}
+pre.sourcecode .cs {
+  color: #CC00A3;
+}
+pre.sourcecode .c, pre.sourcecode .ch, pre.sourcecode .cd, pre.sourcecode .cm, pre.sourcecode .cpf, pre.sourcecode .c1 {
+  color: #1E90FF;
+}
+pre.sourcecode .kc {
+  color: #C34E00;
+}
+pre.sourcecode .kd {
+  color: #0000FF;
+}
+pre.sourcecode .kr {
+  color: #007575;
+}
+pre.sourcecode .k, pre.sourcecode .kn, pre.sourcecode .kp, pre.sourcecode .kt, pre.sourcecode .kv {
+  color: #0000FF;
+}
+pre.sourcecode .s, pre.sourcecode .sb, pre.sourcecode .sc, pre.sourcecode .ld, pre.sourcecode .sd, pre.sourcecode .s2, pre.sourcecode .se, pre.sourcecode .sh, pre.sourcecode .si, pre.sourcecode .sx, pre.sourcecode .sr, pre.sourcecode .s1, pre.sourcecode .ss {
+  color: #009C00;
+}
+pre.sourcecode .sa {
+  color: #0000FF;
+}
+pre.sourcecode .nb, pre.sourcecode .bp {
+  color: #C34E00;
+}
+pre.sourcecode .nt {
+  color: #0000FF;
+}
+--></style><title>User guide for OGC Points of Interest</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!--TOC script import-->
@@ -1157,7 +1259,7 @@ span.hi {
 </script>
 
 <!--Google fonts-->
-<link rel="preconnect" href="https://fonts.gstatic.com" /> 
+<link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500" rel="stylesheet" />
@@ -1166,9 +1268,7 @@ span.hi {
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
 <style class="anchorjs"></style>
-</head>
-  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
-    <div class="title-section"><div class="document-stage-band" id="draft-band">
+<meta name="keywords" content="ogcdoc, OGC document, API, openapi, html" /></head><body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container"><div class="title-section"><div class="document-stage-band" id="draft-band">
     <p class="document-stage">Draft</p>
 </div>
 
@@ -1178,7 +1278,7 @@ span.hi {
 
 
 
-  <div id="toggle"> <span>&#x2022;</span> </div>
+  <div id="toggle"> <span>•</span> </div>
 
   <header>
 
@@ -1222,8 +1322,8 @@ span.hi {
       <span class="label">Submission Date: </span> <span class="value">2023-08-16</span>
       <span class="label">Approval Date: </span> <span class="value">2017-06-29</span>
       <span class="label">Publication Date: </span> <span class="value">2017-01-23</span>
-      <span class="label">External identifier of this OGC&#xAE; document: <span class="docnumber value">http://www.opengis.net/doc/PER/POI_UG/1.0</span></span>
-      <span class="label">Internal identifier of this OGC&#xAE; document: <span class="docnumber value">22-053</span></span>
+      <span class="label">External identifier of this OGC® document: <span class="docnumber value">http://www.opengis.net/doc/PER/POI_UG/1.0</span></span>
+      <span class="label">Internal identifier of this OGC® document: <span class="docnumber value">22-053</span></span>
       
       
     </div>
@@ -1250,15 +1350,16 @@ span.hi {
   <div class="coverpage-warning">
     <div class="boilerplate-legal">
 
-    <div><h1 class="IntroTitle">Notice</h1>
+<div id="_notice"><h1 class="IntroTitle">Notice</h1>
 
-      <p id="_64cd6a1e-b42a-1d67-a46a-682ea4ad73ae">This document is not an OGC Standard. This document is an OGC User Guide and is therefore not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</p>
-      <p id="_4372936d-b228-917f-b16d-56d993e5f2dc">Further, an OGC User Guide should not be referenced as required or mandatory technology in procurements.</p>
-    </div>
+<p id="_64cd6a1e-b42a-1d67-a46a-682ea4ad73ae">This document is not an OGC Standard. This document is an OGC User Guide and is therefore not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</p>
 
-
-  </div>
+<p id="_4372936d-b228-917f-b16d-56d993e5f2dc">Further, an OGC User Guide should not be referenced as required or mandatory technology in procurements.</p>
+</div>
+</div>
  </div>
+         
+
 
 <div class="docstage-box">
   <table>
@@ -1273,205 +1374,88 @@ span.hi {
 <div class="info-section">
 <div class="copyright">
   <div class="boilerplate-copyright">
-    <div><h1 class="IntroTitle">Copyright notice</h1>
 
+<div id="_copyright_notice"><h1 class="IntroTitle">Copyright notice</h1>
 
-      <p id="_4380411b-aa89-cc2d-d393-9800128f1de1" style="text-align:center;">Copyright
-        &#xA9; 2023 Open Geospatial Consortium<br />
-        To obtain additional rights of use, visit
-        <a href="http://www.ogc.org/legal/">http://www.ogc.org/legal/</a></p>
-    </div>
-    <div><h1 class="IntroTitle">Note</h1>
+<p id="_f62db07f-2b06-424c-ad66-cb89130c4d9d" style="text-align:center;">Copyright © 2023 Open Geospatial Consortium<br />
+To obtain additional rights of use, visit
+<a href="https://www.ogc.org/legal">https://www.ogc.org/legal</a></p>
+</div>
 
-      <p id="_11e88dba-9912-1a89-a82d-7291bf232191" style="text-align:left;">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+<div id="_note"><h1 class="IntroTitle">Note</h1>
 
-      <p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" style="text-align:left;">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-    </div>
-  </div>
+<p id="_11e88dba-9912-1a89-a82d-7291bf232191" style="text-align:left;">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" style="text-align:left;">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</div>
+</div>
 </div>
 
 <div class="rule"></div>
 </div>
   </div>
-
-
-</header>
-
-      
-    </div>
-    <br />
-    <div class="prefatory-section"><div class="license">
+</header></div><br /><div class="prefatory-section"><div class="license">
   <div class="boilerplate-license">
-    <div><h1 class="IntroTitle">License Agreement</h1>
 
+<div id="_license_agreement"><h1 class="IntroTitle">License Agreement</h1>
 
-      <p id="_e8566381-218f-c22d-320d-4d0371bfd58f">Permission is hereby granted by the Open Geospatial
-        Consortium, (&#x201C;Licensor&#x201D;), free of charge and subject to the terms set
-        forth below, to any person obtaining a copy of this Intellectual Property and
-        any associated documentation, to deal in the Intellectual Property without
-        restriction (except as set forth below), including without limitation the
-        rights to implement, use, copy, modify, merge, publish, distribute, and/or
-        sublicense copies of the Intellectual Property, and to permit persons to whom
-        the Intellectual Property is furnished to do so, provided that all copyright notices
-        on the intellectual property are retained intact and that each person to whom
-        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
-
-      <p id="_52ebb386-d365-27d0-d76d-a59ac165fc4d">If you modify the Intellectual Property, all copies of
-        the modified Intellectual Property must include, in addition to the above
-        copyright notice, a notice that the Intellectual Property includes
-        modifications that have not been approved or adopted by LICENSOR.</p>
-
-      <p id="_178f14b4-0718-a5b8-09cd-84f8f4b756ed">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
-        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
-        THE INTELLECTUAL PROPERTY IS PROVIDED &#x201C;AS
-        IS&#x201D;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
-        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
-        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
-        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
-        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER&#x2019;S OWN RISK. IN NO
-        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
-        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
-        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
-        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
-        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
-        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
-        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
-
-      <p id="_2ad7fe27-9ae4-52c5-9dd9-faa4004247fb">This license is effective until terminated. You may
-        terminate it at any time by destroying the Intellectual Property together with
-        all copies in any form. The license will also terminate if you fail to comply
-        with any term or condition of this Agreement. Except as provided in the
-        following sentence, no such termination of this license shall require the
-        termination of any third party end-user sublicense to the Intellectual Property
-        which is in force as of the date of notice of such termination. In addition,
-        should the Intellectual Property, or the operation of the Intellectual
-        Property, infringe, or in LICENSOR&#x2019;s sole opinion be
-        likely to infringe, any patent, copyright, trademark or other right of a third
-        party, you agree that LICENSOR, in its sole discretion, may terminate this
-        license without any compensation or liability to you, your licensees or any
-        other party. You agree upon termination of any kind to destroy or cause to be
-        destroyed the Intellectual Property together with all copies in any form,
-        whether held by you or by any third party.</p>
-
-      <p id="_3254c815-179c-5f54-9a01-b8e964837171">Except as contained in this notice, the name of
-        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
-        Property shall not be used in advertising or otherwise to promote the sale, use
-        or other dealings in this Intellectual Property without prior written
-        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
-        all times be the sole entity that may authorize you or any third party to use
-        certification marks, trademarks or other special designations to indicate
-        compliance with any LICENSOR standards or specifications.
-        This Agreement is
-        governed by the laws of the Commonwealth of Massachusetts. The application to
-        this Agreement of the United Nations Convention on Contracts for the
-        International Sale of Goods is hereby expressly excluded. In the event any
-        provision of this Agreement shall be deemed unenforceable, void or invalid, such
-        provision shall be modified so as to make it valid and enforceable, and as so
-        modified the entire Agreement shall remain in full force and effect. No
-        decision, action or inaction by LICENSOR shall be construed to be a waiver of
-        any rights or remedies available to it.</p>
-
-      <p id="_4fa1ef5b-3dd5-7a05-3c68-bca93a0f14bb">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
-    </div>
-  </div>
+<p id="_f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <a href="https://www.ogc.org/license">https://www.ogc.org/license</a></p>
+</div>
+</div>
 
 
 
 </div>
 
 <nav>
-  <h1 id="content">Contents</h1>
-  <div id="toc"><ul><li class="h1"><a href="#toc0">      I.&#xA0; Keywords</a></li><li class="h1"><a href="#toc1">      II.&#xA0; Security considerations</a></li><li class="h1"><a href="#toc2">      III.&#xA0; Submitting Organizations</a></li><li class="h1"><a href="#toc3">      IV.&#xA0; Abstract</a></li><li class="h1"><a href="#toc4">      1.&#xA0; Scope</a></li><li class="h1"><a href="#toc5">      2.&#xA0; Normative references</a></li><li class="h1"><a href="#toc6">      3.&#xA0; Introduction</a></li><li class="h1"><a href="#toc7">      4.&#xA0; How To Use This Resource</a></li><li class="h1"><a href="#toc8">      5.&#xA0; Payload: Nonstandard Attributes</a></li><li class="h2"><a href="#toc9">      5.1.&#xA0; Using POI_Payload</a></li><li class="h2"><a href="#toc10">      5.2.&#xA0; Recommended Schema and Semantics for Common Nonstandard Attributes</a></li></ul></div>
+  <div id="toc"><h1 class="IntroTitle">Contents</h1><ul><li class="h1"><a href="#_e05dabcc-110d-44e4-a47f-27d0e998a5d9">      I.  Keywords</a></li>
+<li class="h1"><a href="#_9af30c92-2e8d-4614-9ceb-23efe02b2aca">      II.  Security considerations</a></li>
+<li class="h1"><a href="#_1bde0ad0-4e7b-4d4b-88a5-1862d37b2491">      III.  Submitting Organizations</a></li>
+<li class="h1"><a href="#_e57e52f7-6d38-4529-b6c8-96bdbe5c256b">      IV.  Abstract</a></li>
+<li class="h1"><a href="#_e97c8018-4232-431e-9cb0-6732ad5fc647">      1.  Scope</a></li>
+<li class="h1"><a href="#_213eeecb-11ed-4954-9183-7cc2c5fda9dd">      2.  Normative references</a></li>
+<li class="h1"><a href="#_4a9f3d55-7cd5-4527-9881-918371b49b20">      3.  Introduction</a></li>
+<li class="h1"><a href="#_c9c0fcc5-b466-4ecc-a40f-14e45d003aaf">      4.  How To Use This Resource</a></li>
+<li class="h1"><a href="#_e06f70a9-09b6-47d7-aca6-4871d7560669">      5.  Payload: Nonstandard Attributes</a></li>
+<li class="h2"><a href="#_13a8eb4f-ac20-461f-ae18-20f40962da7b">      5.1.  Using POI_Payload</a></li>
+<li class="h2"><a href="#_5e45f33d-b51b-4e9a-81ba-be83e4327334">      5.2.  Recommended Schema and Semantics for Common Nonstandard Attributes</a></li>
+<li class="h1"><a href="#_b4752d4c-9f84-452b-a74e-1cd0d60b5643">      6.  Choose Restaurant Use Case</a></li>
+<li class="h2"><a href="#_4f828eb9-28d2-4557-8acd-e2071c78ea0f">      6.1.  Use Case Overview</a></li>
+<li class="h2"><a href="#_5a854fa2-dc1a-4063-8cc1-0cbbb5bf327e">      6.2.  Nonstandard Attributes for Restaurant POIs</a></li>
+<li class="h2"><a href="#_49cda3bb-ff04-44c6-99b5-8cfa44bdf153">      6.3.  Example</a></li></ul></div>
 
 </nav>
 
 
 <div class="rule toc"></div>
-
-      
-    </div>
-    <br />
-    <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-      <div class="authority">
-  
-  
-
-  
+</div><br /><main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button><div class="authority">
 
 
 
 
-  <div class="boilerplate-feedback">
 
-  </div>
+<div class="boilerplate-feedback">
+
 </div>
-      <div class="Section3" id="_e76738ef-5748-4a8c-837c-45753e0a2ea8">
-        <h1 class="IntroTitle" id="toc0">I.&#xA0; Keywords</h1>
-        <p>The following are keywords to be used by search engines and
-    document catalogues.</p>
-        <p>ogcdoc, OGC document, API, openapi, html</p>
-      </div>
-      <div class="Section3" id="_3a09f4f4-84f8-f5b1-320b-1073abee5ebb">
-        <h1 class="IntroTitle" id="toc1">II.&#xA0; Security considerations</h1>
-        <p id="_e88b1376-d0f4-5147-cf72-d44500f21228">No security considerations have been made for this document.</p>
-      </div>
-      <div class="Section3" id="_68cb94be-02a8-4f17-8273-5f4cc5db4efd">
-        <h1 class="IntroTitle" id="toc2">III.&#xA0; Submitting Organizations</h1>
-        <p>The following organizations submitted this Document to the
-   Open Geospatial Consortium (OGC):</p>
-        <ul><li>organization_1</li>
-<li>organization_2</li>
-<li>organization_3</li>
-<li>etc.</li></ul>
-      </div>
-      <div class="Section3" id="abstract_section">
-        <h1 class="IntroTitle" id="toc3">IV.&#xA0; Abstract</h1>
-        <p id="_497eb1d7-c4ca-4c80-d749-fb7188efa7b1">POI-CM is an open conceptual data model for representing information about points of interest (POI). It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p>
-        <p id="_293d61e8-4696-fe49-c0ab-fadc793ab447">The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of &#x201C;points of interest.&#x201D; In the broadest terms, a point of interest is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
-        <p id="_48ee43bd-1142-53b7-5a7b-de06930a4a6e">This Users Guide provides extended explanations and examples for the individual concepts that are defined in the POI Conceptual Model Standard. Both the Conceptual Model Standard and this Users Guide are mutually linked to facilitate navigation between corresponding sections in these documents.</p>
-      </div>
-      <p class="zzSTDTitle1">User guide for OGC Points of Interest</p>
-      <div id="ug_scope_section">
-        <h1 id="toc4">1.&#xA0; Scope</h1>
-        <p id="_302e439f-95fa-8ba4-aebd-2174d7fcb83a">This document provides Engineering Guidance on the use of the POI Conceptual Model Standard.</p>
-        <p id="_4f4f7fdf-8599-422d-ba1b-1e754ba67497">The OGC POI Conceptual Model Standard specifies the representation of points of interest (POI) models. The POI Conceptual Model is expected to be the basis for a number of future implementation standards in which subsets of the Conceptual Model can be implemented. These future standards will be published separately to enable consistent and efficient storage and exchange of data.</p>
-        <p id="_6d4a55a7-10a5-957b-0881-b57118c85192">The POI Conceptual Model Standard was designed to be concise and easy to use. As a result, most non-normative content has been removed. The purpose of this Users Guide is to capture that non-normative content and make it easy to access if and when needed.</p>
-      </div>
-      <div><h1 id="toc5">2.&#xA0; Normative references</h1>
+</div><br /><div class="Section3" id="_4fd514ef-6f78-4f34-aac0-047f6bf346ba"><h1 class="IntroTitle" id="_e05dabcc-110d-44e4-a47f-27d0e998a5d9">I.  Keywords</h1><p>The following are keywords to be used by search engines and document catalogues.</p><p>ogcdoc, OGC document, API, openapi, html</p></div><div class="Section3" id="_0a33c0ec-749a-f4b9-bfc8-743583a63f36"><h1 class="IntroTitle" id="_9af30c92-2e8d-4614-9ceb-23efe02b2aca">II.  Security considerations</h1><p id="_e88b1376-d0f4-5147-cf72-d44500f21228">No security considerations have been made for this document.</p></div><div class="Section3" id="_49275361-72bc-4dda-bfa5-98905b5f22c8"><h1 class="IntroTitle" id="_1bde0ad0-4e7b-4d4b-88a5-1862d37b2491">III.  Submitting Organizations</h1><p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><ul><li>Digital Flancers</li>
+<li>Google</li>
+<li>HeazelTec</li>
+<li>Pangaea Innovations</li>
+<li>PEREY Research  Consulting</li>
+<li>US Army Geospatial Center</li></ul></div><div class="Section3" id="abstract_section"><h1 class="IntroTitle" id="_e57e52f7-6d38-4529-b6c8-96bdbe5c256b">IV.  Abstract</h1><p id="_497eb1d7-c4ca-4c80-d749-fb7188efa7b1">POI-CM is an open conceptual data model for representing information about points of interest (POI). It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p><p id="_293d61e8-4696-fe49-c0ab-fadc793ab447">The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.” In the broadest terms, a point of interest is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p><p id="_48ee43bd-1142-53b7-5a7b-de06930a4a6e">This Users Guide provides extended explanations and examples for the individual concepts that are defined in the POI Conceptual Model Standard. Both the Conceptual Model Standard and this Users Guide are mutually linked to facilitate navigation between corresponding sections in these documents.</p></div><div id="ug_scope_section"><h1 id="_e97c8018-4232-431e-9cb0-6732ad5fc647">1.  Scope</h1><p id="_302e439f-95fa-8ba4-aebd-2174d7fcb83a">This document provides Engineering Guidance on the use of the POI Conceptual Model Standard.</p><p id="_4f4f7fdf-8599-422d-ba1b-1e754ba67497">The OGC POI Conceptual Model Standard specifies the representation of points of interest (POI) models. The POI Conceptual Model is expected to be the basis for a number of future implementation standards in which subsets of the Conceptual Model can be implemented. These future standards will be published separately to enable consistent and efficient storage and exchange of data.</p><p id="_6d4a55a7-10a5-957b-0881-b57118c85192">The POI Conceptual Model Standard was designed to be concise and easy to use. As a result, most non-normative content has been removed. The purpose of this Users Guide is to capture that non-normative content and make it easy to access if and when needed.</p></div><div><h1 id="_213eeecb-11ed-4954-9183-7cc2c5fda9dd">2.  Normative references</h1>
 <p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
- <p id="rfc3339" class="NormRef">G. Klyne, C. Newman: RFC 3339, <i>Date and Time on the Internet: Timestamps</i>. <span>Internet Engineering Task Force</span> (2002). <a href="https://www.rfc-editor.org/info/rfc3339">https://www.rfc-editor.org/info/rfc3339</a></p>
- <p id="rfc7946" class="NormRef">H. Butler, M. Daly, A. Doyle, S. Gillies, S. Hagen, T. Schaub: RFC 7946, <i>The GeoJSON Format</i>. <span>Internet Engineering Task Force</span> (2016). <a href="https://www.rfc-editor.org/info/rfc7946">https://www.rfc-editor.org/info/rfc7946</a></p>
-<p id="iso19103" class="NormRef">ISO: ISO 19103:2015, Geographic Information &#x2013; Conceptual Schema Language</p>
-<p id="iso19107" class="NormRef">ISO: ISO 19107:2003, Geographic Information &#x2013; Spatial Schema</p>
-<p id="iso19109" class="NormRef">ISO: ISO 19109:2015, Geographic Information &#x2013; Rules for Application Schemas</p>
+<p id="rfc3339" class="NormRef">G. Klyne, C. Newman: IETF RFC 3339, <i>Date and Time on the Internet: Timestamps</i>. RFC Publisher (2002). <a href="https://www.rfc-editor.org/info/rfc3339">https://www.rfc-editor.org/info/rfc3339</a>.</p>
+<p id="rfc7946" class="NormRef">H. Butler, M. Daly, A. Doyle, S. Gillies, S. Hagen, T. Schaub: IETF RFC 7946, <i>The GeoJSON Format</i>. RFC Publisher (2016). <a href="https://www.rfc-editor.org/info/rfc7946">https://www.rfc-editor.org/info/rfc7946</a>.</p>
+<p id="iso19103" class="NormRef">ISO: ISO 19103:2015, Geographic Information – Conceptual Schema Language</p>
+<p id="iso19107" class="NormRef">ISO: ISO 19107:2003, Geographic Information – Spatial Schema</p>
+<p id="iso19109" class="NormRef">ISO: ISO 19109:2015, Geographic Information – Rules for Application Schemas</p>
 <p id="citygml" class="NormRef">OGC: the OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard, OGC document 20-010</p>
-<p id="omguml" class="NormRef">OMG: the OMG&#xAE; Unified Modeling Language, Version 2.5, 2015, <a href="https://www.omg.org/spec/UML">https://www.omg.org/spec/UML</a></p>
-</div>
-      <div id="ug_introduction_section">
-        <h1 id="toc6">3.&#xA0; Introduction</h1>
-        <p id="_c2478c2e-ffa2-a9ff-f1e4-600335204190">There are many systems and applications that need to have information about locations in the world. For example, such &#x201C;point of interest&#x201D; (POI) data is needed in navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers, among many others.</p>
-        <p id="_dcd98b43-9cc8-e37b-4d9f-c0abde52b930">POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.</p>
-        <p id="_abbb411b-2114-107e-aa05-7d066dfdfbef">POI-CM is a common semantic information model for the representation of POI objects that can be shared across many use cases. The ability for a POI using this conceptual model to be shared and reused is especially important with respect to the cost-effective sustainable maintenance of POI set models, allowing the possibility of selling the same data to customers from different application fields.</p>
-        <p id="_1c3f72ca-2d6e-6a4d-7cc3-3cbbfde9060b">POI-CM is an open conceptual data model for the storage and exchange of POI models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) <a href="https://github.com/ISO-TC211/HMMG">conceptual model standards</a> for spatial and temporal data. Building on the ISO fundation assures that the features described in the POI Models share the same spatial-temporal universe as features described by related standards (e.g., &lt;&lt;citygml,CityGML..).</p>
-        <p id="_15006433-4441-0c2b-691f-1ab566358186">A POI is not a dataset. Rather, it is a feature type that enhances an existing dataset of features. POI-CM builds on the ISO General Feature Model (<a href="#iso19109">ISO 10109</a>) and the ISO Geometry Model (<a href="#iso19107">ISO 19107</a>). To avoid reinventing things, POI-CM also borrows some classes from ISO Common Data Types (<a href="#iso19103">ISO 19103</a>) and <a href="#citygml">OGC CityGML 3.0</a>.</p>
-        <p id="_2ee0921d-f2d3-e38e-65c8-9d0dbf619cbc">The POI Conceptual Model standard defines the conceptual model in UML and is the focus of this Users Guide. The the future, separate implementation standards can be published for each encoding to be defined. This separation permits generality as well as specificity. The first POI implementation standard will describe the JSON encoding. Other implementation standards (e.g. for relational database schema) are expected to follow.</p>
-      </div>
-      <div id="ug_usage_section">
-        <h1 id="toc7">4.&#xA0; How To Use This Resource</h1>
-        <p id="_a310eff2-8b31-1320-c7aa-d1a4668c6be1">The Users Guide to the POI Conceptual Model Standard is not intended to be read from start to finish. Rather, it is a resource structured to provide quick answers to questions that an implementer may have about the POI-CM Standard.</p>
-        <p id="_20d38b02-0784-fc66-55d6-06c5ce44a3b4">The POI-CM Standard includes hyperlinks that can be used to navigate directly to relevant sections of the Users Guide.</p>
-        <p id="_ecebc6c7-790d-336c-e76c-2bc18a14a9e3">Some content in the Users Guide has been copied from the POI Conceptual Model Standard to make the content more accessible to the user. In order to make clear which content in the Users Guide has been copied, the copied text is provided within grey boxes.</p>
-      </div>
-      <div id="ug_nonstandard_attributes_section">
-        <h1 id="toc8">5.&#xA0; Payload: Nonstandard Attributes</h1>
-        <p id="_1eab22c8-1735-c095-9d06-e7fbfb26ebfa">An <i>attribute</i> is a named property of a feature. While this POI Conceptual Model Standard specifies some standard attributes (e.g., lifetime attributes), most applications will need to define and use some attributes that are not normatively defined by the standard. The mechanism for including non-standard attributes in a POI is to use the <b>POI_Payload</b> property.</p>
-        <div id="_using_poi_payload"><h2 id="toc9">5.1.&#xA0; Using POI_Payload</h2>
+<p id="omguml" class="NormRef">OMG: the OMG® Unified Modeling Language, Version 2.5, 2015, <a href="https://www.omg.org/spec/UML">https://www.omg.org/spec/UML</a></p>
+</div><div id="ug_introduction_section"><h1 id="_4a9f3d55-7cd5-4527-9881-918371b49b20">3.  Introduction</h1><p id="_c2478c2e-ffa2-a9ff-f1e4-600335204190">There are many systems and applications that need to have information about locations in the world. For example, such “point of interest” (POI) data is needed in navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers, among many others.</p><p id="_dcd98b43-9cc8-e37b-4d9f-c0abde52b930">POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This specification defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.</p><p id="_abbb411b-2114-107e-aa05-7d066dfdfbef">POI-CM is a common semantic information model for the representation of POI objects that can be shared across many use cases. The ability for a POI using this conceptual model to be shared and reused is especially important with respect to the cost-effective sustainable maintenance of POI set models, allowing the possibility of selling the same data to customers from different application fields.</p><p id="_1c3f72ca-2d6e-6a4d-7cc3-3cbbfde9060b">POI-CM is an open conceptual data model for the storage and exchange of POI models. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) <a href="https://github.com/ISO-TC211/HMMG">conceptual model standards</a> for spatial and temporal data. Building on the ISO fundation assures that the features described in the POI Models share the same spatial-temporal universe as features described by related standards (e.g., &#x3c;&#x3c;citygml,CityGML..).</p><p id="_15006433-4441-0c2b-691f-1ab566358186">A POI is not a dataset. Rather, it is a feature type that enhances an existing dataset of features. POI-CM builds on the ISO General Feature Model (<a href="#iso19109">ISO 10109</a>) and the ISO Geometry Model (<a href="#iso19107">ISO 19107</a>). To avoid reinventing things, POI-CM also borrows some classes from ISO Common Data Types (<a href="#iso19103">ISO 19103</a>) and <a href="#citygml">OGC CityGML 3.0</a>.</p><p id="_2ee0921d-f2d3-e38e-65c8-9d0dbf619cbc">The POI Conceptual Model standard defines the conceptual model in UML and is the focus of this Users Guide. The the future, separate implementation standards can be published for each encoding to be defined. This separation permits generality as well as specificity. The first POI implementation standard will describe the JSON encoding. Other implementation standards (e.g. for relational database schema) are expected to follow.</p></div><div id="ug_usage_section"><h1 id="_c9c0fcc5-b466-4ecc-a40f-14e45d003aaf">4.  How To Use This Resource</h1><p id="_a310eff2-8b31-1320-c7aa-d1a4668c6be1">The Users Guide to the POI Conceptual Model Standard is not intended to be read from start to finish. Rather, it is a resource structured to provide quick answers to questions that an implementer may have about the POI-CM Standard.</p><p id="_20d38b02-0784-fc66-55d6-06c5ce44a3b4">The POI-CM Standard includes hyperlinks that can be used to navigate directly to relevant sections of the Users Guide.</p><p id="_ecebc6c7-790d-336c-e76c-2bc18a14a9e3">Some content in the Users Guide has been copied from the POI Conceptual Model Standard to make the content more accessible to the user. In order to make clear which content in the Users Guide has been copied, the copied text is provided within grey boxes.</p></div><div id="ug_nonstandard_attributes_section"><h1 id="_e06f70a9-09b6-47d7-aca6-4871d7560669">5.  Payload: Nonstandard Attributes</h1><p id="_1eab22c8-1735-c095-9d06-e7fbfb26ebfa">An <i>attribute</i> is a named property of a feature. While this POI Conceptual Model Standard specifies some standard attributes (e.g., lifetime attributes), most applications will need to define and use some attributes that are not normatively defined by the standard. The mechanism for including non-standard attributes in a POI is to use the <b>POI_Payload</b> property.</p><div id="_using_poi_payload"><h2 id="_13a8eb4f-ac20-461f-ae18-20f40962da7b">5.1.  Using POI_Payload</h2>
 
 <p id="_671f4d1e-fd5b-ca9f-6d68-b324887f2da1">A <b>POI_Payload</b> is only partially specified in this POI Conceptual Model Standard. These properties are specified:</p>
 
-<dl id="_94b8befc-4924-1ee6-cac9-983709549e1d"><dt><p>usesSchema</p></dt><dd><p id="_3bc2088c-4b71-a100-1093-5e39060ed276">The value identifies a <i>schema</i> for the payload. How this idenfication is done and what the schema looks like depends on the particular implentation technology used. We&#x2019;ll see some examples below. The schema describes the <i>syntax</i> for the other properties of the payload, and the value for identifying the schema is typically a <i>URI</i>.</p>
+<dl id="_94b8befc-4924-1ee6-cac9-983709549e1d"><dt><p>usesSchema</p></dt><dd><p id="_3bc2088c-4b71-a100-1093-5e39060ed276">The value identifies a <i>schema</i> for the payload. How this idenfication is done and what the schema looks like depends on the particular implentation technology used. We’ll see some examples below. The schema describes the <i>syntax</i> for the other properties of the payload, and the value for identifying the schema is typically a <i>URI</i>.</p>
 </dd><dt><p>hasDefinition</p></dt><dd><p id="_2aec9f3f-ca9a-b575-f9e0-0c504e9cbbbf">The value is a companion to the schema referenced by <b>usesSchema</b>, and it describes the <i>semantics</i> of the various payload fields. Typically this will be plain text descriptions of the properties, what standards they adhere to, etc.</p>
 </dd></dl>
 
@@ -1481,20 +1465,19 @@ span.hi {
 
 <p id="_a991fa9e-e1f0-7afd-5d2c-8ea43fac976d">Suppose the implementation technology is JSON. Here is how the above payload might be used in a POI expressed in JSON:</p>
 
-<pre id="_91405bef-36e5-a10b-4067-04bd74e210c8" class="prettyprint "><br /><br />&#xA0;&#xA0; {<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "type": "Feature",<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "geometry": {"type": "Point", "coordinates": {45.14, -94.69}},<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "properties": {<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "featureID": 693842,<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "name": {"name" : "Midtown Library"},<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "contactInfo" : {"role": "city representative"},<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "hasFeatureOfInterest": {"href": ""},<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "hasPayload": {<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "usesSchema" : "https://example.org/schema/egpoi.json",<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "hasDefinition" : "https://example.org/schemadef/egpoi",<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "isPublic:" : true<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }<br />&#xA0;&#xA0; }</pre><p class="SourceTitle" style="text-align:center;">Figure 1&#xA0;&#x2014; POI Example of a POI with a POI_Payload (JSON)</p>
+<pre id="_ccf139ea-bfba-96ea-7876-5abea4b5ecf1" class="sourcecode">{<br />      "type": "Feature",<br />      "geometry": {"type": "Point", "coordinates": {45.14, -94.69}},<br />      "properties": {<br />         "featureID": 693842,<br />         "name": {"name" : "Midtown Library"},<br />         "contactInfo" : {"role": "city representative"},<br />         "hasFeatureOfInterest": {"href": ""},<br />         "hasPayload": {<br />           "usesSchema" : "https://example.org/schema/egpoi.json",<br />           "hasDefinition" : "https://example.org/schemadef/egpoi",<br />           "isPublic:" : true<br />         }<br />      }<br />   }</pre><p class="SourceTitle" style="text-align:center;">Figure 1 — POI Example of a POI with a POI_Payload (JSON)</p>
 
 
 <p id="_f3a1f548-efe7-bd0c-babd-46e0be5d2c14">The value of the <b>usesSchema</b> property should reference a schema that might look like this:</p>
 
-<pre id="_fcccf849-3bc4-01fa-5cd9-c209aa1ecb96" class="prettyprint "><br /><br />&#xA0; {<br />&#xA0;&#xA0;&#xA0; "$schema": "http://json-schema.org/draft/2020-12/schema#",<br />&#xA0;&#xA0;&#xA0; "$id": "https://example.org/schema/egpoi.json",<br />&#xA0;&#xA0;&#xA0; "title": "POI Payload for POI with IsPublic property",<br />&#xA0;&#xA0;&#xA0; "typee": "object",<br />&#xA0;&#xA0;&#xA0; "properties": {<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "isPublic": { "type": "boolean"}<br />&#xA0;&#xA0;&#xA0; }<br />&#xA0; }</pre><p class="SourceTitle" style="text-align:center;">Figure 2&#xA0;&#x2014; POIProperty Example Payload Schema (JSON)</p>
+<pre id="_66f89959-0c71-4725-a2c5-a23ee38e76f1" class="sourcecode">{<br />    "$schema": "http://json-schema.org/draft/2020-12/schema#",<br />    "$id": "https://example.org/schema/egpoi.json",<br />    "title": "POI Payload for POI with IsPublic property",<br />    "typee": "object",<br />    "properties": {<br />      "isPublic": { "type": "boolean"}<br />    }<br />  }</pre><p class="SourceTitle" style="text-align:center;">Figure 2 — POIProperty Example Payload Schema (JSON)</p>
 
 
-<p id="_def19dba-f225-1463-0bb2-660fc235ecfb">The value of the *hasDefinition&#x201D; property should reference a file that describes the semantics corresponding to the above schema. It might look something like this:</p>
+<p id="_def19dba-f225-1463-0bb2-660fc235ecfb">The value of the *hasDefinition” property should reference a file that describes the semantics corresponding to the above schema. It might look something like this:</p>
 
-<pre id="_572fe328-9997-370c-5348-47c86158d255" class="prettyprint "><br /><br />&#xA0; isPublic: This field is a boolean that should be true if the POI is publicly visitable, else false.</pre><p class="SourceTitle" style="text-align:center;">Figure 3&#xA0;&#x2014; POIProperty Example Payload Schema (JSON)</p>
+<pre id="_33f168b3-7525-0adb-f0db-3de66cb30e4e" class="sourcecode">isPublic: This field is a boolean that should be true if the POI is publicly visitable, else false.</pre><p class="SourceTitle" style="text-align:center;">Figure 3 — POIProperty Example Payload Schema (JSON)</p>
 
-</div>
-        <div id="_recommended_schema_and_semantics_for_common_nonstandard_attributes"><h2 id="toc10">5.2.&#xA0; Recommended Schema and Semantics for Common Nonstandard Attributes</h2>
+</div><div id="_recommended_schema_and_semantics_for_common_nonstandard_attributes"><h2 id="_5e45f33d-b51b-4e9a-81ba-be83e4327334">5.2.  Recommended Schema and Semantics for Common Nonstandard Attributes</h2>
 
 <p id="_8a30e093-41bc-a8a0-1532-244c026d5b17">There are a number of attributes that commonly are needed in use cases for POIs yet are not standardized in the POI-CM. This section suggests some recommended Schema for these common nonstandard attributes.</p>
 
@@ -1506,85 +1489,167 @@ span.hi {
 
 <p id="_e0f25544-8aa9-b890-3e1c-19e7dfef0c68">The rest of this section recommends how to handle four common POI attribute: address, telephone number, opening hours, and category.</p>
 
-<div id="_address"><h3>5.2.1.&#xA0; Address</h3>
+<div id="_address"><h3>5.2.1.  Address</h3>
 
 <p id="_04d35976-479e-4e93-b4db-e5082756a4ee">An address is a structured or semi-structured way of expressing where a place on earth can be found, usually referencing political areas, route (street) names, and numbers on routes. These are the things one uses to specify where mail is to be delivered, or packages are to be picked up. Special software called <i>geocoders</i> can convert an addresses into (latitude, longitude) position on earth.</p>
 
 <p id="_c61b7c23-2696-ce0d-5e5a-67af16b97f75">There are many addressing systems in use in the world. A schema to represent them all precisely would be quite complicated.  The recommendation here is to use the <b>CI_Address</b> class from the Informative Annex:</p>
 
-<pre id="_b50f6023-a183-d858-d512-44c008f5fa9e" class="prettyprint "><br /><br />&#xA0;&#xA0;&#xA0; "CI_Address" {<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "administrativeArea": "CharacterString" [0..1],<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "city": "CharacterString" [0..1],<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "country": "CharacterString" [0..1],<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "deliveryPoint": "CharacterString" [0..1],<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "electronicMailAddress": "CharacterString" [0..1],<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "postalCode": "CharacterString" [0..1]<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }</pre><p class="SourceTitle" style="text-align:center;">Figure 4&#xA0;&#x2014; CI_Address Schema</p>
+<pre id="_5c936b31-5c92-5ed0-ed55-940adebbd2e6" class="sourcecode">"CI_Address" {<br />        "administrativeArea": "CharacterString" [0..1],<br />        "city": "CharacterString" [0..1],<br />        "country": "CharacterString" [0..1],<br />        "deliveryPoint": "CharacterString" [0..1],<br />        "electronicMailAddress": "CharacterString" [0..1],<br />        "postalCode": "CharacterString" [0..1]<br />        }</pre><p class="SourceTitle" style="text-align:center;">Figure 4 — CI_Address Schema</p>
 
 
-<p id="_05298f81-00ce-1ae1-2cc2-f9ac24bc0bfb">where the <b>country</b>, <b>adminstrativeArea</b> (state or province), and <b>city</b> give a structuring of three of the political areas containing the POI, and the <b>postalCode</b> is the postal or zipcode that some countries use in addresses (varies by country). The <b>deliveryPoint</b> is an unstructured way of expressing the rest of the address. E.g., it might be &#x201C;123 Main St., Unit 3&#x201D; or &#x201C;Market Square&#x201D;. The language of the address should be either a common language implicit in the entire dataset (e.g., English), or a language in use in the country in question.</p>
+<p id="_05298f81-00ce-1ae1-2cc2-f9ac24bc0bfb">where the <b>country</b>, <b>adminstrativeArea</b> (state or province), and <b>city</b> give a structuring of three of the political areas containing the POI, and the <b>postalCode</b> is the postal or zipcode that some countries use in addresses (varies by country). The <b>deliveryPoint</b> is an unstructured way of expressing the rest of the address. E.g., it might be “123 Main St., Unit 3” or “Market Square”. The language of the address should be either a common language implicit in the entire dataset (e.g., English), or a language in use in the country in question.</p>
 
 <p id="_1519315c-e25e-dafc-52f5-4cebc264e307"><i>TODO: check out ISO 19160:1 A conceptual model for addressing</i></p>
 </div>
 
-<div id="_telephone_number"><h3>5.2.2.&#xA0; Telephone Number</h3>
+<div id="_telephone_number"><h3>5.2.2.  Telephone Number</h3>
 
 <p id="_d26985a5-e36e-d130-da61-7046b82034d6">The telephone number is the number to use to contact the POI to ask questions, get service, etc. The recommendation here is to use the <b>CI_Telephone</b> class from the Informative Annex:</p>
 
-<pre id="_1b7b013d-4ec5-0c2b-ce6e-7550fe5dc63c" class="prettyprint "><br /><br />&#xA0;&#xA0;&#xA0; "CI_Telephone": {<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "number": "CharacterString" [1..1],<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "numberType": "CI_TelephoneTypeCode" [0..1]<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }</pre><p class="SourceTitle" style="text-align:center;">Figure 5&#xA0;&#x2014; CI_Telephone Schema</p>
+<pre id="_b0368297-95bb-4d11-69bd-f9c62fed27c2" class="sourcecode">"CI_Telephone": {<br />        "number": "CharacterString" [1..1],<br />        "numberType": "CI_TelephoneTypeCode" [0..1]<br />        }</pre><p class="SourceTitle" style="text-align:center;">Figure 5 — CI_Telephone Schema</p>
 
 
 <p id="_bd594c29-dee4-7d2b-f123-8869859f0c08">where the <b>number</b> contains the dial numerals needed to reach that place. The <i>ITU-T E.164 standard</i> (<a href="https://www.itu.int/rec/T-REC-E.164">ref</a>) specifies a suitable format for telephone numbers. It starts with a recommended <b>+</b> sign, followed by up to fifteen digits (with no spaces or other punctuation). The digits will typically be a country code, then an area code, then a local number. For example, the US local number 555-1234 with an area code of 212 would be represented by this character string:</p>
 
-<pre id="_9ab9389a-2481-7e09-3a36-2cd84ccc2fd9" class="prettyprint "><br /><br />&#xA0;&#xA0; +12125551234</pre><p class="SourceTitle" style="text-align:center;">Figure 6&#xA0;&#x2014; ITU-T E.164 Telephone Number</p>
+<pre id="_a1727250-709c-39db-869e-5e4f34d0c955" class="sourcecode">+12125551234</pre><p class="SourceTitle" style="text-align:center;">Figure 6 — ITU-T E.164 Telephone Number</p>
 
 
 <p id="_9af10b97-a10a-3694-a8e2-394c76d325fb">The optional <b>numberType</b> is a one of <b>facsimile</b>, <b>sms</b>, <b>voice</b>, where <b>voice</b> is the default if the <b>numberType</b> is left out.</p>
 </div>
 
-<div id="_opening_hours"><h3>5.2.3.&#xA0; Opening Hours</h3>
+<div id="_opening_hours"><h3>5.2.3.  Opening Hours</h3>
 
-<p id="_c048351f-ff5b-60fb-1a03-4ddde9eefd90">The &#x201C;opening hours&#x201D; of a POI are the times when the POI is &#x201C;open for business&#x201D;, or, more generally just the times at which the general public can visit a POI. There may be more than one open interval on a day (e.g., meal times for a restaurant). Often, opening hours can be different for each day of the week, but are the same week after week. But occasionally POIs have more complicated opening hours (e.g., &#x201C;closed the first Monday of every month from May to October&#x201D;). Also, POIs often have special hours for vacations and holidays.</p>
+<p id="_c048351f-ff5b-60fb-1a03-4ddde9eefd90">The “opening hours” of a POI are the times when the POI is “open for business”, or, more generally just the times at which the general public can visit a POI. There may be more than one open interval on a day (e.g., meal times for a restaurant). Often, opening hours can be different for each day of the week, but are the same week after week. But occasionally POIs have more complicated opening hours (e.g., “closed the first Monday of every month from May to October”). Also, POIs often have special hours for vacations and holidays.</p>
 
 <p id="_6c31a777-724c-8dc4-9478-974bc89b034c">There are several standards to choose from to express business hours. A simple standard, which covers the usual case of weekly hours that repeat, is the Schema.org <b>openingHours</b> property (<a href="https://schema.org/openingHours">ref</a>). This standard also assumes that the timezone of the opening hours is clear (presumably, the timezone of the POI in question). An example of opening hours expressed in this format is:</p>
 
-<pre id="_d6a0bc96-0d45-7f17-cbe7-8e935e19e78a" class="prettyprint "><br /><br />&#xA0;&#xA0; openingHours: Tu-Fr 9:00-17:00<br />&#xA0;&#xA0; openingHours: Sa,Su 9:00-19:00</pre><p class="SourceTitle" style="text-align:center;">Figure 7&#xA0;&#x2014; Simple Opening Hours Example</p>
+<pre id="_33e5327f-3505-8d24-e088-be07fd57cee1" class="sourcecode">openingHours: Tu-Fr 9:00-17:00<br />   openingHours: Sa,Su 9:00-19:00</pre><p class="SourceTitle" style="text-align:center;">Figure 7 — Simple Opening Hours Example</p>
 
 
-<p id="_ef7f99ea-2b33-2903-a133-fd65b3474ba6">A more general standard, which handles non-weekly repeating as well as exceptions for vacations, holidays, etc., is the <i>iCalendar</i> specification (<a href="https://www.rfc-editor.org/rfc/rfc5545">RFC 5545</a>), in particular its <i>Calendar Availability</i> component (<a href="https://www.rfc-editor.org/rfc/rfc7953">RFC 7953</a>). While one could specify an entire calendar using these standards, the needs of specifying opening hours are served well enough by just giving the Availability part. For example, to specify opening hours in France that one might informally specify as &#x201C;M: 11am-7:30pm, T-Sat: 10am-7:30pm, Sun: closed; closed Aug 1&#x2009;&#x2014;&#x2009;Aug 31&#x201D;, the value according this this standard would be:</p>
+<p id="_ef7f99ea-2b33-2903-a133-fd65b3474ba6">A more general standard, which handles non-weekly repeating as well as exceptions for vacations, holidays, etc., is the <i>iCalendar</i> specification (<a href="https://www.rfc-editor.org/rfc/rfc5545">RFC 5545</a>), in particular its <i>Calendar Availability</i> component (<a href="https://www.rfc-editor.org/rfc/rfc7953">RFC 7953</a>). While one could specify an entire calendar using these standards, the needs of specifying opening hours are served well enough by just giving the Availability part. For example, to specify opening hours in France that one might informally specify as “M: 11am-7:30pm, T-Sat: 10am-7:30pm, Sun: closed; closed Aug 1 — Aug 31”, the value according this this standard would be:</p>
 
-<pre id="_4f10a9b2-ae5c-fd22-a031-f9ce84d35acc" class="prettyprint "><br /><br />&#xA0;&#xA0; openingHours:<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; BEGIN:VAVAILABILITY<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; UID:uid11<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DTSTAMP:20220101T000000Z<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; PRIORITY:0<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; BEGIN:AVAILABLE<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; UID:uid12<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DTSTART;TZID=Europe/Paris:20220103T110000<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DTEND;TZID=Europe/Paris:20220103T193000<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; RRULE;FREQ=WEEKLY;BYDAY=MO<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; END:AVAILABLE<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; BEGIN:AVAILABLE<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; UID:uid13<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DTSTART;TZID=Europe/Paris:20220104T100000<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DTEND;TZID=Europe/Paris:20220104T193000<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; RRULE;FREQ=WEEKLY;BYDAY=TU,WE,TH,FR,SA<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; END:AVAILABLE<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; END:VAVALABILITY<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; BEGIN:VAVAILABILITY<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; UID:uid14<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DTSTAMP:20220101T000000Z<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; PRIORITY:5<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; BEGIN:AVAILABLE<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; UID:uid15<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DTSTART;TZID=Europe/Paris:20220801T000000<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DTEND;TZID=Europe/Paris:20220831T235959<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; RRULE;FREQ=YEARLY;BYMONTH=8<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; END:AVAILABLE<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; END:VAVALABILITY</pre><p class="SourceTitle" style="text-align:center;">Figure 8&#xA0;&#x2014; Opening Hours Example</p>
+<pre id="_31797b8c-d4ef-3127-bc0f-4d4eb0bc703e" class="sourcecode">openingHours:<br />      BEGIN:VAVAILABILITY<br />      UID:uid11<br />      DTSTAMP:20220101T000000Z<br />      PRIORITY:0<br />      BEGIN:AVAILABLE<br />      UID:uid12<br />      DTSTART;TZID=Europe/Paris:20220103T110000<br />      DTEND;TZID=Europe/Paris:20220103T193000<br />      RRULE;FREQ=WEEKLY;BYDAY=MO<br />      END:AVAILABLE<br />      BEGIN:AVAILABLE<br />      UID:uid13<br />      DTSTART;TZID=Europe/Paris:20220104T100000<br />      DTEND;TZID=Europe/Paris:20220104T193000<br />      RRULE;FREQ=WEEKLY;BYDAY=TU,WE,TH,FR,SA<br />      END:AVAILABLE<br />      END:VAVALABILITY<br />      BEGIN:VAVAILABILITY<br />      UID:uid14<br />      DTSTAMP:20220101T000000Z<br />      PRIORITY:5<br />      BEGIN:AVAILABLE<br />      UID:uid15<br />      DTSTART;TZID=Europe/Paris:20220801T000000<br />      DTEND;TZID=Europe/Paris:20220831T235959<br />      RRULE;FREQ=YEARLY;BYMONTH=8<br />      END:AVAILABLE<br />      END:VAVALABILITY</pre><p class="SourceTitle" style="text-align:center;">Figure 8 — Opening Hours Example</p>
 
 
 <p id="_28b63de2-8d05-39f3-a0c6-43bfbbb6dd9c">The increased expressability of the Calendar Availability standard comes at the expense of verboseness, so implementers might like a choice between the two standards.</p>
 
 <p id="_30de8617-b9f0-8b3a-f7a4-779d75171ee8">There is no class in the Informative Annex for Opening Hours. A suggested conceptual model for Opening Hours that offers the choice between the above two standards is:</p>
 
-<pre id="_2d780033-4980-1034-8063-12853d9c07f8" class="prettyprint "><br /><br />&#xA0;&#xA0;&#xA0; "OpeningHours": {<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "openingHoursLines": "CharacterString" [0..],<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "openingHoursFormat": "OpeningHoursFormatCode" [0..1]<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }</pre><p class="SourceTitle" style="text-align:center;">Figure 9&#xA0;&#x2014; Recommended Opening Hours Schema</p>
+<pre id="_329780f8-78b2-da2e-cecb-130ab9b0a9e2" class="sourcecode"><span class="nl">"OpeningHours"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />        </span><span class="nl">"openingHoursLines"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CharacterString"</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="err">..</span><span class="p">],</span><span class="w"><br />        </span><span class="nl">"openingHoursFormat"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OpeningHoursFormatCode"</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="err">..</span><span class="mi">1</span><span class="p">]</span><span class="w"><br />        </span><span class="p">}</span></pre><p class="SourceTitle" style="text-align:center;">Figure 9 — Recommended Opening Hours Schema</p>
 
 
 <p id="_2e2b0538-9dde-03f0-22be-8a44ea3992a3">where <b>OpeningHoursFormatCode</b> is a <b>CodeList</b> with literals <b>schemadotorg</b> and <b>icalendaravailability</b>, with the default being <b>schemadotorg</b>. Note that while technically the Calendar Availability value is one string, it is inconvenient to deal with such a long value (with line breaks) in JSON, so it is convenient to have the value be a sequence of strings that represent lines to be concatenated together, with line breakes between them, in order to form the actual specification string.  Similarly, the the schema.org format, multiple lines are convenient to be able to represent different weekday ranges that have differing time reanges.</p>
 </div>
 
-<div id="_category"><h3>5.2.4.&#xA0; Category</h3>
+<div id="_category"><h3>5.2.4.  Category</h3>
 
-<p id="_101edde8-42ce-e46b-db97-a239b0dccbde">The &#x201C;Category&#x201D; of a POI is a word that describes the main purpose, use, or description of the POI. It is a word that would fill in the blank in the statement: &#x201C;This POI is a _______&#x201D;. Example categories might be <b>School</b> or <b>Clothing Store</b>. Usually one would like the most specific category that applies (e.g.,. preferring <b>Men&#x2019;s Clothing Store</b> over <b>Clothing Store</b>, but the latter over <b>Store</b>).</p>
+<p id="_101edde8-42ce-e46b-db97-a239b0dccbde">The “Category” of a POI is a word that describes the main purpose, use, or description of the POI. It is a word that would fill in the blank in the statement: “This POI is a _______”. Example categories might be <b>School</b> or <b>Clothing Store</b>. Usually one would like the most specific category that applies (e.g.,. preferring <b>Men’s Clothing Store</b> over <b>Clothing Store</b>, but the latter over <b>Store</b>).</p>
 
 <p id="_3b385d57-da62-1363-bd8b-14b7646ddb6a">There are tens of thousands of possible categories, and there is no generally accepted list that this recommendation can confidently point to. Some examples of some standard category lists are:</p>
 
-<p class="TableTitle" style="text-align:center;">Table 2&#xA0;&#x2014; Category Lists</p><table id="category-lists-table" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:90%;table-layout:fixed;"><colgroup><col style="width: 20%;" /><col style="width: 80%;" /></colgroup><tbody><tr><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">NAICS:</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">The North American Industry Classification System. This is used by the US Census to classify businesses according to their economic activity. They are numeric codes with English language descriptors. While they are meant to classify activities that are not necessarily connected to particular POIs, this classification system is still applicable to POIs, though maybe not at the deepest level of specificity desired. <a href="https://www.census.gov/naics/">ref</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">OpenStreetMap:</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Open Street Map uses a &#x201C;Free tagging system&#x201D; to associate multiple key/value pairs with features (which could be POIs). While not comprehensive and endlessly extensible, it is usually possible to find a key=attribute string that could be used as a category: e.g., building=stadium. craft=winery, or shop=butcher. <a href="https://wiki.openstreetmap.org/wiki/Map_features">ref</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">OGC Indoor Mapping Occupant Category:</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">The OGC Indoor Mapping OGC Community standard (<a href="https://docs.ogc.org/cs/20-094/index.html">ref</a>) has an <a href="https://docs.ogc.org/cs/20-094/Categories/index.html#occupant"><b>Occupant category</b></a> list that has a number of useful categories for POIs.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">GeoNames Ontology:</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">The GeoNames geographic database (<a href="https://www.geonames.org/">ref</a>) has an <a href="http://www.geonames.org/ontology/documentation.html">OWL ontology</a> for Features (which are akin to POIs). It has many kinds of POIs but not many types of commercial shops and restaurants.</td></tr></tbody></table>
+<p class="TableTitle" style="text-align:center;">Table 2 — Category Lists</p><table id="category-lists-table" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:90%;table-layout:fixed;"><colgroup><col style="width: 20%;" /><col style="width: 80%;" /></colgroup><tbody><tr><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">NAICS:</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">The North American Industry Classification System. This is used by the US Census to classify businesses according to their economic activity. They are numeric codes with English language descriptors. While they are meant to classify activities that are not necessarily connected to particular POIs, this classification system is still applicable to POIs, though maybe not at the deepest level of specificity desired. <a href="https://www.census.gov/naics/">ref</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">OpenStreetMap:</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Open Street Map uses a “Free tagging system” to associate multiple key/value pairs with features (which could be POIs). While not comprehensive and endlessly extensible, it is usually possible to find a key=attribute string that could be used as a category: e.g., building=stadium. craft=winery, or shop=butcher. <a href="https://wiki.openstreetmap.org/wiki/Map_features">ref</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">OGC Indoor Mapping Occupant Category:</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">The OGC Indoor Mapping OGC Community standard (<a href="https://docs.ogc.org/cs/20-094/index.html">ref</a>) has an <a href="https://docs.ogc.org/cs/20-094/Categories/index.html#occupant"><b>Occupant category</b></a> list that has a number of useful categories for POIs.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">GeoNames Ontology:</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">The GeoNames geographic database (<a href="https://www.geonames.org/">ref</a>) has an <a href="http://www.geonames.org/ontology/documentation.html">OWL ontology</a> for Features (which are akin to POIs). It has many kinds of POIs but not many types of commercial shops and restaurants.</td></tr></tbody></table>
 
-<p id="_d85db7d7-b55c-f641-602b-04c36bdb31bf">None of these is comprehensive enough or granular enough to serve the use case of &#x201C;I&#x2019;m looking for a POI that offers this product, service or experience&#x201D; for the full range of things people need to find. In the absence of anything better, the NAICS list seems best and the recommendation would be to use that as the code list. However, in order to allow for ultimate flexibility, the following schmea is recommended.:</p>
+<p id="_d85db7d7-b55c-f641-602b-04c36bdb31bf">None of these is comprehensive enough or granular enough to serve the use case of “I’m looking for a POI that offers this product, service or experience” for the full range of things people need to find. In the absence of anything better, the NAICS list seems best and the recommendation would be to use that as the code list. However, in order to allow for ultimate flexibility, the following schmea is recommended.:</p>
 
-<pre id="_99b25acf-c7e5-453c-7075-d24972bff273" class="prettyprint "><br /><br />&#xA0;&#xA0;&#xA0; "category": {<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "category": "CharacterString" [0..1],<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; "categorySystem": "CategorySystemCode" [0..1]<br />&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }</pre><p class="SourceTitle" style="text-align:center;">Figure 10&#xA0;&#x2014; Recommended Category Schema</p>
+<pre id="_f13e3d54-7df2-c11c-b79c-80e4ca3e8991" class="sourcecode"><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />        </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CharacterString"</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="err">..</span><span class="mi">1</span><span class="p">],</span><span class="w"><br />        </span><span class="nl">"categorySystem"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CategorySystemCode"</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="err">..</span><span class="mi">1</span><span class="p">]</span><span class="w"><br />        </span><span class="p">}</span></pre><p class="SourceTitle" style="text-align:center;">Figure 10 — Recommended Category Schema</p>
 
 
 <p id="_416e6810-687f-f69a-ceae-2101c1adb5b8">where <b>CategorySystemCode</b> is a <b>CodeList</b> with literals <b>naics</b>, <b>osm</b>, <b>ogcindoor</b>, <b>geonames</b>, and <b>custom</b>, where <b>custom</b> is the default if none is listed, and means that the category system is basically freeform (recommended as English language text).</p>
 </div>
-</div>
-      </div>
-    </main>
-  <script type="text/x-mathjax-config">
+</div></div><div id="choose_restaurant_use_case_section"><h1 id="_b4752d4c-9f84-452b-a74e-1cd0d60b5643">6.  Choose Restaurant Use Case</h1><div id="_use_case_overview"><h2 id="_4f828eb9-28d2-4557-8acd-e2071c78ea0f">6.1.  Use Case Overview</h2>
+
+<p id="_11a65f66-bd77-13ba-b7e7-24253a66975a">The <b>Choose Restaurant</b> use case is where a system is desired to help users find restaurants near them and information abou those restaurants to decide which, if any, they want to use.</p>
+
+<p id="_f9888828-2567-4633-2841-61c7ea93fb11">In order to choose a restaurant to eat in or get delivery from, users need to be able to POIs that are restaurants, with certain constraints (e.g., within a certain distance from a point on earth where the user is or expects to be). From that set of possibilities, they may wish to examine further information about each restaurant, to narrow down the choice. This information may include some or all of the following:</p>
+
+<ul id="_c4ed8f2b-b0eb-b383-517e-eeb53963da78"><li><p id="_2c8d53b4-fd0f-91b7-d3b0-80a9f40a04cf">Serves cuisines that the user can eat and likes.</p>
+</li>
+<li><p id="_349de6fa-378b-e11e-9c26-8d4d1f110496">Is open during the hours the user intends to visit,
+and/or serve the type of meal (breakfast, lunch, dinner, etc.) the user wants.</p>
+</li>
+<li><p id="_d602d408-a938-3f88-e8cb-190e6cbe6619">Has service style the user prefers (take-out vs dine-in).</p>
+</li>
+<li><p id="_d267da57-faab-5569-6acd-c1f53df751f0">Has a price level the user prefers.</p>
+</li>
+<li><p id="_66c2c516-abaf-c954-f0ae-54e9ced12fc2">Has a bar and/or serves alcohol.</p>
+</li>
+<li><p id="_cf2b8430-7a16-2037-de01-ec6f51277f0a">Has delivery.</p>
+</li>
+<li><p id="_f0fc351a-e76e-a111-c30b-52bf82dd06ef">Has order-ahead with pickup.</p>
+</li>
+<li><p id="_5def2159-5b65-c778-d7c5-6d45acf7f7e9">Requires reservations or reservations recommended.</p>
+</li>
+<li><p id="_deee3f78-84de-b53c-4dcf-c6a400e3ac37">Will have a busyness level that the user prefers at the time of intended vist.</p>
+</li>
+<li><p id="_77c398e4-9a66-6ded-b251-08184d506959">Has good reviews.</p>
+</li>
+<li><p id="_bfc6659f-db48-3b8a-9b2d-6c190cd0f49e">Accepts particular payment methods.</p>
+</li>
+<li><p id="_1f7aa454-130b-05f3-8c6d-f52c756374fb">Has an ambience the user prefers (family-friendly, upscale, romantic, etc.).</p>
+</li>
+<li><p id="_41d85e56-b0f8-4e3a-6b82-18c66186e426">Has an all-you-can eat buffet.</p>
+</li>
+<li><p id="_feffe97c-8ddc-a7d6-1358-bf30777ab627">Shows sports on TV.</p>
+</li>
+<li><p id="_d2a43407-4a26-f567-f5b0-fc022c39445e">Has a happy hour.</p>
+</li>
+<li><p id="_bae91573-72d9-1b5c-6a7b-5092835d6698">Is Handicap-accessible.</p>
+</li>
+<li><p id="_45c96f4c-31ef-bde5-9355-c871fe235d22">Has available free parking.</p>
+</li>
+<li><p id="_2ca9412b-2162-491a-206f-0dba80b01865">Has health-related requirements (vaccination and/or masks).</p>
+</li>
+</ul>
+
+<p id="_f467a2d2-d260-1b15-acbf-59e2b225fccb">To support this use case, a system will need a comprehensive set of restaurant POIs, each with attributes to help answer some or all of the information needs listed above.</p>
+
+<p id="_bdbfb300-282d-1dcb-96b6-d2ba019f303e">The POI-CM standard specifies a way to represent a POI with its name, and its (latitude, longitude) position on earth. The rest of the information needed will have to be specified using non-standard attributes, as described in the <a href="06-nonstandard-attributes.html#ug_nonstandard_attributes_section">Nonstandard Attributes</a> section.</p>
+</div><div id="_nonstandard_attributes_for_restaurant_pois"><h2 id="_5a854fa2-dc1a-4063-8cc1-0cbbb5bf327e">6.2.  Nonstandard Attributes for Restaurant POIs</h2>
+
+<p id="_876bcc76-1582-2ac9-0c5c-857e9f9b9125">The most important nonstandard attributes needed for the restaurant use case are:</p>
+
+<ul id="_22410e6c-e47f-ba4f-cb88-41374eda522c"><li><p id="_b673521e-92dd-18c8-c0bf-fafc718797f3"><a href="06-nonstandard-attributes.html#_address">Address</a></p>
+</li>
+<li><p id="_07139cdd-735f-2f0d-ef95-3b4ddcb59041"><a href="06-nonstandard-attributes.html#_telephone_number">Telephone Number</a></p>
+</li>
+<li><p id="_c9b98cf7-9a9e-3121-7563-309258eab3f8"><a href="06-nonstandard-attributes.html#_opening_hours">Opening Hours</a></p>
+</li>
+<li><p id="_ae6221bc-defc-0fe4-7ba4-a009b455b9b1"><a href="06-nonstandard-attributes.html#_category">Category</a></p>
+</li>
+<li><p id="_28c2efa3-7acb-d5c9-6bb1-edf0c601bbde">Website</p>
+</li>
+</ul>
+
+<p id="_af477e6d-5dea-d341-8482-6b590b8ea10e">The recommended way to represent the first four of these was discussed in the <a href="06-nonstandard-attributes.html#ug_nonstandard_attributes_section">Nonstandard Attributes</a> section.
+Website is intended to be the “authoritative” web page for the restaurant in question — that is, the page that the restaurant would like users to visit if they want to learn more about their restaurant. That web page might answer many of the other attribute questions (e.g., “has a bar”) in the list of the previous section.
+While one could use the <b>CI_Contact</b> type from the informative annex, a simpler recommendation is to extend the schema like by adding this:</p>
+
+<pre id="_8d286587-ad36-f78c-08d0-b0ebe43f10b2" class="sourcecode">   "Website" {<br />      "url" : "CharacterString[1..1]"<br />   }</pre><p class="SourceTitle" style="text-align:center;">Figure 11</p>
+
+
+<p id="_91d95029-ab96-110f-8ef3-bb6589dd604c">where the <b>url</b> value is a Uniform Resource Locator.</p>
+</div><div id="_example"><h2 id="_49cda3bb-ff04-44c6-99b5-8cfa44bdf153">6.3.  Example</h2>
+
+<p id="_f1d6d7cd-826d-7e18-2fd8-0ef9bcb05118">Putting it all together, here is an example of a restaurant POI using JSON.</p>
+
+<pre id="_57b4fed3-b42c-29dd-5981-e392680302a5" class="sourcecode">{<br />  "type": "Feature",<br />  "geometry" : {<br />    "type" : "Point",<br />    "coordinates" : [<br />      45.1491802,<br />      -84.6907891<br />    ]<br />  },<br />  "featureID" : 693842,<br />  "name" : {<br />    "name" : "Chez Jacques"<br />  },<br />  "hasPayload" : {<br />    "usesSchema" : "https://genpoijson.org/schema/interchangepoi.json",<br />    "website" : {<br />      "url" : "http://chezjacquesrestaurant.com"<br />    },<br />    "telephoneNumber" : {<br />      "number" : "+13205555555"<br />    },<br />    "address" : {<br />      "deliveryPoint" : "400 Atlantic Ave",<br />      "city" : "Grove City",<br />      "administrativeArea" : "Minnesota",<br />      "postalCode" : "56243"<br />    },<br />    "category" : {<br />      "category" : "French Restaurant",<br />      "categorySystem" : "custom"<br />    },<br />    "openingHours" : {<br />      "openingHoursLines" : [<br />        "line" : "Mo-Fr 12:00-20:00",<br />        "line" : "Sa 12:00-22:00"<br />      ],<br />      "openingHoursFormat" : "schemadotorg"<br />    }<br />  }<br />}</pre><p class="SourceTitle" style="text-align:center;">Figure 12 — Restaurant POI (JSON)</p>
+
+
+<p id="_4021c727-332f-6891-b097-f155d1159dc5">The schema referenced in <b>hasPayload</b> might point to a JSON schema like this:</p>
+
+<pre id="_607a2ba3-1c17-7822-2219-366ceb887303" class="sourcecode"><span class="p">{</span><span class="w"><br />  </span><span class="nl">"$schema"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://json-schema.org/draft/2020-12/schema#"</span><span class="p">,</span><span class="w"><br />  </span><span class="nl">"$id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://genpoijson.org/schema/interchangepoi.json"</span><span class="p">,</span><span class="w"><br />  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Generic POI Payload for POI Interchange"</span><span class="p">,</span><span class="w"><br />  </span><span class="nl">"type"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w"><br />  </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />    </span><span class="nl">"telephoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w"><br />      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />        </span><span class="nl">"number"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">},</span><span class="w"><br />        </span><span class="nl">"numberType"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">}</span><span class="w"><br />      </span><span class="p">},</span><span class="w"><br />      </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"number"</span><span class="w"> </span><span class="p">]</span><span class="w"><br />    </span><span class="p">},</span><span class="w"><br />    </span><span class="nl">"address"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w"><br />      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />        </span><span class="nl">"administrativeArea"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">},</span><span class="w"><br />        </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">},</span><span class="w"><br />        </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">},</span><span class="w"><br />        </span><span class="nl">"deliveryPoint"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">},</span><span class="w"><br />        </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">},</span><span class="w"><br />        </span><span class="nl">"postalCode"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">}</span><span class="w"><br />      </span><span class="p">}</span><span class="w"><br />    </span><span class="p">},</span><span class="w"><br />    </span><span class="nl">"category"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w"><br />      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />        </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">},</span><span class="w"><br />        </span><span class="nl">"categorySystem"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />          </span><span class="nl">"enum"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"naics"</span><span class="p">,</span><span class="w"> </span><span class="s2">"osm"</span><span class="p">,</span><span class="w"> </span><span class="s2">"ogcindoor"</span><span class="p">,</span><span class="w"> </span><span class="s2">"geonames"</span><span class="p">,</span><span class="w"> </span><span class="s2">"custom"</span><span class="w"> </span><span class="p">]</span><span class="w"><br />        </span><span class="p">}</span><span class="w"><br />      </span><span class="p">},</span><span class="w"><br />      </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"category"</span><span class="w"> </span><span class="p">]</span><span class="w"><br />    </span><span class="p">},</span><span class="w"><br />    </span><span class="nl">"openingHours"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w"><br />      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />        </span><span class="nl">"openingHoursLines"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />          </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span><span class="w"><br />          </span><span class="nl">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w"><br />          </span><span class="p">}</span><span class="w"><br />        </span><span class="p">},</span><span class="w"><br />        </span><span class="nl">"openingHoursFormat"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />          </span><span class="nl">"enum"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"schemadotorg"</span><span class="p">,</span><span class="w"> </span><span class="s2">"icalendaravailability"</span><span class="w"> </span><span class="p">]</span><span class="w"><br />        </span><span class="p">}</span><span class="w"><br />      </span><span class="p">}</span><span class="w"><br />    </span><span class="p">},</span><span class="w"><br />    </span><span class="nl">"website"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span><span class="w"><br />      </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"><br />          </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w"><br />          </span><span class="nl">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uri"</span><span class="w"><br />        </span><span class="p">}</span><span class="w"><br />      </span><span class="p">},</span><span class="w"><br />      </span><span class="nl">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"url"</span><span class="w"> </span><span class="p">]</span><span class="w"><br />    </span><span class="p">}</span><span class="w"><br />  </span><span class="p">}</span><span class="w"><br /></span><span class="p">}</span></pre><p class="SourceTitle" style="text-align:center;">Figure 13 — Schema for the Restaurant POI (JSON)</p>
+
+
+<p id="_2994cc27-a960-b9a5-b78f-5af6935b2bd7">There is no *hasDefinition” property in the Payload. If there were, it could reference a text file with a form of the commentary in this section.</p>
+</div></div></main><script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     "HTML-CSS": { preferredFont: "STIX" },
     asciimath2jax: { delimiters: [['(#(', ')#)']] }
  });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=MML_HTMLorMML-full" async="async"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>  <script>
+  <script>
     $("#toc").on('click', 'li', function(e) {
     $(this).parent().find('li.toc-active').removeClass('toc-active');
     $(this).addClass('toc-active');
@@ -1771,5 +1836,4 @@ $('#toggle').on('click', function(){
 anchors.add('h1, h2, h3, h4');
 </script>
 
-</body>
-</html>
+</body></html>

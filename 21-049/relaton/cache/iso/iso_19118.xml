@@ -1,0 +1,107 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2023-12-01</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Encoding</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Encoding</title>
+  <uri type="src">https://www.iso.org/standard/44212.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:44212:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/04/42/44212.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19118</docidentifier>
+  <docidentifier type="iso-reference">ISO 19118(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19118:stage-90.93:ed-2</docidentifier>
+  <docnumber>19118</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2011</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19118:2005</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19118:2005</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2023-12-01</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Encoding</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Encoding</title>
+      <uri type="src">https://www.iso.org/standard/44212.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:44212:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/04/42/44212.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19118:2011</docidentifier>
+      <docidentifier type="iso-reference">ISO 19118:2011(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19118:stage-90.93:ed-2</docidentifier>
+      <docnumber>19118</docnumber>
+      <date type="published">
+        <on>2011-10</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>2</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19118:2011 specifies the requirements for defining encoding rules for use for the interchange of data that conform to the geographic information in the set of International Standards known as the "ISO 19100 series".
+ISO 19118:2011 specifies requirements for creating encoding rules based on UML schemas, requirements for creating encoding services, and requirements for XML-based encoding rules for neutral interchange of data.
+ISO 19118:2011 does not specify any digital media, does not define any transfer services or transfer protocols, nor does it specify how to encode inline large images.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2011</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19118:2005</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 19118:2005</docidentifier>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 19118</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

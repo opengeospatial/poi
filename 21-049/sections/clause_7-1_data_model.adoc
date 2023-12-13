@@ -10,13 +10,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeature is the abstract superclass of all feature types within the PoI Model. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   !  <<AnyFeature-section,AnyFeature>>  [] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -24,13 +19,12 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
  
 !{set:cellbgcolor:#FFFFFF} description «property»  !<<CharacterString-section,CharacterString>>  [0..1] !Provides further information on the feature.
  
-!{set:cellbgcolor:#FFFFFF} featureID «property»  !<<ID-section,ID>>  !Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
+!{set:cellbgcolor:#FFFFFF} featureID «property»  !<<Uid-section,Uid>> [1..1] !Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
  
 !{set:cellbgcolor:#FFFFFF} identifer «property»  !<<ScopedName-section,ScopedName>>  [0..1] !Specifies the unique identifier of the feature that is valid globally.
  
 !{set:cellbgcolor:#FFFFFF} name «property»  !<<GenericName-section,GenericName>>  [0..*] !Specifies the name of the feature.
 !===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
 [[AbstractFeatureWithLifespan-section]]
@@ -40,13 +34,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeatureWithLifespan is the base class for all PoI features. This class allows the optional specification of the real-world and database times for the existence of each feature. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AbstractFeature-section,AbstractFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   !  <<AbstractFeature-section,AbstractFeature>>  [] !
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
@@ -60,7 +49,6 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
  
 !{set:cellbgcolor:#FFFFFF} validTo «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature ceased to exist in the real world.
 !===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
 [[AbstractPOI-section]]
@@ -70,22 +58,26 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A Point of Interest (POI) is a Feature which provides a concise summary of one or more associated Features. Its purpose is to provide easy access to key information about one or more real-world objects without the need to access or understand the underlying Feature data set. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest  !  <<FeatureOfInterest-section,FeatureOfInterest>>  [1..*] !One or more Features which are represented by this POI. 
-!{set:cellbgcolor:#FFFFFF}   !  <<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan>>  [] !
+
+!{set:cellbgcolor:#FFFFFF} hasPayload  !  <<POI_Payload-section,POI_Payload>>  
+[0..*] !Indicates a payload associated with this POI.
+
+
+!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest  !  <<FeatureOfInterest-section,FeatureOfInterest>>  
+[0..*] !One or more Features which are represented by this POI. 
+
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
 !{set:cellbgcolor:#FFFFFF} contactInfo «property»  !<<CI_Responsibility-section,CI_Responsibility>>  [1..*] !Contact information for the creators and maintainers of this POI.
- 
-!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest «property»  !<<Link-section,Link>>  [0..*] !One or more Features which are represented by this POI.
  
 !{set:cellbgcolor:#FFFFFF} hasMetadata «property»  !<<Link-section,Link>>  [0..*] !An association with zero or more metadata records providing additional information about this POI and/or the associated Features of Interest.
  
@@ -95,7 +87,6 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
  
 !{set:cellbgcolor:#FFFFFF} symbology «property»  !<<Link-section,Link>>  [0..1] !A reference to information about rendering this POI. 
 !===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
 [[FeatureOfInterest-section]]
@@ -104,94 +95,82 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |*FeatureOfInterest* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling. (SOSA) 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
+|=== 
+
+[[PayloadDefinition-section]]
+[cols="1a"]
+|===
+|*PayloadDefinition* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The semantic model (ontology) for a POI payload.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
+!===
+|[cols="15,20,60",frame=none,grid=none,options="header"]
+|=== 
+
+[[PayloadSchema-section]]
+[cols="1a"]
+|===
+|*PayloadSchema* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A model of the syntax of the POI payload. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
+|=== 
+
+[[POI-section]]
+[cols="1a"]
+|===
+|*POI* 
+|[cols="1,4",frame=none,grid=none]
+!===
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! An instance of a POI. Implements the AbstractPOI class. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!{set:cellbgcolor:#FFFFFF}   !  <<AnyFeature-section,AnyFeature>>  [] !
+
+!{set:cellbgcolor:#FFFFFF} implements  !  <<AbstractPOI-section,AbstractPOI>>  
+[] !Identifies the abstract POI implemented by this POI
+
 !===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
-!===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |=== 
 
-[[ID-section]]
+[[POI_Payload-section]]
 [cols="1a"]
 |===
-|*ID* 
+|*POI_Payload* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! ID is a basic type that represents a unique identifier. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A representation of properties of the FoI which are to be included in the POI. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none
+!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
-!===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
-|=== 
 
-[[Link-section]]
-[cols="1a"]
-|===
-|*Link* 
-|[cols="1,4",frame=none,grid=none]
-!===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
-!{set:cellbgcolor:#FFFFFF} href   !<<String-section,String>>  !Supplies the URI to a remote resource (or resource fragment).
- 
-!{set:cellbgcolor:#FFFFFF} hreflang   !<<String-section,String>>  [0..1] !A hint indicating what the language of the result of dereferencing the link should be.
- 
-!{set:cellbgcolor:#FFFFFF} length   !<<int-section,int>>  !
- 
-!{set:cellbgcolor:#FFFFFF} rel   !<<String-section,String>>  !The type or semantics of the relation.
- 
-!{set:cellbgcolor:#FFFFFF} title   !<<String-section,String>>  [0..1] !Used to label the destination of a link such that it can be used as a human-readable identifier.
- 
-!{set:cellbgcolor:#FFFFFF} type   !<<String-section,String>>  [0..1] !A hint indicating what the media type of the result of dereferencing the link should be.
-!===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
-|=== 
+!{set:cellbgcolor:#FFFFFF} hasDefinition  !  <<PayloadDefinition-section,PayloadDefinition>>  
+[0..1] !A reference to the semantic model of this POI payload. 
 
-[[String-section]]
-[cols="1a"]
-|===
-|*String* 
-|[cols="1,4",frame=none,grid=none]
+
+!{set:cellbgcolor:#FFFFFF} representsFoI  !  <<FeatureOfInterest-section,FeatureOfInterest>>  
+[1..1] !Indicates the Feature of Interest which is being summarized in this payload.
+
+
+!{set:cellbgcolor:#FFFFFF} usesSchema  !  <<PayloadSchema-section,PayloadSchema>>  
+[1..*] !A reference to the schema for this POI payload. 
+
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: !  
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<-section,>> 
-!{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-!===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
-!===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
-!===
-|{set:cellbgcolor:#FFFFFF} Note: Unless otherwise specified, all attributes and role names have the stereotype «Property».
 |===   
+
+
 

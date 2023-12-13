@@ -1,0 +1,69 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2023-12-01</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Services</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Services</title>
+  <uri type="src">https://www.iso.org/standard/59221.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59221:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/05/92/59221.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19119:2016</docidentifier>
+  <docidentifier type="iso-reference">ISO 19119:2016(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19119:stage-90.93:ed-2</docidentifier>
+  <docnumber>19119</docnumber>
+  <date type="published">
+    <on>2016-01</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/plain" language="en" script="Latn">ISO 19119:2016 defines requirements for how platform neutral and platform specific specification of services shall be created, in order to allow for one service to be specified independently of one or more underlying distributed computing platforms.
+ISO 19119:2016 defines requirements for a further mapping from platform neutral to platform specific service specifications, in order to enable conformant and interoperable service implementations.
+ISO 19119:2016 addresses the Meta:Service foundation of the ISO geographic information reference model described in ISO 19101‑1:2014, Clause 6 and Clause 8, respectively.
+ISO 19119:2016 defines how geographic services shall be categorised according to a service taxonomy based on architectural areas and allows also for services to be categorised according to a usage life cycle perspective, as well as according to domain specific and user defined service taxonomies, providing support for easier publication and discovery of services.</abstract>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2016</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19119:2005</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19119:2005</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19119:2005/Amd 1:2008</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19119:2005/Amd 1:2008</docidentifier>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 19119</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>
