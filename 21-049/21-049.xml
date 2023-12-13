@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.4.3" schema-version="v1.2.6">
 <bibdata type="standard">
-<title language="en" format="text/plain">OGC (Points of Interest)</title>
+<title language="en" format="text/plain">OGC Points of Interest (POI) Conceptual Model</title>
 <uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2023-12-07</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2023-12-07</on></date><contributor><role type="author"/><organization>
 <name>Digital Flancers</name>
 </organization></contributor><contributor><role type="author"/><organization>
