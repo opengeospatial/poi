@@ -1,4 +1,4 @@
 [[security_considerations-section]]
 == Security Considerations
 
-TBD
+No security considerations have been made for this document.
