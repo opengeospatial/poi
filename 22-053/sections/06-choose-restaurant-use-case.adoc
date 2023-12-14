@@ -75,32 +75,37 @@ Putting it all together, here is an example of a restaurant POI using JSON.
   "name" : {
     "name" : "Chez Jacques"
   },
-  "hasPayload" : {
-    "usesSchema" : "https://genpoijson.org/schema/interchangepoi.json",
-    "website" : {
-      "url" : "http://chezjacquesrestaurant.com"
-    },
-    "telephoneNumber" : {
-      "number" : "+13205555555"
-    },
-    "address" : {
-      "deliveryPoint" : "400 Atlantic Ave",
-      "city" : "Grove City",
-      "administrativeArea" : "Minnesota",
-      "postalCode" : "56243"
-    },
-    "category" : {
-      "category" : "French Restaurant",
-      "categorySystem" : "custom"
-    },
-    "openingHours" : {
-      "openingHoursLines" : [
-        "line" : "Mo-Fr 12:00-20:00",
-        "line" : "Sa 12:00-22:00"
-      ],
-      "openingHoursFormat" : "schemadotorg"
+  "hasPayload" : [
+    "POI_Payload" : {
+      "usesSchema" : "Link" : {
+        "href" : "https://genpoijson.org/schema/interchangepoi.json",
+        "rel" : "describedby"
+      },
+      "website" : {
+        "url" : "http://chezjacquesrestaurant.com"
+      },
+      "telephoneNumber" : {
+        "number" : "+13205555555"
+      },
+      "address" : {
+        "deliveryPoint" : "400 Atlantic Ave",
+        "city" : "Grove City",
+        "administrativeArea" : "Minnesota",
+        "postalCode" : "56243"
+      },
+      "category" : {
+        "category" : "French Restaurant",
+        "categorySystem" : "custom"
+      },
+      "openingHours" : {
+        "openingHoursLines" : [
+          "line" : "Mo-Fr 12:00-20:00",
+          "line" : "Sa 12:00-22:00"
+        ],
+        "openingHoursFormat" : "schemadotorg"
+      }
     }
-  }
+  ]
 }
 ----
 

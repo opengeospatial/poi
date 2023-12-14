@@ -8,12 +8,13 @@ An _attribute_ is a named property of a feature. While this POI Conceptual Model
 
 A *POI_Payload* is only partially specified in this POI Conceptual Model Standard. These properties are specified:
 
-usesSchema:: The value identifies a _schema_ for the payload. How this idenfication is done and what the schema looks like depends on the particular implentation technology used. We'll see some examples below. The schema describes the _syntax_ for the other properties of the payload, and the value for identifying the schema is typically a _URI_.
+usesSchema:: The value identifies a _schema_ for the payload. How this idenfication is done and what the schema looks like depends on the particular implentation technology used. We'll see some examples below. The schema describes the _syntax_ for the other properties of the payload, and the value for identifying the schema is typically a _Link_. This is required.
 
-hasDefinition:: The value is a companion to the schema referenced by *usesSchema*, and it describes the _semantics_ of the various payload fields. Typically this will be plain text descriptions of the properties, what standards they adhere to, etc.
+hasDefinition:: The value is a companion to the schema referenced by *usesSchema*, and it describes the _semantics_ of the various payload fields. Typically this will be plain text descriptions of the properties, what standards they adhere to, etc. This is optional.
 
+representsFoI:: This indicates the Feature of Interest that the payload is for. It is required.
 
-For example, suppose an application needed an attribute called *isPublic*, whose value is true or false depending on whether or not the POI is something the general public can visit. A particular POI could include a *hasPayload* association to a payload that looks like this in conceptual form:
+For example, suppose an application needed an attribute called *isPublic*, whose value is true or false depending on whether or not the POI is something the general public can visit. A particular POI could include a *hasPayload* association to a *POI_Payload* that looks like this in conceptual form:
 
 
 [cols="1,2,3"]
@@ -21,12 +22,12 @@ For example, suppose an application needed an attribute called *isPublic*, whose
 |*Attribute*|*Value type and multiplicity*|*Definition*
 
 |usesSchema
-|CharacterString [1..1]
-|URI identifying the schema for this payload
+|Link [1..1]
+|Refers to the schema for this payload
 
 |hasDefinition
-|CharacterString [1..1]
-|URI identifying the definition of the payload attributes
+|Link [1..1]
+|Refers to the definition of the payload attributes
 
 |isPublic
 |Boolean [1..1]
@@ -45,12 +46,19 @@ Suppose the implementation technology is JSON. Here is how the above payload mig
          "featureID": 693842,
          "name": {"name" : "Midtown Library"},
          "contactInfo" : {"role": "city representative"},
-         "hasFeatureOfInterest": {"href": ""},
-         "hasPayload": {
-           "usesSchema" : "https://example.org/schema/egpoi.json",
-           "hasDefinition" : "https://example.org/schemadef/egpoi",
-           "isPublic:" : true
-         }
+         "hasPayload": [
+           "POI_Payload" : {
+             "usesSchema" : "Link" : {
+               "href" : "https://example.org/schema/egpoi.json",
+               "rel" : "describedby"
+             },
+             "hasDefinition" : "Link" : {
+               "href" : "https://example.org/schemadef/egpoi",
+               "rel" : "type"
+             },
+             "isPublic:" : true
+           }
+         ]
       }
    }
 ----
