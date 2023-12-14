@@ -1,6 +1,6 @@
 == Scope
 
-This document describes a conceptual data model for representing information about points of interest (POI).
+This document describes a conceptual model for representing information about points of interest (POI).
 
 In the broadest terms, a "point of interest" is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.
 
