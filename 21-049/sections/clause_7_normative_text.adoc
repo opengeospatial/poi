@@ -24,13 +24,13 @@ include::../requirements/core/Req_Core_GeneralFeatureModel.adoc[]
 
 The OGC Geometry model is defined in <<iso19107,ISO 19107:2003 - Geographic Information - Spatial schema>>. While there is a new version of this standard, it has not been widely implemented. Therefore, the 2003 version has been used in this Standard.
 
-The OGC Geometry Model is capable of representing very complex geometries. Much  more complex than are needed for a POI. Therefore, POI geometries are restricted to Points, lines, and Polygons. <<geometry_model,Figure 4>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
+The OGC Geometry Model can represent very complex geometries. Much  more complex than are needed for a POI. Therefore, POI geometries are restricted to Points, lines, and Polygons. <<geometry_model,Figure 4>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
 
 [[geometry_model,reftext='Geometry Model']]
 .Geometry Model
 image::./images/Geometry.png[align="center"]
 
-The key classes desecribed in this figure are:
+The key classes described in this figure are:
 
 *<<GM_Object-section,GM_Object:>>* Root class for all OGC geometries.
 
@@ -70,7 +70,7 @@ image::./images/POI.png[align="center"]
 
 *<<POI-section,POI:>>* A POI instance. 
 
-*<<FeatureOfInterest-section,FeatureOfInterest:>>* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsys of this Feature.
+*<<FeatureOfInterest-section,FeatureOfInterest:>>* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsis of this Feature.
 
 [[poi_payload-section]]
 === POI Payload

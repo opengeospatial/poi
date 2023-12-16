@@ -3,9 +3,9 @@
 
 === Use Case Overview
 
-The *Choose Restaurant* use case is where a system is desired to help users find restaurants near them and information abou those restaurants to decide which, if any, they want to use.
+The *Choose Restaurant* use case is where a system is desired to help users find restaurants near them and information about those restaurants to decide which, if any, they want to use.
 
-In order to choose a restaurant to eat in or get delivery from, users need to be able to POIs that are restaurants, with certain constraints (e.g., within a certain distance from a point on earth where the user is or expects to be). From that set of possibilities, they may wish to examine further information about each restaurant, to narrow down the choice. This information may include some or all of the following:
+In order to choose a restaurant to eat in or get delivery from, users need to be able to identify POIs that are restaurants, with certain constraints (e.g., within a certain distance from a point on earth where the user is or expects to be). From that set of possibilities, they may wish to examine further information about each restaurant, to narrow down the choice. This information may include some or all of the following:
 
 * Serves cuisines that the user can eat and likes.
 * Is open during the hours the user intends to visit,
@@ -177,4 +177,4 @@ The schema referenced in *hasPayload* might point to a JSON schema like this:
 }
 ----
 
-There is no *hasDefinition" property in the Payload. If there were, it could reference a text file with a form of the commentary in this section.
+There is no "hasDefinition" property in the Payload. If there were, it could reference a text file with a form of the commentary in this section.

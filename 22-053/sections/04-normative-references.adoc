@@ -5,12 +5,12 @@
 
 * [[[rfc7946,RFC 7946]]], Butler, H., Daly, M., Doyle, A., Gillies, S., Hagen, S., Schaub, T.: IETF RFC 7946, *The GeoJSON Format*, 2016 https://tools.ietf.org/rfc/rfc7946.txt
 
-* [[[iso19103,nofetch(ISO 19103:2015)]]] ISO: ISO 19103:2015, Geographic Information – Conceptual Schema Language
+* [[[iso19103, ISO 19103:2015]]] ISO: ISO 19103:2015, *Geographic Information – Conceptual Schema Language.*  International Organization for Standardization, Geneva https://www.iso.org/ standard/56734.html.
 
-* [[[iso19107,nofetch(ISO 19107:2003)]]] ISO: ISO 19107:2003, Geographic Information – Spatial Schema
+* [[[iso19107, ISO 19107:2003]]] ISO: ISO 19107:2003, *Geographic Information – Spatial Schema.*  International Organization for Standardization, Geneva (2003). https://www.iso.org/standard/26012.html.
 
-* [[[iso19109,nofetch(ISO 19109:2015)]]] ISO: ISO 19109:2015, Geographic Information – Rules for Application Schemas
+* [[[iso19109,nofetch(ISO 19109:2015)]]] ISO: ISO 19109:2015, *Geographic Information – Rules for Application Schemas.*  International Organization for Standardization, Geneva (2015). https://www.iso.org/ standard/59193.html.
 
-* [[[citygml,nofetch(OGC CityGML 3.0)]]] OGC: the OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard, OGC document 20-010
+* [[[citygml,nofetch(OGC CityGML 3.0)]]] OGC 20-010: *OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard.* https://docs.ogc.org/is/20-010/20-010.html. 
 
-* [[[omguml,nofetch(OMG UML)]]] OMG: the OMG® Unified Modeling Language, Version 2.5, 2015, https://www.omg.org/spec/UML
+* [[[omguml,nofetch(OMG UML)]]] OMG: Object Management Group (OMG) *Unified Modeling Language.* Version 2.5.1, December 2017, https://www.omg.org/spec/UML/2.5.1.

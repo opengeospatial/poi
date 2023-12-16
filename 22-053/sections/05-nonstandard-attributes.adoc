@@ -8,9 +8,9 @@ An _attribute_ is a named property of a feature. While this POI Conceptual Model
 
 A *POI_Payload* is only partially specified in this POI Conceptual Model Standard. These properties are specified:
 
-usesSchema:: The value identifies a _schema_ for the payload. How this idenfication is done and what the schema looks like depends on the particular implentation technology used. We'll see some examples below. The schema describes the _syntax_ for the other properties of the payload, and the value for identifying the schema is typically a _Link_. This is required.
+usesSchema:: The value identifies a _schema_ for the payload. How this identification is done and what the schema looks like depends on the implementation technology used. We'll see some examples below. The schema describes the _syntax_ for the other properties of the payload, and the value for identifying the schema is typically a _URI_.
 
-hasDefinition:: The value is a companion to the schema referenced by *usesSchema*, and it describes the _semantics_ of the various payload fields. Typically this will be plain text descriptions of the properties, what standards they adhere to, etc. This is optional.
+hasDefinition:: The value is a companion to the schema referenced by *usesSchema*, and it describes the _semantics_ of the various payload fields. Typically, this will be plain text descriptions of the properties, what standards they adhere to, etc.
 
 representsFoI:: This indicates the Feature of Interest that the payload is for. It is required.
 
@@ -24,11 +24,9 @@ For example, suppose an application needed an attribute called *isPublic*, whose
 |usesSchema
 |Link [1..1]
 |Refers to the schema for this payload
-
 |hasDefinition
 |Link [1..1]
 |Refers to the definition of the payload attributes
-
 |isPublic
 |Boolean [1..1]
 |Is this POI a publicly visitable place
@@ -89,9 +87,9 @@ The value of the *hasDefinition" property should reference a file that describes
 
 === Recommended Schema and Semantics for Common Nonstandard Attributes
 
-There are a number of attributes that commonly are needed in use cases for POIs yet are not standardized in the POI-CM. This section suggests some recommended Schema for these common nonstandard attributes.
+There are a number of attributes that commonly are needed in use cases for POIs yet are not standardized in the POI-CM. This section suggests a recommended schema for these common nonstandard attributes.
 
-This POI Conceptual Model Standard has an Informative Annex which contains a number of conceptual model fragments taken from other OGC Standards which may be useful and recommended for using in payloads when the corresponding concept needs modeling. Among the useful ones are:
+This POI Conceptual Model Standard has an Informative Annex which contains several conceptual model fragments taken from other OGC Standards which may be useful and recommended for use in payloads when the corresponding concept needs modeling. Among the useful ones are:
 
 [none]
 * Date, Time, Decimal, Integer, Number, Real, Vector, CharacterString, URI, Boolean, DateTime, CI_Address, CI_Contact, CI_Date, CI_OnlineResource, CI_Organisation, CI_Telephone, MD_Identification, MD_Keywords
@@ -100,7 +98,7 @@ The rest of this section recommends how to handle four common POI attribute: add
 
 ==== Address
 
-An address is a structured or semi-structured way of expressing where a place on earth can be found, usually referencing political areas, route (street) names, and numbers on routes. These are the things one uses to specify where mail is to be delivered, or packages are to be picked up. Special software called _geocoders_ can convert an addresses into (latitude, longitude) position on earth.
+An address is a structured or semi-structured way of expressing where a place on earth can be found, usually referencing political areas, route (street) names, and numbers on routes. These are the things one uses to specify where mail is to be delivered, or packages are to be picked up. Special software called _geocoders_ can convert an address into (latitude, longitude) position on earth.
 
 There are many addressing systems in use in the world. A schema to represent them all precisely would be quite complicated.  The recommendation here is to use the *CI_Address* class from the Informative Annex:
 
@@ -146,7 +144,7 @@ The optional *numberType* is a one of *facsimile*, *sms*, *voice*, where *voice*
 
 ==== Opening Hours
 
-The "opening hours" of a POI are the times when the POI is "open for business", or, more generally just the times at which the general public can visit a POI. There may be more than one open interval on a day (e.g., meal times for a restaurant). Often, opening hours can be different for each day of the week, but are the same week after week. But occasionally POIs have more complicated opening hours (e.g., "closed the first Monday of every month from May to October"). Also, POIs often have special hours for vacations and holidays.
+The "opening hours" of a POI are the times when the POI is "open for business", or, more generally just the times at which the general public can visit a POI. There may be more than one open interval on a day (e.g., mealtimes for a restaurant). Often, opening hours can be different for each day of the week, but are the same week after week. But occasionally POIs have more complicated opening hours (e.g., "closed the first Monday of every month from May to October"). Also, POIs often have special hours for vacations and holidays.
 
 There are several standards to choose from to express business hours. A simple standard, which covers the usual case of weekly hours that repeat, is the Schema.org *openingHours* property (https://schema.org/openingHours[ref]). This standard also assumes that the timezone of the opening hours is clear (presumably, the timezone of the POI in question). An example of opening hours expressed in this format is:
 
@@ -206,13 +204,13 @@ There is no class in the Informative Annex for Opening Hours. A suggested concep
         }
 ----
 
-where *OpeningHoursFormatCode* is a *CodeList* with literals *schemadotorg* and *icalendaravailability*, with the default being *schemadotorg*. Note that while technically the Calendar Availability value is one string, it is inconvenient to deal with such a long value (with line breaks) in JSON, so it is convenient to have the value be a sequence of strings that represent lines to be concatenated together, with line breakes between them, in order to form the actual specification string.  Similarly, the the schema.org format, multiple lines are convenient to be able to represent different weekday ranges that have differing time reanges.
+where *OpeningHoursFormatCode* is a *CodeList* with literals *schemadotorg* and *icalendaravailability*, with the default being *schemadotorg*. Note that while technically the Calendar Availability value is one string, it is inconvenient to deal with such a long value (with line breaks) in JSON, so it is convenient to have the value be a sequence of strings that represent lines to be concatenated together, with line breaks between them, in order to form the actual specification string.  Similarly,  the schema.org format, multiple lines are convenient to be able to represent different weekday ranges that have differing time ranges.
 
 ==== Category
 
 The "Category" of a POI is a word that describes the main purpose, use, or description of the POI. It is a word that would fill in the blank in the statement: "This POI is a +_______+". Example categories might be *School* or *Clothing Store*. Usually one would like the most specific category that applies (e.g.,. preferring *Men's Clothing Store* over *Clothing Store*, but the latter over *Store*).
 
-There are tens of thousands of possible categories, and there is no generally accepted list that this recommendation can confidently point to. Some examples of some standard category lists are:
+There are tens of thousands of possible categories, and there is no generally accepted category list that this recommendation can confidently point to. Some examples of some standard category lists are:
 
 [#category-lists-table,reftext='{table-caption} {counter:table-num}']
 .Category Lists
@@ -231,7 +229,7 @@ There are tens of thousands of possible categories, and there is no generally ac
    The GeoNames geographic database (https://www.geonames.org/[ref]) has an http://www.geonames.org/ontology/documentation.html[OWL ontology] for Features (which are akin to POIs). It has many kinds of POIs but not many types of commercial shops and restaurants.
 |===
 
-None of these is comprehensive enough or granular enough to serve the use case of "I'm looking for a POI that offers this product, service or experience" for the full range of things people need to find. In the absence of anything better, the NAICS list seems best and the recommendation would be to use that as the code list. However, in order to allow for ultimate flexibility, the following schmea is recommended.:
+None of these is comprehensive enough or granular enough to serve the use case of "I'm looking for a POI that offers this product, service or experience" for the full range of things people need to find. In the absence of anything better, the NAICS list seems best and the recommendation would be to use that as the code list. However, in order to allow for ultimate flexibility, the following schema is recommended.:
 
 .Recommended Category Schema
 [source,json]
