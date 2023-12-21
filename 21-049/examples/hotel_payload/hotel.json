@@ -12,7 +12,8 @@
 		"featureID": 207383,
 		"hasFeatureOfInterest": [
 			{
-				"href":"https://opendata.visitflanders.org/sector/accommodation/base_registry"
+				"href":"https://opendata.visitflanders.org/sector/accommodation/base_registry",
+				"rel" : "alternate"
 			}
 		],
 		"description": "In De […] aan.",
@@ -29,13 +30,17 @@
 			}
 		},
 		"hasMetadata": {
-			"href":"https://www.vlaanderen.be/datavindplaats/catalogus/hotels-via-poi-service-v2"
+			"href":"https://www.vlaanderen.be/datavindplaats/catalogus/hotels-via-poi-service-v2",
+			"rel" : "about"
 		},
 		"rights": {
 			"otherConstraints": "Modellicentie voor gratis hergebruik"
 		},
 		"hasPayload": {
-			"usesSchema": "https://genpoijson.org/schema/publicationpoi.json",
+			"usesSchema": {
+                "href" : "https://genpoijson.org/schema/publicationpoi.json",
+                "rel" : "describedby"
+			},			
 			"onlineResources": [
 				{
 					"description":"Website van Parkhotel De Panne",
