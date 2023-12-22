@@ -4,7 +4,7 @@
 === Identifiers
 The normative provisions in this document are denoted by the URI
 
-`http://www.opengis.net/spec/POI/1.0`
+`http://www.opengis.net/spec/poi/1.0`
 
 All requirements and conformance tests that appear in this document are denoted by partial URIs relative to this base.
 
@@ -16,8 +16,6 @@ The POI Conceptual Model (CM) Standard is presented in this document through dia
 [[figure-1]]
 .UML notation (see ISO TS 19103, Geographic information - Conceptual schema language).
 image::images/UML_Notation.png[align="center"]
-
-All associations between model elements in the POI Conceptual Model are uni-directional. Thus, associations in the model are navigable in only one direction. The direction of navigation is depicted by an arrowhead. In general, the context an element takes within the association is indicated by its role. The role is displayed near the target of the association. If the graphical representation is ambiguous though, the position of the role has to be drawn to the element the association points to.
 
 The following stereotypes are used in this model:
 
@@ -36,15 +34,19 @@ Classes painted in green belong to the POI Requirements Class.
 
 image:images/ColorScheme_yellow.png[align="center"]
 
-Classes painted in yellow are defined in the ISO standards 19107, 19109, or 19115. Their class names are preceded by the UML package name, in which the classes are defined.
+Classes painted in yellow are defined in the ISO standards 19107, 19109, or 19115. These class names are preceded by the name of the UML package in which the class is defined.
 
 image:images/ColorScheme_white.png[align="center"]
 
 The color white is used for notes and <<ISO19507,Object Constraint Language>> (OCL) constraints that are provided in the UML diagrams.
 
-The example UML diagram in <<figure-2>> demonstrates the UML notation and coloring scheme used throughout this standard. In this example, the yellow classes are associated with the _ISO Standards_, the green classes are from the _POI Example Classes_, and the white classes depicts notes.
+All associations between model elements in the POI Conceptual Model are uni-directional. Thus, associations in the model are navigable in only one direction. The direction of navigation is depicted by an arrowhead. In general, the context an element takes within the association is indicated by its role. The role is displayed near the target of the association. If the graphical representation is ambiguous though, the has to be determined from the element the association points to.
+
+The POI Conceptual Model uses three forms of association; `generalizations`, `aggregations`, and `instances`. A `generalization` captures a parent-child relationship, the child entity being a subclass of the parent. An `aggregation` indicates that the target is a separate entity which is included in the source by reference. An `instance` association indicates that the source class is a realization (implementation) of a more abstract target class.
+
+The example UML diagram in <<figure-2>> demonstrates the UML notation and coloring scheme used throughout this standard. The generalization, link, and instance associations are also illustrated.
 
 [[figure-2]]
 .Example UML diagram demonstrating the UML notation and coloring scheme used throughout the POI Standard.
-image::images/UML_Notation_Example.png[align="center"]
+image::images/UMLNotation_Example.png[align="center"]
 

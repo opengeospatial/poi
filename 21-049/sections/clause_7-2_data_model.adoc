@@ -10,7 +10,7 @@ The following data types are used in the POI UML model.
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Characterstring  is a family  of  datatypes which  represent strings of symbols  from  standard character-sets. The semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.1.5. (ISO 19103) 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! None 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
 !===
 |=== 
@@ -22,7 +22,7 @@ The following data types are used in the POI UML model.
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! An exact integer value, with no fractional part. (ISO 19103) 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! None 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
 !===
 |=== 
@@ -33,8 +33,8 @@ The following data types are used in the POI UML model.
 |*Link* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A data type which allows elements to be inserted into a document in order to create and describe links between resources. (derived from XML Linking Language (XLink) Version 1.1) 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A link is a typed connection between two resources. This class is based on the Web Linking model defined in IETF RFC 8288.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! None 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
@@ -43,15 +43,13 @@ The following data types are used in the POI UML model.
  
 !{set:cellbgcolor:#FFFFFF} href   !<<CharacterString-section,CharacterString>>  !Supplies the URI to a remote resource (or resource fragment).
  
-!{set:cellbgcolor:#FFFFFF} hreflang   !<<CharacterString-section,CharacterString>>  [0..1] !A hint indicating what the language of the result of dereferencing the link should be.
+!{set:cellbgcolor:#FFFFFF} hreflang   !<<CharacterString-section,CharacterString>>  [0..*] !The "hreflang" attribute is a hint indicating what the language of the result of dereferencing the link should be. Note that this is only a hint. Multiple hreflang attributes on a single link-value indicate that multiple languages are available from the indicated resource.
  
-!{set:cellbgcolor:#FFFFFF} length   !<<Integer-section,Integer>>  [0..1] !This property is included but not defined in OGC API-Features and OGC API-Common. It has been included here for compatibility with OGC Web API Standards.
+!{set:cellbgcolor:#FFFFFF} rel   !<<CharacterString-section,CharacterString>>  !A link relation (rel) attribute identifies the semantics (meaning) of a link. The relation type values should come from either the IANA or OGC relation type registries. 
  
-!{set:cellbgcolor:#FFFFFF} rel   !<<CharacterString-section,CharacterString>>  !The type or semantics of the relation.
+!{set:cellbgcolor:#FFFFFF} title   !<<CharacterString-section,CharacterString>>  [0..1] !The "title" attribute is used to label the destination of a link such that it can be used as a human-readable identifier (e.g., a menu entry). 
  
-!{set:cellbgcolor:#FFFFFF} title   !<<CharacterString-section,CharacterString>>  [0..1] !Used to label the destination of a link such that it can be used as a human-readable identifier.
- 
-!{set:cellbgcolor:#FFFFFF} type   !<<CharacterString-section,CharacterString>>  [0..1] !A hint indicating what the media type of the result of dereferencing the link should be.
+!{set:cellbgcolor:#FFFFFF} type   !<<CharacterString-section,CharacterString>>  [0..1] !The "type" attribute is a hint indicating what the media type of the result of dereferencing the link should be. Note that this is only a hint. 
 !===
 |=== 
 
@@ -62,10 +60,7 @@ The following data types are used in the POI UML model.
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Uid is a basic type that represents a unique identifier. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! None 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
 !===
 |===   
-
-
-
