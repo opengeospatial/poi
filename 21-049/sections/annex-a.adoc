@@ -1,4 +1,5 @@
 [appendix]
+[[abstract-test-suite-section]]
 == Conformance Class Abstract Test Suite (Normative)
 
 [NOTE]

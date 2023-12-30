@@ -13,8 +13,8 @@ The POI Conceptual Model spatial geometry properties SHALL be compliant with the
 --
 POI Spatial geometry properties SHALL be one or more of the following:
 
-* <<GM_Point-section,GM_Point>>
-* <<GM_LineString-section,GM_LineString>>
-* <<GM_Polygon-section,GM_Polygon>>
+. <<GM_Point-section,GM_Point>>
+. <<GM_LineString-section,GM_LineString>>
+. <<GM_Polygon-section,GM_Polygon>>
 --
 ====

@@ -62,7 +62,7 @@ This class describes how a feature class shall be constructed in an Application 
 |===
 
 === Geometry
-The following classes are defined in <<ISO19107,(ISO 19107:2003)>>
+The following classes are defined in <<ISO19107,ISO 19107:2003>>
 
 [[GM_Object-section]]
 .GM_Object Class

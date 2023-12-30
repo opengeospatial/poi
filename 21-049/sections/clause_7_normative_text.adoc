@@ -4,7 +4,7 @@
 
 A Point of Interest (POI) is a Feature. Therefore, it is important to understand what a POI inherits from the OGC Feature model.
 
-The OGC Feature Model is defined in <<iso19109,ISO 19109:2015 Geographic Information - Rules for application schema>>. A UML model showing applicable portions of the OGC Feature Model is provided in <<feature_model,Figure 3>>. 
+The OGC Feature Model is defined in <<ISO19109,ISO 19109:2015 Geographic Information - Rules for application schema>>. A UML model showing applicable portions of the OGC Feature Model is provided in <<feature_model,Figure 3>>. 
 
 [[feature_model,reftext='Feature Model']]
 .Feature Model
@@ -14,15 +14,15 @@ The most relevant classes defined by this model are described below:
 
 *<<FeatureType-section,FeatureType:>>* This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instantiated as feature classes in an Application Schema
 
-*<<AnyFeature-section,AnyFeature:>>* The class AnyFeature is an instance of the «metaclass» FeatureType (ISO 19109). It represents the set of all classes which are feature types. 
+*<<AnyFeature-section,AnyFeature:>>* The class AnyFeature is an instance of the «metaclass» FeatureType. It represents the set of all classes which are feature types. 
 
-In an implementation, this abstract class shall be substituted by a concrete class representing a feature type from an application schema associated with a domain of discourse (ISO 19109, ISO 19101).
+In an implementation, this abstract class shall be substituted by a concrete class representing a feature type from an application schema associated with a domain of discourse.
 
 include::../requirements/core/Req_Core_GeneralFeatureModel.adoc[]
 
 === Geometry
 
-The OGC Geometry model is defined in <<iso19107,ISO 19107:2003 - Geographic Information - Spatial schema>>. While there is a new version of this standard, it has not been widely implemented. Therefore, the 2003 version has been used in this Standard.
+The OGC Geometry model is defined in <<ISO19107,ISO 19107:2003 - Geographic Information - Spatial schema>>. While there is a new version of this standard, it has not been widely implemented. Therefore, the 2003 version has been used in this Standard.
 
 The OGC Geometry Model can represent very complex geometries. Much  more complex than are needed for a POI. Therefore, POI geometries are restricted to Points, lines, and Polygons. <<geometry_model,Figure 4>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
 
@@ -57,6 +57,10 @@ These extensions include further refinement of the _AnyFeature_ class through th
 
 *<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan:>>* Adds temporality to _AbstractFeature_. This class was borrowed from the CityGML 3.0 Conceptual Model.
 
+include::../requirements/core/Req_Core_AbstractFeature.adoc[]
+
+include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
+
 [[poi_core-section]]
 === POI Class Model
 
@@ -72,10 +76,16 @@ image::./images/POI.png[align="center"]
 
 *<<FeatureOfInterest-section,FeatureOfInterest:>>* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsis of this Feature.
 
+include::../requirements/core/Req_Core_AbstractPOI.adoc[]
+
+include::../requirements/core/Req_Core_POI.adoc[]
+
+include::../requirements/core/Req_Core_FeatureOfInterest.adoc[]
+
 [[poi_payload-section]]
 === POI Payload
 
-A POI is a representation of a Feature. The POI class provides a standard way to identify and manage a POI. However, it does not provide any information about the Feature it is representing. That is difficult to standardize since it is dependent on the data model of the Feature store being described. 
+A POI is a representation of a Feature. The POI class provides a standard way to identify and manage a POI. However, it does not provide any information about the Feature it is representing. This information is difficult to standardize since it is dependent on the data model of the Feature store being described. 
 
 Therefore, the POI model is designed to be extended with properties specific to a Feature or a Feature Collection. The POI Payload is a container for representations of Feature properties. The syntax of those representations is provided by the Payload Schema class. Where appropriate, the semantics can also be provided through the Payload Definition class. Since the schema and definitions may be the same for a large number of Features, these classes should be instantiated as referenceable resources, allowing one instance to be used by a number of POIs.
 
@@ -90,3 +100,6 @@ image::./images/POI_Extensions.png[align="center"]
 *<<PayloadDefinition-section,PayloadDefinition:>>* The Payload Definition Class represents a semantic model (ontology) for a POI payload.
 
 In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. A collection of data types and concepts defined by the <<ISO19103,ISO 19103>>, <<ISO19107,ISO 19107>>, <<ISO19109,ISO 19109>>, and <<ISO19115,ISO 19115>> Standards is provided in <<iso_data_dictionary_section,Annex B>>.
+
+include::../requirements/core/Req_Core_POI-Payload.adoc[]
+

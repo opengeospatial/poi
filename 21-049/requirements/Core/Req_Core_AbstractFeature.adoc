@@ -16,7 +16,7 @@ An encoding of the AbstractFeature class SHALL comply with requirement <<req_cor
 
 [.component,class=part]
 --
-An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-featureID,/req/core/req-abstractfeature-featureid>>.
+An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-featureid,/req/core/req-abstractfeature-featureid>>.
 --
 
 [.component,class=part]
