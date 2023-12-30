@@ -45,3 +45,9 @@ Classes painted in tan are defined in the ISO standards 19107, 19109, or 19115. 
 image:images/ColorScheme_white.png[align="center"]
 
 The color white is used for notes and <<ISO19507,Object Constraint Language>> (OCL) constraints that are provided in the UML diagrams.
+
+The example UML diagram in <<figure-2>> demonstrates the UML notation and coloring scheme used throughout this standard. The generalization, link, and instance associations are also illustrated.
+
+[[figure-2]]
+.Example UML diagram demonstrating the UML notation and coloring scheme used throughout the POI Standard.
+image::images/UMLNotation_Example.png[align="center"]
