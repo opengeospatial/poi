@@ -45,8 +45,6 @@ The following data types are used in the POI UML model.
  
 !{set:cellbgcolor:#FFFFFF} hreflang   !<<CharacterString-section,CharacterString>>  [0..1] !A hint indicating what the language of the result of dereferencing the link should be.
  
-!{set:cellbgcolor:#FFFFFF} length   !<<Integer-section,Integer>>  [0..1] !This property is included but not defined in OGC API-Features and OGC API-Common. It has been included here for compatibility with OGC Web API Standards.
- 
 !{set:cellbgcolor:#FFFFFF} rel   !<<CharacterString-section,CharacterString>>  !The type or semantics of the relation.
  
 !{set:cellbgcolor:#FFFFFF} title   !<<CharacterString-section,CharacterString>>  [0..1] !Used to label the destination of a link such that it can be used as a human-readable identifier.

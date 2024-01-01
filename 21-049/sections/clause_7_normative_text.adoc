@@ -4,7 +4,7 @@
 
 A Point of Interest (POI) is a Feature. Therefore, it is important to understand what a POI inherits from the OGC Feature model.
 
-The OGC Feature Model is defined in <<ISO19109,ISO 19109:2015 Geographic Information - Rules for application schema>>. A UML model showing applicable portions of the OGC Feature Model is provided in <<feature_model,Figure 3>>. 
+The OGC Feature Model is defined in <<ISO19109>>. A UML model showing applicable portions of the OGC Feature Model is provided in <<feature_model,Figure 3>>. 
 
 [[feature_model,reftext='Feature Model']]
 .Feature Model
@@ -22,7 +22,7 @@ include::../requirements/core/Req_Core_GeneralFeatureModel.adoc[]
 
 === Geometry
 
-The OGC Geometry model is defined in <<ISO19107,ISO 19107:2003 - Geographic Information - Spatial schema>>. While there is a new version of this standard, it has not been widely implemented. Therefore, the 2003 version has been used in this Standard.
+The OGC Geometry model is defined in <<ISO19107>>. While there is a new version of this standard, it has not been widely implemented. Therefore, the 2003 version has been used in this Standard.
 
 The OGC Geometry Model can represent very complex geometries. Much  more complex than are needed for a POI. Therefore, POI geometries are restricted to Points, lines, and Polygons. <<geometry_model,Figure 4>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
 
@@ -93,7 +93,7 @@ Therefore, the POI model is designed to be extended with properties specific to 
 .POI UML Model - Payload
 image::./images/POI_Extensions.png[align="center"]
 
-*<<POI_Payload-section,POIPayload:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
+*<<POI_Payload-section,POI_Payload:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
 
 *<<PayloadSchema-section,PayloadSchema:>>* The Payload Schema Class represents a syntactic model (schema) for a POI payload.
 
