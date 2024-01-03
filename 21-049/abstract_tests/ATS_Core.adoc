@@ -8,3 +8,6 @@ include::Core/ATS_Core_AbstractFeature.adoc[]
 
 include::Core/ATS_Core_FeatureWithLifespan.adoc[]
 
+include::Core/ATS_Core_AbstractPOI.adoc[]
+
+include::Core/ATS_Core_POI_Payload.adoc[]

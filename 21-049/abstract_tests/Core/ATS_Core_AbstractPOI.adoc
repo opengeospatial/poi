@@ -1,9 +1,9 @@
-[[ats_core_abstract_feature]]
+[[ats_core_abstract_poi]]
 [width="90%",cols="2,6a"]
 |===
-^|*Abstract Test {counter:ats-id}* |*/ats/core/abstractfeature* 
-^|Test Purpose |To validate that the Implementation Specification implements the AbstractFeature Class as defined in the POI Conceptual Model.
-^|Requirement |<<req_core_abstract_feature,/req/core/req-abstractfeature>>
+^|*Abstract Test {counter:ats-id}* |*/ats/core/abstractpoi* 
+^|Test Purpose |To validate that the Implementation Specification implements the Feature With Livespan Class as defined in the POI Conceptual Model.
+^|Requirement |<<req_core_abstract_poi,/req/core/req-abstract-poi>>
 ^|Test Method |Manual Inspection
 2+|For each UML class defined or referenced in the Core Package:
 ^|A |Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class. 

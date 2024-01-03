@@ -990,8 +990,8 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <p id="_c3b6abbc-a3c6-a711-52db-a064bdcfa4d1"><strong><xref target="FeatureOfInterest-section">FeatureOfInterest:</xref></strong> This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsis of this Feature.</p>
 
-<requirement id="req_core_Abstract_POI_class" model="ogc">
-<title>Requirement — Abstract POI Class</title><classification><tag>label</tag><value>/req/core/req-abstract-poi-class</value></classification>
+<requirement id="req_core_Abstract_POI" model="ogc">
+<title>Requirement — Abstract POI</title><classification><tag>label</tag><value>/req/core/req-abstract-poi</value></classification>
 
 
 <description><p id="_f61556ee-6d39-1cc8-e8ed-5cce9912a33e">An instantiation of the Abstract POI class SHALL comply with requirement <xref target="req_core_feature_with_lifespan">/req/core/req-poi-feature-with-lifespan</xref>.</p></description>
@@ -1116,8 +1116,8 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <p id="_84858cf1-8db1-8a3e-c329-66c2a8ec3d46">In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. A collection of data types and concepts defined by the <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>, <eref type="inline" bibitemid="ISO19107" citeas="ISO 19107:2003">ISO 19107</eref>, <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109</eref>, and <eref type="inline" bibitemid="ISO19115" citeas="ISO 19115-1:2014">ISO 19115</eref> Standards is provided in <xref target="iso_data_dictionary_section">Annex B</xref>.</p>
 
-<requirement id="req_core_POI-Payload_class" model="ogc">
-<title>Requirement — POI-Payload</title><classification><tag>label</tag><value>/req/core/req-poi_payload-class</value></classification>
+<requirement id="req_core_POI-Payload" model="ogc">
+<title>Requirement — POI-Payload</title><classification><tag>label</tag><value>/req/core/req-poi_payload</value></classification>
 
 
 <description><p id="_bb56ee18-1965-4643-e66e-f3428841938c">An encoding of the POI_Payload class SHALL comply with requirement <xref target="req_core_POI_featureOfInterest">/req/core/req-poi-featureOfInterest</xref>.</p></description>
@@ -1556,6 +1556,74 @@ The term was first used in this way in the general theory of object-oriented pro
 </td>
 </tr><tr><td valign="middle" align="center">F</td>
 <td valign="middle" align="left"><p id="_36774ab5-f0de-559d-911b-f2157afdb269">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</p>
+</td>
+</tr></tbody>
+</table>
+
+<table id="ats_core_abstract_poi" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="center"><strong>Abstract Test 5</strong></td>
+<td valign="middle" align="left"><p id="_7f9b3978-7cc5-0b8c-87c6-d73a458025b3"><strong>/ats/core/abstractpoi</strong></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Purpose</td>
+<td valign="middle" align="left"><p id="_3ded3a93-5364-9c29-1de5-59ed308a0ea5">To validate that the Implementation Specification implements the Feature With Livespan Class as defined in the POI Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">Requirement</td>
+<td valign="middle" align="left"><p id="_00341a7b-754a-c97f-4df5-55813fae2f34"><xref target="req_core_abstractpoi">/req/core/req-abstract-poi</xref></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Method</td>
+<td valign="middle" align="left"><p id="_19e599e8-aa8e-f1c6-63df-0cae49a9d925">Manual Inspection</p>
+</td>
+</tr><tr><td colspan="2" valign="middle" align="left">For each UML class defined or referenced in the Core Package:</td>
+</tr><tr><td valign="middle" align="center">A</td>
+<td valign="middle" align="left"><p id="_533eb088-27ea-f6d5-bc5f-d35e8635c4a7">Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.</p>
+</td>
+</tr><tr><td valign="middle" align="center">B</td>
+<td valign="middle" align="left"><p id="_99f018a4-36fe-9a56-ce06-d12ee3e12b6a">Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">C</td>
+<td valign="middle" align="left"><p id="_f8e93bc9-db17-6ccc-2289-3c27b3714012">Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">D</td>
+<td valign="middle" align="left"><p id="_19b30270-228e-c2ad-136a-2ba527c1f2cc">Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">E</td>
+<td valign="middle" align="left"><p id="_739f3806-41fd-625f-369f-6d556cbfa21e">Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">F</td>
+<td valign="middle" align="left"><p id="_df3d5119-50e9-767a-b66c-f3684a9db041">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</p>
+</td>
+</tr></tbody>
+</table>
+
+<table id="ats_core_POI-Payload" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="center"><strong>Abstract Test 6</strong></td>
+<td valign="middle" align="left"><p id="_c8f45b30-43ef-3d1f-a584-02939e33f11b"><strong>/ats/core/req-poi_payload</strong></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Purpose</td>
+<td valign="middle" align="left"><p id="_a64605b8-594b-db54-6d71-f3f3f2cc8d92">To validate that the Implementation Specification implements the Feature With Livespan Class as defined in the POI Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">Requirement</td>
+<td valign="middle" align="left"><p id="_3842ceed-1baf-9bd7-3dab-00c40c8b0886"><xref target="req_core_abstractpoi">/req/core/req-abstract-poi</xref></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Method</td>
+<td valign="middle" align="left"><p id="_fed92aa4-458e-1fbe-06cb-61ea032904f4">Manual Inspection</p>
+</td>
+</tr><tr><td colspan="2" valign="middle" align="left">For each UML class defined or referenced in the Core Package:</td>
+</tr><tr><td valign="middle" align="center">A</td>
+<td valign="middle" align="left"><p id="_0efa5777-b73c-933c-5876-3bb038bc8d63">Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.</p>
+</td>
+</tr><tr><td valign="middle" align="center">B</td>
+<td valign="middle" align="left"><p id="_a16cbd89-7759-048f-79ab-205eafe22dd8">Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">C</td>
+<td valign="middle" align="left"><p id="_1a3d2330-edae-d46c-eb3d-bf4c3d337e82">Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">D</td>
+<td valign="middle" align="left"><p id="_e472b6e7-3d56-8219-701e-5804e05594e3">Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">E</td>
+<td valign="middle" align="left"><p id="_6b7e236f-486d-54d9-c9ef-c7d58784236e">Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">F</td>
+<td valign="middle" align="left"><p id="_2c231bbb-f500-e1ff-96e7-ba58984dde63">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</p>
 </td>
 </tr></tbody>
 </table>

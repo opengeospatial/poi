@@ -1,9 +1,9 @@
-[[req_core_Abstract_POI_class]]
-.Requirement - Abstract POI Class
+[[req_core_abstract-poi]]
+.Requirement - Abstract POI
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-abstract-poi-class
+label:: /req/core/req-abstract-poi
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_feature_with_lifespan,/req/core/req-poi-feature-with-lifespan>>.

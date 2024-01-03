@@ -1028,8 +1028,8 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <semantic__p id="semantic___c3b6abbc-a3c6-a711-52db-a064bdcfa4d1"><semantic__strong><semantic__xref target="semantic__FeatureOfInterest-section">FeatureOfInterest:</semantic__xref></semantic__strong> This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsis of this Feature.</semantic__p>
 
-<semantic__requirement id="semantic__req_core_Abstract_POI_class" model="ogc">
-<semantic__title>Requirement — Abstract POI Class</semantic__title><semantic__classification><semantic__tag>label</semantic__tag><semantic__value>/req/core/req-abstract-poi-class</semantic__value></semantic__classification>
+<semantic__requirement id="semantic__req_core_Abstract_POI" model="ogc">
+<semantic__title>Requirement — Abstract POI</semantic__title><semantic__classification><semantic__tag>label</semantic__tag><semantic__value>/req/core/req-abstract-poi</semantic__value></semantic__classification>
 
 
 <semantic__description><semantic__p id="semantic___f61556ee-6d39-1cc8-e8ed-5cce9912a33e">An instantiation of the Abstract POI class SHALL comply with requirement <semantic__xref target="semantic__req_core_feature_with_lifespan">/req/core/req-poi-feature-with-lifespan</semantic__xref>.</semantic__p></semantic__description>
@@ -1154,8 +1154,8 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <semantic__p id="semantic___84858cf1-8db1-8a3e-c329-66c2a8ec3d46">In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. A collection of data types and concepts defined by the <semantic__eref type="inline" bibitemid="semantic__ISO19103" citeas="ISO 19103">ISO 19103</semantic__eref>, <semantic__eref type="inline" bibitemid="semantic__ISO19107" citeas="ISO 19107:2003">ISO 19107</semantic__eref>, <semantic__eref type="inline" bibitemid="semantic__ISO19109" citeas="ISO 19109:2015">ISO 19109</semantic__eref>, and <semantic__eref type="inline" bibitemid="semantic__ISO19115" citeas="ISO 19115-1:2014">ISO 19115</semantic__eref> Standards is provided in <semantic__xref target="semantic__iso_data_dictionary_section">Annex B</semantic__xref>.</semantic__p>
 
-<semantic__requirement id="semantic__req_core_POI-Payload_class" model="ogc">
-<semantic__title>Requirement — POI-Payload</semantic__title><semantic__classification><semantic__tag>label</semantic__tag><semantic__value>/req/core/req-poi_payload-class</semantic__value></semantic__classification>
+<semantic__requirement id="semantic__req_core_POI-Payload" model="ogc">
+<semantic__title>Requirement — POI-Payload</semantic__title><semantic__classification><semantic__tag>label</semantic__tag><semantic__value>/req/core/req-poi_payload</semantic__value></semantic__classification>
 
 
 <semantic__description><semantic__p id="semantic___bb56ee18-1965-4643-e66e-f3428841938c">An encoding of the POI_Payload class SHALL comply with requirement <semantic__xref target="semantic__req_core_POI_featureOfInterest">/req/core/req-poi-featureOfInterest</semantic__xref>.</semantic__p></semantic__description>
@@ -1594,6 +1594,74 @@ The term was first used in this way in the general theory of object-oriented pro
 </semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="center">F</semantic__td>
 <semantic__td valign="middle" align="left"><semantic__p id="semantic___36774ab5-f0de-559d-911b-f2157afdb269">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</semantic__p>
+</semantic__td>
+</semantic__tr></semantic__tbody>
+</semantic__table>
+
+<semantic__table id="semantic__ats_core_abstract_poi" width="90%"><semantic__colgroup><semantic__col width="25%"/><semantic__col width="75%"/></semantic__colgroup><semantic__tbody><semantic__tr><semantic__td valign="middle" align="center"><semantic__strong>Abstract Test 5</semantic__strong></semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___7f9b3978-7cc5-0b8c-87c6-d73a458025b3"><semantic__strong>/ats/core/abstractpoi</semantic__strong></semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">Test Purpose</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___3ded3a93-5364-9c29-1de5-59ed308a0ea5">To validate that the Implementation Specification implements the Feature With Livespan Class as defined in the POI Conceptual Model.</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">Requirement</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___00341a7b-754a-c97f-4df5-55813fae2f34"><semantic__xref target="semantic__req_core_abstractpoi">/req/core/req-abstract-poi</semantic__xref></semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">Test Method</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___19e599e8-aa8e-f1c6-63df-0cae49a9d925">Manual Inspection</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td colspan="2" valign="middle" align="left">For each UML class defined or referenced in the Core Package:</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">A</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___533eb088-27ea-f6d5-bc5f-d35e8635c4a7">Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">B</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___99f018a4-36fe-9a56-ce06-d12ee3e12b6a">Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">C</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___f8e93bc9-db17-6ccc-2289-3c27b3714012">Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">D</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___19b30270-228e-c2ad-136a-2ba527c1f2cc">Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">E</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___739f3806-41fd-625f-369f-6d556cbfa21e">Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">F</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___df3d5119-50e9-767a-b66c-f3684a9db041">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</semantic__p>
+</semantic__td>
+</semantic__tr></semantic__tbody>
+</semantic__table>
+
+<semantic__table id="semantic__ats_core_POI-Payload" width="90%"><semantic__colgroup><semantic__col width="25%"/><semantic__col width="75%"/></semantic__colgroup><semantic__tbody><semantic__tr><semantic__td valign="middle" align="center"><semantic__strong>Abstract Test 6</semantic__strong></semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___c8f45b30-43ef-3d1f-a584-02939e33f11b"><semantic__strong>/ats/core/req-poi_payload</semantic__strong></semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">Test Purpose</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___a64605b8-594b-db54-6d71-f3f3f2cc8d92">To validate that the Implementation Specification implements the Feature With Livespan Class as defined in the POI Conceptual Model.</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">Requirement</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___3842ceed-1baf-9bd7-3dab-00c40c8b0886"><semantic__xref target="semantic__req_core_abstractpoi">/req/core/req-abstract-poi</semantic__xref></semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">Test Method</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___fed92aa4-458e-1fbe-06cb-61ea032904f4">Manual Inspection</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td colspan="2" valign="middle" align="left">For each UML class defined or referenced in the Core Package:</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">A</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___0efa5777-b73c-933c-5876-3bb038bc8d63">Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">B</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___a16cbd89-7759-048f-79ab-205eafe22dd8">Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">C</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___1a3d2330-edae-d46c-eb3d-bf4c3d337e82">Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">D</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___e472b6e7-3d56-8219-701e-5804e05594e3">Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">E</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___6b7e236f-486d-54d9-c9ef-c7d58784236e">Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model</semantic__p>
+</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="center">F</semantic__td>
+<semantic__td valign="middle" align="left"><semantic__p id="semantic___2c231bbb-f500-e1ff-96e7-ba58984dde63">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</semantic__p>
 </semantic__td>
 </semantic__tr></semantic__tbody>
 </semantic__table>
@@ -3126,11 +3194,11 @@ To obtain additional rights of use, visit
 <p id="_bb5602d2-6eb1-e557-e221-499759fe237f">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://ogc.standardstracker.org/"/></p>
 </clause>
 </feedback-statement>
-</boilerplate><preface><clause type="toc" id="_ea40c224-0978-4d33-b88b-697428383714" displayorder="1"><title depth="1">Contents</title></clause>
+</boilerplate><preface><clause type="toc" id="_762ee433-8534-4fc1-a4b2-5a565a93bc98" displayorder="1"><title depth="1">Contents</title></clause>
 <abstract id="_abstract" displayorder="2"><title depth="1">I.<tab/>Abstract</title><p id="_09400544-a572-f047-7e8e-524b1e98e725">The OGC Points of Interest (POI) conceptual model is an open data model for representing information about POI. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p>
 
 <p id="_3a05bcdc-6d08-4fac-655a-a18b1ce2630c">The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.” In the broadest terms, a point of interest is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
-</abstract><clause id="_4e2658ff-a01b-4528-bf0e-f413a0b2f8e0" type="keywords" displayorder="3">
+</abstract><clause id="_167b8298-06c8-495e-b1df-2f72ba190ba6" type="keywords" displayorder="3">
 <title depth="1">II.<tab/>Keywords</title>
 <p>The following are keywords to be used by search engines and document catalogues.</p>
 <p>ogcdoc, OGC document, API, openapi, html</p></clause>
@@ -3144,7 +3212,7 @@ To obtain additional rights of use, visit
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
 </foreword><clause type="security" id="_1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative" displayorder="5">
   <title depth="1">IV.<tab/>Security considerations</title>
-  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_85917649-466e-4c1d-a7e9-414b277a45af" type="submitting_orgs" displayorder="6">
+  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_4eccd928-5ab5-4ea0-83ba-f62efdca485d" type="submitting_orgs" displayorder="6">
 <title depth="1">V.<tab/>Submitting Organizations</title>
 <p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
  <ul><li>Digital Flancers</li>
@@ -3174,9 +3242,9 @@ To obtain additional rights of use, visit
 <title depth="1">2.<tab/>Conformance</title>
 <p id="_13f0585b-3e40-ae57-14c2-3c7a81ec2546">This standard defines a <xref target="conceptual-model-definition">Conceptual Model</xref> which is independent of any encoding or formatting techniques. The <xref target="standardization-target-definition">Standardization Targets</xref> for this standard are:</p>
 
-<ol id="_dac23756-1f5f-2497-c792-eabd3e4fbcb5" type="arabic"><li id="_e6a39aee-97fe-41a5-8a7a-342bbb89b163" label="1"><p id="_96924be3-0997-f7cc-7d84-0203a2350da0"><xref target="conceptual-model-definition">Conceptual Models</xref> (extended versions of this conceptual model)</p>
+<ol id="_dac23756-1f5f-2497-c792-eabd3e4fbcb5" type="arabic"><li id="_397c4be7-a68a-420d-a8f2-03f3bfe5ff6f" label="1"><p id="_96924be3-0997-f7cc-7d84-0203a2350da0"><xref target="conceptual-model-definition">Conceptual Models</xref> (extended versions of this conceptual model)</p>
 </li>
-<li id="_3f827f7b-5342-4c39-9874-474ac58b584b" label="2"><p id="_cd3bb9a4-769a-6c42-8af0-6dfbc0aedfc9"><xref target="implementation-specification-definition">Implementation Specifications</xref> (encodings of this conceptual model)</p>
+<li id="_6e38ecdf-dd02-418d-ad43-c4665ff16248" label="2"><p id="_cd3bb9a4-769a-6c42-8af0-6dfbc0aedfc9"><xref target="implementation-specification-definition">Implementation Specifications</xref> (encodings of this conceptual model)</p>
 </li>
 </ol>
 
@@ -3184,11 +3252,11 @@ To obtain additional rights of use, visit
 <title depth="2">2.1.<tab/>Conceptual Models</title>
 <p id="_91d83069-ba7d-c53b-f53d-a0207c8bf901">A Conceptual Model standardization target is a version of the POI Conceptual Model (CM) tailored for a specific user community. This tailoring can include:</p>
 
-<ol id="_50e3a7f7-10d5-7aa6-553c-3d181fb751a7" type="arabic"><li id="_92338065-9b85-4e9c-8b59-328afbb8fcf6" label="1"><p id="_267969f5-8dff-5cca-de28-0d7e2b7c2c84">Reduction of the multiplicity for an attribute or association</p>
+<ol id="_50e3a7f7-10d5-7aa6-553c-3d181fb751a7" type="arabic"><li id="_f99644ff-87b5-4bee-be07-099e58b2dc0c" label="1"><p id="_267969f5-8dff-5cca-de28-0d7e2b7c2c84">Reduction of the multiplicity for an attribute or association</p>
 </li>
-<li id="_80224462-5f2d-4478-91dc-1566df23b26d" label="2"><p id="_c8706aef-14f3-33fe-51df-bd740dffbc24">Restriction on the valid values for an attribute</p>
+<li id="_3ccbd6ec-4caf-4cb8-91dd-6c7d0317765b" label="2"><p id="_c8706aef-14f3-33fe-51df-bd740dffbc24">Restriction on the valid values for an attribute</p>
 </li>
-<li id="_856838c5-cd3d-4e0c-b036-498be03837e7" label="3"><p id="_75c17f61-19fe-ba47-6824-4437825d800f">Additional <underline>optional</underline> POI properties</p>
+<li id="_2cad443b-fe58-4156-9f04-1cf533a81b95" label="3"><p id="_75c17f61-19fe-ba47-6824-4437825d800f">Additional <underline>optional</underline> POI properties</p>
 </li>
 </ol>
 
@@ -3288,9 +3356,9 @@ The term was first used in this way in the general theory of object-oriented pro
  <termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <xref type="inline" target="ISO19101-1">ISO 19101-1:2014, Clause 4.1.5</xref>]</termsource></term>
 
 <term id="conceptual-schema-definition"><name>4.8.</name><preferred><strong>conceptual schema::</strong></preferred>
-<definition><ol id="_a4b4c1bc-aa5a-b4f4-ddae-0458d034ff6d" type="arabic"><li id="_0dbc64b5-e095-4f3f-aff4-a6b98188d0a8" label="1"><p id="_510347ae-0fe1-d74d-2f24-10e91a88abb3">formal description of a <em>conceptual model</em> (<xref target="conceptual-model-definition">Clause 4.7</xref>) [ISO 19101-1:2014, 4.1.6]</p>
+<definition><ol id="_a4b4c1bc-aa5a-b4f4-ddae-0458d034ff6d" type="arabic"><li id="_ef4620da-3892-4156-8bf9-7fc194288652" label="1"><p id="_510347ae-0fe1-d74d-2f24-10e91a88abb3">formal description of a <em>conceptual model</em> (<xref target="conceptual-model-definition">Clause 4.7</xref>) [ISO 19101-1:2014, 4.1.6]</p>
 </li>
-<li id="_be97a0e5-e4e5-45a1-91ca-44dc47e3fed1" label="2"><p id="_1dd6415a-bc0c-16d4-e478-241d810dee35">base schema. Formal description of the model of any geospatial information. <em>Application schemas</em> (<xref target="application-schema-definition">Clause 4.1</xref>) are built from <em>conceptual schemas</em> (<xref target="conceptual-schema-definition">Clause 4.8</xref>).</p>
+<li id="_ed4a3aad-db95-470c-b6f0-5fc43fdfdd0d" label="2"><p id="_1dd6415a-bc0c-16d4-e478-241d810dee35">base schema. Formal description of the model of any geospatial information. <em>Application schemas</em> (<xref target="application-schema-definition">Clause 4.1</xref>) are built from <em>conceptual schemas</em> (<xref target="conceptual-schema-definition">Clause 4.8</xref>).</p>
 </li>
 </ol></definition>
 
@@ -3720,11 +3788,11 @@ The term was first used in this way in the general theory of object-oriented pro
 <table id="req_core_geometry" class="modspec" type="recommend"><thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 2: Requirement — Geometry</p></th></tr></thead><tbody><tr><th>Label</th><td>/req/core/req-geometry</td></tr><tr><th>Statement</th><td><p id="_9ba5ffaa-532a-a888-f9d6-c12c32aa24af">The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in <xref type="inline" target="ISO19107">ISO 19107</xref>.</p></td></tr><tr><th>A</th><td><p id="_75274948-a6fc-2d39-9084-2e7212f53b9c">A POI instance SHALL include a spatial geometry property using the SpatialAttributeType attribute type.</p>
 </td></tr><tr><th>B</th><td><p id="_1ed1fa1e-9c46-9280-07e5-70f1baae1629">The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes:</p>
 
-<ol id="_7922e3a0-4b67-603c-fa54-fe7c273c8cbe" type="arabic"><li id="_621275dd-42e4-4c03-a969-cb00db791944" label="1"><p id="_3803dffc-25af-3503-0c91-5bc47c404d5d"><xref target="GM_Point-section">GM_Point</xref></p>
+<ol id="_7922e3a0-4b67-603c-fa54-fe7c273c8cbe" type="arabic"><li id="_41237684-5bbe-494f-b432-cfb1ad397a76" label="1"><p id="_3803dffc-25af-3503-0c91-5bc47c404d5d"><xref target="GM_Point-section">GM_Point</xref></p>
 </li>
-<li id="_f72d805e-6818-4d49-8ab1-86a75f9048c2" label="2"><p id="_b33a6767-7040-ed1d-96fb-7d411493dfa4"><xref target="GM_LineString-section">GM_LineString</xref></p>
+<li id="_adc0b5e2-09d8-45ad-9c7d-420c390cb999" label="2"><p id="_b33a6767-7040-ed1d-96fb-7d411493dfa4"><xref target="GM_LineString-section">GM_LineString</xref></p>
 </li>
-<li id="_80925b60-5b5a-4fb4-95ba-d193e51b47d7" label="3"><p id="_b75d83f6-96de-a2fc-aa3a-080977f3f31b"><xref target="GM_Polygon-section">GM_Polygon</xref></p>
+<li id="_344b075d-1a6d-4e54-b87e-8b231b4fd3fb" label="3"><p id="_b75d83f6-96de-a2fc-aa3a-080977f3f31b"><xref target="GM_Polygon-section">GM_Polygon</xref></p>
 </li>
 </ol>
 </td></tr></tbody></table>
@@ -3795,7 +3863,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <p id="_c3b6abbc-a3c6-a711-52db-a064bdcfa4d1"><strong><xref target="FeatureOfInterest-section">FeatureOfInterest:</xref></strong> This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsis of this Feature.</p>
 
-<table id="req_core_Abstract_POI_class" class="modspec" type="recommend"><thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 13: Requirement — Abstract POI Class</p></th></tr></thead><tbody><tr><th>Label</th><td>/req/core/req-abstract-poi-class</td></tr><tr><th>Statement</th><td><p id="_f61556ee-6d39-1cc8-e8ed-5cce9912a33e">An instantiation of the Abstract POI class SHALL comply with requirement <xref target="req_core_feature_with_lifespan">/req/core/req-poi-feature-with-lifespan</xref>.</p></td></tr><tr><th>A</th><td><p id="_70ef500e-206a-ad43-55ea-bb7e107409a2">An instantiation of the Abstract POI class SHALL comply with requirement <xref target="req_core_POI_contactInfo">/req/core/req-poi-contactInfo</xref>.</p>
+<table id="req_core_Abstract_POI" class="modspec" type="recommend"><thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 13: Requirement — Abstract POI</p></th></tr></thead><tbody><tr><th>Label</th><td>/req/core/req-abstract-poi</td></tr><tr><th>Statement</th><td><p id="_f61556ee-6d39-1cc8-e8ed-5cce9912a33e">An instantiation of the Abstract POI class SHALL comply with requirement <xref target="req_core_feature_with_lifespan">/req/core/req-poi-feature-with-lifespan</xref>.</p></td></tr><tr><th>A</th><td><p id="_70ef500e-206a-ad43-55ea-bb7e107409a2">An instantiation of the Abstract POI class SHALL comply with requirement <xref target="req_core_POI_contactInfo">/req/core/req-poi-contactInfo</xref>.</p>
 </td></tr><tr><th>B</th><td><p id="_384da7d1-9a59-62b7-e6ae-6f60503696c0">An instantiation of the Abstract POI class SHALL comply with requirement <xref target="req_core_POI_featureOfInterest">/req/core/req-poi-featureOfInterest</xref>.</p>
 </td></tr><tr><th>C</th><td><p id="_a03014df-c7c3-e09a-45f0-5ac99c1a1e78">An instantiation of the Abstract POI class SHALL comply with requirement <xref target="req_core_POI_metadata">/req/core/req-poi-metadata</xref>.</p>
 </td></tr><tr><th>D</th><td><p id="_e1a9750c-b2c5-23d4-c3e6-cf31d909f17b">An instantiation of the Abstract POI class SHALL comply with requirement <xref target="req_core_POI_keywords">/req/core/req-poi-keywords</xref>.</p>
@@ -3851,7 +3919,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <p id="_84858cf1-8db1-8a3e-c329-66c2a8ec3d46">In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. A collection of data types and concepts defined by the <xref type="inline" target="ISO19103">ISO 19103</xref>, <xref type="inline" target="ISO19107">ISO 19107</xref>, <xref type="inline" target="ISO19109">ISO 19109</xref>, and <xref type="inline" target="ISO19115">ISO 19115</xref> Standards is provided in <xref target="iso_data_dictionary_section">Annex B</xref>.</p>
 
-<table id="req_core_POI-Payload_class" class="modspec" type="recommend"><thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 24: Requirement — POI-Payload</p></th></tr></thead><tbody><tr><th>Label</th><td>/req/core/req-poi_payload-class</td></tr><tr><th>Statement</th><td><p id="_bb56ee18-1965-4643-e66e-f3428841938c">An encoding of the POI_Payload class SHALL comply with requirement <xref target="req_core_POI_featureOfInterest">/req/core/req-poi-featureOfInterest</xref>.</p></td></tr><tr><th>A</th><td><p id="_2520260f-8aa0-d543-ce81-735b5df74e97">An encoding of the POI_Payload class SHALL represent zero or more <tt>Properties</tt> from the Feature of Interest that it represents.</p>
+<table id="req_core_POI-Payload" class="modspec" type="recommend"><thead><tr><th scope="colgroup" colspan="2"><p class="RecommendationTitle">Requirement 24: Requirement — POI-Payload</p></th></tr></thead><tbody><tr><th>Label</th><td>/req/core/req-poi_payload</td></tr><tr><th>Statement</th><td><p id="_bb56ee18-1965-4643-e66e-f3428841938c">An encoding of the POI_Payload class SHALL comply with requirement <xref target="req_core_POI_featureOfInterest">/req/core/req-poi-featureOfInterest</xref>.</p></td></tr><tr><th>A</th><td><p id="_2520260f-8aa0-d543-ce81-735b5df74e97">An encoding of the POI_Payload class SHALL represent zero or more <tt>Properties</tt> from the Feature of Interest that it represents.</p>
 </td></tr><tr><th>B</th><td><p id="_12fbec74-5dac-ca78-c25f-6a43181b8a11">The syntax of a POI_Payload class SHALL be provided in an associated instance of the <tt>PayloadSechema</tt> class.</p>
 </td></tr><tr><th>C</th><td><p id="_bda64ed5-5648-a618-ce2a-625fd38d8318">If the semantics of a POI_Payload class is provided, it SHALL be provided in no more than one associated instance of the <tt>PayloadDefinition</tt> class.</p>
 </td></tr></tbody></table>
@@ -4297,6 +4365,74 @@ The term was first used in this way in the general theory of object-oriented pro
 </td>
 </tr><tr><td valign="middle" align="center">F</td>
 <td valign="middle" align="left"><p id="_36774ab5-f0de-559d-911b-f2157afdb269">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</p>
+</td>
+</tr></tbody>
+</table>
+
+<table id="ats_core_abstract_poi" width="90%"><name>Table A.5</name><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="center"><strong>Abstract Test 5</strong></td>
+<td valign="middle" align="left"><p id="_7f9b3978-7cc5-0b8c-87c6-d73a458025b3"><strong>/ats/core/abstractpoi</strong></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Purpose</td>
+<td valign="middle" align="left"><p id="_3ded3a93-5364-9c29-1de5-59ed308a0ea5">To validate that the Implementation Specification implements the Feature With Livespan Class as defined in the POI Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">Requirement</td>
+<td valign="middle" align="left"><p id="_00341a7b-754a-c97f-4df5-55813fae2f34"><xref target="req_core_abstractpoi">/req/core/req-abstract-poi</xref></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Method</td>
+<td valign="middle" align="left"><p id="_19e599e8-aa8e-f1c6-63df-0cae49a9d925">Manual Inspection</p>
+</td>
+</tr><tr><td colspan="2" valign="middle" align="left">For each UML class defined or referenced in the Core Package:</td>
+</tr><tr><td valign="middle" align="center">A</td>
+<td valign="middle" align="left"><p id="_533eb088-27ea-f6d5-bc5f-d35e8635c4a7">Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.</p>
+</td>
+</tr><tr><td valign="middle" align="center">B</td>
+<td valign="middle" align="left"><p id="_99f018a4-36fe-9a56-ce06-d12ee3e12b6a">Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">C</td>
+<td valign="middle" align="left"><p id="_f8e93bc9-db17-6ccc-2289-3c27b3714012">Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">D</td>
+<td valign="middle" align="left"><p id="_19b30270-228e-c2ad-136a-2ba527c1f2cc">Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">E</td>
+<td valign="middle" align="left"><p id="_739f3806-41fd-625f-369f-6d556cbfa21e">Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">F</td>
+<td valign="middle" align="left"><p id="_df3d5119-50e9-767a-b66c-f3684a9db041">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</p>
+</td>
+</tr></tbody>
+</table>
+
+<table id="ats_core_POI-Payload" width="90%"><name>Table A.6</name><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="center"><strong>Abstract Test 6</strong></td>
+<td valign="middle" align="left"><p id="_c8f45b30-43ef-3d1f-a584-02939e33f11b"><strong>/ats/core/req-poi_payload</strong></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Purpose</td>
+<td valign="middle" align="left"><p id="_a64605b8-594b-db54-6d71-f3f3f2cc8d92">To validate that the Implementation Specification implements the Feature With Livespan Class as defined in the POI Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">Requirement</td>
+<td valign="middle" align="left"><p id="_3842ceed-1baf-9bd7-3dab-00c40c8b0886"><xref target="req_core_abstractpoi">/req/core/req-abstract-poi</xref></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Method</td>
+<td valign="middle" align="left"><p id="_fed92aa4-458e-1fbe-06cb-61ea032904f4">Manual Inspection</p>
+</td>
+</tr><tr><td colspan="2" valign="middle" align="left">For each UML class defined or referenced in the Core Package:</td>
+</tr><tr><td valign="middle" align="center">A</td>
+<td valign="middle" align="left"><p id="_0efa5777-b73c-933c-5876-3bb038bc8d63">Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.</p>
+</td>
+</tr><tr><td valign="middle" align="center">B</td>
+<td valign="middle" align="left"><p id="_a16cbd89-7759-048f-79ab-205eafe22dd8">Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">C</td>
+<td valign="middle" align="left"><p id="_1a3d2330-edae-d46c-eb3d-bf4c3d337e82">Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">D</td>
+<td valign="middle" align="left"><p id="_e472b6e7-3d56-8219-701e-5804e05594e3">Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">E</td>
+<td valign="middle" align="left"><p id="_6b7e236f-486d-54d9-c9ef-c7d58784236e">Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">F</td>
+<td valign="middle" align="left"><p id="_2c231bbb-f500-e1ff-96e7-ba58984dde63">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</p>
 </td>
 </tr></tbody>
 </table>
