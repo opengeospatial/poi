@@ -1,0 +1,10 @@
+=== Conformance Class Core
+
+include::Core/ATS_Core_GeneralFeatureModel.adoc[]
+
+include::Core/ATS_Core_Geometry.adoc[]
+
+include::Core/ATS_Core_AbstractFeature.adoc[]
+
+include::Core/ATS_Core_FeatureWithLifespan.adoc[]
+

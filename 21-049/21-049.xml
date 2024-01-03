@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.4.3" schema-version="v1.2.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2023-12-31</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2023-12-31</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2024-01-02</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2024-01-02</on></date><contributor><role type="author"/><organization>
 <name>Digital Flancers</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Google</name>
@@ -125,7 +125,7 @@ To obtain additional rights of use, visit
 
 <clause id="_implementation_specifications" obligation="normative">
 <title>Implementation Specifications</title>
-<p id="_a55f013d-80eb-8f79-63fa-4d52abde0f87">Implementation Specifications define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Specifications provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in <xref target="annex-test-suite-section">Annex A</xref> (normative) of this document.</p>
+<p id="_a55f013d-80eb-8f79-63fa-4d52abde0f87">Implementation Specifications define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Specifications provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in <xref target="abstract-test-suite-section">Annex A</xref> (normative) of this document.</p>
 
 <p id="_58945998-468f-8d70-ebb4-616bee021e6b">Since this standard is agnostic to the implementing technologies, the specific techniques to be used for conformance testing cannot be specified. Implementation Specifications need to provide evidence of conformance which is appropriate for the implementing technologies. This evidence should be provided as an annex to the Implementation Specification document.</p>
 </clause>
@@ -137,7 +137,7 @@ To obtain additional rights of use, visit
 
 <clause id="_conformance_classes" obligation="normative">
 <title>Conformance Classes</title>
-<p id="_332c51c6-ffaa-6a24-994d-d4870a0a0933">This standard identifies one “Core” <xref target="conformance-class-definition">conformance class</xref>. This conformance class defines the conformance criteria for the requirements defined in one “Core” <xref target="requirements-class-definition">requirements class</xref>. The tests this conformance class are documented in Annex A. These tests are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in <xref target="annex-test-suite-section">Annex A</xref> for the Core Requirements Class.</p>
+<p id="_332c51c6-ffaa-6a24-994d-d4870a0a0933">This standard identifies one “Core” <xref target="conformance-class-definition">conformance class</xref>. This conformance class defines the conformance criteria for the requirements defined in one “Core” <xref target="requirements-class-definition">requirements class</xref>. The tests this conformance class are documented in Annex A. These tests are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in <xref target="abstract-test-suite-section">Annex A</xref> for the Core Requirements Class.</p>
 
 <p id="_6065e12f-603f-14da-ad65-4e67e3284e9a">The POI Conceptual Model is defined by the POI UML model. This standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.</p>
 </clause>
@@ -256,7 +256,7 @@ The term was first used in this way in the general theory of object-oriented pro
 </ol></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="">OGC Definitions Register</origin>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
 </termsource></term>
 
 <term id="conformance-class-definition"><preferred><expression>
@@ -266,7 +266,7 @@ The term was first used in this way in the general theory of object-oriented pro
 <definition><verbal-definition><p id="_7683b444-71f9-cbcc-8558-8baee108ac62">a class of conformance tests. A conformant implementation must pass all the tests in the class.</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="">OGC Definitions Register</origin>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
 </termsource></term>
 
 <term id="coordinate-definition"><preferred><expression>
@@ -504,7 +504,7 @@ The term was first used in this way in the general theory of object-oriented pro
 <definition><verbal-definition><p id="_bc73a863-f9da-cad6-9548-fde7ec271e5a">guidance for software engineers that is so specific that any two independent software implementations of the specification can “plug and play” for each other.</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="">OGC Definitions Register</origin>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
 </termsource></term>
 
 <term id="location-definition"><preferred><expression>
@@ -704,7 +704,7 @@ The term was first used in this way in the general theory of object-oriented pro
 <definition><verbal-definition><p id="_76fc6131-b924-78bb-6fbc-4b6e0d7b29fb">a class of requirements, comprising a logical grouping of normative statements that shall be satisfied as a group in conformant implementations. May have dependencies on other <em>requirements classes</em> (<xref target="requirements-class-definition"/>) , but there should be no circular dependencies else the classes must always be satisfied together so are functionally one class.</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="">OGC Definitions Register</origin>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
 </termsource></term>
 
 <term id="standardization-target-definition"><preferred><expression>
@@ -714,7 +714,7 @@ The term was first used in this way in the general theory of object-oriented pro
 <definition><verbal-definition><p id="_8f96ec83-b793-7d84-d168-5c156030d654"><em>standardization target</em> (<xref target="standardization-target-definition"/>)</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="">OGC Definitions Register</origin>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
 </termsource></term>
 
 <term id="stereotype-definition"><preferred><expression>
@@ -816,11 +816,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 
 <description><p id="_8c7e9515-e842-a9f3-0ce3-4cd60d14c036">An encoding of the POI Conceptual Model SHALL be compliant with the General Feature Model defined in <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109</eref>.</p></description>
-
-<component exclude="false" class="part"><p id="_02aa6a55-62b1-ba5c-4ac3-c3438474f895">A POI instance SHALL include a spatial geometry property using the SpatialAttributeType attribute type and <xref target="GM_Object-section">GM_Object</xref> class.</p>
-</component>
-<component exclude="false" class="part"><p id="_3b7927d2-e5ff-f4e4-9f33-e01496f522ca">The spatial geometry properties of all POI instances SHALL be defined using the <xref target="GM_Object-section">GM_Object</xref> class.</p>
-</component></requirement>
+</requirement>
 </clause>
 
 <clause id="_geometry" obligation="normative">
@@ -849,13 +845,15 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <description><p id="_9ba5ffaa-532a-a888-f9d6-c12c32aa24af">The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in <eref type="inline" bibitemid="ISO19107" citeas="ISO 19107:2003">ISO 19107</eref>.</p></description>
 
-<component exclude="false" class="part"><p id="_88090ba2-e6ce-1e73-8e5b-96c9de7b8418">POI Spatial geometry properties SHALL be one or more of the following:</p>
+<component exclude="false" class="part"><p id="_75274948-a6fc-2d39-9084-2e7212f53b9c">A POI instance SHALL include a spatial geometry property using the SpatialAttributeType attribute type.</p>
+</component>
+<component exclude="false" class="part"><p id="_1ed1fa1e-9c46-9280-07e5-70f1baae1629">The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes:</p>
 
-<ol id="_d5d55c34-d52f-52ac-57df-9a08863c3158" type="arabic"><li><p id="_79274635-eac2-1bdc-9de5-1415998324d9"><xref target="GM_Point-section">GM_Point</xref></p>
+<ol id="_7922e3a0-4b67-603c-fa54-fe7c273c8cbe" type="arabic"><li><p id="_3803dffc-25af-3503-0c91-5bc47c404d5d"><xref target="GM_Point-section">GM_Point</xref></p>
 </li>
-<li><p id="_ffab08f2-bb9b-de49-a05e-2e857a508683"><xref target="GM_LineString-section">GM_LineString</xref></p>
+<li><p id="_b33a6767-7040-ed1d-96fb-7d411493dfa4"><xref target="GM_LineString-section">GM_LineString</xref></p>
 </li>
-<li><p id="_b23adbf8-cd7b-e0d6-05c9-c5b91f4ee7f0"><xref target="GM_Polygon-section">GM_Polygon</xref></p>
+<li><p id="_b75d83f6-96de-a2fc-aa3a-080977f3f31b"><xref target="GM_Polygon-section">GM_Polygon</xref></p>
 </li>
 </ol>
 </component></requirement>
@@ -1447,26 +1445,120 @@ The term was first used in this way in the general theory of object-oriented pro
 
 </sections><annex id="abstract-test-suite-section" obligation="informative">
 <title>Conformance Class Abstract Test Suite (Normative)</title>
-<note id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"><p id="_2f41c6a6-7963-8015-59ca-d74fafa8ae41">Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
-</note>
+<clause id="_conformance_class_core" obligation="informative">
+<title>Conformance Class Core</title>
+<table id="ats_core_general_feature_model" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="center"><strong>Abstract Test 1</strong></td>
+<td valign="middle" align="left"><p id="_b1f74a34-1794-d698-bdc1-10edbf3178e0"><strong>/ats/core/generalfeaturemodel</strong></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Purpose</td>
+<td valign="middle" align="left"><p id="_85c9b6ab-382e-7cca-6ad9-314dd9d65e1d">To validate that the POI Implementation Specification is conformant with the <xref target="iso19109">ISO 19109</xref> General Feature Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">Requirement</td>
+<td valign="middle" align="left"><p id="_2be03344-f2a8-64b6-b921-e15aa2136b24"><xref target="req_core_geometry">/req/core/req-generalfeaturemodel</xref></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Method</td>
+<td valign="middle" align="left"><p id="_c73ba70f-bb48-a03d-0efe-2cde35005848">Automated Test</p>
+</td>
+</tr><tr><td valign="middle" align="center">A</td>
+<td valign="middle" align="left"><p id="_390318a1-ec60-cf93-d34e-bd747119d74b">Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).</p>
+</td>
+</tr><tr><td valign="middle" align="center">B</td>
+<td valign="middle" align="left"><p id="_2c6f9844-2379-3e01-9dee-f00638111ba5">Validate that the Abstract Test Suite tests for conformance with ISO 19109 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p>
+</td>
+</tr></tbody>
+</table>
 
-<clause id="_conformance_class_a" obligation="informative">
-<title>Conformance Class A</title>
-<clause id="_requirement_1" obligation="informative">
-<title>Requirement 1</title>
-<requirement id="_f47c02ed-6861-e4d1-ef07-329750ecf0f7" model="ogc" type="pseudocode"><verification exclude="false"><dl id="_26b5e8cf-15c9-e503-c474-f92d2801893c"><dt>Test purpose</dt>
-<dd><p id="_d47d8426-5d28-1c1c-2ac5-d2cb76633cdb">Verify that…​</p>
-</dd>
-<dt>Test method</dt>
-<dd><p id="_82b50db0-7bcd-8066-e386-e61f2727f4c2">Inspect…​</p>
-</dd>
-</dl>
-</verification></requirement>
-</clause>
+<table id="ats_core_geometry" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="center"><strong>Abstract Test 2</strong></td>
+<td valign="middle" align="left"><p id="_9562675d-e952-a193-937d-95a9e83996b0"><strong>/ats/core/geometry</strong></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Purpose</td>
+<td valign="middle" align="left"><p id="_91175825-8054-168f-bdbc-2e3d650e4a53">To validate that the POI Implementation Specification is conformant with the <xref target="iso19107">ISO 19107</xref> Geometry Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">Requirement</td>
+<td valign="middle" align="left"><p id="_9184f9a2-2aba-0100-db0f-7f0ac67b0d59"><xref target="req_core_geometry">/req/core/req-geometry</xref></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Method</td>
+<td valign="middle" align="left"><p id="_8a5121fc-3e2d-29bb-a6f0-4066013eae93">Automated Test</p>
+</td>
+</tr><tr><td valign="middle" align="center">A</td>
+<td valign="middle" align="left"><p id="_be0e71fa-b7c7-74f1-11e6-5e6000dde4ce">Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).</p>
+</td>
+</tr><tr><td valign="middle" align="center">B</td>
+<td valign="middle" align="left"><p id="_3eba33f1-7dcf-b27f-ca48-538e90f20d85">Validate that the Abstract Test Suite tests for conformance with ISO 19107 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p>
+</td>
+</tr><tr><td valign="middle" align="center">C</td>
+<td valign="middle" align="left"><p id="_d6b4d94e-d2a3-40b8-f38f-fa201f55cc6b">Validate that the Abstract Test Suite tests each POI Feature for the presence of a <tt>SpatialAttributeType</tt> property of type GM_Point, GM_LineString, or GM_Polygon.</p>
+</td>
+</tr></tbody>
+</table>
 
-<clause id="_requirement_2" obligation="informative">
-<title>Requirement 2</title>
-</clause>
+<table id="ats_core_abstractfeature" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="center"><strong>Abstract Test 3</strong></td>
+<td valign="middle" align="left"><p id="_ce35d490-d61c-ef01-3f6f-bfb2ba2117fb"><strong>/ats/core/abstractfeature</strong></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Purpose</td>
+<td valign="middle" align="left"><p id="_3ad61d31-2377-c230-fe93-b6a25e7c4e9e">To validate that the Implementation Specification implements the AbstractFeature Class as defined in the POI Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">Requirement</td>
+<td valign="middle" align="left"><p id="_227052d4-ca7b-9459-5ec5-aea16832d969"><xref target="req_core_abstractfeature">/req/core/req-abstractfeature</xref></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Method</td>
+<td valign="middle" align="left"><p id="_0f0f9c9c-d149-0df7-f2b7-99c149b5a7ed">Manual Inspection</p>
+</td>
+</tr><tr><td colspan="2" valign="middle" align="left">For each UML class defined or referenced in the Core Package:</td>
+</tr><tr><td valign="middle" align="center">A</td>
+<td valign="middle" align="left"><p id="_9af2bafa-7f51-2ac9-fd31-1ad9fe020c29">Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.</p>
+</td>
+</tr><tr><td valign="middle" align="center">B</td>
+<td valign="middle" align="left"><p id="_8c7805a1-8144-5d5a-2bc5-8f04d581fb8a">Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">C</td>
+<td valign="middle" align="left"><p id="_1a13e163-7481-7ab0-fa20-545c84902335">Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">D</td>
+<td valign="middle" align="left"><p id="_14a97de4-a2c1-ecca-c73c-dcfdb9955aa8">Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">E</td>
+<td valign="middle" align="left"><p id="_f19616ab-09d3-9ac2-2466-727ed586c015">Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">F</td>
+<td valign="middle" align="left"><p id="_ca718419-e7ce-1d18-7cdd-59871972615c">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</p>
+</td>
+</tr></tbody>
+</table>
+
+<table id="ats_core_featurewithlifespan" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="center"><strong>Abstract Test 4</strong></td>
+<td valign="middle" align="left"><p id="_0623b63a-1827-f980-6c1a-45c8b96f3178"><strong>/ats/core/featurewithlifespan</strong></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Purpose</td>
+<td valign="middle" align="left"><p id="_ac26623c-4f0b-5c34-5354-722c18636cb2">To validate that the Implementation Specification implements the Feature With Livespan Class as defined in the POI Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">Requirement</td>
+<td valign="middle" align="left"><p id="_7a6f2ee7-f8cf-799f-5302-aa9f75b744ac"><xref target="req_core_abstractfeature">/req/core/req-featurewithlifespan</xref></p>
+</td>
+</tr><tr><td valign="middle" align="center">Test Method</td>
+<td valign="middle" align="left"><p id="_d03ae79e-52f5-c587-f7f9-f2ec596f76f0">Manual Inspection</p>
+</td>
+</tr><tr><td colspan="2" valign="middle" align="left">For each UML class defined or referenced in the Core Package:</td>
+</tr><tr><td valign="middle" align="center">A</td>
+<td valign="middle" align="left"><p id="_931bb583-47a2-12b5-7552-0ef322d1a799">Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class.</p>
+</td>
+</tr><tr><td valign="middle" align="center">B</td>
+<td valign="middle" align="left"><p id="_e8728246-0acb-cd33-595e-6f6f7feb072d">Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">C</td>
+<td valign="middle" align="left"><p id="_09d9dfb1-666b-cff0-ad97-a7cea3feebf4">Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.</p>
+</td>
+</tr><tr><td valign="middle" align="center">D</td>
+<td valign="middle" align="left"><p id="_f16b32d8-7e77-17b0-a0c6-0865d41d7fa6">Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">E</td>
+<td valign="middle" align="left"><p id="_2804c7b6-e3f7-a7d7-0b4f-4c259b18493e">Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model</p>
+</td>
+</tr><tr><td valign="middle" align="center">F</td>
+<td valign="middle" align="left"><p id="_36774ab5-f0de-559d-911b-f2157afdb269">Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model</p>
+</td>
+</tr></tbody>
+</table>
 </clause>
 </annex><annex id="iso_data_dictionary_section" obligation="informative">
 <title>ISO Data Dictionary</title>
@@ -2454,7 +2546,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
   </relation>  <relation type="updates">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19115-1:2014/Amd 1:2018</formattedref>      <docidentifier type="ISO" primary="true">ISO 19115-1:2014/Amd 1:2018</docidentifier>      <date type="circulated">        <on>2019-06-13</on>      </date>    </bibitem>
   </relation>  <relation type="updates">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19115-1:2014/Amd 2:2020</formattedref>      <docidentifier type="ISO" primary="true">ISO 19115-1:2014/Amd 2:2020</docidentifier>      <date type="circulated">        <on>2019-06-13</on>      </date>    </bibitem>
   </relation>  <place>Geneva</place></bibitem>
-<bibitem id="ISO19507"><formattedref format="application/x-isodoc+xml"/><docidentifier type="ISO">ISO 19507:2012)</docidentifier><docnumber>19507:2012)</docnumber></bibitem>
+<bibitem id="ISO19507"><formattedref format="application/x-isodoc+xml">nofetch</formattedref><docidentifier type="ISO">ISO 19507:2012)</docidentifier><docnumber>19507:2012)</docnumber></bibitem>
 <bibitem id="opd_49" type="standard" schema-version="v1.2.4">  <fetched>2023-12-28</fetched>  
 <title type="title-main" format="text/plain" language="en" script="Latn">OGC Web Service Common Implementation Specification</title>
   
@@ -2475,7 +2567,8 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
     </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This standard contains requirements for writing standards to be used for any document whose eventual purpose is the specification of requirements for software, services or data structures.</abstract>  </bibitem>
-<bibitem id="omguml"><formattedref format="application/x-isodoc+xml">OMG: Object Management Group (OMG) <em>Unified Modeling Language (UML)</em>, Version 2.5.1, December 2017,   <link target="https://www.omg.org/spec/UML/2.5.1"><link target="https://www.omg.org/spec/UML/2.5.1"/></link></formattedref><docidentifier type="OMG">OMG UML</docidentifier></bibitem>
+<bibitem id="ogcdr"><formattedref format="application/x-isodoc+xml"/><docidentifier type="OGC">OGC Definitions Server</docidentifier></bibitem>
+<bibitem id="omguml"><formattedref format="application/x-isodoc+xml">OMG: Object Management Group (OMG) <em>Unified Modeling Language (UML)</em>, Version 2.5.1, December 2017,   <link target="https://www.omg.org/spec/UML/2.5.1"><link target="https://www.omg.org/spec/UML/2.5.1"/></link> — not in expected format</formattedref><docidentifier type="OMG">OMG UML</docidentifier></bibitem>
 </references><references id="Bibliography" normative="false" obligation="informative">
 <title>Bibliography</title><bibitem id="ISO1087-1" type="standard" schema-version="v1.2.4">  <fetched>2023-12-01</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Terminology work</title>
@@ -2594,6 +2687,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
       </relation>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO/IEC 2382-37:2012</formattedref>          <docidentifier type="ISO" primary="true">ISO/IEC 2382-37:2012</docidentifier>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
   </relation>  <place>Geneva</place></bibitem><bibitem id="ISO11404" type="standard">
+<title format="text/plain">nofetch</title>
 <docidentifier type="ISO">ISO 11404:2007</docidentifier><docnumber>11404</docnumber><date type="published"><on>2007</on></date><contributor><role type="publisher"/><organization>
 <name>ISO</name>
 </organization></contributor></bibitem><bibitem id="ISO19104" type="standard" schema-version="v1.2.4">  <fetched>2023-12-01</fetched>  
@@ -2703,6 +2797,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
       </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19119:2005</formattedref>      <docidentifier type="ISO" primary="true">ISO 19119:2005</docidentifier>    </bibitem>
   </relation>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19119:2005/Amd 1:2008</formattedref>      <docidentifier type="ISO" primary="true">ISO 19119:2005/Amd 1:2008</docidentifier>    </bibitem>
   </relation>  <place>Geneva</place></bibitem><bibitem id="ISO19133" type="standard">
+<title format="text/plain">nofetch</title>
 <docidentifier type="ISO">ISO 19133:2020</docidentifier><docnumber>19133</docnumber><date type="published"><on>2020</on></date><contributor><role type="publisher"/><organization>
 <name>ISO</name>
 </organization></contributor></bibitem><bibitem id="ISO19136-1" type="standard" schema-version="v1.2.4">  <fetched>2023-12-01</fetched>  
@@ -2754,6 +2849,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
 <name>ISO</name>
           </organization>        </owner>      </copyright>      <place>Geneva</place>    </bibitem>
   </relation>  <place>Geneva</place></bibitem><bibitem id="ISO19150-1" type="standard">
+<title format="text/plain">nofetch</title>
 <docidentifier type="ISO">ISO 19150-1</docidentifier><docnumber>19150-1</docnumber><contributor><role type="publisher"/><organization>
 <name>ISO</name>
 </organization></contributor></bibitem><bibitem id="ISO19150-2" type="standard" schema-version="v1.2.4">  <fetched>2023-12-01</fetched>  
@@ -2841,7 +2937,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
 <name>ISO</name>
       </organization>    </owner>  </copyright>  <relation type="updates">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19156:2023</formattedref>      <docidentifier type="ISO" primary="true">ISO 19156:2023</docidentifier>      <date type="circulated">        <on>2023-04-27</on>      </date>    </bibitem>
   </relation>  <place>Geneva</place></bibitem><bibitem id="ISO19160-4">
-  <formattedref format="application/x-isodoc+xml"/>
+  <formattedref format="application/x-isodoc+xml">nofetch</formattedref>
   <docidentifier type="ISO">ISO 19160-4)</docidentifier>
   <docnumber>19160-4)</docnumber>
 </bibitem><bibitem id="ISO19501" type="standard" schema-version="v1.2.4">  <fetched>2023-12-01</fetched>  

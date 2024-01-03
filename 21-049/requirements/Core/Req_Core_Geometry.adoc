@@ -11,7 +11,12 @@ The POI Conceptual Model spatial geometry properties SHALL be compliant with the
 
 [.component,class=part]
 --
-POI Spatial geometry properties SHALL be one or more of the following:
+A POI instance SHALL include a spatial geometry property using the SpatialAttributeType attribute type.
+--
+
+[.component,class=part]
+--
+The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes:
 
 . <<GM_Point-section,GM_Point>>
 . <<GM_LineString-section,GM_LineString>>
