@@ -3,45 +3,45 @@
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-abstract-poi
+label:: /req/core/abstract-poi
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_feature_with_lifespan,/req/core/req-poi-feature-with-lifespan>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_feature_with_lifespan,/req/core/poi-feature-with-lifespan>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_contactInfo,/req/core/req-poi-contactInfo>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_contactInfo,/req/core/poi-contactInfo>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_featureOfInterest,/req/core/req-poi-featureOfInterest>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_featureOfInterest,/req/core/poi-featureOfInterest>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_metadata,/req/core/req-poi-metadata>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_metadata,/req/core/poi-metadata>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_keywords,/req/core/req-poi-keywords>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_keywords,/req/core/poi-keywords>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_rights,/req/core/req-poi-rights>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_rights,/req/core/poi-rights>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_symbology,/req/core/req-poi-symbology>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_symbology,/req/core/poi-symbology>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_Payload,/req/core/req-poi-payload>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_Payload,/req/core/poi-payload>>.
 --
 
 ====
@@ -51,7 +51,7 @@ An instantiation of the Abstract POI class SHALL comply with requirement <<req_c
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi-contactInfo
+label:: /req/core/poi-contactInfo
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include one or more `contactInfo` attributes.
@@ -68,7 +68,7 @@ Encodings of the `contactInfo` attribute SHALL be a valid implementation of the 
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi-featureOfInterest
+label:: /req/core/poi-featureOfInterest
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include zero or more associated instances of the `FeatureOfInterest` class.
@@ -80,7 +80,7 @@ An encoding of the Abstract POI class SHALL include zero or more associated inst
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi-metadata
+label:: /req/core/poi-metadata
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include zero or more `metadata` attributes.
@@ -92,7 +92,7 @@ Encodings of the `metadata` attribute SHALL be a resolvable reference to a Metad
 --
 [.component,class=part]
 --
-Encodings of a `metadata` attribute SHALL comply with requirement <<req_core_Link,/req/core/req-link>>.
+Encodings of a `metadata` attribute SHALL comply with requirement <<req_core_Link,/req/core/link>>.
 --
 ====
 
@@ -101,7 +101,7 @@ Encodings of a `metadata` attribute SHALL comply with requirement <<req_core_Lin
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi-payload
+label:: /req/core/poi-payload
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include zero or more associated instances of the `POI_Payload` class.
@@ -109,7 +109,7 @@ An encoding of the Abstract POI class SHALL include zero or more associated inst
 
 [.component,class=part]
 --
-An encoding of the Abstract POI class SHALL comply with requirement <<req_core_POI-Payload_class,/req/core/req-poi-payload-class>>.
+An encoding of the Abstract POI class SHALL comply with requirement <<req_core_POI-Payload,/req/core/poi-payload>>.
 --
 ====
 
@@ -118,7 +118,7 @@ An encoding of the Abstract POI class SHALL comply with requirement <<req_core_P
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi-keywords
+label:: /req/core/poi-keywords
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include zero or more `keyword` attributes.
@@ -135,7 +135,7 @@ Encodings of the `keyword` attribute SHALL be a valid implementation of the MD_K
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi-rights
+label:: /req/core/poi-rights
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include zero, one, or two `rights` attributes.
@@ -152,7 +152,7 @@ Encodings of the `rights` attribute SHALL be a valid implementation of the MD_Co
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi-symbology
+label:: /req/core/poi-symbology
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include zero or one `symbology` attributes.
@@ -164,7 +164,7 @@ Encodings of the `symbology` attribute SHALL be a resolvable reference to a symb
 --
 [.component,class=part]
 --
-Encodings of a `symbology` attribute SHALL comply with requirement <<req_core_Link,/req/core/req-link>>.
+Encodings of a `symbology` attribute SHALL comply with requirement <<req_core_Link,/req/core/link>>.
 --
 ====
 
@@ -173,7 +173,7 @@ Encodings of a `symbology` attribute SHALL comply with requirement <<req_core_Li
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-link
+label:: /req/core/poi-link
 [.component,class=part]
 --
 TBD.

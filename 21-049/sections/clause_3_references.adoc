@@ -9,7 +9,7 @@ The following normative documents contain provisions that, through reference in 
 * [[[ISO19107,ISO 19107:2003]]] 
 * [[[ISO19109,ISO 19109:2015]]] 
 * [[[ISO19115,ISO 19115-1:2014]]] 
-* [[[ISO19507,ISO 19507:2012)]]] nofetch
+* [[[ISO19507,ISO 19507:2012]]]
 * [[[opd_49,OGC 06-121r9]]]
 * [[[modspec,OGC 08-131r3]]]
 * [[[ogcdr, OGC Definitions Server]]]

@@ -6,27 +6,27 @@
 label:: /req/core/req-featurewithlifespan
 [.component,class=part]
 --
-An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_abstract_feature,/req/core/req-abstractfeature>>.
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_abstractfeature,/req/core/abstractfeature>>.
 --
 
 [.component,class=part]
 --
-An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_creationdate,/req/core/req-featurewithlifespan-creationdate>>.
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_creationdate,/req/core/featurewithlifespan-creationdate>>.
 --
 
 [.component,class=part]
 --
-An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_terminationdate,/req/core/req-featurewithlifespan-terminationdate>>.
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_terminationdate,/req/core/featurewithlifespan-terminationdate>>.
 --
 
 [.component,class=part]
 --
-An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_validfrom,/req/core/req-featurewithlifespan-validfrom>>.
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_validfrom,/req/core/featurewithlifespan-validfrom>>.
 --
 
 [.component,class=part]
 --
-An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_validto,/req/core/req-featurewithlifespan-validto>>.
+An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_feature_with_lifespan_validto,/req/core/featurewithlifespan-validto>>.
 --
 
 ====
@@ -36,7 +36,7 @@ An encoding of the AbstractFeatureWithLifespan class SHALL comply with requireme
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-featurewithlifespan-creationdate
+label:: /req/core/featurewithlifespan-creationdate
 [.component,class=part]
 --
 An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `creationDate` attributes.
@@ -53,7 +53,7 @@ Encodings of the `creationDate` attribute SHALL be a valid implementation of the
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-featurewithlifespan-terminationdate
+label:: /req/core/featurewithlifespan-terminationdate
 [.component,class=part]
 --
 An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `terminationDate` attributes.
@@ -70,7 +70,7 @@ Encodings of the `terminationDate` attribute SHALL be a valid implementation of 
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-featurewithlifespan-validfrom
+label:: /req/core/featurewithlifespan-validfrom
 [.component,class=part]
 --
 An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `validFrom` attributes.
@@ -87,7 +87,7 @@ Encodings of the `validFrom` attribute SHALL be a valid implementation of the Da
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-featurewithlifespan-validto
+label:: /req/core/featurewithlifespan-validto
 [.component,class=part]
 --
 An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `validTo` attributes.

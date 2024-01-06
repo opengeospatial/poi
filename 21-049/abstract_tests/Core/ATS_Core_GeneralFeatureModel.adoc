@@ -1,10 +1,24 @@
+==== General Feature Model
+
 [[ats_core_general_feature_model]]
-[width="90%",cols="2,6a"]
-|===
-^|*Abstract Test {counter:ats-id}* |*/ats/core/generalfeaturemodel* 
-^|Test Purpose |To validate that the POI Implementation Specification is conformant with the <<iso19109,ISO 19109>> General Feature Model.
-^|Requirement |<<req_core_geometry,/req/core/req-generalfeaturemodel>>
-^|Test Method |Automated Test
-^|A |Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).
-^|B |Validate that the Abstract Test Suite tests for conformance with ISO 19109 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
-|===
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/generalfeaturemodel
+
+target:: /req/core/generalfeaturemodel
+
+classification:: Target Type:Implementation Specification
+
+test-purpose:: Validate that the POI Implementation Specification is conformant with the <<ISO19109,ISO 19109>> General Feature Model.
+
+test-method-type:: Manual Inspection
+
+description:: For a statisitcally meaningful set
+
+part:: Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).
+
+part:: Validate that the Abstract Test Suite tests for conformance with ISO 19109 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
+
+====
+

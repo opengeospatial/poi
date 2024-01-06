@@ -1,12 +1,12 @@
-[[req_core_POI_class]]
+[[req_core_poi]]
 .Requirement - POI Class
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi-class
+label:: /req/core/req-poi
 [.component,class=part]
 --
-An encoding of the POI class SHALL comply with requirement <<req_core_Abstract_POI_class,/req/core/req-poi-abstract-poi-class>>.
+An encoding of the POI class SHALL comply with requirement <<req_core_abstract-poi,/req/core/req-poi-abstract-poi>>.
 --
 
 ====

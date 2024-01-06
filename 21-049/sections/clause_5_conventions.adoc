@@ -25,7 +25,7 @@ Compositions are a form of association where the Component Class is treated as a
 
 The following stereotypes are used in this model:
 
-* &#171;__Abstract__&#187; TBD
+* &#171;__Abstract__&#187; a classes that doesn't include a complete implementation. Therefore, abstract classes can't be directly instantiated; they have to be specialized (inherited).
 * &#171;__DataType__&#187; defines a set of properties that lack identity. A data type is a classifier with no operations, whose primary purpose is to hold information.
 * &#171;__FeatureType__&#187; represents features that are similar and exhibit common characteristics. Features are abstractions of real-world phenomena and have an identity.
 * &#171;__Metaclass__&#187; (Optional) a profile class and packageable element which may be extended through one or more stereotypes, which defines how an existing metaclass may be extended as part of a profile. 

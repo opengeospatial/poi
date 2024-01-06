@@ -1,0 +1,95 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2024-01-05</fetched>
+  <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Location-based services</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Tracking and navigation</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Location-based services - Tracking and navigation</title>
+  <uri type="src">https://www.iso.org/standard/32551.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32551:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32551.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19133</docidentifier>
+  <docidentifier type="iso-reference">ISO 19133(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19133:stage-90.93:ed-1</docidentifier>
+  <docnumber>19133</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2005</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2024-01-05</fetched>
+      <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Location-based services</title>
+      <title type="title-part" format="text/plain" language="en" script="Latn">Tracking and navigation</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Location-based services - Tracking and navigation</title>
+      <uri type="src">https://www.iso.org/standard/32551.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32551:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32551.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19133:2005</docidentifier>
+      <docidentifier type="iso-reference">ISO 19133:2005(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19133:stage-90.93:ed-1</docidentifier>
+      <docnumber>19133</docnumber>
+      <date type="published">
+        <on>2005-10</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19133:2005 describes the data types, and operations associated with those types, for the implementation of tracking and navigation services. It is designed to specify web services that can be made available to wireless devices through web-resident proxy applications, but is not restricted to that environment.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2005</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number>ISO 19133</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

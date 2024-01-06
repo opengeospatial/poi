@@ -1,4 +1,11 @@
-=== Conformance Class Core
+[[ats_core]]
+[conformance_class_core]
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/poi/1.0/conf/core
+target:: Requirements Class core
+classification:: Target Type: Implementation Specification
+====
 
 include::Core/ATS_Core_GeneralFeatureModel.adoc[]
 

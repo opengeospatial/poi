@@ -1,15 +1,33 @@
-[[ats_core_POI-Payload]]
-[width="90%",cols="2,6a"]
-|===
-^|*Abstract Test {counter:ats-id}* |*/ats/core/req-poi_payload* 
-^|Test Purpose |To validate that the Implementation Specification implements the POI Payload Class as defined in the POI Conceptual Model.
-^|Requirement |<<req_core_POI-Payload,/req/core/req-poi_payload>>
-^|Test Method |Manual Inspection
-2+|For each UML class defined or referenced in the Core Package:
-^|A |Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class. 
-^|B |Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.
-^|C |Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.
-^|D |Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model 
-^|E |Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model
-^|F |Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model 
-|===
+==== POI Payload
+
+[[ats_core_poi-payload]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/poi-payload
+target:: /req/core/poi-payload
+classification:: Target Type:Implementation Specification
+test-purpose:: To validate that the Implementation Specification implements the POI_Payload Class as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+[.component,class=description]
+--
+Do For every POI_Payload class:
+--
+
+[.component,class=part]
+--
+Validate that the class includes at lease one `usesSchema` aggregation and that the target of the aggregation is a valid schema for the implementing technology.
+--
+
+[.component,class=part]
+--
+If the class includes a `hasDefinition` aggregation, validate that the target of the aggregation is a valid ontology for the implementing technology.
+--
+
+[.component,class=part]
+--
+If the class includes a `hasFeatureOfInterest` aggregation, validate that the target of the aggregation is a valid Feature for the implementing technology.
+--
+====

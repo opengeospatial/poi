@@ -1,4 +1,6 @@
-== POI
+== POI Core Requirements
+
+include::requirements/Req_Core.adoc[]
 
 === Feature Model
 
@@ -54,10 +56,13 @@ image::./images/ISO_Extensions.png[align="center"]
 These extensions include further refinement of the _AnyFeature_ class through the addition of identification and temporal validity attributes.
 
 *<<AbstractFeature-section,AbstractFeature:>>* The root Feature class for this standard. This class has been borrowed from the CityGML 3.0 Conceptual Model. _AbstractFeature_ adds descriptive and identifying properties to _AnyFeature_.
-
 *<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan:>>* Adds temporality to _AbstractFeature_. This class was borrowed from the CityGML 3.0 Conceptual Model.
 
+==== Abstract Feature
+
 include::../requirements/core/Req_Core_AbstractFeature.adoc[]
+
+==== Abstract Feature with Lifespan
 
 include::../requirements/core/Req_Core_Feature_With_Lifespan.adoc[]
 
@@ -71,14 +76,18 @@ The following classes form the core of the POI model. These classes are the same
 image::./images/POI.png[align="center"]
 
 *<<AbstractPOI-section,AbstractPOI:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
-
 *<<POI-section,POI:>>* A POI instance. 
-
 *<<FeatureOfInterest-section,FeatureOfInterest:>>* This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsis of this Feature.
+
+==== Abstract POI
 
 include::../requirements/core/Req_Core_AbstractPOI.adoc[]
 
+==== POI
+
 include::../requirements/core/Req_Core_POI.adoc[]
+
+==== Feature of Interest
 
 include::../requirements/core/Req_Core_FeatureOfInterest.adoc[]
 
@@ -94,9 +103,7 @@ Therefore, the POI model is designed to be extended with properties specific to 
 image::./images/POI_Extensions.png[align="center"]
 
 *<<POI_Payload-section,POI_Payload:>>* The abstract model for a Point of Interest. All POI instances will contain these attributes.
-
 *<<PayloadSchema-section,PayloadSchema:>>* The Payload Schema Class represents a syntactic model (schema) for a POI payload.
-
 *<<PayloadDefinition-section,PayloadDefinition:>>* The Payload Definition Class represents a semantic model (ontology) for a POI payload.
 
 In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. A collection of data types and concepts defined by the <<ISO19103,ISO 19103>>, <<ISO19107,ISO 19107>>, <<ISO19109,ISO 19109>>, and <<ISO19115,ISO 19115>> Standards is provided in <<iso_data_dictionary_section,Annex B>>.

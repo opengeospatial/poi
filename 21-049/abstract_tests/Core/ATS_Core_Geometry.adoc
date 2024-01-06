@@ -1,11 +1,38 @@
+==== Geometry
+
 [[ats_core_geometry]]
-[width="90%",cols="2,6a"]
-|===
-^|*Abstract Test {counter:ats-id}* |*/ats/core/geometry* 
-^|Test Purpose |To validate that the POI Implementation Specification is conformant with the <<iso19107,ISO 19107>> Geometry Model.
-^|Requirement |<<req_core_geometry,/req/core/req-geometry>>
-^|Test Method |Automated Test
-^|A |Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).
-^|B |Validate that the Abstract Test Suite tests for conformance with ISO 19107 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.
-^|C |Validate that the Abstract Test Suite tests each POI Feature for the presence of a `SpatialAttributeType` property of type GM_Point, GM_LineString, or GM_Polygon. 
-|===
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/geometry
+
+target:: /req/core/geometry
+
+classification:: Target Type:Implementation Specification
+
+[.component,class=test-purpose]
+--
+To validate that the POI Implementation Specification is conformant with the <<iso19107,ISO 19107>> Geometry Model.
+--
+
+[.component,class=test-method-type]
+--
+Manual Inspection
+--
+
+[.component,class=part]
+--
+Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).
+--
+
+[.component,class=part]
+--
+Validate that the Abstract Test Suite tests for conformance with ISO 19107 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.
+--
+
+[.component,class=part]
+--
+Validate that the Abstract Test Suite tests each POI Feature for the presence of a `SpatialAttributeType` property of type GM_Point, GM_LineString, or GM_Polygon. 
+--
+
+====

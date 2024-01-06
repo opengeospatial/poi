@@ -1,9 +1,9 @@
-[[req_core_abstract_feature]]
+[[req_core_abstractfeature]]
 .Requirement - Abstract Feature
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-abstractfeature
+label:: /req/core/abstractfeature
 [.component,class=part]
 --
 An encoding of the AbstractFeature class SHALL be a compliant extension of the AnyFeature class defined in <<ISO19109,ISO 19109>>.
@@ -11,22 +11,22 @@ An encoding of the AbstractFeature class SHALL be a compliant extension of the A
 
 [.component,class=part]
 --
-An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-description,/req/core/req-abstractfeature-description>>.
+An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-description,/req/core/abstractfeature-description>>.
 --
 
 [.component,class=part]
 --
-An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-featureid,/req/core/req-abstractfeature-featureid>>.
+An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-featureid,/req/core/abstractfeature-featureid>>.
 --
 
 [.component,class=part]
 --
-An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-identifier,/req/core/req-abstractfeature-identifier>>.
+An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-identifier,/req/core/abstractfeature-identifier>>.
 --
 
 [.component,class=part]
 --
-An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-name,/req/core/req-abstractfeature-name>>.
+An encoding of the AbstractFeature class SHALL comply with requirement <<req_core_abstractfeature-name,/req/core/abstractfeature-name>>.
 --
 ====
 
@@ -35,7 +35,7 @@ An encoding of the AbstractFeature class SHALL comply with requirement <<req_cor
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-abstractfeature-description
+label:: /req/core/abstractfeature-description
 [.component,class=part]
 --
 An encoding of the AbstractFeature class SHALL include zero or one `description` attributes.
@@ -52,7 +52,7 @@ Encodings of the `description` attribute SHALL be a valid implementation of the 
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-abstractfeature-featureid
+label:: /req/core/abstractfeature-featureid
 [.component,class=part]
 --
 An encoding of the AbstractFeature class SHALL include one `featureID` attributes.
@@ -69,7 +69,7 @@ Encodings of the `featureID` attribute SHALL be a valid implementation of the ID
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-abstractfeature-identifier
+label:: /req/core/abstractfeature-identifier
 [.component,class=part]
 --
 An encoding of the AbstractFeature class SHALL include zero or one `identifier` attributes.
@@ -86,7 +86,7 @@ Encodings of the `identifier` attribute SHALL be a valid implementation of the S
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-abstractfeature-name
+label:: /req/core/abstractfeature-name
 [.component,class=part]
 --
 An encoding of the AbstractFeature class SHALL include zero or more `name` attributes.

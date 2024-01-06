@@ -1,15 +1,117 @@
-[[ats_core_abstract_feature]]
-[width="90%",cols="2,6a"]
-|===
-^|*Abstract Test {counter:ats-id}* |*/ats/core/abstractfeature* 
-^|Test Purpose |To validate that the Implementation Specification implements the AbstractFeature Class as defined in the POI Conceptual Model.
-^|Requirement |<<req_core_abstract_feature,/req/core/req-abstractfeature>>
-^|Test Method |Manual Inspection
-2+|For each UML class defined or referenced in the Core Package:
-^|A |Validate that the Implementation Specification contains a data element which represents the same concept as that defined for the UML class. 
-^|B |Validate that the data element has the same relationships with other elements as those defined for the UML class. Validate that those relationships have the same source, target, direction, roles, and multiplicies as those documented in the Conceptual Model.
-^|C |Validate that the data element has the same properties (attributes) as those specified for the UML class. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model.
-^|D |Validate that the properties of the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those properties have the same name, definition, type, and multiplicity of those documented in the Conceptual Model 
-^|E |Validate that the associations represented for the data element include those of all superclasses of the UML class as documented in the Conceptual Model. Validate that those representations have the same source, target, roles, and multiplicity of those documented in the Conceptual Model
-^|F |Validate that the Implementation Specification enforces all constraints imposed on the UML class by the Conceptual Model 
-|===
+==== Abstract Feature
+
+[[ats_core_abstractfeature]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/abstractfeature
+
+target:: /req/core/abstractfeature
+
+inherit:: /conf/core/generalfeaturemodel
+inherit:: /conf/core/geometry
+
+classification:: Target Type:Implementation Specification
+
+test-purpose:: Validate that the Implementation Specification implements the AbstractFeature Class as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+[.component,class=description]
+--
+Validate that the AbstractFeature class is properly implemented in the Implementation Specification.
+--
+
+[.component,class=part]
+--
+For every AbstractFeature class that includes a `description` attribute, validate that attribute using test <<ats_core_abstractfeature-description,/conf/core/abstractfeature-description>>.
+--
+
+[.component,class=part]
+--
+For every AbstractFeature class that includes an `featureId` attribute, validate that attribute using test <<ats_core_abstractfeature-id,/conf/core/abstractfeature-featureid>>.
+--
+
+[.component,class=part]
+--
+For every AbstractFeature, verify that the class includes an `identifier` attribute, then validate that attribute using test <<ats_core_abstractfeature-identifier,/conf/core/abstractfeature-identifier>>.
+--
+
+[.component,class=part]
+--
+For every AbstractFeature class that includes a `name` attribute, validate that attribute using test <<ats_core_abstractfeature-name,/conf/core/abstractfeature-name>>.
+--
+====
+
+===== Abstract Feature-Description
+
+[[ats_core_abstractfeature-description]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/abstractfeature-description
+target:: /req/core/abstractfeature-description
+classification:: Target Type:Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `description` attribute as defined in the POI Conceptual Model.
+test-method-type:: Manual Inspection
+
+[.component,class=description]
+--
+Validate that the `description` attribute is a valid implementation of the CharacterString class from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
+--
+====
+
+===== Abstract Feature-FeatureId
+
+[[ats_core_abstractfeature-featureid]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/abstractfeature-featureid
+target:: /req/core/abstractfeature-featureid
+classification:: Target Type:Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `featureId` attribute as defined in the POI Conceptual Model.
+test-method-type:: Manual Inspection
+
+[.component,class=description]
+--
+Validate that the `featureId` attribute is a valid implementation of the Uid class from this Conceptual Model.  
+--
+====
+
+===== Abstract Feature-Identifier
+
+[[ats_core_abstractfeature-identifier]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/abstractfeature-identifier
+target:: /req/core/abstractfeature-identifier
+classification:: Target Type:Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `identifier` attribute as defined in the POI Conceptual Model.
+test-method-type:: Manual Inspection
+
+[.component,class=description]
+--
+Validate that the `identifier` attribute is a valid implementation of the ScopedName class from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.  
+--
+====
+
+===== Abstract Feature-Name
+
+[[ats_core_abstractfeature-name]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/abstractfeature-name
+target:: /req/core/abstractfeature-name
+classification:: Target Type:Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `name` attribute as defined in the POI Conceptual Model.
+test-method-type:: Manual Inspection
+
+[.component,class=description]
+--
+Validate that the `name` attribute is a valid implementation of the GenericName class from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
+--
+====
+

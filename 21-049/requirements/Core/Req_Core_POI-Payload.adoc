@@ -3,7 +3,7 @@
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-poi_payload
+label:: /req/core/poi-payload
 [.component,class=part]
 --
 An encoding of the POI_Payload class SHALL comply with requirement <<req_core_POI_featureOfInterest,/req/core/req-poi-featureOfInterest>>.
