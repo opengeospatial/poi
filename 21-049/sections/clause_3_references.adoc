@@ -12,5 +12,5 @@ The following normative documents contain provisions that, through reference in 
 * [[[ISO19507,ISO 19507:2012]]]
 * [[[opd_49,OGC 06-121r9]]]
 * [[[modspec,OGC 08-131r3]]]
-* [[[ogcdr, OGC Definitions Server]]]
-* [[[omguml,nofetch(OMG UML)]]] OMG: Object Management Group (OMG) _Unified Modeling Language (UML)_, Version 2.5.1, December 2017,   https://www.omg.org/spec/UML/2.5.1[https://www.omg.org/spec/UML/2.5.1] - not in expected format
+* [[[ogcdr,OGC Definitions Register]]] Open Geospatial Consortium. __OGC Definitions Register__. https://www.opengis.net/def/glossary[]
+* [[[omguml,Unified Modeling Language]]] Object Management Group (OMG), _Unified Modeling Language (UML)_, Version 2.5.1, December 2017,   https://www.omg.org/spec/UML/2.5.1[https://www.omg.org/spec/UML/2.5.1]

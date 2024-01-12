@@ -1,4 +1,4 @@
-==== Geometry
+===== Geometry
 
 [[ats_core_geometry]]
 [abstract_test]
@@ -27,7 +27,7 @@ Validate that the Implementation Specification includes an Abstract Test Suite (
 
 [.component,class=part]
 --
-Validate that the Abstract Test Suite tests for conformance with ISO 19107 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.
+Validate that all geometries used in the Implementation Specification conform with the geometry model defined in <<ISO19107,ISO 19107>>.
 --
 
 [.component,class=part]

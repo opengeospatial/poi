@@ -3,7 +3,7 @@
 [requirement]
 ====
 [%metadata]
-label:: /req/core/req-featurewithlifespan
+label:: /req/core/featurewithlifespan
 [.component,class=part]
 --
 An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_abstractfeature,/req/core/abstractfeature>>.

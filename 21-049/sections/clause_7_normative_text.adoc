@@ -1,6 +1,6 @@
 == POI Core Requirements
 
-include::requirements/Req_Core.adoc[]
+include::../requirements/Req_Core.adoc[]
 
 === Feature Model
 

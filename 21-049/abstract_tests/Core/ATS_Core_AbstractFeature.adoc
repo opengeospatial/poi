@@ -1,4 +1,4 @@
-==== Abstract Feature
+===== Abstract Feature
 
 [[ats_core_abstractfeature]]
 [abstract_test]
@@ -24,26 +24,31 @@ Validate that the AbstractFeature class is properly implemented in the Implement
 
 [.component,class=part]
 --
-For every AbstractFeature class that includes a `description` attribute, validate that attribute using test <<ats_core_abstractfeature-description,/conf/core/abstractfeature-description>>.
+Validate that the implementation of the AbstractFeature class is also a valid implementation of the AnyFeature class defined in the ISO 19109 General Feature Model.
 --
 
 [.component,class=part]
 --
-For every AbstractFeature class that includes an `featureId` attribute, validate that attribute using test <<ats_core_abstractfeature-id,/conf/core/abstractfeature-featureid>>.
+For every AbstractFeature class that includes a `description` attribute, validate that attribute using the <<ats_core_abstractfeature-description,/conf/core/abstractfeature-description>> test.
 --
 
 [.component,class=part]
 --
-For every AbstractFeature, verify that the class includes an `identifier` attribute, then validate that attribute using test <<ats_core_abstractfeature-identifier,/conf/core/abstractfeature-identifier>>.
+For every AbstractFeature class, validate that the `featureId` attribute is populated with a value that passes the <<ats_core_abstractfeature-featureid,/conf/core/abstractfeature-featureid>> test.
 --
 
 [.component,class=part]
 --
-For every AbstractFeature class that includes a `name` attribute, validate that attribute using test <<ats_core_abstractfeature-name,/conf/core/abstractfeature-name>>.
+For every AbstractFeature, verify that the class includes an `identifier` attribute, then validate that attribute using the <<ats_core_abstractfeature-identifier,/conf/core/abstractfeature-identifier>> test.
+--
+
+[.component,class=part]
+--
+For every AbstractFeature class that includes a `name` attribute, validate that attribute using the <<ats_core_abstractfeature-name,/conf/core/abstractfeature-name>> test.
 --
 ====
 
-===== Abstract Feature-Description
+====== Abstract Feature-Description
 
 [[ats_core_abstractfeature-description]]
 [abstract_test]
@@ -57,11 +62,11 @@ test-method-type:: Manual Inspection
 
 [.component,class=description]
 --
-Validate that the `description` attribute is a valid implementation of the CharacterString class from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
+Validate that the `description` attribute is a valid implementation of the CharacterString class from <<ISO19103,ISO 19103>>. 
 --
 ====
 
-===== Abstract Feature-FeatureId
+====== Abstract Feature-FeatureId
 
 [[ats_core_abstractfeature-featureid]]
 [abstract_test]
@@ -79,7 +84,7 @@ Validate that the `featureId` attribute is a valid implementation of the Uid cla
 --
 ====
 
-===== Abstract Feature-Identifier
+====== Abstract Feature-Identifier
 
 [[ats_core_abstractfeature-identifier]]
 [abstract_test]
@@ -93,11 +98,11 @@ test-method-type:: Manual Inspection
 
 [.component,class=description]
 --
-Validate that the `identifier` attribute is a valid implementation of the ScopedName class from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.  
+Validate that the `identifier` attribute is a valid implementation of the ScopedName class from <<ISO19103,ISO 19103>>.  
 --
 ====
 
-===== Abstract Feature-Name
+====== Abstract Feature-Name
 
 [[ats_core_abstractfeature-name]]
 [abstract_test]
@@ -111,7 +116,7 @@ test-method-type:: Manual Inspection
 
 [.component,class=description]
 --
-Validate that the `name` attribute is a valid implementation of the GenericName class from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
+Validate that the `name` attribute is a valid implementation of the GenericName class from <<ISO19103,ISO 19103>>.
 --
 ====
 

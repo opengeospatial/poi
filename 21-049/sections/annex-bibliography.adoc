@@ -22,5 +22,5 @@
 * [[[ISO19133,ISO 19133]]]
 * [[[ISO19143,ISO 19143]]]
 * [[[ISO19155,ISO 19155]]]
-* [[[mdaguide,nofetch(OMG Model Driven Architecture Guide)]]] Object Management Group, Model Driven Architecture Guide rev. 2.0
+* [[[mdaguide,Model Driven Architecture Guide]]] Object Management Group, Model Driven Architecture Guide rev. 2.0
 

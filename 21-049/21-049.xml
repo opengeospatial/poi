@@ -2,12 +2,12 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.4.3" schema-version="v1.2.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2024-01-06</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2024-01-06</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2024-01-11</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2024-01-11</on></date><contributor><role type="author"/><organization>
 <name>Digital Flancers</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Google</name>
 </organization></contributor><contributor><role type="author"/><organization>
-<name>HeazelTec</name>
+<name>HeazelTech</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Pangaea Innovations</name>
 </organization></contributor><contributor><role type="author"/><organization>
@@ -22,12 +22,17 @@
 <name><completename>John Purss</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>1.0</edition><version><draft>0.1.1</draft></version><language>en</language><script>Latn</script><abstract><p>The OGC Points of Interest (POI) conceptual model is an open data model for representing information about POI. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p>
+</organization></contributor><edition>1.0</edition><version><draft>0.1.1</draft></version><language>en</language><script>Latn</script><abstract><p>The OGC Points of Interest (POI) conceptual model is an open data model for representing information about POI.
+It is defined through a Unified Modeling Language (UML) object model.
+This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data.
+Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p>
 
-<p>The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.” In the broadest terms, a point of interest is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
+<p>The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.”
+In the broadest terms, a point of interest is a location about which information of general interest is available.
+A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
 </abstract><status><stage>draft</stage></status><copyright><from>2024</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><table id="_misccontainer_anchor_aliases"><tbody><tr><th>ats_core_general_feature_model</th><td>/conf/core/generalfeaturemodel</td></tr><tr><th>ats_core_geometry</th><td>/conf/core/geometry</td></tr><tr><th>ats_core_abstractfeature</th><td>/conf/core/abstractfeature</td></tr><tr><th>ats_core_abstractfeature-description</th><td>/conf/core/abstractfeature-description</td></tr><tr><th>ats_core_abstractfeature-featureid</th><td>/conf/core/abstractfeature-featureid</td></tr><tr><th>ats_core_abstractfeature-identifier</th><td>/conf/core/abstractfeature-identifier</td></tr><tr><th>ats_core_abstractfeature-name</th><td>/conf/core/abstractfeature-name</td></tr><tr><th>ats_core_featurewithlifespan</th><td>/conf/core/featurewithlifespan</td></tr><tr><th>ats_core_abstractfeature-datetime</th><td>/conf/core/abstractfeature-datetime</td></tr><tr><th>ats_core_poi-abstract-poi</th><td>/conf/core/astract-poi</td></tr><tr><th>ats_core_poi-contactinfo</th><td>/conf/core/poi-contactinfo</td></tr><tr><th>ats_core_poi-keywords</th><td>/conf/core/poi-keywords</td></tr><tr><th>ats_core_poi-rights</th><td>/conf/core/poi-rights</td></tr><tr><th>ats_core_link</th><td>/conf/core/link</td></tr><tr><th>ats_core_poi-payload</th><td>/conf/core/poi-payload</td></tr></tbody></table><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><table id="_misccontainer_anchor_aliases"><tbody><tr><th>_3c4eeab2-bde2-4def-bad5-598ab90bfea1</th><td>http://www.opengis.net/spec/poi/1.0/conf/core</td></tr><tr><th>ats_core_general_feature_model</th><td>/conf/core/generalfeaturemodel</td></tr><tr><th>ats_core_geometry</th><td>/conf/core/geometry</td></tr><tr><th>ats_core_abstractfeature</th><td>/conf/core/abstractfeature</td></tr><tr><th>ats_core_abstractfeature-description</th><td>/conf/core/abstractfeature-description</td></tr><tr><th>ats_core_abstractfeature-featureid</th><td>/conf/core/abstractfeature-featureid</td></tr><tr><th>ats_core_abstractfeature-identifier</th><td>/conf/core/abstractfeature-identifier</td></tr><tr><th>ats_core_abstractfeature-name</th><td>/conf/core/abstractfeature-name</td></tr><tr><th>ats_core_featurewithlifespan</th><td>/conf/core/featurewithlifespan</td></tr><tr><th>ats_core_abstractfeature-datetime</th><td>/conf/core/abstractfeature-datetime</td></tr><tr><th>ats_core_poi-abstract-poi</th><td>/conf/core/astract-poi</td></tr><tr><th>ats_core_poi-contactinfo</th><td>/conf/core/poi-contactinfo</td></tr><tr><th>ats_core_poi-keywords</th><td>/conf/core/poi-keywords</td></tr><tr><th>ats_core_poi-rights</th><td>/conf/core/poi-rights</td></tr><tr><th>ats_core_link</th><td>/conf/core/link</td></tr><tr><th>ats_core_poi-payload</th><td>/conf/core/poi-payload</td></tr></tbody></table><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
 <clause id="_copyright_notice" obligation="normative">
@@ -69,21 +74,31 @@ To obtain additional rights of use, visit
 <p id="_bb5602d2-6eb1-e557-e221-499759fe237f">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://ogc.standardstracker.org/"/></p>
 </clause>
 </feedback-statement>
-</boilerplate><preface><abstract id="_abstract"><title>Abstract</title><p id="_09400544-a572-f047-7e8e-524b1e98e725">The OGC Points of Interest (POI) conceptual model is an open data model for representing information about POI. It is defined through a Unified Modeling Language (UML) object model. This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p>
+</boilerplate><preface><abstract id="_abstract"><title>Abstract</title><p id="_10c01b1d-b3a9-3b42-3428-5ab23ea89793">The OGC Points of Interest (POI) conceptual model is an open data model for representing information about POI.
+It is defined through a Unified Modeling Language (UML) object model.
+This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data.
+Building on the ISO foundation assures that the features described in the POI Models share the same spatial-temporal universe as described by related standards (e.g., CityGML).</p>
 
-<p id="_3a05bcdc-6d08-4fac-655a-a18b1ce2630c">The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.” In the broadest terms, a point of interest is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
-</abstract><foreword id="_2fc7f941-8cac-e65f-3e51-3b9f18652ea3" obligation="informative">
+<p id="_6ae828e9-c4aa-9291-0270-dfe3816df0b4">The aim of developing the OGC POI conceptual model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.”
+In the broadest terms, a point of interest is a location about which information of general interest is available.
+A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
+</abstract><foreword id="_9273cccd-0579-a24f-8966-518fdd8f437b" obligation="informative">
 <title>Preface</title>
-<note id="_b54ab49b-0988-938f-ab2d-38e2ffda33ce"><p id="_103398dd-a446-704f-572a-9ee37f3e0510">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
-</note>
-
 <p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-</foreword><clause type="security" id="_1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative">
-  <title>Security considerations</title>
-  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause>
-</preface><sections>
+</foreword><clause id="_security_considerations" type="security" obligation="informative">
+<title>Security Considerations</title>
+<p id="_3449262a-e94f-1601-45c6-85245b6eacde">The POI Conceptual model defines a POI as a type of Feature.
+By building on the same Feature Model as other OGC Feature models, POI implementations inherit the security controls and vulnerabilities of their associated Feature Dataset.
+They are a Feature like any other.<br/></p>
+
+<p id="_5254964b-2975-1ece-d250-f1bca12b0e76">This document is a Standard for a Conceptual Model.
+Implementations of this Standad (Implementation Specifications) are free to add additional details and content necessary to enable implementation-specific security controls.
+In the event that anything in this Standard prevents implementation of needed controls, implementors are requested to notify the POI Standards Working Group and help devise a solution.</p>
+</clause></preface><sections>
+
+
 
 <clause id="_scope" type="scope" obligation="normative">
 <title>Scope</title>
@@ -100,46 +115,26 @@ To obtain additional rights of use, visit
 
 <clause id="conformance-section" type="conformance" obligation="normative">
 <title>Conformance</title>
-<p id="_13f0585b-3e40-ae57-14c2-3c7a81ec2546">This standard defines a <xref target="conceptual-model-definition">Conceptual Model</xref> which is independent of any encoding or formatting techniques. The <xref target="standardization-target-definition">Standardization Targets</xref> for this standard are:</p>
-
-<ol id="_dac23756-1f5f-2497-c792-eabd3e4fbcb5" type="arabic"><li><p id="_96924be3-0997-f7cc-7d84-0203a2350da0"><xref target="conceptual-model-definition">Conceptual Models</xref> (extended versions of this conceptual model)</p>
-</li>
-<li><p id="_cd3bb9a4-769a-6c42-8af0-6dfbc0aedfc9"><xref target="implementation-specification-definition">Implementation Specifications</xref> (encodings of this conceptual model)</p>
-</li>
-</ol>
-
-<clause id="_conceptual_models" obligation="normative">
-<title>Conceptual Models</title>
-<p id="_91d83069-ba7d-c53b-f53d-a0207c8bf901">A Conceptual Model standardization target is a version of the POI Conceptual Model (CM) tailored for a specific user community. This tailoring can include:</p>
-
-<ol id="_50e3a7f7-10d5-7aa6-553c-3d181fb751a7" type="arabic"><li><p id="_267969f5-8dff-5cca-de28-0d7e2b7c2c84">Reduction of the multiplicity for an attribute or association</p>
-</li>
-<li><p id="_c8706aef-14f3-33fe-51df-bd740dffbc24">Restriction on the valid values for an attribute</p>
-</li>
-<li><p id="_75c17f61-19fe-ba47-6824-4437825d800f">Additional <underline>optional</underline> POI properties</p>
-</li>
-</ol>
-
-<p id="_68ce0db6-2880-b455-1e71-803ef8a0286c">Of these options, actions #1 and #2 can be performed when creating an implementation specification. Only action #3 requires an extension of the POI conceptual model.</p>
-</clause>
+<p id="_57fdae9d-6b9c-7964-fe9d-a6e86eaf2db9">This standard defines a <xref target="conceptual-model-definition">Conceptual Model</xref> which is independent of any encoding or formatting techniques.
+The <xref target="standardization-target-definition">Standardization Target</xref> for this standard is technology-specific POI <xref target="implementation-specification-definition">Implementation Specifications</xref>.</p>
 
 <clause id="_implementation_specifications" obligation="normative">
 <title>Implementation Specifications</title>
-<p id="_a55f013d-80eb-8f79-63fa-4d52abde0f87">Implementation Specifications define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Specifications provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in <xref target="abstract-test-suite-section">Annex A</xref> (normative) of this document.</p>
+<p id="_210a5d8d-ca06-fee5-742b-afcc6927dc67">Implementation Specifications define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Specifications provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in <xref target="abstract-test-suite-section">Annex A</xref> (normative) of this document.</p>
 
-<p id="_58945998-468f-8d70-ebb4-616bee021e6b">Since this standard is agnostic to the implementing technologies, the specific techniques to be used for conformance testing cannot be specified. Implementation Specifications need to provide evidence of conformance which is appropriate for the implementing technologies. This evidence should be provided as an annex to the Implementation Specification document.</p>
+<p id="_aad5084c-d80d-3538-6f58-7cdbd0f548ec">Since this standard is agnostic to the implementing technologies, the specific techniques to be used for conformance testing cannot be specified. Implementation Specifications need to provide evidence of conformance which is appropriate for the implementing technologies. This evidence should be provided as an annex to the Implementation Specification document.</p>
 </clause>
 
 <clause id="_implementations" obligation="normative">
 <title>Implementations</title>
-<p id="_161ce8ab-204d-96ad-15d2-bd4a08bf424c">POI implementations will typically be a simplified representation of a more complex dataset. Implementors may want to extend the POI model to include properties specific to that dataset. These extensions are accomplished using the POI Payload mechanism described in <xref target="poi_payload-section">POI Payload</xref>. Since the POI Payload has its own definition of syntax and semantics, conformance with the POI Standard cannot ensure payload conformance.</p>
+<p id="_e9f9ee59-7e2e-e385-ef49-e09d15087e23">POI implementations will typically be a simplified representation of a more complex dataset. Implementors may want to extend the POI model to include properties specific to that dataset. These extensions are accomplished using the POI Payload mechanism described in <xref target="poi_payload-section">POI Payload</xref>. Since the POI Payload has its own definition of syntax and semantics, conformance with the POI Standard cannot ensure payload conformance.</p>
 </clause>
 
 <clause id="_conformance_classes" obligation="normative">
 <title>Conformance Classes</title>
-<p id="_332c51c6-ffaa-6a24-994d-d4870a0a0933">This standard identifies one “Core” <xref target="conformance-class-definition">conformance class</xref>. This conformance class defines the conformance criteria for the requirements defined in one “Core” <xref target="requirements-class-definition">requirements class</xref>. The tests this conformance class are documented in Annex A. These tests are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in <xref target="abstract-test-suite-section">Annex A</xref> for the Core Requirements Class.</p>
+<p id="_cbc50816-791f-f23d-3594-7a9120733c8e">This standard identifies one “Core” <xref target="conformance-class-definition">conformance class</xref>. This conformance class defines the conformance criteria for the requirements defined in one “Core” <xref target="requirements-class-definition">requirements class</xref>. The tests this conformance class are documented in <xref target="abstract-test-suite-section">Annex A</xref>. These tests are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in <xref target="abstract-test-suite-section">Annex A</xref> for the Core Requirements Class.</p>
 
-<p id="_6065e12f-603f-14da-ad65-4e67e3284e9a">The POI Conceptual Model is defined by the POI UML model. This standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.</p>
+<p id="_26865c00-8dfb-634e-3f13-1ee8e78192a6">The POI Conceptual Model is defined by the POI UML model. This Standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.</p>
 </clause>
 </clause>
 
@@ -150,88 +145,32 @@ To obtain additional rights of use, visit
 <p id="_e0235fe8-8273-26b4-faeb-a580ad58929f">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
 <p id="_1448dc16-8929-d666-6525-0249826c75e3">For the purposes of this document, the following additional terms and definitions apply.</p>
 
-<p id="_850da6d6-65b5-d326-1cf4-9f80a7b1c216">For the purposes of this document, the following additional terms and definitions apply.</p>
-
-<term id="application-schema-definition"><preferred><expression>
-<name>application schema::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_1070beaf-68e7-c49c-d644-3438223cfbd5"><em>conceptual schema</em> (<xref target="conceptual-schema-definition"/>) for data required by one or more applications.</p></verbal-definition></definition>
-
-
-
-
-
-
-
-
- <termnote id="_8eeb0ab7-b1ed-76d2-00eb-849163fb088a"><p id="_561e1952-8db2-1a1a-e816-8b3d40c5c0f5">An <em>application schema</em> (<xref target="application-schema-definition"/>) contains selected parts of the base schemas presented in the ORM Information Viewpoint.</p>
-</termnote><termnote id="_28c6c9c5-d458-33a6-4a4c-a696eb6929a9"><p id="_7aeb4215-14b2-cfdf-34ad-0476af157b79">Designers of <em>application schemas</em> (<xref target="application-schema-definition"/>) may extend or restrict the types defined in the base schemas to define appropriate types for an application <em>domain</em> (<xref target="domain-definition"/>).</p>
-</termnote><termnote id="_c125f5be-675c-d4db-8eed-868cf7dd9210"><p id="_bb730aa4-baa8-9b6b-ee95-6a10da8250bd"><em>Application schemas</em> (<xref target="application-schema-definition"/>) are information models for a specific information community.</p>
-</termnote><termsource status="modified" type="authoritative"><origin bibitemid="ISO19101-1" type="inline" citeas="ISO&amp;#xa0;19101-1:2014"><localityStack><locality type="clause"><referenceFrom>4.1.2</referenceFrom></locality></localityStack></origin>
-<modification><p id="_94c5af92-94b7-de64-8d2f-3f195c1ad872">OGC Definitions Register at <link target="http://www.opengis.net/def/glossary/term/ApplicationSchema"/></p>
-</modification>
-</termsource></term>
-
-<term id="attribute-definition"><preferred><expression>
-<name>attribute::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_3487edb4-6a23-ada3-a565-d20f5df0b9d8">named <em>property</em> (<xref target="property-definition"/>) of an entity</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_84019e90-1b92-2d72-c555-b101f23f2c5f"><p id="_8675295e-6033-ce2d-84db-4321f59db9a2">Describes a geometrical, topological, thematic, or other characteristic of an entity.</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO2382" type="inline" citeas="ISO/IEC&amp;#xa0;2382"><localityStack><locality type="clause"><referenceFrom>2121440</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
 <term id="class-definition"><preferred><expression>
 <name>class::</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_af39c24e-df81-26bb-070e-e075f3d8fb04">description of a set of <em>objects</em> (<xref target="object-definition"/>) that share the same <em>attributes</em> (<xref target="attribute-definition"/>), <em>operations</em> (<xref target="operation-definition"/>), methods, relationships, and semantics</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_48cad836-c11c-d7aa-9d8d-91848385c27e">description of a set of <em>objects</em> that share the same <em>attributes</em>, <em>operations</em>, methods, relationships, and semantics</p></verbal-definition></definition>
 
 
 
 
- <termnote id="_68ce63a8-df01-e71a-903b-c49d0f215183"><p id="_6d8d3379-db58-4306-d526-d0e21a577605">A <em>class</em> (<xref target="class-definition"/>) may use a set of interfaces to specify collections of <em>operations</em> (<xref target="operation-definition"/>) it provides to its environment.
+ <termnote id="_39622382-777b-b7c0-4442-7d55f604772b"><p id="_fa55add0-b973-1716-0b47-e9686f4ed61e">A <em>class</em> may use a set of interfaces to specify collections of <em>operations</em> it provides to its environment.
 The term was first used in this way in the general theory of object-oriented programming, and later adopted for use in this same sense in UML.</p>
 </termnote><termsource status="modified" type="authoritative"><origin bibitemid="ISO19103" type="inline" citeas="ISO&amp;#xa0;19103"><localityStack><locality type="clause"><referenceFrom>4.27</referenceFrom></locality></localityStack></origin>
-<modification><p id="_e9ea05ea-4dc2-f371-4122-54ddd73bfa36">Note 1 to entry has been added from ISO 19117:2012, 4.2</p>
+<modification><p id="_ada06344-74e2-0d29-3f67-552b11b939e3">Note 1 to entry has been added from ISO 19117:2012, 4.2</p>
 </modification>
-</termsource></term>
-
-<term id="code-definition"><preferred><expression>
-<name>code::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_59b75120-75a2-3d82-7805-61aba88f4abe">representation of a label according to a specified scheme</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19118" type="inline" citeas="ISO&amp;#xa0;19118"><localityStack><locality type="clause"><referenceFrom>4.3</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="codelist-definition"><preferred><expression>
-<name>codelist::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_3d9c8a21-1da8-a8b9-fbf9-3784169d68df">value <em>domain</em> (<xref target="domain-definition"/>) including a <em>code</em> (<xref target="code-definition"/>) for each permissible value.</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19136-1" type="inline" citeas="ISO&amp;#xa0;19136-1"><localityStack><locality type="clause"><referenceFrom>3.1.7</referenceFrom></locality></localityStack></origin>
 </termsource></term>
 
 <term id="concept-definition"><preferred><expression>
 <name>concept::</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_14dcafe1-e0a2-82e7-ce3d-a29eb9c90227">unit of knowledge created by a unique combination of characteristics</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_edcbf38f-0924-5c55-2dff-cbe48ec9c38e">unit of knowledge created by a unique combination of characteristics</p></verbal-definition></definition>
 
 
 
 
- <termnote id="_71fffeee-8777-355f-b223-5278304a4d8e"><p id="_cc1b390d-1a28-6317-52b2-91f754855779"><em>Concepts</em> (<xref target="concept-definition"/>) are not necessarily bound to particular languages. They are, however, influenced by the social or cultural background which often leads to different categorizations.</p>
+ <termnote id="_83600c24-fa1c-3a7b-f6e5-5756ce82cabe"><p id="_96375e82-6cce-e5e0-22c1-e5980410f2c9"><em>Concepts</em> (<xref target="concept-definition"/>) are not necessarily bound to particular languages. They are, however, influenced by the social or cultural background which often leads to different categorizations.</p>
 </termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO1087-1" type="inline" citeas="ISO&amp;#xa0;1087-1"><localityStack><locality type="clause"><referenceFrom>3.2.1</referenceFrom></locality></localityStack></origin>
 </termsource></term>
 
@@ -239,169 +178,34 @@ The term was first used in this way in the general theory of object-oriented pro
 <name>conceptual model::</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_cab134ed-dfe9-0aca-0765-866949b122ad">model that defines <em>concepts</em> (<xref target="concept-definition"/>) of a universe of discourse</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_3ba2c64e-fed3-5e53-54a0-fce012bb8055">model that defines <em>concepts</em> (<xref target="concept-definition"/>) of a universe of discourse</p></verbal-definition></definition>
 
 
  <termsource status="identical" type="authoritative"><origin bibitemid="ISO19101-1" type="inline" citeas="ISO&amp;#xa0;19101-1:2014"><localityStack><locality type="clause"><referenceFrom>4.1.5</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="conceptual-schema-definition"><preferred><expression>
-<name>conceptual schema::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><ol id="_a4b4c1bc-aa5a-b4f4-ddae-0458d034ff6d" type="arabic"><li><p id="_510347ae-0fe1-d74d-2f24-10e91a88abb3">formal description of a <em>conceptual model</em> (<xref target="conceptual-model-definition"/>) [ISO 19101-1:2014, 4.1.6]</p>
-</li>
-<li><p id="_1dd6415a-bc0c-16d4-e478-241d810dee35">base schema. Formal description of the model of any geospatial information. <em>Application schemas</em> (<xref target="application-schema-definition"/>) are built from <em>conceptual schemas</em> (<xref target="conceptual-schema-definition"/>).</p>
-</li>
-</ol></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
 </termsource></term>
 
 <term id="conformance-class-definition"><preferred><expression>
 <name>conformance class::</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_7683b444-71f9-cbcc-8558-8baee108ac62">a class of conformance tests. A conformant implementation must pass all the tests in the class.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_e356b19f-7323-8741-8eed-34db614b259f">a class of conformance tests. A conformant implementation must pass all the tests in the class.</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
-</termsource></term>
-
-<term id="coordinate-definition"><preferred><expression>
-<name>coordinate::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_2d6aa8b3-4a12-88c4-e343-50decbf9ba78">one of a sequence of numbers designating the <em>position</em> (<xref target="position-definition"/>) of a <em>point</em> (<xref target="point-definition"/>)</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_a5da409d-84c6-b2cf-caf5-12888cc14ed5"><p id="_2090cf31-c2b9-0c54-0286-2c7990e8a5eb">In a spatial <em>coordinate reference system</em> (<xref target="coordinate-reference-system-definition"/>), the <em>coordinate</em> (<xref target="coordinate-definition"/>) numbers are qualified by units.</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19111" type="inline" citeas="ISO&amp;#xa0;19111:2019"><localityStack><locality type="clause"><referenceFrom>3.1.5</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="coordinate-reference-system-definition"><preferred><expression>
-<name>coordinate reference system::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_0895fa68-c930-5a86-36f7-d094be2fa559">coordinate system that is related to an <em>object</em> (<xref target="object-definition"/>) by a <em>datum</em> (<xref target="datum-definition"/>)</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_fdb346d9-0520-4c95-9806-adbffeb4c48d"><p id="_07e62749-bf6c-6f7b-e144-0d7878534051">For geodetic and vertical <em>datums</em> (<xref target="datum-definition"/>), the <em>object</em> (<xref target="object-definition"/>) will be the Earth.</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19111" type="inline" citeas="ISO&amp;#xa0;19111:2019"><localityStack><locality type="clause"><referenceFrom>3.1.9</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="coordinate-system-definition"><preferred><expression>
-<name>coordinate system::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_3c542efd-dd13-73ba-3ad0-d05640a255b1">set of mathematical rules for specifying how <em>coordinates</em> (<xref target="coordinate-definition"/>) are to be assigned to <em>points</em></p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19111" type="inline" citeas="ISO&amp;#xa0;19111:2019"><localityStack><locality type="clause"><referenceFrom>3.1.11</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="data-type-definition"><preferred><expression>
-<name>data type::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_7edc21cf-7696-8349-a2b1-fd1942abb7ca">specification of a value <em>domain</em> (<xref target="domain-definition"/>) with <em>operations</em> (<xref target="operation-definition"/>) allowed on values in this <em>domain</em> (<xref target="domain-definition"/>)</p></verbal-definition></definition>
-
-
-
-
-
-
- <termnote id="_7ae63e4b-7219-b7e2-c8ff-d3f4e8010ea9"><p id="_1f1ddd1f-8eba-8637-1f61-20b6baba70f7">Data types include primitive predefined types and user-definable types.</p>
-</termnote><termexample id="_024b3592-ce24-955f-cd85-bae9fdffe3df"><p id="_d265e3ef-bedc-33a4-4bfd-5e488c98ae24">Integer, Real, Boolean, String, Date and SG Point (conversion of data into a series of <em>codes</em>).</p>
-</termexample><termsource status="identical" type="authoritative"><origin bibitemid="ISO19103" type="inline" citeas="ISO&amp;#xa0;19103"><localityStack><locality type="clause"><referenceFrom>4.14</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="datum-definition"><preferred><expression>
-<name>datum::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_d63af64b-8737-535e-77f4-3d2618e01612">parameter or set of parameters that realize the <em>position</em> (<xref target="position-definition"/>) of the origin, the scale, and the orientation of a <em>coordinate system</em> (<xref target="coordinate-system-definition"/>)</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19111" type="inline" citeas="ISO&amp;#xa0;19111:2019"><localityStack><locality type="clause"><referenceFrom>3.1.15</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="direct-position-definition"><preferred><expression>
-<name>direct position::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_a9c48556-e4e5-9f1a-eaa4-c23ac32ece69"><em>position</em> (<xref target="position-definition"/>) described by a single set of <em>coordinates</em> (<xref target="coordinate-definition"/>) within a <em>coordinate reference system</em> (<xref target="coordinate-reference-system-definition"/>)</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19136-1" type="inline" citeas="ISO&amp;#xa0;19136-1"><localityStack><locality type="clause"><referenceFrom>3.1.20</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="domain-definition"><preferred><expression>
-<name>domain::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_2fe99bff-34eb-0af9-bfaa-4a5e49c9b323">well-defined set</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_9acf4fc2-7811-191a-481d-3b5656c42d4b"><p id="_80db327c-8dd1-cc82-a9b6-511177f2dbfc"><em>Domains</em> (<xref target="domain-definition"/>) are used to define the <em>domain</em> (<xref target="domain-definition"/>) set and range set of <em>attributes</em> (<xref target="attribute-definition"/>), operators and functions.</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19109" type="inline" citeas="ISO&amp;#xa0;19109:2015"><localityStack><locality type="clause"><referenceFrom>4.8</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="term-domain-_lt_general-vocabulary_gt___"><preferred><expression>
-<name>domain &lt;general vocabulary&gt;::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_364e361a-2ac4-8eb3-f90f-8a8cc1386363">distinct area of human knowledge to which a terminological entry is assigned</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_01c8a547-2e2b-465e-8dd6-7ea17fc19f47"><p id="_ba8ac816-573e-d1b1-ba33-2a8480e8fc1b">Within a database or other terminology collection, a set of <em>domains</em> (<xref target="domain-definition"/>) will generally be defined. More than one <em>domain</em> (<xref target="domain-definition"/>) can be associated with a given <em>concept</em> (<xref target="concept-definition"/>).</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19104" type="inline" citeas="ISO&amp;#xa0;19104"><localityStack><locality type="clause"><referenceFrom>4.11</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="term-domain-_lt_ontology_gt___"><preferred><expression>
-<name>domain &lt;ontology&gt;::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_5efd62fe-dc27-2561-8058-eed02ea6d139">restriction to constrain the subject <em>class</em> (<xref target="class-definition"/>) which participates in a subject-predicate-object triple</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19150-4" type="inline" citeas="ISO&amp;#xa0;19150-4"><localityStack><locality type="clause"><referenceFrom>3.1.12</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="term-domain-_lt_postal-address_gt___"><preferred><expression>
-<name>domain &lt;postal address&gt;::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_3c017acf-3bf3-f2db-35a7-c74e5fce4e83">an area in which a set of specific postal address types and postal address renderings is prescribed by postal operators</p></verbal-definition></definition>
-
-
-
-
- <termexample id="_eb6c6141-5ec5-9104-0cfa-8e85068bcacc"><p id="_5a64b7fc-31a0-a746-72e6-98be0fa20f0c">The most typical example of a postal address <em>domain</em> (<xref target="domain-definition"/>) is a country where a designated postal operator provides postal delivery services.</p>
-</termexample><termsource status="identical" type="authoritative"><origin bibitemid="ISO19160-4" type="inline" citeas="ISO&amp;#xa0;19160-4"><localityStack><locality type="clause"><referenceFrom>3.14</referenceFrom></locality></localityStack></origin>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Register">OGC Definitions Register</origin>
 </termsource></term>
 
 <term id="feature-definition"><preferred><expression>
 <name>feature::</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_9d2f8ccc-21ad-74b5-978b-905c4f91c48a">abstraction of real-world phenomena</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_38055a6b-c35d-9abb-f3fa-4fb29a853844">abstraction of real-world phenomena</p></verbal-definition></definition>
 
 
 
 
- <termnote id="_8a5793a5-7747-2fe0-dd8a-b7e4132d9e55"><p id="_037a1f6f-e5b8-b1cd-d145-a61a090dc46b">A <em>feature</em> (<xref target="feature-definition"/>) may occur as a type or an instance. In this document, <em>feature</em> (<xref target="feature-definition"/>) instance is meant unless otherwise specified.</p>
+ <termnote id="_689dae60-bd26-95ff-cf32-bb144bc3795d"><p id="_873385c3-b503-ffb2-5638-f7150d06306d">A <em>feature</em> (<xref target="feature-definition"/>) may occur as a type or an instance. In this document, <em>feature</em> (<xref target="feature-definition"/>) instance is meant unless otherwise specified.</p>
 </termnote><termsource status="modified" type="authoritative"><origin bibitemid="ISO19101-1" type="inline" citeas="ISO&amp;#xa0;19101-1:2014"><localityStack><locality type="clause"><referenceFrom>4.1.11</referenceFrom></locality></localityStack></origin>
-<modification><p id="_8e0b4e48-1240-3f90-6956-deed8837b2bb">Note 1 to entry has been added from ISO 19156, 4.6</p>
+<modification><p id="_f3c1317f-6950-66b3-7e10-a06ad8f7f1a6">Note 1 to entry has been added from ISO 19156, 4.6</p>
 </modification>
 </termsource></term>
 
@@ -409,322 +213,40 @@ The term was first used in this way in the general theory of object-oriented pro
 <name>feature type::</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_3ed8ec58-a06b-ebc9-84e5-98251f27cb77"><em>class</em> (<xref target="class-definition"/>) of <em>features</em> (<xref target="feature-definition"/>) having common characteristics</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_78487c37-2fd2-d239-b99a-0895256c673d"><em>class</em> (<xref target="class-definition"/>) of <em>features</em> (<xref target="feature-definition"/>) having common characteristics</p></verbal-definition></definition>
 
 
  <termsource status="identical" type="authoritative"><origin bibitemid="ISO19156" type="inline" citeas="ISO&amp;#xa0;19156:2011"><localityStack><locality type="clause"><referenceFrom>4.7</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="geometric-aggregate-definition"><preferred><expression>
-<name>geometric aggregate::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_506b931d-6a3a-486f-b7d8-d4b36f99a869">collection of <em>geometric objects</em> (<xref target="geometric-object-definition"/>) that has no internal structure</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_eb8e6086-8ecb-3254-eb77-f2df752b8b5e"><p id="_2d35be50-c8bb-65d4-9d3a-507a0dc04d67">No assumptions about the spatial relationships between the elements can be made.</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas="ISO&amp;#xa0;19107:2003"><localityStack><locality type="clause"><referenceFrom>3.45</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="geometric-boundary-definition"><preferred><expression>
-<name>geometric boundary::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_f0f51425-368b-3113-3a0e-2e0359f3f993">boundary represented by a set of <em>geometric primitives</em> (<xref target="geometric-primitive-definition"/>) that limits the extent of a <em>geometric object</em> (<xref target="geometric-object-definition"/>)</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas="ISO&amp;#xa0;19107:2003"><localityStack><locality type="clause"><referenceFrom>3.46</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="geometric-complex-definition"><preferred><expression>
-<name>geometric complex::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_08bdf872-4e5b-72e3-c1e2-3b93213586cb">set of disjoint <em>geometric primitives</em> (<xref target="geometric-primitive-definition"/>) where the boundary of each <em>geometric primitive</em> (<xref target="geometric-primitive-definition"/>) can be represented as the union of other <em>geometric primitives</em> (<xref target="geometric-primitive-definition"/>) of smaller dimensions within the same set</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_2395889f-9db5-7248-a2bb-a083ce0b3f06"><p id="_52b6ed82-4718-3582-8230-e714a22692af">The <em>geometric primitives</em> (<xref target="geometric-primitive-definition"/>) in the set are disjoint in the sense that no <em>direct position</em> (<xref target="direct-position-definition"/>) is interior to more than one <em>geometric primitive</em> (<xref target="geometric-primitive-definition"/>). The set is closed under boundary <em>operations</em> (<xref target="operation-definition"/>), meaning that for each element in the <em>geometric complex</em> (<xref target="geometric-complex-definition"/>), there is a collection (also a <em>geometric complex</em> (<xref target="geometric-complex-definition"/>)) of <em>geometric primitives</em> (<xref target="geometric-primitive-definition"/>) that represents the boundary of that element. Recall that the boundary of a <em>point</em> (the only 0D primitive <em>object</em> (<xref target="object-definition"/>) type in geometry) is empty. Thus, if the largest dimension <em>geometric primitive</em> (<xref target="geometric-primitive-definition"/>) is a solid (3D), the composition of the boundary operator in this definition terminates after at most three steps. It is also the case that the boundary of any <em>object</em> (<xref target="object-definition"/>) is a cycle.</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas="ISO&amp;#xa0;19107:2003"><localityStack><locality type="clause"><referenceFrom>3.47</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="geometric-dimension-definition"><preferred><expression>
-<name>geometric dimension::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_7e37c7a7-8c64-875d-c4fb-bc291d0388ac">lagest number n such that each <em>point</em> in a set of <em>points</em> can be associated with a subset that has that point in its interior and is topologically isomporphic to 𝔼n, Euclidean n-space</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas="ISO&amp;#xa0;19107:2003"><localityStack><locality type="clause"><referenceFrom>3.48</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="geometric-object-definition"><preferred><expression>
-<name>geometric object::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_88d3afb8-0df1-6303-24d0-4263880cb2e3">spatial <em>object</em> (<xref target="object-definition"/>) representing a <em>geometric set</em> (<xref target="geometric-set-definition"/>)</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_1c61dfb6-6ddd-5145-b21e-3aeea691210f"><p id="_6de6075f-ba6e-650e-bc63-2cdc4ecf36bc">A <em>geometric object</em> (<xref target="geometric-object-definition"/>) consists of a <em>geometric primitive</em> (<xref target="geometric-primitive-definition"/>), a collection of <em>geometric primitives</em> (<xref target="geometric-primitive-definition"/>), or a <em>geometric complex</em> (<xref target="geometric-complex-definition"/>) treated as a single entity. A <em>geometric object</em> (<xref target="geometric-object-definition"/>) may be the spatial representation of an <em>object</em> (<xref target="object-definition"/>) such as a <em>feature</em> (<xref target="feature-definition"/>) or a significant part of a <em>feature</em> (<xref target="feature-definition"/>).</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas="ISO&amp;#xa0;19107:2003"><localityStack><locality type="clause"><referenceFrom>3.49</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="geometric-primitive-definition"><preferred><expression>
-<name>geometric primitive (geometry)::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_045ac0f7-774a-a76a-af7b-b1fbc5a1fa37"><em>geometric object</em> (<xref target="geometric-object-definition"/>) representing a single, connected, homogeneous (isotopic) element of space</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_23285451-ed3e-f25e-e0d8-821eb8dfeac1"><p id="_60ea28f0-8b2e-565c-2dfb-b96b775f634b"><em>Geometric primitives</em> (<xref target="geometric-primitive-definition"/>) are non-decomposed <em>objects</em> (<xref target="object-definition"/>) that present information about geometric configuration. They include <em>points</em>, curves, surfaces, and solids. Many <em>geometric objects</em> (<xref target="geometric-object-definition"/>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a <em>geometric primitive</em> (<xref target="geometric-primitive-definition"/>) is topological open, since the boundary <em>points</em> are not isotropic to the interior <em>points</em>. Geometry is assumed to be closed. For <em>points</em>, the boundary is empty.</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas="ISO&amp;#xa0;19107:2003"><localityStack><locality type="clause"><referenceFrom>3.50</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="geometric-set-definition"><preferred><expression>
-<name>geometric set::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_0152cf57-a7d1-0206-bdbf-da129fdbcd0b">set of <em>points</em></p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19107" type="inline" citeas="ISO&amp;#xa0;19107:2003"><localityStack><locality type="clause"><referenceFrom>3.53</referenceFrom></locality></localityStack></origin>
 </termsource></term>
 
 <term id="implementation-specification-definition"><preferred><expression>
 <name>implementation specification::</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_bc73a863-f9da-cad6-9548-fde7ec271e5a">guidance for software engineers that is so specific that any two independent software implementations of the specification can “plug and play” for each other.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_7f6a1cb7-e992-3d4e-eb6a-a383831839f8">guidance for software engineers that is so specific that any two independent software implementations of the specification can “plug and play” for each other.</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
-</termsource></term>
-
-<term id="location-definition"><preferred><expression>
-<name>location::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_83c50685-f27d-51ed-0430-900164ea4ba1">particular <em>place</em> (<xref target="place-definition"/>) or <em>position</em> (<xref target="position-definition"/>)</p></verbal-definition></definition>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <termnote id="_094d97e6-7e75-7c0f-a131-5a2c414baaa7"><p id="_c9eb88fa-f4f0-4f85-1140-c4a0a9b93d74">A <em>location</em> (<xref target="location-definition"/>) identifies a geographic <em>place</em>.</p>
-</termnote><termnote id="_759ccfe8-e02a-3c5b-8859-513afbf67b18"><p id="_6d289b48-8114-9911-e085-b4445454392f"><em>Locations</em> (<xref target="location-definition"/>) are physically fixed <em>points</em>, typically on the surface of the Earth, although <em>locations</em> (<xref target="location-definition"/>) can be relative to other, non-earth centric coordinate reference systems.</p>
-</termnote><termnote id="_10474de1-0e65-7030-63d7-5568a490e412"><p id="_cc856fb9-7854-dbb4-46f4-97f40f5f74c0"><em>Locations</em> (<xref target="location-definition"/>) can be a single <em>point</em>, a centroid, a minimum bounding rectangle, or a set of vectors.</p>
-</termnote><termnote id="_18df6bc7-0e46-de98-0ed9-27fd522249f8"><p id="_c47d5e2b-078c-086e-8b96-a8bf5bcc33e7">A <em>location</em> (<xref target="location-definition"/>) should be persistent over time and does not change.</p>
-</termnote><termnote id="_52498fd9-708c-67ac-ac4c-14f25e7b1807"><p id="_8af542e9-2576-3b44-056c-428baaea0b1f">Multiple <em>POIs</em> (<xref target="point-of-interest-definition"/>) may share the same <em>location</em> (<xref target="location-definition"/>).</p>
-</termnote><termnote id="_d12fc7a7-44d5-9729-fd1c-7cb3f92c0800"><p id="_1cee7c14-84d3-e2c2-ce37-10c35abf68d6">When a <em>POI</em> (<xref target="point-of-interest-definition"/>) physically moves it is understood to have acquired a new <em>location</em> (<xref target="location-definition"/>).</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19112" type="inline" citeas="ISO&amp;#xa0;19112"><localityStack><locality type="clause"><referenceFrom>3.1.3</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="metaclass-definition"><preferred><expression>
-<name>metaclass::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_3a6f4d55-5d91-2c1a-4918-e94774711177">a <em>class</em> (<xref target="class-definition"/>) whose instances are also <em>classes</em> (<xref target="class-definition"/>)</p></verbal-definition></definition>
-
- </term>
-
-<term id="method-definition"><preferred><expression>
-<name>method::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_e70c5afc-5ffe-7510-c28a-cdd279dd0f88">implementation of an <em>operation</em> (<xref target="operation-definition"/>)</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_79caf586-bcc2-6855-f3c9-4096d3ed3d2d"><p id="_b548e53b-a61c-7d8e-d6a2-b2acd7901b99">It specifies the algorithm or procedure associated with an <em>operation</em> (<xref target="operation-definition"/>).</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19501" type="inline" citeas="ISO/IEC&amp;#xa0;19501"/></termsource></term>
-
-<term id="object-definition"><preferred><expression>
-<name>object::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_de9fb25e-50fb-4d9d-ec5c-b6ce130cd601">entity with a well defined boundary and identity that encapsulates state and behaviour</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_3bdbe036-47b7-44ae-ce3c-a40f07dae963"><p id="_17872102-227c-861b-7581-a736c87e8e2b">This term was first used in this way in the general theory of object oriented programming, and later adopted for use in this same sense in UML. An <em>object</em> (<xref target="object-definition"/>) is an instance of a <em>class</em> (<xref target="class-definition"/>). <em>Attributes</em> (<xref target="attribute-definition"/>) and relationships represent state. <em>Operations</em> (<xref target="operation-definition"/>), methods, and state machines represent behavior.</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="OMG/UML UML Semantics" type="inline" citeas="">version 1.3, 1997.</origin>
-</termsource></term>
-
-<term id="OGC-implementation-specification-definition"><preferred><expression>
-<name>OGC implementation specification::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_612e7cc1-c450-9ed7-3be4-2160a4a1881d"><em>OGC implementation specification</em> (<xref target="OGC-implementation-specification-definition"/>) document type defined on the OGC Document Types Register</p></verbal-definition></definition>
-
- </term>
-
-<term id="operation-definition"><preferred><expression>
-<name>operation::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_59d32ae1-f70c-18e4-1e16-a34742e88978">specification of a transformation or query that an <em>object</em> (<xref target="object-definition"/>) may be called to execute</p></verbal-definition></definition>
-
-
-
-
-
-
- <termnote id="_5a53da09-d86f-f634-a2ab-d4fea9145964"><p id="_2153ee40-6a79-22e0-a270-415695380ba6">An <em>operation</em> (<xref target="operation-definition"/>) has a name and a list of parameters.</p>
-</termnote><termnote id="_db7529fe-825e-4544-fa51-6c96193ee8b0"><p id="_d8d1380e-7f41-a12d-a4cd-52895bbd4a05">See <eref type="inline" bibitemid="ISO19119" citeas="ISO 19119:2016"><localityStack><locality type="clause"><referenceFrom>7.2</referenceFrom></locality></localityStack></eref> for a discussion of <em>operation</em> (<xref target="operation-definition"/>)</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19119" type="inline" citeas="ISO&amp;#xa0;19119:2016"><localityStack><locality type="clause"><referenceFrom>4.1.10</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="place-definition"><preferred><expression>
-<name>place::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_b3e0454e-872d-e5fe-2b0f-4096d3bc563b">identifiable part of any space</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19155" type="inline" citeas="ISO&amp;#xa0;19155"><localityStack><locality type="clause"><referenceFrom>4.8</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="platform-definition"><preferred><expression>
-<name>Platform (Model Driven Architecture)::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_d64f004c-f8e2-801e-fd2a-5005f1c6ab14">the set of resources on which a system is realized.</p></verbal-definition></definition>
-
-
- <termsource status="modified" type="authoritative"><origin bibitemid="mdaguide" type="inline" citeas="OMG Model Driven Architecture Guide"/><modification><p id="_75be8449-bfb0-6801-34f2-7bc952859476"><hi>Object Management Group, Model Driven Architecture Guide rev. 2.0</hi></p>
-</modification>
-</termsource></term>
-
-<term id="platform-independent-model-definition"><preferred><expression>
-<name>Platform Independent Model:</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_ec60fb92-04f4-3185-ada5-7ce74c0de1f2">a model that is independent of a specific <em>platform</em> (<xref target="platform-definition"/>)</p></verbal-definition></definition>
-
-
- <termsource status="modified" type="authoritative"><origin bibitemid="mdaguide" type="inline" citeas="OMG Model Driven Architecture Guide"/><modification><p id="_03e238c0-ca30-3ebb-e154-250ace173a9e"><hi>Object Management Group, Model Driven Architecture Guide rev. 2.0</hi></p>
-</modification>
-</termsource></term>
-
-<term id="platform-specific-model-definition"><preferred><expression>
-<name>Platform Specific Model:</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_a78f5b29-99a5-c3db-df1c-3a170d89f37c">a model of a system that is defined in terms of a specific <em>platform</em> (<xref target="platform-definition"/>)</p></verbal-definition></definition>
-
-
- <termsource status="modified" type="authoritative"><origin bibitemid="mdaguide" type="inline" citeas="OMG Model Driven Architecture Guide"/><modification><p id="_e2503461-6c42-1f72-735b-45617fb3fc26"><hi>Object Management Group, Model Driven Architecture Guide rev. 2.0</hi></p>
-</modification>
-</termsource></term>
-
-<term id="point-definition"><preferred><expression>
-<name>point::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_e5c1dad2-81e4-c0c8-ad8c-30281f3f5355">0-dimensional geometric primitive, representing a <em>position</em> (<xref target="position-definition"/>)</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19136-1" type="inline" citeas="ISO&amp;#xa0;19136-1"><localityStack><locality type="clause"><referenceFrom>3.1.47</referenceFrom></locality></localityStack></origin>
-</termsource></term>
-
-<term id="point-of-interest-definition"><preferred><expression>
-<name>point of interest::</name>
-</expression>
-</preferred><admitted><expression>
-<name>POI</name>
-</expression>
-</admitted>
-
-
-
-<definition><verbal-definition><p id="_0160e1ff-4c93-ef3f-f66f-3c8107c27631"><em>location</em> (<xref target="location-definition"/>) where one can find a <em>place</em>, product or service</p></verbal-definition></definition>
-
-
-
-
-
-
-
-
- <termnote id="_82392546-ae6c-3468-d379-fbc265874fa7"><p id="_bdb77036-8b74-a1a9-11aa-70f948be5b7f">A <em>POI</em> (<xref target="point-of-interest-definition"/>) is typically identified by <em>name</em> rather than by an <em>address</em>.</p>
-</termnote><termnote id="_faa331ca-3df3-b4f5-a82b-39090a1f8f08"><p id="_fb3b6126-9670-88d1-ceb2-20753eb61295">A <em>POI</em> (<xref target="point-of-interest-definition"/>) is characterized by <em>type</em>, which may be used as a reference <em>point</em> or a target in a <em>location</em> (<xref target="location-definition"/>) based service request.</p>
-</termnote><termnote id="_847ba1a0-f79b-07ce-476f-0f6f036789d7"><p id="_85ae8726-4a30-95c9-a712-b5e9dcde2e67">A <em>POI</em> (<xref target="point-of-interest-definition"/>) does not exclude the labeling, identification, and tracking of persons and other physical <em>objects</em> (<xref target="object-definition"/>) that have no permanent <em>location</em> (<xref target="location-definition"/>).</p>
-</termnote><termexample id="_ba16841c-214b-94a6-395c-dfb9f71e925a"><p id="_cd2d8b16-6229-8bf0-7351-5c7d00be87a6">destination of a route; such as, Boston</p>
-</termexample></term>
-
-<term id="position-definition"><preferred><expression>
-<name>position::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_770f184d-56cb-c043-14cf-8ded6f20ecf4">data type that describes a <em>point</em> or <em>geometry</em> potentially occupied by an <em>object</em> (<xref target="object-definition"/>) or person</p></verbal-definition></definition>
-
-
-
-
- <termnote id="_a13802ee-73d5-7f57-a515-bfe2a40d8d88"><p id="_2695e8a2-cfd7-d9df-61da-27ad2c3293d9">A <em>direct position</em> (<xref target="direct-position-definition"/>) is a semantic subtype of <em>position</em> (<xref target="position-definition"/>). <em>Direct positions</em> (<xref target="direct-position-definition"/>) as described can only define a <em>point</em>, and therefore not all <em>positions</em> (<xref target="position-definition"/>) can be represented by a <em>direct position</em> (<xref target="direct-position-definition"/>). That is consistent with the is type of relation. An ISO 19107 geometry is also a <em>position</em> (<xref target="position-definition"/>), but not a <em>direct position</em> (<xref target="direct-position-definition"/>)</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19133" type="inline" citeas="ISO&amp;#xa0;19133"/></termsource></term>
-
-<term id="property-definition"><preferred><expression>
-<name>property::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_88a1feb9-0b85-f54d-38e7-f140b94ab61f">facet or <em>attribute</em> (<xref target="attribute-definition"/>) of an <em>object</em> (<xref target="object-definition"/>) referenced by a name</p></verbal-definition></definition>
-
-
-
-
- <termexample id="_8163b530-22bb-21c5-507a-7928e0f8386b"><p id="_178d5166-a0b5-d562-aef0-3704394c51ea">Abby’s car has the colour red, where “colour red” is a <em>property</em> (<xref target="property-definition"/>) of the car.</p>
-</termexample><termsource status="modified" type="authoritative"><origin bibitemid="ISO19143" type="inline" citeas="ISO&amp;#xa0;19143"><localityStack><locality type="clause"><referenceFrom>4.21</referenceFrom></locality></localityStack></origin>
-<modification><p id="_4f0ecada-229b-e4a8-c1d0-b5a242f5429e">Note 1 to entry has been added from ISO 19156, 4.15</p>
-</modification>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Register">OGC Definitions Register</origin>
 </termsource></term>
 
 <term id="requirements-class-definition"><preferred><expression>
 <name>requirements class::</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_76fc6131-b924-78bb-6fbc-4b6e0d7b29fb">a class of requirements, comprising a logical grouping of normative statements that shall be satisfied as a group in conformant implementations. May have dependencies on other <em>requirements classes</em> (<xref target="requirements-class-definition"/>) , but there should be no circular dependencies else the classes must always be satisfied together so are functionally one class.</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_63693e1c-4680-705c-0787-d0ea2ec014d7">a class of requirements, comprising a logical grouping of normative statements that shall be satisfied as a group in conformant implementations. May have dependencies on other <em>requirements classes</em> (<xref target="requirements-class-definition"/>) , but there should be no circular dependencies else the classes must always be satisfied together so are functionally one class.</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Register">OGC Definitions Register</origin>
 </termsource></term>
 
 <term id="standardization-target-definition"><preferred><expression>
 <name>standardization target::</name>
 </expression>
 </preferred>
-<definition><verbal-definition><p id="_8f96ec83-b793-7d84-d168-5c156030d654"><em>standardization target</em> (<xref target="standardization-target-definition"/>)</p></verbal-definition></definition>
+<definition><verbal-definition><p id="_c8f46437-eeaf-a74d-e03d-f74386ac8934"><em>standardization target</em> (<xref target="standardization-target-definition"/>)</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Server">OGC Definitions Register</origin>
-</termsource></term>
-
-<term id="stereotype-definition"><preferred><expression>
-<name>stereotype::</name>
-</expression>
-</preferred>
-<definition><verbal-definition><p id="_8b71aa4e-ce6d-781f-da85-7cde61fcdc1b">extension of an existing <em>metaclass</em> (<xref target="metaclass-definition"/>) that enables the use of <em>platform</em> (<xref target="platform-definition"/>) or <em>domain</em> (<xref target="domain-definition"/>) specific terminology or notation in place of, or in addition to, the ones used for the extended <em>metaclass</em> (<xref target="metaclass-definition"/>)</p></verbal-definition></definition>
-
-
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19150-2" type="inline" citeas="ISO&amp;#xa0;19150-2"><localityStack><locality type="clause"><referenceFrom>4.1.35</referenceFrom></locality></localityStack></origin>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ogcdr" type="inline" citeas="OGC Definitions Register">OGC Definitions Register</origin>
 </termsource></term>
 </terms>
 
@@ -741,7 +263,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <clause id="uml_notation_section" obligation="normative">
 <title>UML Notation</title>
-<p id="_05476e80-ea01-b497-d232-c4737b678e56">The POI Conceptual Model (CM) Standard is defined in a <eref type="inline" bibitemid="omguml" citeas="OMG UML">Unified Modeling Language</eref> (UML) model. It is presented in this document through diagrams using the UML static structure diagram. The UML notations used in this standard are described in the diagram in <xref target="figure-1"/>.</p>
+<p id="_05476e80-ea01-b497-d232-c4737b678e56">The POI Conceptual Model (CM) Standard is defined in a <eref type="inline" bibitemid="omguml" citeas="Unified Modeling Language">Unified Modeling Language</eref> (UML) model. It is presented in this document through diagrams using the UML static structure diagram. The UML notations used in this standard are described in the diagram in <xref target="figure-1"/>.</p>
 
 <figure id="figure-1">
 <name>UML notation (see ISO TS 19103, Geographic information - Conceptual schema language).</name>
@@ -793,7 +315,18 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <clause id="_poi_core_requirements" obligation="normative">
 <title>POI Core Requirements</title>
-<p id="_82fc7295-3868-697a-6bcc-6a9b61e8974c">Unresolved directive in sections/clause_7_normative_text.adoc — include::requirements/Req_Core.adoc[]</p>
+<requirement id="http___www.opengis.net_spec_GeoPOI_1.0_req_req-class-core" model="ogc" obligation="requirement" type="class">
+<title>Core Requirements Class</title> 
+<description><p id="_b019de82-90e3-89a5-ece9-a13a0130d9e3">Requirements Class</p><ul id="_71539602-7e20-628d-2d7f-cd20eb0fb814"><li><p id="_c023d2dd-574c-1320-d855-71ec0e31e338">urn:iso:ts:iso:19103</p>
+</li>
+<li><p id="_95bd8fd8-2344-5851-6354-b3cdf229c8cd">urn:iso:ts:iso:19107</p>
+</li>
+<li><p id="_877377d9-a494-a4ec-1743-c442b56f750b">urn:iso:ts:iso:19108</p>
+</li>
+<li><p id="_f17e6cc5-3cc8-731e-b096-59275b71ee6b">urn:iso:ts:iso:19109</p>
+</li>
+</ul></description>
+</requirement>
 
 <clause id="_feature_model" obligation="normative">
 <title>Feature Model</title>
@@ -814,7 +347,7 @@ The term was first used in this way in the general theory of object-oriented pro
 <p id="_e2789f87-d4c6-9932-e574-55e2e8959171">In an implementation, this abstract class shall be substituted by a concrete class representing a feature type from an application schema associated with a domain of discourse.</p>
 
 <requirement id="req_core_general_feature_model" model="ogc">
-<title>Requirement — General Feature Model</title><classification><tag>label</tag><value>/req/core/req-generalfeaturemodel</value></classification>
+<title>Requirement — General Feature Model</title><classification><tag>label</tag><value>/req/core/generalfeaturemodel</value></classification>
 
 
 <description><p id="_8c7e9515-e842-a9f3-0ce3-4cd60d14c036">An encoding of the POI Conceptual Model SHALL be compliant with the General Feature Model defined in <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109</eref>.</p></description>
@@ -842,7 +375,7 @@ The term was first used in this way in the general theory of object-oriented pro
 <p id="_a005e588-f50a-34ae-f242-e1f1328cc566"><strong><xref target="GM_Polygon-section">GM_Polygon:</xref></strong> The geometric primitive for areas.</p>
 
 <requirement id="req_core_geometry" model="ogc">
-<title>Requirement — Geometry</title><classification><tag>label</tag><value>/req/core/req-geometry</value></classification>
+<title>Requirement — Geometry</title><classification><tag>label</tag><value>/req/core/geometry</value></classification>
 
 
 <description><p id="_9ba5ffaa-532a-a888-f9d6-c12c32aa24af">The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in <eref type="inline" bibitemid="ISO19107" citeas="ISO 19107:2003">ISO 19107</eref>.</p></description>
@@ -931,7 +464,7 @@ The term was first used in this way in the general theory of object-oriented pro
 <clause id="_abstract_feature_with_lifespan" obligation="normative">
 <title>Abstract Feature with Lifespan</title>
 <requirement id="req_core_feature_with_lifespan" model="ogc">
-<title>Requirement — Feature with Lifespan</title><classification><tag>label</tag><value>/req/core/req-featurewithlifespan</value></classification>
+<title>Requirement — Feature with Lifespan</title><classification><tag>label</tag><value>/req/core/featurewithlifespan</value></classification>
 
 
 <description><p id="_9ff41399-bb97-b0e6-8c12-9bb2bf379252">An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <xref target="req_core_abstractfeature">/req/core/abstractfeature</xref>.</p></description>
@@ -1040,9 +573,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <description><p id="_1bdfb62c-f6bf-ddd7-a379-03d218b3e00f">An encoding of the Abstract POI class SHALL include zero or more <tt>metadata</tt> attributes.</p></description>
 
-<component exclude="false" class="part"><p id="_40409274-5284-eaf7-5469-a1654e7dd019">Encodings of the <tt>metadata</tt> attribute SHALL be a resolvable reference to a Metadata resource.</p>
-</component>
-<component exclude="false" class="part"><p id="_4b539116-a669-9d49-94e5-58ce6d6f6deb">Encodings of a <tt>metadata</tt> attribute SHALL comply with requirement <xref target="req_core_Link">/req/core/link</xref>.</p>
+<component exclude="false" class="part"><p id="_42c16ff7-b97d-a46e-e68a-352fa5be9b52">Encodings of a <tt>metadata</tt> attribute SHALL comply with requirement <xref target="req_core_Link">/req/core/link</xref>.</p>
 </component></requirement>
 
 <requirement id="req_core_POI_Payload" model="ogc">
@@ -1078,9 +609,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <description><p id="_4d85ca07-5831-6ed1-5386-f77a3fdde28e">An encoding of the Abstract POI class SHALL include zero or one <tt>symbology</tt> attributes.</p></description>
 
-<component exclude="false" class="part"><p id="_798869a9-d145-dc55-2bf5-67e644e24a46">Encodings of the <tt>symbology</tt> attribute SHALL be a resolvable reference to a symbology resource.</p>
-</component>
-<component exclude="false" class="part"><p id="_80c99cce-b3e9-b8e3-eeb0-36b6f1237990">Encodings of a <tt>symbology</tt> attribute SHALL comply with requirement <xref target="req_core_Link">/req/core/link</xref>.</p>
+<component exclude="false" class="part"><p id="_9d64cb2d-dbdc-6d3f-131a-7f4268f815a6">Encodings of a <tt>symbology</tt> attribute SHALL comply with requirement <xref target="req_core_Link">/req/core/link</xref>.</p>
 </component></requirement>
 
 <requirement id="req_core_Link" model="ogc">
@@ -1456,26 +985,19 @@ The term was first used in this way in the general theory of object-oriented pro
 
 
 </sections><annex id="abstract-test-suite-section" obligation="informative">
-<title>Conformance Class Abstract Test Suite (Normative)</title>
-<example id="ats_core"><dl id="_8ed97249-7173-e72a-a2ca-7ad9035e919d" metadata="true"><dt>identifier</dt>
-<dd><p id="_8b062d9f-989f-cad4-b532-62535f0ca663"><link target="http://www.opengis.net/spec/poi/1.0/conf/core"/></p>
-</dd>
-<dt>target</dt>
-<dd><p id="_742ad703-b3a4-520d-d1de-937541662b3b">Requirements Class core</p>
-</dd>
-<dt>classification</dt>
-<dd><p id="_fa47e2b7-f16c-8f40-a89a-8ab757c1289d">Target Type: Implementation Specification</p>
-</dd>
-</dl>
-</example>
+<title>Abstract Test Suite (Normative)</title>
+<clause id="ats_core" obligation="informative">
+<title>Conformance Class Core</title>
+<requirement id="_7864b0e5-e34a-c54f-160a-e65c6bde564b" model="ogc" type="conformanceclass"> <identifier>http://www.opengis.net/spec/poi/1.0/conf/core</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>Requirements Class core</value></classification>
+</requirement>
 
 <clause id="_general_feature_model" obligation="informative">
 <title>General Feature Model</title>
-<requirement id="ats_core_general_feature_model" model="ogc" type="abstracttest"> <identifier>/conf/core/generalfeaturemodel</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/generalfeaturemodel</value></classification><component class="test-purpose"><p id="_206d0782-7e47-9e40-33f7-c99e072254a5">Validate that the POI Implementation Specification is conformant with the <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109</eref> General Feature Model.</p>
-</component><component class="test-method-type"><p id="_563c02af-ea24-9f67-442a-dc26e984f275">Manual Inspection</p>
-</component><description><p id="_db1a4ba3-3430-0bd3-ef01-01a2f5d956f8">For a statisitcally meaningful set</p>
-</description><component class="part"><p id="_e56af283-ec82-a0f3-25e3-09db2292749d">Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).</p>
-</component><component class="part"><p id="_aeb2d099-9108-d7ab-e629-9baa2ca477e7">Validate that the Abstract Test Suite tests for conformance with ISO 19109 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p>
+<requirement id="ats_core_general_feature_model" model="ogc" type="abstracttest"> <identifier>/conf/core/generalfeaturemodel</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/generalfeaturemodel</value></classification><component class="test-purpose"><p id="_ad7c9883-f508-5e82-c072-05972509d770">Validate that the POI Implementation Specification is conformant with the <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109</eref> General Feature Model.</p>
+</component><component class="test-method-type"><p id="_d5e2c45b-174c-791a-43d1-13add730f729">Manual Inspection</p>
+</component><description><p id="_010fded2-6dab-449e-c0de-37d105893d7d">For a statisitcally meaningful set</p>
+</description><component class="part"><p id="_26bed333-26d0-b262-11d6-31ac0d228489">Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).</p>
+</component><component class="part"><p id="_e4390441-4ad0-e8e8-09b2-99af133f4ec3">Validate that the Abstract Test Suite tests for conformance the General Feature Model defined in <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109</eref>.</p>
 </component>
 </requirement>
 </clause>
@@ -1484,178 +1006,185 @@ The term was first used in this way in the general theory of object-oriented pro
 <title>Geometry</title>
 <requirement id="ats_core_geometry" model="ogc" type="abstracttest"> <identifier>/conf/core/geometry</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/geometry</value></classification>
 
-<description><p id="_750e3fb1-9a1f-cf24-e2ee-7b985258f272">To validate that the POI Implementation Specification is conformant with the <xref target="iso19107">ISO 19107</xref> Geometry Model.</p></description>
+<description><p id="_3227f307-96cf-4fa3-4083-adc6a29960f3">To validate that the POI Implementation Specification is conformant with the <xref target="iso19107">ISO 19107</xref> Geometry Model.</p></description>
 
-<component exclude="false" class="test-method-type"><p id="_342738cb-2604-0278-69d2-77295d987fca">Manual Inspection</p>
+<component exclude="false" class="test-method-type"><p id="_2797c429-b7e2-df88-f23a-6415ef66ff3f">Manual Inspection</p>
 </component>
-<component exclude="false" class="part"><p id="_23597764-e528-119a-aaa0-a89b1732eaf7">Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).</p>
+<component exclude="false" class="part"><p id="_dbceeaf1-8d03-afcf-f8bf-353deda486eb">Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).</p>
 </component>
-<component exclude="false" class="part"><p id="_9d6ba669-e07a-cc40-1df6-3cc55db761ff">Validate that the Abstract Test Suite tests for conformance with ISO 19107 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p>
+<component exclude="false" class="part"><p id="_6a15bc15-07ce-2b6f-ae85-31e71abd0884">Validate that all geometries used in the Implementation Specification conform with the geometry model defined in <eref type="inline" bibitemid="ISO19107" citeas="ISO 19107:2003">ISO 19107</eref>.</p>
 </component>
-<component exclude="false" class="part"><p id="_e9ca0458-a0cb-0d14-c8db-e452ad7520d6">Validate that the Abstract Test Suite tests each POI Feature for the presence of a <tt>SpatialAttributeType</tt> property of type GM_Point, GM_LineString, or GM_Polygon.</p>
+<component exclude="false" class="part"><p id="_5823fae9-4cee-c4a8-1f91-de176110164c">Validate that the Abstract Test Suite tests each POI Feature for the presence of a <tt>SpatialAttributeType</tt> property of type GM_Point, GM_LineString, or GM_Polygon.</p>
 </component></requirement>
 </clause>
 
 <clause id="_abstract_feature_2" obligation="informative">
 <title>Abstract Feature</title>
-<requirement id="ats_core_abstractfeature" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature</identifier><inherit>/conf/core/generalfeaturemodel</inherit><inherit>/conf/core/geometry</inherit><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature</value></classification><component class="test-purpose"><p id="_9b840529-7d36-3195-bbd6-18e5915a7983">Validate that the Implementation Specification implements the AbstractFeature Class as defined in the POI Conceptual Model.</p>
-</component><component class="test-method-type"><p id="_5133c8ac-2b5a-444d-879a-a6617e986158">Manual Inspection</p>
+<requirement id="ats_core_abstractfeature" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature</identifier><inherit>/conf/core/generalfeaturemodel</inherit><inherit>/conf/core/geometry</inherit><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature</value></classification><component class="test-purpose"><p id="_50fd76d5-1231-0cf5-c57f-eb6b18f7b255">Validate that the Implementation Specification implements the AbstractFeature Class as defined in the POI Conceptual Model.</p>
+</component><component class="test-method-type"><p id="_ba0ca7f0-a165-b352-9f38-81483e8d214a">Manual Inspection</p>
 </component>
 
-<description><p id="_cf6e62d8-1251-1ff8-bd7d-ed062e5846bf">Validate that the AbstractFeature class is properly implemented in the Implementation Specification.</p></description>
+<description><p id="_0514e6a4-8cb7-8655-815d-db80d11c7547">Validate that the AbstractFeature class is properly implemented in the Implementation Specification.</p></description>
 
-<component exclude="false" class="part"><p id="_2c3f95b1-4e92-036f-8489-699515eff146">For every AbstractFeature class that includes a <tt>description</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-description">/conf/core/abstractfeature-description</xref>.</p>
+<component exclude="false" class="part"><p id="_1d2009b8-c4cd-0485-150c-c7c43eb84ed5">Validate that the implementation of the AbstractFeature class is also a valid implementation of the AnyFeature class defined in the ISO 19109 General Feature Model.</p>
 </component>
-<component exclude="false" class="part"><p id="_c151cde6-c3f4-81a3-3a2f-5c246aee07ba">For every AbstractFeature class that includes an <tt>featureId</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-id">/conf/core/abstractfeature-featureid</xref>.</p>
+<component exclude="false" class="part"><p id="_c91a80f4-dab4-4c01-15cf-384f3949f5bd">For every AbstractFeature class that includes a <tt>description</tt> attribute, validate that attribute using the <xref target="ats_core_abstractfeature-description">/conf/core/abstractfeature-description</xref> test.</p>
 </component>
-<component exclude="false" class="part"><p id="_ca5db2b8-d581-ab13-30fb-df373f283ce0">For every AbstractFeature, verify that the class includes an <tt>identifier</tt> attribute, then validate that attribute using test <xref target="ats_core_abstractfeature-identifier">/conf/core/abstractfeature-identifier</xref>.</p>
+<component exclude="false" class="part"><p id="_24b38b65-d713-4036-9ffa-6ea38374f295">For every AbstractFeature class, validate that the <tt>featureId</tt> attribute is populated with a value that passes the <xref target="ats_core_abstractfeature-featureid">/conf/core/abstractfeature-featureid</xref> test.</p>
 </component>
-<component exclude="false" class="part"><p id="_94eae20c-f73f-4124-538e-acc65e230276">For every AbstractFeature class that includes a <tt>name</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-name">/conf/core/abstractfeature-name</xref>.</p>
+<component exclude="false" class="part"><p id="_d0903f08-6d5b-e5d2-49c3-8e9941c92052">For every AbstractFeature, verify that the class includes an <tt>identifier</tt> attribute, then validate that attribute using the <xref target="ats_core_abstractfeature-identifier">/conf/core/abstractfeature-identifier</xref> test.</p>
+</component>
+<component exclude="false" class="part"><p id="_585b8e97-0062-93dc-9bf5-59499f9953b6">For every AbstractFeature class that includes a <tt>name</tt> attribute, validate that attribute using the <xref target="ats_core_abstractfeature-name">/conf/core/abstractfeature-name</xref> test.</p>
 </component></requirement>
 
 <clause id="_abstract_feature_description" obligation="informative">
 <title>Abstract Feature-Description</title>
-<requirement id="ats_core_abstractfeature-description" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-description</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-description</value></classification><component class="test-purpose"><p id="_492bd0a3-c921-2b38-125b-d872d87b808f">Validate that the Implementation Specification implements the <tt>description</tt> attribute as defined in the POI Conceptual Model.</p>
-</component><component class="test-method-type"><p id="_a5b255d5-816e-520b-70b7-d81461c3ed7f">Manual Inspection</p>
+<requirement id="ats_core_abstractfeature-description" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-description</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-description</value></classification><component class="test-purpose"><p id="_7156e84b-ef5a-38ef-ef71-9d4b92978b6e">Validate that the Implementation Specification implements the <tt>description</tt> attribute as defined in the POI Conceptual Model.</p>
+</component><component class="test-method-type"><p id="_c118fc54-dac5-8b1b-1bdd-1711dda21548">Manual Inspection</p>
 </component>
 
-<description><p id="_83f98dd7-0467-eb41-614f-81aa52b776e4">Validate that the <tt>description</tt> attribute is a valid implementation of the CharacterString class from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
+<description><p id="_dc474ac2-b74f-5df1-b2be-4b5329f94f15">Validate that the <tt>description</tt> attribute is a valid implementation of the CharacterString class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p></description>
 </requirement>
 </clause>
 
 <clause id="_abstract_feature_featureid" obligation="informative">
 <title>Abstract Feature-FeatureId</title>
-<requirement id="ats_core_abstractfeature-featureid" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-featureid</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-featureid</value></classification><component class="test-purpose"><p id="_baf98b1d-7edb-010d-1974-466c469ed50e">Validate that the Implementation Specification implements the <tt>featureId</tt> attribute as defined in the POI Conceptual Model.</p>
-</component><component class="test-method-type"><p id="_dc6ca013-b263-a039-400c-4f672f9f0335">Manual Inspection</p>
+<requirement id="ats_core_abstractfeature-featureid" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-featureid</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-featureid</value></classification><component class="test-purpose"><p id="_de47e341-97ca-de07-2070-f12d849fd255">Validate that the Implementation Specification implements the <tt>featureId</tt> attribute as defined in the POI Conceptual Model.</p>
+</component><component class="test-method-type"><p id="_2001200b-f339-7cf5-fea2-f20d28e6e9a4">Manual Inspection</p>
 </component>
 
-<description><p id="_fe82c2c3-7479-91c4-1629-69ada8e12a6e">Validate that the <tt>featureId</tt> attribute is a valid implementation of the Uid class from this Conceptual Model.</p></description>
+<description><p id="_e90781fc-ba10-3ec3-0a58-4cdd4868bff8">Validate that the <tt>featureId</tt> attribute is a valid implementation of the Uid class from this Conceptual Model.</p></description>
 </requirement>
 </clause>
 
 <clause id="_abstract_feature_identifier" obligation="informative">
 <title>Abstract Feature-Identifier</title>
-<requirement id="ats_core_abstractfeature-identifier" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-identifier</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-identifier</value></classification><component class="test-purpose"><p id="_d08ba71a-7ad8-8db2-6e8a-48e94793aae2">Validate that the Implementation Specification implements the <tt>identifier</tt> attribute as defined in the POI Conceptual Model.</p>
-</component><component class="test-method-type"><p id="_db503900-3b71-6024-8348-95755d73974f">Manual Inspection</p>
+<requirement id="ats_core_abstractfeature-identifier" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-identifier</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-identifier</value></classification><component class="test-purpose"><p id="_48268348-1a65-b35d-d120-17f7c660a450">Validate that the Implementation Specification implements the <tt>identifier</tt> attribute as defined in the POI Conceptual Model.</p>
+</component><component class="test-method-type"><p id="_1dbd9253-5b60-947a-1212-cbce7af3b882">Manual Inspection</p>
 </component>
 
-<description><p id="_1b503d96-843f-dcaa-51d7-32d8e926af1b">Validate that the <tt>identifier</tt> attribute is a valid implementation of the ScopedName class from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
+<description><p id="_2259a48d-e493-65ea-4f00-1f78b98b1acd">Validate that the <tt>identifier</tt> attribute is a valid implementation of the ScopedName class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p></description>
 </requirement>
 </clause>
 
 <clause id="_abstract_feature_name" obligation="informative">
 <title>Abstract Feature-Name</title>
-<requirement id="ats_core_abstractfeature-name" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-name</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-name</value></classification><component class="test-purpose"><p id="_0144aa49-5392-e87e-6593-6fbbb21ee808">Validate that the Implementation Specification implements the <tt>name</tt> attribute as defined in the POI Conceptual Model.</p>
-</component><component class="test-method-type"><p id="_24393fe8-de2e-6e5d-562b-f25e80a286e6">Manual Inspection</p>
+<requirement id="ats_core_abstractfeature-name" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-name</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-name</value></classification><component class="test-purpose"><p id="_8bf27166-22f4-a3c3-850b-3c8f208810ce">Validate that the Implementation Specification implements the <tt>name</tt> attribute as defined in the POI Conceptual Model.</p>
+</component><component class="test-method-type"><p id="_bcd1e593-80f0-d282-7454-a2370e05ff36">Manual Inspection</p>
 </component>
 
-<description><p id="_314034f1-446c-f61c-e31e-bc14ab4bd42a">Validate that the <tt>name</tt> attribute is a valid implementation of the GenericName class from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
+<description><p id="_45bbf4d6-c29e-c8cb-f6f5-94bd89a5cf93">Validate that the <tt>name</tt> attribute is a valid implementation of the GenericName class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p></description>
 </requirement>
 </clause>
 </clause>
 
 <clause id="_abstract_feature_with_lifespan_2" obligation="informative">
 <title>Abstract Feature with Lifespan</title>
-<requirement id="ats_core_featurewithlifespan" model="ogc" type="abstracttest"> <identifier>/conf/core/featurewithlifespan</identifier><inherit>/conf/core/abstractfeature</inherit><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/featurewithlifespan</value></classification><component class="test-purpose"><p id="_e9efc3a5-9158-dc77-5b94-3fe944a8e02e">Validate that the Implementation Specification implements the AbstractFeaturewithLifespan Class as defined in the POI Conceptual Model.</p>
-</component><component class="test-method-type"><p id="_7268d581-3aef-ed1e-8843-84e9f03c9cda">Manual Inspection</p>
+<requirement id="ats_core_featurewithlifespan" model="ogc" type="abstracttest"> <identifier>/conf/core/featurewithlifespan</identifier><inherit>/conf/core/abstractfeature</inherit><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/featurewithlifespan</value></classification><component class="test-purpose"><p id="_ad0b4e52-1609-8ff7-6bff-23af546a71c3">Validate that the Implementation Specification implements the AbstractFeaturewithLifespan Class as defined in the POI Conceptual Model.</p>
+</component><component class="test-method-type"><p id="_42accc4a-e2a1-e22e-0a24-3f04a41f6c73">Manual Inspection</p>
 </component>
 
-<description><p id="_cb268552-33f1-66fb-ec59-6cdaccb0953c">Validate that the AbstractFeatureWithLifespan class is properly implemented in the Implementation Specification.</p></description>
+<description><p id="_65b7d373-c9d8-4263-0047-e29c49974cd0">Validate that the AbstractFeatureWithLifespan class is properly implemented in the Implementation Specification.</p></description>
 
-<component exclude="false" class="part"><p id="_39053d08-c7c3-f079-2a83-4fe0315df882">For every AbstractFeatureWithLifespan class that includes a <tt>creationDate</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-datetime">/conf/core/abstractfeature-datetime</xref>.</p>
+<component exclude="false" class="part"><p id="_b8ea652e-c44e-1c16-1aad-225d269311ea">Validate that the implementation of the AbstractFeatureWithLifespan class is also a valid implementation of the AbstractFeature class using test <xref target="ats_core_abstractfeature">/conf/core/abstractfeature</xref>.</p>
 </component>
-<component exclude="false" class="part"><p id="_63be6f34-9134-5716-249c-8760eecc20c8">For every AbstractFeatureWithLifespan class that includes a <tt>terminationDate</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-datetime">/conf/core/abstractfeature-datetime</xref>.</p>
+<component exclude="false" class="part"><p id="_ba4f097d-b369-08af-ae19-dbce335084c7">For every AbstractFeatureWithLifespan class that includes a <tt>creationDate</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-datetime">/conf/core/abstractfeature-datetime</xref>.</p>
 </component>
-<component exclude="false" class="part"><p id="_62683854-4f27-513e-9407-ecb525da2540">For every AbstractFeatureWithLifespan class that includes a <tt>validFrom</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-datetime">/conf/core/abstractfeature-datetime</xref>.</p>
+<component exclude="false" class="part"><p id="_b3d965cd-2ecb-061d-a89a-82a2d202070c">For every AbstractFeatureWithLifespan class that includes a <tt>terminationDate</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-datetime">/conf/core/abstractfeature-datetime</xref>.</p>
 </component>
-<component exclude="false" class="part"><p id="_004c2533-7d87-0447-afcb-61ffd5351d02">For every AbstractFeatureWithLifespan class that includes a <tt>validTo</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-datetime">/conf/core/abstractfeature-datetime</xref>.</p>
+<component exclude="false" class="part"><p id="_88fa373d-e699-5adb-25c2-913ae8c8670e">For every AbstractFeatureWithLifespan class that includes a <tt>validFrom</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-datetime">/conf/core/abstractfeature-datetime</xref>.</p>
+</component>
+<component exclude="false" class="part"><p id="_104966c7-28c1-93cc-15d5-044313f49b58">For every AbstractFeatureWithLifespan class that includes a <tt>validTo</tt> attribute, validate that attribute using test <xref target="ats_core_abstractfeature-datetime">/conf/core/abstractfeature-datetime</xref>.</p>
 </component></requirement>
 
 <clause id="_date_time" obligation="informative">
 <title>Date-Time</title>
-<requirement id="ats_core_abstractfeature-datetime" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-datetime</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-datetime</value></classification><component class="test-purpose"><p id="_4feffea2-ca40-f9ff-45ca-32d9c67f8810">Validate that the Implementation Specification implements the attribute being tested as defined in ISO 19103.</p>
-</component><component class="test-method-type"><p id="_668cd9a5-41d3-72a4-9def-f395a47847b2">Manual Inspection</p>
+<requirement id="ats_core_abstractfeature-datetime" model="ogc" type="abstracttest"> <identifier>/conf/core/abstractfeature-datetime</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstractfeature-datetime</value></classification><component class="test-purpose"><p id="_36fb1197-dec2-4930-0070-df9c146654db">Validate that the Implementation Specification implements the attribute being tested as defined in ISO 19103.</p>
+</component><component class="test-method-type"><p id="_37308206-84c2-710f-5bc8-3899af0fd406">Manual Inspection</p>
 </component>
 
-<description><p id="_17230ac9-d0c0-a250-93ff-ba4dc2d06542">Validate that the attribute being tested is a valid implementation of the DateTime type from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
+<description><p id="_1971397d-b09d-99e6-2817-6fc4a2fdde58">Validate that the attribute being tested is a valid implementation of the DateTime type from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref></p></description>
 </requirement>
 </clause>
 </clause>
 
 <clause id="_abstract_poi_2" obligation="informative">
 <title>Abstract POI</title>
-<requirement id="ats_core_poi-abstract-poi" model="ogc" type="abstracttest"> <identifier>/conf/core/astract-poi</identifier><inherit>/conf/core/featurewithlifespan</inherit><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstract-poi</value></classification><component class="test-purpose"><p id="_375b9fbf-a5c3-180c-338b-3cfce054e0a3">To validate that the Implementation Specification implements the AbstractPOI class as defined in the POI Conceptual Model.</p>
-</component><component class="test-method-type"><p id="_862b62fb-78b1-efb7-b30c-938387f5adae">Manual Inspection</p>
+<requirement id="ats_core_poi-abstract-poi" model="ogc" type="abstracttest"> <identifier>/conf/core/astract-poi</identifier><inherit>/conf/core/featurewithlifespan</inherit><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstract-poi</value></classification><component class="test-purpose"><p id="_8e6a501b-5789-b9ec-f359-e46ebfe59528">To validate that the Implementation Specification implements the AbstractPOI class as defined in the POI Conceptual Model.</p>
+</component><component class="test-method-type"><p id="_82286e31-8f41-dfc2-a651-63ec18e90b77">Manual Inspection</p>
 </component>
 
-<description><p id="_2b2f7c70-fbe9-7931-9972-6af1ed39adda">Do For every AbstractPOI class:</p></description>
+<description><p id="_33ca60ec-f8bb-f146-237e-b6a9e851ce69">Validate that the Implementation Specification correctly implements the AbstractPOI class:</p></description>
 
-<component exclude="false" class="part"><p id="_f6485295-0aac-a479-5016-8ca88c158b22">Verify that the class includes a <tt>contactInfo</tt> attribute, then validate that attribute using test <xref target="ats_core_poi-contactinfo">/conf/core/poi-contactinfo</xref></p>
+<component exclude="false" class="part"><p id="_106ede7c-3b80-4206-a40b-a634ef3b6365">Validate that the implementation of the AbstractPOI class is also a valid implementation of the AbstractFeatureWithLIfespan class using test <xref target="ats_core_featurewithlifespan">/conf/core/featurewithlifespan</xref>.</p>
 </component>
-<component exclude="false" class="part"><p id="_92a08bad-8f11-15dc-8de8-ccd32453b3ce">If the class includes a <tt>hasFeatureOfInterest</tt> aggregation, validate that aggregation using test <xref target="ats_core_poi-featureofinterest">/conf/core/poi-featureOfInterest</xref>.</p>
+<component exclude="false" class="part"><p id="_b9d6cad0-dea5-c438-1f77-19f11d4d40fb">Verify that implementations of the AbstractPOI class include a <tt>contactInfo</tt> attribute which is populated with a value that passes the <xref target="ats_core_poi-contactinfo">/conf/core/poi-contactinfo</xref> test.</p>
 </component>
-<component exclude="false" class="part"><p id="_4ab6bf26-6ed4-8e4c-cca8-900ff4c64d50">IF the class includes a <tt>hasMetadata</tt> association, validate that association using test <xref target="ats_core_link">/conf/core/link</xref>.</p>
+<component exclude="false" class="part"><p id="_adcf1f1d-3eb1-3352-a866-e397bcfaa542">Verify that implementations of the AbstractPOI class may include a <tt>hasFeatureOfInterest</tt> aggregation and that the target of that aggregation passes the <xref target="ats_core_poi-featureofinterest">/conf/core/poi-featureOfInterest</xref> test.</p>
 </component>
-<component exclude="false" class="part"><p id="_046d01a8-385a-7197-c3be-f8c93c1f4089">IF the class includes a <tt>hasPayload</tt> aggregation, validate that aggregation using test <xref target="ats_core_poi-payload">/conf/core/poi-payload</xref>.</p>
+<component exclude="false" class="part"><p id="_4de6e963-9c90-655c-b1bc-79527523f782">Verify that implementations of the AbstractPOI class may include a <tt>hasMetadata</tt> association and that the representation of that association passes the <xref target="ats_core_link">/conf/core/link</xref> test.</p>
 </component>
-<component exclude="false" class="part"><p id="_36b9db4f-5f35-0289-7e15-4088848a251e">If the class includes a <tt>keywords</tt> attribute, validate that attribute using test <xref target="ats_core_poi-keywords">/conf/core/poi-keywords</xref>.</p>
+<component exclude="false" class="part"><p id="_17198106-47c5-96ac-00a0-b1b5578a78ba">Verify that implementations of the AbstractPOI class may include a <tt>hasPayload</tt> aggregation and that the target of that aggregation passes the <xref target="ats_core_poi-payload">/conf/core/poi-payload</xref> test.</p>
 </component>
-<component exclude="false" class="part"><p id="_d1760b0b-4b08-e65b-ed66-1352009ec9da">IF the class includes a <tt>rights</tt> attribute, validate that attribute using test <xref target="ats_core_poi-rights">/conf/core/poi-rights</xref>.</p>
+<component exclude="false" class="part"><p id="_b77224c2-9b44-964e-5e5f-3c080118b5d4">Verify that implementations of the AbstractPOI class may include a <tt>keywords</tt> attribute and that the value of that attribute passes the <xref target="ats_core_poi-keywords">/conf/core/poi-keywords</xref> test.</p>
 </component>
-<component exclude="false" class="part"><p id="_c67191d9-7523-9aab-a0be-d70203947940">IF the class includes a <tt>symbology</tt> association, validate that association using test <xref target="ats_core_link">/conf/core/link</xref>.</p>
+<component exclude="false" class="part"><p id="_2976e832-2a7e-f598-1f55-8f7da52d6dad">Verify that implementations of the AbstractPOI class may include a <tt>rights</tt> attribute and that the value of that attribute passes the <xref target="ats_core_poi-rights">/conf/core/poi-rights</xref> test.</p>
+</component>
+<component exclude="false" class="part"><p id="_8d65bec8-1cb9-b438-8903-64da88a35cd0">Verify that implementations of the AbstractPOI class may include a <tt>symbology</tt> association association and that the representation of that association passes the <xref target="ats_core_link">/conf/core/link</xref> test.</p>
 </component></requirement>
 
 <clause id="_abstract_poi_contactinfo" obligation="informative">
 <title>Abstract POI ContactInfo</title>
-<requirement id="ats_core_poi-contactinfo" model="ogc" type="abstracttest"> <identifier>/conf/core/poi-contactinfo</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/poi-contactInfo</value></classification><component class="test-purpose"><p id="_87e40215-d304-9638-3509-b4186e1bb350">Validate that the Implementation Specification implements the <tt>contactInfo</tt> attribute as defined in the POI Conceptual Model.</p>
+<requirement id="ats_core_poi-contactinfo" model="ogc" type="abstracttest"> <identifier>/conf/core/poi-contactinfo</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/poi-contactInfo</value></classification><component class="test-purpose"><p id="_7f10b211-e9b8-6132-67e4-51b5731bb57c">Validate that the Implementation Specification implements the <tt>contactInfo</tt> attribute as defined in the POI Conceptual Model.</p>
 </component>
 
-<description><p id="_e08dcd73-2eea-551a-fa39-e82a9b665acc">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the CI_Responsibility class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
+<description><p id="_b73365d1-51de-6a91-6782-92e53084acfe">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the CI_Responsibility class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
 </requirement>
 </clause>
 
 <clause id="_abstract_poi_keywords" obligation="informative">
 <title>Abstract POI Keywords</title>
-<requirement id="ats_core_poi-keywords" model="ogc" type="abstracttest"> <identifier>/conf/core/poi-keywords</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/poi-keywords</value></classification><component class="test-purpose"><p id="_e3b5545e-d979-c1a5-47f7-368eacdcb950">Validate that the Implementation Specification implements the <tt>keywords</tt> attribute as defined in the POI Conceptual Model.</p>
+<requirement id="ats_core_poi-keywords" model="ogc" type="abstracttest"> <identifier>/conf/core/poi-keywords</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/poi-keywords</value></classification><component class="test-purpose"><p id="_4224a87c-e0e4-fcb6-9afc-2bad4dbbccef">Validate that the Implementation Specification implements the <tt>keywords</tt> attribute as defined in the POI Conceptual Model.</p>
 </component>
 
-<description><p id="_8bfeef14-7d87-e8c7-848b-12e86830e856">Validate that the <tt>keywords</tt> attribute is a valid implementation of the MD_Keyword class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
+<description><p id="_86b1c894-b646-fe2d-65a7-3da5137bff35">Validate that the <tt>keywords</tt> attribute is a valid implementation of the MD_Keyword class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
 </requirement>
 </clause>
 
 <clause id="_abstract_poi_rights" obligation="informative">
 <title>Abstract POI Rights</title>
-<requirement id="ats_core_poi-rights" model="ogc" type="abstracttest"> <identifier>/conf/core/poi-rights</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/poi-rights</value></classification><component class="test-purpose"><p id="_bfa4c03c-610a-6d2d-2eb5-73119c4512c8">Validate that the Implementation Specification implements the <tt>rights</tt> attribute as defined in the POI Conceptual Model.</p>
+<requirement id="ats_core_poi-rights" model="ogc" type="abstracttest"> <identifier>/conf/core/poi-rights</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/poi-rights</value></classification><component class="test-purpose"><p id="_e8b09e4c-825c-ee12-e579-a928a1160133">Validate that the Implementation Specification implements the <tt>rights</tt> attribute as defined in the POI Conceptual Model.</p>
 </component>
 
-<description><p id="_4652a615-34e9-97a3-5c74-8f1318443891">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the MD_Constraints class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
+<description><p id="_6a2f37c2-2bd3-cd8a-d0c8-4b1ad1a8850b">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the MD_Constraints class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
 </requirement>
 </clause>
 
 <clause id="_link" obligation="informative">
 <title>Link</title>
-<requirement id="ats_core_link" model="ogc" type="abstracttest"> <identifier>/conf/core/link</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/link</value></classification><component class="test-purpose"><p id="_749ab51a-96c8-e217-c006-4a3200522f4a">Validate that the Implementation Specification implements the <tt>contactInfo</tt> attribute as defined in the POI Conceptual Model.</p>
+<requirement id="ats_core_link" model="ogc" type="abstracttest"> <identifier>/conf/core/link</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/link</value></classification><component class="test-purpose"><p id="_6de9ea9e-f441-5083-aa14-712269b8aaf9">Validate that the Implementation Specification implements the <tt>contactInfo</tt> attribute as defined in the POI Conceptual Model.</p>
 </component>
 
-<description><p id="_0a4a09b7-b909-8486-b91e-964508a49acd">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the CI_Responsibility class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
+<description><p id="_a73ba686-3e26-d16b-4a8c-6f34bc2accfc">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the CI_Responsibility class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology.</p></description>
 </requirement>
 </clause>
 </clause>
 
 <clause id="_poi_payload" obligation="informative">
 <title>POI Payload</title>
-<requirement id="ats_core_poi-payload" model="ogc" type="abstracttest"> <identifier>/conf/core/poi-payload</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/poi-payload</value></classification><component class="test-purpose"><p id="_05a7beeb-c336-4e92-eaef-6eb8a2ae7b09">To validate that the Implementation Specification implements the POI_Payload Class as defined in the POI Conceptual Model.</p>
-</component><component class="test-method-type"><p id="_9e1f3093-cc9e-ed68-bad3-4304f090b1eb">Manual Inspection</p>
+<requirement id="ats_core_poi-payload" model="ogc" type="abstracttest"> <identifier>/conf/core/poi-payload</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/poi-payload</value></classification><component class="test-purpose"><p id="_ff2410d3-0243-1277-72f2-c4177a7da474">To validate that the Implementation Specification implements the POI_Payload Class as defined in the POI Conceptual Model.</p>
+</component><component class="test-method-type"><p id="_11266527-dff3-ba99-3b49-a15edba344f0">Manual Inspection</p>
 </component>
 
-<description><p id="_b8895f69-c410-0016-24d0-25410f3ce25f">Do For every POI_Payload class:</p></description>
+<description><p id="_ea97a27b-cefa-ec4a-919c-93bc1da05d81">Do For every POI_Payload class:</p></description>
 
-<component exclude="false" class="part"><p id="_e0370157-e66c-a7a7-02b0-fd73e6947451">Validate that the class includes at lease one <tt>usesSchema</tt> aggregation and that the target of the aggregation is a valid schema for the implementing technology.</p>
+<component exclude="false" class="part"><p id="_b69c29fd-30a5-7fc3-028c-1a419ab5b77b">Validate that the class includes at lease one <tt>usesSchema</tt> aggregation and that the target of the aggregation is a valid schema for the implementing technology.</p>
 </component>
-<component exclude="false" class="part"><p id="_a86009f4-188b-c74c-fb7a-a44348bd12e7">If the class includes a <tt>hasDefinition</tt> aggregation, validate that the target of the aggregation is a valid ontology for the implementing technology.</p>
+<component exclude="false" class="part"><p id="_a17e5911-455c-3568-33cd-a8b0719df685">If the class includes a <tt>hasDefinition</tt> aggregation, validate that the target of the aggregation is a valid ontology for the implementing technology.</p>
 </component>
-<component exclude="false" class="part"><p id="_bc95b46e-ff26-69d0-733e-211287b0a9e4">If the class includes a <tt>hasFeatureOfInterest</tt> aggregation, validate that the target of the aggregation is a valid Feature for the implementing technology.</p>
+<component exclude="false" class="part"><p id="_e1214124-3554-04bb-9d51-7f8bd9ccaef1">If the class includes a <tt>hasFeatureOfInterest</tt> aggregation, validate that the target of the aggregation is a valid Feature for the implementing technology.</p>
 </component></requirement>
+</clause>
 </clause>
 </annex><annex id="iso_data_dictionary_section" obligation="informative">
 <title>ISO Data Dictionary</title>
@@ -2667,8 +2196,8 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
     </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This standard contains requirements for writing standards to be used for any document whose eventual purpose is the specification of requirements for software, services or data structures.</abstract>  </bibitem>
-<bibitem id="ogcdr"><formattedref format="application/x-isodoc+xml"/><docidentifier type="OGC">OGC Definitions Server</docidentifier></bibitem>
-<bibitem id="omguml"><formattedref format="application/x-isodoc+xml">OMG: Object Management Group (OMG) <em>Unified Modeling Language (UML)</em>, Version 2.5.1, December 2017,   <link target="https://www.omg.org/spec/UML/2.5.1"><link target="https://www.omg.org/spec/UML/2.5.1"/></link> — not in expected format</formattedref><docidentifier type="OMG">OMG UML</docidentifier></bibitem>
+<bibitem id="ogcdr"><formattedref format="application/x-isodoc+xml">Open Geospatial Consortium. <em>OGC Definitions Register</em>. <link target="https://www.opengis.net/def/glossary"/></formattedref><docidentifier type="OGC">OGC Definitions Register</docidentifier></bibitem>
+<bibitem id="omguml"><formattedref format="application/x-isodoc+xml">Object Management Group (OMG), <em>Unified Modeling Language (UML)</em>, Version 2.5.1, December 2017,   <link target="https://www.omg.org/spec/UML/2.5.1"><link target="https://www.omg.org/spec/UML/2.5.1"/></link></formattedref><docidentifier>Unified Modeling Language</docidentifier></bibitem>
 </references><references id="Bibliography" normative="false" obligation="informative">
 <title>Bibliography</title><bibitem id="ISO1087-1" type="standard" schema-version="v1.2.4">  <fetched>2023-12-01</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Terminology work</title>
@@ -3090,7 +2619,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
           </organization>        </owner>      </copyright>      <place>Geneva</place>    </bibitem>
   </relation>  <place>Geneva</place></bibitem><bibitem id="mdaguide">
   <formattedref format="application/x-isodoc+xml">Object Management Group, Model Driven Architecture Guide rev. 2.0</formattedref>
-  <docidentifier type="OMG">OMG Model Driven Architecture Guide</docidentifier>
+  <docidentifier>Model Driven Architecture Guide</docidentifier>
   
 </bibitem>
 

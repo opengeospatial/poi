@@ -1,5 +1,5 @@
 
-==== Abstract POI
+===== Abstract POI
 
 [[ats_core_poi-abstract-poi]]
 [abstract_test]
@@ -15,46 +15,51 @@ test-method-type:: Manual Inspection
 
 [.component,class=description]
 --
-Do For every AbstractPOI class:
+Validate that the Implementation Specification correctly implements the AbstractPOI class:
 --
 
 [.component,class=part]
 --
-Verify that the class includes a `contactInfo` attribute, then validate that attribute using test <<ats_core_poi-contactinfo,/conf/core/poi-contactinfo>>
+Validate that the implementation of the AbstractPOI class is also a valid implementation of the AbstractFeatureWithLIfespan class using test <<ats_core_featurewithlifespan,/conf/core/featurewithlifespan>>.
 --
 
 [.component,class=part]
 --
-If the class includes a `hasFeatureOfInterest` aggregation, validate that aggregation using test <<ats_core_poi-featureofinterest,/conf/core/poi-featureOfInterest>>.
+Verify that implementations of the AbstractPOI class include a `contactInfo` attribute which is populated with a value that passes the <<ats_core_poi-contactinfo,/conf/core/poi-contactinfo>> test.
 --
 
 [.component,class=part]
 --
-IF the class includes a `hasMetadata` association, validate that association using test <<ats_core_link,/conf/core/link>>.
+Verify that implementations of the AbstractPOI class may include a `hasFeatureOfInterest` aggregation and that the target of that aggregation passes the <<ats_core_poi-featureofinterest,/conf/core/poi-featureOfInterest>> test.
 --
 
 [.component,class=part]
 --
-IF the class includes a `hasPayload` aggregation, validate that aggregation using test <<ats_core_poi-payload,/conf/core/poi-payload>>.
+Verify that implementations of the AbstractPOI class may include a `hasMetadata` association and that the representation of that association passes the <<ats_core_link,/conf/core/link>> test.
 --
 
 [.component,class=part]
 --
-If the class includes a `keywords` attribute, validate that attribute using test <<ats_core_poi-keywords,/conf/core/poi-keywords>>.
+Verify that implementations of the AbstractPOI class may include a `hasPayload` aggregation and that the target of that aggregation passes the <<ats_core_poi-payload,/conf/core/poi-payload>> test.
 --
 
 [.component,class=part]
 --
-IF the class includes a `rights` attribute, validate that attribute using test <<ats_core_poi-rights,/conf/core/poi-rights>>.
+Verify that implementations of the AbstractPOI class may include a `keywords` attribute and that the value of that attribute passes the <<ats_core_poi-keywords,/conf/core/poi-keywords>> test.
 --
 
 [.component,class=part]
 --
-IF the class includes a `symbology` association, validate that association using test <<ats_core_link,/conf/core/link>>.
+Verify that implementations of the AbstractPOI class may include a `rights` attribute and that the value of that attribute passes the <<ats_core_poi-rights,/conf/core/poi-rights>> test.
 --
+
+[.component,class=part]
+--
+Verify that implementations of the AbstractPOI class may include a `symbology` association association and that the representation of that association passes the <<ats_core_link,/conf/core/link>> test.
+-- 
 ====
 
-===== Abstract POI ContactInfo
+====== Abstract POI ContactInfo
 
 [[ats_core_poi-contactinfo]]
 [abstract_test]
@@ -71,7 +76,7 @@ Validate that the `contactInfo` attribute is a valid implementation of the CI_Re
 --
 ====
 
-===== Abstract POI Keywords
+====== Abstract POI Keywords
 
 [[ats_core_poi-keywords]]
 [abstract_test]
@@ -88,7 +93,7 @@ Validate that the `keywords` attribute is a valid implementation of the MD_Keywo
 --
 ====
 
-===== Abstract POI Rights
+====== Abstract POI Rights
 
 [[ats_core_poi-rights]]
 [abstract_test]
@@ -105,7 +110,7 @@ Validate that the `contactInfo` attribute is a valid implementation of the MD_Co
 --
 ====
 
-===== Link
+====== Link
 
 [[ats_core_link]]
 [abstract_test]

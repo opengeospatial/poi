@@ -1,5 +1,5 @@
 [appendix]
 [[abstract-test-suite-section]]
-== Conformance Class Abstract Test Suite (Normative)
+== Abstract Test Suite (Normative)
 
 include::../abstract_tests/ATS_Core.adoc[]

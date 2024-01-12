@@ -1,370 +1,295 @@
 [appendix,obligation="informative"]
 [heading='terms and definitions']
 [[glossary]]
-= Glossary
+== Glossary
 
-[[definition_conformance-test-class]]
-*conformance test class* +
-The set of conformance test modules that must be applied to receive a single certificate of conformance 
+[[application-schema-definition]] 
+=== application schema:: 
 
-[.source]
-OGC 08-131r3, definition 4.4]
+_conceptual schema_ (<<conceptual-schema-definition>>) for data required by one or more applications. 
 
-[[definition_feature]]
-*feature* +
-An abstraction of real world phenomena 
+NOTE: An _application schema_ (<<application-schema-definition>>) contains selected parts of the base schemas presented in the ORM Information Viewpoint.
 
-[.source]
-ISO 19101-1:2014, definition 4.1.11
+NOTE: Designers of _application schemas_ (<<application-schema-definition>>) may extend or restrict the types defined in the base schemas to define appropriate types for an application _domain_ (<<domain-definition>>). 
 
-[[definition_feature-attribute]]
-*feature attribute* +
-A characteristic of a feature 
+NOTE: _Application schemas_ (<<application-schema-definition>>) are information models for a specific information community.
 
 [.source]
-ISO 19101-1:2014, definition 4.1.12
+<<ISO19101-1,clause 4.1.2>>, OGC Definitions Register at http://www.opengis.net/def/glossary/term/ApplicationSchema
 
-[[definition_feature-type]]
-[[FeatureType]]
-*feature type* +
-A class of features having common characteristics 
+[[attribute-definition]]
+=== attribute::
+
+named _property_ (<<property-definition>>) of an entity
+
+NOTE: Describes a geometrical, topological, thematic, or other characteristic of an entity.
 
 [.source]
-ISO 19156:2011, definition 4.7
+<<ISO2382,clause 2121440>>
 
-[[definition_measurement]]
-*measurement* +
-A set of operations having the object of determining the value of a quantity +
-{blank}[ISO 19101-2:2018, definition 3.21] / [VIM:1993, 2.1]
+[[class-definition]]
+=== class::
 
-[[definition_model]]
-*model* +
-An abstraction of some aspects of reality +
-{blank}[ISO 19109:2015, definition 4.15]
+description of a set of _objects_ (<<object-definition>>) that share the same _attributes_ (<<attribute-definition>>), _operations_ (<<operation-definition>>), methods, relationships, and semantics
 
-[[definition_observation]]
-*observation* +
-The act of measuring or otherwise determining the value of a property +
-{blank}[ISO 19156:2011, definition 4.11]
+NOTE: A _class_ (<<class-definition>>) may use a set of interfaces to specify collections of _operations_ (<<operation-definition>>) it provides to its environment.
+The term was first used in this way in the general theory of object-oriented programming, and later adopted for use in this same sense in UML.
 
-[[definition_observation-procedure]]
-*observation procedure* +
-A method, algorithm or instrument, or system of these, which may be used in making an
-observation +
-{blank}[ISO 19156:2011, 4.12]
+[.source]
+<<ISO19103,clause 4.27>>, Note 1 to entry has been added from ISO 19117:2012, 4.2
 
-[[definition_observation-result]]
-*observation result* +
-An estimate of the value of a property determined through a known observation procedure +
-{blank}[ISO 19156:2011, 4.14]
+[[concept-definition]]
+=== concept::
 
-[[definition_property]]
-*property* +
-A facet or attribute of an object referenced by a name. +
-{blank}[ISO 19143:2010, definition 4.21]
+unit of knowledge created by a unique combination of characteristics
 
-[[definition_requirements-class]]
-*requirements class* +
-The aggregate of all requirement modules that must all be satisfied to satisfy a conformance
-test class +
-{blank}[OGC 08-131r3, definition 4.19]
+NOTE: Concepts are not necessarily bound to particular languages. They are, however, influenced by the social or cultural background which often leads to different categorizations.
 
-[[definition_schema]]
-*schema* +
-The formal description of a model +
-{blank}[ISO 19101-1:2014, definition 4.1.34]
+[.source]
+<<ISO1087-1,clause 3.2.1>>
 
-[[definition_sensor]]
-*sensor* +
-A type of observation procedure that provides the estimated value of an observed
-property at its output +
-{blank}[OGC 08-094r1, definition 4.5]
+[[conceptual-model-definition]] 
+=== conceptual model::
 
-[[definition_standardization-target]]
-*Standardization Target* +
-An entity to which some requirements of a standard apply +
-{blank}[OGC 08-131r3, definition 4.23]
+model that defines _concepts_ (<<concept-definition>>) of a universe of discourse
 
-[[definition_timeseries]]
-*timeseries* +
-A sequence of data values which are ordered in time +
-{blank}[OGC 15-043r3]
+[.source]
+<<ISO19101-1,clause 4.1.5>>
 
-[[definition_universe-of-discourse]]
-*universe of discourse* +
-View of the real or hypothetical world that includes everything of interest +
-{blank}[ISO 19101-1:2014, definition 4.1.38]
+[[conceptual-schema-definition]] 
+=== conceptual schema::
 
-[[definition_version]]
-*version* +
-Particular variation of a spatial object +
-{blank}[INSPIRE Glossary]
+. formal description of a _conceptual model_ (<<conceptual-model-definition>>) [ISO 19101-1:2014, 4.1.6]
+. base schema. Formal description of the model of any geospatial information. _Application schemas_ (<<application-schema-definition>>) are built from _conceptual schemas_ (<<conceptual-schema-definition>>).
 
-=== ISO Concepts
+[.source]
+<<ogcdr,OGC Definitions Register>>
 
-The following concepts from the ISO TC211 Harmonized UML model are referenced by the CityGML Conceptual UML model but do not play a major role in its' definition. They are provided here to support a more complete understanding of the model.
+[[coordinate-definition]]
+=== coordinate::
 
-[[Area-section]]
-*Area* +
-The measure of the physical extent of any topologically 2-D geometric object. Usually measured in "square" units of length. +
-{blank}[<<iso19103>>]
+one of a sequence of numbers designating the _position_ (<<position-definition>>) of a _point_ (<<point-definition>>)
 
-[[Boolean-section]]
-*Boolean* +
-Boolean is the mathematical datatype associated with two-valued logic +
-{blank}[<<iso19103>>]
+NOTE: In a spatial _coordinate reference system_ (<<coordinate-reference-system-definition>>), the _coordinate_ (<<coordinate-definition>>) numbers are qualified by units.
 
-[[CC_CoordinateOperation-section]]
-*CC_CoordinateOperation* +
-A mathematical operation on coordinates that transforms or converts coordinates to another coordinate reference system. +
-{blank}[<<iso19111>>]
+[.source]
+<<ISO19111,clause 3.1.5>>
 
-[[Character-section]]
-*Character* +
-A symbol  from a standard character-set. +
-{blank}[<<iso19103>>]
+[[coordinate-reference-system-definition]]
+=== coordinate reference system::
 
-[[CharacterString-section]]
-*CharacterString* +
-Characterstring  is a family  of  datatypes which  represent strings of symbols  from  standard character-sets. +
-{blank}[<<iso19103>>]
+coordinate system that is related to an _object_ (<<object-definition>>) by a _datum_ (<<datum-definition>>)
 
-[[CRS-section]]
-*CRS* +
-Coordinate reference system which is usually single but may be compound. +
-{blank}[<<iso19111>>]
+NOTE: For geodetic and vertical _datums_ (<<datum-definition>>), the _object_ (<<object-definition>>) will be the Earth.
 
-[[CV_DiscreteCoverage-section]]
-*CV_DiscreteCoverage* +
-A subclass of CV_Coverage that returns a single record of values for any direct position within a single geometric object in  its spatiotemporal domain. +
-{blank}[<<iso19123>>]
+[.source]
+<<ISO19111,clause 3.1.9>>
 
-[[CV_DomainObject-section]]
-*CV_DomainObject* +
-An element of the domain of the CV_Coverage. It is an aggregation of objects that may include any combination of GM_Objects (ISO 19107:2003), TM_GeometricPrimitives (ISO 10108), or spatial or temporal objects defined in other standards, such as the CV_GridPoint defined in this International Standard. +
-{blank}[<<iso19123>>]
+[[coordinate-system-definition]]
+=== coordinate system::
 
-[[CV_GridPointValuePair-section]]
-*CV_GridPointValuePair* +
-A subtype of CV_GeometryValuePair that has a GM_GridPoint as the value of its geometry attribute. +
-{blank}[<<iso19123>>]
+set of mathematical rules for specifying how _coordinates_ (<<coordinate-definition>>) are to be assigned to _points_
 
-[[CV_GridValuesMatrix-section]]
-*CV_GridValuesMatrix* +
-The geometry represented by the various offset vectors is in the image plane of the grid. +
-{blank}[<<iso19123>>]
+[.source]
+<<ISO19111,clause 3.1.11>>
 
-[[CV_ReferenceableGrid-section]]
-*CV_ReferenceableGrid* +
-A subclass of CV_Coverage that relates the grid coordinates to an external coordinate reference system. +
-{blank}[<<iso19123>>]
+[[datum-definition]]
+=== datum::
 
-[[Date-section]]
-*Date* +
-Date gives values for year, month and day. Representation of Date is specified in ISO 8601. Principles for date and time are further discussed in ISO 19108. +
-{blank}[<<iso19103>>]
+parameter or set of parameters that realize the _position_ (<<position-definition>>) of the origin, the scale, and the orientation of a _coordinate system_ (<<coordinate-system-definition>>)
 
-[[DateTime-section]]
-*DateTime* +
-A DateTime is a combination of a date and a time types. Representation of DateTime is specified in ISO 8601. Principles for date and time are further discussed in ISO 19108. +
-{blank}[<<iso19103>>]
+[.source]
+<<ISO19111,clause 3.1.15>>
 
-[[Distance-section]]
-*Distance* +
-Used as a type for returning distances and possibly lengths. +
-{blank}[<<iso19103>>]
+[[direct-position-definition]]
+=== direct position::
 
-[[EngineeringCRS-section]]
-*Engineering CRS* +
-A contextually local coordinate reference system which can be divided into two broad categories:
+_position_ (<<position-definition>>) described by a single set of _coordinates_ (<<coordinate-definition>>) within a _coordinate reference system_ (<<coordinate-reference-system-definition>>)
 
-. earth-fixed systems applied to engineering activities on or near the surface of the earth;
-. CRSs on moving platforms such as road vehicles, vessels, aircraft or spacecraft. +
-{blank}[<<iso19111>>]
+[.source]
+<<ISO19136-1,clause 3.1.20>>
 
-[[GenericName-section]]
-*Generic Name* +
-Generic Name is the abstract class for all names in a NameSpace. Each instance of a GenericName is either a LocalName or a ScopedName. +
-{blank}[<<iso19103>>]
+[[domain-definition]]
+=== domain:: 
 
-[[Geometry-section]]
-*Geometry* +
-Geometry is the root class of the geometric object taxonomy and supports interfaces common to all geographically referenced geometric objects. + 
-{blank}[<<iso19107>>]
+well-defined set 
 
-[[GM_CompositePoint-section]]
-*GM_CompositePoint* +
-A GM_Complex containing one and only one GM_Point. +
-{blank}[<<iso19107>>]
+NOTE: _Domains_ (<<domain-definition>>) are used to define the _domain_ (<<domain-definition>>) set and range set of _attributes_ (<<attribute-definition>>), operators and functions.
 
-[[GM_CompositeSolid-section]]
-*GM_CompositeSolid* +
-A set of geometric solids adjoining one another along common boundary geometric surfaces +
-{blank}[<<iso19107>>]
+[.source]
+<<ISO19109,clause 4.8>>
 
-[[GM_GenericSurface-section]]
-*GM_GenericSurface* +
-GM_Surface and GM_SurfacePatch both represent sections of surface geometry, and therefore share a number of operation signatures. These are defined in the interface class GM_GenericSurface. +
-{blank}[<<iso19107>>]
+=== domain <general vocabulary>::
 
-[[GM_LineString-section]]
-*GM_LineString* +
-Consists of sequence of line segments, each having a parameterization like the one for GM_LineSegment +
-{blank}[<<iso19107>>]
+distinct area of human knowledge to which a terminological entry is assigned 
 
-[[GM_MultiPrimitive-section]]
-*GM_MultiPrimitive* +
-The root class for all primitive aggregates. The association role “element” shall be the set of GM_Primitives contained in this GM_MultiPrimitive. The attribute declaration here specializes the one at GM_Aggregate to include only GM_Primitives in this type of aggregate. +
-{blank}[<<iso19107>>]
+NOTE: Within a database or other terminology collection, a set of _domains_ (<<domain-definition>>) will generally be defined. More than one _domain_ (<<domain-definition>>) can be associated with a given _concept_ (<<concept-definition>>).
 
-[[GM_OrientableSurface-section]]
-*GM_OrientableSurface* +
-A surface and an orientation inherited from GM_OrientablePrimitive. If the orientation is "+", then the GM_OrientableSurface is a GM_Surface. If the orientation is "-", then the GM_OrientableSurface is a reference to a GM_Surface with an upNormal that reverses the direction for this GM_OrientableSurface, the sense of "the top of the surface". +
-{blank}[<<iso19107>>]
+[.source]
+<<ISO19104,clause 4.11>>
 
-[[GM_PolyhedralSurface-section]]
-*GM_PolyhedralSurface* +
-A GM_Surface composed of polygon surfaces (GM_Polygon) connected along their common boundary curves. +
-{blank}[<<iso19107>>]
+=== domain <ontology>::
 
-[[GM_Position-section]]
-*GM_Position* +
-A union type consisting of either a DirectPosition or of a reference to a GM_Point from which a DirectPosition shall be obtained. +
-{blank}[<<iso19107>>]
+restriction to constrain the subject _class_ (<<class-definition>>) which participates in a subject-predicate-object triple 
 
-[[GM_Primitive-section]]
-*GM_Primitive* +
-The abstract root class of the geometric primitives. Its main purpose is to define the basic "boundary" operation that ties the primitives in each dimension together. +
-{blank}[<<iso19107>>]
+[.source]
+<<ISO19150-4,clause 3.1.12>>
 
-[[Integer-section]]
-*Integer* +
-An exact integer value, with no fractional part. +
-{blank}[<<iso19103>>]
+=== domain <postal address>::
 
-[[IoT_definition]]
-*Internet of Things* +
-The network of physical objects--“things”--that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet. +  
-{blank}https://en.wikipedia.org/wiki/Internet_of_things[Wikipedia]
+an area in which a set of specific postal address types and postal address renderings is prescribed by postal operators 
 
-[[IO_IdentifiedObjectBase-section]]
-*IO_IdentifiedObjectBase* +
-Supplementary identification and remarks information for a CRS or CRS-related object. +
-{blank}[<<iso19111>>]
+[example] 
+The most typical example of a postal address _domain_ (<<domain-definition>>) is a country where a designated postal operator provides postal delivery services.
 
-[[Length-section]]
-*Length* +
-The measure of distance as an integral, i.e. the limit of an infinite sum of distances between points on a curve. +
-{blank}[<<iso19103>>]
+[.source]
+<<ISO19160-4,clause 3.14>>
 
-[[Measure-section]]
-*Measure* +
-The result from performing the act or process of ascertaining the extent, dimensions, or quantity of some entity. +
-{blank}[<<iso19103>>]
+[[geometric-complex-definition]]
+=== geometric complex::
 
-[[number-section]]
-*Number* +
-The base type for all number data, giving the basic algebraic operations. +
-{blank}[<<iso19103>>]
+set of disjoint _geometric primitives_ (<<geometric-primitive-definition>>) where the boundary of each _geometric primitive_ (<<geometric-primitive-definition>>) can be represented as the union of other _geometric primitives_ (<<geometric-primitive-definition>>) of smaller dimensions within the same set
 
-[[Point-section]]
-*Point* +
-GM_Point is the basic data type for a geometric object consisting of one and only one point. +
-{blank}[<<iso19107>>]
+[.source]
+<<ISO19107,clause 3.47>>
 
-[[Real-section]]
-*Real* +
-The common binary Real finite implementation using base 2. +
-{blank}[<<iso19103>>]
+[[geometric-object-definition]]
+=== geometric object::
 
-[[RS_ReferenceSystem-section]]
-*RS_ReferenceSystem* +
-Description of a spatial and temporal reference system used by a dataset. +
-{blank}[<<iso19111>>]
+spatial _object_ (<<object-definition>>) representing a _geometric set_ (<<geometric-set-definition>>)
 
-[[ScopedName-section]]
-*Scoped Name* +
-ScopedName is a composite of a LocalName for locating another NameSpace and a GenericName valid in that NameSpace. ScopedName contains a LocalName as head and a GenericName, which might be a LocalName or a ScopedName, as tail. +
-{blank}[<<iso19103>>]
+NOTE: A _geometric object_ consists of a _geometric primitive_, a collection of _geometric primitives_, or a _geometric complex_ treated as a single entity. A _geometric object_ may be the spatial representation of an _object_ such as a _feature_ or a significant part of a _feature_.
 
-[[Solid-section]]
-*Solid* +
-GM_Solid, a subclass of GM_Primitive, is the basis for 3-dimensional geometry. The extent of a solid is defined by the boundary surfaces. +
-{blank}[<<iso19107>>]
+[.source]
+<<ISO19107,clause 3.49>>
 
-[[Time-section]]
-*Time* +
-Time is the designation of an instant on a selected time scale, astronomical or atomic.  It is used in the sense of time of day. +
-{blank}[<<iso19103>>]
+[[geometric-primitive-definition]]
+=== geometric primitive (geometry)::
 
-[[TM_Duration-section]]
-*TM_Duration* +
-A data type to be used for describing length or distance in the temporal dimension. +
-{blank}[<<iso19108>>]
+_geometric object_ (<<geometric-object-definition>>) representing a single, connected, homogeneous (isotopic) element of space
 
-[[TM_TemporalPosition-section]]
-*TM_TemporalPosition* +
-The position of a TM_Instant relative to a TM_ReferenceSystem. +
-{blank}[<<iso19108>>]
+NOTE: _Geometric primitives_ (<<geometric-primitive-definition>>) are non-decomposed _objects_ (<<object-definition>>) that present information about geometric configuration. They include _points_, curves, surfaces, and solids. Many _geometric objects_ (<<geometric-object-definition>>) behave like primitives (supporting the same interfaces defined for geometric primitives) but are actually composites composed of some number of other primitives. General collections may be aggregates and incapable of acting like a primitive (such as the lines of a complex network, which is not connected and thus incapable of being traceable as a single line). By this definition, a _geometric primitive_ (<<geometric-primitive-definition>>) is topological open, since the boundary _points_ are not isotropic to the interior _points_. Geometry is assumed to be closed. For _points_, the boundary is empty.
 
-[[UnitOfMeasure-section]]
-*Unit of Measure* +
-Any of the systems devised to measure some physical quantity such distance or area or a system devised to measure such things as the passage of time. +
-{blank}[<<iso19103>>]
+[.source]
+<<ISO19107,clause 3.50>>
 
-[[URI-section]]
-*URI* +
-Uniform Resource Identifier (URI), is a compact string of characters used to identify or name a resource +
-{blank}[<<iso19103>>]
+[[geometric-set-definition]]
+=== geometric set::
 
-[[Volume-section]]
-*Volume* +
-Volume is the measure of the physical space of any 3-D geometric object. +
-{blank}[<<iso19103>>]
+set of _points_ 
 
-=== Abbreviated Terms
+[.source]
+<<ISO19107,clause 3.53>>
 
-* 2D {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Two Dimensional
-* 3D {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Three Dimensional
-* AEC {nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Architecture, Engineering, Construction
-* ALKIS {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} German National Standard for Cadastral Information
-* ATKIS {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} German National Standard for Topographic and Cartographic Information
-* BIM {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Building Information Modeling
-* B-Rep {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Boundary Representation
-* bSI {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} buildingSMART International
-* CAD {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Computer Aided Design
-* COLLADA {nbsp} Collaborative Design Activity
-* CSG {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Constructive Solid Geometry
-* DTM {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Digital Terrain Model
-* DXF {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Drawing Exchange Format
-* EuroSDR {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} European Spatial Data Research Organisation
-* ESRI {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Environmental Systems Research Institute
-* FM {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Facility Management
-* GDF {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Geographic Data Files
-* GDI-DE {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Spatial Data Infrastructure Germany (Geodateninfrastruktur Deutschland)
-* GDI {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} NRW Geodata Infrastructure North-Rhine Westphalia
-* GML {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Geography Markup Language
-* IAI {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} International Alliance for Interoperability (now buildingSMART International (bSI))
-* IETF {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Internet Engineering Task Force
-* IFC {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Industry Foundation Classes
-* IoT  {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Internet of Things
-* ISO {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} International Organization for Standardisation
-* ISO/TC211 {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} ISO Technical Committee 211
-* LOD {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Levels of Detail
-* MQTT  {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Message Queuing Telemetry Transport 
-* NBIMS {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} National Building Information Model Standard
-* OASIS {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Organisation for the Advancement of Structured Information Standards
-* OGC {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Open Geospatial Consortium
-* OSCRE {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Open Standards Consortium for Real Estate
-* SIG 3D {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Special Interest Group 3D of the GDI-DE
-* TIC {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Terrain Intersection Curve
-* TIN {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Triangulated Irregular Network
-* UML {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Unified Modeling Language
-* URI {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Uniform Resource Identifier
-* VRML {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Virtual Reality Modeling Language
-* W3C {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} World Wide Web Consortium
-* W3DS {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} OGC Web 3D Service
-* WFS {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} OGC Web Feature Service
-* X3D {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Open Standards XML-enabled 3D file format of the Web 3D Consortium
-* XML {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} Extensible Markup Language
-* xAL {nbsp}{nbsp}{nbsp}{nbsp}{nbsp} OASIS extensible Address Language
+[[location-definition]]
+=== location::
+
+particular _place_ (<<place-definition>>) or _position_ (<<position-definition>>)
+
+NOTE: A _location_ (<<location-definition>>) identifies a geographic _place_.
+
+NOTE: _Locations_ (<<location-definition>>) are physically fixed _points_, typically on the surface of the Earth, although _locations_ (<<location-definition>>) can be relative to other, non-earth centric coordinate reference systems. 
+
+NOTE: _Locations_ (<<location-definition>>) can be a single _point_, a centroid, a minimum bounding rectangle, or a set of vectors. 
+
+NOTE: A _location_ (<<location-definition>>) should be persistent over time and does not change. 
+
+NOTE: Multiple _POIs_ (<<point-of-interest-definition>>) may share the same _location_ (<<location-definition>>). 
+
+NOTE: When a _POI_ (<<point-of-interest-definition>>) physically moves it is understood to have acquired a new _location_ (<<location-definition>>).
+
+[.source]
+<<ISO19112,clause 3.1.3>>
+
+[[metaclass-definition]]
+=== metaclass::
+
+a _class_ (<<class-definition>>) whose instances are also _classes_ (<<class-definition>>)
+
+[.source]
+<<omguml,clause 22>> Object Management Group (OMG) UML Standard Version 2.5.1
+
+[[object-definition]]
+=== object::
+
+entity with a well defined boundary and identity that encapsulates state and behaviour
+
+NOTE: This term was first used in this way in the general theory of object oriented programming, and later adopted for use in this same sense in UML. An _object_ (<<object-definition>>) is an instance of a _class_ (<<class-definition>>). _Attributes_ (<<attribute-definition>>) and relationships represent state. _Operations_ (<<operation-definition>>), methods, and state machines represent behavior.
+
+[.source]
+<<OMG/UML UML Semantics, version 1.3, 1997.>>
+
+[[operation-definition]]
+=== operation::
+
+specification of a transformation or query that an _object_ (<<object-definition>>) may be called to execute
+
+NOTE: An _operation_ (<<operation-definition>>) has a name and a list of parameters.
+
+NOTE: See <<ISO19119,clause 7.2>> for a discussion of _operation_ (<<operation-definition>>)
+
+[.source]
+<<ISO19119,clause 4.1.10>>
+
+[[place-definition]]
+=== place::
+
+identifiable part of any space
+
+[.source]
+<<ISO19155,clause 4.8>>
+
+[[platform-definition]] 
+=== Platform (Model Driven Architecture)::
+
+the set of resources on which a system is realized.
+
+[.source]
+<<mdaguide>>, 
+#Object Management Group, Model Driven Architecture Guide rev. 2.0#
+
+[[point-definition]]
+=== point::
+
+0-dimensional geometric primitive, representing a _position_ (<<position-definition>>)
+
+[.source]
+<<ISO19136-1,clause 3.1.47>>
+
+[[point-of-interest-definition]]
+=== point of interest::
+
+alt:[POI]
+
+_location_ (<<location-definition>>) where one can find a _place_, product or service
+
+NOTE: A _POI_ (<<point-of-interest-definition>>) is typically identified by _name_ rather than by an _address_.
+
+NOTE: A _POI_ (<<point-of-interest-definition>>) is characterized by _type_, which may be used as a reference _point_ or a target in a _location_ (<<location-definition>>) based service request.
+
+NOTE: A _POI_ (<<point-of-interest-definition>>) does not exclude the labeling, identification, and tracking of persons and other physical _objects_ (<<object-definition>>) that have no permanent _location_ (<<location-definition>>).
+
+[example]
+destination of a route; such as, Boston
+
+[[position-definition]]
+=== position::
+
+data type that describes a _point_ or _geometry_ potentially occupied by an _object_ (<<object-definition>>) or person
+
+NOTE:  A _direct position_ (<<direct-position-definition>>) is a semantic subtype of _position_ (<<position-definition>>). _Direct positions_ (<<direct-position-definition>>) as described can only define a _point_, and therefore not all _positions_ (<<position-definition>>) can be represented by a _direct position_ (<<direct-position-definition>>). That is consistent with the is type of relation. An ISO 19107 geometry is also a _position_ (<<position-definition>>), but not a _direct position_ (<<direct-position-definition>>)
+
+[.source]
+<<ISO19133>>
+
+[[property-definition]]
+=== property::
+
+facet or _attribute_ (<<attribute-definition>>) of an _object_ (<<object-definition>>) referenced by a name
+
+[example]
+Abby's car has the colour red, where "colour red" is a _property_ (<<property-definition>>) of the car.
+
+[.source]
+<<ISO19143,clause 4.21>>, Note 1 to entry has been added from ISO 19156, 4.15
+

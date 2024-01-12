@@ -88,10 +88,6 @@ An encoding of the Abstract POI class SHALL include zero or more `metadata` attr
 
 [.component,class=part]
 --
-Encodings of the `metadata` attribute SHALL be a resolvable reference to a Metadata resource.
---
-[.component,class=part]
---
 Encodings of a `metadata` attribute SHALL comply with requirement <<req_core_Link,/req/core/link>>.
 --
 ====
@@ -158,10 +154,6 @@ label:: /req/core/poi-symbology
 An encoding of the Abstract POI class SHALL include zero or one `symbology` attributes.
 --
 
-[.component,class=part]
---
-Encodings of the `symbology` attribute SHALL be a resolvable reference to a symbology resource.
---
 [.component,class=part]
 --
 Encodings of a `symbology` attribute SHALL comply with requirement <<req_core_Link,/req/core/link>>.

@@ -1,4 +1,4 @@
-==== Abstract Feature with Lifespan
+===== Abstract Feature with Lifespan
 
 [[ats_core_featurewithlifespan]]
 [abstract_test]
@@ -23,6 +23,11 @@ Validate that the AbstractFeatureWithLifespan class is properly implemented in t
 
 [.component,class=part]
 --
+Validate that the implementation of the AbstractFeatureWithLifespan class is also a valid implementation of the AbstractFeature class using test <<ats_core_abstractfeature,/conf/core/abstractfeature>>.
+--
+
+[.component,class=part]
+--
 For every AbstractFeatureWithLifespan class that includes a `creationDate` attribute, validate that attribute using test <<ats_core_abstractfeature-datetime,/conf/core/abstractfeature-datetime>>.
 --
 
@@ -42,7 +47,7 @@ For every AbstractFeatureWithLifespan class that includes a `validTo` attribute,
 --
 ====
 
-===== Date-Time
+====== Date-Time
 
 [[ats_core_abstractfeature-datetime]]
 [abstract_test]
@@ -56,7 +61,7 @@ test-method-type:: Manual Inspection
 
 [.component,class=description]
 --
-Validate that the attribute being tested is a valid implementation of the DateTime type from ISO 19103 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
+Validate that the attribute being tested is a valid implementation of the DateTime type from <<ISO19103,ISO 19103>>
 --
 ====
 

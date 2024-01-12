@@ -1,5 +1,8 @@
 [[ats_core]]
-[conformance_class_core]
+
+=== Conformance Class Core
+
+[conformance_class]
 ====
 [%metadata]
 identifier:: http://www.opengis.net/spec/poi/1.0/conf/core
