@@ -22,15 +22,17 @@ For example, suppose an application needed an attribute called *isPublic*, whose
 |*Attribute*|*Value type and multiplicity*|*Definition*
 
 |usesSchema
-|Link [1..1]
-|Refers to the schema for this payload
+|PayloadSchema [1..*]
+|Refers to the schema(s) for this payload
 |hasDefinition
-|Link [1..1]
+|PayloadDefinition [0..1]
 |Refers to the definition of the payload attributes
 |isPublic
 |Boolean [1..1]
 |Is this POI a publicly visitable place
 |===
+
+Both *PayloadSchema* and *PayloadDefinition* should be a *Link*.
 
 Suppose the implementation technology is JSON. Here is how the above payload might be used in a POI expressed in JSON:
 
@@ -46,10 +48,12 @@ Suppose the implementation technology is JSON. Here is how the above payload mig
          "contactInfo" : {"role": "city representative"},
          "hasPayload": [
            "POI_Payload" : {
-             "usesSchema" : "Link" : {
-               "href" : "https://example.org/schema/egpoi.json",
-               "rel" : "describedby"
-             },
+             "usesSchema" : [
+                 "Link" : {
+                 "href" : "https://example.org/schema/egpoi.json",
+                 "rel" : "describedby"
+                 }
+              ],
              "hasDefinition" : "Link" : {
                "href" : "https://example.org/schemadef/egpoi",
                "rel" : "type"
