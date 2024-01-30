@@ -10,59 +10,101 @@ target:: /req/core/featurewithlifespan
 
 inherit:: /conf/core/abstractfeature
 
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 
 test-purpose:: Validate that the Implementation Specification implements the AbstractFeaturewithLifespan Class as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
-[.component,class=description]
---
-Validate that the AbstractFeatureWithLifespan class is properly implemented in the Implementation Specification.
---
+description:: Inspect the POI Implementation Specification to validate that the AbstractFeatureWithLifespan class is properly implemented.
 
-[.component,class=part]
---
-Validate that the implementation of the AbstractFeatureWithLifespan class is also a valid implementation of the AbstractFeature class using test <<ats_core_abstractfeature,/conf/core/abstractfeature>>.
---
+part:: Validate that the implementation of the AbstractFeatureWithLifespan class is also a valid implementation of the AbstractFeature class using test <<ats_core_abstractfeature,/conf/core/abstractfeature>>.
 
-[.component,class=part]
---
-For every AbstractFeatureWithLifespan class that includes a `creationDate` attribute, validate that attribute using test <<ats_core_abstractfeature-datetime,/conf/core/abstractfeature-datetime>>.
---
+part:: Validate correct implementation of the `creationDate` attribute using test <<ats_core_abstractfeature-creationdate,/conf/core/abstractfeature-creationdate>>.
 
-[.component,class=part]
---
-For every AbstractFeatureWithLifespan class that includes a `terminationDate` attribute, validate that attribute using test <<ats_core_abstractfeature-datetime,/conf/core/abstractfeature-datetime>>.
---
+part:: Validate correct implementation of the `terminationDate` attribute using test <<ats_core_abstractfeature-terminationdate,/conf/core/abstractfeature-terminationdate>>.
 
-[.component,class=part]
---
-For every AbstractFeatureWithLifespan class that includes a `validFrom` attribute, validate that attribute using test <<ats_core_abstractfeature-datetime,/conf/core/abstractfeature-datetime>>.
---
+part:: Validate correct implementation of the `validFrom` attribute using test <<ats_core_abstractfeature-validfrom,/conf/core/abstractfeature-validfrom>>.
 
-[.component,class=part]
---
-For every AbstractFeatureWithLifespan class that includes a `validTo` attribute, validate that attribute using test <<ats_core_abstractfeature-datetime,/conf/core/abstractfeature-datetime>>.
---
+part:: Validate correct implementation of the `validTo` attribute using test <<ats_core_abstractfeature-validto,/conf/core/abstractfeature-validto>>.
 ====
 
-====== Date-Time
+====== Creation Date
 
-[[ats_core_abstractfeature-datetime]]
+[[ats_core_abstractfeature-creationdate]]
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/abstractfeature-datetime
-target:: /req/core/abstractfeature-datetime
-classification:: Target Type:Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the attribute being tested as defined in ISO 19103.
+identifier:: /conf/core/abstractfeature-creationdate
+target:: /req/core/abstractfeature-creationdate
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `creationDate` attribute as defined in the POI Conceptual Model.
+
 test-method-type:: Manual Inspection
 
-[.component,class=description]
---
-Validate that the attribute being tested is a valid implementation of the DateTime type from <<ISO19103,ISO 19103>>
---
+description:: Validate the cardinality and type of the `creationDate` attribute.
+
+part:: Validate that no more than one `creationDate` attribute is allowed in an AbstractFeatureWithLifespan class.
+
+part:: Validate that the `creationDate` attribute is a valid implementation of the DateTime type from <<ISO19103,ISO 19103>>.
 ====
 
+====== Termination Date
 
+[[ats_core_abstractfeature-terminationdate]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/abstractfeature-terminationdate
+target:: /req/core/abstractfeature-terminatyiondate
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `terminationDate` attribute as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and type of the `terminationDate` attribute.
+
+part:: Validate that no more than one `terminationDate` attribute is allowed in an AbstractFeatureWithLifespan class.
+
+part:: Validate that the `terminationDate` attribute is a valid implementation of the DateTime type from <<ISO19103,ISO 19103>>.
+====
+
+====== Valid From
+
+[[ats_core_abstractfeature-validfrom]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/abstractfeature-validfrom
+target:: /req/core/abstractfeature-validfrom
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `validFrom` attribute as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and type of the `validFrom` attribute.
+
+part:: Validate that no more than one `validFrom` attribute is allowed in an AbstractFeatureWithLifespan class.
+
+part:: Validate that the `validFrom` attribute is a valid implementation of the DateTime type from <<ISO19103,ISO 19103>>.
+====
+
+====== Valid To
+
+[[ats_core_abstractfeature-validto]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/abstractfeature-creationdate
+target:: /req/core/abstractfeature-creationdate
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `creationDate` attribute as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and type of the `creationDate` attribute.
+
+part:: Validate that no more than one 'creationDate' attribute is allowed in an AbstractFeatureWithLifespan class.
+
+part:: Validate that the `creationDate` attribute is a valid implementation of the DateTime type from <<ISO19103,ISO 19103>>.
+====

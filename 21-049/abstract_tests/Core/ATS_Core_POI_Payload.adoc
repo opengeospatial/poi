@@ -6,28 +6,79 @@
 [%metadata]
 identifier:: /conf/core/poi-payload
 target:: /req/core/poi-payload
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 test-purpose:: To validate that the Implementation Specification implements the POI_Payload Class as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
-[.component,class=description]
---
-Do For every POI_Payload class:
---
+description:: Validate that the Implementation Specification correctly implements the POI_Payload class:
 
-[.component,class=part]
---
-Validate that the class includes at lease one `usesSchema` aggregation and that the target of the aggregation is a valid schema for the implementing technology.
---
+part:: Validate correct implementation of the `usesSchema` aggregation using the test <<ats_core_poi-payload_usesschema,/conf/core/poi_payload/usesSchema>>.
 
-[.component,class=part]
---
-If the class includes a `hasDefinition` aggregation, validate that the target of the aggregation is a valid ontology for the implementing technology.
---
+part:: Validate correct implementation of the `hasDefinition` aggregation using the test <<ats_core_poi-payload_hasdefinition,/conf/core/poi_payload/hasDefinition>>.
 
-[.component,class=part]
---
-If the class includes a `hasFeatureOfInterest` aggregation, validate that the target of the aggregation is a valid Feature for the implementing technology.
---
+part:: Validate correct implementation of the `hasFeatureOfInterest` aggregation using the test <<ats_core_poi-payload_featureofinterest,/conf/core/poi_payload/featureOfInterest>>.
+
 ====
+
+====== POI_Payload Uses Schema
+
+[[ats_core_poi-payload_usesschema]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/poi_payload/usesSchema
+target:: /req/core/poi_payload/usesSchema
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `usesSchema` aggregation as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and target class of the `usesSchema` aggregation.
+
+part:: Validate that at least one `usesSchema` aggregation is allowed in an POI_Payload class.
+
+part:: Validate that the target of the `usesSchema` aggregation is a valid schema for the implementing technology.
+====
+
+====== POI_Payload Has Definition
+
+[[ats_core_poi-payload_hasdefinition]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/poi_payload/hasDefinition
+target:: /req/core/poi_payload/hasDefinition
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `hasDefinition` aggregation as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and target class of the `hasDefinition` aggregation.
+
+part:: Validate that no more than one `hasDefinition` aggregation is allowed in an POI_Payload class.
+
+part:: Validate that the target of the `hasDefinition` aggregation is a valid ontology for the implementing technology.
+====
+
+====== POI_Payload Feature Of Interest
+
+[[ats_core_poi-payload_featureofinterest]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/poi_payload/featureofinterest
+target:: /req/core/poi_payload/featureofinterest
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `hasFeatureOfinterest` aggregation as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and target class of the `hasFeatureOfInterest` aggregation.
+
+part:: Validate that zero or more `hasFeatureOfIntestest` aggregations are allowed in an POI_Payload class.
+
+part:: Validate that the target of the `hasFeatureOfInterest` aggregation is a valid implementation of the Feature class from <<iso19109,ISO 19109:2015>>.
+====
+
+

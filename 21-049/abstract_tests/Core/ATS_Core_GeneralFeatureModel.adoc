@@ -8,17 +8,17 @@ identifier:: /conf/core/generalfeaturemodel
 
 target:: /req/core/generalfeaturemodel
 
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 
 test-purpose:: Validate that the POI Implementation Specification is conformant with the <<ISO19109,ISO 19109>> General Feature Model.
 
 test-method-type:: Manual Inspection
 
-description:: For a statisitcally meaningful set
+description:: Inspect the POI Implementation Specification for the following:
 
 part:: Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).
 
-part:: Validate that the Abstract Test Suite tests for conformance the General Feature Model defined in <<ISO19109,ISO 19109>>. 
+part:: Validate that the Abstract Test Suite tests for conformance with the General Feature Model defined in <<ISO19109,ISO 19109>>.
 
 ====
 
