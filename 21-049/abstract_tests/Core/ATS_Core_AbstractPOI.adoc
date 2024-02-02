@@ -1,7 +1,7 @@
 
 ===== Abstract POI
 
-[[ats_core_poi-abstract-poi]]
+[[ats_core_abstract-poi]]
 [abstract_test]
 ====
 [%metadata]
@@ -112,8 +112,6 @@ part:: Validate that zero or more `keywords` attributes are allowed in an Abstra
 part:: Validate that the `keywords` attribute is a valid implementation of the MD_Keywords class from <<iso19115,ISO 19115-1:2014>>.
 ====
 
-NOTE:: Keywords is singular in the requirement.
-
 ====== Abstract POI Rights
 
 [[ats_core_poi-rights]]
@@ -152,10 +150,9 @@ description:: Validate the cardinality and encoding of the `symbology` associati
 part:: Validate that zero or one `symbology` associations are allowed in an AbstractPOI class.
 
 part:: Validate that the `symbology` association is implemented as described in the Conceptual Model using the <<ats_core_link,/conf/core/link>> test. 
-
 ====== Abstract POI Payload Association
 
-[[ats_core_poi-featureofinterest]]
+[[ats_core_poi-haspayload]]
 [abstract_test]
 ====
 [%metadata]

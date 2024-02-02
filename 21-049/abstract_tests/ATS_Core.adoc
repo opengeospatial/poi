@@ -24,3 +24,8 @@ include::Core/ATS_Core_FeatureWithLifespan.adoc[]
 include::Core/ATS_Core_AbstractPOI.adoc[]
 
 include::Core/ATS_Core_POI_Payload.adoc[]
+
+include::Core/ATS_Core_POI.adoc[]
+
+include::Core/ATS_Core_FeatureOfInterest.adoc[]
+

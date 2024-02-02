@@ -1,0 +1,19 @@
+===== Feature of Interest
+
+[[ats_core_feature-of-interest]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/feature-of-interest
+target:: /req/core/feature-of-interest
+classification:: Target Type: Implementation Specification
+test-purpose:: To validate that the Implementation Specification implements the Feature of Interest Class as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate that the Implementation Specification correctly implements the Feature of Interest:
+
+part:: Validate that the implementation of the FeatureOfInterest class is a compliant extension of the AnyFeature class defined in <<ISO19109,ISO 19109>>.
+
+====
+
