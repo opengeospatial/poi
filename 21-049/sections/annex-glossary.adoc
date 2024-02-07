@@ -27,35 +27,6 @@ NOTE: Describes a geometrical, topological, thematic, or other characteristic of
 [.source]
 <<ISO2382,clause 2121440>>
 
-[[class-definition]]
-=== class::
-
-description of a set of _objects_ (<<object-definition>>) that share the same _attributes_ (<<attribute-definition>>), _operations_ (<<operation-definition>>), methods, relationships, and semantics
-
-NOTE: A _class_ (<<class-definition>>) may use a set of interfaces to specify collections of _operations_ (<<operation-definition>>) it provides to its environment.
-The term was first used in this way in the general theory of object-oriented programming, and later adopted for use in this same sense in UML.
-
-[.source]
-<<ISO19103,clause 4.27>>, Note 1 to entry has been added from ISO 19117:2012, 4.2
-
-[[concept-definition]]
-=== concept::
-
-unit of knowledge created by a unique combination of characteristics
-
-NOTE: Concepts are not necessarily bound to particular languages. They are, however, influenced by the social or cultural background which often leads to different categorizations.
-
-[.source]
-<<ISO1087-1,clause 3.2.1>>
-
-[[conceptual-model-definition]] 
-=== conceptual model::
-
-model that defines _concepts_ (<<concept-definition>>) of a universe of discourse
-
-[.source]
-<<ISO19101-1,clause 4.1.5>>
-
 [[conceptual-schema-definition]] 
 === conceptual schema::
 

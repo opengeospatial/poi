@@ -95,16 +95,16 @@ part:: Validate that the `validFrom` attribute is a valid implementation of the 
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/abstractfeature-creationdate
-target:: /req/core/abstractfeature-creationdate
+identifier:: /conf/core/abstractfeature-validto
+target:: /req/core/abstractfeature-validto
 classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `creationDate` attribute as defined in the POI Conceptual Model.
+test-purpose:: Validate that the Implementation Specification implements the `validTo` attribute as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
-description:: Validate the cardinality and type of the `creationDate` attribute.
+description:: Validate the cardinality and type of the `validTo` attribute.
 
-part:: Validate that no more than one 'creationDate' attribute is allowed in an AbstractFeatureWithLifespan class.
+part:: Validate that no more than one 'validTo' attribute is allowed in an AbstractFeatureWithLifespan class.
 
-part:: Validate that the `creationDate` attribute is a valid implementation of the DateTime type from <<ISO19103,ISO 19103>>.
+part:: Validate that the `validTo` attribute is a valid implementation of the DateTime type from <<ISO19103,ISO 19103>>.
 ====
