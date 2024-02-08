@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-12-01</fetched>
+  <fetched>2024-02-08</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Place Identifier (PI) architecture</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Place Identifier (PI) architecture</title>
@@ -8,7 +8,7 @@
   <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32573.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19155</docidentifier>
   <docidentifier type="iso-reference">ISO 19155(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19155:stage-90.20:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19155:stage-90.93:ed-1</docidentifier>
   <docnumber>19155</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -23,7 +23,7 @@
   <script>Latn</script>
   <status>
     <stage>90</stage>
-    <substage>20</substage>
+    <substage>93</substage>
   </status>
   <copyright>
     <from>2012</from>
@@ -35,7 +35,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2023-12-01</fetched>
+      <fetched>2024-02-08</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Place Identifier (PI) architecture</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Place Identifier (PI) architecture</title>
@@ -44,7 +44,7 @@
       <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32573.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19155:2012</docidentifier>
       <docidentifier type="iso-reference">ISO 19155:2012(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19155:stage-90.20:ed-1</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19155:stage-90.93:ed-1</docidentifier>
       <docnumber>19155</docnumber>
       <date type="published">
         <on>2012-11</on>
@@ -65,7 +65,7 @@ The reference model defines a mechanism to match multiple Place Identifiers to t
 ISO 19155:2012 is applicable to location based services, emergency management services and other application domains that require a common architecture, across specific domains, for the representation of place descriptions using coordinate, geographic, or virtual world identifiers. </abstract>
       <status>
         <stage>90</stage>
-        <substage>20</substage>
+        <substage>93</substage>
       </status>
       <copyright>
         <from>2012</from>

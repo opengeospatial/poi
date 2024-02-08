@@ -150,6 +150,8 @@ description:: Validate the cardinality and encoding of the `symbology` associati
 part:: Validate that zero or one `symbology` associations are allowed in an AbstractPOI class.
 
 part:: Validate that the `symbology` association is implemented as described in the Conceptual Model using the <<ats_core_link,/conf/core/link>> test. 
+====
+
 ====== Abstract POI Payload Association
 
 [[ats_core_poi-haspayload]]
@@ -170,7 +172,7 @@ part:: Validate that zero of more `hasPayload` aggregation are allowed in an Abs
 part:: Validate that the target of the `hasPayload` aggregation is a valid implementation of the POI_Payload class using the <<ats_core_poi-payload,/conf/core/poi-payload>> test.
 ====
 
-======= Link
+====== Link
 
 [[ats_core_link]]
 [abstract_test]

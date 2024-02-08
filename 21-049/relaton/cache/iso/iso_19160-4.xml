@@ -1,0 +1,122 @@
+<bibdata type="standard" schema-version="v1.2.4">
+  <fetched>2024-02-08</fetched>
+  <title type="title-main" format="text/plain" language="en" script="Latn">Addressing</title>
+  <title type="title-part" format="text/plain" language="en" script="Latn">Part 4: International postal address components and template language</title>
+  <title type="main" format="text/plain" language="en" script="Latn">Addressing - Part 4: International postal address components and template language</title>
+  <uri type="src">https://www.iso.org/standard/83470.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:83470:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/08/34/83470.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19160-4</docidentifier>
+  <docidentifier type="iso-reference">ISO 19160-4(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19160:-4:stage-60.60:ed-2</docidentifier>
+  <docnumber>19160</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Organization for Standardization</name>
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>60</stage>
+    <substage>60</substage>
+  </status>
+  <copyright>
+    <from>2023</from>
+    <owner>
+      <organization>
+        <name>ISO</name>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19160-4:2017</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19160-4:2017</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2024-02-08</fetched>
+      <title type="title-main" format="text/plain" language="en" script="Latn">Addressing</title>
+      <title type="title-part" format="text/plain" language="en" script="Latn">Part 4: International postal address components and template language</title>
+      <title type="main" format="text/plain" language="en" script="Latn">Addressing - Part 4: International postal address components and template language</title>
+      <uri type="src">https://www.iso.org/standard/83470.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:83470:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/08/34/83470.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19160-4:2023</docidentifier>
+      <docidentifier type="iso-reference">ISO 19160-4:2023(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19160:-4:stage-60.60:ed-2</docidentifier>
+      <docnumber>19160</docnumber>
+      <date type="published">
+        <on>2023-04</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          <name>International Organization for Standardization</name>
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>2</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This document defines key terms for postal addressing, postal address components and constraints on their use.
+Specifically, this document specifies postal address components organized into three hierarchical levels:
+—    elements, such as organization name or postcode, which have well-defined conceptual meaning and are not themselves made up of subordinate components, though they can be sub-divided for technical purposes;
+—    constructs, such as organization identification, which group elements into units form a logical portion of a postal address;
+—    segments, such as addressee specification, which group related postal address constructs and/or postal address elements into units with a specific defined function.
+This document also specifies a mechanism for the creation of sub-elements, which correspond to either sub-divisions of element content, such as door type or door indicator or to multiple occurrences and locations of elements in an address, such as levels of administrative regions.
+This document does not specify the length of any component nor the value range of any component.
+Moreover, this document specifies the codes to identify elements and sub-elements.
+Further, this document specifies postal address rendering rules. This includes:
+—    identification and ordering of output lines in a rendered address;
+—    conditions for the selection of candidate lines;
+—    the order and concatenation of postal address components;
+—    required and optional components;
+—    parameters to contextualize an address for rendering;
+—    the formatting of the components, subject to constraints on the space available for that task. 
+Postal address rendering rules are represented in this document as a postal address template.
+Finally, this document specifies language suitable for computer processing to formally express postal address templates.
+This document does not cover the topic of data protection. Users of the document are nevertheless reminded that the storage and exchange of personal data are subject to legislation in many countries.</abstract>
+      <status>
+        <stage>60</stage>
+        <substage>60</substage>
+      </status>
+      <copyright>
+        <from>2023</from>
+        <owner>
+          <organization>
+            <name>ISO</name>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19160-4:2017</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 19160-4:2017</docidentifier>
+        </bibitem>
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+  </relation>
+  <place>Geneva</place>
+  <ext schema-version="v1.0.0">
+    <doctype>international-standard</doctype>
+    <editorialgroup>
+      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
+    </editorialgroup>
+    <ics>
+      <code>35.240.70</code>
+      <text>IT applications in science</text>
+    </ics>
+    <structuredidentifier type="ISO">
+      <project-number part="4">ISO 19160</project-number>
+    </structuredidentifier>
+  </ext>
+</bibdata>

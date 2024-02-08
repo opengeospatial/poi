@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-12-01</fetched>
+  <fetched>2024-02-08</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Open Distributed Processing</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Unified Modeling Language (UML) Version 1.4.2</title>
@@ -9,7 +9,7 @@
   <uri type="rss">https://www.iso.org/contents/data/standard/03/26/32620.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 19501</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 19501(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso-iec:19501:stage-90.93:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso-iec:19501:stage-90.20:ed-1</docidentifier>
   <docnumber>19501</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -32,7 +32,7 @@
   <script>Latn</script>
   <status>
     <stage>90</stage>
-    <substage>93</substage>
+    <substage>20</substage>
   </status>
   <copyright>
     <from>2005</from>
@@ -44,7 +44,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2023-12-01</fetched>
+      <fetched>2024-02-08</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Open Distributed Processing</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Unified Modeling Language (UML) Version 1.4.2</title>
@@ -54,7 +54,7 @@
       <uri type="rss">https://www.iso.org/contents/data/standard/03/26/32620.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO/IEC 19501:2005</docidentifier>
       <docidentifier type="iso-reference">ISO/IEC 19501:2005(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso-iec:19501:stage-90.93:ed-1</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso-iec:19501:stage-90.20:ed-1</docidentifier>
       <docnumber>19501</docnumber>
       <date type="published">
         <on>2005-04</on>
@@ -81,7 +81,7 @@
       <abstract format="text/plain" language="en" script="Latn">ISO/IEC 19501:2004 describes the Unified Modeling Language (UML), a graphical language for visualizing, specifying, constructing and documenting the artifacts of a software-intensive system. The UML offers a standard way to write a system's blueprints, including conceptual things such as business processes and system functions, as well as concrete things such as programming language statements, database schemas, and reusable software components.</abstract>
       <status>
         <stage>90</stage>
-        <substage>93</substage>
+        <substage>20</substage>
       </status>
       <copyright>
         <from>2005</from>
