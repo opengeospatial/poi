@@ -73,6 +73,11 @@ label:: /req/core/poi-featureOfInterest
 --
 An encoding of the Abstract POI class SHALL include zero or more associated instances of the `FeatureOfInterest` class.
 --
+
+[.component,class=part]
+--
+The target of the `hasFeatureOfIntestest` aggregation SHALL be a valid implementation of the Feature class from <<iso19109,ISO 19109:2015>>
+--
 ====
 
 [[req_core_POI_metadata]]
@@ -88,24 +93,7 @@ An encoding of the Abstract POI class SHALL include zero or more `metadata` attr
 
 [.component,class=part]
 --
-Encodings of a `metadata` attribute SHALL comply with requirement <<req_core_Link,/req/core/link>>.
---
-====
-
-[[req_core_POI_Payload]]
-.Requirement - POI Payload
-[requirement]
-====
-[%metadata]
-label:: /req/core/poi-payload
-[.component,class=part]
---
-An encoding of the Abstract POI class SHALL include zero or more associated instances of the `POI_Payload` class.
---
-
-[.component,class=part]
---
-An encoding of the Abstract POI class SHALL comply with requirement <<req_core_POI-Payload,/req/core/poi-payload>>.
+An implementation of the `metadata` association SHALL comply with requirement <<req_core_Link,/req/core/link>>.
 --
 ====
 
@@ -117,12 +105,12 @@ An encoding of the Abstract POI class SHALL comply with requirement <<req_core_P
 label:: /req/core/poi-keywords
 [.component,class=part]
 --
-An encoding of the Abstract POI class SHALL include zero or more `keyword` attributes.
+An encoding of the Abstract POI class SHALL include zero or more `keywords` attributes.
 --
 
 [.component,class=part]
 --
-Encodings of the `keyword` attribute SHALL be a valid implementation of the MD_Keyword class from ISO 19115-1:2014
+Encodings of the `keywords` attribute SHALL be a valid implementation of the MD_Keywords class from ISO 19115-1:2014
 --
 ====
 
@@ -157,6 +145,23 @@ An encoding of the Abstract POI class SHALL include zero or one `symbology` attr
 [.component,class=part]
 --
 Encodings of a `symbology` attribute SHALL comply with requirement <<req_core_Link,/req/core/link>>.
+--
+====
+
+[[req_core_POI_Payload]]
+.Requirement - POI Payload
+[requirement]
+====
+[%metadata]
+label:: /req/core/poi-payload
+[.component,class=part]
+--
+An encoding of the Abstract POI class SHALL include zero or more associated instances of the `POI_Payload` class.
+--
+
+[.component,class=part]
+--
+An encoding of the Abstract POI class SHALL comply with requirement <<req_core_POI-Payload,/req/core/poi-payload>>.
 --
 ====
 

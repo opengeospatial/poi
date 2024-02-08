@@ -8,31 +8,18 @@ identifier:: /conf/core/geometry
 
 target:: /req/core/geometry
 
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 
-[.component,class=test-purpose]
---
-To validate that the POI Implementation Specification is conformant with the <<iso19107,ISO 19107>> Geometry Model.
---
+test-purpose:: To validate that the POI Implementation Specification is conformant with the <<iso19107,ISO 19107>> Geometry Model.
 
-[.component,class=test-method-type]
---
-Manual Inspection
---
+test-method-type:: Manual Inspection
 
-[.component,class=part]
---
-Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).
---
+description:: Inspect the POI Implementation Specification for the following:
 
-[.component,class=part]
---
-Validate that all geometries used in the Implementation Specification conform with the geometry model defined in <<ISO19107,ISO 19107>>.
---
+part:: Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).
 
-[.component,class=part]
---
-Validate that the Abstract Test Suite tests each POI Feature for the presence of a `SpatialAttributeType` property of type GM_Point, GM_LineString, or GM_Polygon. 
---
+part:: Validate that all geometries used in the Implementation Specification conform with the geometry model defined in <<ISO19107,ISO 19107>>.
+
+part:: Validate that the Abstract Test Suite tests each POI Feature for the presence of a `SpatialAttributeType` property of type GM_Point, GM_LineString, or GM_Polygon. 
 
 ====

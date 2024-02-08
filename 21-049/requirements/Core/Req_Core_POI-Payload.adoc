@@ -4,24 +4,71 @@
 ====
 [%metadata]
 label:: /req/core/poi-payload
+
 [.component,class=part]
 --
-An encoding of the POI_Payload class SHALL comply with requirement <<req_core_POI_featureOfInterest,/req/core/req-poi-featureOfInterest>>.
+An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi-payload_featureofinterest,/req/core/poi_payload/featureofinterest>>.
 --
 
 [.component,class=part]
 --
-An encoding of the POI_Payload class SHALL represent zero or more `Properties` from the Feature of Interest that it represents.
+An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi-payload_hasdefinition,/req/core/poi_payload/hasDefinition>>.
 --
 
 [.component,class=part]
 --
-The syntax of a POI_Payload class SHALL be provided in an associated instance of the `PayloadSechema` class.
+An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi-payload_usesschema,/req/core/poi_payload/usesSchema>>.
 --
-
-[.component,class=part]
---
-If the semantics of a POI_Payload class is provided, it SHALL be provided in no more than one associated instance of the `PayloadDefinition` class.
---
-
 ====
+
+[[req_core_poi-payload_featureofinterest]]
+.Requirement - POI Payload Feature of Interest
+[requirement]
+====
+[%metadata]
+label:: /req/core/poi_payload/featureofinterest
+[.component,class=part]
+--
+An encoding of the Abstract POI_Payload class SHALL include zero or more `hasFeatureOfInterest` aggregations.
+--
+
+[.component,class=part]
+--
+The target of a `hasFeatureOfIntestest` aggregation SHALL be a valid implementation of the Feature class from <<iso19109,ISO 19109:2015>>
+--
+====
+
+[[req_core_poi-payload_hasdefinition]]
+.Requirement - POI Payload has definition
+[requirement]
+====
+[%metadata]
+label:: /req/core/poi_payload/hasDefinition
+[.component,class=part]
+--
+An encoding of the Abstract POI_Payload class SHALL include no more than one `hasDefinition` aggregations.
+--
+
+[.component,class=part]
+--
+The target of a `hasDefinition` aggregation SHALL be a valid ontology for the implementing technology
+--
+====
+
+[[req_core_poi-payload_usesschema]]
+.Requirement - POI Payload Uses Schema
+[requirement]
+====
+[%metadata]
+label:: /req/core/poi_payload/usesSchema
+[.component,class=part]
+--
+An encoding of the Abstract POI_Payload class SHALL include one or more `usesSchema` aggregations.
+--
+
+[.component,class=part]
+--
+The target of a `usesSchema` aggregation SHALL be a valid schema for the implementing technology.
+--
+====
+

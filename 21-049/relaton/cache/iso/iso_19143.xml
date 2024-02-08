@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-12-01</fetched>
+  <fetched>2024-02-08</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Filter encoding</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Filter encoding</title>
@@ -35,7 +35,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2023-12-01</fetched>
+      <fetched>2024-02-08</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Filter encoding</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Filter encoding</title>

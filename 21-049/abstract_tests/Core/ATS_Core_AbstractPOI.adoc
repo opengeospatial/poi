@@ -1,62 +1,35 @@
 
 ===== Abstract POI
 
-[[ats_core_poi-abstract-poi]]
+[[ats_core_abstract-poi]]
 [abstract_test]
 ====
 [%metadata]
 identifier:: /conf/core/astract-poi
 target:: /req/core/abstract-poi
 inherit:: /conf/core/featurewithlifespan
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 test-purpose:: To validate that the Implementation Specification implements the AbstractPOI class as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
-[.component,class=description]
---
-Validate that the Implementation Specification correctly implements the AbstractPOI class:
---
+description:: Validate that the Implementation Specification correctly implements the AbstractPOI class:
 
-[.component,class=part]
---
-Validate that the implementation of the AbstractPOI class is also a valid implementation of the AbstractFeatureWithLIfespan class using test <<ats_core_featurewithlifespan,/conf/core/featurewithlifespan>>.
---
+part:: Validate that the implementation of the AbstractPOI class is also a valid implementation of the AbstractFeatureWithLifespan class using test <<ats_core_featurewithlifespan,/conf/core/featurewithlifespan>>.
 
-[.component,class=part]
---
-Verify that implementations of the AbstractPOI class include a `contactInfo` attribute which is populated with a value that passes the <<ats_core_poi-contactinfo,/conf/core/poi-contactinfo>> test.
---
+part:: Validate correct implementation of the `contactInfo` attribute using test <<ats_core_poi-contactinfo,/conf/core/poi-contactinfo>.
 
-[.component,class=part]
---
-Verify that implementations of the AbstractPOI class may include a `hasFeatureOfInterest` aggregation and that the target of that aggregation passes the <<ats_core_poi-featureofinterest,/conf/core/poi-featureOfInterest>> test.
---
+part:: Validate correct implementation of the `hasFeatureOfInterest` aggregation using the test <<ats_core_poi-featureofinterest,/conf/core/poi-featureOfInterest>>.
 
-[.component,class=part]
---
-Verify that implementations of the AbstractPOI class may include a `hasMetadata` association and that the representation of that association passes the <<ats_core_link,/conf/core/link>> test.
---
+part:: Validate correct implementation of the `hasMetadata` association using the test <<ats_core_poi-metadata,/conf/core/POI-Metadata>>.
 
-[.component,class=part]
---
-Verify that implementations of the AbstractPOI class may include a `hasPayload` aggregation and that the target of that aggregation passes the <<ats_core_poi-payload,/conf/core/poi-payload>> test.
---
+part:: Validate correct implementation of the `hasPayload` aggregation using the test <<ats_core_poi-payload,/conf/core/poi-payload>>.
 
-[.component,class=part]
---
-Verify that implementations of the AbstractPOI class may include a `keywords` attribute and that the value of that attribute passes the <<ats_core_poi-keywords,/conf/core/poi-keywords>> test.
---
+part:: Validate correct implementation of the `keywords` attribute using the test <<ats_core_poi-keywords,/conf/core/poi-keywords>>.
 
-[.component,class=part]
---
-Verify that implementations of the AbstractPOI class may include a `rights` attribute and that the value of that attribute passes the <<ats_core_poi-rights,/conf/core/poi-rights>> test.
---
+part:: Validate correct implementation of the `rights` attribute using the test <<ats_core_poi-rights,/conf/core/poi-rights>>.
 
-[.component,class=part]
---
-Verify that implementations of the AbstractPOI class may include a `symbology` association association and that the representation of that association passes the <<ats_core_link,/conf/core/link>> test.
--- 
+part:: Validate correct implementation of the `symbology` association using the test <<ats_core_poi-symbology,/conf/core/poi-symbology>>.
 ====
 
 ====== Abstract POI ContactInfo
@@ -70,10 +43,53 @@ target:: /req/core/poi-contactInfo
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `contactInfo` attribute as defined in the POI Conceptual Model.
 
-[.component,class=description]
---
-Validate that the `contactInfo` attribute is a valid implementation of the CI_Responsibility class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
---
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and type of the `contactInfo` attribute.
+
+part:: Validate that zero or more `contactInfo` attributes are allowed in an AbstractPOI class.
+
+part:: Validate that the `contactInfo` attribute is a valid implementation of the CI_Responsibility class from <<iso19115,ISO 19115-1:2014>>.
+====
+
+====== Abstract POI Feature Of Interest
+
+[[ats_core_poi-featureofinterest]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/poi-featureofinterest
+target:: /req/core/poi-featureofinterest
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `hasFeatureOfinterest` aggregation as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and target class of the `hasFeatureOfInterest` aggregation.
+
+part:: Validate that zero or more `hasFeatureOfIntestest` aggregations are allowed in an AbstractPOI class.
+
+part:: Validate that the target of the `hasFeatureOfIntestest` aggregation is a valid implementation of the Feature class from <<iso19109,ISO 19109:2015>>.
+====
+
+====== Abstract POI Metadata
+
+[[ats_core_poi-metadata]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/poi-metadata
+target:: /req/core/poi-metadata
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `hasMetadata` association as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and encoding of the `hasMetadata` association.
+
+part:: Validate that zero or more `hasMetadata` associations are allowed in an AbstractPOI class.
+
+part:: Validate that the `hasMetadata` association is implemented as described in the Conceptual Model using the <<ats_core_link,/conf/core/link>> test.
 ====
 
 ====== Abstract POI Keywords
@@ -87,10 +103,13 @@ target:: /req/core/poi-keywords
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `keywords` attribute as defined in the POI Conceptual Model.
 
-[.component,class=description]
---
-Validate that the `keywords` attribute is a valid implementation of the MD_Keyword class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
---
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and type of the `keywords` attribute.
+
+part:: Validate that zero or more `keywords` attributes are allowed in an AbstractPOI class.
+
+part:: Validate that the `keywords` attribute is a valid implementation of the MD_Keywords class from <<iso19115,ISO 19115-1:2014>>.
 ====
 
 ====== Abstract POI Rights
@@ -104,10 +123,53 @@ target:: /req/core/poi-rights
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `rights` attribute as defined in the POI Conceptual Model.
 
-[.component,class=description]
---
-Validate that the `contactInfo` attribute is a valid implementation of the MD_Constraints class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
---
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and type of the `rights` attribute.
+
+part:: Validate that zero, one, or two `rights` attributes are allowed in an AbstractPOI class.
+
+part:: Validate that the `contactInfo` attribute is a valid implementation of the MD_Constraints class from <<iso19115,ISO 19115-1:2014>>.
+====
+
+====== Abstract POI Symbology
+
+[[ats_core_poi-symbology]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/poi-symbology
+target:: /req/core/poi-symbology
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `symbology` association as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and encoding of the `symbology` association.
+
+part:: Validate that zero or one `symbology` associations are allowed in an AbstractPOI class.
+
+part:: Validate that the `symbology` association is implemented as described in the Conceptual Model using the <<ats_core_link,/conf/core/link>> test. 
+====
+
+====== Abstract POI Payload Association
+
+[[ats_core_poi-haspayload]]
+[abstract_test]
+====
+[%metadata]
+identifier:: /conf/core/poi-haspayload
+target:: /req/core/poi-haspayload
+classification:: Target Type: Implementation Specification
+test-purpose:: Validate that the Implementation Specification implements the `hasPayload` aggregation as defined in the POI Conceptual Model.
+
+test-method-type:: Manual Inspection
+
+description:: Validate the cardinality and target class of the `hasPayload` aggregation.
+
+part:: Validate that zero of more `hasPayload` aggregation are allowed in an AbstractPOI class.
+
+part:: Validate that the target of the `hasPayload` aggregation is a valid implementation of the POI_Payload class using the <<ats_core_poi-payload,/conf/core/poi-payload>> test.
 ====
 
 ====== Link
@@ -119,10 +181,11 @@ Validate that the `contactInfo` attribute is a valid implementation of the MD_Co
 identifier:: /conf/core/link
 target:: /req/core/link
 classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `contactInfo` attribute as defined in the POI Conceptual Model.
+test-purpose:: Validate that the Implementation Specification implements the Link class as defined in the POI Conceptual Model.
 
-[.component,class=description]
---
-Validate that the `contactInfo` attribute is a valid implementation of the CI_Responsibility class from ISO 19115-1:2014 using the OGC Team Engine and an Executable Test Suite appropriate for the implementing technology. 
---
+test-method-type:: Manual Inspection
+
+description:: Validate that the association being tested is a valid implementation of the Link class from 
+NOTE:: More needed.
+
 ====

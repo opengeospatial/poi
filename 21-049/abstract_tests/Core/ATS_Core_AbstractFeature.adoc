@@ -11,40 +11,23 @@ target:: /req/core/abstractfeature
 inherit:: /conf/core/generalfeaturemodel
 inherit:: /conf/core/geometry
 
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 
 test-purpose:: Validate that the Implementation Specification implements the AbstractFeature Class as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
-[.component,class=description]
---
-Validate that the AbstractFeature class is properly implemented in the Implementation Specification.
---
+description:: Inspect the POI Implementation Specification to validate that the AbstractFeature class is properly implemented.
 
-[.component,class=part]
---
-Validate that the implementation of the AbstractFeature class is also a valid implementation of the AnyFeature class defined in the ISO 19109 General Feature Model.
---
+part:: Validate that the implementation of the AbstractFeature class is also a valid implementation of the AnyFeature class defined in the ISO 19109 General Feature Model.
 
-[.component,class=part]
---
-For every AbstractFeature class that includes a `description` attribute, validate that attribute using the <<ats_core_abstractfeature-description,/conf/core/abstractfeature-description>> test.
---
+part:: Validate correct implementation of the `description` attribute using test <<ats_core_abstractfeature-description,/conf/core/abstractfeature-description>>.
 
-[.component,class=part]
---
-For every AbstractFeature class, validate that the `featureId` attribute is populated with a value that passes the <<ats_core_abstractfeature-featureid,/conf/core/abstractfeature-featureid>> test.
---
+part:: Validate correct implementation of the `featureId` attribute using test <<ats_core_abstractfeature-featureid,/conf/core/abstractfeature-featureid>>.
 
-[.component,class=part]
---
-For every AbstractFeature, verify that the class includes an `identifier` attribute, then validate that attribute using the <<ats_core_abstractfeature-identifier,/conf/core/abstractfeature-identifier>> test.
---
+part:: Validate correct implementation of the `identifier` attribute using test <<ats_core_abstractfeature-identifier,/conf/core/abstractfeature-identifier>>.
 
-[.component,class=part]
---
-For every AbstractFeature class that includes a `name` attribute, validate that attribute using the <<ats_core_abstractfeature-name,/conf/core/abstractfeature-name>> test.
+part:: Validate correct implementation of the `name` attribute using test <<ats_core_abstractfeature-name,/conf/core/abstractfeature-name>>.
 --
 ====
 
@@ -56,14 +39,15 @@ For every AbstractFeature class that includes a `name` attribute, validate that 
 [%metadata]
 identifier:: /conf/core/abstractfeature-description
 target:: /req/core/abstractfeature-description
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `description` attribute as defined in the POI Conceptual Model.
 test-method-type:: Manual Inspection
 
-[.component,class=description]
---
-Validate that the `description` attribute is a valid implementation of the CharacterString class from <<ISO19103,ISO 19103>>. 
---
+description:: Validate the cardinality and type of the `description` attribute.
+
+part:: Validate that no more than one 'description' attribute is allowed in an AbstractFeature class.
+
+part:: Validate that the `description` attribute is a valid implementation of the CharacterString class from <<ISO19103,ISO 19103>>. 
 ====
 
 ====== Abstract Feature-FeatureId
@@ -74,15 +58,19 @@ Validate that the `description` attribute is a valid implementation of the Chara
 [%metadata]
 identifier:: /conf/core/abstractfeature-featureid
 target:: /req/core/abstractfeature-featureid
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `featureId` attribute as defined in the POI Conceptual Model.
 test-method-type:: Manual Inspection
 
-[.component,class=description]
---
-Validate that the `featureId` attribute is a valid implementation of the Uid class from this Conceptual Model.  
---
+description:: Validate the cardinality and type of the `featureId` attribute.
+
+part:: Validate that one and only one 'featureId' attribute is allowed in an AbstractFeature class.
+
+part:: Validate that the `featureId` attribute is a valid implementation of the ID class from <<ISO19103,ISO 19103>>.  
 ====
+
+NOTE: Validate use of ID class from ISO 19103
+
 
 ====== Abstract Feature-Identifier
 
@@ -92,14 +80,15 @@ Validate that the `featureId` attribute is a valid implementation of the Uid cla
 [%metadata]
 identifier:: /conf/core/abstractfeature-identifier
 target:: /req/core/abstractfeature-identifier
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `identifier` attribute as defined in the POI Conceptual Model.
 test-method-type:: Manual Inspection
 
-[.component,class=description]
---
-Validate that the `identifier` attribute is a valid implementation of the ScopedName class from <<ISO19103,ISO 19103>>.  
---
+description:: Validate the cardinality and type of the `identifier` attribute.
+
+part:: Validate that no more than one 'identifer' attribute is allowed in an AbstractFeature class.
+
+part:: Validate that the `identifier` attribute is a valid implementation of the ScopedName class from <<ISO19103,ISO 19103>>.  
 ====
 
 ====== Abstract Feature-Name
@@ -110,13 +99,14 @@ Validate that the `identifier` attribute is a valid implementation of the Scoped
 [%metadata]
 identifier:: /conf/core/abstractfeature-name
 target:: /req/core/abstractfeature-name
-classification:: Target Type:Implementation Specification
+classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `name` attribute as defined in the POI Conceptual Model.
 test-method-type:: Manual Inspection
 
-[.component,class=description]
---
-Validate that the `name` attribute is a valid implementation of the GenericName class from <<ISO19103,ISO 19103>>.
---
+description:: Validate the cardinality and type of the `name` attribute.
+
+part:: Validate that zero or more 'name' attributes are allowed in an AbstractFeature class.
+
+part:: Validate that the `name` attribute is a valid implementation of the GenericName class from <<ISO19103,ISO 19103>>.
 ====
 
