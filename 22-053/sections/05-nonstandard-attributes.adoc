@@ -42,26 +42,22 @@ Suppose the implementation technology is JSON. Here is how the above payload mig
    {
       "type": "Feature",
       "geometry": {"type": "Point", "coordinates": {45.14, -94.69}},
-      "properties": {
-         "featureID": 693842,
-         "name": {"name" : "Midtown Library"},
-         "contactInfo" : {"role": "city representative"},
-         "hasPayload": [
-           "POI_Payload" : {
-             "usesSchema" : [
-                 "Link" : {
-                 "href" : "https://example.org/schema/egpoi.json",
-                 "rel" : "describedby"
-                 }
-              ],
-             "hasDefinition" : "Link" : {
+      "featureID": 693842,
+      "name": {"name" : "Midtown Library"},
+      "contactInfo" : {"role": "city representative"},
+      "hasPayload": [
+         "usesSchema" : [
+            {
+               "href" : "https://example.org/schema/egpoi.json",
+               "rel" : "describedby"
+            }
+         ],
+         "hasDefinition" : {
                "href" : "https://example.org/schemadef/egpoi",
                "rel" : "type"
-             },
-             "isPublic:" : true
-           }
-         ]
-      }
+         },
+         "isPublic:" : true
+      ]
    }
 ----
 
