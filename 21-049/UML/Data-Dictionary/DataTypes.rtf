@@ -58,7 +58,7 @@
 |*Link* \par 
 |[cols="1,4",frame=none,grid=none]\par 
 !===\par 
-!\{nbsp\}\{nbsp\}\{nbsp\}\{nbsp\}Definition: ! A data type which allows elements to be inserted into a document in order to create and describe links between resources. (derived from XML Linking Language (XLink) Version 1.1) \par 
+!\{nbsp\}\{nbsp\}\{nbsp\}\{nbsp\}Definition: ! A link is a typed connection between two resources. This class is based on the Web Linking model defined in IETF RFC 8288.  \par 
 !\{nbsp\}\{nbsp\}\{nbsp\}\{nbsp\}Subclass of: ! <<-section,>> \par 
 !\{nbsp\}\{nbsp\}\{nbsp\}\{nbsp\}Stereotype: !  \plain\f1\fs20\lang1033\hich\f1\dbch\f1\loch\f1\cf2\fs20\u171 \'ab\plain\f1\fs20\lang1033\hich\f1\dbch\f1\loch\f1\cf2\fs20 Type\plain\f1\fs20\lang1033\hich\f1\dbch\f1\loch\f1\cf2\fs20\u187 \'bb\plain\f1\fs20\lang1033\hich\f1\dbch\f1\loch\f1\cf2\fs20\par 
 !===\par 
@@ -72,37 +72,15 @@
 {\*\bkmkstart BKM_2D71152D_AF12_4E3A_80C7_6854A2640C33} \par 
 !\{set:cellbgcolor:#FFFFFF\} href   !<<CharacterString-section,CharacterString>>  !Supplies the URI to a remote resource (or resource fragment).{\*\bkmkend BKM_2D71152D_AF12_4E3A_80C7_6854A2640C33}\par 
 {\*\bkmkstart BKM_E2FA9F16_5C5F_4EA7_95F7_FC8EF4D08938} \par 
-!\{set:cellbgcolor:#FFFFFF\} hreflang   !<<CharacterString-section,CharacterString>>  [0..1] !A hint indicating what the language of the result of dereferencing the link should be.{\*\bkmkend BKM_E2FA9F16_5C5F_4EA7_95F7_FC8EF4D08938}\par 
-{\*\bkmkstart BKM_D73CA8D0_7F55_44FB_BDFC_67FABD72A458} \par 
-!\{set:cellbgcolor:#FFFFFF\} length   !<<Integer-section,Integer>>  [0..1] !This property is included but not defined in OGC API-Features and OGC API-Common. It has been included here for compatibility with OGC Web API Standards.{\*\bkmkend BKM_D73CA8D0_7F55_44FB_BDFC_67FABD72A458}\par 
+!\{set:cellbgcolor:#FFFFFF\} hreflang   !<<CharacterString-section,CharacterString>>  [0..*] !The "hreflang" attribute is a hint indicating what the language of the result of dereferencing the link should be. Note that this is only a hint. Multiple hreflang attributes on a single link-value indicate that multiple languages are available from the indicated resource.{\*\bkmkend BKM_E2FA9F16_5C5F_4EA7_95F7_FC8EF4D08938}\par 
 {\*\bkmkstart BKM_5FF2E571_CF82_4EEF_99CA_DA9F2E4B7C3A} \par 
-!\{set:cellbgcolor:#FFFFFF\} rel   !<<CharacterString-section,CharacterString>>  !The type or semantics of the relation.{\*\bkmkend BKM_5FF2E571_CF82_4EEF_99CA_DA9F2E4B7C3A}\par 
+!\{set:cellbgcolor:#FFFFFF\} rel   !<<CharacterString-section,CharacterString>>  !A link relation (rel) attribute identifies the semantics (meaning) of a link. The relation type values should come from either the IANA or OGC relation type registries. {\*\bkmkend BKM_5FF2E571_CF82_4EEF_99CA_DA9F2E4B7C3A}\par 
 {\*\bkmkstart BKM_7E01D9D4_E8FD_4388_B277_33D34C9156F9} \par 
-!\{set:cellbgcolor:#FFFFFF\} title   !<<CharacterString-section,CharacterString>>  [0..1] !Used to label the destination of a link such that it can be used as a human-readable identifier.{\*\bkmkend BKM_7E01D9D4_E8FD_4388_B277_33D34C9156F9}\par 
+!\{set:cellbgcolor:#FFFFFF\} title   !<<CharacterString-section,CharacterString>>  [0..1] !The "title" attribute is used to label the destination of a link such that it can be used as a human-readable identifier (e.g., a menu entry). {\*\bkmkend BKM_7E01D9D4_E8FD_4388_B277_33D34C9156F9}\par 
 {\*\bkmkstart BKM_1D713689_B127_4CD0_8E45_C13A3FF0E25D} \par 
-!\{set:cellbgcolor:#FFFFFF\} type   !<<CharacterString-section,CharacterString>>  [0..1] !A hint indicating what the media type of the result of dereferencing the link should be.{\*\bkmkend BKM_1D713689_B127_4CD0_8E45_C13A3FF0E25D}\par 
+!\{set:cellbgcolor:#FFFFFF\} type   !<<CharacterString-section,CharacterString>>  [0..1] !The "type" attribute is a hint indicating what the media type of the result of dereferencing the link should be. Note that this is only a hint. {\*\bkmkend BKM_1D713689_B127_4CD0_8E45_C13A3FF0E25D}\par 
 !===\par 
-|=== {\*\bkmkend BKM_88416FFD_376B_47AD_BE77_490FC0EE409D}\par 
-\par 
-{\*\bkmkstart BKM_0079D5DA_7B56_46C0_BC41_E52F7792B9D6}[[Uid-section]]\par 
-[cols="1a"]\par 
-|===\par 
-|*Uid* \par 
-|[cols="1,4",frame=none,grid=none]\par 
-!===\par 
-!\{nbsp\}\{nbsp\}\{nbsp\}\{nbsp\}Definition: ! Uid is a basic type that represents a unique identifier. \par 
-!\{nbsp\}\{nbsp\}\{nbsp\}\{nbsp\}Subclass of: ! <<-section,>> \par 
-!\{nbsp\}\{nbsp\}\{nbsp\}\{nbsp\}Stereotype: !  \plain\f1\fs20\lang1033\hich\f1\dbch\f1\loch\f1\cf2\fs20\u171 \'ab\plain\f1\fs20\lang1033\hich\f1\dbch\f1\loch\f1\cf2\fs20 Type\plain\f1\fs20\lang1033\hich\f1\dbch\f1\loch\f1\cf2\fs20\u187 \'bb\plain\f1\fs20\lang1033\hich\f1\dbch\f1\loch\f1\cf2\fs20\par 
-!===\par 
-|[cols="15,20,60",frame=none,grid=none,options="header"]\par 
-!===\par 
-!\{set:cellbgcolor:#DDDDDD\} *Role name* !*Target class and multiplicity*  !*Definition*\par 
-!===\par 
-|[cols="15,20,60",frame=none,grid=none,options="header"]\par 
-!===\par 
-!\{set:cellbgcolor:#DDDDDD\} *Attribute* !*Value type and multiplicity* !*Definition*\par 
-!===\par 
-|===   {\*\bkmkend BKM_0079D5DA_7B56_46C0_BC41_E52F7792B9D6}{\*\bkmkend DATATYPES}{\*\bkmkend BKM_F41D3630_03C2_4409_9953_9548A168CD39}\par 
+|===   {\*\bkmkend BKM_88416FFD_376B_47AD_BE77_490FC0EE409D}{\*\bkmkend DATATYPES}{\*\bkmkend BKM_F41D3630_03C2_4409_9953_9548A168CD39}\par 
 \par 
 \plain\f1\fs20\lang3081\hich\f1\dbch\f1\loch\f1\fs20\par 
 \plain\f0\fs24\par 

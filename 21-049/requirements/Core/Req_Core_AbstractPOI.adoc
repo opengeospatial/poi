@@ -4,6 +4,12 @@
 ====
 [%metadata]
 label:: /req/core/abstract-poi
+
+[.component,class=part]
+--
+An instantiation of the Abstract POI class SHALL be an accurate representation of the UML model for that class.
+--
+
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_feature_with_lifespan,/req/core/poi-feature-with-lifespan>>.
@@ -54,6 +60,11 @@ An instantiation of the Abstract POI class SHALL comply with requirement <<req_c
 label:: /req/core/poi-contactInfo
 [.component,class=part]
 --
+An instantiation of the Abstract POI class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the Abstract POI class SHALL include one or more `contactInfo` attributes.
 --
 
@@ -69,6 +80,11 @@ Encodings of the `contactInfo` attribute SHALL be a valid implementation of the 
 ====
 [%metadata]
 label:: /req/core/poi-featureOfInterest
+[.component,class=part]
+--
+An instantiation of the Abstract POI class SHALL comply with the following criteria:
+--
+
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include zero or more associated instances of the `FeatureOfInterest` class.
@@ -88,6 +104,11 @@ The target of the `hasFeatureOfIntestest` aggregation SHALL be a valid implement
 label:: /req/core/poi-metadata
 [.component,class=part]
 --
+An instantiation of the Abstract POI class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the Abstract POI class SHALL include zero or more `metadata` attributes.
 --
 
@@ -103,6 +124,11 @@ An implementation of the `metadata` association SHALL comply with requirement <<
 ====
 [%metadata]
 label:: /req/core/poi-keywords
+[.component,class=part]
+--
+An instantiation of the Abstract POI class SHALL comply with the following criteria:
+--
+
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include zero or more `keywords` attributes.
@@ -122,6 +148,11 @@ Encodings of the `keywords` attribute SHALL be a valid implementation of the MD_
 label:: /req/core/poi-rights
 [.component,class=part]
 --
+An instantiation of the Abstract POI class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the Abstract POI class SHALL include zero, one, or two `rights` attributes.
 --
 
@@ -137,6 +168,11 @@ Encodings of the `rights` attribute SHALL be a valid implementation of the MD_Co
 ====
 [%metadata]
 label:: /req/core/poi-symbology
+[.component,class=part]
+--
+An instantiation of the Abstract POI class SHALL comply with the following criteria:
+--
+
 [.component,class=part]
 --
 An encoding of the Abstract POI class SHALL include zero or one `symbology` attributes.
@@ -156,6 +192,11 @@ Encodings of a `symbology` attribute SHALL comply with requirement <<req_core_Li
 label:: /req/core/poi-payload
 [.component,class=part]
 --
+An instantiation of the Abstract POI class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the Abstract POI class SHALL include zero or more associated instances of the `POI_Payload` class.
 --
 
@@ -173,6 +214,6 @@ An encoding of the Abstract POI class SHALL comply with requirement <<req_core_P
 label:: /req/core/poi-link
 [.component,class=part]
 --
-TBD.
+The encoding of the Link class SHALL be implemented using a hyperlink approach appropriate for implementing technology.
 --
 ====

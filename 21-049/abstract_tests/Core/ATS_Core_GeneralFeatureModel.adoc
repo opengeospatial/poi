@@ -20,5 +20,7 @@ part:: Validate that the Implementation Specification includes an Abstract Test 
 
 part:: Validate that the Abstract Test Suite tests for conformance with the General Feature Model defined in <<ISO19109,ISO 19109>>.
 
+NOTE:: If the Implementaion Specification is based on a Standard known to be conformant with ISO 19109 (ex: GML), then conformance with that Standard is sufficient to show conformance with ISO 19109.
+
 ====
 

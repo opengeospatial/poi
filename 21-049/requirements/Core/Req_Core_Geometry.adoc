@@ -6,7 +6,7 @@
 label:: /req/core/geometry
 [.component,class=part]
 --
-The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in <<ISO19107,ISO 19107>>.
+The POI Conceptual Model spatial geometry properties SHALL be compliant with the Geometry Model defined in <<ISO19107,ISO 19107>> with the following restrictions:
 --
 
 [.component,class=part]

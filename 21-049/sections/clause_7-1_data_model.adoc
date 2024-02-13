@@ -12,14 +12,13 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeature is the abstract superclass of all feature types within the PoI Model. 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
-!===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
 !{set:cellbgcolor:#FFFFFF} description «property»  !<<CharacterString-section,CharacterString>>  [0..1] !Provides further information on the feature.
  
-!{set:cellbgcolor:#FFFFFF} featureID «property»  !<<Uid-section,Uid>> [1..1] !Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
+!{set:cellbgcolor:#FFFFFF} featureID «property»  !<<GenericName-section,GenericName>>  [1..1]!Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
  
 !{set:cellbgcolor:#FFFFFF} identifer «property»  !<<ScopedName-section,ScopedName>>  [0..1] !Specifies the unique identifier of the feature that is valid globally.
  
@@ -65,26 +64,21 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
 
-!{set:cellbgcolor:#FFFFFF} hasPayload  !  <<POI_Payload-section,POI_Payload>>  
+!{set:cellbgcolor:#FFFFFF} hasPayload «property» !  <<POI_Payload-section,POI_Payload>>  
 [0..*] !Indicates a payload associated with this POI.
 
 
-!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest  !  <<FeatureOfInterest-section,FeatureOfInterest>>  
+!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest «property» !  <<FeatureOfInterest-section,FeatureOfInterest>>  
 [0..*] !One or more Features which are represented by this POI. 
 
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
-!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
- 
+!{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition* 
 !{set:cellbgcolor:#FFFFFF} contactInfo «property»  !<<CI_Responsibility-section,CI_Responsibility>>  [1..*] !Contact information for the creators and maintainers of this POI.
- 
 !{set:cellbgcolor:#FFFFFF} hasMetadata «property»  !<<Link-section,Link>>  [0..*] !An association with zero or more metadata records providing additional information about this POI and/or the associated Features of Interest.
- 
 !{set:cellbgcolor:#FFFFFF} keywords «property»  !<<MD_Keywords-section,MD_Keywords>>  [0..*] !Keywords used to aid in discovery of POIs of interest.
- 
-!{set:cellbgcolor:#FFFFFF} rights «property»  !<<MD_Constraints-section,MD_Constraints>>  [0..2] !Legal and security constraints applicable to this POI.
- 
+!{set:cellbgcolor:#FFFFFF} rights «property»  !<<MD_Constraints-section,MD_Constraints>>  [0..2] !Legal and security constraints applicable to this POI. 
 !{set:cellbgcolor:#FFFFFF} symbology «property»  !<<Link-section,Link>>  [0..1] !A reference to information about rendering this POI. 
 !===
 |=== 
@@ -98,6 +92,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling. (SOSA) 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
+!===
 |=== 
 
 [[PayloadDefinition-section]]
@@ -110,7 +105,6 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
 !===
-|[cols="15,20,60",frame=none,grid=none,options="header"]
 |=== 
 
 [[PayloadSchema-section]]
@@ -122,6 +116,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A model of the syntax of the POI payload. 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
+!===
 |=== 
 
 [[POI-section]]
@@ -137,10 +132,8 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-
 !{set:cellbgcolor:#FFFFFF} implements  !  <<AbstractPOI-section,AbstractPOI>>  
-[] !Identifies the abstract POI implemented by this POI
-
+[1..1] !Identifies the abstract POI implemented by this POI
 !===
 |=== 
 
@@ -151,26 +144,22 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A representation of properties of the FoI which are to be included in the POI. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «DataType»
 !===
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Role name* !*Target class and multiplicity*  !*Definition*
-
-!{set:cellbgcolor:#FFFFFF} hasDefinition  !  <<PayloadDefinition-section,PayloadDefinition>>  
+!{set:cellbgcolor:#FFFFFF} hasDefinition «property» !  <<PayloadDefinition-section,PayloadDefinition>>  
 [0..1] !A reference to the semantic model of this POI payload. 
-
-
-!{set:cellbgcolor:#FFFFFF} representsFoI  !  <<FeatureOfInterest-section,FeatureOfInterest>>  
-[1..1] !Indicates the Feature of Interest which is being summarized in this payload.
-
-
-!{set:cellbgcolor:#FFFFFF} usesSchema  !  <<PayloadSchema-section,PayloadSchema>>  
+!{set:cellbgcolor:#FFFFFF} hasFeatureOfInterest «property» !  <<FeatureOfInterest-section,FeatureOfInterest>>  
+[0..*] !Indicates the Feature of Interest which is being summarized in this payload.
+!{set:cellbgcolor:#FFFFFF} usesSchema «property» !  <<PayloadSchema-section,PayloadSchema>>  
 [1..*] !A reference to the schema for this POI payload. 
-
 !===
 |===   
+
+
 
 
 

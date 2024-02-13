@@ -23,13 +23,14 @@ part:: Validate correct implementation of the `hasFeatureOfInterest` aggregation
 
 part:: Validate correct implementation of the `hasMetadata` association using the test <<ats_core_poi-metadata,/conf/core/POI-Metadata>>.
 
-part:: Validate correct implementation of the `hasPayload` aggregation using the test <<ats_core_poi-payload,/conf/core/poi-payload>>.
-
 part:: Validate correct implementation of the `keywords` attribute using the test <<ats_core_poi-keywords,/conf/core/poi-keywords>>.
 
 part:: Validate correct implementation of the `rights` attribute using the test <<ats_core_poi-rights,/conf/core/poi-rights>>.
 
 part:: Validate correct implementation of the `symbology` association using the test <<ats_core_poi-symbology,/conf/core/poi-symbology>>.
+
+part:: Validate correct implementation of the `hasPayload` aggregation using the test <<ats_core_poi-payload,/conf/core/poi-payload>>.
+
 ====
 
 ====== Abstract POI ContactInfo
@@ -185,7 +186,6 @@ test-purpose:: Validate that the Implementation Specification implements the Lin
 
 test-method-type:: Manual Inspection
 
-description:: Validate that the association being tested is a valid implementation of the Link class from 
-NOTE:: More needed.
+description:: Validate that the association being tested uses a hyperlink approach appropriate for the implementing technology.
 
 ====

@@ -3,14 +3,22 @@
 [requirement,type="class",id="http://www.opengis.net/spec/GeoPOI/1.0/req/req-class-core",obligation="requirement"]
 ====
 
-Requirements Class
+Requirements Class POI Core. A POI Implementation Specification SHALL be a valid representation of the POI UML model. This includes conformance with:
 
-[dependency]
---
-* urn:iso:ts:iso:19103
-* urn:iso:ts:iso:19107
-* urn:iso:ts:iso:19108
-* urn:iso:ts:iso:19109
---
+ISO Core Requirements:
+
+* <<req_core_general_feature_model,/req/core/generalfeaturemodel>>
+* <<req_core_geometry,/req/core/geometry>>
+
+POI Extensions to ISO:
+
+* <<req_core_abstractfeature,/req/core/abstractfeature>>
+* <<req_core_feature_with_lifespan,/req/core/featurewithlifespan>>
+
+POI Class Model:
+
+* <<req_core_abstract-poi,/req/core/abstract-poi>>
+* <<req_core_POI-Payload,/req/core/poi-payload>>
+* <<req_core_poi,/req/core/poi>>
 
 ====

@@ -7,6 +7,11 @@ label:: /req/core/poi-payload
 
 [.component,class=part]
 --
+An instantiation of the POI_Payload class SHALL be an accurate representation of the UML model for that class.
+--
+
+[.component,class=part]
+--
 An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi-payload_featureofinterest,/req/core/poi_payload/featureofinterest>>.
 --
 
@@ -29,6 +34,11 @@ An instantiation of the POI_Payload class SHALL comply with requirement <<req_co
 label:: /req/core/poi_payload/featureofinterest
 [.component,class=part]
 --
+An instantiation of the POI_Payload class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the Abstract POI_Payload class SHALL include zero or more `hasFeatureOfInterest` aggregations.
 --
 
@@ -46,6 +56,11 @@ The target of a `hasFeatureOfIntestest` aggregation SHALL be a valid implementat
 label:: /req/core/poi_payload/hasDefinition
 [.component,class=part]
 --
+An instantiation of the POI_Payload class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the Abstract POI_Payload class SHALL include no more than one `hasDefinition` aggregations.
 --
 
@@ -61,6 +76,11 @@ The target of a `hasDefinition` aggregation SHALL be a valid ontology for the im
 ====
 [%metadata]
 label:: /req/core/poi_payload/usesSchema
+[.component,class=part]
+--
+An instantiation of the POI_Payload class SHALL comply with the following criteria:
+--
+
 [.component,class=part]
 --
 An encoding of the Abstract POI_Payload class SHALL include one or more `usesSchema` aggregations.

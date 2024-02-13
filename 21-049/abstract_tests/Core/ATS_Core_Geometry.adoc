@@ -20,6 +20,8 @@ part:: Validate that the Implementation Specification includes an Abstract Test 
 
 part:: Validate that all geometries used in the Implementation Specification conform with the geometry model defined in <<ISO19107,ISO 19107>>.
 
-part:: Validate that the Abstract Test Suite tests each POI Feature for the presence of a `SpatialAttributeType` property of type GM_Point, GM_LineString, or GM_Polygon. 
+NOTE:: If the Implementaion Specification is based on a Standard known to be conformant with ISO 19107 (ex: GML), then conformance with that Standard is sufficient to show conformance with ISO 19107.
+
+part:: Validate that the Abstract Test Suite tests each POI Feature for the presence of a `SpatialAttributeType` property of type GM_Point, GM_LineString, or GM_Polygon.
 
 ====

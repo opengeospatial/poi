@@ -66,11 +66,8 @@ description:: Validate the cardinality and type of the `featureId` attribute.
 
 part:: Validate that one and only one 'featureId' attribute is allowed in an AbstractFeature class.
 
-part:: Validate that the `featureId` attribute is a valid implementation of the ID class from <<ISO19103,ISO 19103>>.  
+part:: Validate that the `featureId` attribute is a valid implementation of the GenericName class from <<ISO19103,ISO 19103>>.  
 ====
-
-NOTE: Validate use of ID class from ISO 19103
-
 
 ====== Abstract Feature-Identifier
 

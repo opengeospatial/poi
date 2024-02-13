@@ -6,6 +6,11 @@
 label:: /req/core/featurewithlifespan
 [.component,class=part]
 --
+An instantiation of the AbstractFeatureWithLifespan class SHALL be an accurate representation of the UML model for that class.
+--
+
+[.component,class=part]
+--
 An encoding of the AbstractFeatureWithLifespan class SHALL comply with requirement <<req_core_abstractfeature,/req/core/abstractfeature>>.
 --
 
@@ -39,6 +44,11 @@ An encoding of the AbstractFeatureWithLifespan class SHALL comply with requireme
 label:: /req/core/featurewithlifespan-creationdate
 [.component,class=part]
 --
+An instantiation of the AbstractFeatureWithLifespan class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `creationDate` attributes.
 --
 
@@ -54,6 +64,11 @@ Encodings of the `creationDate` attribute SHALL be a valid implementation of the
 ====
 [%metadata]
 label:: /req/core/featurewithlifespan-terminationdate
+[.component,class=part]
+--
+An instantiation of the AbstractFeatureWithLifespan class SHALL comply with the following criteria:
+--
+
 [.component,class=part]
 --
 An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `terminationDate` attributes.
@@ -73,6 +88,11 @@ Encodings of the `terminationDate` attribute SHALL be a valid implementation of 
 label:: /req/core/featurewithlifespan-validfrom
 [.component,class=part]
 --
+An instantiation of the AbstractFeatureWithLifespan class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `validFrom` attributes.
 --
 
@@ -88,6 +108,11 @@ Encodings of the `validFrom` attribute SHALL be a valid implementation of the Da
 ====
 [%metadata]
 label:: /req/core/featurewithlifespan-validto
+[.component,class=part]
+--
+An instantiation of the AbstractFeatureWithLifespan class SHALL comply with the following criteria:
+--
+
 [.component,class=part]
 --
 An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `validTo` attributes.

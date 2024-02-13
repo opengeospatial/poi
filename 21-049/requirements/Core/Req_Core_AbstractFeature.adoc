@@ -6,6 +6,11 @@
 label:: /req/core/abstractfeature
 [.component,class=part]
 --
+An instantiation of the AbstractFeature class SHALL be an accurate representation of the UML model for that class.
+--
+
+[.component,class=part]
+--
 An encoding of the AbstractFeature class SHALL be a compliant extension of the AnyFeature class defined in <<ISO19109,ISO 19109>>.
 --
 
@@ -38,6 +43,11 @@ An encoding of the AbstractFeature class SHALL comply with requirement <<req_cor
 label:: /req/core/abstractfeature-description
 [.component,class=part]
 --
+An instantiation of the AbstractFeature class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the AbstractFeature class SHALL include zero or one `description` attributes.
 --
 
@@ -55,12 +65,17 @@ Encodings of the `description` attribute SHALL be a valid implementation of the 
 label:: /req/core/abstractfeature-featureid
 [.component,class=part]
 --
+An instantiation of the AbstractFeature class SHALL comply with the following criteria:
+--
+
+[.component,class=part]
+--
 An encoding of the AbstractFeature class SHALL include one `featureID` attributes.
 --
 
 [.component,class=part]
 --
-Encodings of the `featureID` attribute SHALL be a valid implementation of the ID class from ISO 19103.
+Encodings of the `featureID` attribute SHALL be a valid implementation of the GenericName class from ISO 19103.
 --
 ====
 
@@ -70,6 +85,11 @@ Encodings of the `featureID` attribute SHALL be a valid implementation of the ID
 ====
 [%metadata]
 label:: /req/core/abstractfeature-identifier
+[.component,class=part]
+--
+An instantiation of the AbstractFeature class SHALL comply with the following criteria:
+--
+
 [.component,class=part]
 --
 An encoding of the AbstractFeature class SHALL include zero or one `identifier` attributes.
@@ -87,6 +107,11 @@ Encodings of the `identifier` attribute SHALL be a valid implementation of the S
 ====
 [%metadata]
 label:: /req/core/abstractfeature-name
+[.component,class=part]
+--
+An instantiation of the AbstractFeature class SHALL comply with the following criteria:
+--
+
 [.component,class=part]
 --
 An encoding of the AbstractFeature class SHALL include zero or more `name` attributes.
