@@ -108,5 +108,9 @@ image::./images/POI_Extensions.png[align="center"]
 
 In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. A collection of data types and concepts defined by the <<ISO19103,ISO 19103>>, <<ISO19107,ISO 19107>>, <<ISO19109,ISO 19109>>, and <<ISO19115,ISO 19115>> Standards is provided in <<iso_data_dictionary_section,Annex B>>.
 
+While the POI Payload should have a single syntactic model (schema), there may be more than one way to represent that model. For example, JSON Schemas are commonly provided using both JSON and YAML encodings. The POI abstract model allows a POI Payload to have mutiple `usesSchema` aggregations in order to support this practice. 
+
+The `hasDefinition` aggregation is provided in anticipation of the future use of ontologies to associate meaning (semantics) with the structure (syntax) of the POI Payload. Use of the `hasDefinition` aggregation is optional.  
+
 include::../requirements/core/Req_Core_POI-Payload.adoc[]
 

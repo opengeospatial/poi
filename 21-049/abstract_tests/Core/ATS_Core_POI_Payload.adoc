@@ -78,7 +78,7 @@ description:: Validate the cardinality and target class of the `hasFeatureOfInte
 
 part:: Validate that zero or more `hasFeatureOfIntestest` aggregations are allowed in an POI_Payload class.
 
-part:: Validate that the target of the `hasFeatureOfInterest` aggregation is a valid implementation of the Feature class from <<iso19109,ISO 19109:2015>>.
+part:: Validate that the target of the `hasFeatureOfInterest` aggregation is a valid implementation of the Feature class from <<ISO19109,ISO 19109:2015>>.
 ====
 
 

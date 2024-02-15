@@ -10,7 +10,7 @@ target:: /req/core/geometry
 
 classification:: Target Type: Implementation Specification
 
-test-purpose:: To validate that the POI Implementation Specification is conformant with the <<iso19107,ISO 19107>> Geometry Model.
+test-purpose:: To validate that the POI Implementation Specification is conformant with the <<ISO19107,ISO 19107>> Geometry Model.
 
 test-method-type:: Manual Inspection
 

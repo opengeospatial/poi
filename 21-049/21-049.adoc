@@ -14,7 +14,7 @@
 :fullname_2: Matthew Brian 
 :fullname_3: John Purss
 :docsubtype: conceptual
-:keywords: ogcdoc, OGC document, API, openapi, html
+:keywords: ogcdoc, OGC document, Point of Interest, POI, Feature 
 :submitting-organizations:  Digital Flanders; Google; HeazelTech; Pangaea Innovations; PEREY Research & Consulting; US Army Geospatial Center
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf

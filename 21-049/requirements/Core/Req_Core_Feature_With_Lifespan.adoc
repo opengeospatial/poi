@@ -54,7 +54,7 @@ An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `
 
 [.component,class=part]
 --
-Encodings of the `creationDate` attribute SHALL be a valid implementation of the DateTime class from ISO 19103.
+Encodings of the `creationDate` attribute SHALL be a valid implementation of the DateTime class from <<ISO19103,ISO 19103>>.
 --
 ====
 
@@ -76,7 +76,7 @@ An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `
 
 [.component,class=part]
 --
-Encodings of the `terminationDate` attribute SHALL be a valid implementation of the DateTime class from ISO 19103.
+Encodings of the `terminationDate` attribute SHALL be a valid implementation of the DateTime class from <<ISO19103,ISO 19103>>.
 --
 ====
 
@@ -98,7 +98,7 @@ An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `
 
 [.component,class=part]
 --
-Encodings of the `validFrom` attribute SHALL be a valid implementation of the DateTime class from ISO 19103.
+Encodings of the `validFrom` attribute SHALL be a valid implementation of the DateTime class from <<ISO19103,ISO 19103>>.
 --
 ====
 
@@ -120,7 +120,7 @@ An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one `
 
 [.component,class=part]
 --
-Encodings of the `validTo` attribute SHALL be a valid implementation of the DateTime class from ISO 19103.
+Encodings of the `validTo` attribute SHALL be a valid implementation of the DateTime class from <<ISO19103,ISO 19103>>.
 --
 ====
 

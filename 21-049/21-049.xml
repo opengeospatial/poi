@@ -2,8 +2,8 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.4.3" schema-version="v1.2.6">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC (Points of Interest)</title>
-<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2024-02-13</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2024-02-13</on></date><contributor><role type="author"/><organization>
-<name>Digital Flancers</name>
+<uri type="xml">./21-049.xml</uri><uri type="pdf">./21-049.pdf</uri><uri type="doc">./21-049.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal">21-049</docidentifier><docnumber>21-049</docnumber><date type="published"><on>2024-02-15</on></date><date type="issued"><on>2029-03-30</on></date><date type="received"><on>2024-02-15</on></date><contributor><role type="author"/><organization>
+<name>Digital Flanders</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Google</name>
 </organization></contributor><contributor><role type="author"/><organization>
@@ -32,7 +32,7 @@ In the broadest terms, a point of interest is a location about which information
 A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.</p>
 </abstract><status><stage>draft</stage></status><copyright><from>2024</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><table id="_misccontainer_anchor_aliases"><tbody><tr><th>_f343e6e7-10de-4a36-92cc-1787e0ff9577</th><td>http://www.opengis.net/spec/poi/1.0/conf/core</td></tr><tr><th>ats_core_general_feature_model</th><td>/conf/core/generalfeaturemodel</td></tr><tr><th>ats_core_geometry</th><td>/conf/core/geometry</td></tr><tr><th>ats_core_abstractfeature</th><td>/conf/core/abstractfeature</td></tr><tr><th>ats_core_abstractfeature-description</th><td>/conf/core/abstractfeature-description</td></tr><tr><th>ats_core_abstractfeature-featureid</th><td>/conf/core/abstractfeature-featureid</td></tr><tr><th>ats_core_abstractfeature-identifier</th><td>/conf/core/abstractfeature-identifier</td></tr><tr><th>ats_core_abstractfeature-name</th><td>/conf/core/abstractfeature-name</td></tr><tr><th>ats_core_featurewithlifespan</th><td>/conf/core/featurewithlifespan</td></tr><tr><th>ats_core_abstractfeature-creationdate</th><td>/conf/core/abstractfeature-creationdate</td></tr><tr><th>ats_core_abstractfeature-terminationdate</th><td>/conf/core/abstractfeature-terminationdate</td></tr><tr><th>ats_core_abstractfeature-validfrom</th><td>/conf/core/abstractfeature-validfrom</td></tr><tr><th>ats_core_abstractfeature-validto</th><td>/conf/core/abstractfeature-validto</td></tr><tr><th>ats_core_abstract-poi</th><td>/conf/core/astract-poi</td></tr><tr><th>ats_core_poi-contactinfo</th><td>/conf/core/poi-contactinfo</td></tr><tr><th>ats_core_poi-featureofinterest</th><td>/conf/core/poi-featureofinterest</td></tr><tr><th>ats_core_poi-metadata</th><td>/conf/core/poi-metadata</td></tr><tr><th>ats_core_poi-keywords</th><td>/conf/core/poi-keywords</td></tr><tr><th>ats_core_poi-rights</th><td>/conf/core/poi-rights</td></tr><tr><th>ats_core_poi-symbology</th><td>/conf/core/poi-symbology</td></tr><tr><th>ats_core_poi-haspayload</th><td>/conf/core/poi-haspayload</td></tr><tr><th>ats_core_link</th><td>/conf/core/link</td></tr><tr><th>ats_core_poi-payload</th><td>/conf/core/poi-payload</td></tr><tr><th>ats_core_poi-payload_usesschema</th><td>/conf/core/poi_payload/usesSchema</td></tr><tr><th>ats_core_poi-payload_hasdefinition</th><td>/conf/core/poi_payload/hasDefinition</td></tr><tr><th>ats_core_poi-payload_featureofinterest</th><td>/conf/core/poi_payload/featureofinterest</td></tr><tr><th>ats_core_poi</th><td>/conf/core/poi</td></tr></tbody></table><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Point of Interest</keyword><keyword>POI</keyword><keyword>Feature</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><table id="_misccontainer_anchor_aliases"><tbody><tr><th>_364c2d04-9ad4-44a1-a70c-737adab5cc71</th><td>http://www.opengis.net/spec/poi/1.0/conf/core</td></tr><tr><th>ats_core_general_feature_model</th><td>/conf/core/generalfeaturemodel</td></tr><tr><th>ats_core_geometry</th><td>/conf/core/geometry</td></tr><tr><th>ats_core_abstractfeature</th><td>/conf/core/abstractfeature</td></tr><tr><th>ats_core_abstractfeature-description</th><td>/conf/core/abstractfeature-description</td></tr><tr><th>ats_core_abstractfeature-featureid</th><td>/conf/core/abstractfeature-featureid</td></tr><tr><th>ats_core_abstractfeature-identifier</th><td>/conf/core/abstractfeature-identifier</td></tr><tr><th>ats_core_abstractfeature-name</th><td>/conf/core/abstractfeature-name</td></tr><tr><th>ats_core_featurewithlifespan</th><td>/conf/core/featurewithlifespan</td></tr><tr><th>ats_core_abstractfeature-creationdate</th><td>/conf/core/abstractfeature-creationdate</td></tr><tr><th>ats_core_abstractfeature-terminationdate</th><td>/conf/core/abstractfeature-terminationdate</td></tr><tr><th>ats_core_abstractfeature-validfrom</th><td>/conf/core/abstractfeature-validfrom</td></tr><tr><th>ats_core_abstractfeature-validto</th><td>/conf/core/abstractfeature-validto</td></tr><tr><th>ats_core_abstract-poi</th><td>/conf/core/abstract-poi</td></tr><tr><th>ats_core_poi-contactinfo</th><td>/conf/core/poi-contactinfo</td></tr><tr><th>ats_core_poi-featureofinterest</th><td>/conf/core/poi-featureofinterest</td></tr><tr><th>ats_core_poi-metadata</th><td>/conf/core/poi-metadata</td></tr><tr><th>ats_core_poi-keywords</th><td>/conf/core/poi-keywords</td></tr><tr><th>ats_core_poi-rights</th><td>/conf/core/poi-rights</td></tr><tr><th>ats_core_poi-symbology</th><td>/conf/core/poi-symbology</td></tr><tr><th>ats_core_poi-haspayload</th><td>/conf/core/poi-haspayload</td></tr><tr><th>ats_core_link</th><td>/conf/core/link</td></tr><tr><th>ats_core_poi-payload</th><td>/conf/core/poi-payload</td></tr><tr><th>ats_core_poi-payload_usesschema</th><td>/conf/core/poi_payload/usesSchema</td></tr><tr><th>ats_core_poi-payload_hasdefinition</th><td>/conf/core/poi_payload/hasDefinition</td></tr><tr><th>ats_core_poi-payload_featureofinterest</th><td>/conf/core/poi_payload/featureofinterest</td></tr><tr><th>ats_core_poi</th><td>/conf/core/poi</td></tr></tbody></table><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
 <clause id="_copyright_notice" obligation="normative">
@@ -445,7 +445,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_88ac34b5-a2e6-dfc0-c4bc-87d60f8b95d9">An encoding of the AbstractFeature class SHALL include zero or one <tt>description</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_04591292-1487-0de3-b5f5-a2909aee3688">Encodings of the <tt>description</tt> attribute SHALL be a valid implementation of the CharacterString class from ISO 19103.</p>
+<component exclude="false" class="part"><p id="_04591292-1487-0de3-b5f5-a2909aee3688">Encodings of the <tt>description</tt> attribute SHALL be a valid implementation of the CharacterString class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p>
 </component></requirement>
 
 <requirement id="req_core_abstractfeature-featureid" model="ogc">
@@ -456,7 +456,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_9a86dfbe-9ba4-f6d2-7ff9-1fbed50d1202">An encoding of the AbstractFeature class SHALL include one <tt>featureID</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_a2ff4058-c1b2-49ec-a45e-d165b4658b11">Encodings of the <tt>featureID</tt> attribute SHALL be a valid implementation of the GenericName class from ISO 19103.</p>
+<component exclude="false" class="part"><p id="_a2ff4058-c1b2-49ec-a45e-d165b4658b11">Encodings of the <tt>featureID</tt> attribute SHALL be a valid implementation of the GenericName class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p>
 </component></requirement>
 
 <requirement id="req_core_abstractfeature-identifier" model="ogc">
@@ -467,7 +467,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_d3298f8d-58e0-5f09-b72b-291b917a1fd1">An encoding of the AbstractFeature class SHALL include zero or one <tt>identifier</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_e266d8d1-7deb-dd37-41e7-4784aee347a6">Encodings of the <tt>identifier</tt> attribute SHALL be a valid implementation of the ScopedName class from ISO 19103.</p>
+<component exclude="false" class="part"><p id="_e266d8d1-7deb-dd37-41e7-4784aee347a6">Encodings of the <tt>identifier</tt> attribute SHALL be a valid implementation of the ScopedName class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p>
 </component></requirement>
 
 <requirement id="req_core_abstractfeature-name" model="ogc">
@@ -478,7 +478,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_76bde2c5-d965-dbf5-00ae-fea9f99cec13">An encoding of the AbstractFeature class SHALL include zero or more <tt>name</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_59b00806-cc43-545d-acfa-76fba88150b5">Encodings of the <tt>name</tt> attribute SHALL be a valid implementation of the GenericName class from ISO 19103.</p>
+<component exclude="false" class="part"><p id="_59b00806-cc43-545d-acfa-76fba88150b5">Encodings of the <tt>name</tt> attribute SHALL be a valid implementation of the GenericName class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p>
 </component></requirement>
 </clause>
 
@@ -509,7 +509,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_454d1efd-c8ba-bae8-0a25-d19a3a0f611e">An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one <tt>creationDate</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_87388a3b-a7d5-8779-57fa-723c45e30ff7">Encodings of the <tt>creationDate</tt> attribute SHALL be a valid implementation of the DateTime class from ISO 19103.</p>
+<component exclude="false" class="part"><p id="_87388a3b-a7d5-8779-57fa-723c45e30ff7">Encodings of the <tt>creationDate</tt> attribute SHALL be a valid implementation of the DateTime class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p>
 </component></requirement>
 
 <requirement id="req_core_feature_with_lifespan_terminationdate" model="ogc">
@@ -520,7 +520,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_aea17330-e032-f36b-53f9-c300f7439d9c">An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one <tt>terminationDate</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_6c7ddc69-2fe6-af64-d0d0-88105ea5379b">Encodings of the <tt>terminationDate</tt> attribute SHALL be a valid implementation of the DateTime class from ISO 19103.</p>
+<component exclude="false" class="part"><p id="_6c7ddc69-2fe6-af64-d0d0-88105ea5379b">Encodings of the <tt>terminationDate</tt> attribute SHALL be a valid implementation of the DateTime class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p>
 </component></requirement>
 
 <requirement id="req_core_feature_with_lifespan_validfrom" model="ogc">
@@ -531,7 +531,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_792b9de1-8c40-f73b-d633-be24681f6a44">An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one <tt>validFrom</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_b4c35488-940a-72b1-bd28-da6df4a5c030">Encodings of the <tt>validFrom</tt> attribute SHALL be a valid implementation of the DateTime class from ISO 19103.</p>
+<component exclude="false" class="part"><p id="_b4c35488-940a-72b1-bd28-da6df4a5c030">Encodings of the <tt>validFrom</tt> attribute SHALL be a valid implementation of the DateTime class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p>
 </component></requirement>
 
 <requirement id="req_core_feature_with_lifespan_validto" model="ogc">
@@ -542,7 +542,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_51fbf84f-f4d6-d97a-ee3a-6c971ba19ec7">An encoding of the AbstractFeatureWithLifespan class SHALL include zero or one <tt>validTo</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_e0361e6d-e7a1-f837-35e9-0489327dd26b">Encodings of the <tt>validTo</tt> attribute SHALL be a valid implementation of the DateTime class from ISO 19103.</p>
+<component exclude="false" class="part"><p id="_e0361e6d-e7a1-f837-35e9-0489327dd26b">Encodings of the <tt>validTo</tt> attribute SHALL be a valid implementation of the DateTime class from <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>.</p>
 </component></requirement>
 </clause>
 </clause>
@@ -596,7 +596,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_acacfe41-ca9f-3169-6b4c-57e19283c8d2">An encoding of the Abstract POI class SHALL include one or more <tt>contactInfo</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_8b0fe6a6-8c7f-2ea3-7081-8a21914ac8b1">Encodings of the <tt>contactInfo</tt> attribute SHALL be a valid implementation of the CI_Responsibility class from ISO 19115-1:2014</p>
+<component exclude="false" class="part"><p id="_8b0fe6a6-8c7f-2ea3-7081-8a21914ac8b1">Encodings of the <tt>contactInfo</tt> attribute SHALL be a valid implementation of the CI_Responsibility class from <eref type="inline" bibitemid="ISO19115" citeas="ISO 19115-1:2014">ISO 19115-1:2014</eref></p>
 </component></requirement>
 
 <requirement id="req_core_POI_featureOfInterest" model="ogc">
@@ -607,7 +607,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_eb75ea1a-5a78-ad90-fdb9-2e7b8086bf27">An encoding of the Abstract POI class SHALL include zero or more associated instances of the <tt>FeatureOfInterest</tt> class.</p>
 </component>
-<component exclude="false" class="part"><p id="_3d46b9da-cd4a-89a1-3816-6a31f1e9b736">The target of the <tt>hasFeatureOfIntestest</tt> aggregation SHALL be a valid implementation of the Feature class from <xref target="iso19109">ISO 19109:2015</xref></p>
+<component exclude="false" class="part"><p id="_3d46b9da-cd4a-89a1-3816-6a31f1e9b736">The target of the <tt>hasFeatureOfIntestest</tt> aggregation SHALL be a valid implementation of the Feature class from <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109:2015</eref></p>
 </component></requirement>
 
 <requirement id="req_core_POI_metadata" model="ogc">
@@ -629,7 +629,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_cf1fd9f0-30ae-a2bd-5284-6382b798eb7f">An encoding of the Abstract POI class SHALL include zero or more <tt>keywords</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_5276987a-cd59-a1b4-9b13-5ed3ee9c7fe7">Encodings of the <tt>keywords</tt> attribute SHALL be a valid implementation of the MD_Keywords class from ISO 19115-1:2014</p>
+<component exclude="false" class="part"><p id="_9ba1c375-1716-db7b-feaf-04a901f42ff4">Encodings of the <tt>keywords</tt> attribute SHALL be a valid implementation of the MD_Keywords class from <eref type="inline" bibitemid="ISO19115" citeas="ISO 19115-1:2014">ISO 19115-1:2014</eref>.</p>
 </component></requirement>
 
 <requirement id="req_core_POI_rights" model="ogc">
@@ -640,7 +640,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <component exclude="false" class="part"><p id="_4864693c-9deb-b6e3-260f-6ec2579b6116">An encoding of the Abstract POI class SHALL include zero, one, or two <tt>rights</tt> attributes.</p>
 </component>
-<component exclude="false" class="part"><p id="_b5cd1a5f-6bc6-b09d-09da-b4287e221eb1">Encodings of the <tt>rights</tt> attribute SHALL be a valid implementation of the MD_Constraints class from ISO 19115-1:2014</p>
+<component exclude="false" class="part"><p id="_fd609d9c-d54a-3786-3de7-e51a01bf0d20">Encodings of the <tt>rights</tt> attribute SHALL be a valid implementation of the MD_Constraints class from <eref type="inline" bibitemid="ISO19115" citeas="ISO 19115-1:2014">ISO 19115-1:2014</eref>.</p>
 </component></requirement>
 
 <requirement id="req_core_POI_symbology" model="ogc">
@@ -703,6 +703,10 @@ The term was first used in this way in the general theory of object-oriented pro
 </ul>
 
 <p id="_75696ff1-d92f-c52b-72a1-9141ead920cc">In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. A collection of data types and concepts defined by the <eref type="inline" bibitemid="ISO19103" citeas="ISO 19103">ISO 19103</eref>, <eref type="inline" bibitemid="ISO19107" citeas="ISO 19107:2003">ISO 19107</eref>, <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109</eref>, and <eref type="inline" bibitemid="ISO19115" citeas="ISO 19115-1:2014">ISO 19115</eref> Standards is provided in <xref target="iso_data_dictionary_section">Annex B</xref>.</p>
+
+<p id="_0087547a-a08c-a3de-b666-e3ebb5916bd4">While the POI Payload should have a single syntactic model (schema), there may be more than one way to represent that model. For example, JSON Schemas are commonly provided using both JSON and YAML encodings. The POI abstract model allows a POI Payload to have mutiple <tt>usesSchema</tt> aggregations in order to support this practice.</p>
+
+<p id="_e0c08628-f09a-2ab2-5b56-1120539b733f">The <tt>hasDefinition</tt> aggregation is provided in anticipation of the future use of ontologies to associate meaning (semantics) with the structure (syntax) of the POI Payload. Use of the <tt>hasDefinition</tt> aggregation is optional.</p>
 
 <requirement id="req_core_POI-Payload" model="ogc">
 <title>Requirement — POI-Payload</title><classification><tag>label</tag><value>/req/core/poi-payload</value></classification>
@@ -1070,7 +1074,7 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <clause id="_geometry" obligation="informative">
 <title>Geometry</title>
-<requirement id="ats_core_geometry" model="ogc" type="abstracttest"> <identifier>/conf/core/geometry</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/geometry</value></classification><classification><tag>NOTE</tag><value>If the Implementaion Specification is based on a Standard known to be conformant with ISO 19107 (ex: GML), then conformance with that Standard is sufficient to show conformance with ISO 19107.</value></classification><component class="test-purpose"><p id="_b3e452ad-e3cc-20db-17b1-49b8c57b513e">To validate that the POI Implementation Specification is conformant with the <xref target="iso19107">ISO 19107</xref> Geometry Model.</p>
+<requirement id="ats_core_geometry" model="ogc" type="abstracttest"> <identifier>/conf/core/geometry</identifier><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/geometry</value></classification><classification><tag>NOTE</tag><value>If the Implementaion Specification is based on a Standard known to be conformant with ISO 19107 (ex: GML), then conformance with that Standard is sufficient to show conformance with ISO 19107.</value></classification><component class="test-purpose"><p id="_b3e452ad-e3cc-20db-17b1-49b8c57b513e">To validate that the POI Implementation Specification is conformant with the <eref type="inline" bibitemid="ISO19107" citeas="ISO 19107:2003">ISO 19107</eref> Geometry Model.</p>
 </component><component class="test-method-type"><p id="_2e245606-a566-3642-9149-d73a3339c3d6">Manual Inspection</p>
 </component><description><p id="_d3f83a81-68bf-a76d-f95c-48cae4b828b1">Inspect the POI Implementation Specification for the following:</p>
 </description><component class="part"><p id="_03526e1f-d1f1-476c-adac-873c09ac6c22">Validate that the Implementation Specification includes an Abstract Test Suite (Annex A).</p>
@@ -1199,11 +1203,11 @@ The term was first used in this way in the general theory of object-oriented pro
 
 <clause id="_abstract_poi_2" obligation="informative">
 <title>Abstract POI</title>
-<requirement id="ats_core_abstract-poi" model="ogc" type="abstracttest"> <identifier>/conf/core/astract-poi</identifier><inherit>/conf/core/featurewithlifespan</inherit><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstract-poi</value></classification><component class="test-purpose"><p id="_8e6a501b-5789-b9ec-f359-e46ebfe59528">To validate that the Implementation Specification implements the AbstractPOI class as defined in the POI Conceptual Model.</p>
+<requirement id="ats_core_abstract-poi" model="ogc" type="abstracttest"> <identifier>/conf/core/abstract-poi</identifier><inherit>/conf/core/featurewithlifespan</inherit><classification><tag>Target Type</tag><value>Implementation Specification</value></classification><classification><tag>target</tag><value>/req/core/abstract-poi</value></classification><component class="test-purpose"><p id="_8e6a501b-5789-b9ec-f359-e46ebfe59528">To validate that the Implementation Specification implements the AbstractPOI class as defined in the POI Conceptual Model.</p>
 </component><component class="test-method-type"><p id="_82286e31-8f41-dfc2-a651-63ec18e90b77">Manual Inspection</p>
 </component><description><p id="_33ca60ec-f8bb-f146-237e-b6a9e851ce69">Validate that the Implementation Specification correctly implements the AbstractPOI class:</p>
 </description><component class="part"><p id="_eb887a9f-2e90-872f-c6fd-9ebdb9579731">Validate that the implementation of the AbstractPOI class is also a valid implementation of the AbstractFeatureWithLifespan class using test <xref target="ats_core_featurewithlifespan">/conf/core/featurewithlifespan</xref>.</p>
-</component><component class="part"><p id="_f824d7ea-d785-ed49-b327-c438238b0553">Validate correct implementation of the <tt>contactInfo</tt> attribute using test &lt;&lt;ats_core_poi-contactinfo,/conf/core/poi-contactinfo&gt;.</p>
+</component><component class="part"><p id="_8c85fb13-0b3d-1129-3d4a-d08c2ce5b7a4">Validate correct implementation of the <tt>contactInfo</tt> attribute using test <xref target="ats_core_poi-contactinfo">/conf/core/poi-contactinfo</xref>.</p>
 </component><component class="part"><p id="_39557d58-59bb-0fd4-a17c-1671cff1f22a">Validate correct implementation of the <tt>hasFeatureOfInterest</tt> aggregation using the test <xref target="ats_core_poi-featureofinterest">/conf/core/poi-featureOfInterest</xref>.</p>
 </component><component class="part"><p id="_f714449f-8a40-217e-594f-c75cf12562ab">Validate correct implementation of the <tt>hasMetadata</tt> association using the test <xref target="ats_core_poi-metadata">/conf/core/POI-Metadata</xref>.</p>
 </component><component class="part"><p id="_7e4c4e65-46cb-4fe0-d641-c1ea43661e86">Validate correct implementation of the <tt>keywords</tt> attribute using the test <xref target="ats_core_poi-keywords">/conf/core/poi-keywords</xref>.</p>
@@ -1219,7 +1223,7 @@ The term was first used in this way in the general theory of object-oriented pro
 </component><component class="test-method-type"><p id="_b8745365-9052-5eb5-5c6f-bff6fe6e7954">Manual Inspection</p>
 </component><description><p id="_4847df50-5962-0859-5243-079014e9ad23">Validate the cardinality and type of the <tt>contactInfo</tt> attribute.</p>
 </description><component class="part"><p id="_bd7c0f04-cd88-72cf-fe1f-d238aec25ce4">Validate that zero or more <tt>contactInfo</tt> attributes are allowed in an AbstractPOI class.</p>
-</component><component class="part"><p id="_0c0bf520-7688-7b9b-bce8-37356b0ad50f">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the CI_Responsibility class from <xref target="iso19115">ISO 19115-1:2014</xref>.</p>
+</component><component class="part"><p id="_0c0bf520-7688-7b9b-bce8-37356b0ad50f">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the CI_Responsibility class from <eref type="inline" bibitemid="ISO19115" citeas="ISO 19115-1:2014">ISO 19115-1:2014</eref>.</p>
 </component>
 </requirement>
 </clause>
@@ -1230,7 +1234,7 @@ The term was first used in this way in the general theory of object-oriented pro
 </component><component class="test-method-type"><p id="_b42daed7-c8b4-ba9f-38be-fc9232356307">Manual Inspection</p>
 </component><description><p id="_af9acd90-c877-19a0-d4ec-f381f39fae13">Validate the cardinality and target class of the <tt>hasFeatureOfInterest</tt> aggregation.</p>
 </description><component class="part"><p id="_cf3b0d2a-4ff9-c46c-145b-289e3575370a">Validate that zero or more <tt>hasFeatureOfIntestest</tt> aggregations are allowed in an AbstractPOI class.</p>
-</component><component class="part"><p id="_e9aefc1c-8de6-ad8c-a8c8-6233a1dc9f8c">Validate that the target of the <tt>hasFeatureOfIntestest</tt> aggregation is a valid implementation of the Feature class from <xref target="iso19109">ISO 19109:2015</xref>.</p>
+</component><component class="part"><p id="_e9aefc1c-8de6-ad8c-a8c8-6233a1dc9f8c">Validate that the target of the <tt>hasFeatureOfIntestest</tt> aggregation is a valid implementation of the Feature class from <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109:2015</eref>.</p>
 </component>
 </requirement>
 </clause>
@@ -1252,7 +1256,7 @@ The term was first used in this way in the general theory of object-oriented pro
 </component><component class="test-method-type"><p id="_34a00e42-e1f8-ec74-9fc6-610a678e9556">Manual Inspection</p>
 </component><description><p id="_69ae91f8-362c-4489-0ec8-f72e983db5af">Validate the cardinality and type of the <tt>keywords</tt> attribute.</p>
 </description><component class="part"><p id="_448edce3-700a-e52e-853e-ed0e749d2a1c">Validate that zero or more <tt>keywords</tt> attributes are allowed in an AbstractPOI class.</p>
-</component><component class="part"><p id="_a86ecf8c-e8cd-fa9b-f5fd-2e1482aea0f5">Validate that the <tt>keywords</tt> attribute is a valid implementation of the MD_Keywords class from <xref target="iso19115">ISO 19115-1:2014</xref>.</p>
+</component><component class="part"><p id="_a86ecf8c-e8cd-fa9b-f5fd-2e1482aea0f5">Validate that the <tt>keywords</tt> attribute is a valid implementation of the MD_Keywords class from <eref type="inline" bibitemid="ISO19115" citeas="ISO 19115-1:2014">ISO 19115-1:2014</eref>.</p>
 </component>
 </requirement>
 </clause>
@@ -1263,7 +1267,7 @@ The term was first used in this way in the general theory of object-oriented pro
 </component><component class="test-method-type"><p id="_48684878-f4a4-d94b-01ec-93b41defc1e3">Manual Inspection</p>
 </component><description><p id="_6d5b415a-0eb9-bd54-1cfc-b5ee23ec42e5">Validate the cardinality and type of the <tt>rights</tt> attribute.</p>
 </description><component class="part"><p id="_017880ef-dcc6-aa88-9daf-57e8fea66f8e">Validate that zero, one, or two <tt>rights</tt> attributes are allowed in an AbstractPOI class.</p>
-</component><component class="part"><p id="_411ae0b7-6ccf-bfaf-7bf5-bf6137d80618">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the MD_Constraints class from <xref target="iso19115">ISO 19115-1:2014</xref>.</p>
+</component><component class="part"><p id="_411ae0b7-6ccf-bfaf-7bf5-bf6137d80618">Validate that the <tt>contactInfo</tt> attribute is a valid implementation of the MD_Constraints class from <eref type="inline" bibitemid="ISO19115" citeas="ISO 19115-1:2014">ISO 19115-1:2014</eref>.</p>
 </component>
 </requirement>
 </clause>
@@ -1339,7 +1343,7 @@ The term was first used in this way in the general theory of object-oriented pro
 </component><component class="test-method-type"><p id="_ed802bf4-e2ac-4b3e-42d6-d5ff3f2aeb78">Manual Inspection</p>
 </component><description><p id="_8d769265-047b-ca48-1f86-773aedecda3f">Validate the cardinality and target class of the <tt>hasFeatureOfInterest</tt> aggregation.</p>
 </description><component class="part"><p id="_2f11b172-a0f6-d7fa-9cd8-04baaf56e59a">Validate that zero or more <tt>hasFeatureOfIntestest</tt> aggregations are allowed in an POI_Payload class.</p>
-</component><component class="part"><p id="_53bc98f6-ad15-970d-4beb-222c86e1b8e0">Validate that the target of the <tt>hasFeatureOfInterest</tt> aggregation is a valid implementation of the Feature class from <xref target="iso19109">ISO 19109:2015</xref>.</p>
+</component><component class="part"><p id="_53bc98f6-ad15-970d-4beb-222c86e1b8e0">Validate that the target of the <tt>hasFeatureOfInterest</tt> aggregation is a valid implementation of the Feature class from <eref type="inline" bibitemid="ISO19109" citeas="ISO 19109:2015">ISO 19109:2015</eref>.</p>
 </component>
 </requirement>
 </clause>
@@ -2232,7 +2236,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
 </clause>
 </annex><annex id="_revision_history" obligation="informative">
 <title>Revision History</title>
-<table id="_6699be8d-a663-b6c2-cfeb-e8fc2152d9b1" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
+<table id="_abd123ea-7ece-1d7d-5846-7c1a31fc3c82" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
 <th valign="middle" align="left">Release</th>
 <th valign="middle" align="left">Editor</th>
 <th valign="middle" align="left">Primary clauses modified</th>
@@ -2243,16 +2247,11 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
 <td valign="middle" align="left">Matthew Purss</td>
 <td valign="middle" align="left">all</td>
 <td valign="middle" align="left">initial version</td>
-</tr><tr><td valign="middle" align="left">2021-07-08</td>
-<td valign="middle" align="left">0.0.1</td>
-<td valign="middle" align="left">Matthew Purss</td>
-<td valign="middle" align="left">Clause 1</td>
-<td valign="middle" align="left">initial scope text inserted from original POI draft standard</td>
-</tr><tr><td valign="middle" align="left">2021-07-09</td>
-<td valign="middle" align="left">0.0.1</td>
-<td valign="middle" align="left">Matthew Purss</td>
-<td valign="middle" align="left">Clause 4</td>
-<td valign="middle" align="left">initial terms inserted from original POI draft standard (and reformatted to meet formal definition requirements)</td>
+</tr><tr><td valign="middle" align="left">2024-02-15</td>
+<td valign="middle" align="left">1.0.0</td>
+<td valign="middle" align="left">Chuck Heazel</td>
+<td valign="middle" align="left">all</td>
+<td valign="middle" align="left">POI draft standard for OAB review</td>
 </tr></tbody>
 </table>
 </annex><bibliography><references id="References" normative="true" obligation="informative">
@@ -2667,7 +2666,7 @@ Not all methods for NameSpaces need to be made publicly accessible.</td>
 <name>ISO</name>
           </organization>        </owner>      </copyright>      <place>Geneva</place>    </bibitem>
   </relation>  <place>Geneva</place></bibitem><bibitem id="ISO19150-1" type="standard">
-<title format="text/plain">nofetch</title>
+<title format="text/plain">Geographic information — Ontology — Part 1: Framework. International Organization for Standardization, Geneva <link target="https://www.iso.org/standard/57465.html"><link target="https://www.iso.org/standard/57465.html"/></link>.</title>
 <docidentifier type="ISO">ISO 19150-1</docidentifier><docnumber>19150-1</docnumber><contributor><role type="publisher"/><organization>
 <name>ISO</name>
 </organization></contributor></bibitem><bibitem id="ISO19150-2" type="standard" schema-version="v1.2.4">  <fetched>2024-02-08</fetched>  

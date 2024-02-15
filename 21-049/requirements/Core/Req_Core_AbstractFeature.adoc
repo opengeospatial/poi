@@ -53,7 +53,7 @@ An encoding of the AbstractFeature class SHALL include zero or one `description`
 
 [.component,class=part]
 --
-Encodings of the `description` attribute SHALL be a valid implementation of the CharacterString class from ISO 19103.
+Encodings of the `description` attribute SHALL be a valid implementation of the CharacterString class from <<ISO19103,ISO 19103>>.
 --
 ====
 
@@ -75,7 +75,7 @@ An encoding of the AbstractFeature class SHALL include one `featureID` attribute
 
 [.component,class=part]
 --
-Encodings of the `featureID` attribute SHALL be a valid implementation of the GenericName class from ISO 19103.
+Encodings of the `featureID` attribute SHALL be a valid implementation of the GenericName class from <<ISO19103,ISO 19103>>.
 --
 ====
 
@@ -97,7 +97,7 @@ An encoding of the AbstractFeature class SHALL include zero or one `identifier` 
 
 [.component,class=part]
 --
-Encodings of the `identifier` attribute SHALL be a valid implementation of the ScopedName class from ISO 19103.
+Encodings of the `identifier` attribute SHALL be a valid implementation of the ScopedName class from <<ISO19103,ISO 19103>>.
 --
 ====
 
@@ -119,6 +119,6 @@ An encoding of the AbstractFeature class SHALL include zero or more `name` attri
 
 [.component,class=part]
 --
-Encodings of the `name` attribute SHALL be a valid implementation of the GenericName class from ISO 19103.
+Encodings of the `name` attribute SHALL be a valid implementation of the GenericName class from <<ISO19103,ISO 19103>>.
 --
 ====

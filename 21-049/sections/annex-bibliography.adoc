@@ -13,7 +13,7 @@
 * [[[ISO19136-1,ISO 19136-1]]]
 * [[[ISO1087-1,ISO 1087-1]]]
 * [[[ISO19104,ISO 19104]]]
-* [[[ISO19150-1,ISO 19150-1]]] nofetch
+* [[[ISO19150-1,ISO 19150-1]]] _Geographic information — Ontology — Part 1: Framework._ International Organization for Standardization, Geneva https://www.iso.org/standard/57465.html[https://www.iso.org/standard/57465.html].
 * [[[ISO19150-2,ISO 19150-2]]]
 * [[[ISO19150-4,ISO 19150-4]]]
 * [[[ISO19160-4,ISO 19160-4]]]
