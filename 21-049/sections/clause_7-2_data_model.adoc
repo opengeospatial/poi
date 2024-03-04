@@ -9,7 +9,7 @@ The following data types are used in the POI UML model.
 |*CharacterString* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! Characterstring  is a family  of  datatypes which  represent strings of symbols  from  standard character-sets. The semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.1.5. (ISO 19103) 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! CharacterString  is a family  of  datatypes which  represent strings of symbols  from  standard character-sets. The semantics of CharacterString is in accordance with ISO/IEC 11404:2007 clause 10.1.5. (ISO 19103) 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! none 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «Type»
 !===

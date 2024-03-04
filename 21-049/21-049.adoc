@@ -1,4 +1,4 @@
-= OGC (Points of Interest)
+= OGC (Points of Interest) Conceptual Model Standard
 :doctype: standard
 :encoding: utf-8
 :lang: en
@@ -7,12 +7,13 @@
 :draft: 0.1.1
 :external-id: http://www.opengis.net/doc/is/poi/1.0
 :docnumber: 21-049
-:received-date: 2024-02-15
-:issued-date: 2029-03-30
-:published-date: 2024-02-15
+:received-date: 2024-03-04
+:issued-date: 2024-03-04
+:published-date: 2024-03-04
 :fullname: Charles Heazel
-:fullname_2: Matthew Brian 
-:fullname_3: John Purss
+:fullname_2: Matthew Purss
+:fullname_3: Howard Trickey
+:fullname_4: Christine Perey
 :docsubtype: conceptual
 :keywords: ogcdoc, OGC document, Point of Interest, POI, Feature 
 :submitting-organizations:  Digital Flanders; Google; HeazelTech; Pangaea Innovations; PEREY Research & Consulting; US Army Geospatial Center

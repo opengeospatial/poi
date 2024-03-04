@@ -2,7 +2,7 @@
 == Conventions
 
 === Identifiers
-The normative provisions in this document are denoted by the URI
+The normative provisions in this document are denoted by the URI:
 
 `http://www.opengis.net/spec/POI/1.0`
 
@@ -11,17 +11,17 @@ All requirements and conformance tests that appear in this document are denoted 
 [[uml_notation_section]]
 === UML Notation
 
-The POI Conceptual Model (CM) Standard is defined in a <<omguml,Unified Modeling Language>> (UML) model. It is presented in this document through diagrams using the UML static structure diagram. The UML notations used in this standard are described in the diagram in <<figure-1>>.
+The POI Conceptual Model (CM) Standard is documented as a <<omguml,Unified Modeling Language>> (UML) model. The model is presented in this document through diagrams using the UML static structure diagram. The UML notations used in this standard are described in the diagram in <<figure-1>>.
 
 [[figure-1]]
 .UML notation (see ISO TS 19103, Geographic information - Conceptual schema language).
 image::images/UML_Notation.png[align="center"]
 
-All associations between model elements in the POI Conceptual Model are uni-directional. Thus, associations in the model are navigable in only one direction. The direction of navigation is depicted by an arrowhead. In general, the context an element takes within the association is indicated by its role. The role is displayed near the target of the association. If the graphical representation is ambiguous though, the position of the role has to be drawn to the element the association points to.
+All associations between model elements in the POI Conceptual Model are unidirectional. Thus, associations in the model are navigable in only one direction. The direction of navigation is depicted by an arrowhead. In general, the context an element takes within the association is indicated by its role. The role is displayed near the target of the association. If the graphical representation is ambiguous though, the position of the role must be drawn to the element the association points to.
 
 Aggregations are a form of association where the Component Class is treated as an attribute of the Aggregate Class. However, the Component Class is not an integral part of the Aggregate Class. A Component Class can be aggregated by more than one Aggregate Class.
 
-Compositions are a form of association where the Component Class is treated as an attribute of the Composit Class. Component Classes are an integral part of the Composit Class and cannot be sharred by multiple Composit Classes. No Compositions are used in this Standard.  
+Compositions are a form of association where the Component Class is treated as an attribute of the Composite Class. Component Classes are an integral part of the Composite Class and cannot be shared by multiple Composite Classes. No Compositions are used in this Standard.  
 
 The following stereotypes are used in this model:
 
@@ -30,7 +30,7 @@ The following stereotypes are used in this model:
 * &#171;__FeatureType__&#187; represents features that are similar and exhibit common characteristics. Features are abstractions of real-world phenomena and have an identity.
 * &#171;__Metaclass__&#187; (Optional) a profile class and packageable element which may be extended through one or more stereotypes, which defines how an existing metaclass may be extended as part of a profile. 
 * &#171;__Property__&#187; denotes attributes and association roles. This stereotype does not add further semantics to the conceptual model but is required to be able to add tagged values to the attributes and association roles that are relevant for the encoding.
-* &#171;__Type__&#187; denotes classes that are not directly instantiable, but are used as an abstract collection of operation, attribute and relation signatures. The stereotype is used in the POI Conceptual Model only for classes that are imported from the ISO standards 19103, 19107, 19109, and 19115.
+* &#171;__Type__&#187; denotes classes that are not directly instantiable, but are used as an abstract collection of operation, attribute, and relation signatures. The stereotype is used in the POI Conceptual Model only for classes that are imported from the ISO standards 19103, 19107, 19109, and 19115.
 
 To enhance the readability of the POI UML diagrams, classes are depicted in different colors. The following coloring scheme is applied:
 

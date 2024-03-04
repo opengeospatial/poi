@@ -36,7 +36,7 @@ test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and target class of the `usesSchema` aggregation.
 
-part:: Validate that at least one `usesSchema` aggregation is allowed in an POI_Payload class.
+part:: Validate that at least one `usesSchema` aggregation is allowed in a POI_Payload class.
 
 part:: Validate that the target of the `usesSchema` aggregation is a valid schema for the implementing technology.
 ====
@@ -56,7 +56,7 @@ test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and target class of the `hasDefinition` aggregation.
 
-part:: Validate that no more than one `hasDefinition` aggregation is allowed in an POI_Payload class.
+part:: Validate that no more than one `hasDefinition` aggregation is allowed in a POI_Payload class.
 
 part:: Validate that the target of the `hasDefinition` aggregation is a valid ontology for the implementing technology.
 ====
@@ -76,7 +76,7 @@ test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and target class of the `hasFeatureOfInterest` aggregation.
 
-part:: Validate that zero or more `hasFeatureOfIntestest` aggregations are allowed in an POI_Payload class.
+part:: Validate that zero or more `hasFeatureOfIntestest` aggregations are allowed in a POI_Payload class.
 
 part:: Validate that the target of the `hasFeatureOfInterest` aggregation is a valid implementation of the Feature class from <<ISO19109,ISO 19109:2015>>.
 ====

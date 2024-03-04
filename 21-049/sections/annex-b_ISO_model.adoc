@@ -2,9 +2,9 @@
 [[iso_data_dictionary_section]]
 == ISO Data Dictionary
 
-ISO Technical Committee 211 maintains a harmonized UML model which covers many of their standards. All of the TC211 Standards which are relevant to the POI Standard are included. Therefore the full UML model for POI consists of the classes defined in the POI UML model as well as those which referenced from the TC211 Hamonized UML model.
+ISO Technical Committee 211 maintains a harmonized UML model which covers many of their standards. All the TC211 Standards which are relevant to the POI Standard are included. Therefore the full UML model for POI consists of the classes defined in the POI UML model as well as those which referenced from the TC211 Harmonized UML model.
 
-The Data Dictionary tables in this section were software generated from the TC211 Hamonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.
+The Data Dictionary tables in this section were software generated from the TC211 Harmonized UML model. As such, this section provides a normative representation of the TC211 classes which are leveraged by the POI Conceptual Model.
 
 Note that some of the properties in the ISO model are not populated. Since the model is normative, the missing information cannot be included in this document until it is first included in the ISO model by TC211.
 
@@ -41,7 +41,7 @@ In an implementation this abstract class shall be substituted by a concrete clas
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! feature: abstraction of real world phenomena +
 NOTE: A feature may occur as a type or an instance. Feature type or feature instance should be used when only one is meant. +
-This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instanciated as feature classes in an Application Schema
+This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instantiated as feature classes in an Application Schema
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! IdentifiedType 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «Metaclass»
 !{nbsp}{nbsp}{nbsp}{nbsp}Constraint: ! name is mandatory (Invariant):     
@@ -142,7 +142,7 @@ NOTE In most cases, the state of a GM_Point is fully determined by its position 
 |*GM_Polygon* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A GM_Polygon (Figure 21) is a surface patch that is defined by a set of boundary curves and an underlying surface to which these curves adhere. The default is that the curves are coplanar and the polygon uses planar interpolation in its interior.  
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A GM_Polygon (Figure 21) is a surface patch that is defined by a set of boundary curves and an underlying surface to which these curves adhere. The default is that the curves are coplanar, and the polygon uses planar interpolation in its interior.  
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! GM_Primitive 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: !  «type»
 !===
@@ -318,7 +318,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
  
 !{set:cellbgcolor:#FFFFFF} graphic   !MD_BrowseGraphic  [0..*] !graphic /symbol indicating the constraint 
  
-!{set:cellbgcolor:#FFFFFF} reference   !CI_Citation  [0..*] !citation/URL for the limitation or constraint, eg. copyright statement, license agreement, etc
+!{set:cellbgcolor:#FFFFFF} reference   !CI_Citation  [0..*] !citation/URL for the limitation or constraint, e.g. copyright statement, license agreement, etc
  
 !{set:cellbgcolor:#FFFFFF} releasability   !<<MD_Releasability-section,MD_Releasability>>  [0..1] !information concerning the parties to whom the resource can or cannot be released
  
@@ -424,7 +424,7 @@ The following classes are defined in <<ISO19115,(ISO 19115-1 Edition 1)>>
  
 !{set:cellbgcolor:#FFFFFF} conceptIdentifier   !URI  [0..1] !URI of concept in ontology specified by the ontology attribute; this concept is labeled by the className: CharacterString.
  
-!{set:cellbgcolor:#FFFFFF} ontology   !CI_Citation [1..1]  !a reference that binds the keyword class to a formal conceptualization of a knowledge domain for use in semantic processingNOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology
+!{set:cellbgcolor:#FFFFFF} ontology   !CI_Citation [1..1]  !a reference that binds the keyword class to a formal conceptualization of a knowledge domain for use in semantic processing. NOTE: Keywords in the associated MD_Keywords keyword list must be within the scope of this ontology
 !===
 |=== 
 
