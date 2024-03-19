@@ -211,7 +211,7 @@ An encoding of the Abstract POI class SHALL comply with requirement <<req_core_P
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi-link
+label:: /req/core/link
 [.component,class=part]
 --
 The encoding of the Link class SHALL be implemented using a hyperlink approach appropriate for implementing technology.

@@ -30,7 +30,7 @@ include::../requirements/core/Req_Core_GeneralFeatureModel.adoc[]
 
 The ISO TC211 Geometry model is defined in <<ISO19107>>. While there is a new version of this standard, it has not been widely implemented. Therefore, the 2003 version has been used in this Standard.
 
-The ISO Geometry Model can represent very complex geometries. Much  more complex than needed for expressing a POI. Therefore, POI geometry types are restricted to Points, lines, and Polygons. <<geometry_model,Figure 4>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
+The ISO Geometry Model can represent very complex geometries. Much  more complex than needed for expressing a POI. Therefore, POI geometry types are restricted to Points, Lines, and Polygons. <<geometry_model,Figure 4>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
 
 [[geometry_model,reftext='Geometry Model']]
 .Geometry Model
