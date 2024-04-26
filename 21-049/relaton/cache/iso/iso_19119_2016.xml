@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-12-01</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Services</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Services</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Services</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Services</title>
   <uri type="src">https://www.iso.org/standard/59221.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59221:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/92/59221.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19119:2016</docidentifier>
   <docidentifier type="iso-reference">ISO 19119:2016(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19119:stage-90.93:ed-2</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19119:stage-90.93</docidentifier>
   <docnumber>19119</docnumber>
   <date type="published">
     <on>2016-01</on>
@@ -23,11 +26,16 @@
   </contributor>
   <edition>2</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <abstract format="text/plain" language="en" script="Latn">ISO 19119:2016 defines requirements for how platform neutral and platform specific specification of services shall be created, in order to allow for one service to be specified independently of one or more underlying distributed computing platforms.
 ISO 19119:2016 defines requirements for a further mapping from platform neutral to platform specific service specifications, in order to enable conformant and interoperable service implementations.
 ISO 19119:2016 addresses the Meta:Service foundation of the ISO geographic information reference model described in ISO 19101‑1:2014, Clause 6 and Clause 8, respectively.
 ISO 19119:2016 defines how geographic services shall be categorised according to a service taxonomy based on architectural areas and allows also for services to be categorised according to a usage life cycle perspective, as well as according to domain specific and user defined service taxonomies, providing support for easier publication and discovery of services.</abstract>
+  <abstract format="text/plain" language="fr" script="Latn">ISO 19119:2016 définit des exigences sur la façon dont une spécification de services propre à une plate-forme et applicable à toutes les plates-formes doit être créée, de manière à ce qu'un service puisse être spécifié indépendamment d'une ou de plusieurs plates-formes informatiques distribuées sous-jacentes.
+ISO 19119:2016 définit des exigences pour une mise en correspondance supplémentaire des spécifications de services applicables à toutes les plates-formes avec les spécifications de services propres à une plate-forme, de manière à assurer des implémentations de services conformes et interopérables.
+ISO 19119:2016 traite du fondement Méta:Service du modèle de référence d'information géographique ISO décrit dans l'ISO 19101‑1:2014, Articles 6 et 8.
+ISO 19119:2016 définit la façon dont des services géographiques doivent être classés selon une taxonomie de services basée sur des domaines architecturaux, et permet également de classer les services selon une perspective de cycle de vie à l'usage ainsi que selon des taxonomies de services propres à un domaine et définies par l'utilisateur, ce qui fournit un support facilitant la publication et la découverte de services.</abstract>
   <status>
     <stage>90</stage>
     <substage>93</substage>

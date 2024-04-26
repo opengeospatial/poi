@@ -3,7 +3,7 @@
 [requirement]
 ====
 [%metadata]
-label:: /req/core/featurewithlifespan
+identifier:: /req/core/featurewithlifespan
 [.component,class=part]
 --
 An instantiation of the AbstractFeatureWithLifespan class SHALL be an accurate representation of the UML model for that class.
@@ -41,7 +41,7 @@ An encoding of the AbstractFeatureWithLifespan class SHALL comply with requireme
 [requirement]
 ====
 [%metadata]
-label:: /req/core/featurewithlifespan-creationdate
+identifier:: /req/core/featurewithlifespan-creationdate
 [.component,class=part]
 --
 An instantiation of the AbstractFeatureWithLifespan class SHALL comply with the following criteria:
@@ -63,7 +63,7 @@ Encodings of the `creationDate` attribute SHALL be a valid implementation of the
 [requirement]
 ====
 [%metadata]
-label:: /req/core/featurewithlifespan-terminationdate
+identifier:: /req/core/featurewithlifespan-terminationdate
 [.component,class=part]
 --
 An instantiation of the AbstractFeatureWithLifespan class SHALL comply with the following criteria:
@@ -85,7 +85,7 @@ Encodings of the `terminationDate` attribute SHALL be a valid implementation of 
 [requirement]
 ====
 [%metadata]
-label:: /req/core/featurewithlifespan-validfrom
+identifier:: /req/core/featurewithlifespan-validfrom
 [.component,class=part]
 --
 An instantiation of the AbstractFeatureWithLifespan class SHALL comply with the following criteria:
@@ -107,7 +107,7 @@ Encodings of the `validFrom` attribute SHALL be a valid implementation of the Da
 [requirement]
 ====
 [%metadata]
-label:: /req/core/featurewithlifespan-validto
+identifier:: /req/core/featurewithlifespan-validto
 [.component,class=part]
 --
 An instantiation of the AbstractFeatureWithLifespan class SHALL comply with the following criteria:

@@ -1,15 +1,19 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Ontology</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Rules for developing ontologies in the Web Ontology Language (OWL)</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Ontology - Part 2: Rules for developing ontologies in the Web Ontology Language (OWL)</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Ontologie</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 2: Règles pour le développement d'ontologies dans le langage d'ontologie Web (OWL)</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Ontologie - Partie 2: Règles pour le développement d'ontologies dans le langage d'ontologie Web (OWL)</title>
   <uri type="src">https://www.iso.org/standard/57466.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:57466:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/74/57466.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19150-2</docidentifier>
   <docidentifier type="iso-reference">ISO 19150-2(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19150:-2:stage-90.93:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19150:-2:stage-90.93</docidentifier>
   <docnumber>19150</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -21,6 +25,7 @@
   </contributor>
   <edition>1</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>90</stage>
@@ -45,17 +50,21 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-02-08</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Ontology</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Rules for developing ontologies in the Web Ontology Language (OWL)</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Ontology - Part 2: Rules for developing ontologies in the Web Ontology Language (OWL)</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Ontologie</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 2: Règles pour le développement d'ontologies dans le langage d'ontologie Web (OWL)</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Ontologie - Partie 2: Règles pour le développement d'ontologies dans le langage d'ontologie Web (OWL)</title>
       <uri type="src">https://www.iso.org/standard/57466.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:57466:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/05/74/57466.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19150-2:2015</docidentifier>
       <docidentifier type="iso-reference">ISO 19150-2:2015(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19150:-2:stage-90.93:ed-1</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19150:-2:stage-90.93</docidentifier>
       <docnumber>19150</docnumber>
       <date type="published">
         <on>2015-07</on>
@@ -70,10 +79,14 @@
       </contributor>
       <edition>1</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
       <abstract format="text/plain" language="en" script="Latn">ISO 19150-2:2015 defines rules and guidelines for the development of ontologies to support better the interoperability of geographic information over the Semantic Web. The Web Ontology Language (OWL) is the language adopted for ontologies.
 It defines the conversion of the UML static view modeling elements used in the ISO geographic information standards into OWL. It further defines conversion rules for describing application schemas based on the General Feature Model defined in ISO 19109 into OWL.
 It does not define semantics operators, rules for service ontologies, and does not develop any ontology.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">L'ISO 19150-2:2015 définit les règles et lignes directrices applicables au développement d'ontologies dans le but d'améliorer la prise en charge de l'interopérabilité de l'information géographique pour le Web sémantique. Le langage d'ontologie Web (OWL) est le langage adopté en matière d'ontologies.
+L'ISO 19150-2:2015 définit la conversion, en langage OWL, des éléments de modélisation des vues statiques UML utilisés dans les normes de l'information géographique ISO. Elle définit en outre les règles de conversion, en langage OWL, utilisées pour décrire les schémas d'application à partir du modèle général d'entité défini dans l'ISO 19109.
+L'ISO 19150-2:2015 ne couvre ni les opérateurs sémantiques, ni les règles applicables aux ontologies de service, et ne définit aucune nouvelle ontologie.</abstract>
       <status>
         <stage>90</stage>
         <substage>93</substage>

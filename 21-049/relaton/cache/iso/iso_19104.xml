@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Terminology</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Terminology</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Terminologie</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Terminologie</title>
   <uri type="src">https://www.iso.org/standard/63541.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:63541:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/06/35/63541.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19104</docidentifier>
   <docidentifier type="iso-reference">ISO 19104(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19104:stage-90.93:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19104:stage-90.93</docidentifier>
   <docnumber>19104</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -20,6 +23,7 @@
   </contributor>
   <edition>1</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>90</stage>
@@ -41,16 +45,19 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-02-08</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Terminology</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Terminology</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Terminologie</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Terminologie</title>
       <uri type="src">https://www.iso.org/standard/63541.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:63541:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/06/35/63541.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19104:2016</docidentifier>
       <docidentifier type="iso-reference">ISO 19104:2016(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19104:stage-90.93:ed-1</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19104:stage-90.93</docidentifier>
       <docnumber>19104</docnumber>
       <date type="published">
         <on>2016-10</on>
@@ -65,8 +72,19 @@
       </contributor>
       <edition>1</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
       <abstract format="text/plain" language="en" script="Latn">ISO 19104:2016 specifies requirements for the collection, management and publication of terminology in the field of geographic information.
+The scope of this document includes
+-      selection of concepts, harmonization of concepts and development of concept systems,
+-      structure and content of terminological entries,
+-      term selection,
+-      definition preparation,
+-      cultural and linguistic adaptation,
+-      layout and formatting requirements in rendered documents, and
+-      establishment and management of terminology registers.
+ISO 19104:2016 is applicable to International Standards and Technical Specifications in the field of geographic information.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">ISO 19104:2016 specifies requirements for the collection, management and publication of terminology in the field of geographic information.
 The scope of this document includes
 -      selection of concepts, harmonization of concepts and development of concept systems,
 -      structure and content of terminological entries,

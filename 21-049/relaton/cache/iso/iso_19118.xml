@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Encoding</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Encoding</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Codage</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Codage</title>
   <uri type="src">https://www.iso.org/standard/44212.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:44212:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/42/44212.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19118</docidentifier>
   <docidentifier type="iso-reference">ISO 19118(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19118:stage-90.93:ed-2</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19118:stage-90.93</docidentifier>
   <docnumber>19118</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -20,6 +23,7 @@
   </contributor>
   <edition>2</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>90</stage>
@@ -41,16 +45,19 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-02-08</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Encoding</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Encoding</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Codage</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Codage</title>
       <uri type="src">https://www.iso.org/standard/44212.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:44212:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/04/42/44212.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19118:2011</docidentifier>
       <docidentifier type="iso-reference">ISO 19118:2011(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19118:stage-90.93:ed-2</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19118:stage-90.93</docidentifier>
       <docnumber>19118</docnumber>
       <date type="published">
         <on>2011-10</on>
@@ -65,10 +72,14 @@
       </contributor>
       <edition>2</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
       <abstract format="text/plain" language="en" script="Latn">ISO 19118:2011 specifies the requirements for defining encoding rules for use for the interchange of data that conform to the geographic information in the set of International Standards known as the "ISO 19100 series".
 ISO 19118:2011 specifies requirements for creating encoding rules based on UML schemas, requirements for creating encoding services, and requirements for XML-based encoding rules for neutral interchange of data.
 ISO 19118:2011 does not specify any digital media, does not define any transfer services or transfer protocols, nor does it specify how to encode inline large images.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">L'ISO 19118:2011 spécifie les exigences pour la définition des règles de codage à utiliser pour l'échange de données conformes à l'ensemble de Normes internationales relatives à l'information géographique connu sous le nom de «série ISO 19100».
+L'ISO 19118:2011 spécifie les exigences de création des règles de codage basées sur les schémas UML, les exigences de création des services de codage, et les exigences en matière de règles de codage XML pour l'échange neutre de données.
+L'ISO 19118:2011 ne spécifie pas les média numériques, ne définit aucun service de transfert ou de protocole de transfert, ni ne spécifie la façon d'encoder les grandes images en ligne.</abstract>
       <status>
         <stage>90</stage>
         <substage>93</substage>

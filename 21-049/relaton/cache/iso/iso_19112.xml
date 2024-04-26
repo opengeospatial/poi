@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Spatial referencing by geographic identifiers</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Spatial referencing by geographic identifiers</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Système de références spatiales par identificateurs géographiques</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Système de références spatiales par identificateurs géographiques</title>
   <uri type="src">https://www.iso.org/standard/70742.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:70742:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/07/07/70742.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19112</docidentifier>
   <docidentifier type="iso-reference">ISO 19112(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19112:stage-90.20:ed-2</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19112:stage-90.20</docidentifier>
   <docnumber>19112</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -20,6 +23,7 @@
   </contributor>
   <edition>2</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>90</stage>
@@ -41,16 +45,19 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-02-08</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Spatial referencing by geographic identifiers</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Spatial referencing by geographic identifiers</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Système de références spatiales par identificateurs géographiques</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Système de références spatiales par identificateurs géographiques</title>
       <uri type="src">https://www.iso.org/standard/70742.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:70742:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/07/07/70742.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19112:2019</docidentifier>
       <docidentifier type="iso-reference">ISO 19112:2019(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19112:stage-90.20:ed-2</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19112:stage-90.20</docidentifier>
       <docnumber>19112</docnumber>
       <date type="published">
         <on>2019-02</on>
@@ -65,11 +72,16 @@
       </contributor>
       <edition>2</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
       <abstract format="text/plain" language="en" script="Latn">This document defines the conceptual schema for spatial references based on geographic identifiers. It establishes a general model for spatial referencing using geographic identifiers and defines the components of a spatial reference system. It also specifies a conceptual scheme for a gazetteer.
 Spatial referencing by coordinates is addressed in ISO 19111. However, a mechanism for recording complementary coordinate references is included in this document.
 This document enables producers of data to define spatial reference systems using geographic identifiers and assists users in understanding the spatial references used in datasets. It enables gazetteers to be constructed in a consistent manner and supports the development of other standards in the field of geographic information.
 This document is applicable to digital geographic data, and its principles may be extended to other forms of geographic data such as maps, charts and textual documents.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">Le présent document définit le schéma conceptuel d'un système de références spatiales basé sur des identificateurs géographiques. Il établit un modèle général du système de références spatiales utilisant des identificateurs géographiques et définit les composants de ce système. Il spécifie également le schéma conceptuel d'un répertoire géographique.
+Le système de références spatiales par coordonnées est traité dans l'ISO 19111. Un mécanisme destiné à l'enregistrement de coordonnées de référence complémentaires est toutefois inclus dans le présent document.
+Le présent document permet aux producteurs de données de définir des systèmes de références spatiales utilisant des identificateurs géographiques et aide les utilisateurs à comprendre les références spatiales utilisées dans les ensembles de données. Il permet de construire des répertoires géographiques de manière cohérente et soutient le développement d'autres normes dans le domaine de l'information géographique.
+Le présent document est applicable aux données géographiques numériques et ses principes peuvent être élargis à d'autres types de données géographiques tels que les cartes, les tableaux et les textes.</abstract>
       <status>
         <stage>90</stage>
         <substage>20</substage>
