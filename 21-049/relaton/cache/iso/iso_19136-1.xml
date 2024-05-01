@@ -1,15 +1,19 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML)</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Geography Markup Language (GML) - Part 1: Fundamentals</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Langage de balisage en géographie (GML)</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 1: Principes de base</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Langage de balisage en géographie (GML) - Partie 1: Principes de base</title>
   <uri type="src">https://www.iso.org/standard/75676.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:75676:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/07/56/75676.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19136-1</docidentifier>
   <docidentifier type="iso-reference">ISO 19136-1(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19136:-1:stage-60.60:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19136:-1:stage-60.60</docidentifier>
   <docnumber>19136</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -21,6 +25,7 @@
   </contributor>
   <edition>1</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>60</stage>
@@ -42,17 +47,21 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-02-08</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML)</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Geography Markup Language (GML) - Part 1: Fundamentals</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Langage de balisage en géographie (GML)</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 1: Principes de base</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Langage de balisage en géographie (GML) - Partie 1: Principes de base</title>
       <uri type="src">https://www.iso.org/standard/75676.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:75676:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/07/56/75676.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19136-1:2020</docidentifier>
       <docidentifier type="iso-reference">ISO 19136-1:2020(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19136:-1:stage-60.60:ed-1</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19136:-1:stage-60.60</docidentifier>
       <docnumber>19136</docnumber>
       <date type="published">
         <on>2020-01</on>
@@ -67,6 +76,7 @@
       </contributor>
       <edition>1</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
       <abstract format="text/plain" language="en" script="Latn">The Geography Markup Language (GML) is an XML encoding in accordance with ISO 19118 for the transport and storage of geographic information modelled in accordance with the conceptual modelling framework used in the ISO 19100 series of International Standards and including both the spatial and non-spatial properties of geographic features.
 This document defines the XML Schema syntax, mechanisms and conventions that:
@@ -78,6 +88,16 @@ This document defines the XML Schema syntax, mechanisms and conventions that:
 —     increase the ability of organizations to share geographic application schemas and the information they describe.
 Implementers can decide to store geographic application schemas and information in GML, or they can decide to convert from some other storage format on demand and use GML only for schema and data transport.
 NOTE    If an ISO 19109 conformant application schema described in UML is used as the basis for the storage and transportation of geographic information, this document provides normative rules for the mapping of such an application schema to a GML application schema in XML Schema and, as such, to an XML encoding for data with a logical structure in accordance with the ISO 19109 conformant application schema.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">Le langage GML (Geography Markup Language, Langage de balisage en géographie) est un codage XML conforme à l'ISO 19118 pour le transport et le stockage des informations géographiques modélisées conformément au cadre de modélisation conceptuelle utilisé dans la série de Normes internationales ISO 19100, et comprenant les propriétés spatiales et non spatiales des entités géographiques.
+Le présent document définit la syntaxe, les mécanismes et les conventions du schéma XML qui:
+—          offrent un cadre ouvert indépendant du fournisseur pour la description des schémas d'application géospatiale pour le transport et le stockage des informations géographiques en langage XML;
+—          autorisent les profils prenant en charge les sous-ensembles corrects de possibilités descriptives du cadre GML;
+—          prennent en charge la description des schémas d'application géospatiale pour les domaines et communautés d'informations spécialisés;
+—          permettent de créer et d'entretenir des schémas d'application géographique associés et des ensembles de données;
+—          prennent en charge le stockage et le transport des schémas d'application et des ensembles de données;
+—          augmentent les possibilités d'organisation pour partager des schémas d'application géographique et les informations qu'ils décrivent.
+Les implémenteurs peuvent choisir de stocker les schémas d'application géographique et les informations en GML, ou de les convertir à la demande à partir d'un autre format de stockage et d'utiliser GML uniquement pour le schéma et le transport des données.
+NOTE    Si un schéma d'application conforme à l'ISO 19109 décrit en langage UML est utilisé comme base du stockage et du transport des informations géographiques, le présent document donne les règles normatives de mise en correspondance de ce type de schéma d'application avec le schéma d'application GML en langage XML Schema et, en tant que tel, avec le codage XML pour les données dotées d'une structure logique conformément au schéma d'application conforme à l'ISO 19109.</abstract>
       <status>
         <stage>60</stage>
         <substage>60</substage>

@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-main" format="text/plain" language="en" script="Latn">Addressing</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 4: International postal address components and template language</title>
   <title type="main" format="text/plain" language="en" script="Latn">Addressing - Part 4: International postal address components and template language</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Adressage</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 4: Composants et langages des modèles d'adresses postales internationales</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Adressage - Partie 4: Composants et langages des modèles d'adresses postales internationales</title>
   <uri type="src">https://www.iso.org/standard/83470.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:83470:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/08/34/83470.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19160-4</docidentifier>
   <docidentifier type="iso-reference">ISO 19160-4(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19160:-4:stage-60.60:ed-2</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19160:-4:stage-60.60</docidentifier>
   <docnumber>19160</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -20,6 +23,7 @@
   </contributor>
   <edition>2</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>60</stage>
@@ -41,16 +45,19 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-02-08</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-main" format="text/plain" language="en" script="Latn">Addressing</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Part 4: International postal address components and template language</title>
       <title type="main" format="text/plain" language="en" script="Latn">Addressing - Part 4: International postal address components and template language</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Adressage</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 4: Composants et langages des modèles d'adresses postales internationales</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Adressage - Partie 4: Composants et langages des modèles d'adresses postales internationales</title>
       <uri type="src">https://www.iso.org/standard/83470.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:83470:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/08/34/83470.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19160-4:2023</docidentifier>
       <docidentifier type="iso-reference">ISO 19160-4:2023(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19160:-4:stage-60.60:ed-2</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19160:-4:stage-60.60</docidentifier>
       <docnumber>19160</docnumber>
       <date type="published">
         <on>2023-04</on>
@@ -65,6 +72,7 @@
       </contributor>
       <edition>2</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
       <abstract format="text/plain" language="en" script="Latn">This document defines key terms for postal addressing, postal address components and constraints on their use.
 Specifically, this document specifies postal address components organized into three hierarchical levels:
@@ -84,6 +92,24 @@ Further, this document specifies postal address rendering rules. This includes:
 Postal address rendering rules are represented in this document as a postal address template.
 Finally, this document specifies language suitable for computer processing to formally express postal address templates.
 This document does not cover the topic of data protection. Users of the document are nevertheless reminded that the storage and exchange of personal data are subject to legislation in many countries.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">Le présent document définit les termes clés relatifs à l'adressage postal, aux composants d'adresse postale et aux contraintes d'utilisation associées.
+Le présent document spécifie plus particulièrement les composants d'adresse postale en les organisant en trois niveaux hiérarchiques:
+—    les éléments, comme le nom de l'organisme ou le code postal, qui ont un sens conceptuel bien défini et qui ne sont pas eux-mêmes constitués de composants subordonnés, bien qu'ils puissent être subdivisés pour des raisons techniques;
+—    les constructions, comme l'identification de l'organisme, qui regroupent des éléments en unités pour former une portion logique d'une adresse postale;
+—    les segments, comme la spécification du destinataire, qui regroupent des constructions et/ou des éléments d'adresse postale connexes en unités ayant une fonction spécifique définie.
+Le présent document définit également un mécanisme de création de sous éléments qui correspondent à des subdivisions du contenu d'un élément, comme le type de porte ou l'indicateur de porte, ou à plusieurs occurrences et emplacements d'un élément dans une adresse, comme les niveaux des régions administratives.
+Le présent document ne spécifie la longueur ni la plage de valeurs d'aucun des composants.
+En outre, le présent document spécifie les codes permettant d'identifier les éléments et les sous-éléments.
+Par ailleurs, le présent document spécifie les règles de rendu des adresses postales. Cela inclut:
+—    l'identification et le classement des lignes de sortie dans une adresse présentée;
+—    les conditions de sélection des lignes candidates;
+—    l'ordre et la concaténation des composants d'adresse postale;
+—    les composants obligatoires et facultatifs;
+—    les paramètres permettant de contextualiser une adresse en vue de sa présentation;
+—    le formatage des composants, selon les contraintes de l'espace disponible pour cette tâche.
+Le présent document exprime les règles de rendu des adresses postales sous la forme d'un modèle d'adresse postale.
+Enfin, le présent document définit un langage adapté au traitement informatique permettant d'exprimer de manière formelle les modèles d'adresses postales.
+Le présent document ne couvre pas le sujet de la protection des données. Il est toutefois rappelé aux utilisateurs du présent document que le stockage et l'échange de données à caractère personnel sont soumis à la législation dans de nombreux pays.</abstract>
       <status>
         <stage>60</stage>
         <substage>60</substage>

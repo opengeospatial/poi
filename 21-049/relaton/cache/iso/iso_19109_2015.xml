@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-12-01</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Rules for application schema</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Rules for application schema</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Règles de schéma d'application</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Règles de schéma d'application</title>
   <uri type="src">https://www.iso.org/standard/59193.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59193:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59193.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19109:2015</docidentifier>
   <docidentifier type="iso-reference">ISO 19109:2015(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19109:stage-90.92:ed-2</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19109:stage-90.92</docidentifier>
   <docnumber>19109</docnumber>
   <date type="published">
     <on>2015-12</on>
@@ -23,6 +26,7 @@
   </contributor>
   <edition>2</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <abstract format="text/plain" language="en" script="Latn">ISO 19109:2015 defines rules for creating and documenting application schemas, including principles for the definition of features.
 The scope of this International Standard includes the following:
@@ -40,6 +44,22 @@ The following are outside the scope:
 -      implementation of the application schema in a computer environment;
 -      computer system and application software design;
 -      programming.</abstract>
+  <abstract format="text/plain" language="fr" script="Latn">ISO 19109:2015 définit des règles relatives à la création et la documentation de schémas d'application, y compris les principes de définition des entités.
+Le domaine d'application de la présente Norme internationale inclut les éléments suivants:
+-      la modélisation conceptuelle des entités et de leurs propriétés par rapport à un univers du discours;
+-      la définition des schémas d'application;
+-      l'utilisation du langage de schéma conceptuel pour les schémas d'application;
+-      la transition entre les concepts du modèle conceptuel et les types de données du schéma d'application;
+-      l'intégration au schéma d'application de schémas normalisés provenant d'autres normes ISO d'information géographique.
+Les éléments suivants n'entrent pas dans le domaine d'application:
+-      le choix d'un langage de schéma conceptuel particulier pour les schémas d'application;
+-      la définition d'un schéma d'application particulier quel qu'il soit;
+-      la représentation des types d'entités et leurs propriétés dans un catalogue d'entité;
+-      la représentation des métadonnées;
+-      les règles de transposition d'un schéma d'application à un autre;
+-      l'implémentation du schéma d'application dans un environnement informatique;
+-      le système informatique et la conception du logiciel d'application;
+-      la programmation.</abstract>
   <status>
     <stage>90</stage>
     <substage>92</substage>
@@ -60,8 +80,8 @@ The following are outside the scope:
   </relation>
   <relation type="obsoletes">
     <bibitem type="standard">
-      <formattedref format="text/plain">ISO/CD 19109</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/CD 19109</docidentifier>
+      <formattedref format="text/plain">ISO/DIS 19109</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/DIS 19109</docidentifier>
     </bibitem>
   </relation>
   <place>Geneva</place>

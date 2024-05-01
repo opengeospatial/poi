@@ -5,7 +5,7 @@
 ====
 [%metadata]
 identifier:: /conf/core/poi-payload
-target:: /req/core/poi-payload
+target:: /req/core/poi-payload-2
 classification:: Target Type: Implementation Specification
 test-purpose:: To validate that the Implementation Specification implements the POI_Payload Class as defined in the POI Conceptual Model.
 

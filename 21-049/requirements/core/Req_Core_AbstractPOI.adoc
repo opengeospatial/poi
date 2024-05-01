@@ -3,7 +3,7 @@
 [requirement]
 ====
 [%metadata]
-label:: /req/core/abstract-poi
+identifier:: /req/core/abstract-poi
 
 [.component,class=part]
 --
@@ -57,7 +57,7 @@ An instantiation of the Abstract POI class SHALL comply with requirement <<req_c
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi-contactInfo
+identifier:: /req/core/poi-contactInfo
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with the following criteria:
@@ -79,7 +79,7 @@ Encodings of the `contactInfo` attribute SHALL be a valid implementation of the 
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi-featureOfInterest
+identifier:: /req/core/poi-featureOfInterest
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with the following criteria:
@@ -101,7 +101,7 @@ The target of the `hasFeatureOfIntestest` aggregation SHALL be a valid implement
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi-metadata
+identifier:: /req/core/poi-metadata
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with the following criteria:
@@ -123,7 +123,7 @@ An implementation of the `metadata` association SHALL comply with requirement <<
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi-keywords
+identifier:: /req/core/poi-keywords
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with the following criteria:
@@ -145,7 +145,7 @@ Encodings of the `keywords` attribute SHALL be a valid implementation of the MD_
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi-rights
+identifier:: /req/core/poi-rights
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with the following criteria:
@@ -167,7 +167,7 @@ Encodings of the `rights` attribute SHALL be a valid implementation of the MD_Co
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi-symbology
+identifier:: /req/core/poi-symbology
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with the following criteria:
@@ -189,7 +189,7 @@ Encodings of a `symbology` attribute SHALL comply with requirement <<req_core_Li
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi-payload
+identifier:: /req/core/poi-payload
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with the following criteria:
@@ -202,7 +202,7 @@ An encoding of the Abstract POI class SHALL include zero or more associated inst
 
 [.component,class=part]
 --
-An encoding of the Abstract POI class SHALL comply with requirement <<req_core_POI-Payload,/req/core/poi-payload>>.
+An encoding of the Abstract POI class SHALL comply with requirement <<req_core_POI-Payload-2,/req/core/poi-payload-2>>.
 --
 ====
 
@@ -211,7 +211,7 @@ An encoding of the Abstract POI class SHALL comply with requirement <<req_core_P
 [requirement]
 ====
 [%metadata]
-label:: /req/core/link
+identifier:: /req/core/link
 [.component,class=part]
 --
 The encoding of the Link class SHALL be implemented using a hyperlink approach appropriate for implementing technology.

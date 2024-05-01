@@ -1,8 +1,9 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-12-01</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">The Specification Model</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Standard for Modular specifications</title>
   <title type="main" format="text/plain" language="en" script="Latn">The Specification Model - Standard for Modular specifications</title>
+  <uri type="src"/>
   <uri type="obp">https://portal.ogc.org/files/?artifact_id=34762&amp;version=2</uri>
   <docidentifier type="OGC" primary="true">08-131r3</docidentifier>
   <date type="published">
@@ -28,7 +29,7 @@
   <abstract format="text/plain" language="en" script="Latn">This standard contains requirements for writing standards to be used for any document whose
 eventual purpose is the specification of requirements for software, services or data structures. </abstract>
   <ext schema-version="v1.0.1">
-    <doctype type="standard"/>
+    <doctype>standard</doctype>
     <editorialgroup>
       <committee>technical</committee>
     </editorialgroup>

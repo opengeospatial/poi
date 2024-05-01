@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-12-01</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Referencing by coordinates</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Referencing by coordinates</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Référencement par coordonnées</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Référencement par coordonnées</title>
   <uri type="src">https://www.iso.org/standard/74039.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:74039:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/07/40/74039.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19111:2019</docidentifier>
   <docidentifier type="iso-reference">ISO 19111:2019(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19111:stage-60.60:ed-3</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19111:stage-90.20</docidentifier>
   <docnumber>19111</docnumber>
   <date type="published">
     <on>2019-01</on>
@@ -23,6 +26,7 @@
   </contributor>
   <edition>3</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <abstract format="text/plain" language="en" script="Latn">This document defines the conceptual schema for the description of referencing by coordinates. It describes the minimum data required to define coordinate reference systems. This document supports the definition of:
 —          spatial coordinate reference systems where coordinate values do not change with time. The system may:
@@ -38,9 +42,23 @@ The definition of a coordinate reference system does not change with time, altho
 This document also describes the conceptual schema for defining the information required to describe operations that change coordinate values.
 In addition to the minimum data required for the definition of the coordinate reference system or coordinate operation, the conceptual schema allows additional descriptive information - coordinate reference system metadata - to be provided.
 This document is applicable to producers and users of geographic information. Although it is applicable to digital geographic data, the principles described in this document can be extended to many other forms of spatial data such as maps, charts and text documents.</abstract>
+  <abstract format="text/plain" language="fr" script="Latn">Le présent document définit le schéma conceptuel pour la description du référencement par coordonnées. Il décrit les données minimales requises pour définir des systèmes de référence de coordonnées. Le présent document prend en charge la définition des éléments suivants:
+—          les systèmes de référence de coordonnées spatiaux dans lesquels les valeurs des coordonnées ne changent pas avec le temps. Le système peut:
+- —   être géodésique et s'appliquer à l'échelle nationale ou régionale; ou
+- —   s'appliquer localement, comme dans le cas d'un bâtiment ou d'un chantier de construction; ou
+- —   s'appliquer localement à une image ou un capteur d'image;
+- —   être associé à une plate-forme mobile telle qu'une voiture, un navire, un aéronef ou un engin spatial. Un tel système de référence de coordonnées peut être relié à un deuxième système de référence de coordonnées qui est associé à la Terre par une transformation qui comprend un élément temporel;
+—          les systèmes de référence de coordonnées spatiaux dans lesquels les valeurs de coordonnées de points situés sur ou près de la surface de la terre, changent avec le temps en raison du mouvement tectonique des plaques ou d'autres déformations de la croûte terrestre. Ces systèmes dynamiques comprennent l'évolution temporelle, mais ils restent de nature spatiale;
+—          les systèmes de référence de coordonnées paramétriques qui utilisent un paramètre non spatial variant de façon monotone avec la hauteur ou la profondeur;
+—          les systèmes de référence de coordonnées temporels qui utilisent dateTime, le comptage temporel ou des mesures de grandeur temporelles dont les valeurs varient de façon monotone avec le temps;
+—          les systèmes de référence de coordonnées mixtes spatiaux, paramétriques ou temporels.
+La définition d'un système de référence de coordonnées ne change pas avec le temps, même si dans certains cas, certains paramètres de définition peuvent inclure une vitesse de changement du paramètre. Les valeurs de coordonnées dans un système de référence de coordonnées dynamique et temporel peuvent changer avec le temps.
+Le présent document décrit également le schéma conceptuel permettant de définir les informations requises pour décrire les opérations qui modifient les valeurs de coordonnées.
+Outre les données minimales requises pour la définition du système de référence de coordonnées ou de l'opération sur les coordonnées, le schéma conceptuel permet de fournir des informations descriptives supplémentaires (métadonnées du système de référence de coordonnées)
+Le présent document est applicable aux producteurs et aux utilisateurs d'informations géographiques. Bien qu'il soit applicable aux données géographiques numériques, il est possible d'élargir ses principes à de nombreux autres types de données géographiques tels que les cartes, les tableaux et les textes.</abstract>
   <status>
-    <stage>60</stage>
-    <substage>60</substage>
+    <stage>90</stage>
+    <substage>20</substage>
   </status>
   <copyright>
     <from>2019</from>
@@ -67,7 +85,7 @@ This document is applicable to producers and users of geographic information. Al
       <formattedref format="text/plain">ISO 19111:2019/Amd 1:2021</formattedref>
       <docidentifier type="ISO" primary="true">ISO 19111:2019/Amd 1:2021</docidentifier>
       <date type="circulated">
-        <on>2019-01-31</on>
+        <on>2024-01-15</on>
       </date>
     </bibitem>
   </relation>
@@ -76,7 +94,7 @@ This document is applicable to producers and users of geographic information. Al
       <formattedref format="text/plain">ISO 19111:2019/Amd 2:2023</formattedref>
       <docidentifier type="ISO" primary="true">ISO 19111:2019/Amd 2:2023</docidentifier>
       <date type="circulated">
-        <on>2019-01-31</on>
+        <on>2024-01-15</on>
       </date>
     </bibitem>
   </relation>

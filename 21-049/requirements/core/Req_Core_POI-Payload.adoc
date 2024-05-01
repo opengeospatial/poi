@@ -1,9 +1,9 @@
-[[req_core_POI-Payload]]
-.Requirement - POI-Payload
+[[req_core_POI-Payload-2]]
+.Requirement - POI-Payload-2
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi-payload
+identifier:: /req/core/poi-payload-2
 
 [.component,class=part]
 --
@@ -31,7 +31,7 @@ An instantiation of the POI_Payload class SHALL comply with requirement <<req_co
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi_payload/featureofinterest
+identifier:: /req/core/poi_payload/featureofinterest
 [.component,class=part]
 --
 An instantiation of the POI_Payload class SHALL comply with the following criteria:
@@ -53,7 +53,7 @@ The target of a `hasFeatureOfIntestest` aggregation SHALL be a valid implementat
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi_payload/hasDefinition
+identifier:: /req/core/poi_payload/hasDefinition
 [.component,class=part]
 --
 An instantiation of the POI_Payload class SHALL comply with the following criteria:
@@ -75,7 +75,7 @@ The target of a `hasDefinition` aggregation SHALL be a valid ontology for the im
 [requirement]
 ====
 [%metadata]
-label:: /req/core/poi_payload/usesSchema
+identifier:: /req/core/poi_payload/usesSchema
 [.component,class=part]
 --
 An instantiation of the POI_Payload class SHALL comply with the following criteria:

@@ -3,7 +3,7 @@
 [requirement]
 ====
 [%metadata]
-label:: /req/core/abstractfeature
+identifier:: /req/core/abstractfeature
 [.component,class=part]
 --
 An instantiation of the AbstractFeature class SHALL be an accurate representation of the UML model for that class.
@@ -40,7 +40,7 @@ An encoding of the AbstractFeature class SHALL comply with requirement <<req_cor
 [requirement]
 ====
 [%metadata]
-label:: /req/core/abstractfeature-description
+identifier:: /req/core/abstractfeature-description
 [.component,class=part]
 --
 An instantiation of the AbstractFeature class SHALL comply with the following criteria:
@@ -62,7 +62,7 @@ Encodings of the `description` attribute SHALL be a valid implementation of the 
 [requirement]
 ====
 [%metadata]
-label:: /req/core/abstractfeature-featureid
+identifier:: /req/core/abstractfeature-featureid
 [.component,class=part]
 --
 An instantiation of the AbstractFeature class SHALL comply with the following criteria:
@@ -84,7 +84,7 @@ Encodings of the `featureID` attribute SHALL be a valid implementation of the Ge
 [requirement]
 ====
 [%metadata]
-label:: /req/core/abstractfeature-identifier
+identifier:: /req/core/abstractfeature-identifier
 [.component,class=part]
 --
 An instantiation of the AbstractFeature class SHALL comply with the following criteria:
@@ -106,7 +106,7 @@ Encodings of the `identifier` attribute SHALL be a valid implementation of the S
 [requirement]
 ====
 [%metadata]
-label:: /req/core/abstractfeature-name
+identifier:: /req/core/abstractfeature-name
 [.component,class=part]
 --
 An instantiation of the AbstractFeature class SHALL comply with the following criteria:

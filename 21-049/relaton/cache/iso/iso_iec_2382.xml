@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
   <title type="main" format="text/plain" language="en" script="Latn">Information technology - Vocabulary</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Technologies de l'information</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Vocabulaire</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Technologies de l'information - Vocabulaire</title>
   <uri type="src">https://www.iso.org/standard/63598.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:63598:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/06/35/63598.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 2382</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 2382(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso-iec:2382:stage-90.60:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso-iec:2382:stage-90.60</docidentifier>
   <docnumber>2382</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -28,6 +31,7 @@
   </contributor>
   <edition>1</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>90</stage>
@@ -229,19 +233,25 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-02-08</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Information technology</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
       <title type="main" format="text/plain" language="en" script="Latn">Information technology - Vocabulary</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Technologies de l'information</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Vocabulaire</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Technologies de l'information - Vocabulaire</title>
       <uri type="src">https://www.iso.org/standard/63598.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:63598:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/06/35/63598.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO/IEC 2382:2015</docidentifier>
       <docidentifier type="iso-reference">ISO/IEC 2382:2015(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso-iec:2382:stage-90.60:ed-1</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso-iec:2382:stage-90.60</docidentifier>
       <docnumber>2382</docnumber>
       <date type="published">
         <on>2015-05</on>
+      </date>
+      <date type="corrected">
+        <on>2022-10</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -261,9 +271,12 @@
       </contributor>
       <edition>1</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
       <abstract format="text/plain" language="en" script="Latn">This standard of vocabulary taken from the multi-part ISO/IEC 2382 standard is presented in language-specific order and is intended to facilitate international communication in information technology. It presents, in two languages, terms and definitions of selected concepts relevant to this field.
 In order to facilitate their translation into other languages, the definitions are drafted so as to avoid, as far as possible, any peculiarity attached to a language.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">La présente norme de vocabulaire, qui provient des multiples parties de l'ISO/CEI 2382, est présentée en ordre de tri spécifique de la langue et a pour objet de faciliter les échanges internationaux dans le domaine des technologies de l'information. À cet effet, elle présente un ensemble bilingue de termes et de définitions ayant trait à des notions choisies dans ce domaine.
+Les définitions ont été établies de manière à éviter les particularismes propres à une langue donnée, en vue de faciliter leur transposition dans les langues autres que celles ayant servi à la rédaction initiale.</abstract>
       <status>
         <stage>90</stage>
         <substage>60</substage>
