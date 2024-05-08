@@ -4,8 +4,8 @@
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/poi-payload
-target:: /req/core/poi-payload-2
+identifier:: /conf/core/poi_payload
+target:: /req/core/poi_payload
 classification:: Target Type: Implementation Specification
 test-purpose:: To validate that the Implementation Specification implements the POI_Payload Class as defined in the POI Conceptual Model.
 
@@ -13,22 +13,22 @@ test-method-type:: Manual Inspection
 
 description:: Validate that the Implementation Specification correctly implements the POI_Payload class:
 
-part:: Validate correct implementation of the `usesSchema` aggregation using the test <<ats_core_poi-payload_usesschema,/conf/core/poi_payload/usesSchema>>.
+part:: Validate correct implementation of the `usesSchema` aggregation using the test <<ats_core_poi_payload-usesschema,/conf/core/poi_payload-usesschema>>.
 
-part:: Validate correct implementation of the `hasDefinition` aggregation using the test <<ats_core_poi-payload_hasdefinition,/conf/core/poi_payload/hasDefinition>>.
+part:: Validate correct implementation of the `hasDefinition` aggregation using the test <<ats_core_poi_payload-hasdefinition,/conf/core/poi_payload-hasdefinition>>.
 
-part:: Validate correct implementation of the `hasFeatureOfInterest` aggregation using the test <<ats_core_poi-payload_featureofinterest,/conf/core/poi_payload/featureOfInterest>>.
+part:: Validate correct implementation of the `hasFeatureOfInterest` aggregation using the test <<ats_core_poi_payload-hasfeatureofinterest,/conf/core/poi_payload-hasfeatureofinterest>>.
 
 ====
 
 ====== POI_Payload Uses Schema
 
-[[ats_core_poi-payload_usesschema]]
+[[ats_core_poi_payload-usesschema]]
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/poi_payload/usesSchema
-target:: /req/core/poi_payload/usesSchema
+identifier:: /conf/core/poi_payload-usesschema
+target:: /req/core/poi_payload-usesschema
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `usesSchema` aggregation as defined in the POI Conceptual Model.
 
@@ -43,12 +43,12 @@ part:: Validate that the target of the `usesSchema` aggregation is a valid schem
 
 ====== POI_Payload Has Definition
 
-[[ats_core_poi-payload_hasdefinition]]
+[[ats_core_poi_payload-hasdefinition]]
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/poi_payload/hasDefinition
-target:: /req/core/poi_payload/hasDefinition
+identifier:: /conf/core/poi_payload-hasdefinition
+target:: /req/core/poi_payload-hasdefinition
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `hasDefinition` aggregation as defined in the POI Conceptual Model.
 
@@ -63,12 +63,12 @@ part:: Validate that the target of the `hasDefinition` aggregation is a valid on
 
 ====== POI_Payload Feature Of Interest
 
-[[ats_core_poi-payload_featureofinterest]]
+[[ats_core_poi_payload-hasfeatureofinterest]]
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/poi_payload/featureofinterest
-target:: /req/core/poi_payload/featureofinterest
+identifier:: /conf/core/poi_payload-hasfeatureofinterest
+target:: /req/core/poi_payload-hasfeatureofinterest
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `hasFeatureOfinterest` aggregation as defined in the POI Conceptual Model.
 

@@ -19,9 +19,9 @@ part:: Validate that the implementation of the AbstractPOI class is also a valid
 
 part:: Validate correct implementation of the `contactInfo` attribute using test <<ats_core_poi-contactinfo,/conf/core/poi-contactinfo>>.
 
-part:: Validate correct implementation of the `hasFeatureOfInterest` aggregation using the test <<ats_core_poi-featureofinterest,/conf/core/poi-featureOfInterest>>.
+part:: Validate correct implementation of the `hasFeatureOfInterest` aggregation using the test <<ats_core_poi-featureofinterest,/conf/core/poi-featureofinterest>>.
 
-part:: Validate correct implementation of the `hasMetadata` association using the test <<ats_core_poi-metadata,/conf/core/POI-Metadata>>.
+part:: Validate correct implementation of the `hasMetadata` association using the test <<ats_core_poi-metadata,/conf/core/poi-metadata>>.
 
 part:: Validate correct implementation of the `keywords` attribute using the test <<ats_core_poi-keywords,/conf/core/poi-keywords>>.
 
@@ -29,7 +29,7 @@ part:: Validate correct implementation of the `rights` attribute using the test 
 
 part:: Validate correct implementation of the `symbology` association using the test <<ats_core_poi-symbology,/conf/core/poi-symbology>>.
 
-part:: Validate correct implementation of the `hasPayload` aggregation using the test <<ats_core_poi-payload,/conf/core/poi-payload>>.
+part:: Validate correct implementation of the `hasPayload` association using the test <<ats_core_poi-haspayload,/conf/core/poi-haspayload>>.
 
 ====
 
@@ -168,7 +168,7 @@ test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and target class of the `hasPayload` aggregation.
 
-part:: Validate that zero of more `hasPayload` aggregation are allowed in an AbstractPOI class.
+part:: Validate that zero or more `hasPayload` aggregation are allowed in an AbstractPOI class.
 
 part:: Validate that the target of the `hasPayload` aggregation is a valid implementation of the POI_Payload class using the <<ats_core_poi-payload,/conf/core/poi-payload>> test.
 ====

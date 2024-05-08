@@ -43,19 +43,19 @@ requirement:: /req/core/featurewithlifespan-terminationdate
 requirement:: /req/core/featurewithlifespan-validfrom
 requirement:: /req/core/featurewithlifespan-validto
 requirement:: /req/core/abstract-poi
-requirement:: /req/core/poi-contactInfo
-requirement:: /req/core/poi-featureOfInterest
+requirement:: /req/core/poi-contactinfo
+requirement:: /req/core/poi-featureofinterest
 requirement:: /req/core/poi-metadata
 requirement:: /req/core/poi-keywords
 requirement:: /req/core/poi-rights
 requirement:: /req/core/poi-symbology
-requirement:: /req/core/poi-payload
+requirement:: /req/core/poi-haspayload
 requirement:: /req/core/link
 requirement:: /req/core/poi
-requirement:: /req/core/poi-payload-2
-requirement:: /req/core/poi_payload/featureofinterest
-requirement:: /req/core/poi_payload/hasDefinition
-requirement:: /req/core/poi_payload/usesSchema
+requirement:: /req/core/poi_payload
+requirement:: /req/core/poi_payload-hasfeatureofinterest
+requirement:: /req/core/poi_payload-hasdefinition
+requirement:: /req/core/poi_payload-usesschema
 description:: 
 Requirements Class POI Core. A POI Implementation Specification SHALL be a valid representation of the POI UML model. This includes conformance with:
 
@@ -72,7 +72,7 @@ POI Extensions to ISO:
 POI Class Model:
 
 * <<req_core_abstract-poi,/req/core/abstract-poi>>
-* <<req_core_POI-Payload-2,/req/core/poi-payload>>
+* <<req_core_poi-payload,/req/core/poi-payload>>
 * <<req_core_poi,/req/core/poi>>
 
 

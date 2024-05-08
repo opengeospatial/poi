@@ -20,23 +20,23 @@ description:: Inspect the POI Implementation Specification to validate that the 
 
 part:: Validate that the implementation of the AbstractFeatureWithLifespan class is also a valid implementation of the AbstractFeature class using test <<ats_core_abstractfeature,/conf/core/abstractfeature>>.
 
-part:: Validate correct implementation of the `creationDate` attribute using test <<ats_core_abstractfeature-creationdate,/conf/core/abstractfeature-creationdate>>.
+part:: Validate correct implementation of the `creationDate` attribute using test <<ats_core_featurewithlifespan-creationdate,/conf/core/featurewithlifespan-creationdate>>.
 
-part:: Validate correct implementation of the `terminationDate` attribute using test <<ats_core_abstractfeature-terminationdate,/conf/core/abstractfeature-terminationdate>>.
+part:: Validate correct implementation of the `terminationDate` attribute using test <<ats_core_featurewithlifespan-terminationdate,/conf/core/featurewithlifespan-terminationdate>>.
 
-part:: Validate correct implementation of the `validFrom` attribute using test <<ats_core_abstractfeature-validfrom,/conf/core/abstractfeature-validfrom>>.
+part:: Validate correct implementation of the `validFrom` attribute using test <<ats_core_featurewithlifespan-validfrom,/conf/core/featurewithlifespan-validfrom>>.
 
-part:: Validate correct implementation of the `validTo` attribute using test <<ats_core_abstractfeature-validto,/conf/core/abstractfeature-validto>>.
+part:: Validate correct implementation of the `validTo` attribute using test <<ats_core_featurewithlifespan-validto,/conf/core/featurewithlifespan-validto>>.
 ====
 
 ====== Creation Date
 
-[[ats_core_abstractfeature-creationdate]]
+[[ats_core_featurewithlifespan-creationdate]]
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/abstractfeature-creationdate
-target:: /req/core/abstractfeature-creationdate
+identifier:: /conf/core/featurewithlifespan-creationdate
+target:: /req/core/featurewithlifespan-creationdate
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `creationDate` attribute as defined in the POI Conceptual Model.
 
@@ -51,12 +51,12 @@ part:: Validate that the `creationDate` attribute is a valid implementation of t
 
 ====== Termination Date
 
-[[ats_core_abstractfeature-terminationdate]]
+[[ats_core_featurewithlifespan-terminationdate]]
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/abstractfeature-terminationdate
-target:: /req/core/abstractfeature-terminatyiondate
+identifier:: /conf/core/featurewithlifespan-terminationdate
+target:: /req/core/featurewithlifespan-terminationdate
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `terminationDate` attribute as defined in the POI Conceptual Model.
 
@@ -71,12 +71,12 @@ part:: Validate that the `terminationDate` attribute is a valid implementation o
 
 ====== Valid From
 
-[[ats_core_abstractfeature-validfrom]]
+[[ats_core_featurewithlifespan-validfrom]]
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/abstractfeature-validfrom
-target:: /req/core/abstractfeature-validfrom
+identifier:: /conf/core/featurewithlifespan-validfrom
+target:: /req/core/featurewithlifespan-validfrom
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `validFrom` attribute as defined in the POI Conceptual Model.
 
@@ -91,12 +91,12 @@ part:: Validate that the `validFrom` attribute is a valid implementation of the 
 
 ====== Valid To
 
-[[ats_core_abstractfeature-validto]]
+[[ats_core_featurewithlifespan-validto]]
 [abstract_test]
 ====
 [%metadata]
-identifier:: /conf/core/abstractfeature-validto
-target:: /req/core/abstractfeature-validto
+identifier:: /conf/core/featurewithlifespan-validto
+target:: /req/core/featurewithlifespan-validto
 classification:: Target Type: Implementation Specification
 test-purpose:: Validate that the Implementation Specification implements the `validTo` attribute as defined in the POI Conceptual Model.
 

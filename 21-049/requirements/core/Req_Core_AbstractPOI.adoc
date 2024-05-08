@@ -17,42 +17,42 @@ An instantiation of the Abstract POI class SHALL comply with requirement <<req_c
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_contactInfo,/req/core/poi-contactInfo>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_poi_contactinfo,/req/core/poi-contactinfo>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_featureOfInterest,/req/core/poi-featureOfInterest>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_poi_featureofinterest,/req/core/poi-featureofinterest>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_metadata,/req/core/poi-metadata>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_poi_metadata,/req/core/poi-metadata>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_keywords,/req/core/poi-keywords>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_poi_keywords,/req/core/poi-keywords>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_rights,/req/core/poi-rights>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_poi_rights,/req/core/poi-rights>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_symbology,/req/core/poi-symbology>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_poi_symbology,/req/core/poi-symbology>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_POI_Payload,/req/core/poi-payload>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_poi-haspayload,/req/core/poi-haspayload>>.
 --
 
 ====
 
-[[req_core_POI_contactInfo]]
+[[req_core_poi_contactInfo]]
 .Requirement - POI Contact Information
 [requirement]
 ====
@@ -74,12 +74,12 @@ Encodings of the `contactInfo` attribute SHALL be a valid implementation of the 
 --
 ====
 
-[[req_core_POI_featureOfInterest]]
+[[req_core_poi_featureofinterest]]
 .Requirement - POI Feature of Interest
 [requirement]
 ====
 [%metadata]
-identifier:: /req/core/poi-featureOfInterest
+identifier:: /req/core/poi-featureofinterest
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with the following criteria:
@@ -92,11 +92,11 @@ An encoding of the Abstract POI class SHALL include zero or more associated inst
 
 [.component,class=part]
 --
-The target of the `hasFeatureOfIntestest` aggregation SHALL be a valid implementation of the Feature class from <<ISO19109,ISO 19109:2015>>
+The target of the `hasFeatureOfInterest` aggregation SHALL be a valid implementation of the Feature class from <<ISO19109,ISO 19109:2015>>
 --
 ====
 
-[[req_core_POI_metadata]]
+[[req_core_poi_metadata]]
 .Requirement - POI Metadata
 [requirement]
 ====
@@ -118,7 +118,7 @@ An implementation of the `metadata` association SHALL comply with requirement <<
 --
 ====
 
-[[req_core_POI_keywords]]
+[[req_core_poi_keywords]]
 .Requirement - POI Keywords
 [requirement]
 ====
@@ -140,7 +140,7 @@ Encodings of the `keywords` attribute SHALL be a valid implementation of the MD_
 --
 ====
 
-[[req_core_POI_rights]]
+[[req_core_poi_rights]]
 .Requirement - POI Rights
 [requirement]
 ====
@@ -162,7 +162,7 @@ Encodings of the `rights` attribute SHALL be a valid implementation of the MD_Co
 --
 ====
 
-[[req_core_POI_symbology]]
+[[req_core_poi_symbology]]
 .Requirement - POI Symbology
 [requirement]
 ====
@@ -184,12 +184,12 @@ Encodings of a `symbology` attribute SHALL comply with requirement <<req_core_Li
 --
 ====
 
-[[req_core_POI_Payload]]
-.Requirement - POI Payload
+[[req_core_poi-haspayload]]
+.Requirement - POI Has Payload
 [requirement]
 ====
 [%metadata]
-identifier:: /req/core/poi-payload
+identifier:: /req/core/poi-haspayload
 [.component,class=part]
 --
 An instantiation of the Abstract POI class SHALL comply with the following criteria:
@@ -202,7 +202,7 @@ An encoding of the Abstract POI class SHALL include zero or more associated inst
 
 [.component,class=part]
 --
-An encoding of the Abstract POI class SHALL comply with requirement <<req_core_POI-Payload-2,/req/core/poi-payload-2>>.
+The associated `POI_Payload` classes SHALL comply with requirement <<req_core_poi-payload,/req/core/poi-payload>>.
 --
 ====
 

@@ -1,9 +1,9 @@
-[[req_core_POI-Payload-2]]
-.Requirement - POI-Payload-2
+[[req_core_poi_payload]]
+.Requirement - POI-Payload
 [requirement]
 ====
 [%metadata]
-identifier:: /req/core/poi-payload-2
+identifier:: /req/core/poi_payload
 
 [.component,class=part]
 --
@@ -12,26 +12,26 @@ An instantiation of the POI_Payload class SHALL be an accurate representation of
 
 [.component,class=part]
 --
-An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi-payload_featureofinterest,/req/core/poi_payload/featureofinterest>>.
+An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi_payload-hasfeatureofinterest,/req/core/poi_payload-hasfeatureofinterest>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi-payload_hasdefinition,/req/core/poi_payload/hasDefinition>>.
+An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi_payload-hasdefinition,/req/core/poi_payload-hasdefinition>>.
 --
 
 [.component,class=part]
 --
-An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi-payload_usesschema,/req/core/poi_payload/usesSchema>>.
+An instantiation of the POI_Payload class SHALL comply with requirement <<req_core_poi_payload-usesschema,/req/core/poi_payload-usesschema>>.
 --
 ====
 
-[[req_core_poi-payload_featureofinterest]]
-.Requirement - POI Payload Feature of Interest
+[[req_core_poi_payload-hasfeatureofinterest]]
+.Requirement - POI Payload Has Feature of Interest
 [requirement]
 ====
 [%metadata]
-identifier:: /req/core/poi_payload/featureofinterest
+identifier:: /req/core/poi_payload-hasfeatureofinterest
 [.component,class=part]
 --
 An instantiation of the POI_Payload class SHALL comply with the following criteria:
@@ -44,16 +44,16 @@ An encoding of the Abstract POI_Payload class SHALL include zero or more `hasFea
 
 [.component,class=part]
 --
-The target of a `hasFeatureOfIntestest` aggregation SHALL be a valid implementation of the Feature class from <<iso19109,ISO 19109:2015>>
+The target of a `hasFeatureOfInterest` aggregation SHALL be a valid implementation of the Feature class from <<iso19109,ISO 19109:2015>>
 --
 ====
 
-[[req_core_poi-payload_hasdefinition]]
+[[req_core_poi_payload-hasdefinition]]
 .Requirement - POI Payload has definition
 [requirement]
 ====
 [%metadata]
-identifier:: /req/core/poi_payload/hasDefinition
+identifier:: /req/core/poi_payload-hasdefinition
 [.component,class=part]
 --
 An instantiation of the POI_Payload class SHALL comply with the following criteria:
@@ -70,12 +70,12 @@ The target of a `hasDefinition` aggregation SHALL be a valid ontology for the im
 --
 ====
 
-[[req_core_poi-payload_usesschema]]
+[[req_core_poi_payload-usesschema]]
 .Requirement - POI Payload Uses Schema
 [requirement]
 ====
 [%metadata]
-identifier:: /req/core/poi_payload/usesSchema
+identifier:: /req/core/poi_payload-usesschema
 [.component,class=part]
 --
 An instantiation of the POI_Payload class SHALL comply with the following criteria:
