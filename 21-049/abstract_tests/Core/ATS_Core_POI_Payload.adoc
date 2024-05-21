@@ -76,7 +76,7 @@ test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and target class of the `hasFeatureOfInterest` aggregation.
 
-part:: Validate that zero or more `hasFeatureOfIntestest` aggregations are allowed in a POI_Payload class.
+part:: Validate that zero or more `hasFeatureOfInterest` aggregations are allowed in a POI_Payload class.
 
 part:: Validate that the target of the `hasFeatureOfInterest` aggregation is a valid implementation of the Feature class from <<ISO19109,ISO 19109:2015>>.
 ====
