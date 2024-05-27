@@ -83,7 +83,7 @@ test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and type of the `identifier` attribute.
 
-part:: Validate that no more than one 'identifer' attribute is allowed in an AbstractFeature class.
+part:: Validate that no more than one 'identifier' attribute is allowed in an AbstractFeature class.
 
 part:: Validate that the `identifier` attribute is a valid implementation of the ScopedName class from <<ISO19103,ISO 19103>>.  
 ====

@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Filter encoding</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Filter encoding</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Codage de filtres</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Codage de filtres</title>
   <uri type="src">https://www.iso.org/standard/42137.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42137:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42137.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19143</docidentifier>
   <docidentifier type="iso-reference">ISO 19143(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19143:stage-90.93:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19143:stage-90.93</docidentifier>
   <docnumber>19143</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -20,6 +23,7 @@
   </contributor>
   <edition>1</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>90</stage>
@@ -35,16 +39,19 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-02-08</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Filter encoding</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Filter encoding</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Codage de filtres</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Codage de filtres</title>
       <uri type="src">https://www.iso.org/standard/42137.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42137:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42137.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19143:2010</docidentifier>
       <docidentifier type="iso-reference">ISO 19143:2010(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19143:stage-90.93:ed-1</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19143:stage-90.93</docidentifier>
       <docnumber>19143</docnumber>
       <date type="published">
         <on>2010-10</on>
@@ -59,6 +66,7 @@
       </contributor>
       <edition>1</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
       <abstract format="text/plain" language="en" script="Latn">ISO 19143:2010 describes an XML and KVP encoding of a system neutral syntax for expressing projections, selection and sorting clauses collectively called a query expression.
 These components are modular and intended to be used together or individually by other International Standards which reference ISO 19143:2010. 
@@ -74,6 +82,15 @@ ISO 19143:2010 defines the XML encoding for the following predicates.
 - A standard set of temporal predicates: after, before, begins, begun by, contains, during, ends, equals, meets, met by, overlaps and overlapped by.
 - A predicate to test whether the identifier of an object matches the specified value.
 ISO 19143:2010 defines the XML encoding of metadata that allows a service to declare which conformance classes, predicates, operators, operands and functions it supports. This metadata is referred to as Filter Capabilities.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">L'ISO 19143:2010 décrit un encodage en XML et KVP d'une syntaxe neutre de système destiné à exprimer des clauses de projection, de sélection et de tri collectivement appelées expression d'interrogation.
+Ces composants sont modulaires et destinés à être utilisés ensemble ou individuellement par d'autres normes que celles qui référencent l'ISO 19143:2010.
+L'ISO 19143:2010 définit un composant abstrait, nommé AbstractQueryExpression, à partir duquel d'autres spécifications peuvent sous-classer des éléments d'interrogation concrets pour mettre en ?uvre des opérations d'interrogation.
+L'ISO 19143:2010 définit également un composant d'interrogation abstrait supplémentaire, nommé AbstractAdhocQueryExpression, qui est dérivé du composant AbstractQueryExpression et à partir duquel d'autres spécifications peuvent sous-classer des éléments d'interrogation concrets qui suivent le modèle d'interrogation suivant:
+- Un élément d'interrogation abstrait à partir duquel des spécifications de service peuvent sous-classer un élément d'interrogation concret mettant en oeuvre une opération d'interrogation permettant à un client de spécifier une liste de types de ressources, une clause de projection optionnelle, une clause de sélection optionnelle et une clause de tri optionnelle afin d'interroger un sous-ensemble de ressources qui satisfont à la clause de sélection.
+Ce modèle est désigné comme étant un modèle d'interrogation ad hoc du fait que le serveur n'est pas informé de l'interrogation jusqu'à ce qu'elle lui soit soumise pour traitement. Cela s'oppose à une expression d'interrogation mémorisée, qui est mémorisée et peut être appelée par un nom ou un identifiant.
+L'ISO 19143:2010 décrit également un encodage en XML et en KVP d'une représentation neutre de système d'une clause de sélection. La représentation XML est facilement validée, analysée et transformée en un langage spécifique au serveur requis pour récupérer ou modifier des instances d'objets mémorisées dans certains stockages d'objets permanents.
+L'ISO 19143:2010 définit l'encodage en XML pour les prédicats suivants: un ensemble standard de prédicats logiques: and, or and not (et, ou et non); un ensemble standard de prédicats de comparaison: equal to, not equal to, less than, less than or equal to, greater than, greater than or equal to, like, is null and between (égal à, pas égal à, inférieur à, inférieur ou égal à, supérieur à, supérieur ou égal à, comme, est nul et entre); un ensemble standard de prédicats spatiaux: equal, disjoint, touches, within, overlaps, crosses, intersects, contains, within a specified distance, beyond a specified distance and BBOX (égal, disjoint, touche, dans, chevauche, croise, intersecte, contient, à une distance spécifiée, au-delà d'une distance spécifiée et boîte englobante); un ensemble standard de prédicats temporels: after, before, begins, begun by, contains, during, ends, equals, meets, met by, overlaps and overlapped by (après, avant, commence, commencé par, contient, pendant, se termine, égal à, satisfait, satisfait par, chevauche et chevauché par); et un prédicat pour vérifier si l'identifiant d'un objet correspond à la valeur spécifiée.
+L'ISO 19143:2010 définit l'encodage en XML des métadonnées qui permettent à un service de déclarer les classes de conformité,  les prédicats, les opérateurs, les opérandes et les fonctions qu'il prend en charge. Ces métadonnées sont désignées par le terme Capacités de filtre.</abstract>
       <status>
         <stage>90</stage>
         <substage>93</substage>

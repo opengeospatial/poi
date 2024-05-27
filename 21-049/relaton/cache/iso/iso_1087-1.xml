@@ -1,14 +1,18 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-02-08</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Terminology work</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Theory and application</title>
   <title type="main" format="text/plain" language="en" script="Latn">Terminology work - Vocabulary - Part 1: Theory and application</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Travaux terminologiques</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Vocabulaire</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 1: Théorie et application</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Travaux terminologiques - Vocabulaire - Partie 1: Théorie et application</title>
   <uri type="src">https://www.iso.org/standard/20057.html</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/00/20057.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 1087-1</docidentifier>
   <docidentifier type="iso-reference">ISO 1087-1(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:1087:-1:stage-95.99:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:1087:-1:stage-95.99</docidentifier>
   <docnumber>1087</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -20,6 +24,7 @@
   </contributor>
   <edition>1</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>95</stage>
@@ -50,16 +55,20 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-02-08</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Terminology work</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Theory and application</title>
       <title type="main" format="text/plain" language="en" script="Latn">Terminology work - Vocabulary - Part 1: Theory and application</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Travaux terminologiques</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Vocabulaire</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Partie 1: Théorie et application</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Travaux terminologiques - Vocabulaire - Partie 1: Théorie et application</title>
       <uri type="src">https://www.iso.org/standard/20057.html</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/02/00/20057.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 1087-1:2000</docidentifier>
       <docidentifier type="iso-reference">ISO 1087-1:2000(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:1087:-1:stage-95.99:ed-1</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:1087:-1:stage-95.99</docidentifier>
       <docnumber>1087</docnumber>
       <date type="published">
         <on>2000-10</on>
@@ -74,7 +83,11 @@
       </contributor>
       <edition>1</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
+      <abstract format="text/plain" language="fr" script="Latn">
+La présente Norme internationale établit le vocabulaire fondamental de la théorie et de la pratique du travail terminologique. Elle n'inclut pas le vocabulaire traitant des applications informatiques du travail terminologique, qui est couvert par l'ISO 1087-2. La présentation obéit à l'ISO 10241, sauf spécification contraire.
+</abstract>
       <status>
         <stage>95</stage>
         <substage>99</substage>

@@ -1,13 +1,16 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-12-01</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Observations and measurements</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Observations and measurements</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Observations et mesures</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Observations et mesures</title>
   <uri type="src">https://www.iso.org/standard/32574.html</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32574.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19156:2011</docidentifier>
   <docidentifier type="iso-reference">ISO 19156:2011(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19156:stage-95.99:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19156:stage-95.99</docidentifier>
   <docnumber>19156</docnumber>
   <date type="published">
     <on>2011-12</on>
@@ -22,10 +25,14 @@
   </contributor>
   <edition>1</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <abstract format="text/plain" language="en" script="Latn">ISO 19156:2011 defines a conceptual schema for observations, and for features involved in sampling when making observations. These provide models for the exchange of information describing observation acts and their results, both within and between different scientific and technical communities.
 Observations commonly involve sampling of an ultimate feature-of-interest. ISO 19156:2011 defines a common set of sampling feature types classified primarily by topological dimension, as well as samples for ex-situ observations. The schema includes relationships between sampling features (sub-sampling, derived samples).
 ISO 19156:2011 concerns only externally visible interfaces and places no restriction on the underlying implementations other than what is needed to satisfy the interface specifications in the actual situation.</abstract>
+  <abstract format="text/plain" language="fr" script="Latn">L'ISO 19156:2011 définit un schéma conceptuel pour l'observation et pour les entités relatives à l'échantillonnage des données dans le cadre des observations. Ceux-ci fournissent des modèles destinés à l'échange d'information décrivant les faits observés et leurs résultats, aussi bien entre les différentes communautés scientifiques et techniques qu'en leur sein.
+En général, les observations impliquent l'échantillonnage par une entité concernée finale. L'ISO 19156:2011 définit une série commune de types d'entités d'échantillonnage classées principalement par dimension topologique, ainsi que des échantillons pour les observations ex‑situ. Ce schéma comprend les relations entre les entités d'échantillonnage (sous-échantillonnage, échantillons dérivés).
+L'ISO 19156:2011 ne concerne que les interfaces visibles de l'extérieur et ne place aucune restriction quant aux implémentations sous-jacentes, autres que celles nécessaires pour satisfaire aux spécifications relatives aux interfaces dans le contexte actuel.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>

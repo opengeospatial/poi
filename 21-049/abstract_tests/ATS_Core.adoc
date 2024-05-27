@@ -6,9 +6,34 @@
 ====
 [%metadata]
 identifier:: http://www.opengis.net/spec/poi/1.0/conf/core
-target:: Requirements Class core
+target:: http://www.opengis.net/spec/poi/1.0/req/core
 classification:: Target Type: Implementation Specification
-
+abstract-test:: /conf/core/generalfeaturemodel
+abstract-test:: /conf/core/geometry
+abstract-test:: /conf/core/abstractfeature
+abstract-test:: /conf/core/abstractfeature-description
+abstract-test:: /conf/core/abstractfeature-featureid
+abstract-test:: /conf/core/abstractfeature-identifier
+abstract-test:: /conf/core/abstractfeature-name
+abstract-test:: /conf/core/featurewithlifespan
+abstract-test:: /conf/core/featurewithlifespan-creationdate
+abstract-test:: /conf/core/featurewithlifespan-terminationdate
+abstract-test:: /conf/core/featurewithlifespan-validfrom
+abstract-test:: /conf/core/featurewithlifespan-validto
+abstract-test:: /conf/core/abstract-poi
+abstract-test:: /conf/core/poi-contactinfo
+abstract-test:: /conf/core/poi-featureofinterest
+abstract-test:: /conf/core/poi-metadata
+abstract-test:: /conf/core/poi-keywords
+abstract-test:: /conf/core/poi-rights
+abstract-test:: /conf/core/poi-symbology
+abstract-test:: /conf/core/poi-haspayload
+abstract-test:: /conf/core/link
+abstract-test:: /conf/core/poi_payload
+abstract-test:: /conf/core/poi_payload-usesschema
+abstract-test:: /conf/core/poi_payload-hasdefinition
+abstract-test:: /conf/core/poi_payload-hasfeatureofinterest
+abstract-test:: /conf/core/poi
 ====
 
 include::Core/ATS_Core_GeneralFeatureModel.adoc[]

@@ -1,4 +1,5 @@
 [[req_core]]
+////
 .Core Requirements Class
 [requirement,type="class",id="http://www.opengis.net/spec/GeoPOI/1.0/req/req-class-core",obligation="requirement"]
 ====
@@ -20,5 +21,60 @@ POI Class Model:
 * <<req_core_abstract-poi,/req/core/abstract-poi>>
 * <<req_core_POI-Payload,/req/core/poi-payload>>
 * <<req_core_poi,/req/core/poi>>
+
+====
+////
+
+[requirements_class]
+.Core Requirements Class
+====
+[%metadata]
+identifier:: http://www.opengis.net/spec/poi/1.0/req/core
+requirement:: /req/core/generalfeaturemodel
+requirement:: /req/core/geometry
+requirement:: /req/core/abstractfeature
+requirement:: /req/core/abstractfeature-description
+requirement:: /req/core/abstractfeature-featureid
+requirement:: /req/core/abstractfeature-identifier
+requirement:: /req/core/abstractfeature-name
+requirement:: /req/core/featurewithlifespan
+requirement:: /req/core/featurewithlifespan-creationdate
+requirement:: /req/core/featurewithlifespan-terminationdate
+requirement:: /req/core/featurewithlifespan-validfrom
+requirement:: /req/core/featurewithlifespan-validto
+requirement:: /req/core/abstract-poi
+requirement:: /req/core/poi-contactinfo
+requirement:: /req/core/poi-featureofinterest
+requirement:: /req/core/poi-metadata
+requirement:: /req/core/poi-keywords
+requirement:: /req/core/poi-rights
+requirement:: /req/core/poi-symbology
+requirement:: /req/core/poi-haspayload
+requirement:: /req/core/link
+requirement:: /req/core/poi
+requirement:: /req/core/poi_payload
+requirement:: /req/core/poi_payload-hasfeatureofinterest
+requirement:: /req/core/poi_payload-hasdefinition
+requirement:: /req/core/poi_payload-usesschema
+description:: 
+Requirements Class POI Core. A POI Implementation Specification SHALL be a valid representation of the POI UML model. This includes conformance with:
+
+ISO Core Requirements:
+
+* <<req_core_general_feature_model,/req/core/generalfeaturemodel>>
+* <<req_core_geometry,/req/core/geometry>>
+
+POI Extensions to ISO:
+
+* <<req_core_abstractfeature,/req/core/abstractfeature>>
+* <<req_core_feature_with_lifespan,/req/core/featurewithlifespan>>
+
+POI Class Model:
+
+* <<req_core_abstract-poi,/req/core/abstract-poi>>
+* <<req_core_poi-payload,/req/core/poi-payload>>
+* <<req_core_poi,/req/core/poi>>
+
+
 
 ====

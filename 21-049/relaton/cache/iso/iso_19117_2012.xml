@@ -1,14 +1,17 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2023-12-01</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Portrayal</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Portrayal</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Présentation</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Présentation</title>
   <uri type="src">https://www.iso.org/standard/46226.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:46226:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/62/46226.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19117:2012</docidentifier>
   <docidentifier type="iso-reference">ISO 19117:2012(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19117:stage-90.93:ed-2</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19117:stage-90.93</docidentifier>
   <docnumber>19117</docnumber>
   <date type="published">
     <on>2012-12</on>
@@ -23,8 +26,10 @@
   </contributor>
   <edition>2</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <abstract format="text/plain" language="en" script="Latn">ISO 19117:2012 specifies a conceptual schema for describing symbols, portrayal functions that map geospatial features to symbols, and the collection of symbols and portrayal functions into portrayal catalogues. This conceptual schema can be used in the design of portrayal systems. It allows feature data to be separate from portrayal data, permitting data to be portrayed in a dataset independent manner.</abstract>
+  <abstract format="text/plain" language="fr" script="Latn">L'ISO 19117:2012 spécifie un schéma conceptuel pour la description des symboles, les fonctions de présentation qui font correspondre des symboles aux entités géospatiales ainsi que la collection des fonctions de présentation et de symboles dans des catalogues de présentation. Ce schéma conceptuel peut être utilisé dans la conception de systèmes de présentation. Il permet aux données d'entité d'être séparées des données de présentation, permettant aux données d'être présentées dans un ensemble de données de façon indépendante.</abstract>
   <status>
     <stage>90</stage>
     <substage>93</substage>

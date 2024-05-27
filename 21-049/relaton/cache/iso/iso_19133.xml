@@ -1,15 +1,19 @@
-<bibdata type="standard" schema-version="v1.2.4">
-  <fetched>2024-03-06</fetched>
+<bibdata type="standard" schema-version="v1.2.8">
+  <fetched>2024-04-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Location-based services</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Tracking and navigation</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Location-based services - Tracking and navigation</title>
+  <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+  <title type="title-main" format="text/plain" language="fr" script="Latn">Services basés sur la localisation</title>
+  <title type="title-part" format="text/plain" language="fr" script="Latn">Suivi et navigation</title>
+  <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Services basés sur la localisation - Suivi et navigation</title>
   <uri type="src">https://www.iso.org/standard/32551.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32551:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32551.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19133</docidentifier>
   <docidentifier type="iso-reference">ISO 19133(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19133:stage-90.93:ed-1</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19133:stage-90.93</docidentifier>
   <docnumber>19133</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -21,6 +25,7 @@
   </contributor>
   <edition>1</edition>
   <language>en</language>
+  <language>fr</language>
   <script>Latn</script>
   <status>
     <stage>90</stage>
@@ -36,17 +41,21 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-03-06</fetched>
+      <fetched>2024-04-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Location-based services</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Tracking and navigation</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Location-based services - Tracking and navigation</title>
+      <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
+      <title type="title-main" format="text/plain" language="fr" script="Latn">Services basés sur la localisation</title>
+      <title type="title-part" format="text/plain" language="fr" script="Latn">Suivi et navigation</title>
+      <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Services basés sur la localisation - Suivi et navigation</title>
       <uri type="src">https://www.iso.org/standard/32551.html</uri>
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32551:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32551.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19133:2005</docidentifier>
       <docidentifier type="iso-reference">ISO 19133:2005(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19133:stage-90.93:ed-1</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19133:stage-90.93</docidentifier>
       <docnumber>19133</docnumber>
       <date type="published">
         <on>2005-10</on>
@@ -61,8 +70,10 @@
       </contributor>
       <edition>1</edition>
       <language>en</language>
+      <language>fr</language>
       <script>Latn</script>
       <abstract format="text/plain" language="en" script="Latn">ISO 19133:2005 describes the data types, and operations associated with those types, for the implementation of tracking and navigation services. It is designed to specify web services that can be made available to wireless devices through web-resident proxy applications, but is not restricted to that environment.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">L'ISO 19133:2005 décrit les types de données ainsi que les opérations associées pour l'implémentation de services de navigation et de suivi. Elle est conçue, entre autres, pour spécifier des services web pouvant être accessibles à des dispositifs sans fil par le biais d'applications web proxy.</abstract>
       <status>
         <stage>90</stage>
         <substage>93</substage>
