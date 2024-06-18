@@ -16,7 +16,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} description «property»  !<<CharacterString-section,CharacterString>>  [0..1] !Provides further information on the feature.
+!{set:cellbgcolor:#FFFFFF} description «property»  !<<CharacterString-section,CharacterString>>  [0..*] !Provides further information on the feature.
  
 !{set:cellbgcolor:#FFFFFF} featureID «property»  !<<GenericName-section,GenericName>>  [1..1]!Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
  

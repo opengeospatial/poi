@@ -50,11 +50,6 @@ An instantiation of the AbstractFeature class SHALL comply with the following cr
 --
 An encoding of the AbstractFeature class SHALL include zero or one `description` attributes.
 --
-
-[.component,class=part]
---
-Encodings of the `description` attribute SHALL be a valid implementation of the CharacterString class from <<ISO19103,ISO 19103>>.
---
 ====
 
 [[req_core_abstractfeature-featureid]]
@@ -71,11 +66,6 @@ An instantiation of the AbstractFeature class SHALL comply with the following cr
 [.component,class=part]
 --
 An encoding of the AbstractFeature class SHALL include one `featureID` attributes.
---
-
-[.component,class=part]
---
-Encodings of the `featureID` attribute SHALL be a valid implementation of the GenericName class from <<ISO19103,ISO 19103>>.
 --
 ====
 
@@ -94,11 +84,6 @@ An instantiation of the AbstractFeature class SHALL comply with the following cr
 --
 An encoding of the AbstractFeature class SHALL include zero or one `identifier` attributes.
 --
-
-[.component,class=part]
---
-Encodings of the `identifier` attribute SHALL be a valid implementation of the ScopedName class from <<ISO19103,ISO 19103>>.
---
 ====
 
 [[req_core_abstractfeature-name]]
@@ -115,10 +100,5 @@ An instantiation of the AbstractFeature class SHALL comply with the following cr
 [.component,class=part]
 --
 An encoding of the AbstractFeature class SHALL include zero or more `name` attributes.
---
-
-[.component,class=part]
---
-Encodings of the `name` attribute SHALL be a valid implementation of the GenericName class from <<ISO19103,ISO 19103>>.
 --
 ====
