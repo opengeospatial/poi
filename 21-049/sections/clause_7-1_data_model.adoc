@@ -20,7 +20,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
  
 !{set:cellbgcolor:#FFFFFF} featureID «property»  !<<GenericName-section,GenericName>>  [1..1]!Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
  
-!{set:cellbgcolor:#FFFFFF} identifer «property»  !<<ScopedName-section,ScopedName>>  [0..1] !Specifies the unique identifier of the feature that is valid globally.
+!{set:cellbgcolor:#FFFFFF} identifer «property»  !<<ScopedName-section,ScopedName>>  [0..*] !Specifies the unique identifier of the feature that is valid globally.
  
 !{set:cellbgcolor:#FFFFFF} name «property»  !<<GenericName-section,GenericName>>  [0..*] !Specifies the name of the feature.
 !===
