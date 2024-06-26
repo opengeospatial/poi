@@ -19,3 +19,8 @@ POI implementations will typically be a simplified representation of a more comp
 This Standard identifies one "Core" <<conformance-class-definition,conformance class>>. This conformance class defines the conformance criteria for the requirements defined in one "Core" <<requirements-class-definition,requirements class>>. The tests this conformance class are documented in <<abstract-test-suite-section,Annex A>>. These tests are organized by Requirements Class. So an implementation of the Core conformance class must pass all tests specified in <<abstract-test-suite-section,Annex A>> for the Core Requirements Class.
 
 The POI Conceptual Model is defined by the POI UML model. This Standard is a representation of that UML model in document form. In the case of a discrepancy between the UML model and this document, the UML model takes precedence.
+
+=== Primitive Data Types
+
+The Primitive Data Types (CharacterString, Integer, DateTime, etc.) are defined in ISO 19103. These Data Types are universal concepts. Therefore, no explicit conformance testing for these concepts is needed. Testing for conformance with the technology-specific implementation of these concepts should be documented in the corresponding Implementation Specification.  
+

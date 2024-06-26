@@ -1,5 +1,7 @@
 [[ats_core]]
 
+The following Abstract Test Suite is independent of any implementing technology. It is not to be used to assess conformance of a POI implementation. Rather, it is intended for use by developers of Implementation Specifications. It provides a baseline to be extended with the technology-specific details necessary to create an Executable Test Script. It is the technology-specific Executable Test Scripts which are used to assess conformance of POI implementations.    
+
 === Conformance Class Core
 
 [conformance_class]

@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.2.8">
-  <fetched>2024-04-26</fetched>
+  <fetched>2024-06-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Terminology work</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Theory and application</title>
@@ -55,7 +55,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-04-26</fetched>
+      <fetched>2024-06-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Terminology work</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Theory and application</title>
