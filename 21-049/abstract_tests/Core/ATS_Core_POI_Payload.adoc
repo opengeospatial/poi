@@ -36,7 +36,7 @@ test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and target class of the `usesSchema` aggregation.
 
-part:: Validate that at least one `usesSchema` aggregation is allowed in a POI_Payload class.
+part:: Validate that at least one `usesSchema` aggregation is required in a POI_Payload class.
 
 part:: Validate that the target of the `usesSchema` aggregation is a valid schema for the implementing technology.
 ====

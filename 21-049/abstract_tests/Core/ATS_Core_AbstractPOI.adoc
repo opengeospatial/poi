@@ -168,7 +168,7 @@ test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and target class of the `hasPayload` aggregation.
 
-part:: Validate that zero or more `hasPayload` aggregation are allowed in an AbstractPOI class.
+part:: Validate that zero or more `hasPayload` aggregations are allowed in an AbstractPOI class.
 
 part:: Validate that the target of the `hasPayload` aggregation is a valid implementation of the POI_Payload class using the <<ats_core_poi-payload,/conf/core/poi-payload>> test.
 ====

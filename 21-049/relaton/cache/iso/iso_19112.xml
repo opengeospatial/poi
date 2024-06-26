@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.2.8">
-  <fetched>2024-04-26</fetched>
+  <fetched>2024-06-26</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Spatial referencing by geographic identifiers</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Spatial referencing by geographic identifiers</title>
@@ -11,7 +11,7 @@
   <uri type="rss">https://www.iso.org/contents/data/standard/07/07/70742.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19112</docidentifier>
   <docidentifier type="iso-reference">ISO 19112(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19112:stage-90.20</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19112:stage-90.93</docidentifier>
   <docnumber>19112</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -27,7 +27,7 @@
   <script>Latn</script>
   <status>
     <stage>90</stage>
-    <substage>20</substage>
+    <substage>93</substage>
   </status>
   <copyright>
     <from>2019</from>
@@ -45,7 +45,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-04-26</fetched>
+      <fetched>2024-06-26</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Spatial referencing by geographic identifiers</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Spatial referencing by geographic identifiers</title>
@@ -57,7 +57,7 @@
       <uri type="rss">https://www.iso.org/contents/data/standard/07/07/70742.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19112:2019</docidentifier>
       <docidentifier type="iso-reference">ISO 19112:2019(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19112:stage-90.20</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19112:stage-90.93</docidentifier>
       <docnumber>19112</docnumber>
       <date type="published">
         <on>2019-02</on>
@@ -84,7 +84,7 @@ Le présent document permet aux producteurs de données de définir des système
 Le présent document est applicable aux données géographiques numériques et ses principes peuvent être élargis à d'autres types de données géographiques tels que les cartes, les tableaux et les textes.</abstract>
       <status>
         <stage>90</stage>
-        <substage>20</substage>
+        <substage>93</substage>
       </status>
       <copyright>
         <from>2019</from>
