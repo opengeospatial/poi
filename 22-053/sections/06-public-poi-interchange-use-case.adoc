@@ -15,7 +15,7 @@ The above-described organizations would like to be able to exchange or transfer 
 
 The POI-CM standard specifies a way to represent a POI with its name, and its (latitude, longitude) position on earth. The rest of the information needed will have to be specified using non-standard attributes, as described in the xref:06-nonstandard-attributes.adoc#ug_nonstandard_attributes_section[Nonstandard Attributes] section.
 
-=== Nonstandard Attributes for Restaurant POIs
+=== Nonstandard Attributes for Public POIs
 
 The most important nonstandard attributes needed for the Public POI Interchange use case are:
 
