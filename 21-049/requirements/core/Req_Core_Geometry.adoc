@@ -18,8 +18,8 @@ A POI instance SHALL include a spatial geometry property using the SpatialAttrib
 --
 The spatial geometry properties of all POI instances SHALL be defined using one or more of the following classes:
 
-. <<GM_Point-section,GM_Point>>
-. <<GM_LineString-section,GM_LineString>>
-. <<GM_Polygon-section,GM_Polygon>>
+. GM_Point
+. GM_LineString
+. GM_Polygon
 --
 ====
