@@ -17,7 +17,7 @@ An instantiation of the Abstract POI class SHALL comply with requirement <<req_c
 
 [.component,class=part]
 --
-An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_poi_contactinfo,/req/core/poi-contactinfo>>.
+An instantiation of the Abstract POI class SHALL comply with requirement <<req_core_poi_contactInfo,/req/core/poi-contactinfo>>.
 --
 
 [.component,class=part]

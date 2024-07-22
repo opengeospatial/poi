@@ -18,9 +18,9 @@ image::./images/Features.png[align="center"]
 
 The most relevant classes defined by this model are described below:
 
-*<<FeatureType-section,FeatureType:>>* This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instantiated as feature classes in an Application Schema
+*FeatureType:* This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instantiated as feature classes in an Application Schema
 
-*<<AnyFeature-section,AnyFeature:>>* The class AnyFeature is an instance of the «metaclass» FeatureType. It represents the set of all classes which are feature types. 
+*AnyFeature:* The class AnyFeature is an instance of the «metaclass» FeatureType. It represents the set of all classes which are feature types. 
 
 In an implementation, this abstract class shall be substituted by a concrete class representing a feature type from an application schema associated with a domain of discourse.
 
@@ -38,13 +38,13 @@ image::./images/Geometry.png[align="center"]
 
 The key classes described in this figure are:
 
-*<<GM_Object-section,GM_Object:>>* Root class for all OGC geometry types.
+*GM_Object:* Root class for all OGC geometry types.
 
-*<<GM_Point-section,GM_Point:>>* The geometric primitive for Points
+*GM_Point:* The geometric primitive for Points
 
-*<<GM_LineString-section,GM_LineString:>>* The geometric primitive for line strings.
+*GM_LineString:* The geometric primitive for line strings.
 
-*<<GM_Polygon-section,GM_Polygon:>>* The geometric primitive for areas.
+*GM_Polygon:* The geometric primitive for areas.
 
 include::../requirements/core/Req_Core_Geometry.adoc[]
 
@@ -106,7 +106,7 @@ image::./images/POI_Extensions.png[align="center"]
 * <<PayloadSchema-section,PayloadSchema:>> The Payload Schema Class represents a syntactic model (schema) for a POI payload.
 * <<PayloadDefinition-section,PayloadDefinition:>> The Payload Definition Class represents a semantic model (ontology) for a POI payload.
 
-In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. A collection of data types and concepts defined by the <<ISO19103,ISO 19103>>, <<ISO19107,ISO 19107>>, <<ISO19109,ISO 19109>>, and <<ISO19115,ISO 19115>> Standards is provided in <<iso_data_dictionary_section,Annex B>>.
+In the interest of interoperability, the POI Payload should be constructed using data types and concepts which are already in wide use by the Geospatial community. The data types and concepts defined by the <<ISO19103,ISO 19103>>, <<ISO19107,ISO 19107>>, <<ISO19109,ISO 19109>>, and <<ISO19115,ISO 19115>> Standards are recommended for this purpose.
 
 While the POI Payload should have a single syntactic model (schema), there may be more than one way to represent that model. For example, JSON Schemas are commonly provided using both JSON and YAML encodings. The POI abstract model allows a POI Payload to have multiple `usesSchema` aggregations in order to support this practice. 
 

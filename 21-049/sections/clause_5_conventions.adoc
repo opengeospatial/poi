@@ -51,3 +51,14 @@ The example UML diagram in <<figure-2>> demonstrates the UML notation and colori
 [[figure-2]]
 .Example UML diagram demonstrating the UML notation and coloring scheme used throughout the POI Standard.
 image::images/UMLNotation_Example.png[align="center"]
+
+=== International Text
+
+Not all users will speak the same language. Therefore a POI Standard should support international text. While internationalization techniques are specific to the implementing technology, this Conceptual Standard should provide some guidence on the desired characteristics of such an implementation.
+
+To that end, this Standard recommends the following conventions for implementing internationalized text in an Implementation Specification:
+
+* All text strings should have cardinality greater than one.
+* Text strings can have an associated language attribute.
+* These language attributes should be populated with an international language code.
+
