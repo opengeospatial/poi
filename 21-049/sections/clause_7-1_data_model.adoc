@@ -10,19 +10,19 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeature is the abstract superclass of all feature types within the PoI Model. 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! AnyFeature 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} description «property»  !<<CharacterString-section,CharacterString>>  [0..1] !Provides further information on the feature.
+!{set:cellbgcolor:#FFFFFF} description «property»  !CharacterString  [0..*] !Provides further information on the feature.
  
-!{set:cellbgcolor:#FFFFFF} featureID «property»  !<<GenericName-section,GenericName>>  [1..1]!Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
+!{set:cellbgcolor:#FFFFFF} featureID «property»  !GenericName [1..1]!Specifies the unique identifier of the feature that is valid in the instance document within which it occurs.
  
-!{set:cellbgcolor:#FFFFFF} identifer «property»  !<<ScopedName-section,ScopedName>>  [0..1] !Specifies the unique identifier of the feature that is valid globally.
+!{set:cellbgcolor:#FFFFFF} identifer «property»  !ScopedName [0..*] !Specifies the unique identifier of the feature that is valid globally.
  
-!{set:cellbgcolor:#FFFFFF} name «property»  !<<GenericName-section,GenericName>>  [0..*] !Specifies the name of the feature.
+!{set:cellbgcolor:#FFFFFF} name «property» !GenericName [0..*] !Specifies the name of the feature.
 !===
 |=== 
 
@@ -40,13 +40,13 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition*
  
-!{set:cellbgcolor:#FFFFFF} creationDate «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature was added to the containing model.
+!{set:cellbgcolor:#FFFFFF} creationDate «property»  !DateTime [0..1] !Indicates the date at which a POI feature was added to the containing model.
  
-!{set:cellbgcolor:#FFFFFF} terminationDate «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature was removed from the containing model.
+!{set:cellbgcolor:#FFFFFF} terminationDate «property»  !DateTime [0..1] !Indicates the date at which a POI feature was removed from the containing model.
  
-!{set:cellbgcolor:#FFFFFF} validFrom «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature started to exist in the real world.
+!{set:cellbgcolor:#FFFFFF} validFrom «property»  !DateTime [0..1] !Indicates the date at which a POI feature started to exist in the real world.
  
-!{set:cellbgcolor:#FFFFFF} validTo «property»  !<<DateTime-section,DateTime>>  [0..1] !Indicates the date at which a POI feature ceased to exist in the real world.
+!{set:cellbgcolor:#FFFFFF} validTo «property»  !DateTime [0..1] !Indicates the date at which a POI feature ceased to exist in the real world.
 !===
 |=== 
 
@@ -75,10 +75,10 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="15,20,60",frame=none,grid=none,options="header"]
 !===
 !{set:cellbgcolor:#DDDDDD} *Attribute* !*Value type and multiplicity* !*Definition* 
-!{set:cellbgcolor:#FFFFFF} contactInfo «property»  !<<CI_Responsibility-section,CI_Responsibility>>  [1..*] !Contact information for the creators and maintainers of this POI.
+!{set:cellbgcolor:#FFFFFF} contactInfo «property»  !CI_Responsibility  [1..*] !Contact information for the creators and maintainers of this POI.
 !{set:cellbgcolor:#FFFFFF} hasMetadata «property»  !<<Link-section,Link>>  [0..*] !An association with zero or more metadata records providing additional information about this POI and/or the associated Features of Interest.
-!{set:cellbgcolor:#FFFFFF} keywords «property»  !<<MD_Keywords-section,MD_Keywords>>  [0..*] !Keywords used to aid in discovery of POIs of interest.
-!{set:cellbgcolor:#FFFFFF} rights «property»  !<<MD_Constraints-section,MD_Constraints>>  [0..2] !Legal and security constraints applicable to this POI. 
+!{set:cellbgcolor:#FFFFFF} keywords «property»  !MD_Keywords  [0..*] !Keywords used to aid in discovery of POIs of interest.
+!{set:cellbgcolor:#FFFFFF} rights «property»  !MD_Constraints  [0..2] !Legal and security constraints applicable to this POI. 
 !{set:cellbgcolor:#FFFFFF} symbology «property»  !<<Link-section,Link>>  [0..1] !A reference to information about rendering this POI. 
 !===
 |=== 
@@ -90,7 +90,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |[cols="1,4",frame=none,grid=none]
 !===
 !{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling. (SOSA) 
-!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AnyFeature-section,AnyFeature>> 
+!{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! AnyFeature 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===
 |=== 
