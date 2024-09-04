@@ -1,7 +1,0 @@
-[[indoor_navigation_use_case_section]]
-== Indoor Navigation Use Case
-
-//Insert clause content here
-
-Clause content.
-

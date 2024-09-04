@@ -1,7 +1,0 @@
-[[covid_testing_center_use_case_section]]
-== Covid Testing Center Use Case
-
-//Insert clause content here
-
-Clause content.
-

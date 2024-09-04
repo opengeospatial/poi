@@ -1,7 +1,7 @@
 [[ug_usage_section]]
 == How To Use This Resource
 
-The Users Guide to the POI Conceptual Model (POI-CM) Standard is not intended to be read from start to finish. Rather, it is a resource structured to provide quick answers to questions that an implementer may have about the POI-CM Standard. 
+The Best Practices Guide to the POI Conceptual Model (POI-CM) Standard is not intended to be read from start to finish. Rather, it is a resource structured to provide quick answers to questions that an implementer may have about the POI-CM Standard. 
 
 The POI-CM Standard includes hyperlinks that can be used to navigate directly to relevant sections of the User Guide. 
 

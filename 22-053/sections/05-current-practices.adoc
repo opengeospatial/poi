@@ -1,0 +1,62 @@
+
+[[ug_current_practices_section]]
+== Survey of Selected Current Practices
+
+Most usages of this POI Conceptual Model standard will need to add extra _attributes_ (named properties) in a *POI_Payload* object.
+There are a number of attributes that are likely to come up often. Among the most common are:
+
+* Internationalized names and addresses
+* Categories
+* Business Hours
+* Telephone Number
+
+Since there are extant standards and practices for representing these, this section will survey those.
+The next section will then recommend how to model these attributes in a *POI_Payload*.
+
+=== Some Common POI Information Practices and Standards ===
+
+Before discussing the individual attributes, here are some of the references consulted for this survey:
+
+Indoor Mapping Data Format (IMDF)::
+https://docs.ogc.org/cs/20-094/[IMDF] is an OGC Community Standard, originally developed by Apple, for indoor maps
+It can be used, for example, to map airports, malls, and train stations.
+The concept of an https://docs.ogc.org/cs/20-094/Occupant/[Occupant] is very close to that of a POI representing a business,
+and as a result, the modeling of various Occupant properties is directly relevant to this survey.
+
+OpenStreetMap::
+https://wiki.openstreetmap.org/wiki/Main_Page[OpenStreetMap] is a community-built map of the world.
+Some of its https://wiki.openstreetmap.org/wiki/Map_features[Primary Features] could be called POIs,
+and the https://wiki.openstreetmap.org/wiki/Tags[tags] of such features are similar to our attributes.
+
+Overture Maps::
+https://docs.overturemaps.org/schema/[Overture Maps] is developed by a foundation as a map built on open data.
+It has a schema for https://docs.overturemaps.org/schema/reference/places/place/[places] that are essentially POIs.
+
+CityGML::
+https://www.ogc.org/standard/citygml/[CityGML] is an OGC standard for 3D city models.
+It is mostly about the buildings and other city infrastructure, rather than the occupants of the buildings.
+However, it is useful to see how it models addresses.
+
+Google Hotels::
+Google provides an XML schema for uploading listings, and a public example of this is the
+https://developers.google.com/hotels/hotel-prices/dev-guide/hlf[Hotels listing] schema.
+Hotels are a subset of POIs but are otherwise very similar.
+
+Schema.org::
+https://schema.org/[Schema.org] is a set of recommended schema for modeling various things on the web.
+It specifies markup for various https://schema.org/Property[Properties], some of which are relevant to POIs.
+
+XML Schema::
+https://www.w3.org/TR/xmlschema11-2/[XML Schema Definition Language] models a number of primitive data types,
+some of which (language, dates and times) are relevant to this survey.
+
+=== Internationalized Names and Addresses ===
+
+
+=== Categories ===
+
+
+=== Business Hours ===
+
+
+=== Telephone Number ===

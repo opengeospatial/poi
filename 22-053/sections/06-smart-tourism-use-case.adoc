@@ -1,7 +1,0 @@
-[[smart_tourism_use_case_section]]
-== Smart Tourism Use Case
-
-//Insert clause content here
-
-Clause content.
-
