@@ -1,39 +1,23 @@
-[[choose_restaurant_use_case_section]]
-== Choose Restaurant Use Case
+[[public_poi_interchange_use_case_section]]
+== Public POI Interchange Use Case
 
 === Use Case Overview
 
-The *Choose Restaurant* use case is where a system is desired to help users find restaurants near them and information about those restaurants to decide which, if any, they want to use.
+The *Public POI Interchange* use case is where there is a desire to have different organizations be able to share information about _Public POIs_.
+A public POI is a POI that some of the general public might be interested in going to.
+Examples of public POIs are: stores, service businesses, hotels, schools and other government buildings, medical centers, parks, sports centers, etc.
 
-In order to choose a restaurant to eat in or get delivery from, users need to be able to identify POIs that are restaurants, with certain constraints (e.g., within a certain distance from a point on earth where the user is or expects to be). From that set of possibilities, they may wish to examine further information about each restaurant, to narrow down the choice. This information may include some or all of the following:
+Some organizations gather comprehensive lists of public POIs, perhaps restricted to certain geographies or types of POIs. These organizations are typically vendors of POI information (they used to be called "Yellow Page publishers") or government or trade organizations.
 
-* Serves cuisines that the user can eat and likes.
-* Is open during the hours the user intends to visit,
-and/or serve the type of meal (breakfast, lunch, dinner, etc.) the user wants.
-* Has service style the user prefers (take-out vs dine-in).
-* Has a price level the user prefers.
-* Has a bar and/or serves alcohol.
-* Has delivery.
-* Has order-ahead with pickup.
-* Requires reservations or reservations recommended.
-* Will have a busyness level that the user prefers at the time of intended vist.
-* Has good reviews.
-* Accepts particular payment methods.
-* Has an ambience the user prefers (family-friendly, upscale, romantic, etc.).
-* Has an all-you-can eat buffet.
-* Shows sports on TV.
-* Has a happy hour.
-* Is Handicap-accessible.
-* Has available free parking.
-* Has health-related requirements (vaccination and/or masks).
+Other organizations consume lists of public POIs, in an effort to develop a globally comprehensive database of public POIs. Such organizations are typically providers of apps or web interfaces that allow consumers to search for, choose among, and perhaps get directions to a public POI that they want to or need to visit. In order to help consumers accomplish these things, the database commonly needs location, contact information, categorical information, open hours, and other attributes, for the POIs.
 
-To support this use case, a system will need a comprehensive set of restaurant POIs, each with attributes to help answer some or all of the information needs listed above.
+The above-described organizations would like to be able to exchange or transfer lists of POIs, and merge them together.
 
 The POI-CM standard specifies a way to represent a POI with its name, and its (latitude, longitude) position on earth. The rest of the information needed will have to be specified using non-standard attributes, as described in the xref:06-nonstandard-attributes.adoc#ug_nonstandard_attributes_section[Nonstandard Attributes] section.
 
-=== Nonstandard Attributes for Restaurant POIs
+=== Nonstandard Attributes for Public POIs
 
-The most important nonstandard attributes needed for the restaurant use case are:
+The most important nonstandard attributes needed for the Public POI Interchange use case are:
 
 * xref:06-nonstandard-attributes.adoc#_address[Address]
 * xref:06-nonstandard-attributes.adoc#_telephone_number[Telephone Number]
@@ -53,6 +37,34 @@ While one could use the *CI_Contact* type from the informative annex, a simpler 
 ----
 
 where the *url* value is a Uniform Resource Locator.
+
+=== Multilingual Support ===
+
+While sometimes the lists of POIs being exchanged will be restricted to a known and common language, most examples of this use case will involve multinational POIs; even within a single country, there are often multiple official and unofficial languages spoken.
+The ultimate consumers of the data probably want to search and view the information using their own choice of language.
+
+Most of the attributes for public POIs need some extension beyond what has been recommended above in order to allow multiple versions of some strings, each with a labeled language. A recommendation for such an internationalized string is the following:
+
+.Recommended International String Schema
+[source,json]
+----
+    "InternationalString": {
+      "text": "CharacterString" [1..1],
+      "language": "CharacterString" [0..1]
+    }
+----
+
+Given the above, there are two places where such a string might be used in the payload: name and address.
+The name can simply be a list of one or more names, each with a language code.
+It is recommended that if there is more than one name, then each name should have a language and no language should be repeated.
+
+.Recommended International Name Schema
+[source,json]
+----
+    "InternationalName": {
+      "name": "InternationalString" [1..],
+    }
+----
 
 
 === Example ===

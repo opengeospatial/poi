@@ -1,7 +1,0 @@
-[[houses_and_untiilty_poles_use_case_section]]
-== Houses and Utility Poles Use Case
-
-//Insert clause content here
-
-Clause content.
-

@@ -1,7 +1,0 @@
-[[ev_charging_stations_use_case_section]]
-== Electrical Vehicle Charging Stations Use Case
-
-//Insert clause content here
-
-Clause content.
-

@@ -2,17 +2,17 @@
 [[ug_nonstandard_attributes_section]]
 == Payload: Nonstandard Attributes
 
-An _attribute_ is a named property of a feature. While this POI Conceptual Model Standard specifies some standard attributes (e.g., lifetime attributes), most applications will need to define and use some attributes that are not normatively defined by the standard. The mechanism for including non-standard attributes in a POI is to use the *POI_Payload* property.
+An _attribute_ is a named property of a feature. While this POI Conceptual Model Standard specifies some standard attributes (e.g., lifetime attributes), most applications will need to define and use some attributes that are not normatively defined by the standard. The mechanism for including non-standard attributes in a POI is to use the *hasPayload* property, whose type is zero or more *POI_Payload* values.
 
 === Using POI_Payload
 
 A *POI_Payload* is only partially specified in this POI Conceptual Model Standard. These properties are specified:
 
-usesSchema:: The value identifies a _schema_ for the payload. How this identification is done and what the schema looks like depends on the implementation technology used. We'll see some examples below. The schema describes the _syntax_ for the other properties of the payload, and the value for identifying the schema is typically a _URI_.
+usesSchema:: The value identifies a _schema_ for the payload. How this identification is done and what the schema looks like depends on the implementation technology used. We'll see some examples below. The schema describes the _syntax_ for the other properties of the payload, and the value for identifying the schema is typically a _URI_. There can be more than one schema, but the intent is that these will represent the same conceptual model of a payload, perhaps for different implementation technologies.
 
 hasDefinition:: The value is a companion to the schema referenced by *usesSchema*, and it describes the _semantics_ of the various payload fields. Typically, this will be plain text descriptions of the properties, what standards they adhere to, etc.
 
-representsFoI:: This indicates the Feature of Interest that the payload is for. It is required.
+hasFeatureOfInterest:: This indicates the Feature of Interest that the payload is for. There can be zero or more of these.
 
 For example, suppose an application needed an attribute called *isPublic*, whose value is true or false depending on whether or not the POI is something the general public can visit. A particular POI could include a *hasPayload* association to a *POI_Payload* that looks like this in conceptual form:
 
@@ -89,35 +89,43 @@ The value of the *hasDefinition" property should reference a file that describes
 
 There are a number of attributes that commonly are needed in use cases for POIs yet are not standardized in the POI-CM. This section suggests a recommended schema for these common nonstandard attributes.
 
-This POI Conceptual Model Standard has an Informative Annex which contains several conceptual model fragments taken from other OGC Standards which may be useful and recommended for use in payloads when the corresponding concept needs modeling. Among the useful ones are:
-
-[none]
-* Date, Time, Decimal, Integer, Number, Real, Vector, CharacterString, URI, Boolean, DateTime, CI_Address, CI_Contact, CI_Date, CI_OnlineResource, CI_Organisation, CI_Telephone, MD_Identification, MD_Keywords
-
-The rest of this section recommends how to handle four common POI attribute: address, telephone number, opening hours, and category.
-
 ==== Address
 
 An address is a structured or semi-structured way of expressing where a place on earth can be found, usually referencing political areas, route (street) names, and numbers on routes. These are the things one uses to specify where mail is to be delivered, or packages are to be picked up. Special software called _geocoders_ can convert an address into (latitude, longitude) position on earth.
 
-There are many addressing systems in use in the world. A schema to represent them all precisely would be quite complicated.  The recommendation here is to use the *CI_Address* class from the Informative Annex:
+There are many addressing systems in use in the world. A schema to represent them all precisely would be quite complicated.  The recommendation here is to use a modification of *CI_Address* class from the ISO 19115 (Citation Information) standard.
+The modification is to allow cardinality of all the text strings to be more than 1 if desired: this allows for multiple languages to be used.
 
-.CI_Address Schema
+.Address Schema
 [source,JSON]
 ----
-    "CI_Address" {
-        "administrativeArea": "CharacterString" [0..1],
-        "city": "CharacterString" [0..1],
-        "country": "CharacterString" [0..1],
-        "deliveryPoint": "CharacterString" [0..1],
-        "electronicMailAddress": "CharacterString" [0..1],
-        "postalCode": "CharacterString" [0..1]
+    "Address" {
+        "administrativeArea": "CharacterString" [0..],
+        "city": "CharacterString" [0..],
+        "country": "CharacterString" [0..],
+        "deliveryPoint": "CharacterString" [0..],
+        "electronicMailAddress": "CharacterString" [0..],
+        "postalCode": "CharacterString" [0..]
         }
 ----
 
-where the *country*, *adminstrativeArea* (state or province), and *city* give a structuring of three of the political areas containing the POI, and the *postalCode* is the postal or zipcode that some countries use in addresses (varies by country). The *deliveryPoint* is an unstructured way of expressing the rest of the address. E.g., it might be "123 Main St., Unit 3" or "Market Square". The language of the address should be either a common language implicit in the entire dataset (e.g., English), or a language in use in the country in question.
+where the *country*, *adminstrativeArea* (state or province), and *city* give a structuring of three of the political areas containing the POI, and the *postalCode* is the postal or zipcode that some countries use in addresses (varies by country). The *deliveryPoint* is an unstructured way of expressing the rest of the address. E.g., it might be "123 Main St., Unit 3" or "Market Square". 
+If there are not multiple CharacterStrings for the properties, then the language of the address should be either a common language implicit in the entire dataset (e.g., English), or a language in use in the country in question.
+For international datasets, it is recommended that the language of each string in the address be annotated with its language, using the facilities available in the particular implementation technology used.
 
-_TODO: check out ISO 19160:1 A conceptual model for addressing_
+For example, if the implementation technology is JSON, this could be the way to express the address of the Empire State Building in several languages:
+
+.Example Address Value
+[source,JSON]
+----
+    {
+      "administrativeArea": [
+         
+      ]
+    }
+----
+
+// _TODO: check out ISO 19160:1 A conceptual model for addressing_
 
 ==== Telephone Number
 

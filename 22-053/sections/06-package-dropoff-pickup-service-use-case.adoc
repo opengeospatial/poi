@@ -1,7 +1,0 @@
-[[package_dropoff_pickup_service_use_case_section]]
-== Package Drop-off and Pick Up Service Use Case
-
-//Insert clause content here
-
-Clause content.
-

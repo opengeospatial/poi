@@ -1,0 +1,226 @@
+
+[[ug_current_practices_section]]
+== Survey of Selected Current Practices
+
+Most usages of this POI Conceptual Model standard will need to add extra _attributes_ (named properties) in a *POI_Payload* object.
+There are a number of attributes that are likely to come up often. Among the most common are:
+
+* Multilingual names
+* Addresses, including multilingual addresses
+* Categories
+* Business Hours
+* Telephone Number
+
+Since there are extant standards and practices for representing these, this section will survey those.
+The next section will then recommend how to model these attributes in a *POI_Payload*.
+
+=== Some Common POI Information Practices and Standards ===
+
+Before discussing the individual attributes, here are some of the references consulted for this survey:
+
+Indoor Mapping Data Format (IMDF)::
+https://docs.ogc.org/cs/20-094/[IMDF] is an OGC Community Standard, originally developed by Apple, for indoor maps
+It can be used, for example, to map airports, malls, and train stations.
+It is a JSON format, based on GeoJSON.
+The concept of an https://docs.ogc.org/cs/20-094/Occupant/[Occupant] is very close to that of a POI representing a business.
+
+OpenStreetMap::
+https://wiki.openstreetmap.org/wiki/Main_Page[OpenStreetMap] is a community-built map of the world.
+Some of its https://wiki.openstreetmap.org/wiki/Map_features[Primary Features] could be called POIs,
+and the https://wiki.openstreetmap.org/wiki/Tags[tags] of such features are similar to our attributes.
+The OpenStreetMap data model is a https://github.com/openstreetmap/openstreetmap-website/blob/master/db/structure.sql[database schema].
+Things are called _elements_ and _tags_ are used to provide the data for each element.
+
+Overture Maps::
+https://docs.overturemaps.org/schema/[Overture Maps] is developed by a foundation as a map built on open data.
+It has a schema for https://docs.overturemaps.org/schema/reference/places/place/[places] that are essentially POIs.
+Overture uses OGC's feature model, and defines its data model schema using a JSON schema.
+
+CityGML::
+https://www.ogc.org/standard/citygml/[CityGML] is an OGC standard for 3D city models.
+It is mostly about the buildings and other city infrastructure, rather than the occupants of the buildings.
+However, it is useful to see how it models addresses.
+
+Google Hotels::
+Google provides an XML schema for uploading listings, and a public example of this is the
+https://developers.google.com/hotels/hotel-prices/dev-guide/hlf[Hotels listing] schema.
+Hotels are a subset of POIs but are otherwise very similar.
+
+Schema.org::
+https://schema.org/[Schema.org] is a set of recommended schema for modeling various things on the web.
+It specifies markup for various https://schema.org/Property[Properties], some of which are relevant to POIs.
+A primary use is for putting _microdata_ into web pages to give information to search engines.
+
+XML Schema::
+https://www.w3.org/TR/xmlschema11-2/[XML Schema Definition Language] models a number of primitive data types,
+some of which (language, dates and times) are relevant to this survey.
+
+RFC5646::
+https://tools.ietf.org/html/rfc5646[RFC 5646] _Tags for Identifying Languages_ is an Internet Best Practices
+guide to tags for identifying natural languages.
+
+=== Multilingual Names ===
+
+POIs can have their names expressed differently in different natural languages:
+for example "la tour Eiffel" in French is "Eiffel Tower" in English and Eiffelturm in German.
+
+*IMDF* https://docs.ogc.org/cs/20-094/Occupant/index.html[Occupants] have a _name_
+which has type https://docs.ogc.org/cs/20-094/Reference/index.html#labels[_LABELS_].
+LABELS are a JSON object used to express a string label in one or more langauges.
+The JSON object has member names that are languages, with the corresponding
+member values being the label in that language.
+For example:
+
+```json
+    name: {
+      "en-US": "Center Pavillion",
+      "en-GB": "Centre Pavillion"
+    }
+```
+IMDF says that the langage member names should be a LANGUAGE_TAG, which is
+defined in their https://docs.ogc.org/cs/20-094/Reference[reference section]
+as an https://tools.ietf.org/html/rfc5646[RFC 5646] compliant language tag and sub-tag, script, and region subtag
+registered in the
+https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry[IANA Language Subtag Registry].
+IMDF requires that language tags may not be duplicated in a LABELS.
+An IMDF archive comes with a https://docs.ogc.org/cs/20-094/Manifest[Manifest] containing metadata about the described venue.
+Among the metadata is a _language_, whose value is the _default language_ tag for the venue.
+There is a requirement that all LABELS must contain an entry for the default language.
+
+In *OpenStreeMap*, elements are given names with a _name=_ tag, which is decribed https://wiki.openstreetmap.org/wiki/Names#Localization[here].
+Additionally, there is a long article on https://wiki.openstreetmap.org/wiki/Multilingual_names[Multilingual names].
+There can be multiple _name=_ tags for an element, each giving the name in another language.
+The bare _name=_ tag gives the default language name, used locally.
+Names in other languages use the form _name:code=_, where _code_ is
+a language's https://www.loc.gov/standards/iso639-2/php/code_list.php[ISO 639-1 alpha-2 code (in the second column)],
+or https://www.loc.gov/standards/iso639-2/php/code_list.php[ISO 639-2/T (alpha-3)] code.
+It is recommended that the local name be repeated with an explicit language code,
+so that an implementation doesn't have to guess the local language.
+For example:
+
+```
+    name=la tour Eiffel
+    name:fr=la tour Eiffel
+    name:en=Eiffel Tower
+    name:de=Eiffelturm
+```
+
+In *Overture Maps*, names are objects with a _primary_ member (a string), and a _common_ member
+which is an object that itself contains members whose names are
+https://en.wikipedia.org/wiki/IETF_language_tag[IETF-BCP47] language tags
+and whose values are strings.
+For example
+
+```json
+    "names": {
+      "primary" : "Statue of Liberty",
+      "common" : {
+         "fr" : "Statue de la Liberté",
+         "it" : "Statua della Libertà"
+      }
+    }
+```
+
+The primary name is expected to be the name in the localized langauge, and the common names
+give the name in other languages.
+The IETF-BCP47 language codes are expected to be in the
+https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry[IANA language subtag registry].
+
+Overture Maps allows an additional object in the _names_ element: a _rules_ object.
+It allows for expressing such variants as "short", "alternate", or "official", and includes
+an explicit _language_ member and _value_ member.
+
+*Google Hotels* specifies the language at the file level only:
+that is, the entire collection of POIs is expected to have names in a single language,
+and that language is given by a _language_ XML element in the https://www.gstatic.com/localfeed/local_feed.xsd[schema].
+The language is expected to be an http://www.w3.org/WAI/ER/IG/ert/iso639.htm#2letter[ISO 639 lowercase 2-letter language code].
+
+*CityGML* and *Schema.org* appear not to have addressed the issue of multilingual names.
+
+==== Addresses, including Multilingual Addresses ====
+
+There are many ways of expressing addresses of POIs.
+And, like POI names, addresses have country, locality, and street names that are different in different languages:
+e.g., Spain in English is España in Spanish.
+
+In *IMDF*, an https://docs.ogc.org/cs/20-094/Address/index.html[Address] is a Feature object
+containing a number or properties:
+
+* _address_: formatted postal address, excluding suite/unit identifier, i.e. "123 E. Main Street".
+* _unit_: if present, a qualifying official or proprietary unit/suite designation, i.e. "2A"
+* _locality_: the official locality (e.g. city, town) component of the postal address
+* _province_: if present, Province (e.g. state, territory) component of the postal address, using
+https://www.iso.org/standard/72483.html[ISO 3166-2]
+* _country_ : country component of the postal address, using
+https://www.iso.org/iso-3166-country-codes.html[ISO 3166]
+* _postal_code_ : mail sorting code associated with the postal address
+* _postal_code_ext_ : mail sorting code extension associated with the postal code
+* _postal_code_vanity_ : mail sorting code extension associated with the postal code
+
+There is nothing said about expressing the _address_ or
+CityGML appears not to have addressed the issue of internationalized names.
+ _locality_ in different languages,
+so presumably the local language is expected for those.
+By using ISO standards for _province_ and _country_, those can be tranlated into other languages
+when converting the codes to full names.
+
+In *OpenStreetMap*, addresses are assigned to elements by giving them values for various _addr:xxx=_ tags,
+as described in https://wiki.openstreetmap.org/wiki/Addresses[this article].
+The tags are similar to those used by IMDF, but more comprehensive and more structured.
+Consult https://wiki.openstreetmap.org/wiki/Map_features#Addresses[here] for the full list.
+There is an attempt to fully structure addresses, rather than leaving the street etc. as an unstructured string,
+though there is a fallback _addr:full=_ tag for when structuring just doesn't work.
+For example:
+
+```
+    addr:housenumber=1000
+    addr:street=5th Avenue
+    addr:city=New York
+    addr:state=NY
+    addr:country=US
+```
+
+For values that can be multilingual, the tags can have a language code added to them after a colon,
+just as they were in the _name:code=_ tags of the previous part of this section.
+For example:
+
+```
+    addr:city:en=Munich
+    addr:city_de=München
+```
+
+In *Overture Maps*, the https://docs.overturemaps.org/schema/reference/addresses/address/[address schema]
+has country, postcode, street, number, and unit, and then a number of "address levels" to capture
+all the various levels of administrative areas that might be present, in an ordered by unlabeled way.
+An example is:
+
+```json
+  "properties": {
+    "theme": "addresses",
+    "type": "address",
+    "version": 0,
+    "country": "US",
+    "address_levels": [
+      {
+        "value": "MA"
+      },
+      {
+        "value": "NEWTON CENTRE"
+      }
+    ],
+    "postcode": "02459",
+    "street": "COMMONWEALTH AVE",
+    "number": "1000"
+  }
+```
+
+The note that they loosely followed the ideas of https://openaddresses.io/[OpenAddresses].
+It appear that they do not explicitly address the issue of multilingual address components.
+
+=== Categories ===
+
+
+=== Business Hours ===
+
+
+=== Telephone Number ===

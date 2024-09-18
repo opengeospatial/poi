@@ -1,4 +1,4 @@
-= User guide for OGC Points of Interest
+= Best Practices guide for OGC Points of Interest
 :doctype: user-guide
 :status: draft
 :committee: technical
@@ -25,26 +25,10 @@ include::sections/01-introduction.adoc[]
 include::sections/02-usage.adoc[]
 include::sections/03-scope.adoc[]
 include::sections/04-normative-references.adoc[]
+
+include::sections/05-current-practices.adoc[]
 include::sections/05-nonstandard-attributes.adoc[]
 
-include::sections/06-choose-restaurant-use-case.adoc[]
+include::sections/06-public-poi-interchange-use-case.adoc[]
+include::sections/06-poi-publication-use-case.adoc[]
 
-// include::sections/06-construction-site-use-case.adoc[]
-
-// include::sections/06-country-covid-requirements-use-case.adoc[]
-
-// include::sections/06-covid-testing-center-use-case.adoc[]
-
-// include::sections/06-ev-charging-stations-use-case.adoc[]
-
-// include::sections/06-indoor-navigation-use-case.adoc[]
-
-// include::sections/06-military-use-case.adoc[]
-
-// include::sections/06-houses-and-utility-poles-use-case.adoc[]
-
-// include::sections/06-package-dropoff-pickup-service-use-case.adoc[]
-
-// include::sections/06-poi-publication-use-case.adoc[]
-
-// include::sections/06-smart-tourism-use-case.adoc[]
