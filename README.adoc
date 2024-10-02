@@ -1,10 +1,10 @@
 # About OGC Points of Interest (PoI) GitHub Repository
 
-This repository is the development space for the draft OGC Point of Interest (POI) Part 1: Conceptual Model Standard. Development of this Standard is taking place in the 21-049 directory. The current draft is available in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/21-049/21-049.html[HTML], https://github.com/opengeospatial/poi/blob/main/21-049/21-049.pdf[PDF], and https://github.com/opengeospatial/poi/blob/main/21-049/21-049.doc[Word] formats.
+This repository is the development space for the draft OGC Point of Interest (POI) Part 1: Conceptual Model Standard. Development of this Standard is taking place in the 21-049 directory. The current draft is available in https://docs.ogc.org/DRAFTS/21-049.html[HTML] and https://docs.ogc.org/DRAFTS/21-049.pdf[PDF] formats.
 
-This Standard is accompanied by a Users Guide. Development of the Users Guide is taking place in the 22-053 directory. The current draft is available in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/22-053/22-053.html[HTML], https://github.com/opengeospatial/poi/blob/main/22-053/22-053.pdf[PDF], and https://github.com/opengeospatial/poi/blob/main/22-053/22-053.doc[Word] formats.
+This Standard is accompanied by a Users Guide. Development of the Users Guide is taking place in the 22-053 directory. The current draft is available in https://docs.ogc.org/DRAFTS/22-053.html[HTML] and https://docs.ogc.org/DRAFTS/22-053.pdf[PDF] formats.
 
-The draft OGC Point of Interest (POI) Part 2: JSON Encoding Standard defines how the POI Conceptual model should be implemented in JSON. Development of this Standard is taking place in the 23-045 directory. The current draft is available in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/23-045/23-045.html[HTML], https://github.com/opengeospatial/poi/blob/main/23-045/23-045.pdf[PDF], and https://github.com/opengeospatial/poi/blob/main/23-045/23-045.doc[Word] formats.
+The draft OGC Point of Interest (POI) Part 2: JSON Encoding Standard defines how the POI Conceptual model should be implemented in JSON. Development of this Standard is taking place in the 23-045 directory. The current draft is available in https://docs.ogc.org/DRAFTS/23-045.html[HTML] and https://docs.ogc.org/DRAFTS/23-045.pdf[PDF] formats.
 
 This repository also contains legacy files about and for the purpose of developing the PoI specification(s).
 
