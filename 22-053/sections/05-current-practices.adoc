@@ -334,6 +334,27 @@ A more general standard, which handles non-weekly repeating as well as exception
       END:VAVALABILITY
 ----
 
+*OpenStreetMap* has an Hours type that is specified https://wiki.openstreetmap.org/wiki/Key:opening_hours/specification[here].
+It is a grammar that has been developed by the community over the years and is quite flexible for representing exceptions, holidays, etc.
+One writes a set of rules, where later rules can override former ones (thereby providing exceptions).
+There is provision for things like holidays, particular weeks or days of the month, "event" times (e.g., "sunrise").
+It is much more readable than the iCalendar specification, but doesn't have provision for timezones.
+Timezones are not really necessary for the POI application, beacuse the timezone is implied by the POI's position on earth.
+
+.OpenStreetMap Hours Example
+[source,text]
+----
+   Mo,Tu,Th,Fr 12:00-18:00; Sa,PH 12:00-17:00; Th[3],Th[-1] off
+----
+
+This example says that the POI is open on Monday, Tuesday, Thursday, and Friday, from noon to 6pm.
+On Saturdays and public holidays, it is open from noon to 5pm.
+It is closed on the third Thursday and the last Thursday of the month.
+
+*IMDF* has an Hours type that follows the OpenStreetMap format.
+
+Neither *Overture Maps* nor *Google Hotels* specify an opening hours property.
+
 
 === Telephone Number ===
 
@@ -344,3 +365,26 @@ The _ITU-T E.164 standard_ (https://www.itu.int/rec/T-REC-E.164[ref]) specifies 
 ----
    +12125551234
 ----
+
+Another ITU standard is _ITU_T E.123_ (https://www.itu.int/rec/T-REC-E.123[ref]).
+It specifies ways of writing phone numbers that are different depending on whether they are in the country or international.
+
+And RFC3966 (https://www.rfc-editor.org/rfc/rfc3966.html[ref]) gives the syntax for phone numbers used in a _tel_ URI.
+
+*IMDF* has a Phone type that specifies using E.164.
+
+*Overture Maps* has a phone type that is a list of strings; the format of the strings is left unspecified.
+
+*OpenStreeMap* has a phone type that is specified https://wiki.openstreetmap.org/wiki/Key:phone[here].
+It gives several alternatives for the phone string:
+
+* phone=number where the number should be in international (ITU-T E.164) format
+* phone=+<country code> <area code> <local number>, following the ITU-T E.123 and the DIN 5008 pattern
+* phone=+<country code>-<area code>-<local number>, following the RFC 3966/NANP pattern)
+* phone=+<country code> <area code> <local number>\;ext=<extension> is allowed by RFC3966 to specify a local extension
+
+It also allows a fax= tag to give a separate fax number.
+
+*Google Hotels* has a phone container with a "type" attribute that can be one of: fax, main, mobile, tdd, tollfree.
+The format of the phone number itself is not specified.
+
