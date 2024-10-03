@@ -59,6 +59,10 @@ RFC5646::
 https://tools.ietf.org/html/rfc5646[RFC 5646] _Tags for Identifying Languages_ is an Internet Best Practices
 guide to tags for identifying natural languages.
 
+Inspire::
+Inspire aims to create a European Union Spatial Data Infrastructure.
+The https://knowledge-base.inspire.ec.europa.eu/publications/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-19119_en[Inspire Metadata Implementing Rules] has some things to say about multilingual strings.
+
 === Multilingual Names ===
 
 POIs can have their names expressed differently in different natural languages:
@@ -109,7 +113,7 @@ In *Overture Maps*, names are objects with a _primary_ member (a string), and a 
 which is an object that itself contains members whose names are
 https://en.wikipedia.org/wiki/IETF_language_tag[IETF-BCP47] language tags
 and whose values are strings.
-For example
+For examplehttps://github.com/OvertureMaps/schema/blob/main/task-force-docs/places/overture_categories.csv
 
 ```json
     "names": {
@@ -136,6 +140,43 @@ and that language is given by a _language_ XML element in the https://www.gstati
 The language is expected to be an http://www.w3.org/WAI/ER/IG/ert/iso639.htm#2letter[ISO 639 lowercase 2-letter language code].
 
 *CityGML* and *Schema.org* appear not to have addressed the issue of multilingual names.
+
+*Inspire* has an Annex A.6 in their https://knowledge-base.inspire.ec.europa.eu/publications/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-19119_en[Inspire Metadata Implementing Rules]
+which gives their method for representing any multilingual metadata that has type CharacterString and a "free text domain".
+For such metadata, a subtype of CharacterString called PT_FreeText aggregates any number of textGroup objects.
+A textGroup in turn has one or more LocalisedCharacterString, which in turn has a locale member of type PT_Locale.
+Finally, a PT_Locale has three members: a language, a country, and a characterEncoding.
+For example
+
+```
+     <PT_FreeText>
+       <textGroup>
+         <LocalisedCharacterString locale="#locale-fr">Résumé succinct
+            du contenu de la ressource</LocalisedCharacterString>
+       </textGroup>
+     </PT_FreeText>
+```
+
+where the local-fr referred to in the example is specified elsewhere in the file, as, e.g.,
+
+```
+    <locale>
+       <PT_Locale id="locale-fr">
+         <languageCode>
+           <LanguageCode
+             codeList="http://www.loc.gov/standards/iso639-2/"
+             codeListValue="fre"> French </LanguageCode>
+         </languageCode>
+         <characterEncoding>
+           <MD_CharacterSetCode
+             codeList="resources/codelist/gmxcodelists.xml#MD_CharacterSetCode"
+             codeListValue="utf8">UTF 8</MD_CharacterSetCode>
+         </characterEncoding>
+       </PT_Locale>
+     </locale>
+```
+Note that the language codes are taken from ISO639, but that is specifically given as an attribute.
+Inspire has mechanisms for specifying a default language for a whole file.
 
 ==== Addresses, including Multilingual Addresses ====
 
@@ -219,8 +260,87 @@ It appear that they do not explicitly address the issue of multilingual address 
 
 === Categories ===
 
+The "Category" of a POI is a word that describes the main purpose, use, or description of the POI. It is a word that would fill in the blank in the statement: "This POI is a +_______+". Example categories might be *School* or *Clothing Store*. Usually one would like the most specific category that applies (e.g.,. preferring *Men's Clothing Store* over *Clothing Store*, but the latter over *Store*).
+
+There are tens of thousands of possible categories, and there is no generally accepted category list that this recommendation can confidently point to. Some examples of some standard category lists are:
+
+[#category-lists-table,reftext='{table-caption} {counter:table-num}']
+.Category Lists
+[cols="1,4",width="90%"]
+|===
+|NAICS: |
+   The North American Industry Classification System. This is used by the US Census to classify businesses according to their economic activity. They are numeric codes with English language descriptors. While they are meant to classify activities that are not necessarily connected to particular POIs, this classification system is still applicable to POIs, though maybe not at the deepest level of specificity desired. https://www.census.gov/naics/[ref]
+
+|OpenStreetMap: |
+   Open Street Map uses a "Free tagging system" to associate multiple key/value pairs with features (which could be POIs). While not comprehensive and endlessly extensible, it is usually possible to find a +key=attribute+ string that could be used as a category: e.g., +building=stadium+. +craft=winery+, or +shop=butcher+. https://wiki.openstreetmap.org/wiki/Map_features[ref]
+
+|OGC Indoor Mapping Occupant Category: |
+   The OGC Indoor Mapping OGC Community standard (https://docs.ogc.org/cs/20-094/index.html[ref]) has an https://docs.ogc.org/cs/20-094/Categories/index.html#occupant[*Occupant category*] list that has a number of useful categories for POIs.
+
+|Overture Maps: |
+    Overture Maps has a "categories" tag of a place, which has a required "primary" category (a string), and an optional list of "alternate" categories.
+    The list of available categories is https://github.com/OvertureMaps/schema/blob/main/docs/schema/concepts/by-theme/places/overture_categories.csv[here].
+
+|GeoNames Ontology: |
+   The GeoNames geographic database (https://www.geonames.org/[ref]) has an http://www.geonames.org/ontology/documentation.html[OWL ontology] for Features (which are akin to POIs). It has many kinds of POIs but not many types of commercial shops and restaurants.
+|===
 
 === Business Hours ===
 
+The "business hours" or "opening hours" of a POI are the times when the POI is "open for business", or, more generally just the times at which the general public can visit a POI. There may be more than one open interval on a day (e.g., mealtimes for a restaurant). Often, opening hours can be different for each day of the week, but are the same week after week. But occasionally POIs have more complicated opening hours (e.g., "closed the first Monday of every month from May to October"). Also, POIs often have special hours for vacations and holidays.
+
+There are several standards to choose from to express business hours. A simple standard, which covers the usual case of weekly hours that repeat, is the Schema.org *openingHours* property (https://schema.org/openingHours[ref]). This standard also assumes that the timezone of the opening hours is clear (presumably, the timezone of the POI in question). An example of opening hours expressed in this format is:
+
+.Simple Opening Hours Example
+[source,text]
+----
+   openingHours: Tu-Fr 9:00-17:00
+   openingHours: Sa,Su 9:00-19:00
+----
+
+A more general standard, which handles non-weekly repeating as well as exceptions for vacations, holidays, etc., is the _iCalendar_ specification (https://www.rfc-editor.org/rfc/rfc5545[RFC 5545]), in particular its _Calendar Availability_ component (https://www.rfc-editor.org/rfc/rfc7953[RFC 7953]). While one could specify an entire calendar using these standards, the needs of specifying opening hours are served well enough by just giving the Availability part. For example, to specify opening hours in France that one might informally specify as "M: 11am-7:30pm, T-Sat: 10am-7:30pm, Sun: closed; closed Aug 1 - Aug 31", the value according this this standard would be:
+
+.Opening Hours Example
+[source,text]
+----
+   openingHours:
+      BEGIN:VAVAILABILITY
+      UID:uid11
+      DTSTAMP:20220101T000000Z
+      PRIORITY:0
+      BEGIN:AVAILABLE
+      UID:uid12
+      DTSTART;TZID=Europe/Paris:20220103T110000
+      DTEND;TZID=Europe/Paris:20220103T193000
+      RRULE;FREQ=WEEKLY;BYDAY=MO
+      END:AVAILABLE
+      BEGIN:AVAILABLE
+      UID:uid13
+      DTSTART;TZID=Europe/Paris:20220104T100000
+      DTEND;TZID=Europe/Paris:20220104T193000
+      RRULE;FREQ=WEEKLY;BYDAY=TU,WE,TH,FR,SA
+      END:AVAILABLE
+      END:VAVALABILITY
+      BEGIN:VAVAILABILITY
+      UID:uid14
+      DTSTAMP:20220101T000000Z
+      PRIORITY:5
+      BEGIN:AVAILABLE
+      UID:uid15
+      DTSTART;TZID=Europe/Paris:20220801T000000
+      DTEND;TZID=Europe/Paris:20220831T235959
+      RRULE;FREQ=YEARLY;BYMONTH=8
+      END:AVAILABLE
+      END:VAVALABILITY
+----
+
 
 === Telephone Number ===
+
+The _ITU-T E.164 standard_ (https://www.itu.int/rec/T-REC-E.164[ref]) specifies a format for telephone numbers. It starts with a recommended *+* sign, followed by up to fifteen digits (with no spaces or other punctuation). The digits will typically be a country code, then an area code, then a local number. For example, the US local number 555-1234 with an area code of 212 would be represented by this character string:
+
+.ITU-T E.164 Telephone Number
+[source,text]
+----
+   +12125551234
+----
