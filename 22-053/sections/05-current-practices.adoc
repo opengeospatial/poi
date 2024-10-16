@@ -63,6 +63,12 @@ Inspire::
 Inspire aims to create a European Union Spatial Data Infrastructure.
 The https://knowledge-base.inspire.ec.europa.eu/publications/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-19119_en[Inspire Metadata Implementing Rules] has some things to say about multilingual strings.
 
+ISO 19115: Geographic information - Metadata::
+https://www.iso.org/standard/53798.html[ISO 19115-2014] describes a schema for
+geographic information services by means of metadata.
+It has https://schemas.isotc211.org/19115/-1/lan/1.3/[schema] for language localization
+that Inspire based its recommendations on.
+
 === Multilingual Names ===
 
 POIs can have their names expressed differently in different natural languages:
@@ -177,6 +183,9 @@ where the local-fr referred to in the example is specified elsewhere in the file
 ```
 Note that the language codes are taken from ISO639, but that is specifically given as an attribute.
 Inspire has mechanisms for specifying a default language for a whole file.
+Since it is expressed as an XML schema, they recommend that things need to contain
+character strings either be straight character strings, or they get "retyped"
+(by using an XML xsi:type="gmd:PT_FreeText_PropertyType" attribute).
 
 ==== Addresses, including Multilingual Addresses ====
 
