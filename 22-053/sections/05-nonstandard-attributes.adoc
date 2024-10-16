@@ -79,7 +79,7 @@ The value of the *usesSchema* property should reference a schema that might look
 
 The value of the *hasDefinition" property should reference a file that describes the semantics corresponding to the above schema. It might look something like this:
 
-.POIProperty Example Payload Schema (JSON)
+.POIProperty Example Payload Definition
 [source]
 ----
   isPublic: This field is a boolean that should be true if the POI is publicly visitable, else false.
@@ -88,48 +88,163 @@ The value of the *hasDefinition" property should reference a file that describes
 === Recommended Schema and Semantics for Common Nonstandard Attributes
 
 There are a number of attributes that commonly are needed in use cases for POIs yet are not standardized in the POI-CM. This section suggests a recommended schema for these common nonstandard attributes.
+The attributes discussed are the same ones surveyed in the previous *Current Practices* section.
+
+==== Multilingual Names ====
+
+In the current practices, there were three broad groups:
+
+[cols="1,2"]
+|===
+|Implied Language
+|No language specified with each name string. Perhaps there is a file-scoped language, known by some external means or by one file-scoped metadata element.
+|Separate Per-Language Attributes
+|Multiple attribute names that have the language as a suffix (e.g., "name", "name:fr", "name:en", ...) with the unsuffixed version representing a default langauge.
+|Complex Attributes
+|Names are sequences or objects, not character strings. Each element of the sequence is an object has a character string (the name itself) along with an attribute that says what language it is in. If the name is an object, then it has a default-language string and optional other-language strings in a sequence as described previously.
+|===
+
+There are several variants of the Complex Attribute method:
+
+===== Complex Attributes: Sequence-only =====
+
+Every name must be a sequence of objects. It might look something like this:
+
+```json
+    "name": [
+      {"name" : "Statue of Liberty", "language" : "en"},
+      {"name" : "Statue de la Liberté", "language" : "fr"}
+    ]
+```
+
+===== Complex Attributes: Default and Sequence =====
+
+Here the name is an object that contains a default name and a sequence.
+The language of the default name could be specified by a "language" property
+in the outermost object of the file.
+It would look something like this:
+
+```json
+    "name" : {
+      "default" : "Statue of Liberty",
+      "names": [
+        {"name" : "Statue of Liberty", "language" : "en"},
+        {"name" : "Statue de la Liberté", "language" : "fr"}
+      ]
+    }
+```
+
+===== Complex Attributes: Inspire =====
+
+To follow existing standards, the Inspire method could be used.
+It is very similar to the Sequence-only method but the elements of the sequence,
+instead of referring to _languages_, refer to _locales_.
+This requires definitions of a number of *locales* somewhere at the file scope.
+Adapted to JSON, it might look something like this:
+
+```json
+    "locales" : [
+      {
+         "id" : "locale_en",
+         "language_code" : {
+            "code_list" : "http://www.loc.gov/standards/iso639-2/",
+            "code_list_value" : "en",
+            "name" : "English"
+         },
+         "character_encoding" : {
+            "code_list" : "resources/codelist/gmxcodelists.xml#MD_CharacterSetCode",
+            "code_list_value" : "utf8">UTF 8</MD_CharacterSetCode>,
+            "name" : "UTF8"          
+         }
+      },
+      {
+         "id" : "locale_fr",
+         "language_code" : {
+            "code_list" : "http://www.loc.gov/standards/iso639-2/",
+            "code_list_value" : "fr",
+            "name" : "French"
+         },
+         "character_encoding" : {
+            "code_list" : "resources/codelist/gmxcodelists.xml#MD_CharacterSetCode",
+            "code_list_value" : "utf8">UTF 8</MD_CharacterSetCode>,
+            "name" : "UTF8"          
+         }
+      }
+    ]
+```
+
+Then an actual name attribute would look something like:
+
+```json
+    "name": [
+      {"name" : "Statue of Liberty", "locale" : "locale_en"},
+      {"name" : "Statue de la Liberté", "language" : "locale_fr"}
+    ]
+```
+
+===== Complex Attributes: Choice of Simple or Complex =====
+
+In this variant, the "name" value can be one of two types: a simple string
+or one of the other Complex Attribute variants.
+If the value is only a simple string, then it is assumed to be in the default
+language, specified at file scope.
+Otherwise, the structured value will give all of the desired language variants.
+The advantage of this variant is that the simple case of all-one-language yields
+a file that is simple to understand and process.
+
+===== Discussion and Recommendation =====
+
+Here is a table of some pros and cons of the various methods discussed.
+
+[cols="1,2,3"]
+|===
+|*Method*|*Pros*|*Cons*
+
+|Implied Language
+|Simple. Easy to write and use.
+|The only way to handle multiple languages is to provide a choice of multiple files.
+Keeping such files in sync is error-prone.
+|Separate Per-Language Attributes
+|Familiar to OpenStreetMap users.
+Handles the one-language case well.
+Compact.
+|Conceptually unclean to have a number of name attributes at the same level
+as other attributes.
+Needs more post-processing to gather together all the names
+in the internal data format.
+|Complex Attributes: Sequence Only
+|Moderately simple to read and process.
+|Bulkier for one-language case.
+Not clear what the default name to use is.
+|Complex Attributes: Default and Sequence
+|Handles one-language case moderately well.
+Can tell what name to use by default.
+|Bulkier than most other options, and still not ideal for one-language case.
+|Complex Attributes: Inspire
+|Closest to "standards compliant".
+Allows specification of character encoding too, and in a less-verbose way
+than if done per name.
+|Complex to read and write (the locales part).
+Need to process metadata in another part of the file and connect to each POI: a POI feature would not be standalone.
+Extra complexity of indirection is only useful if multiple character encodings are needed.
+|Complex Attributes: Choice of Simple or Complex
+|Handles one-language case well.
+Any other pros of the variant of Complex that is coupled with this.
+|Need to make value-type-dependent choice when processing.
+|===
+
+The recommendation is to use the Choice of Simple or Complex attributes,
+and in the case of a Complex attribute, use the Sequence Only submethod.
 
 ==== Address ====
 
-An address is a structured or semi-structured way of expressing where a place on earth can be found, usually referencing political areas, route (street) names, and numbers on routes. These are the things one uses to specify where mail is to be delivered, or packages are to be picked up. Special software called _geocoders_ can convert an address into (latitude, longitude) position on earth.
-
-There are many addressing systems in use in the world. A schema to represent them all precisely would be quite complicated.  The recommendation here is to use a modification of *CI_Address* class from the ISO 19115 (Citation Information) standard.
-The modification is to allow cardinality of all the text strings to be more than 1 if desired: this allows for multiple languages to be used.
-
-.Address Schema
-[source,JSON]
-----
-    "Address" {
-        "administrativeArea": "CharacterString" [0..],
-        "city": "CharacterString" [0..],
-        "country": "CharacterString" [0..],
-        "deliveryPoint": "CharacterString" [0..],
-        "electronicMailAddress": "CharacterString" [0..],
-        "postalCode": "CharacterString" [0..]
-        }
-----
-
-where the *country*, *adminstrativeArea* (state or province), and *city* give a structuring of three of the political areas containing the POI, and the *postalCode* is the postal or zipcode that some countries use in addresses (varies by country). The *deliveryPoint* is an unstructured way of expressing the rest of the address. E.g., it might be "123 Main St., Unit 3" or "Market Square". 
-If there are not multiple CharacterStrings for the properties, then the language of the address should be either a common language implicit in the entire dataset (e.g., English), or a language in use in the country in question.
-For international datasets, it is recommended that the language of each string in the address be annotated with its language, using the facilities available in the particular implementation technology used.
-
-For example, if the implementation technology is JSON, this could be the way to express the address of the Empire State Building in several languages:
-
-.Example Address Value
-[source,JSON]
-----
-    {
-      "administrativeArea": [
-         
-      ]
-    }
-----
+TBD
 
 // _TODO: check out ISO 19160:1 A conceptual model for addressing_
 
 ==== Telephone Number
 
-The telephone number is the number to use to contact the POI to ask questions, get service, etc. The recommendation here is to use the *CI_Telephone* class from the Informative Annex:
+The telephone number is the number to use to contact the POI to ask questions, get service, etc. The recommendation here is to use the *CI_Telephone* class from other OGC standards [TODO: cite]:
 
 .CI_Telephone Schema
 [source,JSON]
@@ -152,22 +267,9 @@ The optional *numberType* is a one of *facsimile*, *sms*, *voice*, where *voice*
 
 ==== Opening Hours
 
-The previous section described the state of current practices for business categories.
-There is a choice between a simple standard like the schema.org method, or the more expressive Calendar Availability standard.
-The increased expressability of the Calendar Availability standard comes at the expense of verboseness, so implementers might like a choice between the two standards.
-
-A suggested conceptual model for Opening Hours that offers the choice between the above two standards is:
-
-.Recommended Opening Hours Schema
-[source,json]
-----
-    "OpeningHours": {
-        "openingHoursLines": "CharacterString" [0..],
-        "openingHoursFormat": "OpeningHoursFormatCode" [0..1]
-        }
-----
-
-where *OpeningHoursFormatCode* is a *CodeList* with literals *schemadotorg* and *icalendaravailability*, with the default being *schemadotorg*. Note that while technically the Calendar Availability value is one string, it is inconvenient to deal with such a long value (with line breaks) in JSON, so it is convenient to have the value be a sequence of strings that represent lines to be concatenated together, with line breaks between them, in order to form the actual specification string.  Similarly,  the schema.org format, multiple lines are convenient to be able to represent different weekday ranges that have differing time ranges.
+The recommendation is to use the
+https://wiki.openstreetmap.org/wiki/Key:opening_hours/specification[OpenStreetMap]
+grammar to describe opening hours.
 
 ==== Category
 
