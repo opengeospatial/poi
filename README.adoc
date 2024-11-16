@@ -1,6 +1,6 @@
 # About OGC Points of Interest (PoI) GitHub Repository
 
-*NOTICE:* An analysis of alternatives for internationalized text is available for review and comment in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/master/21-049/Internationalized_Text.html[HTML] and https://github.com/opengeospatial/poi/blob/master/21-049/Internationalized_Text.pdf[PDF]  
+*NOTICE:* An analysis of alternatives for internationalized text is available for review and comment in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/21-049/Internationalized_Text.html[HTML] and https://github.com/opengeospatial/poi/blob/main/21-049/Internationalized_Text.pdf[PDF]  
 
 This repository is the development space for the draft OGC Point of Interest (POI) Part 1: Conceptual Model Standard. Development of this Standard is taking place in the 21-049 directory. The current draft is available in https://docs.ogc.org/DRAFTS/21-049.html[HTML] and https://docs.ogc.org/DRAFTS/21-049.pdf[PDF] formats.
 
