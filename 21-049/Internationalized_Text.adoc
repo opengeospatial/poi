@@ -1,0 +1,51 @@
+= OGC Points of Interest (POI) Internationalized Text Analysis
+:doctype: white-paper
+:encoding: utf-8
+:lang: en
+:status: draft
+:committee: technical
+:draft: 0.1.1
+:external-id: http://www.opengis.net/doc/is/poi/1.0
+:docnumber: 24-999
+:received-date: 2024-11-16
+:issued-date: 2024-11-16
+:published-date: 2024-11-16
+:fullname: Charles Heazel
+:fullname_2: Howard Trickey
+:docsubtype: conceptual
+:keywords: ogcdoc, OGC document, Internationalization 
+:submitting-organizations:  Digital Flanders; Google; HeazelTech; Pangaea Innovations; PEREY Research and Consulting; US Army Geospatial Center
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf
+:local-cache-only:
+:data-uri-image:
+:pdf-uri: ./Internationalized_Text.pdf
+:xml-uri: ./Internationalized_Text.xml
+:doc-uri: ./Internationalized_Text.doc
+:edition: 1.1
+
+include::./sections/clause_0_front_material.adoc[]
+
+include::./sections/annex-internationalization.adoc[]
+
+////
+add or remove annexes after "A" as necessary
+
+include::sections/annex-a.adoc[]
+
+include::sections/annex-n.adoc[]
+
+include::./sections/annex-glossary.adoc[]
+////
+
+////
+Revision History should be the last annex before the Bibliography
+Bibliography should be the last annex
+
+
+include::./sections/annex-history.adoc[]
+
+include::./sections/annex-bibliography.adoc[]
+////
+
+

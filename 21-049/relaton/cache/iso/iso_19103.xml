@@ -1,17 +1,17 @@
 <bibdata type="standard" schema-version="v1.2.8">
-  <fetched>2024-06-26</fetched>
+  <fetched>2024-11-16</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Conceptual schema language</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Conceptual schema language</title>
   <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
   <title type="title-main" format="text/plain" language="fr" script="Latn">Langage de schéma conceptuel</title>
   <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Langage de schéma conceptuel</title>
-  <uri type="src">https://www.iso.org/standard/56734.html</uri>
-  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</uri>
-  <uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri>
+  <uri type="src">https://www.iso.org/standard/83454.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:83454:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/08/34/83454.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19103</docidentifier>
   <docidentifier type="iso-reference">ISO 19103(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19103:stage-90.92</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19103:stage-60.60</docidentifier>
   <docnumber>19103</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -21,16 +21,16 @@
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
-  <edition>1</edition>
+  <edition>2</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
   <status>
-    <stage>90</stage>
-    <substage>92</substage>
+    <stage>60</stage>
+    <substage>60</substage>
   </status>
   <copyright>
-    <from>2015</from>
+    <from>2024</from>
     <owner>
       <organization>
         <name>ISO</name>
@@ -39,34 +39,28 @@
   </copyright>
   <relation type="obsoletes">
     <bibitem type="standard">
-      <formattedref format="text/plain">ISO/TS 19103:2005</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/TS 19103:2005</docidentifier>
-    </bibitem>
-  </relation>
-  <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/FDIS 19103</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/FDIS 19103</docidentifier>
+      <formattedref format="text/plain">ISO 19103:2015</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier>
     </bibitem>
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-06-26</fetched>
+      <fetched>2024-11-16</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Conceptual schema language</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Conceptual schema language</title>
       <title type="title-intro" format="text/plain" language="fr" script="Latn">Information géographique</title>
       <title type="title-main" format="text/plain" language="fr" script="Latn">Langage de schéma conceptuel</title>
       <title type="main" format="text/plain" language="fr" script="Latn">Information géographique - Langage de schéma conceptuel</title>
-      <uri type="src">https://www.iso.org/standard/56734.html</uri>
-      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</uri>
-      <uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri>
-      <docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier>
-      <docidentifier type="iso-reference">ISO 19103:2015(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19103:stage-90.92</docidentifier>
+      <uri type="src">https://www.iso.org/standard/83454.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:83454:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/08/34/83454.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19103:2024</docidentifier>
+      <docidentifier type="iso-reference">ISO 19103:2024(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19103:stage-60.60</docidentifier>
       <docnumber>19103</docnumber>
       <date type="published">
-        <on>2015-12</on>
+        <on>2024-09</on>
       </date>
       <contributor>
         <role type="publisher"/>
@@ -76,22 +70,24 @@
           <uri>www.iso.org</uri>
         </organization>
       </contributor>
-      <edition>1</edition>
+      <edition>2</edition>
       <language>en</language>
       <language>fr</language>
       <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">ISO 19103:2015 provides rules and guidelines for the use of a conceptual schema language within the context of geographic information. The chosen conceptual schema language is the Unified Modeling Language (UML).
-ISO 19103.2015 provides a profile of the Unified Modelling Language (UML).
-The standardization target type of this standard is UML schemas describing geographic information.</abstract>
-      <abstract format="text/plain" language="fr" script="Latn">ISO 19103:2015 provides rules and guidelines for the use of a conceptual schema language within the context of geographic information. The chosen conceptual schema language is the Unified Modeling Language (UML).
-ISO 19103.2015 provides a profile of the Unified Modelling Language (UML).
-The standardization target type of this standard is UML schemas describing geographic information.</abstract>
+      <abstract format="text/plain" language="en" script="Latn">This document specifies provisions for the use of a conceptual schema language within the context of modelling geographic information. The chosen conceptual schema language is a subset of the Unified Modeling Language (UML).
+This document specifies a UML profile for modelling geographic information.
+This document specifies a set of core data types for use in conceptual schemas.
+The standardization target type of this document is conceptual schemas describing geographic information.</abstract>
+      <abstract format="text/plain" language="fr" script="Latn">Le présent document spécifie des dispositions pour l’utilisation d’un langage de schéma conceptuel dans le contexte de la modélisation d’informations géographiques. Le langage de schéma conceptuel choisi est un sous-ensemble du langage de modélisation unifié (UML).
+Le présent document spécifie un profil UML destiné à la modélisation d’informations géographiques.
+Le présent document spécifie un ensemble de types de données de base à utiliser dans des schémas conceptuels.
+Le présent document a pour type de cible de normalisation les schémas conceptuels décrivant des informations géographiques.</abstract>
       <status>
-        <stage>90</stage>
-        <substage>92</substage>
+        <stage>60</stage>
+        <substage>60</substage>
       </status>
       <copyright>
-        <from>2015</from>
+        <from>2024</from>
         <owner>
           <organization>
             <name>ISO</name>
@@ -100,14 +96,8 @@ The standardization target type of this standard is UML schemas describing geogr
       </copyright>
       <relation type="obsoletes">
         <bibitem type="standard">
-          <formattedref format="text/plain">ISO/TS 19103:2005</formattedref>
-          <docidentifier type="ISO" primary="true">ISO/TS 19103:2005</docidentifier>
-        </bibitem>
-      </relation>
-      <relation type="obsoletes">
-        <bibitem type="standard">
-          <formattedref format="text/plain">ISO/FDIS 19103</formattedref>
-          <docidentifier type="ISO" primary="true">ISO/FDIS 19103</docidentifier>
+          <formattedref format="text/plain">ISO 19103:2015</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier>
         </bibitem>
       </relation>
       <place>Geneva</place>

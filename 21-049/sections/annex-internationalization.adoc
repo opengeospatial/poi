@@ -1,0 +1,238 @@
+[appendix,obligation="informative"]
+== Internationalized Text
+
+A POI is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address. It follows that support for language-specific names, or internationalized text in general, is a reqirement for a successful POI Standard.
+
+The POI Standard builds on the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). It should not be necessary to develop an approach for internationalized text which is specific to POIs. That support should already exist within the foundational standards. This appendex seeks to provide a window into that support. To make explicit the support for internationalized text which is implicit in the international standards.
+
+=== International Standards
+
+This section discusses how the Standards developed by ISO TC211 and the OGC support internationalized text.
+
+==== Conceptual Schema
+
+ISO 19103 defines the conceptual schema language (CSL) for developing computer interpretable models, or schemas, of geographic information. This includes definition of the primitive data types used in OGC and ISO TC211 developed standards. CharacterString is one of those primitive data types.
+
+ISO/TS 19103:2005 - Geographic information — Conceptual schema language was the first version of ISO 19103. This version defined the CharacterString class as a primitive type with attributes for CharacterSetCode, maxLength, size, and elements (characters).
+
+[[character_string_context]]
+.CharacterString Context.
+image::./images/Character_String.png[align="center"]
+
+ISO 19103 was updated by ISO 19103:2015 - Geographic information - Conceptual schema language.
+
+In this version, the CharacterString class has the same information content as in 19103:2005. However, this class is modeled as an interface instead of a type. It also adds a normative Annex C "Data types – extension types". 
+
+Section C.2 of this annex addresses “Cultural and Linguistic Adaptability” which includes a new "LanguageString" class. LanguageString is a subclass of CharacterString.  This subclass adds a languageCode whose values come from ISO 639. As a result, a LanguageString is a CharacterString with a associated language code.
+
+[[language_string_context]]
+.LanguageString Context.
+image::./images/Language_String.png[align="center"]
+
+==== Location-Based Services
+
+The Location-Based Services family of standards was developed to extend Web-based location services to the bandwith limited cell phones of the time. This is arguably the first appearance of a language-specific text field in an ISO TC211 Standard.
+
+ISO 19132:2007 "Location-based Services Reference Model" introduces the LanguageSpecificCharacterString class. This is a subclass of the CharacterString class from 19103:2005. Its sole function is to a LanguageCode attribute to CharacterString. 
+
+Since LanguageSpecificCharacterString is a subclass of CharacterString, any CharacterString can (in principle) be a LanguageSpecificCharacterString. 
+
+[[language_specific_character_string_context]]
+.LanguageSpecificCharacterString Context.
+image::./images/LanguageSpecificCharacterString.png[align="center"]
+
+==== Metadata
+
+There are two series of TC211 Standards for Metadata. The ISO 19115 series provides the conceptual models.  The ISO 19139 series defines XML schema for the ISO 19115 Standards. 
+
+===== ISO 19139
+
+The ISO 19139:2007 "Metadata XML Implementation" Standard defines the XML schema for ISO 19115:2003. ISO 19139 also addresses internationalization, but it uses a different approach from that used in ISO 19132.
+
+ISO 19139 introduces the LocalizedCharacterString class. This class is a realization of the CharacterString class from ISO 19103:2005. LocalizedCharacterString adds to CharacterString an association with the new PT_Locale class. PT_Locale includes attributes for CharacterSetCode, Country, and LanguageCode. Only the LanguageCode is required. 
+
+Note that CharacterSetCode is already defined by CharacterString so it is redundant in PT_Locale.
+
+[[pt_locale_context]]
+.PT_Locale Context.
+image::./images/LocalisedCharacterString.png[align="center"]
+
+===== ISO 19115
+
+ISO 19139:2007 defines the XML schema for ISO 19115:2003. However, the PT_Locale class does not appear in ISO 19115:2003. So initially PT_Locale was only defined for XML metadata encodings.
+
+This limitiation was partially lifted by ISO 19115-1:2014. This update to ISO 19115 moves PT_Locale up to the conceptual level. It is no longer limited to XML encodings. The XML encoding standard for 19115-1 is ISO 19115-3:2016. This Standard continues the support the PT_Locale from ISO 19139:2007.
+
+At this time XML is the only standardized encoding for ISO 19115. Unitil other encodings are defined, PT_Local will continue to be a concept for use in XML metadata encodings.
+
+==== Conclusion
+
+All standards which build on the ISO 19103:2015 Standard have the option to use the "LanguageString" class for text data. This class allows the association of a language identifier with the text string. In some encoding languages, addition of this attribute to a CharacterString is easily accomplished. Others may require definition of a LanguageString class to support the additional attribute.
+
+The PT_Locale concept is useful, particularly if the locality information includes more than just the language code. Use of PT_Local establishes a dependency on the ISO 19115 metadata standards. However, there are many additional data types defined in these Standards which deserve reuse. Such a dependency may be a good practice.  
+
+=== Common Practice
+
+Three general techniques for internationalized text are found in common practice:
+
+[cols="1,2"]
+|===
+|Implied Language
+|No language specified with each text string. Perhaps there is a file-scoped language, known by some external means or by one file-scoped metadata element.
+|Separate Per-Language Attributes
+|Multiple copies of the same text element that have the language as a suffix (e.g., "name", "name:fr", "name:en", ...) with the unsuffixed version representing a default langauge.
+|Complex Attributes
+|In this case text strings are sequences or objects, not character strings. Each element of the sequence is an object has a character string (the text itself) along with an attribute that says what language it is in. If the name is an object, then it has a default-language string and optional other-language strings in a sequence as described previously.
+|===
+
+==== Implied Language
+
+Implied Language is the most common approach to internationalized text. When using this technique, all of the text in a document, or section of a document, is in the same language. Support for multiple languages requires duplication of the entire section for each language.
+
+==== Per-Language Attribute
+
+The per-language attribute approach tags the text string with a language identifer. This identifier can either be a part of the string itself, or an attribute associated with the text string element. 
+
+For example, if we wanted to provide the name of the Statue of Liberty in XML using both French and English, then we could use:
+
+A language identifier embedded in the element value
+
+```xml
+<name>"Statue of Liberty:en"</name>
+<name>"Statue de la Liberté:fr"</name>
+```
+Or provide the language identifier as an attribute of the element
+
+```xml
+<name language="en">"Statue of Liberty"</name>
+<name language="fr">"Statue de la Liberté"</name>
+```
+
+==== Complex Attributes
+
+There are several variants of the Complex Attribute method:
+
+===== Complex Attributes: Sequence-only =====
+
+Every text string must be a sequence of objects. It might look something like this:
+
+```json
+    "name": [
+      {"name" : "Statue of Liberty", "language" : "en"},
+      {"name" : "Statue de la Liberté", "language" : "fr"}
+    ]
+```
+
+===== Complex Attributes: Default and Sequence =====
+
+Here the text string is an object that contains a default name and a sequence. The language of the default name could be specified by a "language" property in the outermost object of the file.
+
+It would look something like this:
+
+```json
+    "name" : {
+      "default" : "Statue of Liberty",
+      "names": [
+        {"name" : "Statue of Liberty", "language" : "en"},
+        {"name" : "Statue de la Liberté", "language" : "fr"}
+      ]
+    }
+```
+
+===== Complex Attributes: Inspire =====
+
+To follow existing standards, the Inspire method could be used. The Inspire method is based on the PT_Locale concept described above.
+
+This approach is very similar to the Sequence-only method but the elements of the sequence, instead of referring to _languages_, refer to _locales_. This requires definitions of a number of *locales* somewhere at the file scope.
+
+Adapted to JSON, it might look something like this:
+
+```json
+    "locales" : [
+      {
+         "id" : "locale_en",
+         "language_code" : {
+            "code_list" : "http://www.loc.gov/standards/iso639-2/",
+            "code_list_value" : "en",
+            "name" : "English"
+         },
+         "character_encoding" : {
+            "code_list" : "resources/codelist/gmxcodelists.xml#MD_CharacterSetCode",
+            "code_list_value" : "utf8">UTF 8</MD_CharacterSetCode>,
+            "name" : "UTF8"          
+         }
+      },
+      {
+         "id" : "locale_fr",
+         "language_code" : {
+            "code_list" : "http://www.loc.gov/standards/iso639-2/",
+            "code_list_value" : "fr",
+            "name" : "French"
+         },
+         "character_encoding" : {
+            "code_list" : "resources/codelist/gmxcodelists.xml#MD_CharacterSetCode",
+            "code_list_value" : "utf8">UTF 8</MD_CharacterSetCode>,
+            "name" : "UTF8"          
+         }
+      }
+    ]
+```
+
+Then an actual name attribute would look something like:
+
+```json
+    "name": [
+      {"name" : "Statue of Liberty", "locale" : "locale_en"},
+      {"name" : "Statue de la Liberté", "language" : "locale_fr"}
+    ]
+```
+
+===== Complex Attributes: Choice of Simple or Complex =====
+
+In this variant, the text string can be one of two types: a simple string or one of the other Complex Attribute variants. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language variants.
+
+The advantage of this variant is that the simple case of all-one-language yields a file that is simple to understand and process.
+
+=== Discussion and Recommendation ===
+
+Here is a table of some pros and cons of the various methods discussed.
+
+[cols="1,2,3"]
+|===
+|*Method*|*Pros*|*Cons*
+
+|Implied Language
+|Simple. Easy to write and use.
+|The only way to handle multiple languages is to provide a choice of multiple files.
+Keeping such files in sync is error-prone.
+|Separate Per-Language Attributes
+|Familiar to OpenStreetMap users.
+Handles the one-language case well.
+Compact.
+|Conceptually unclean to have a number of name attributes at the same level as other attributes.
+Needs more post-processing to gather together all the names in the internal data format.
+|Complex Attributes: Sequence Only
+|Moderately simple to read and process.
+|Bulkier for one-language case.
+Not clear what the default name to use is.
+|Complex Attributes: Default and Sequence
+|Handles one-language case moderately well.
+Can tell what name to use by default.
+|Bulkier than most other options, and still not ideal for one-language case.
+|Complex Attributes: Inspire
+|Closest to "standards compliant".
+Allows specification of character encoding too, and in a less-verbose way
+than if done per name.
+|Complex to read and write (the locales part).
+Need to process metadata in another part of the file and connect to each POI: a POI feature would not be standalone.
+Extra complexity of indirection is only useful if multiple character encodings are needed.
+|Complex Attributes: Choice of Simple or Complex
+|Handles one-language case well.
+Any other pros of the variant of Complex that is coupled with this.
+|Need to make value-type-dependent choice when processing.
+|===
+
+The recommendation is to use the Choice of Simple or Complex attributes, and in the case of a Complex attribute, use the Sequence Only submethod.
+
+  
+
