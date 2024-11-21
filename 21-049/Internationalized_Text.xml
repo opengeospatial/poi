@@ -2,7 +2,7 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.7" schema-version="v1.3.1">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC Points of Interest (POI) Internationalized Text Analysis</title>
-<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">24-999</docidentifier><docnumber>24-999</docnumber><date type="published"><on>2024-11-16</on></date><date type="issued"><on>2024-11-16</on></date><date type="received"><on>2024-11-16</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">24-999</docidentifier><docnumber>24-999</docnumber><date type="published"><on>2024-11-20</on></date><date type="issued"><on>2024-11-20</on></date><date type="received"><on>2024-11-20</on></date><contributor><role type="author"/><organization>
 <name>Digital Flanders</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Google</name>
