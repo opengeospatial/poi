@@ -7,7 +7,7 @@
 :draft: 0.1.1
 :external-id: http://www.opengis.net/doc/is/poi/1.0
 :docnumber: 24-999
-:received-date: 2024-11-29
+:received-date: 2024-12-11
 :issued-date: 2024-11-29
 :published-date: 2024-11-29
 :fullname: Charles Heazel
@@ -22,9 +22,9 @@
 :pdf-uri: ./Internationalized_Text.pdf
 :xml-uri: ./Internationalized_Text.xml
 :doc-uri: ./Internationalized_Text.doc
-:edition: 1.1
+:edition: 1.0
 
-include::./sections/clause_0_front_material.adoc[]
+include::./sections/clause_0_int_front_material.adoc[]
 
 include::./sections/annex-internationalization.adoc[]
 
