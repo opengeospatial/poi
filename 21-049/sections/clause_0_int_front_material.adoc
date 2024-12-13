@@ -24,11 +24,6 @@ Attention is drawn to the possibility that some of the elements of this document
 
 [abstract]
 == Abstract
-The OGC Points of Interest (POI) Conceptual Model is an open data model for representing information about POI. In the broadest terms, a POI is a location about which information of general interest is available. Such information may be of interest to people speaking multiple languages. Therefore, a POI often requires the use of internationalized text.
+The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.
 
-It is not necessary to develop new techniques for internationlized text. There are many existing approaches in both our foundational Standards and common use. This document seeks to capture these techniques in one place, facilitating their application to POIs and potentially OGC Standards in general.
-
-[security-considerations-section]
-== Security Considerations
-
-This document deales with techniques to internationalize text. It should not have any security ramifications.
+In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.

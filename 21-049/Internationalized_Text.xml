@@ -2,12 +2,12 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.7" schema-version="v1.3.1">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC Points of Interest (POI) Internationalized Text Analysis</title>
-<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">24-999</docidentifier><docnumber>24-999</docnumber><date type="published"><on>2024-11-29</on></date><date type="issued"><on>2024-11-29</on></date><date type="received"><on>2024-12-11</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">24-999</docidentifier><docnumber>24-999</docnumber><date type="published"><on>2024-11-29</on></date><date type="issued"><on>2024-11-29</on></date><date type="received"><on>2024-12-12</on></date><contributor><role type="author"/><organization>
 <name>Digital Flanders</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Google</name>
 </organization></contributor><contributor><role type="author"/><organization>
-<name>HeazelTech</name>
+<name>Charles Heazel</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Pangaea Innovations</name>
 </organization></contributor><contributor><role type="author"/><organization>
@@ -20,12 +20,12 @@
 <name><completename>Howard Trickey</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>0.1.1</draft></version><language>en</language><script>Latn</script><abstract><p>The OGC Points of Interest (POI) Conceptual Model is an open data model for representing information about POI. In the broadest terms, a POI is a location about which information of general interest is available. Such information may be of interest to people speaking multiple languages. Therefore, a POI often requires the use of internationalized text.</p>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>0.1.1</draft></version><language>en</language><script>Latn</script><abstract><p>The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</p>
 
-<p>It is not necessary to develop new techniques for internationlized text. There are many existing approaches in both our foundational Standards and common use. This document seeks to capture these techniques in one place, facilitating their application to POIs and potentially OGC Standards in general.</p>
+<p>In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</p>
 </abstract><status><stage>draft</stage></status><copyright><from>2024</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Internationalization</keyword><ext><doctype>white-paper</doctype><subdoctype>conceptual</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Internationalization</keyword><keyword>POI</keyword><keyword>Points of Interest</keyword><ext><doctype>white-paper</doctype><subdoctype>conceptual</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
 <clause id="_copyright_notice" obligation="normative">
@@ -64,20 +64,18 @@ To obtain additional rights of use, visit
 <feedback-statement>
 
 </feedback-statement>
-</boilerplate><preface><abstract id="_abstract"><title>Abstract</title><p id="_d6829c4b-a598-808c-6fdb-2baa06491a6a">The OGC Points of Interest (POI) Conceptual Model is an open data model for representing information about POI. In the broadest terms, a POI is a location about which information of general interest is available. Such information may be of interest to people speaking multiple languages. Therefore, a POI often requires the use of internationalized text.</p>
+</boilerplate><preface><abstract id="_abstract"><title>Abstract</title><p id="_84003ad0-faad-2692-33be-4161b36dd110">The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</p>
 
-<p id="_f09066e3-62d5-c5f8-c660-4383efea1f36">It is not necessary to develop new techniques for internationlized text. There are many existing approaches in both our foundational Standards and common use. This document seeks to capture these techniques in one place, facilitating their application to POIs and potentially OGC Standards in general.</p>
+<p id="_63d4f7bf-bc8b-b9b2-f870-0055e5ad894e">In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</p>
 </abstract><foreword id="_9273cccd-0579-a24f-8966-518fdd8f437b" obligation="informative">
 <title>Preface</title>
 <p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-</foreword><clause id="_security_considerations" type="security" obligation="informative">
-<title>Security Considerations</title>
-<p id="_8ed6ae7d-b3a5-d7fd-e497-9b59a0ae3f34">This document deales with techniques to internationalize text. It should not have any security ramifications.</p>
-</clause></preface><sections>
-
-
+</foreword><clause type="security" id="_1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative">
+  <title>Security considerations</title>
+  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause>
+</preface><sections>
 
 <clause id="_internationalized_text" obligation="normative">
 <title>Internationalized Text</title>
@@ -85,7 +83,7 @@ To obtain additional rights of use, visit
 
 <p id="_555eee38-0429-0649-5030-5c118922864e">Internationalization of text is not new. There are a number of techniques in common practice. An understanding of those practices is the first step to developing guidance for internationalization of POIs and potentially OGC Standards in general.</p>
 
-<p id="_a7ac6860-3de7-e51f-9c75-24cd1104fb8f">The POI Standard builds on the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). It should not be necessary to develop an approach for internationalized text which is specific to POIs. That support should already exist within the foundational standards. This appendex seeks to provide a window into that support. To make explicit the support for internationalized text which is implicit in the international standards.</p>
+<p id="_3a562376-4613-8693-5cdb-f1401dd2b335">The POI Standard builds on the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). It should not be necessary to develop an approach for internationalized text which is specific to POIs. That support should already exist within the foundational standards. This document seeks to provide a window into that support.</p>
 
 <clause id="_common_practice" obligation="normative">
 <title>Common Practice</title>
@@ -126,11 +124,11 @@ To obtain additional rights of use, visit
 
 <clause id="_complex_attributes" obligation="normative">
 <title>Complex Attributes</title>
-<p id="_0bf40907-fb07-e07d-a7cc-d83ea3a2cc07">There are several variants of the Complex Attribute method:</p>
+<p id="_7d9f8049-5ec3-4ac7-1b8c-e88b15e38bb5">The Complex Attribute method uses several alternative approaches:</p>
 
 <clause id="_complex_attributes_sequence_only" obligation="normative">
 <title>Complex Attributes: Sequence-only</title>
-<p id="_a29f9d19-1640-8690-4fdb-e5796e123eae">Every text string must be a sequence of objects. It might look something like this:</p>
+<p id="_565d46ea-b0c7-b5e4-b880-0824d4a090c6">Every text string must be a sequence of objects. In the following example, the sequence-ony approach is used to provide the <tt>name</tt> attribute in both French and English.</p>
 
 <sourcecode id="_7c8f17da-de7b-5d45-35bd-dfb660962fa2" lang="json">    "name": [
       {"name" : "Statue of Liberty", "language" : "en"},
@@ -141,9 +139,9 @@ To obtain additional rights of use, visit
 
 <clause id="_complex_attributes_default_and_sequence" obligation="normative">
 <title>Complex Attributes: Default and Sequence</title>
-<p id="_558a9968-b0cd-f590-85d3-c8275fef6620">Here the text string is an object that contains a default name and a sequence. The language of the default name could be specified by a “language” property in the outermost object of the file.</p>
+<p id="_bf3ef53d-83b1-f8b7-dc8a-f0722dec7b6f">In this approach the text string is an object that contains a default value and a sequence of language coded values. The language of the default value can be specified by a “language” property in the outermost object of the file.</p>
 
-<p id="_4e80eff6-1db5-e640-80aa-87367e18fe84">It would look something like this:</p>
+<p id="_c8562e10-0794-bcc7-2315-4b51bed73515">The following example provides one default, one English, and one French language version of the <tt>name</tt> attribute.</p>
 
 <sourcecode id="_2d235306-86b3-059a-e4f1-fc7520e3e5a2" lang="json">    "name" : {
       "default" : "Statue of Liberty",
@@ -161,7 +159,7 @@ To obtain additional rights of use, visit
 
 <p id="_a1a78edc-1e52-363d-60b0-4d11f2bcf56f">This approach is very similar to the Sequence-only method but the elements of the sequence, instead of referring to <em>languages</em>, refer to <em>locales</em>. This requires definitions of a number of <strong>locales</strong> somewhere at the file scope.</p>
 
-<p id="_55bead39-86d1-b193-e369-eb06dcf75e91">Adapted to JSON, it might look something like this:</p>
+<p id="_a906664f-b48d-fe33-33ad-a1c67a11c475">The following is an example of the PT_Local concent adapted to JSON.</p>
 
 <sourcecode id="_8da93ab5-5ae2-79c3-dcc0-b7b3e43b16a9" lang="json">    "locales" : [
       {
@@ -193,7 +191,7 @@ To obtain additional rights of use, visit
     ]</sourcecode>
 
 
-<p id="_1e3c42fc-791e-e5f4-c037-9cc3620405fd">Then an actual name attribute would look something like:</p>
+<p id="_13447324-4110-57ba-9370-553735154788">Then an actual <tt>name</tt> attribute would look like this:</p>
 
 <sourcecode id="_ba4a8207-0840-dee0-9190-865e7ea8c3ad" lang="json">    "name": [
       {"name" : "Statue of Liberty", "locale" : "locale_en"},
@@ -206,9 +204,9 @@ To obtain additional rights of use, visit
 
 <clause id="_complex_attributes_choice_of_simple_or_complex" obligation="normative">
 <title>Complex Attributes: Choice of Simple or Complex</title>
-<p id="_70b21368-ab5a-cee0-5933-c754cf0658d9">In this variant, the text string can be one of two types: a simple string or one of the other Complex Attribute variants. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language variants.</p>
+<p id="_4baa512b-8760-e0f3-1147-4567ccb46d90">The “Choice” approach allows the text string to be one of two types: a simple string or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language approaches.</p>
 
-<p id="_40572e09-4522-5527-666d-09fc075341b3">The advantage of this variant is that the simple case of all-one-language yields a file that is simple to understand and process.</p>
+<p id="_e530e80b-8662-62f2-c532-1dac50d32dca">The advantage of this approach is that the simple case of all-one-language yields a file that is simple to understand and process.</p>
 </clause>
 </clause>
 </clause>
@@ -278,9 +276,9 @@ To obtain additional rights of use, visit
 
 <p id="_29db16d9-d1cc-e061-1ecb-8b81043fa70b">This limitiation was partially lifted by ISO 19115-1:2014. This update to ISO 19115 moves PT_Locale up to the conceptual level. It is no longer limited to XML encodings. The XML encoding standard for 19115-1 is ISO 19115-3:2016. This Standard continues the support the PT_Locale from ISO 19139:2007.</p>
 
-<p id="_39a220ba-7505-a699-b553-35728471d710">At this time XML is the only standardized encoding for ISO 19115. Unitil other encodings are defined, PT_Local will continue to be a concept for use in XML metadata encodings.</p>
+<p id="_530beae1-4786-61cf-48b1-d7c5fca4a5c8">At this time XML is the only standardized encoding for ISO 19115. Unitil other encodings are defined, PT_Locale will continue to be a concept for use in XML metadata encodings.</p>
 
-<p id="_189af3d4-6aab-d869-9d7e-5d70437d646b">PT_Local is an example of the “Complex Attribute” approach. Its adoption by Inspire is discussed above.</p>
+<p id="_41349a68-9555-4b86-a0f7-939d61b32d7e">PT_Locale is an example of the “Complex Attribute” approach. Its adoption by Inspire is discussed above.</p>
 </clause>
 </clause>
 
@@ -326,9 +324,9 @@ To obtain additional rights of use, visit
 <title>Conclusion</title>
 <p id="_a0ff48b2-1afc-1891-45af-39ef962ad377">All standards which build on the ISO 19103:2015 Standard have the option to use the “LanguageString” class for text data. This class allows the association of a language identifier with the text string. In some encoding languages, addition of this attribute to a CharacterString is easily accomplished. Others may require definition of a LanguageString class to support the additional attribute.</p>
 
-<p id="_25226e86-ffef-1cd9-6b4c-c210235f9d3d">The PT_Locale concept is useful, particularly if the locality information includes more than just the language code. Use of PT_Local establishes a dependency on the ISO 19115 metadata standards. However, there are many additional data types defined in these Standards which deserve reuse. Such a dependency may be a good practice.</p>
+<p id="_e6267649-e0a8-cb94-2227-88b1834ca249">The PT_Locale concept is useful, particularly if the locality information includes more than just the language code. Use of PT_Locale establishes a dependency on the ISO 19115 metadata standards. However, there are many additional data types defined in these Standards which deserve reuse. Such a dependency may be a good practice.</p>
 
-<p id="_5553da06-667d-cc2c-f150-12a38fdc29f6">JSON-LD provides powerful text internationalization capablities, which unfortulately are only applicable to that encoding language.</p>
+<p id="_a58d797f-1ea1-f310-0863-2962cfaced71">JSON-LD provides powerful text internationalization capabilities, which unfortunately are only applicable to that encoding language.</p>
 
 <p id="_3b7705d7-28ae-8ee7-5a81-6eefd8a153e3">Here is a table of some pros and cons of the various methods discussed.</p>
 

@@ -2,12 +2,12 @@
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.5.7" schema-version="v1.3.1">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC Points of Interest (POI) Internationalized Text Analysis</title>
-<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">24-999</docidentifier><docnumber>24-999</docnumber><date type="published"><on>2024-11-29</on></date><date type="issued"><on>2024-11-29</on></date><date type="received"><on>2024-12-11</on></date><contributor><role type="author"/><organization>
+<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">24-999</docidentifier><docnumber>24-999</docnumber><date type="published"><on>2024-11-29</on></date><date type="issued"><on>2024-11-29</on></date><date type="received"><on>2024-12-12</on></date><contributor><role type="author"/><organization>
 <name>Digital Flanders</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Google</name>
 </organization></contributor><contributor><role type="author"/><organization>
-<name>HeazelTech</name>
+<name>Charles Heazel</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Pangaea Innovations</name>
 </organization></contributor><contributor><role type="author"/><organization>
@@ -20,12 +20,12 @@
 <name><completename>Howard Trickey</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>0.1.1</draft></version><language current="true">en</language><script current="true">Latn</script><abstract><p>The OGC Points of Interest (POI) Conceptual Model is an open data model for representing information about POI. In the broadest terms, a POI is a location about which information of general interest is available. Such information may be of interest to people speaking multiple languages. Therefore, a POI often requires the use of internationalized text.</p>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>0.1.1</draft></version><language current="true">en</language><script current="true">Latn</script><abstract><p>The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</p>
 
-<p>It is not necessary to develop new techniques for internationlized text. There are many existing approaches in both our foundational Standards and common use. This document seeks to capture these techniques in one place, facilitating their application to POIs and potentially OGC Standards in general.</p>
+<p>In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</p>
 </abstract><status><stage language="">draft</stage><stage language="en">Draft</stage></status><copyright><from>2024</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Internationalization</keyword><ext><doctype>technical-paper</doctype><subdoctype>conceptual</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Internationalization</keyword><keyword>POI</keyword><keyword>Points of Interest</keyword><ext><doctype>technical-paper</doctype><subdoctype>conceptual</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
 </localized-string><localized-string key="internal_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
 <p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
 <p>For the purposes of this document, the following additional terms and definitions apply.</p>
@@ -38,12 +38,12 @@
 </localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">Example</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of Recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="admitted" language="en">ALTERNATIVE</localized-string><localized-string key="submitters" language="en">Submitters</localized-string><localized-string key="contributors_clause" language="en">Contributors</localized-string><localized-string key="dochistory" language="en">Revision history</localized-string><localized-string key="table_of_figures" language="en">Table of Figures</localized-string><localized-string key="security_empty" language="en">No security considerations have been made for this document.</localized-string><localized-string key="submission_date" language="en">Submission Date</localized-string><localized-string key="approval_date" language="en">Approval Date</localized-string><localized-string key="publication_date" language="en">Publication Date</localized-string><localized-string key="author" language="en">Author</localized-string><localized-string key="editor_full" language="en">Editor</localized-string><localized-string key="contributor" language="en">Contributor</localized-string><localized-string key="stage_dict.draft" language="en">Draft</localized-string><localized-string key="stage_dict.work-item-draft" language="en">Work Item Draft</localized-string><localized-string key="stage_dict.swg-draft" language="en">Candidate SWG Draft</localized-string><localized-string key="stage_dict.oab-review" language="en">Candidate OAB Review Draft</localized-string><localized-string key="stage_dict.public-rfc" language="en">Candidate Public RFC Draft</localized-string><localized-string key="stage_dict.tc-vote" language="en">Candidate TC Vote Draft</localized-string><localized-string key="stage_dict.approved" language="en">Approved</localized-string><localized-string key="stage_dict.published" language="en">Published</localized-string><localized-string key="stage_dict.deprecated" language="en">Deprecated</localized-string><localized-string key="stage_dict.rescinded" language="en">Rescinded</localized-string><localized-string key="stage_dict.retired" language="en">Retired</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__ogc-standard type="semantic" version="2.5.7" schema-version="v1.3.1">
 <semantic__bibdata type="standard">
 <semantic__title language="en" format="text/plain">OGC Points of Interest (POI) Internationalized Text Analysis</semantic__title>
-<semantic__uri type="xml">./Internationalized_Text.xml</semantic__uri><semantic__uri type="pdf">./Internationalized_Text.pdf</semantic__uri><semantic__uri type="doc">./Internationalized_Text.doc</semantic__uri><semantic__docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</semantic__docidentifier><semantic__docidentifier type="ogc-internal" primary="true">24-999</semantic__docidentifier><semantic__docnumber>24-999</semantic__docnumber><semantic__date type="published"><semantic__on>2024-11-29</semantic__on></semantic__date><semantic__date type="issued"><semantic__on>2024-11-29</semantic__on></semantic__date><semantic__date type="received"><semantic__on>2024-12-11</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
+<semantic__uri type="xml">./Internationalized_Text.xml</semantic__uri><semantic__uri type="pdf">./Internationalized_Text.pdf</semantic__uri><semantic__uri type="doc">./Internationalized_Text.doc</semantic__uri><semantic__docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</semantic__docidentifier><semantic__docidentifier type="ogc-internal" primary="true">24-999</semantic__docidentifier><semantic__docnumber>24-999</semantic__docnumber><semantic__date type="published"><semantic__on>2024-11-29</semantic__on></semantic__date><semantic__date type="issued"><semantic__on>2024-11-29</semantic__on></semantic__date><semantic__date type="received"><semantic__on>2024-12-12</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
 <semantic__name>Digital Flanders</semantic__name>
 </semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="author"/><semantic__organization>
 <semantic__name>Google</semantic__name>
 </semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="author"/><semantic__organization>
-<semantic__name>HeazelTech</semantic__name>
+<semantic__name>Charles Heazel</semantic__name>
 </semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="author"/><semantic__organization>
 <semantic__name>Pangaea Innovations</semantic__name>
 </semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="author"/><semantic__organization>
@@ -56,12 +56,12 @@
 <semantic__name><semantic__completename>Howard Trickey</semantic__completename></semantic__name>
 </semantic__person></semantic__contributor><semantic__contributor><semantic__role type="publisher"/><semantic__organization>
 <semantic__name>Open Geospatial Consortium</semantic__name>
-<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__edition>1.0</semantic__edition><semantic__version><semantic__draft>0.1.1</semantic__draft></semantic__version><semantic__language>en</semantic__language><semantic__script>Latn</semantic__script><semantic__abstract><semantic__p>The OGC Points of Interest (POI) Conceptual Model is an open data model for representing information about POI. In the broadest terms, a POI is a location about which information of general interest is available. Such information may be of interest to people speaking multiple languages. Therefore, a POI often requires the use of internationalized text.</semantic__p>
+<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__edition>1.0</semantic__edition><semantic__version><semantic__draft>0.1.1</semantic__draft></semantic__version><semantic__language>en</semantic__language><semantic__script>Latn</semantic__script><semantic__abstract><semantic__p>The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</semantic__p>
 
-<semantic__p>It is not necessary to develop new techniques for internationlized text. There are many existing approaches in both our foundational Standards and common use. This document seeks to capture these techniques in one place, facilitating their application to POIs and potentially OGC Standards in general.</semantic__p>
+<semantic__p>In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</semantic__p>
 </semantic__abstract><semantic__status><semantic__stage>draft</semantic__stage></semantic__status><semantic__copyright><semantic__from>2024</semantic__from><semantic__owner><semantic__organization>
 <semantic__name>Open Geospatial Consortium</semantic__name>
-<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__owner></semantic__copyright><semantic__keyword>ogcdoc</semantic__keyword><semantic__keyword>OGC document</semantic__keyword><semantic__keyword>Internationalization</semantic__keyword><semantic__ext><semantic__doctype>white-paper</semantic__doctype><semantic__subdoctype>conceptual</semantic__subdoctype><semantic__editorialgroup><semantic__committee>technical</semantic__committee></semantic__editorialgroup></semantic__ext></semantic__bibdata><semantic__metanorma-extension><semantic__presentation-metadata><semantic__name>TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>HTML TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>DOC TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>PDF TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata></semantic__metanorma-extension>
+<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__owner></semantic__copyright><semantic__keyword>ogcdoc</semantic__keyword><semantic__keyword>OGC document</semantic__keyword><semantic__keyword>Internationalization</semantic__keyword><semantic__keyword>POI</semantic__keyword><semantic__keyword>Points of Interest</semantic__keyword><semantic__ext><semantic__doctype>white-paper</semantic__doctype><semantic__subdoctype>conceptual</semantic__subdoctype><semantic__editorialgroup><semantic__committee>technical</semantic__committee></semantic__editorialgroup></semantic__ext></semantic__bibdata><semantic__metanorma-extension><semantic__presentation-metadata><semantic__name>TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>HTML TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>DOC TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>PDF TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata></semantic__metanorma-extension>
 <semantic__boilerplate><semantic__copyright-statement>
 
 <semantic__clause id="semantic___copyright_notice" obligation="normative">
@@ -100,20 +100,18 @@ To obtain additional rights of use, visit
 <semantic__feedback-statement>
 
 </semantic__feedback-statement>
-</semantic__boilerplate><semantic__preface><semantic__abstract id="semantic___abstract"><semantic__title>Abstract</semantic__title><semantic__p id="semantic___d6829c4b-a598-808c-6fdb-2baa06491a6a">The OGC Points of Interest (POI) Conceptual Model is an open data model for representing information about POI. In the broadest terms, a POI is a location about which information of general interest is available. Such information may be of interest to people speaking multiple languages. Therefore, a POI often requires the use of internationalized text.</semantic__p>
+</semantic__boilerplate><semantic__preface><semantic__abstract id="semantic___abstract"><semantic__title>Abstract</semantic__title><semantic__p id="semantic___84003ad0-faad-2692-33be-4161b36dd110">The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</semantic__p>
 
-<semantic__p id="semantic___f09066e3-62d5-c5f8-c660-4383efea1f36">It is not necessary to develop new techniques for internationlized text. There are many existing approaches in both our foundational Standards and common use. This document seeks to capture these techniques in one place, facilitating their application to POIs and potentially OGC Standards in general.</semantic__p>
+<semantic__p id="semantic___63d4f7bf-bc8b-b9b2-f870-0055e5ad894e">In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</semantic__p>
 </semantic__abstract><semantic__foreword id="semantic___9273cccd-0579-a24f-8966-518fdd8f437b" obligation="informative">
 <semantic__title>Preface</semantic__title>
 <semantic__p id="semantic___8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</semantic__p>
 
 <semantic__p id="semantic___25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</semantic__p>
-</semantic__foreword><semantic__clause id="semantic___security_considerations" type="security" obligation="informative">
-<semantic__title>Security Considerations</semantic__title>
-<semantic__p id="semantic___8ed6ae7d-b3a5-d7fd-e497-9b59a0ae3f34">This document deales with techniques to internationalize text. It should not have any security ramifications.</semantic__p>
-</semantic__clause></semantic__preface><semantic__sections>
-
-
+</semantic__foreword><semantic__clause type="security" id="semantic___1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative">
+  <semantic__title>Security considerations</semantic__title>
+  <semantic__p id="semantic___6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</semantic__p></semantic__clause>
+</semantic__preface><semantic__sections>
 
 <semantic__clause id="semantic___internationalized_text" obligation="normative">
 <semantic__title>Internationalized Text</semantic__title>
@@ -121,7 +119,7 @@ To obtain additional rights of use, visit
 
 <semantic__p id="semantic___555eee38-0429-0649-5030-5c118922864e">Internationalization of text is not new. There are a number of techniques in common practice. An understanding of those practices is the first step to developing guidance for internationalization of POIs and potentially OGC Standards in general.</semantic__p>
 
-<semantic__p id="semantic___a7ac6860-3de7-e51f-9c75-24cd1104fb8f">The POI Standard builds on the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). It should not be necessary to develop an approach for internationalized text which is specific to POIs. That support should already exist within the foundational standards. This appendex seeks to provide a window into that support. To make explicit the support for internationalized text which is implicit in the international standards.</semantic__p>
+<semantic__p id="semantic___3a562376-4613-8693-5cdb-f1401dd2b335">The POI Standard builds on the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). It should not be necessary to develop an approach for internationalized text which is specific to POIs. That support should already exist within the foundational standards. This document seeks to provide a window into that support.</semantic__p>
 
 <semantic__clause id="semantic___common_practice" obligation="normative">
 <semantic__title>Common Practice</semantic__title>
@@ -162,11 +160,11 @@ To obtain additional rights of use, visit
 
 <semantic__clause id="semantic___complex_attributes" obligation="normative">
 <semantic__title>Complex Attributes</semantic__title>
-<semantic__p id="semantic___0bf40907-fb07-e07d-a7cc-d83ea3a2cc07">There are several variants of the Complex Attribute method:</semantic__p>
+<semantic__p id="semantic___7d9f8049-5ec3-4ac7-1b8c-e88b15e38bb5">The Complex Attribute method uses several alternative approaches:</semantic__p>
 
 <semantic__clause id="semantic___complex_attributes_sequence_only" obligation="normative">
 <semantic__title>Complex Attributes: Sequence-only</semantic__title>
-<semantic__p id="semantic___a29f9d19-1640-8690-4fdb-e5796e123eae">Every text string must be a sequence of objects. It might look something like this:</semantic__p>
+<semantic__p id="semantic___565d46ea-b0c7-b5e4-b880-0824d4a090c6">Every text string must be a sequence of objects. In the following example, the sequence-ony approach is used to provide the <semantic__tt>name</semantic__tt> attribute in both French and English.</semantic__p>
 
 <semantic__sourcecode id="semantic___7c8f17da-de7b-5d45-35bd-dfb660962fa2" lang="json">    "name": [
       {"name" : "Statue of Liberty", "language" : "en"},
@@ -177,9 +175,9 @@ To obtain additional rights of use, visit
 
 <semantic__clause id="semantic___complex_attributes_default_and_sequence" obligation="normative">
 <semantic__title>Complex Attributes: Default and Sequence</semantic__title>
-<semantic__p id="semantic___558a9968-b0cd-f590-85d3-c8275fef6620">Here the text string is an object that contains a default name and a sequence. The language of the default name could be specified by a “language” property in the outermost object of the file.</semantic__p>
+<semantic__p id="semantic___bf3ef53d-83b1-f8b7-dc8a-f0722dec7b6f">In this approach the text string is an object that contains a default value and a sequence of language coded values. The language of the default value can be specified by a “language” property in the outermost object of the file.</semantic__p>
 
-<semantic__p id="semantic___4e80eff6-1db5-e640-80aa-87367e18fe84">It would look something like this:</semantic__p>
+<semantic__p id="semantic___c8562e10-0794-bcc7-2315-4b51bed73515">The following example provides one default, one English, and one French language version of the <semantic__tt>name</semantic__tt> attribute.</semantic__p>
 
 <semantic__sourcecode id="semantic___2d235306-86b3-059a-e4f1-fc7520e3e5a2" lang="json">    "name" : {
       "default" : "Statue of Liberty",
@@ -197,7 +195,7 @@ To obtain additional rights of use, visit
 
 <semantic__p id="semantic___a1a78edc-1e52-363d-60b0-4d11f2bcf56f">This approach is very similar to the Sequence-only method but the elements of the sequence, instead of referring to <semantic__em>languages</semantic__em>, refer to <semantic__em>locales</semantic__em>. This requires definitions of a number of <semantic__strong>locales</semantic__strong> somewhere at the file scope.</semantic__p>
 
-<semantic__p id="semantic___55bead39-86d1-b193-e369-eb06dcf75e91">Adapted to JSON, it might look something like this:</semantic__p>
+<semantic__p id="semantic___a906664f-b48d-fe33-33ad-a1c67a11c475">The following is an example of the PT_Local concent adapted to JSON.</semantic__p>
 
 <semantic__sourcecode id="semantic___8da93ab5-5ae2-79c3-dcc0-b7b3e43b16a9" lang="json">    "locales" : [
       {
@@ -229,7 +227,7 @@ To obtain additional rights of use, visit
     ]</semantic__sourcecode>
 
 
-<semantic__p id="semantic___1e3c42fc-791e-e5f4-c037-9cc3620405fd">Then an actual name attribute would look something like:</semantic__p>
+<semantic__p id="semantic___13447324-4110-57ba-9370-553735154788">Then an actual <semantic__tt>name</semantic__tt> attribute would look like this:</semantic__p>
 
 <semantic__sourcecode id="semantic___ba4a8207-0840-dee0-9190-865e7ea8c3ad" lang="json">    "name": [
       {"name" : "Statue of Liberty", "locale" : "locale_en"},
@@ -242,9 +240,9 @@ To obtain additional rights of use, visit
 
 <semantic__clause id="semantic___complex_attributes_choice_of_simple_or_complex" obligation="normative">
 <semantic__title>Complex Attributes: Choice of Simple or Complex</semantic__title>
-<semantic__p id="semantic___70b21368-ab5a-cee0-5933-c754cf0658d9">In this variant, the text string can be one of two types: a simple string or one of the other Complex Attribute variants. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language variants.</semantic__p>
+<semantic__p id="semantic___4baa512b-8760-e0f3-1147-4567ccb46d90">The “Choice” approach allows the text string to be one of two types: a simple string or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language approaches.</semantic__p>
 
-<semantic__p id="semantic___40572e09-4522-5527-666d-09fc075341b3">The advantage of this variant is that the simple case of all-one-language yields a file that is simple to understand and process.</semantic__p>
+<semantic__p id="semantic___e530e80b-8662-62f2-c532-1dac50d32dca">The advantage of this approach is that the simple case of all-one-language yields a file that is simple to understand and process.</semantic__p>
 </semantic__clause>
 </semantic__clause>
 </semantic__clause>
@@ -314,9 +312,9 @@ To obtain additional rights of use, visit
 
 <semantic__p id="semantic___29db16d9-d1cc-e061-1ecb-8b81043fa70b">This limitiation was partially lifted by ISO 19115-1:2014. This update to ISO 19115 moves PT_Locale up to the conceptual level. It is no longer limited to XML encodings. The XML encoding standard for 19115-1 is ISO 19115-3:2016. This Standard continues the support the PT_Locale from ISO 19139:2007.</semantic__p>
 
-<semantic__p id="semantic___39a220ba-7505-a699-b553-35728471d710">At this time XML is the only standardized encoding for ISO 19115. Unitil other encodings are defined, PT_Local will continue to be a concept for use in XML metadata encodings.</semantic__p>
+<semantic__p id="semantic___530beae1-4786-61cf-48b1-d7c5fca4a5c8">At this time XML is the only standardized encoding for ISO 19115. Unitil other encodings are defined, PT_Locale will continue to be a concept for use in XML metadata encodings.</semantic__p>
 
-<semantic__p id="semantic___189af3d4-6aab-d869-9d7e-5d70437d646b">PT_Local is an example of the “Complex Attribute” approach. Its adoption by Inspire is discussed above.</semantic__p>
+<semantic__p id="semantic___41349a68-9555-4b86-a0f7-939d61b32d7e">PT_Locale is an example of the “Complex Attribute” approach. Its adoption by Inspire is discussed above.</semantic__p>
 </semantic__clause>
 </semantic__clause>
 
@@ -362,9 +360,9 @@ To obtain additional rights of use, visit
 <semantic__title>Conclusion</semantic__title>
 <semantic__p id="semantic___a0ff48b2-1afc-1891-45af-39ef962ad377">All standards which build on the ISO 19103:2015 Standard have the option to use the “LanguageString” class for text data. This class allows the association of a language identifier with the text string. In some encoding languages, addition of this attribute to a CharacterString is easily accomplished. Others may require definition of a LanguageString class to support the additional attribute.</semantic__p>
 
-<semantic__p id="semantic___25226e86-ffef-1cd9-6b4c-c210235f9d3d">The PT_Locale concept is useful, particularly if the locality information includes more than just the language code. Use of PT_Local establishes a dependency on the ISO 19115 metadata standards. However, there are many additional data types defined in these Standards which deserve reuse. Such a dependency may be a good practice.</semantic__p>
+<semantic__p id="semantic___e6267649-e0a8-cb94-2227-88b1834ca249">The PT_Locale concept is useful, particularly if the locality information includes more than just the language code. Use of PT_Locale establishes a dependency on the ISO 19115 metadata standards. However, there are many additional data types defined in these Standards which deserve reuse. Such a dependency may be a good practice.</semantic__p>
 
-<semantic__p id="semantic___5553da06-667d-cc2c-f150-12a38fdc29f6">JSON-LD provides powerful text internationalization capablities, which unfortulately are only applicable to that encoding language.</semantic__p>
+<semantic__p id="semantic___a58d797f-1ea1-f310-0863-2962cfaced71">JSON-LD provides powerful text internationalization capabilities, which unfortunately are only applicable to that encoding language.</semantic__p>
 
 <semantic__p id="semantic___3b7705d7-28ae-8ee7-5a81-6eefd8a153e3">Here is a table of some pros and cons of the various methods discussed.</semantic__p>
 
@@ -585,35 +583,33 @@ To obtain additional rights of use, visit
 <feedback-statement>
 
 </feedback-statement>
-</boilerplate><preface><clause type="toc" id="_298e2ec5-1846-4255-8beb-f371e8afd9dd" displayorder="1"><title depth="1">Contents</title></clause>
-<abstract id="_abstract" displayorder="2"><title depth="1">I.<tab/>Abstract</title><p id="_d6829c4b-a598-808c-6fdb-2baa06491a6a">The OGC Points of Interest (POI) Conceptual Model is an open data model for representing information about POI. In the broadest terms, a POI is a location about which information of general interest is available. Such information may be of interest to people speaking multiple languages. Therefore, a POI often requires the use of internationalized text.</p>
+</boilerplate><preface><clause type="toc" id="_69d9d890-6bea-46cc-b8d4-ffe6a7058603" displayorder="1"><title depth="1">Contents</title></clause>
+<abstract id="_abstract" displayorder="2"><title depth="1">I.<tab/>Abstract</title><p id="_84003ad0-faad-2692-33be-4161b36dd110">The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</p>
 
-<p id="_f09066e3-62d5-c5f8-c660-4383efea1f36">It is not necessary to develop new techniques for internationlized text. There are many existing approaches in both our foundational Standards and common use. This document seeks to capture these techniques in one place, facilitating their application to POIs and potentially OGC Standards in general.</p>
-</abstract><clause id="_a0c8ff28-9627-45c7-9ddc-0733b1b75d8c" type="keywords" displayorder="3">
+<p id="_63d4f7bf-bc8b-b9b2-f870-0055e5ad894e">In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</p>
+</abstract><clause id="_eb11f290-a58a-4000-8658-611dc6dba301" type="keywords" displayorder="3">
 <title depth="1">II.<tab/>Keywords</title>
 <p>The following are keywords to be used by search engines and document catalogues.</p>
-<p>ogcdoc, OGC document, Internationalization</p></clause>
+<p>ogcdoc, OGC document, Internationalization, POI, Points of Interest</p></clause>
 <foreword id="_9273cccd-0579-a24f-8966-518fdd8f437b" obligation="informative" displayorder="4">
 <title depth="1">III.<tab/>Preface</title>
 <p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-</foreword><clause id="_security_considerations" type="security" obligation="informative" displayorder="5">
-<title depth="1">IV.<tab/>Security Considerations</title>
-<p id="_8ed6ae7d-b3a5-d7fd-e497-9b59a0ae3f34">This document deales with techniques to internationalize text. It should not have any security ramifications.</p>
-</clause><clause id="_ed19915d-f9db-4db9-9465-2a114db99e85" type="submitting_orgs" displayorder="6">
+</foreword><clause type="security" id="_1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative" displayorder="5">
+  <title depth="1">IV.<tab/>Security considerations</title>
+  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_3b512bd9-34a2-4dec-abcf-4325b1219650" type="submitting_orgs" displayorder="6">
 <title depth="1">V.<tab/>Submitting Organizations</title>
 <p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
  <ul><li>Digital Flanders</li>
 <li>Google</li>
-<li>HeazelTech</li>
+<li>Charles Heazel</li>
 <li>Pangaea Innovations</li>
 <li>PEREY Research and Consulting</li>
 <li>US Army Geospatial Center</li></ul>
  </clause>
+
 </preface><sections>
-
-
 
 <clause id="_internationalized_text" obligation="normative" displayorder="7">
 <title depth="1">1.<tab/>Internationalized Text</title>
@@ -621,7 +617,7 @@ To obtain additional rights of use, visit
 
 <p id="_555eee38-0429-0649-5030-5c118922864e">Internationalization of text is not new. There are a number of techniques in common practice. An understanding of those practices is the first step to developing guidance for internationalization of POIs and potentially OGC Standards in general.</p>
 
-<p id="_a7ac6860-3de7-e51f-9c75-24cd1104fb8f">The POI Standard builds on the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). It should not be necessary to develop an approach for internationalized text which is specific to POIs. That support should already exist within the foundational standards. This appendex seeks to provide a window into that support. To make explicit the support for internationalized text which is implicit in the international standards.</p>
+<p id="_3a562376-4613-8693-5cdb-f1401dd2b335">The POI Standard builds on the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). It should not be necessary to develop an approach for internationalized text which is specific to POIs. That support should already exist within the foundational standards. This document seeks to provide a window into that support.</p>
 
 <clause id="_common_practice" obligation="normative">
 <title depth="2">1.1.<tab/>Common Practice</title>
@@ -662,11 +658,11 @@ To obtain additional rights of use, visit
 
 <clause id="_complex_attributes" obligation="normative">
 <title depth="3">1.1.3.<tab/>Complex Attributes</title>
-<p id="_0bf40907-fb07-e07d-a7cc-d83ea3a2cc07">There are several variants of the Complex Attribute method:</p>
+<p id="_7d9f8049-5ec3-4ac7-1b8c-e88b15e38bb5">The Complex Attribute method uses several alternative approaches:</p>
 
 <clause id="_complex_attributes_sequence_only" obligation="normative">
 <title depth="4">1.1.3.1.<tab/>Complex Attributes: Sequence-only</title>
-<p id="_a29f9d19-1640-8690-4fdb-e5796e123eae">Every text string must be a sequence of objects. It might look something like this:</p>
+<p id="_565d46ea-b0c7-b5e4-b880-0824d4a090c6">Every text string must be a sequence of objects. In the following example, the sequence-ony approach is used to provide the <tt>name</tt> attribute in both French and English.</p>
 
 <sourcecode id="_7c8f17da-de7b-5d45-35bd-dfb660962fa2" lang="json"><name>Figure 3</name><span class="w">    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="nl">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Statue of Liberty"</span><span class="p">,</span><span class="w"> </span><span class="nl">"language"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"en"</span><span class="p">},</span><span class="w">
@@ -677,9 +673,9 @@ To obtain additional rights of use, visit
 
 <clause id="_complex_attributes_default_and_sequence" obligation="normative">
 <title depth="4">1.1.3.2.<tab/>Complex Attributes: Default and Sequence</title>
-<p id="_558a9968-b0cd-f590-85d3-c8275fef6620">Here the text string is an object that contains a default name and a sequence. The language of the default name could be specified by a “language” property in the outermost object of the file.</p>
+<p id="_bf3ef53d-83b1-f8b7-dc8a-f0722dec7b6f">In this approach the text string is an object that contains a default value and a sequence of language coded values. The language of the default value can be specified by a “language” property in the outermost object of the file.</p>
 
-<p id="_4e80eff6-1db5-e640-80aa-87367e18fe84">It would look something like this:</p>
+<p id="_c8562e10-0794-bcc7-2315-4b51bed73515">The following example provides one default, one English, and one French language version of the <tt>name</tt> attribute.</p>
 
 <sourcecode id="_2d235306-86b3-059a-e4f1-fc7520e3e5a2" lang="json"><name>Figure 4</name><span class="w">    </span><span class="nl">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="nl">"default"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Statue of Liberty"</span><span class="p">,</span><span class="w">
@@ -697,7 +693,7 @@ To obtain additional rights of use, visit
 
 <p id="_a1a78edc-1e52-363d-60b0-4d11f2bcf56f">This approach is very similar to the Sequence-only method but the elements of the sequence, instead of referring to <em>languages</em>, refer to <em>locales</em>. This requires definitions of a number of <strong>locales</strong> somewhere at the file scope.</p>
 
-<p id="_55bead39-86d1-b193-e369-eb06dcf75e91">Adapted to JSON, it might look something like this:</p>
+<p id="_a906664f-b48d-fe33-33ad-a1c67a11c475">The following is an example of the PT_Local concent adapted to JSON.</p>
 
 <sourcecode id="_8da93ab5-5ae2-79c3-dcc0-b7b3e43b16a9" lang="json"><name>Figure 5</name><span class="w">    </span><span class="nl">"locales"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
@@ -729,7 +725,7 @@ To obtain additional rights of use, visit
     </span><span class="p">]</span></sourcecode>
 
 
-<p id="_1e3c42fc-791e-e5f4-c037-9cc3620405fd">Then an actual name attribute would look something like:</p>
+<p id="_13447324-4110-57ba-9370-553735154788">Then an actual <tt>name</tt> attribute would look like this:</p>
 
 <sourcecode id="_ba4a8207-0840-dee0-9190-865e7ea8c3ad" lang="json"><name>Figure 6</name><span class="w">    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="nl">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Statue of Liberty"</span><span class="p">,</span><span class="w"> </span><span class="nl">"locale"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"locale_en"</span><span class="p">},</span><span class="w">
@@ -742,9 +738,9 @@ To obtain additional rights of use, visit
 
 <clause id="_complex_attributes_choice_of_simple_or_complex" obligation="normative">
 <title depth="4">1.1.3.4.<tab/>Complex Attributes: Choice of Simple or Complex</title>
-<p id="_70b21368-ab5a-cee0-5933-c754cf0658d9">In this variant, the text string can be one of two types: a simple string or one of the other Complex Attribute variants. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language variants.</p>
+<p id="_4baa512b-8760-e0f3-1147-4567ccb46d90">The “Choice” approach allows the text string to be one of two types: a simple string or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language approaches.</p>
 
-<p id="_40572e09-4522-5527-666d-09fc075341b3">The advantage of this variant is that the simple case of all-one-language yields a file that is simple to understand and process.</p>
+<p id="_e530e80b-8662-62f2-c532-1dac50d32dca">The advantage of this approach is that the simple case of all-one-language yields a file that is simple to understand and process.</p>
 </clause>
 </clause>
 </clause>
@@ -814,9 +810,9 @@ To obtain additional rights of use, visit
 
 <p id="_29db16d9-d1cc-e061-1ecb-8b81043fa70b">This limitiation was partially lifted by ISO 19115-1:2014. This update to ISO 19115 moves PT_Locale up to the conceptual level. It is no longer limited to XML encodings. The XML encoding standard for 19115-1 is ISO 19115-3:2016. This Standard continues the support the PT_Locale from ISO 19139:2007.</p>
 
-<p id="_39a220ba-7505-a699-b553-35728471d710">At this time XML is the only standardized encoding for ISO 19115. Unitil other encodings are defined, PT_Local will continue to be a concept for use in XML metadata encodings.</p>
+<p id="_530beae1-4786-61cf-48b1-d7c5fca4a5c8">At this time XML is the only standardized encoding for ISO 19115. Unitil other encodings are defined, PT_Locale will continue to be a concept for use in XML metadata encodings.</p>
 
-<p id="_189af3d4-6aab-d869-9d7e-5d70437d646b">PT_Local is an example of the “Complex Attribute” approach. Its adoption by Inspire is discussed above.</p>
+<p id="_41349a68-9555-4b86-a0f7-939d61b32d7e">PT_Locale is an example of the “Complex Attribute” approach. Its adoption by Inspire is discussed above.</p>
 </clause>
 </clause>
 
@@ -826,11 +822,11 @@ To obtain additional rights of use, visit
 
 <p id="_8eab2ca5-6d99-6306-eebc-52e026a9b25b">The text internationalization techniques it describes are:</p>
 
-<ol id="_9443ae4a-7582-0cee-2858-560c2da94a67" type="arabic"><li id="_c62813fc-5327-4969-9037-659757b5fa5d" label="1"><p id="_ec167b60-dda3-500b-8ac2-0ebcefd6e23f">Use of the HTTP <tt>Accept-Language</tt> header to convey the language desired by the requestor. This approach assumes that the server has multiple copies of the resource, each in a different language, or that the server is capable of generating a language-specific version based on the <tt>Accept-Language</tt> header value.</p>
+<ol id="_9443ae4a-7582-0cee-2858-560c2da94a67" type="arabic"><li id="_3eecf11d-94f7-4acf-be21-5097f11f6884" label="1"><p id="_ec167b60-dda3-500b-8ac2-0ebcefd6e23f">Use of the HTTP <tt>Accept-Language</tt> header to convey the language desired by the requestor. This approach assumes that the server has multiple copies of the resource, each in a different language, or that the server is capable of generating a language-specific version based on the <tt>Accept-Language</tt> header value.</p>
 </li>
-<li id="_46f3da09-c14d-4d12-afe0-12af4a634f90" label="2"><p id="_a02d7555-398b-a026-141f-401b0b8a4757">Use of the <tt>hreflang</tt> attribute of the <tt>Link</tt> class. The <tt>Link</tt> class is based on RFC 8288 (Web Linking). It provides the information needed to properly invoke an HTTP request. This includes the URL, format, and language of the target resource.</p>
+<li id="_fd03745d-3c0c-4bf3-a29e-495a332c9f4b" label="2"><p id="_a02d7555-398b-a026-141f-401b0b8a4757">Use of the <tt>hreflang</tt> attribute of the <tt>Link</tt> class. The <tt>Link</tt> class is based on RFC 8288 (Web Linking). It provides the information needed to properly invoke an HTTP request. This includes the URL, format, and language of the target resource.</p>
 </li>
-<li id="_144119d7-4103-45ab-b8e5-548448d3d9cb" label="3"><p id="_f85d10dc-ca64-b38b-aba9-0e1271449f4d">The built-in capabilities of JSON-LD.</p>
+<li id="_3fb5da60-264f-4dee-8447-6312275a3d68" label="3"><p id="_f85d10dc-ca64-b38b-aba9-0e1271449f4d">The built-in capabilities of JSON-LD.</p>
 </li>
 </ol>
 
@@ -862,9 +858,9 @@ To obtain additional rights of use, visit
 <title depth="3">1.2.6.<tab/>Conclusion</title>
 <p id="_a0ff48b2-1afc-1891-45af-39ef962ad377">All standards which build on the ISO 19103:2015 Standard have the option to use the “LanguageString” class for text data. This class allows the association of a language identifier with the text string. In some encoding languages, addition of this attribute to a CharacterString is easily accomplished. Others may require definition of a LanguageString class to support the additional attribute.</p>
 
-<p id="_25226e86-ffef-1cd9-6b4c-c210235f9d3d">The PT_Locale concept is useful, particularly if the locality information includes more than just the language code. Use of PT_Local establishes a dependency on the ISO 19115 metadata standards. However, there are many additional data types defined in these Standards which deserve reuse. Such a dependency may be a good practice.</p>
+<p id="_e6267649-e0a8-cb94-2227-88b1834ca249">The PT_Locale concept is useful, particularly if the locality information includes more than just the language code. Use of PT_Locale establishes a dependency on the ISO 19115 metadata standards. However, there are many additional data types defined in these Standards which deserve reuse. Such a dependency may be a good practice.</p>
 
-<p id="_5553da06-667d-cc2c-f150-12a38fdc29f6">JSON-LD provides powerful text internationalization capablities, which unfortulately are only applicable to that encoding language.</p>
+<p id="_a58d797f-1ea1-f310-0863-2962cfaced71">JSON-LD provides powerful text internationalization capabilities, which unfortunately are only applicable to that encoding language.</p>
 
 <p id="_3b7705d7-28ae-8ee7-5a81-6eefd8a153e3">Here is a table of some pros and cons of the various methods discussed.</p>
 
