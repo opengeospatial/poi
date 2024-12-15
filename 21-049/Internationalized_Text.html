@@ -1270,7 +1270,7 @@ pre.sourcecode .nb, pre.sourcecode .bp {
 pre.sourcecode .nt {
   color: #0000FF;
 }
---></style><title>OGC Points of Interest (POI) Internationalized Text Analysis</title>
+--></style><title>White paper for OGC Internationalized Text Analysis</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!--TOC script import-->
@@ -1289,14 +1289,14 @@ pre.sourcecode .nt {
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
 <style class="anchorjs"></style>
 <meta name="keywords" content="ogcdoc, OGC document, Internationalization, POI, Points of Interest" /><meta name="DC.subject" lang="en" content="ogcdoc, OGC document, Internationalization, POI, Points of Interest" xml:lang="en" /><meta name="description" content="The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language. In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text." />
-<meta name="DC.description" lang="en" content="The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language. In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text." xml:lang="en" /><meta name="DC.title" lang="en" content="OGC Points of Interest (POI) Internationalized Text Analysis" xml:lang="en" /><link rel="profile" href="http://dublincore.org/documents/2008/08/04/dc-html/" />
+<meta name="DC.description" lang="en" content="The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language. In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text." xml:lang="en" /><meta name="DC.title" lang="en" content="White paper for OGC Internationalized Text Analysis" xml:lang="en" /><link rel="profile" href="http://dublincore.org/documents/2008/08/04/dc-html/" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
 <meta name="DC.language" content="en" />
 <meta name="DC.rights" lang="en" content="CC-BY-4.0" xml:lang="en" />
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <link rel="DCTERMS.license" href="https://www.ogc.org/license" />
-</head><body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container"><div class="title-section"><div class="document-stage-band" id="draft-band">
-    <p class="document-stage">Draft</p>
+</head><body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container"><div class="title-section"><div class="document-stage-band" id="swg-draft-band">
+    <p class="document-stage">Candidate SWG Draft</p>
 </div>
 
 <div class="document-type-band" id="technical-paper-band">
@@ -1316,7 +1316,7 @@ pre.sourcecode .nt {
   <div class="coverpage-doc-identity">
 
     <div class="coverpage-title">
-      <span class="title-first">OGC Points of Interest (POI) Internationalized Text Analysis</span>
+      <span class="title-first">White paper for OGC Internationalized Text Analysis</span>
       <!--<span class="title-second"></span>-->
     </div>
   </div>
@@ -1346,11 +1346,11 @@ pre.sourcecode .nt {
   </div>
 
     <div class="coverpage-metadata">
-      <span class="label">Submission Date: </span> <span class="value">2024-12-12</span>
+      <span class="label">Submission Date: </span> <span class="value">2024-12-15</span>
       <span class="label">Approval Date: </span> <span class="value">2024-11-29</span>
       <span class="label">Publication Date: </span> <span class="value">2024-11-29</span>
-      <span class="label">External identifier of this OGC® document: <span class="docnumber value">http://www.opengis.net/doc/is/poi/1.0</span></span>
-      <span class="label">Internal identifier of this OGC® document: <span class="docnumber value">24-999</span></span>
+      <span class="label">External identifier of this OGC® document: <span class="docnumber value">http://www.opengis.net/doc/WP/int_text/1.0</span></span>
+      <span class="label">Internal identifier of this OGC® document: <span class="docnumber value">yy-999</span></span>
       
       
     </div>
@@ -1384,7 +1384,7 @@ pre.sourcecode .nt {
   </div>
 
   <div class="coverpage-stage-block">
-    <p><span class="coverpage-maturity" id="draft">Draft</span></p>
+    <p><span class="coverpage-maturity" id="swg-draft">Candidate SWG Draft</span></p>
   </div>
 </div>
 
@@ -1404,10 +1404,10 @@ pre.sourcecode .nt {
 
 <div class="docstage-box">
   <table>
-    <tr><td>Document number:</td><td>24-999</td></tr>
+    <tr><td>Document number:</td><td>yy-999</td></tr>
     <tr><td>Document type:</td><td>OGC Technical Paper</td></tr>
-    <tr><td align="right">Document subtype:</td><td align="right">Conceptual</td></tr>
-    <tr><td align="right">Document stage:</td><td align="right">Draft</td></tr>
+    <tr><td align="right">Document subtype:</td><td align="right"></td></tr>
+    <tr><td align="right">Document stage:</td><td align="right">Candidate SWG Draft</td></tr>
     <tr><td align="right">Document language:</td><td align="right">English</td></tr>
   </table>
 </div>
@@ -1449,14 +1449,14 @@ To obtain additional rights of use, visit
 </div>
 
 <nav>
-  <div id="toc"><h1 class="IntroTitle">Contents</h1><ul><li class="h1"><a href="#_f536fc88-a3c6-4c9d-865b-f7e5db251eef">      I.  Abstract</a></li>
-<li class="h1"><a href="#_54fe84c3-10fa-4dba-88ed-a6c787acfcd7">      II.  Keywords</a></li>
-<li class="h1"><a href="#_b1594397-de51-42b3-9d72-05139123a7a8">      III.  Preface</a></li>
-<li class="h1"><a href="#_851d1087-0728-4c17-a1da-de1bb3fbf191">      IV.  Security considerations</a></li>
-<li class="h1"><a href="#_06259dbb-06f7-4285-9313-a21e46417786">      V.  Submitting Organizations</a></li>
-<li class="h1"><a href="#_f3a7d1a3-978e-4db0-a5d2-600082052541">      1.  Internationalized Text</a></li>
-<li class="h2"><a href="#_550a3285-645a-43a9-95d1-740cd3e3a588">      1.1.  Common Practice</a></li>
-<li class="h2"><a href="#_746a60cf-66e7-47b1-83c1-7d9f52181ccf">      1.2.  International Standards</a></li></ul></div>
+  <div id="toc"><h1 class="IntroTitle">Contents</h1><ul><li class="h1"><a href="#_554e6ef9-a19a-499c-89c4-effe7d0588cf">      I.  Abstract</a></li>
+<li class="h1"><a href="#_75694bbb-07b9-4ded-9c34-0e5db2126c06">      II.  Keywords</a></li>
+<li class="h1"><a href="#_fe39a9e4-e587-4d1a-9b6f-0731dca62d29">      III.  Preface</a></li>
+<li class="h1"><a href="#_d067866e-b6a0-447c-a627-350daf650964">      IV.  Security considerations</a></li>
+<li class="h1"><a href="#_fe901b11-46ed-4eb0-a064-404370d20cc1">      V.  Submitting Organizations</a></li>
+<li class="h1"><a href="#_f5c8564f-caf2-4bba-bb25-d9e543e263cb">      1.  Internationalized Text</a></li>
+<li class="h2"><a href="#_08e8d482-f21b-4345-a21f-3a122e8a1b64">      1.1.  Common Practice</a></li>
+<li class="h2"><a href="#_dea53b44-8aaf-46ee-8a51-0a3a04ae29e7">      1.2.  International Standards</a></li></ul></div>
 
 </nav>
 
@@ -1471,12 +1471,12 @@ To obtain additional rights of use, visit
 <div class="boilerplate-feedback">
 
 </div>
-</div><br /><br /><div id="_abstract"><h1 class="AbstractTitle" id="_f536fc88-a3c6-4c9d-865b-f7e5db251eef">I.  Abstract</h1><p id="_84003ad0-faad-2692-33be-4161b36dd110">The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</p><p id="_63d4f7bf-bc8b-b9b2-f870-0055e5ad894e">In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</p></div><div class="Section3" id="_eb11f290-a58a-4000-8658-611dc6dba301"><h1 class="IntroTitle" id="_54fe84c3-10fa-4dba-88ed-a6c787acfcd7">II.  Keywords</h1><p>The following are keywords to be used by search engines and document catalogues.</p><p>ogcdoc, OGC document, Internationalization, POI, Points of Interest</p></div><br /><div id="_9273cccd-0579-a24f-8966-518fdd8f437b"><h1 class="ForewordTitle" id="_b1594397-de51-42b3-9d72-05139123a7a8">III.  Preface</h1><p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p><p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p></div><div class="Section3" id="_1bfba592-0713-41de-d69c-a83eb10efc35"><h1 class="IntroTitle" id="_851d1087-0728-4c17-a1da-de1bb3fbf191">IV.  Security considerations</h1><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></div><div class="Section3" id="_3b512bd9-34a2-4dec-abcf-4325b1219650"><h1 class="IntroTitle" id="_06259dbb-06f7-4285-9313-a21e46417786">V.  Submitting Organizations</h1><p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><ul><li>Digital Flanders</li>
+</div><br /><br /><div id="_abstract"><h1 class="AbstractTitle" id="_554e6ef9-a19a-499c-89c4-effe7d0588cf">I.  Abstract</h1><p id="_84003ad0-faad-2692-33be-4161b36dd110">The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</p><p id="_63d4f7bf-bc8b-b9b2-f870-0055e5ad894e">In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</p></div><div class="Section3" id="_3421bc5b-e9b1-4437-8692-f8a2e3bee86a"><h1 class="IntroTitle" id="_75694bbb-07b9-4ded-9c34-0e5db2126c06">II.  Keywords</h1><p>The following are keywords to be used by search engines and document catalogues.</p><p>ogcdoc, OGC document, Internationalization, POI, Points of Interest</p></div><br /><div id="_9273cccd-0579-a24f-8966-518fdd8f437b"><h1 class="ForewordTitle" id="_fe39a9e4-e587-4d1a-9b6f-0731dca62d29">III.  Preface</h1><p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p><p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p></div><div class="Section3" id="_1bfba592-0713-41de-d69c-a83eb10efc35"><h1 class="IntroTitle" id="_d067866e-b6a0-447c-a627-350daf650964">IV.  Security considerations</h1><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></div><div class="Section3" id="_fa88eaf9-e74d-4309-9eb1-1d7216a90807"><h1 class="IntroTitle" id="_fe901b11-46ed-4eb0-a064-404370d20cc1">V.  Submitting Organizations</h1><p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><ul><li>Digital Flanders</li>
 <li>Google</li>
 <li>Charles Heazel</li>
 <li>Pangaea Innovations</li>
 <li>PEREY Research and Consulting</li>
-<li>US Army Geospatial Center</li></ul></div><div id="_internationalized_text"><h1 id="_f3a7d1a3-978e-4db0-a5d2-600082052541">1.  Internationalized Text</h1><p id="_69a8545b-36ca-f7cf-d6bb-1de6ce9ad8b9">A POI is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address. It follows that support for language-specific names, or internationalized text in general, is a reqirement for a successful POI Standard.</p><p id="_555eee38-0429-0649-5030-5c118922864e">Internationalization of text is not new. There are a number of techniques in common practice. An understanding of those practices is the first step to developing guidance for internationalization of POIs and potentially OGC Standards in general.</p><p id="_3a562376-4613-8693-5cdb-f1401dd2b335">The POI Standard builds on the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). It should not be necessary to develop an approach for internationalized text which is specific to POIs. That support should already exist within the foundational standards. This document seeks to provide a window into that support.</p><div id="_common_practice"><h2 id="_550a3285-645a-43a9-95d1-740cd3e3a588">1.1.  Common Practice</h2>
+<li>US Army Geospatial Center</li></ul></div><div id="_internationalized_text"><h1 id="_f5c8564f-caf2-4bba-bb25-d9e543e263cb">1.  Internationalized Text</h1><p id="_69a8545b-36ca-f7cf-d6bb-1de6ce9ad8b9">A POI is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address. It follows that support for language-specific names, or internationalized text in general, is a reqirement for a successful POI Standard.</p><p id="_555eee38-0429-0649-5030-5c118922864e">Internationalization of text is not new. There are a number of techniques in common practice. An understanding of those practices is the first step to developing guidance for internationalization of POIs and potentially OGC Standards in general.</p><p id="_3a562376-4613-8693-5cdb-f1401dd2b335">The POI Standard builds on the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). It should not be necessary to develop an approach for internationalized text which is specific to POIs. That support should already exist within the foundational standards. This document seeks to provide a window into that support.</p><div id="_common_practice"><h2 id="_08e8d482-f21b-4345-a21f-3a122e8a1b64">1.1.  Common Practice</h2>
 
 <p id="_d5c81682-e12b-7413-1197-949893db4c68">Three general techniques for internationalized text are found in common practice:</p>
 
@@ -1545,14 +1545,14 @@ To obtain additional rights of use, visit
 <p id="_13c17743-b933-5f8e-3fa0-74894215f85e">One advantage of this approach is that the <i>Locales</i> can be defined once then referenced througout the document.</p>
 </div>
 
-<div id="_complex_attributes_choice_of_simple_or_complex"><h4>1.1.3.4.  Complex Attributes: Choice of Simple or Complex</h4>
+<div id="_complex_attributes_choice_of_implied_or_complex"><h4>1.1.3.4.  Complex Attributes: Choice of Implied or Complex</h4>
 
-<p id="_4baa512b-8760-e0f3-1147-4567ccb46d90">The “Choice” approach allows the text string to be one of two types: a simple string or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language approaches.</p>
+<p id="_4b037b17-cb61-add0-f618-1191ac893929">The “Choice” approach allows the text string to be one of two types: a simple string with an Implied Language or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be using the Implied Langage approach. Otherwise, the text string will be structured using one of the Complex Attribute approaches.</p>
 
-<p id="_e530e80b-8662-62f2-c532-1dac50d32dca">The advantage of this approach is that the simple case of all-one-language yields a file that is simple to understand and process.</p>
+<p id="_e5f57c7a-99e6-fdc0-1299-668efbb0c8f4">The advantage of this approach is that the simple Implied Language approach can be used when appropriate. The Complex Attribute approaches can be limited to those cases where the increased complexity is needed.  The result is a file that has the level of complexity that it needs, and no more.</p>
 </div>
 </div>
-</div><div id="_international_standards"><h2 id="_746a60cf-66e7-47b1-83c1-7d9f52181ccf">1.2.  International Standards</h2>
+</div><div id="_international_standards"><h2 id="_dea53b44-8aaf-46ee-8a51-0a3a04ae29e7">1.2.  International Standards</h2>
 
 <p id="_f80f4deb-ea65-34ef-0978-7f813079118e">This section discusses how the Standards developed by ISO TC211 and the OGC support internationalized text and the common practices described above.</p>
 
@@ -1629,11 +1629,11 @@ To obtain additional rights of use, visit
 
 <p id="_8eab2ca5-6d99-6306-eebc-52e026a9b25b">The text internationalization techniques it describes are:</p>
 
-<ol type="1" id="_9443ae4a-7582-0cee-2858-560c2da94a67"><li id="_3eecf11d-94f7-4acf-be21-5097f11f6884"><p id="_ec167b60-dda3-500b-8ac2-0ebcefd6e23f">Use of the HTTP <tt>Accept-Language</tt> header to convey the language desired by the requestor. This approach assumes that the server has multiple copies of the resource, each in a different language, or that the server is capable of generating a language-specific version based on the <tt>Accept-Language</tt> header value.</p>
+<ol type="1" id="_9443ae4a-7582-0cee-2858-560c2da94a67"><li id="_47b41f29-e1d3-431c-abae-f4ca5928d7f0"><p id="_ec167b60-dda3-500b-8ac2-0ebcefd6e23f">Use of the HTTP <tt>Accept-Language</tt> header to convey the language desired by the requestor. This approach assumes that the server has multiple copies of the resource, each in a different language, or that the server is capable of generating a language-specific version based on the <tt>Accept-Language</tt> header value.</p>
 </li>
-<li id="_fd03745d-3c0c-4bf3-a29e-495a332c9f4b"><p id="_a02d7555-398b-a026-141f-401b0b8a4757">Use of the <tt>hreflang</tt> attribute of the <tt>Link</tt> class. The <tt>Link</tt> class is based on RFC 8288 (Web Linking). It provides the information needed to properly invoke an HTTP request. This includes the URL, format, and language of the target resource.</p>
+<li id="_913cebcb-d494-4325-a0bf-c29ac0279c58"><p id="_a02d7555-398b-a026-141f-401b0b8a4757">Use of the <tt>hreflang</tt> attribute of the <tt>Link</tt> class. The <tt>Link</tt> class is based on RFC 8288 (Web Linking). It provides the information needed to properly invoke an HTTP request. This includes the URL, format, and language of the target resource.</p>
 </li>
-<li id="_3fb5da60-264f-4dee-8447-6312275a3d68"><p id="_f85d10dc-ca64-b38b-aba9-0e1271449f4d">The built-in capabilities of JSON-LD.</p>
+<li id="_b3305dbe-c175-4f70-8403-7ff8f5802244"><p id="_f85d10dc-ca64-b38b-aba9-0e1271449f4d">The built-in capabilities of JSON-LD.</p>
 </li>
 </ol>
 
@@ -1648,17 +1648,19 @@ To obtain additional rights of use, visit
 
 <p id="_7162dfa6-1fe4-7060-d509-36841255d68b">One of the capabilities that JSON-LD adds to JSON is the ability to annotate strings with their language. The capabilities provided include:</p>
 
-<p id="_f21b159d-6ab5-5746-c56e-0c61db68071c">language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type.</p>
+<ul id="_bfe95f8a-bea2-5a04-12dd-4cfd125b4cc1"><li><p id="_3f0d1f66-b92f-e580-bffb-72092660a0b8">language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type.</p>
+</li>
+<li><p id="_b4d598fb-8110-a649-b29a-a927e3a7177d"><tt>@language</tt> keyword: The <tt>@language</tt> keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a <tt>context</tt>, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.</p>
+</li>
+</ul>
 
-<p id="_3d65ff0c-c382-be86-1005-b7189903d482"><tt>@language</tt> keyword: The <tt>@language</tt> keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a <tt>context</tt>, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.</p>
+<p id="_1ba25a86-e8db-53c9-4e66-c6fb0f3d5415">Text internationalization is addressed in section 4.2.4 of the JSON-LD 1.1 Standard (<a href="https://www.w3.org/TR/json-ld/#string-internationalization">https://www.w3.org/TR/json-ld/#string-internationalization</a>)</p>
 
-<p id="_68958904-de7e-d164-5810-1b59a4c8ba76">Text internationalization is addressed in section 4.2.4 of the JSON-LD 1.1 Standard (<a href="https://www.w3.org/TR/json-ld/#string-internationalization">https://www.w3.org/TR/json-ld/#string-internationalization</a>)</p>
+<p id="_16da9e16-a146-b400-7c7c-071feb76c9ca">Language Maps: Allows multiple values differing in their associated language to be indexed by language tag.</p>
 
-<p id="_f6b0f731-59f4-e367-f86d-a6fb5542d21d">Language Maps: Allows multiple values differing in their associated language to be indexed by language tag.</p>
+<p id="_53f7d2d5-be99-d25e-63ff-85ec9855a7ed">Language Maps are addressed in section 9.8 of the JSON-LD 1.1 Standard (<a href="https://www.w3.org/TR/json-ld/#language-maps">https://www.w3.org/TR/json-ld/#language-maps</a>)</p>
 
-<p id="_07c774c3-0e13-209c-1721-959e0764b157">Language Maps are addressed in section 9.8 of the JSON-LD 1.1 Standard (<a href="https://www.w3.org/TR/json-ld/#language-maps">https://www.w3.org/TR/json-ld/#language-maps</a>)</p>
-
-<p id="_0116c131-f4e4-a764-1cae-0b6fa3e4570b">The next result is that all three common approaches can be used in a JSON document.</p>
+<p id="_6fe40872-f1c3-5cae-cb25-544ef6b0b7d3">The net result is that all three common approaches can be used in a JSON document.</p>
 </div>
 
 <div id="_conclusion"><h3>1.2.6.  Conclusion</h3>
@@ -1671,20 +1673,24 @@ To obtain additional rights of use, visit
 
 <p id="_3b7705d7-28ae-8ee7-5a81-6eefd8a153e3">Here is a table of some pros and cons of the various methods discussed.</p>
 
-<p class="TableTitle" style="text-align:center;">Table 2</p><table id="_9551b3ea-2715-7c75-e8c6-be614ce5bbd2" class="MsoISOTable" style="border-width:1px;border-spacing:0;table-layout:fixed;"><colgroup><col style="width: 16.6666%;" /><col style="width: 33.3333%;" /><col style="width: 50.0001%;" /></colgroup><thead><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col"><b>Method</b></th><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col"><b>Pros</b></th><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col"><b>Cons</b></th></tr></thead><tbody><tr><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Implied Language</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Simple. Easy to write and use.</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">The only way to handle multiple languages is to provide a choice of multiple files, or duplicate sections within one file.
-Keeping the content in sync across sections is error-prone.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Separate Per-Language Attributes</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Familiar to OpenStreetMap users.
+<p class="TableTitle" style="text-align:center;">Table 2</p><table id="_b92b9ffd-4ce3-587c-6194-0d69f8cad640" class="MsoISOTable" style="border-width:1px;border-spacing:0;table-layout:fixed;"><colgroup><col style="width: 16.6666%;" /><col style="width: 33.3333%;" /><col style="width: 50.0001%;" /></colgroup><thead><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col"><b>Method</b></th><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col"><b>Pros</b></th><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col"><b>Cons</b></th></tr></thead><tbody><tr><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Implied Language</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Simple. Easy to write and use.</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">The only way to handle multiple languages is to provide a choice of multiple files, or duplicate sections within one file.
+Keeping the content in sync across sections is subject to error.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Separate Per-Language Attributes</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Familiar to OpenStreetMap users.
 Handles the one-language case well.
-Compact.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Conceptually unclean to have a number of name attributes at the same level as other attributes.
-Needs more processing to gather together all the names in the internal data format.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Complex Attributes: Sequence Only</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Moderately simple to read and process.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Bulkier for one-language case.
-Not clear what the default name to use is.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Complex Attributes: Default and Sequence</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Handles one-language case moderately well.
-Can tell what name to use by default.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Bulkier than most other options, and still not ideal for one-language case.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Complex Attributes: Inspire</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Closest to “standards compliant”.
+Compact.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Conceptually unclean to have multiple versions (languages) of an attribute at the same level as other attributes.
+Needs more processing to gather together all the versions in the internal data format.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Complex Attributes: Sequence Only</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Moderately simple to read and process.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Bulkier for one-language case.
+Not clear what the default value is.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Complex Attributes: Default and Sequence</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Handles one-language case moderately well.
+Can tell what value to use by default.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Bulkier than most other options, and still not ideal for one-language case.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Complex Attributes: Inspire</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Closest to “standards compliant”.
 Allows specification of character encoding too, and in a less-verbose way
-than if done per name.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Complex to read and write (the locales part).
+than if done per attribute.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Complex to read and write (the locales part).
 Need to process metadata in another part of the file and connect to each POI: a POI feature would not be standalone.
-Extra complexity of indirection is only useful if multiple character encodings are needed.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Complex Attributes: Choice of Simple or Complex</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Handles one-language case well.
-Any other pros of the variant of Complex that is coupled with this.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Need to make value-type-dependent choice when processing.</td></tr></tbody></table>
+Extra complexity of indirection is only useful if multiple character encodings are needed.</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Complex Attributes: Choice of Implied or Complex</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Handles one-language case well.
+Limits complexity to those attribues where it is needed.</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Need to support all internationalization approaches and select between them when processing.</td></tr></tbody></table>
 
-<p id="_0a09e069-5d98-fa9b-f7d9-572a5d81a48f">The recommendation is to use the Choice of Simple or Complex attributes, and in the case of a Complex attribute, use the Sequence Only submethod.</p>
+<p id="_a505187c-b9a2-681f-e29b-4b084e47b837">It recommended that implementors choose the simplest approach which meets the needs of their content. A document that is in a single language can rely on the HTTP <tt>Accept-Language</tt> header to address all internationalization requirements. Mixed languages in a single document will require a more complex approach.</p>
+
+<p id="_42d6fc20-4b4a-e97c-5cdb-070f236b7cb2">The selection of approach will also depend on the capabilities of the encoding technology. For example, the JSON-LD techniques described above are not supported for JSON encodings. In another example, the per-language attribute approach is common practice in XML, but difficult with JSON.</p>
+
+<p id="_03f80f6d-cb9d-14f0-7a22-e2105566abc2">Ultimately the selection of approach to internationalization will depend on these two factors.</p>
 </div>
 </div></div></main><script type="text/x-mathjax-config">
   MathJax.Hub.Config({

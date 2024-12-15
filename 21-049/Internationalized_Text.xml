@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.7" schema-version="v1.3.1">
 <bibdata type="standard">
-<title language="en" format="text/plain">OGC Points of Interest (POI) Internationalized Text Analysis</title>
-<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">24-999</docidentifier><docnumber>24-999</docnumber><date type="published"><on>2024-11-29</on></date><date type="issued"><on>2024-11-29</on></date><date type="received"><on>2024-12-12</on></date><contributor><role type="author"/><organization>
+<title language="en" format="text/plain">White paper for OGC Internationalized Text Analysis</title>
+<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/WP/int_text/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">yy-999</docidentifier><docnumber>yy-999</docnumber><date type="published"><on>2024-11-29</on></date><date type="issued"><on>2024-11-29</on></date><date type="received"><on>2024-12-15</on></date><contributor><role type="author"/><organization>
 <name>Digital Flanders</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Google</name>
@@ -23,9 +23,9 @@
 <abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>0.1.1</draft></version><language>en</language><script>Latn</script><abstract><p>The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</p>
 
 <p>In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</p>
-</abstract><status><stage>draft</stage></status><copyright><from>2024</from><owner><organization>
+</abstract><status><stage>swg-draft</stage></status><copyright><from>2024</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Internationalization</keyword><keyword>POI</keyword><keyword>Points of Interest</keyword><ext><doctype>white-paper</doctype><subdoctype>conceptual</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Internationalization</keyword><keyword>POI</keyword><keyword>Points of Interest</keyword><ext><doctype>white-paper</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
 <clause id="_copyright_notice" obligation="normative">
@@ -202,11 +202,11 @@ To obtain additional rights of use, visit
 <p id="_13c17743-b933-5f8e-3fa0-74894215f85e">One advantage of this approach is that the <em>Locales</em> can be defined once then referenced througout the document.</p>
 </clause>
 
-<clause id="_complex_attributes_choice_of_simple_or_complex" obligation="normative">
-<title>Complex Attributes: Choice of Simple or Complex</title>
-<p id="_4baa512b-8760-e0f3-1147-4567ccb46d90">The “Choice” approach allows the text string to be one of two types: a simple string or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language approaches.</p>
+<clause id="_complex_attributes_choice_of_implied_or_complex" obligation="normative">
+<title>Complex Attributes: Choice of Implied or Complex</title>
+<p id="_4b037b17-cb61-add0-f618-1191ac893929">The “Choice” approach allows the text string to be one of two types: a simple string with an Implied Language or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be using the Implied Langage approach. Otherwise, the text string will be structured using one of the Complex Attribute approaches.</p>
 
-<p id="_e530e80b-8662-62f2-c532-1dac50d32dca">The advantage of this approach is that the simple case of all-one-language yields a file that is simple to understand and process.</p>
+<p id="_e5f57c7a-99e6-fdc0-1299-668efbb0c8f4">The advantage of this approach is that the simple Implied Language approach can be used when appropriate. The Complex Attribute approaches can be limited to those cases where the increased complexity is needed.  The result is a file that has the level of complexity that it needs, and no more.</p>
 </clause>
 </clause>
 </clause>
@@ -307,17 +307,19 @@ To obtain additional rights of use, visit
 <title>JSON-LD</title>
 <p id="_7162dfa6-1fe4-7060-d509-36841255d68b">One of the capabilities that JSON-LD adds to JSON is the ability to annotate strings with their language. The capabilities provided include:</p>
 
-<p id="_f21b159d-6ab5-5746-c56e-0c61db68071c">language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type.</p>
+<ul id="_bfe95f8a-bea2-5a04-12dd-4cfd125b4cc1"><li><p id="_3f0d1f66-b92f-e580-bffb-72092660a0b8">language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type.</p>
+</li>
+<li><p id="_b4d598fb-8110-a649-b29a-a927e3a7177d"><tt>@language</tt> keyword: The <tt>@language</tt> keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a <tt>context</tt>, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.</p>
+</li>
+</ul>
 
-<p id="_3d65ff0c-c382-be86-1005-b7189903d482"><tt>@language</tt> keyword: The <tt>@language</tt> keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a <tt>context</tt>, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.</p>
+<p id="_1ba25a86-e8db-53c9-4e66-c6fb0f3d5415">Text internationalization is addressed in section 4.2.4 of the JSON-LD 1.1 Standard (<link target="https://www.w3.org/TR/json-ld/#string-internationalization"/>)</p>
 
-<p id="_68958904-de7e-d164-5810-1b59a4c8ba76">Text internationalization is addressed in section 4.2.4 of the JSON-LD 1.1 Standard (<link target="https://www.w3.org/TR/json-ld/#string-internationalization"/>)</p>
+<p id="_16da9e16-a146-b400-7c7c-071feb76c9ca">Language Maps: Allows multiple values differing in their associated language to be indexed by language tag.</p>
 
-<p id="_f6b0f731-59f4-e367-f86d-a6fb5542d21d">Language Maps: Allows multiple values differing in their associated language to be indexed by language tag.</p>
+<p id="_53f7d2d5-be99-d25e-63ff-85ec9855a7ed">Language Maps are addressed in section 9.8 of the JSON-LD 1.1 Standard (<link target="https://www.w3.org/TR/json-ld/#language-maps"/>)</p>
 
-<p id="_07c774c3-0e13-209c-1721-959e0764b157">Language Maps are addressed in section 9.8 of the JSON-LD 1.1 Standard (<link target="https://www.w3.org/TR/json-ld/#language-maps"/>)</p>
-
-<p id="_0116c131-f4e4-a764-1cae-0b6fa3e4570b">The next result is that all three common approaches can be used in a JSON document.</p>
+<p id="_6fe40872-f1c3-5cae-cb25-544ef6b0b7d3">The net result is that all three common approaches can be used in a JSON document.</p>
 </clause>
 
 <clause id="_conclusion" obligation="normative">
@@ -330,43 +332,47 @@ To obtain additional rights of use, visit
 
 <p id="_3b7705d7-28ae-8ee7-5a81-6eefd8a153e3">Here is a table of some pros and cons of the various methods discussed.</p>
 
-<table id="_9551b3ea-2715-7c75-e8c6-be614ce5bbd2"><colgroup><col width="16.6666%"/><col width="33.3333%"/><col width="50.0001%"/></colgroup><thead><tr><th valign="middle" align="left"><strong>Method</strong></th>
+<table id="_b92b9ffd-4ce3-587c-6194-0d69f8cad640"><colgroup><col width="16.6666%"/><col width="33.3333%"/><col width="50.0001%"/></colgroup><thead><tr><th valign="middle" align="left"><strong>Method</strong></th>
 <th valign="middle" align="left"><strong>Pros</strong></th>
 <th valign="middle" align="left"><strong>Cons</strong></th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="left">Implied Language</td>
 <td valign="middle" align="left">Simple. Easy to write and use.</td>
 <td valign="middle" align="left">The only way to handle multiple languages is to provide a choice of multiple files, or duplicate sections within one file.
-Keeping the content in sync across sections is error-prone.</td>
+Keeping the content in sync across sections is subject to error.</td>
 </tr><tr><td valign="middle" align="left">Separate Per-Language Attributes</td>
 <td valign="middle" align="left">Familiar to OpenStreetMap users.
 Handles the one-language case well.
 Compact.</td>
-<td valign="middle" align="left">Conceptually unclean to have a number of name attributes at the same level as other attributes.
-Needs more processing to gather together all the names in the internal data format.</td>
+<td valign="middle" align="left">Conceptually unclean to have multiple versions (languages) of an attribute at the same level as other attributes.
+Needs more processing to gather together all the versions in the internal data format.</td>
 </tr><tr><td valign="middle" align="left">Complex Attributes: Sequence Only</td>
 <td valign="middle" align="left">Moderately simple to read and process.</td>
 <td valign="middle" align="left">Bulkier for one-language case.
-Not clear what the default name to use is.</td>
+Not clear what the default value is.</td>
 </tr><tr><td valign="middle" align="left">Complex Attributes: Default and Sequence</td>
 <td valign="middle" align="left">Handles one-language case moderately well.
-Can tell what name to use by default.</td>
+Can tell what value to use by default.</td>
 <td valign="middle" align="left">Bulkier than most other options, and still not ideal for one-language case.</td>
 </tr><tr><td valign="middle" align="left">Complex Attributes: Inspire</td>
 <td valign="middle" align="left">Closest to “standards compliant”.
 Allows specification of character encoding too, and in a less-verbose way
-than if done per name.</td>
+than if done per attribute.</td>
 <td valign="middle" align="left">Complex to read and write (the locales part).
 Need to process metadata in another part of the file and connect to each POI: a POI feature would not be standalone.
 Extra complexity of indirection is only useful if multiple character encodings are needed.</td>
-</tr><tr><td valign="middle" align="left">Complex Attributes: Choice of Simple or Complex</td>
+</tr><tr><td valign="middle" align="left">Complex Attributes: Choice of Implied or Complex</td>
 <td valign="middle" align="left">Handles one-language case well.
-Any other pros of the variant of Complex that is coupled with this.</td>
-<td valign="middle" align="left">Need to make value-type-dependent choice when processing.</td>
+Limits complexity to those attribues where it is needed.</td>
+<td valign="middle" align="left">Need to support all internationalization approaches and select between them when processing.</td>
 </tr></tbody>
 </table>
 
-<p id="_0a09e069-5d98-fa9b-f7d9-572a5d81a48f">The recommendation is to use the Choice of Simple or Complex attributes, and in the case of a Complex attribute, use the Sequence Only submethod.</p>
+<p id="_a505187c-b9a2-681f-e29b-4b084e47b837">It recommended that implementors choose the simplest approach which meets the needs of their content. A document that is in a single language can rely on the HTTP <tt>Accept-Language</tt> header to address all internationalization requirements. Mixed languages in a single document will require a more complex approach.</p>
+
+<p id="_42d6fc20-4b4a-e97c-5cdb-070f236b7cb2">The selection of approach will also depend on the capabilities of the encoding technology. For example, the JSON-LD techniques described above are not supported for JSON encodings. In another example, the per-language attribute approach is common practice in XML, but difficult with JSON.</p>
+
+<p id="_03f80f6d-cb9d-14f0-7a22-e2105566abc2">Ultimately the selection of approach to internationalization will depend on these two factors.</p>
 </clause>
 </clause>
 </clause>

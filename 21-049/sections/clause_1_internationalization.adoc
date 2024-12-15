@@ -125,11 +125,11 @@ Then an actual `name` attribute would look like this:
 One advantage of this approach is that the _Locales_ can be defined once then referenced througout the document.
 
 
-===== Complex Attributes: Choice of Simple or Complex =====
+===== Complex Attributes: Choice of Implied or Complex =====
 
-The "Choice" approach allows the text string to be one of two types: a simple string or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language approaches.
+The "Choice" approach allows the text string to be one of two types: a simple string with an Implied Language or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be using the Implied Langage approach. Otherwise, the text string will be structured using one of the Complex Attribute approaches. 
 
-The advantage of this approach is that the simple case of all-one-language yields a file that is simple to understand and process.
+The advantage of this approach is that the simple Implied Language approach can be used when appropriate. The Complex Attribute approaches can be limited to those cases where the increased complexity is needed.  The result is a file that has the level of complexity that it needs, and no more.
 
 === International Standards
 
@@ -217,9 +217,9 @@ The `Accept-Language` header is an example of the "Implied Language" approach. T
 
 One of the capabilities that JSON-LD adds to JSON is the ability to annotate strings with their language. The capabilities provided include: 
 
-language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type. 
+* language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type. 
     
-`@language` keyword: The `@language` keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a `context`, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.
+* `@language` keyword: The `@language` keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a `context`, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.
 
 Text internationalization is addressed in section 4.2.4 of the JSON-LD 1.1 Standard (https://www.w3.org/TR/json-ld/#string-internationalization)
 
@@ -227,7 +227,7 @@ Language Maps: Allows multiple values differing in their associated language to 
 
 Language Maps are addressed in section 9.8 of the JSON-LD 1.1 Standard (https://www.w3.org/TR/json-ld/#language-maps)
 
-The next result is that all three common approaches can be used in a JSON document.
+The net result is that all three common approaches can be used in a JSON document.
 
 ==== Conclusion
 
@@ -246,32 +246,36 @@ Here is a table of some pros and cons of the various methods discussed.
 |Implied Language
 |Simple. Easy to write and use.
 |The only way to handle multiple languages is to provide a choice of multiple files, or duplicate sections within one file.
-Keeping the content in sync across sections is error-prone.
+Keeping the content in sync across sections is subject to error.
 |Separate Per-Language Attributes
 |Familiar to OpenStreetMap users.
 Handles the one-language case well.
 Compact.
-|Conceptually unclean to have a number of name attributes at the same level as other attributes.
-Needs more processing to gather together all the names in the internal data format.
+|Conceptually unclean to have multiple versions (languages) of an attribute at the same level as other attributes.
+Needs more processing to gather together all the versions in the internal data format.
 |Complex Attributes: Sequence Only
 |Moderately simple to read and process.
 |Bulkier for one-language case.
-Not clear what the default name to use is.
+Not clear what the default value is.
 |Complex Attributes: Default and Sequence
 |Handles one-language case moderately well.
-Can tell what name to use by default.
+Can tell what value to use by default.
 |Bulkier than most other options, and still not ideal for one-language case.
 |Complex Attributes: Inspire
 |Closest to "standards compliant".
 Allows specification of character encoding too, and in a less-verbose way
-than if done per name.
+than if done per attribute.
 |Complex to read and write (the locales part).
 Need to process metadata in another part of the file and connect to each POI: a POI feature would not be standalone.
 Extra complexity of indirection is only useful if multiple character encodings are needed.
-|Complex Attributes: Choice of Simple or Complex
+|Complex Attributes: Choice of Implied or Complex
 |Handles one-language case well.
-Any other pros of the variant of Complex that is coupled with this.
-|Need to make value-type-dependent choice when processing.
+Limits complexity to those attribues where it is needed.
+|Need to support all internationalization approaches and select between them when processing.
 |===
 
-The recommendation is to use the Choice of Simple or Complex attributes, and in the case of a Complex attribute, use the Sequence Only submethod.
+It recommended that implementors choose the simplest approach which meets the needs of their content. A document that is in a single language can rely on the HTTP `Accept-Language` header to address all internationalization requirements. Mixed languages in a single document will require a more complex approach.
+
+The selection of approach will also depend on the capabilities of the encoding technology. For example, the JSON-LD techniques described above are not supported for JSON encodings. In another example, the per-language attribute approach is common practice in XML, but difficult with JSON.  
+
+Ultimately the selection of approach to internationalization will depend on these two factors.

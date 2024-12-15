@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.5.7" schema-version="v1.3.1">
 <bibdata type="standard">
-<title language="en" format="text/plain">OGC Points of Interest (POI) Internationalized Text Analysis</title>
-<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">24-999</docidentifier><docnumber>24-999</docnumber><date type="published"><on>2024-11-29</on></date><date type="issued"><on>2024-11-29</on></date><date type="received"><on>2024-12-12</on></date><contributor><role type="author"/><organization>
+<title language="en" format="text/plain">White paper for OGC Internationalized Text Analysis</title>
+<uri type="xml">./Internationalized_Text.xml</uri><uri type="pdf">./Internationalized_Text.pdf</uri><uri type="doc">./Internationalized_Text.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/WP/int_text/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">yy-999</docidentifier><docnumber>yy-999</docnumber><date type="published"><on>2024-11-29</on></date><date type="issued"><on>2024-11-29</on></date><date type="received"><on>2024-12-15</on></date><contributor><role type="author"/><organization>
 <name>Digital Flanders</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Google</name>
@@ -23,9 +23,9 @@
 <abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><draft>0.1.1</draft></version><language current="true">en</language><script current="true">Latn</script><abstract><p>The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</p>
 
 <p>In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</p>
-</abstract><status><stage language="">draft</stage><stage language="en">Draft</stage></status><copyright><from>2024</from><owner><organization>
+</abstract><status><stage language="">swg-draft</stage><stage language="en">Candidate SWG Draft</stage></status><copyright><from>2024</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Internationalization</keyword><keyword>POI</keyword><keyword>Points of Interest</keyword><ext><doctype>technical-paper</doctype><subdoctype>conceptual</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Internationalization</keyword><keyword>POI</keyword><keyword>Points of Interest</keyword><ext><doctype>technical-paper</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
 </localized-string><localized-string key="internal_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
 <p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
 <p>For the purposes of this document, the following additional terms and definitions apply.</p>
@@ -37,8 +37,8 @@
 <p>For the purposes of this document, the terms and definitions given in % and the following additionally apply.</p>
 </localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">Example</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of Recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="admitted" language="en">ALTERNATIVE</localized-string><localized-string key="submitters" language="en">Submitters</localized-string><localized-string key="contributors_clause" language="en">Contributors</localized-string><localized-string key="dochistory" language="en">Revision history</localized-string><localized-string key="table_of_figures" language="en">Table of Figures</localized-string><localized-string key="security_empty" language="en">No security considerations have been made for this document.</localized-string><localized-string key="submission_date" language="en">Submission Date</localized-string><localized-string key="approval_date" language="en">Approval Date</localized-string><localized-string key="publication_date" language="en">Publication Date</localized-string><localized-string key="author" language="en">Author</localized-string><localized-string key="editor_full" language="en">Editor</localized-string><localized-string key="contributor" language="en">Contributor</localized-string><localized-string key="stage_dict.draft" language="en">Draft</localized-string><localized-string key="stage_dict.work-item-draft" language="en">Work Item Draft</localized-string><localized-string key="stage_dict.swg-draft" language="en">Candidate SWG Draft</localized-string><localized-string key="stage_dict.oab-review" language="en">Candidate OAB Review Draft</localized-string><localized-string key="stage_dict.public-rfc" language="en">Candidate Public RFC Draft</localized-string><localized-string key="stage_dict.tc-vote" language="en">Candidate TC Vote Draft</localized-string><localized-string key="stage_dict.approved" language="en">Approved</localized-string><localized-string key="stage_dict.published" language="en">Published</localized-string><localized-string key="stage_dict.deprecated" language="en">Deprecated</localized-string><localized-string key="stage_dict.rescinded" language="en">Rescinded</localized-string><localized-string key="stage_dict.retired" language="en">Retired</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__ogc-standard type="semantic" version="2.5.7" schema-version="v1.3.1">
 <semantic__bibdata type="standard">
-<semantic__title language="en" format="text/plain">OGC Points of Interest (POI) Internationalized Text Analysis</semantic__title>
-<semantic__uri type="xml">./Internationalized_Text.xml</semantic__uri><semantic__uri type="pdf">./Internationalized_Text.pdf</semantic__uri><semantic__uri type="doc">./Internationalized_Text.doc</semantic__uri><semantic__docidentifier type="ogc-external">http://www.opengis.net/doc/is/poi/1.0</semantic__docidentifier><semantic__docidentifier type="ogc-internal" primary="true">24-999</semantic__docidentifier><semantic__docnumber>24-999</semantic__docnumber><semantic__date type="published"><semantic__on>2024-11-29</semantic__on></semantic__date><semantic__date type="issued"><semantic__on>2024-11-29</semantic__on></semantic__date><semantic__date type="received"><semantic__on>2024-12-12</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
+<semantic__title language="en" format="text/plain">White paper for OGC Internationalized Text Analysis</semantic__title>
+<semantic__uri type="xml">./Internationalized_Text.xml</semantic__uri><semantic__uri type="pdf">./Internationalized_Text.pdf</semantic__uri><semantic__uri type="doc">./Internationalized_Text.doc</semantic__uri><semantic__docidentifier type="ogc-external">http://www.opengis.net/doc/WP/int_text/1.0</semantic__docidentifier><semantic__docidentifier type="ogc-internal" primary="true">yy-999</semantic__docidentifier><semantic__docnumber>yy-999</semantic__docnumber><semantic__date type="published"><semantic__on>2024-11-29</semantic__on></semantic__date><semantic__date type="issued"><semantic__on>2024-11-29</semantic__on></semantic__date><semantic__date type="received"><semantic__on>2024-12-15</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
 <semantic__name>Digital Flanders</semantic__name>
 </semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="author"/><semantic__organization>
 <semantic__name>Google</semantic__name>
@@ -59,9 +59,9 @@
 <semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__edition>1.0</semantic__edition><semantic__version><semantic__draft>0.1.1</semantic__draft></semantic__version><semantic__language>en</semantic__language><semantic__script>Latn</semantic__script><semantic__abstract><semantic__p>The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</semantic__p>
 
 <semantic__p>In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</semantic__p>
-</semantic__abstract><semantic__status><semantic__stage>draft</semantic__stage></semantic__status><semantic__copyright><semantic__from>2024</semantic__from><semantic__owner><semantic__organization>
+</semantic__abstract><semantic__status><semantic__stage>swg-draft</semantic__stage></semantic__status><semantic__copyright><semantic__from>2024</semantic__from><semantic__owner><semantic__organization>
 <semantic__name>Open Geospatial Consortium</semantic__name>
-<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__owner></semantic__copyright><semantic__keyword>ogcdoc</semantic__keyword><semantic__keyword>OGC document</semantic__keyword><semantic__keyword>Internationalization</semantic__keyword><semantic__keyword>POI</semantic__keyword><semantic__keyword>Points of Interest</semantic__keyword><semantic__ext><semantic__doctype>white-paper</semantic__doctype><semantic__subdoctype>conceptual</semantic__subdoctype><semantic__editorialgroup><semantic__committee>technical</semantic__committee></semantic__editorialgroup></semantic__ext></semantic__bibdata><semantic__metanorma-extension><semantic__presentation-metadata><semantic__name>TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>HTML TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>DOC TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>PDF TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata></semantic__metanorma-extension>
+<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__owner></semantic__copyright><semantic__keyword>ogcdoc</semantic__keyword><semantic__keyword>OGC document</semantic__keyword><semantic__keyword>Internationalization</semantic__keyword><semantic__keyword>POI</semantic__keyword><semantic__keyword>Points of Interest</semantic__keyword><semantic__ext><semantic__doctype>white-paper</semantic__doctype><semantic__editorialgroup><semantic__committee>technical</semantic__committee></semantic__editorialgroup></semantic__ext></semantic__bibdata><semantic__metanorma-extension><semantic__presentation-metadata><semantic__name>TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>HTML TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>DOC TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>PDF TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata></semantic__metanorma-extension>
 <semantic__boilerplate><semantic__copyright-statement>
 
 <semantic__clause id="semantic___copyright_notice" obligation="normative">
@@ -238,11 +238,11 @@ To obtain additional rights of use, visit
 <semantic__p id="semantic___13c17743-b933-5f8e-3fa0-74894215f85e">One advantage of this approach is that the <semantic__em>Locales</semantic__em> can be defined once then referenced througout the document.</semantic__p>
 </semantic__clause>
 
-<semantic__clause id="semantic___complex_attributes_choice_of_simple_or_complex" obligation="normative">
-<semantic__title>Complex Attributes: Choice of Simple or Complex</semantic__title>
-<semantic__p id="semantic___4baa512b-8760-e0f3-1147-4567ccb46d90">The “Choice” approach allows the text string to be one of two types: a simple string or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language approaches.</semantic__p>
+<semantic__clause id="semantic___complex_attributes_choice_of_implied_or_complex" obligation="normative">
+<semantic__title>Complex Attributes: Choice of Implied or Complex</semantic__title>
+<semantic__p id="semantic___4b037b17-cb61-add0-f618-1191ac893929">The “Choice” approach allows the text string to be one of two types: a simple string with an Implied Language or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be using the Implied Langage approach. Otherwise, the text string will be structured using one of the Complex Attribute approaches.</semantic__p>
 
-<semantic__p id="semantic___e530e80b-8662-62f2-c532-1dac50d32dca">The advantage of this approach is that the simple case of all-one-language yields a file that is simple to understand and process.</semantic__p>
+<semantic__p id="semantic___e5f57c7a-99e6-fdc0-1299-668efbb0c8f4">The advantage of this approach is that the simple Implied Language approach can be used when appropriate. The Complex Attribute approaches can be limited to those cases where the increased complexity is needed.  The result is a file that has the level of complexity that it needs, and no more.</semantic__p>
 </semantic__clause>
 </semantic__clause>
 </semantic__clause>
@@ -343,17 +343,19 @@ To obtain additional rights of use, visit
 <semantic__title>JSON-LD</semantic__title>
 <semantic__p id="semantic___7162dfa6-1fe4-7060-d509-36841255d68b">One of the capabilities that JSON-LD adds to JSON is the ability to annotate strings with their language. The capabilities provided include:</semantic__p>
 
-<semantic__p id="semantic___f21b159d-6ab5-5746-c56e-0c61db68071c">language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type.</semantic__p>
+<semantic__ul id="semantic___bfe95f8a-bea2-5a04-12dd-4cfd125b4cc1"><semantic__li><semantic__p id="semantic___3f0d1f66-b92f-e580-bffb-72092660a0b8">language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type.</semantic__p>
+</semantic__li>
+<semantic__li><semantic__p id="semantic___b4d598fb-8110-a649-b29a-a927e3a7177d"><semantic__tt>@language</semantic__tt> keyword: The <semantic__tt>@language</semantic__tt> keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a <semantic__tt>context</semantic__tt>, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.</semantic__p>
+</semantic__li>
+</semantic__ul>
 
-<semantic__p id="semantic___3d65ff0c-c382-be86-1005-b7189903d482"><semantic__tt>@language</semantic__tt> keyword: The <semantic__tt>@language</semantic__tt> keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a <semantic__tt>context</semantic__tt>, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.</semantic__p>
+<semantic__p id="semantic___1ba25a86-e8db-53c9-4e66-c6fb0f3d5415">Text internationalization is addressed in section 4.2.4 of the JSON-LD 1.1 Standard (<semantic__link target="https://www.w3.org/TR/json-ld/#string-internationalization"/>)</semantic__p>
 
-<semantic__p id="semantic___68958904-de7e-d164-5810-1b59a4c8ba76">Text internationalization is addressed in section 4.2.4 of the JSON-LD 1.1 Standard (<semantic__link target="https://www.w3.org/TR/json-ld/#string-internationalization"/>)</semantic__p>
+<semantic__p id="semantic___16da9e16-a146-b400-7c7c-071feb76c9ca">Language Maps: Allows multiple values differing in their associated language to be indexed by language tag.</semantic__p>
 
-<semantic__p id="semantic___f6b0f731-59f4-e367-f86d-a6fb5542d21d">Language Maps: Allows multiple values differing in their associated language to be indexed by language tag.</semantic__p>
+<semantic__p id="semantic___53f7d2d5-be99-d25e-63ff-85ec9855a7ed">Language Maps are addressed in section 9.8 of the JSON-LD 1.1 Standard (<semantic__link target="https://www.w3.org/TR/json-ld/#language-maps"/>)</semantic__p>
 
-<semantic__p id="semantic___07c774c3-0e13-209c-1721-959e0764b157">Language Maps are addressed in section 9.8 of the JSON-LD 1.1 Standard (<semantic__link target="https://www.w3.org/TR/json-ld/#language-maps"/>)</semantic__p>
-
-<semantic__p id="semantic___0116c131-f4e4-a764-1cae-0b6fa3e4570b">The next result is that all three common approaches can be used in a JSON document.</semantic__p>
+<semantic__p id="semantic___6fe40872-f1c3-5cae-cb25-544ef6b0b7d3">The net result is that all three common approaches can be used in a JSON document.</semantic__p>
 </semantic__clause>
 
 <semantic__clause id="semantic___conclusion" obligation="normative">
@@ -366,43 +368,47 @@ To obtain additional rights of use, visit
 
 <semantic__p id="semantic___3b7705d7-28ae-8ee7-5a81-6eefd8a153e3">Here is a table of some pros and cons of the various methods discussed.</semantic__p>
 
-<semantic__table id="semantic___9551b3ea-2715-7c75-e8c6-be614ce5bbd2"><semantic__colgroup><semantic__col width="16.6666%"/><semantic__col width="33.3333%"/><semantic__col width="50.0001%"/></semantic__colgroup><semantic__thead><semantic__tr><semantic__th valign="middle" align="left"><semantic__strong>Method</semantic__strong></semantic__th>
+<semantic__table id="semantic___b92b9ffd-4ce3-587c-6194-0d69f8cad640"><semantic__colgroup><semantic__col width="16.6666%"/><semantic__col width="33.3333%"/><semantic__col width="50.0001%"/></semantic__colgroup><semantic__thead><semantic__tr><semantic__th valign="middle" align="left"><semantic__strong>Method</semantic__strong></semantic__th>
 <semantic__th valign="middle" align="left"><semantic__strong>Pros</semantic__strong></semantic__th>
 <semantic__th valign="middle" align="left"><semantic__strong>Cons</semantic__strong></semantic__th>
 </semantic__tr></semantic__thead>
 <semantic__tbody><semantic__tr><semantic__td valign="middle" align="left">Implied Language</semantic__td>
 <semantic__td valign="middle" align="left">Simple. Easy to write and use.</semantic__td>
 <semantic__td valign="middle" align="left">The only way to handle multiple languages is to provide a choice of multiple files, or duplicate sections within one file.
-Keeping the content in sync across sections is error-prone.</semantic__td>
+Keeping the content in sync across sections is subject to error.</semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="left">Separate Per-Language Attributes</semantic__td>
 <semantic__td valign="middle" align="left">Familiar to OpenStreetMap users.
 Handles the one-language case well.
 Compact.</semantic__td>
-<semantic__td valign="middle" align="left">Conceptually unclean to have a number of name attributes at the same level as other attributes.
-Needs more processing to gather together all the names in the internal data format.</semantic__td>
+<semantic__td valign="middle" align="left">Conceptually unclean to have multiple versions (languages) of an attribute at the same level as other attributes.
+Needs more processing to gather together all the versions in the internal data format.</semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="left">Complex Attributes: Sequence Only</semantic__td>
 <semantic__td valign="middle" align="left">Moderately simple to read and process.</semantic__td>
 <semantic__td valign="middle" align="left">Bulkier for one-language case.
-Not clear what the default name to use is.</semantic__td>
+Not clear what the default value is.</semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="left">Complex Attributes: Default and Sequence</semantic__td>
 <semantic__td valign="middle" align="left">Handles one-language case moderately well.
-Can tell what name to use by default.</semantic__td>
+Can tell what value to use by default.</semantic__td>
 <semantic__td valign="middle" align="left">Bulkier than most other options, and still not ideal for one-language case.</semantic__td>
 </semantic__tr><semantic__tr><semantic__td valign="middle" align="left">Complex Attributes: Inspire</semantic__td>
 <semantic__td valign="middle" align="left">Closest to “standards compliant”.
 Allows specification of character encoding too, and in a less-verbose way
-than if done per name.</semantic__td>
+than if done per attribute.</semantic__td>
 <semantic__td valign="middle" align="left">Complex to read and write (the locales part).
 Need to process metadata in another part of the file and connect to each POI: a POI feature would not be standalone.
 Extra complexity of indirection is only useful if multiple character encodings are needed.</semantic__td>
-</semantic__tr><semantic__tr><semantic__td valign="middle" align="left">Complex Attributes: Choice of Simple or Complex</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="left">Complex Attributes: Choice of Implied or Complex</semantic__td>
 <semantic__td valign="middle" align="left">Handles one-language case well.
-Any other pros of the variant of Complex that is coupled with this.</semantic__td>
-<semantic__td valign="middle" align="left">Need to make value-type-dependent choice when processing.</semantic__td>
+Limits complexity to those attribues where it is needed.</semantic__td>
+<semantic__td valign="middle" align="left">Need to support all internationalization approaches and select between them when processing.</semantic__td>
 </semantic__tr></semantic__tbody>
 </semantic__table>
 
-<semantic__p id="semantic___0a09e069-5d98-fa9b-f7d9-572a5d81a48f">The recommendation is to use the Choice of Simple or Complex attributes, and in the case of a Complex attribute, use the Sequence Only submethod.</semantic__p>
+<semantic__p id="semantic___a505187c-b9a2-681f-e29b-4b084e47b837">It recommended that implementors choose the simplest approach which meets the needs of their content. A document that is in a single language can rely on the HTTP <semantic__tt>Accept-Language</semantic__tt> header to address all internationalization requirements. Mixed languages in a single document will require a more complex approach.</semantic__p>
+
+<semantic__p id="semantic___42d6fc20-4b4a-e97c-5cdb-070f236b7cb2">The selection of approach will also depend on the capabilities of the encoding technology. For example, the JSON-LD techniques described above are not supported for JSON encodings. In another example, the per-language attribute approach is common practice in XML, but difficult with JSON.</semantic__p>
+
+<semantic__p id="semantic___03f80f6d-cb9d-14f0-7a22-e2105566abc2">Ultimately the selection of approach to internationalization will depend on these two factors.</semantic__p>
 </semantic__clause>
 </semantic__clause>
 </semantic__clause>
@@ -583,11 +589,11 @@ To obtain additional rights of use, visit
 <feedback-statement>
 
 </feedback-statement>
-</boilerplate><preface><clause type="toc" id="_69d9d890-6bea-46cc-b8d4-ffe6a7058603" displayorder="1"><title depth="1">Contents</title></clause>
+</boilerplate><preface><clause type="toc" id="_5913b30a-a1ab-4eec-b286-a427f019f120" displayorder="1"><title depth="1">Contents</title></clause>
 <abstract id="_abstract" displayorder="2"><title depth="1">I.<tab/>Abstract</title><p id="_84003ad0-faad-2692-33be-4161b36dd110">The Points of Interest (POI) Conceptual Model Standard builds upon the Geospatial Feature and Geometry Standards developed by the Open Geospatial Consortium and ISO Technical Committee 211 (TC211). Its goal is to provide a model using a Unified Modeling Language (UML) object model which any system may adopt for the definition of basic entities, attributes and relations of POI, regardless of encoding language.</p>
 
 <p id="_63d4f7bf-bc8b-b9b2-f870-0055e5ad894e">In developing the standard, the POI SWG has examined approaches for including in the POI data information in multiple languages without introducing confusion and with the lowest overhead (e.g., computational complexity). Through this report, the SWG members are communicating to the OAB and the geospatial community at large where and how internationalized text is implied in international standards and to make transparent to all concerned the approach the SWG recommends for the POI standard, as well as all other standards that seek to include internationalized text.</p>
-</abstract><clause id="_eb11f290-a58a-4000-8658-611dc6dba301" type="keywords" displayorder="3">
+</abstract><clause id="_3421bc5b-e9b1-4437-8692-f8a2e3bee86a" type="keywords" displayorder="3">
 <title depth="1">II.<tab/>Keywords</title>
 <p>The following are keywords to be used by search engines and document catalogues.</p>
 <p>ogcdoc, OGC document, Internationalization, POI, Points of Interest</p></clause>
@@ -598,7 +604,7 @@ To obtain additional rights of use, visit
 <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
 </foreword><clause type="security" id="_1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative" displayorder="5">
   <title depth="1">IV.<tab/>Security considerations</title>
-  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_3b512bd9-34a2-4dec-abcf-4325b1219650" type="submitting_orgs" displayorder="6">
+  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_fa88eaf9-e74d-4309-9eb1-1d7216a90807" type="submitting_orgs" displayorder="6">
 <title depth="1">V.<tab/>Submitting Organizations</title>
 <p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
  <ul><li>Digital Flanders</li>
@@ -736,11 +742,11 @@ To obtain additional rights of use, visit
 <p id="_13c17743-b933-5f8e-3fa0-74894215f85e">One advantage of this approach is that the <em>Locales</em> can be defined once then referenced througout the document.</p>
 </clause>
 
-<clause id="_complex_attributes_choice_of_simple_or_complex" obligation="normative">
-<title depth="4">1.1.3.4.<tab/>Complex Attributes: Choice of Simple or Complex</title>
-<p id="_4baa512b-8760-e0f3-1147-4567ccb46d90">The “Choice” approach allows the text string to be one of two types: a simple string or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be in the default language, specified at file scope. Otherwise, the structured value will give all of the desired language approaches.</p>
+<clause id="_complex_attributes_choice_of_implied_or_complex" obligation="normative">
+<title depth="4">1.1.3.4.<tab/>Complex Attributes: Choice of Implied or Complex</title>
+<p id="_4b037b17-cb61-add0-f618-1191ac893929">The “Choice” approach allows the text string to be one of two types: a simple string with an Implied Language or one of the other Complex Attribute approaches. If the value is only a simple string, then it is assumed to be using the Implied Langage approach. Otherwise, the text string will be structured using one of the Complex Attribute approaches.</p>
 
-<p id="_e530e80b-8662-62f2-c532-1dac50d32dca">The advantage of this approach is that the simple case of all-one-language yields a file that is simple to understand and process.</p>
+<p id="_e5f57c7a-99e6-fdc0-1299-668efbb0c8f4">The advantage of this approach is that the simple Implied Language approach can be used when appropriate. The Complex Attribute approaches can be limited to those cases where the increased complexity is needed.  The result is a file that has the level of complexity that it needs, and no more.</p>
 </clause>
 </clause>
 </clause>
@@ -822,11 +828,11 @@ To obtain additional rights of use, visit
 
 <p id="_8eab2ca5-6d99-6306-eebc-52e026a9b25b">The text internationalization techniques it describes are:</p>
 
-<ol id="_9443ae4a-7582-0cee-2858-560c2da94a67" type="arabic"><li id="_3eecf11d-94f7-4acf-be21-5097f11f6884" label="1"><p id="_ec167b60-dda3-500b-8ac2-0ebcefd6e23f">Use of the HTTP <tt>Accept-Language</tt> header to convey the language desired by the requestor. This approach assumes that the server has multiple copies of the resource, each in a different language, or that the server is capable of generating a language-specific version based on the <tt>Accept-Language</tt> header value.</p>
+<ol id="_9443ae4a-7582-0cee-2858-560c2da94a67" type="arabic"><li id="_47b41f29-e1d3-431c-abae-f4ca5928d7f0" label="1"><p id="_ec167b60-dda3-500b-8ac2-0ebcefd6e23f">Use of the HTTP <tt>Accept-Language</tt> header to convey the language desired by the requestor. This approach assumes that the server has multiple copies of the resource, each in a different language, or that the server is capable of generating a language-specific version based on the <tt>Accept-Language</tt> header value.</p>
 </li>
-<li id="_fd03745d-3c0c-4bf3-a29e-495a332c9f4b" label="2"><p id="_a02d7555-398b-a026-141f-401b0b8a4757">Use of the <tt>hreflang</tt> attribute of the <tt>Link</tt> class. The <tt>Link</tt> class is based on RFC 8288 (Web Linking). It provides the information needed to properly invoke an HTTP request. This includes the URL, format, and language of the target resource.</p>
+<li id="_913cebcb-d494-4325-a0bf-c29ac0279c58" label="2"><p id="_a02d7555-398b-a026-141f-401b0b8a4757">Use of the <tt>hreflang</tt> attribute of the <tt>Link</tt> class. The <tt>Link</tt> class is based on RFC 8288 (Web Linking). It provides the information needed to properly invoke an HTTP request. This includes the URL, format, and language of the target resource.</p>
 </li>
-<li id="_3fb5da60-264f-4dee-8447-6312275a3d68" label="3"><p id="_f85d10dc-ca64-b38b-aba9-0e1271449f4d">The built-in capabilities of JSON-LD.</p>
+<li id="_b3305dbe-c175-4f70-8403-7ff8f5802244" label="3"><p id="_f85d10dc-ca64-b38b-aba9-0e1271449f4d">The built-in capabilities of JSON-LD.</p>
 </li>
 </ol>
 
@@ -841,17 +847,19 @@ To obtain additional rights of use, visit
 <title depth="3">1.2.5.<tab/>JSON-LD</title>
 <p id="_7162dfa6-1fe4-7060-d509-36841255d68b">One of the capabilities that JSON-LD adds to JSON is the ability to annotate strings with their language. The capabilities provided include:</p>
 
-<p id="_f21b159d-6ab5-5746-c56e-0c61db68071c">language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type.</p>
+<ul id="_bfe95f8a-bea2-5a04-12dd-4cfd125b4cc1"><li><p id="_3f0d1f66-b92f-e580-bffb-72092660a0b8">language-tagged string type: A language-tagged string type consists of a string and a non-empty language tag. This is implemented using the rdf:langString type.</p>
+</li>
+<li><p id="_b4d598fb-8110-a649-b29a-a927e3a7177d"><tt>@language</tt> keyword: The <tt>@language</tt> keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a <tt>context</tt>, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.</p>
+</li>
+</ul>
 
-<p id="_3d65ff0c-c382-be86-1005-b7189903d482"><tt>@language</tt> keyword: The <tt>@language</tt> keyword is used to specify the language for a particular string value or the default language for use within a JSON-LD document. When used within a <tt>context</tt>, it specifies the default language to be used within the scope of that context. If used within the top-level context, it defined the default language for the whole document unless overridded by a lower level context.</p>
+<p id="_1ba25a86-e8db-53c9-4e66-c6fb0f3d5415">Text internationalization is addressed in section 4.2.4 of the JSON-LD 1.1 Standard (<link target="https://www.w3.org/TR/json-ld/#string-internationalization"/>)</p>
 
-<p id="_68958904-de7e-d164-5810-1b59a4c8ba76">Text internationalization is addressed in section 4.2.4 of the JSON-LD 1.1 Standard (<link target="https://www.w3.org/TR/json-ld/#string-internationalization"/>)</p>
+<p id="_16da9e16-a146-b400-7c7c-071feb76c9ca">Language Maps: Allows multiple values differing in their associated language to be indexed by language tag.</p>
 
-<p id="_f6b0f731-59f4-e367-f86d-a6fb5542d21d">Language Maps: Allows multiple values differing in their associated language to be indexed by language tag.</p>
+<p id="_53f7d2d5-be99-d25e-63ff-85ec9855a7ed">Language Maps are addressed in section 9.8 of the JSON-LD 1.1 Standard (<link target="https://www.w3.org/TR/json-ld/#language-maps"/>)</p>
 
-<p id="_07c774c3-0e13-209c-1721-959e0764b157">Language Maps are addressed in section 9.8 of the JSON-LD 1.1 Standard (<link target="https://www.w3.org/TR/json-ld/#language-maps"/>)</p>
-
-<p id="_0116c131-f4e4-a764-1cae-0b6fa3e4570b">The next result is that all three common approaches can be used in a JSON document.</p>
+<p id="_6fe40872-f1c3-5cae-cb25-544ef6b0b7d3">The net result is that all three common approaches can be used in a JSON document.</p>
 </clause>
 
 <clause id="_conclusion" obligation="normative">
@@ -864,43 +872,47 @@ To obtain additional rights of use, visit
 
 <p id="_3b7705d7-28ae-8ee7-5a81-6eefd8a153e3">Here is a table of some pros and cons of the various methods discussed.</p>
 
-<table id="_9551b3ea-2715-7c75-e8c6-be614ce5bbd2"><name>Table 2</name><colgroup><col width="16.6666%"/><col width="33.3333%"/><col width="50.0001%"/></colgroup><thead><tr><th valign="middle" align="left"><strong>Method</strong></th>
+<table id="_b92b9ffd-4ce3-587c-6194-0d69f8cad640"><name>Table 2</name><colgroup><col width="16.6666%"/><col width="33.3333%"/><col width="50.0001%"/></colgroup><thead><tr><th valign="middle" align="left"><strong>Method</strong></th>
 <th valign="middle" align="left"><strong>Pros</strong></th>
 <th valign="middle" align="left"><strong>Cons</strong></th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="left">Implied Language</td>
 <td valign="middle" align="left">Simple. Easy to write and use.</td>
 <td valign="middle" align="left">The only way to handle multiple languages is to provide a choice of multiple files, or duplicate sections within one file.
-Keeping the content in sync across sections is error-prone.</td>
+Keeping the content in sync across sections is subject to error.</td>
 </tr><tr><td valign="middle" align="left">Separate Per-Language Attributes</td>
 <td valign="middle" align="left">Familiar to OpenStreetMap users.
 Handles the one-language case well.
 Compact.</td>
-<td valign="middle" align="left">Conceptually unclean to have a number of name attributes at the same level as other attributes.
-Needs more processing to gather together all the names in the internal data format.</td>
+<td valign="middle" align="left">Conceptually unclean to have multiple versions (languages) of an attribute at the same level as other attributes.
+Needs more processing to gather together all the versions in the internal data format.</td>
 </tr><tr><td valign="middle" align="left">Complex Attributes: Sequence Only</td>
 <td valign="middle" align="left">Moderately simple to read and process.</td>
 <td valign="middle" align="left">Bulkier for one-language case.
-Not clear what the default name to use is.</td>
+Not clear what the default value is.</td>
 </tr><tr><td valign="middle" align="left">Complex Attributes: Default and Sequence</td>
 <td valign="middle" align="left">Handles one-language case moderately well.
-Can tell what name to use by default.</td>
+Can tell what value to use by default.</td>
 <td valign="middle" align="left">Bulkier than most other options, and still not ideal for one-language case.</td>
 </tr><tr><td valign="middle" align="left">Complex Attributes: Inspire</td>
 <td valign="middle" align="left">Closest to “standards compliant”.
 Allows specification of character encoding too, and in a less-verbose way
-than if done per name.</td>
+than if done per attribute.</td>
 <td valign="middle" align="left">Complex to read and write (the locales part).
 Need to process metadata in another part of the file and connect to each POI: a POI feature would not be standalone.
 Extra complexity of indirection is only useful if multiple character encodings are needed.</td>
-</tr><tr><td valign="middle" align="left">Complex Attributes: Choice of Simple or Complex</td>
+</tr><tr><td valign="middle" align="left">Complex Attributes: Choice of Implied or Complex</td>
 <td valign="middle" align="left">Handles one-language case well.
-Any other pros of the variant of Complex that is coupled with this.</td>
-<td valign="middle" align="left">Need to make value-type-dependent choice when processing.</td>
+Limits complexity to those attribues where it is needed.</td>
+<td valign="middle" align="left">Need to support all internationalization approaches and select between them when processing.</td>
 </tr></tbody>
 </table>
 
-<p id="_0a09e069-5d98-fa9b-f7d9-572a5d81a48f">The recommendation is to use the Choice of Simple or Complex attributes, and in the case of a Complex attribute, use the Sequence Only submethod.</p>
+<p id="_a505187c-b9a2-681f-e29b-4b084e47b837">It recommended that implementors choose the simplest approach which meets the needs of their content. A document that is in a single language can rely on the HTTP <tt>Accept-Language</tt> header to address all internationalization requirements. Mixed languages in a single document will require a more complex approach.</p>
+
+<p id="_42d6fc20-4b4a-e97c-5cdb-070f236b7cb2">The selection of approach will also depend on the capabilities of the encoding technology. For example, the JSON-LD techniques described above are not supported for JSON encodings. In another example, the per-language attribute approach is common practice in XML, but difficult with JSON.</p>
+
+<p id="_03f80f6d-cb9d-14f0-7a22-e2105566abc2">Ultimately the selection of approach to internationalization will depend on these two factors.</p>
 </clause>
 </clause>
 </clause>
