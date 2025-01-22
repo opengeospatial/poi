@@ -1,5 +1,13 @@
 == Terms and Definitions
 
+[[application_schema-definition]]
+=== application schema::
+
+Add definition from 19109
+
+[.source]
+<<ISO19109,clause 4.27>>
+
 [[class-definition]]
 === class::
 
@@ -56,9 +64,9 @@ _class_ (<<class-definition>>) of _features_ (<<feature-definition>>) having com
 <<ISO19156,clause 4.7>>
 
 [[implementation-specification-definition]]
-=== implementation specification::
+=== implementation Standard::
 
-guidance for software engineers that is so specific that any two independent software implementations of the specification can "plug and play" for each other.
+guidance for software engineers that is so specific that any two independent software implementations of the Standard can "plug and play" for each other.
 
 [.source]
 <<ogcdr,OGC Definitions Register>>

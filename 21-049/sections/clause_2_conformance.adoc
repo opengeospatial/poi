@@ -2,17 +2,17 @@
 == Conformance
 
 This Standard defines a <<conceptual-model-definition,Conceptual Model>> which is independent of any encoding or formatting techniques. 
-The <<standardization-target-definition,Standardization Target>> for this Standard is technology-specific POI <<implementation-specification-definition,Implementation Specifications>>.
+The <<standardization-target-definition,Standardization Target>> for this Standard is technology-specific POI <<implementation-specification-definition,Implementation Standards>>.
 
-=== OGC Implementation Specifications
+=== OGC Implementation Standards
 
-Implementation Specifications define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Specifications provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in <<abstract-test-suite-section,Annex A>> (normative) of this document. 
+Implementation Standards define how a Conceptual Model should be implemented using a specific technology. Conformant Implementation Standards provide evidence that they are an accurate representation of the Conceptual Model. This evidence should include implementations of the abstract tests specified in <<abstract-test-suite-section,Annex A>> (normative) of this document. 
 
-Since this Standard is implementing technology agnostic, the specific techniques to be used for conformance testing cannot be specified. Implementation Specifications need to provide evidence of conformance which is appropriate for the implementing technologies. This evidence should be provided as Annex A to the Implementation Specification document.
+Since this Standard is implementing technology agnostic, the specific techniques to be used for conformance testing cannot be specified. Implementation Standards need to provide evidence of conformance which is appropriate for the implementing technologies. This evidence should be provided as Annex A to the Implementation Standard document.
 
 === Implementations
 
-POI implementations will typically be a simplified representation of a more complex dataset. Implementors may want to extend the POI model to include properties specific to that dataset. These extensions are accomplished using the POI Payload mechanism described in <<poi_payload-section,POI Payload>>. Since the POI Payload has its own definition of syntax and semantics, conformance with the POI Standard cannot ensure payload conformance. 
+POI implementations will typically be a simplified representation of a more complex dataset. Implementors may want to extend the POI model to include properties specific to that dataset. These extensions are accomplished using the POI Payload mechanism described in <<poi_payload-section,POI Payload>>. Since the POI Payload has its own definition of syntax and semantics, conformance with the POI Conceptual Model Standard cannot ensure payload conformance.
 
 === Conformance Classes
 
@@ -22,5 +22,5 @@ The POI Conceptual Model is defined by the POI UML model. This Standard is a rep
 
 === Primitive Data Types
 
-The Primitive Data Types (CharacterString, Integer, DateTime, etc.) are defined in ISO 19103. These Data Types are universal concepts. Therefore, no explicit conformance testing for these concepts is needed. Testing for conformance with the technology-specific implementation of these concepts should be documented in the corresponding Implementation Specification.  
+The Primitive Data Types (CharacterString, Integer, DateTime, etc.) are defined in ISO 19103. These Data Types are universal concepts. Therefore, no explicit conformance testing for these concepts is needed. Testing for conformance with the technology-specific implementation of these concepts should be documented in the corresponding Implementation Standard.  
 

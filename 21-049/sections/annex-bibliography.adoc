@@ -23,4 +23,6 @@
 * [[[ISO19143,ISO 19143]]]
 * [[[ISO19155,ISO 19155]]]
 * [[[mdaguide,Model Driven Architecture Guide]]] Object Management Group, Model Driven Architecture Guide rev. 2.0
+* [[[citygml,OGC 20-010]]] _OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard version 3.0._ Open Geospatial Consortium. https://docs.ogc.org/is/20-010/20-010.html[https://docs.ogc.org/is/20-010/20-010.html]
+
 

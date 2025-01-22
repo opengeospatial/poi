@@ -8,12 +8,12 @@
 identifier:: /conf/core/abstract-poi
 target:: /req/core/abstract-poi
 inherit:: /conf/core/featurewithlifespan
-classification:: Target Type: Implementation Specification
-test-purpose:: To validate that the Implementation Specification implements the AbstractPOI class as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: To validate that the Implementation Standard implements the AbstractPOI class as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
-description:: Validate that the Implementation Specification correctly implements the AbstractPOI class:
+description:: Validate that the Implementation Standard correctly implements the AbstractPOI class:
 
 part:: Validate that the implementation of the AbstractPOI class is also a valid implementation of the AbstractFeatureWithLifespan class using test <<ats_core_featurewithlifespan,/conf/core/featurewithlifespan>>.
 
@@ -41,8 +41,8 @@ part:: Validate correct implementation of the `hasPayload` association using the
 [%metadata]
 identifier:: /conf/core/poi-contactinfo
 target:: /req/core/poi-contactInfo
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `contactInfo` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `contactInfo` attribute as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -61,8 +61,8 @@ part:: Validate that the `contactInfo` attribute is a valid implementation of th
 [%metadata]
 identifier:: /conf/core/poi-featureofinterest
 target:: /req/core/poi-featureofinterest
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `hasFeatureOfinterest` aggregation as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `hasFeatureOfinterest` aggregation as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -81,8 +81,8 @@ part:: Validate that the target of the `hasFeatureOfInterest` aggregation is a v
 [%metadata]
 identifier:: /conf/core/poi-metadata
 target:: /req/core/poi-metadata
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `hasMetadata` association as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `hasMetadata` association as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -101,8 +101,8 @@ part:: Validate that the `hasMetadata` association is implemented as described i
 [%metadata]
 identifier:: /conf/core/poi-keywords
 target:: /req/core/poi-keywords
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `keywords` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `keywords` attribute as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -121,8 +121,8 @@ part:: Validate that the `keywords` attribute is a valid implementation of the M
 [%metadata]
 identifier:: /conf/core/poi-rights
 target:: /req/core/poi-rights
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `rights` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `rights` attribute as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -141,8 +141,8 @@ part:: Validate that the `rights` attribute is a valid implementation of the MD_
 [%metadata]
 identifier:: /conf/core/poi-symbology
 target:: /req/core/poi-symbology
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `symbology` association as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `symbology` association as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -161,8 +161,8 @@ part:: Validate that the `symbology` association is implemented as described in 
 [%metadata]
 identifier:: /conf/core/poi-haspayload
 target:: /req/core/poi-haspayload
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `hasPayload` aggregation as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `hasPayload` aggregation as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -181,8 +181,8 @@ part:: Validate that the target of the `hasPayload` aggregation is a valid imple
 [%metadata]
 identifier:: /conf/core/link
 target:: /req/core/link
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the Link class as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the Link class as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 

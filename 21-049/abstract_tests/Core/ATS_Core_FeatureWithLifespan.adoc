@@ -10,13 +10,13 @@ target:: /req/core/featurewithlifespan
 
 inherit:: /conf/core/abstractfeature
 
-classification:: Target Type: Implementation Specification
+classification:: Target Type: Implementation Standard
 
-test-purpose:: Validate that the Implementation Specification implements the AbstractFeaturewithLifespan Class as defined in the POI Conceptual Model.
+test-purpose:: Validate that the Implementation Standard implements the AbstractFeaturewithLifespan Class as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
-description:: Inspect the POI Implementation Specification to validate that the AbstractFeatureWithLifespan class is properly implemented.
+description:: Inspect the POI Implementation Standard to validate that the AbstractFeatureWithLifespan class is properly implemented.
 
 part:: Validate that the implementation of the AbstractFeatureWithLifespan class is also a valid implementation of the AbstractFeature class using test <<ats_core_abstractfeature,/conf/core/abstractfeature>>.
 
@@ -37,8 +37,8 @@ part:: Validate correct implementation of the `validTo` attribute using test <<a
 [%metadata]
 identifier:: /conf/core/featurewithlifespan-creationdate
 target:: /req/core/featurewithlifespan-creationdate
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `creationDate` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `creationDate` attribute as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -57,8 +57,8 @@ part:: Validate that the `creationDate` attribute is a valid implementation of t
 [%metadata]
 identifier:: /conf/core/featurewithlifespan-terminationdate
 target:: /req/core/featurewithlifespan-terminationdate
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `terminationDate` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `terminationDate` attribute as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -77,8 +77,8 @@ part:: Validate that the `terminationDate` attribute is a valid implementation o
 [%metadata]
 identifier:: /conf/core/featurewithlifespan-validfrom
 target:: /req/core/featurewithlifespan-validfrom
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `validFrom` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `validFrom` attribute as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
@@ -97,8 +97,8 @@ part:: Validate that the `validFrom` attribute is a valid implementation of the 
 [%metadata]
 identifier:: /conf/core/featurewithlifespan-validto
 target:: /req/core/featurewithlifespan-validto
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `validTo` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `validTo` attribute as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 

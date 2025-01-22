@@ -56,7 +56,7 @@ image::images/UMLNotation_Example.png[align="center"]
 
 Not all users will speak the same language. Therefore a POI Standard should support international text. While internationalization techniques are specific to the implementing technology, this Conceptual Standard should provide some guidence on the desired characteristics of such an implementation.
 
-To that end, this Standard recommends the following conventions for implementing internationalized text in an Implementation Specification:
+To that end, this Standard recommends the following conventions for implementing internationalized text in an Implementation Standard:
 
 * All text strings should have cardinality greater than one.
 * Text strings can have an associated language attribute.

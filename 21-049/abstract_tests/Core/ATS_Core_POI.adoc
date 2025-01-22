@@ -7,12 +7,12 @@
 identifier:: /conf/core/poi
 target:: /req/core/poi
 inherit:: /conf/core/abstract-poi
-classification:: Target Type: Implementation Specification
-test-purpose:: To validate that the Implementation Specification implements the POI Class as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: To validate that the Implementation Standard implements the POI Class as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
-description:: Validate that the Implementation Specification correctly implements the POI class:
+description:: Validate that the Implementation Standard correctly implements the POI class:
 
 part:: Validate that the implementation of the POI class is also a valid implementation of the Abstract_POI class using test <<ats_core_abstract-poi,/conf/core/abstract-poi>>.
 

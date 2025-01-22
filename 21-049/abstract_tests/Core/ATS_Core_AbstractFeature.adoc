@@ -11,13 +11,13 @@ target:: /req/core/abstractfeature
 inherit:: /conf/core/generalfeaturemodel
 inherit:: /conf/core/geometry
 
-classification:: Target Type: Implementation Specification
+classification:: Target Type: Implementation Standard
 
-test-purpose:: Validate that the Implementation Specification implements the AbstractFeature Class as defined in the POI Conceptual Model.
+test-purpose:: Validate that the Implementation Standard implements the AbstractFeature Class as defined in the POI Conceptual Model.
 
 test-method-type:: Manual Inspection
 
-description:: Inspect the POI Implementation Specification to validate that the AbstractFeature class is properly implemented.
+description:: Inspect the POI Implementation Standard to validate that the AbstractFeature class is properly implemented.
 
 part:: Validate that the implementation of the AbstractFeature class is also a valid implementation of the AnyFeature class defined in the ISO 19109 General Feature Model.
 
@@ -39,8 +39,8 @@ part:: Validate correct implementation of the `name` attribute using test <<ats_
 [%metadata]
 identifier:: /conf/core/abstractfeature-description
 target:: /req/core/abstractfeature-description
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `description` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `description` attribute as defined in the POI Conceptual Model.
 test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and type of the `description` attribute.
@@ -58,8 +58,8 @@ part:: Validate that the `description` attribute is a valid implementation of th
 [%metadata]
 identifier:: /conf/core/abstractfeature-featureid
 target:: /req/core/abstractfeature-featureid
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `featureId` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `featureId` attribute as defined in the POI Conceptual Model.
 test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and type of the `featureId` attribute.
@@ -79,8 +79,8 @@ part:: Validate that the `featureId` attribute is a valid implementation of the 
 [%metadata]
 identifier:: /conf/core/abstractfeature-identifier
 target:: /req/core/abstractfeature-identifier
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `identifier` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `identifier` attribute as defined in the POI Conceptual Model.
 test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and type of the `identifier` attribute.
@@ -98,8 +98,8 @@ part:: Validate that the `identifier` attribute is a valid implementation of the
 [%metadata]
 identifier:: /conf/core/abstractfeature-name
 target:: /req/core/abstractfeature-name
-classification:: Target Type: Implementation Specification
-test-purpose:: Validate that the Implementation Specification implements the `name` attribute as defined in the POI Conceptual Model.
+classification:: Target Type: Implementation Standard
+test-purpose:: Validate that the Implementation Standard implements the `name` attribute as defined in the POI Conceptual Model.
 test-method-type:: Manual Inspection
 
 description:: Validate the cardinality and type of the `name` attribute.

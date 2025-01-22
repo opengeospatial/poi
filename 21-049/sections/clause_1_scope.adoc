@@ -2,8 +2,6 @@
 
 The OGC Points of Interest Conceptual Model Standard (this document) describes a conceptual model for representing information about points of interest (POI).
 
-In the broadest terms, a "point of interest" is a location about which information of general interest is available. A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.
-
 POI data has many uses including navigation systems, mapping, geocaching, location-based social networking games, and augmented reality browsers.
 
 POI data has traditionally been exchanged in proprietary formats by various transport mechanisms. This document defines a flexible, lightweight, extensible POI data model. This will enable content publishers to effectively describe and efficiently serve and exchange POI data.

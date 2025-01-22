@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.2.8">
-  <fetched>2024-06-26</fetched>
+  <fetched>2025-01-22</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Terminology</title>
   <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Terminology</title>
@@ -45,7 +45,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-06-26</fetched>
+      <fetched>2025-01-22</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Terminology</title>
       <title type="main" format="text/plain" language="en" script="Latn">Geographic information - Terminology</title>
@@ -116,21 +116,4 @@ ISO 19104:2016 is applicable to International Standards and Technical Specificat
     </bibitem>
   </relation>
   <place>Geneva</place>
-  <ext schema-version="v1.0.0">
-    <doctype>international-standard</doctype>
-    <editorialgroup>
-      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
-    </editorialgroup>
-    <ics>
-      <code>01.040.35</code>
-      <text>Information technology (Vocabularies)</text>
-    </ics>
-    <ics>
-      <code>35.240.70</code>
-      <text>IT applications in science</text>
-    </ics>
-    <structuredidentifier type="ISO">
-      <project-number>ISO 19104</project-number>
-    </structuredidentifier>
-  </ext>
 </bibdata>

@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.2.8">
-  <fetched>2024-06-26</fetched>
+  <fetched>2025-01-22</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML)</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</title>
@@ -13,7 +13,7 @@
   <uri type="rss">https://www.iso.org/contents/data/standard/07/56/75676.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19136-1</docidentifier>
   <docidentifier type="iso-reference">ISO 19136-1(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19136:-1:stage-60.60</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19136:-1:stage-90.20</docidentifier>
   <docnumber>19136</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -28,8 +28,8 @@
   <language>fr</language>
   <script>Latn</script>
   <status>
-    <stage>60</stage>
-    <substage>60</substage>
+    <stage>90</stage>
+    <substage>20</substage>
   </status>
   <copyright>
     <from>2020</from>
@@ -47,7 +47,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-06-26</fetched>
+      <fetched>2025-01-22</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML)</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</title>
@@ -61,7 +61,7 @@
       <uri type="rss">https://www.iso.org/contents/data/standard/07/56/75676.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19136-1:2020</docidentifier>
       <docidentifier type="iso-reference">ISO 19136-1:2020(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19136:-1:stage-60.60</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19136:-1:stage-90.20</docidentifier>
       <docnumber>19136</docnumber>
       <date type="published">
         <on>2020-01</on>
@@ -99,8 +99,8 @@ Le présent document définit la syntaxe, les mécanismes et les conventions du 
 Les implémenteurs peuvent choisir de stocker les schémas d'application géographique et les informations en GML, ou de les convertir à la demande à partir d'un autre format de stockage et d'utiliser GML uniquement pour le schéma et le transport des données.
 NOTE    Si un schéma d'application conforme à l'ISO 19109 décrit en langage UML est utilisé comme base du stockage et du transport des informations géographiques, le présent document donne les règles normatives de mise en correspondance de ce type de schéma d'application avec le schéma d'application GML en langage XML Schema et, en tant que tel, avec le codage XML pour les données dotées d'une structure logique conformément au schéma d'application conforme à l'ISO 19109.</abstract>
       <status>
-        <stage>60</stage>
-        <substage>60</substage>
+        <stage>90</stage>
+        <substage>20</substage>
       </status>
       <copyright>
         <from>2020</from>
@@ -120,17 +120,4 @@ NOTE    Si un schéma d'application conforme à l'ISO 19109 décrit en langage U
     </bibitem>
   </relation>
   <place>Geneva</place>
-  <ext schema-version="v1.0.0">
-    <doctype>international-standard</doctype>
-    <editorialgroup>
-      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
-    </editorialgroup>
-    <ics>
-      <code>35.240.70</code>
-      <text>IT applications in science</text>
-    </ics>
-    <structuredidentifier type="ISO">
-      <project-number part="1">ISO 19136</project-number>
-    </structuredidentifier>
-  </ext>
 </bibdata>

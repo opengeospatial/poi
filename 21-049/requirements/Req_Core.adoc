@@ -57,7 +57,7 @@ requirement:: /req/core/poi_payload-hasfeatureofinterest
 requirement:: /req/core/poi_payload-hasdefinition
 requirement:: /req/core/poi_payload-usesschema
 description:: 
-Requirements Class POI Core. A POI Implementation Specification SHALL be a valid representation of the POI UML model. This includes conformance with:
+Requirements Class POI Core. A POI Implementation Standard SHALL be a valid representation of the POI UML model. This includes conformance with:
 
 ISO Core Requirements:
 

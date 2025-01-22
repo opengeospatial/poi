@@ -4,7 +4,7 @@ include::../requirements/Req_Core.adoc[]
 
 === ISO Foundation
 
-The POI Standard builds on a base of ISO Standards maintained by ISO Technical Committee 211 (TC211).
+The POI Standard builds on a base of ISO Standards maintained by ISO Technical Committee 211 (TC211). These Standards are widely implemented in both proprietary and open source software. Reuse of this software can greatly simplify the development of POI software and systems.   
 
 ==== ISO Feature Model
 
@@ -18,7 +18,7 @@ image::./images/Features.png[align="center"]
 
 The most relevant classes defined by this model are described below:
 
-*FeatureType:* This class describes how a feature class shall be constructed in an Application Schema. In accordance with the conformance clause of the standard, instances of this class are instantiated as feature classes in an Application Schema
+*FeatureType:* This class describes how a feature class shall be constructed in an <<application_schema-definition,Application Schema>>. In accordance with the conformance clause of the standard, instances of this class are instantiated as feature classes in an <<application_schema-definition,Application Schema>>.
 
 *AnyFeature:* The class AnyFeature is an instance of the «metaclass» FeatureType. It represents the set of all classes which are feature types. 
 
@@ -30,7 +30,7 @@ include::../requirements/core/Req_Core_GeneralFeatureModel.adoc[]
 
 The ISO TC211 Geometry Model is defined in <<ISO19107>>. While there is a new version of this standard, it has not been widely implemented. Therefore, the 2003 version has been used in this Standard.
 
-The ISO Geometry Model can represent very complex geometries. Much  more complex than needed for expressing a POI. Therefore, POI geometry types are restricted to Points, Lines, and Polygons. <<geometry_model,Figure 4>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
+The ISO Geometry Model can represent very complex geometry. Much  more complex than needed for expressing a POI. Therefore, POI geometry types are restricted to Points, Lines, and Polygons. <<geometry_model,Figure 4>> provides a UML model of the classes from ISO 19107 which are applicable to POIs. 
 
 [[geometry_model,reftext='Geometry Model']]
 .Geometry Model
@@ -59,8 +59,8 @@ image::./images/ISO_Extensions.png[align="center"]
 
 These extensions include further refinement of the _AnyFeature_ class through the addition of identification and temporal validity attributes.
 
-*<<AbstractFeature-section,AbstractFeature:>>* The root Feature class for this Standard. This class has been borrowed from the CityGML 3.0 Conceptual Model. _AbstractFeature_ adds descriptive and identifying properties to _AnyFeature_.
-*<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan:>>* Adds temporality to _AbstractFeature_. This class was also borrowed from the CityGML 3.0 Conceptual Model.
+*<<AbstractFeature-section,AbstractFeature:>>* The root Feature class for this Standard. This class has been borrowed from the <<citygml,CityGML 3.0 Conceptual Model>>. _AbstractFeature_ adds descriptive and identifying properties to _AnyFeature_.
+*<<AbstractFeatureWithLifespan-section,AbstractFeatureWithLifespan:>>* Adds temporality to _AbstractFeature_. This class was also borrowed from the <<citygml,CityGML 3.0 Conceptual Model>>.
 
 ==== Abstract Feature
 

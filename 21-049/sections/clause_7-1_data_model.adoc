@@ -9,7 +9,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |*AbstractFeature* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeature is the abstract superclass of all feature types within the PoI Model. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeature is the abstract superclass of all feature types within the POI Model. 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! AnyFeature 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 |[cols="15,20,60",frame=none,grid=none,options="header"]
@@ -32,7 +32,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |*AbstractFeatureWithLifespan* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeatureWithLifespan is the base class for all PoI features. This class allows the optional specification of the real-world and database times for the existence of each feature. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! AbstractFeatureWithLifespan is the base class for all POI features. This class allows the optional specification of the real-world and database times for the existence of each feature. 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! <<AbstractFeature-section,AbstractFeature>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===
@@ -89,7 +89,7 @@ The POI UML model is the normative definition of the POI Conceptual Model. The D
 |*FeatureOfInterest* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling. (SOSA) 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! The thing whose property is being estimated or calculated during an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling. (SOSA) 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass of: ! AnyFeature 
 !{nbsp}{nbsp}{nbsp}{nbsp}Stereotype: !  «FeatureType»
 !===

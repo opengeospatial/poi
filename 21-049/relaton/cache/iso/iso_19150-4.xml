@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.2.8">
-  <fetched>2024-06-26</fetched>
+  <fetched>2025-01-22</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Ontology</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 4: Service ontology</title>
@@ -13,7 +13,7 @@
   <uri type="rss">https://www.iso.org/contents/data/standard/07/21/72177.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19150-4</docidentifier>
   <docidentifier type="iso-reference">ISO 19150-4(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19150:-4:stage-90.20</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19150:-4:stage-90.93</docidentifier>
   <docnumber>19150</docnumber>
   <contributor>
     <role type="publisher"/>
@@ -29,7 +29,7 @@
   <script>Latn</script>
   <status>
     <stage>90</stage>
-    <substage>20</substage>
+    <substage>93</substage>
   </status>
   <copyright>
     <from>2019</from>
@@ -41,7 +41,7 @@
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-06-26</fetched>
+      <fetched>2025-01-22</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Ontology</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Part 4: Service ontology</title>
@@ -55,7 +55,7 @@
       <uri type="rss">https://www.iso.org/contents/data/standard/07/21/72177.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19150-4:2019</docidentifier>
       <docidentifier type="iso-reference">ISO 19150-4:2019(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19150:-4:stage-90.20</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19150:-4:stage-90.93</docidentifier>
       <docnumber>19150</docnumber>
       <date type="published">
         <on>2019-05</on>
@@ -90,7 +90,7 @@ In relation to ISO 19101-1:2014, 6.2, this document defines and formalizes the f
 In relation to ISO 19101-1:2014, 8.3, this document addresses the Meta:Service foundation of the ISO geographic information reference model.</abstract>
       <status>
         <stage>90</stage>
-        <substage>20</substage>
+        <substage>93</substage>
       </status>
       <copyright>
         <from>2019</from>
@@ -104,17 +104,4 @@ In relation to ISO 19101-1:2014, 8.3, this document addresses the Meta:Service f
     </bibitem>
   </relation>
   <place>Geneva</place>
-  <ext schema-version="v1.0.0">
-    <doctype>international-standard</doctype>
-    <editorialgroup>
-      <technical-committee number="211" type="TC" identifier="ISO/TC 211">Geographic information/Geomatics</technical-committee>
-    </editorialgroup>
-    <ics>
-      <code>35.240.70</code>
-      <text>IT applications in science</text>
-    </ics>
-    <structuredidentifier type="ISO">
-      <project-number part="4">ISO 19150</project-number>
-    </structuredidentifier>
-  </ext>
 </bibdata>

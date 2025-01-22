@@ -1,5 +1,5 @@
 <bibdata type="standard" schema-version="v1.2.8">
-  <fetched>2024-06-26</fetched>
+  <fetched>2025-01-22</fetched>
   <title type="title-intro" format="text/plain" language="en" script="Latn">Terminology work</title>
   <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
   <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Theory and application</title>
@@ -55,7 +55,7 @@
   </relation>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2024-06-26</fetched>
+      <fetched>2025-01-22</fetched>
       <title type="title-intro" format="text/plain" language="en" script="Latn">Terminology work</title>
       <title type="title-main" format="text/plain" language="en" script="Latn">Vocabulary</title>
       <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Theory and application</title>
@@ -119,21 +119,4 @@ La présente Norme internationale établit le vocabulaire fondamental de la thé
     </bibitem>
   </relation>
   <place>Geneva</place>
-  <ext schema-version="v1.0.0">
-    <doctype>international-standard</doctype>
-    <editorialgroup>
-      <technical-committee number="37" type="TC" identifier="ISO/TC 37/SC 1">Principles and methods</technical-committee>
-    </editorialgroup>
-    <ics>
-      <code>01.020</code>
-      <text>Terminology (principles and coordination)</text>
-    </ics>
-    <ics>
-      <code>01.040.01</code>
-      <text>Generalities. Terminology. Standardization. Documentation (Vocabularies)</text>
-    </ics>
-    <structuredidentifier type="ISO">
-      <project-number part="1">ISO 1087</project-number>
-    </structuredidentifier>
-  </ext>
 </bibdata>
