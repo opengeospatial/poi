@@ -30,8 +30,8 @@ This UML model extends the ISO Technical Committee 211 (TC211) conceptual model 
 Building on the ISO foundation assures that the features described in the POI Model share the same spatiotemporal universe as described by related standards (e.g. <<citygml,CityGML>>).
 
 The goal for developing the OGC POI Conceptual Model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.” 
-In the broadest terms, a POI is a location about which information of general interest is available. 
-A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address.
+In the broadest terms, a POI as a location about which information of general interest is available. 
+"A POI can be as simple as a set of coordinates and an identifier, or more complex such as a three-dimensional model of a building with names in various languages, information about open and closed hours, and a civic address."^<<w3cpoi,W3C>>^
 
 [security-considerations-section]
 == Security Considerations

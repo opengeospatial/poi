@@ -22,7 +22,8 @@
 * [[[ISO19133,ISO 19133]]]
 * [[[ISO19143,ISO 19143]]]
 * [[[ISO19155,ISO 19155]]]
+* [[[HMMG,HMMG]]] ISO TC211 Harmonized Model Maintenance Group. __ISO/TC 211 Harmonized UML Model__. https://github.com/ISO-TC211/HMMG[https://github.com/ISO-TC211/HMMG]
 * [[[mdaguide,Model Driven Architecture Guide]]] Object Management Group, Model Driven Architecture Guide rev. 2.0
 * [[[citygml,OGC 20-010]]] _OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard version 3.0._ Open Geospatial Consortium. https://docs.ogc.org/is/20-010/20-010.html[https://docs.ogc.org/is/20-010/20-010.html]
-
+* [[[w3cpoi,W3C POI]]] W3C. __Points of Interest Core W3C Working Draft 12 May 2011__. https://www.w3.org/TR/poi-core[https://www.w3.org/TR/poi-core]
 

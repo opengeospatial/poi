@@ -3,10 +3,12 @@
 [[application_schema-definition]]
 === application schema::
 
-Add definition from 19109
+a set of conceptual schema for data required by one or more applications. 
+
+NOTE: The purpose of an application schema is twofold: “to provide a computer-readable data description defining the data structure, which makes it possible to apply automated mechanisms for data management; and to achieve a common and correct understanding of the data, by documenting the data content of the particular application field, thereby making it possible to unambiguously retrieve information from the data.”
 
 [.source]
-<<ISO19109,clause 4.27>>
+<<ISO19109,ISO 19109>>
 
 [[class-definition]]
 === class::
@@ -17,7 +19,7 @@ NOTE: A _class_ may use a set of interfaces to specify collections of _operation
 The term was first used in this way in the general theory of object-oriented programming, and later adopted for use in this same sense in UML.
 
 [.source]
-<<ISO19103,clause 4.27>>, Note 1 to entry has been added from ISO 19117:2012, 4.2
+<<ISO19103,ISO 19103 clause 4.27>>, Note 1 to entry has been added from ISO 19117:2012, 4.2
 
 [[concept-definition]]
 === concept::
@@ -27,7 +29,7 @@ unit of knowledge created by a unique combination of characteristics
 NOTE: _Concepts_ (<<concept-definition>>) are not necessarily bound to particular languages. They are, however, influenced by the social or cultural background which often leads to different categorizations.
 
 [.source]
-<<ISO1087-1,clause 3.2.1>>
+<<ISO1087-1,ISO 1087-1 clause 3.2.1>>
 
 [[conceptual-model-definition]] 
 === conceptual model::
@@ -35,7 +37,7 @@ NOTE: _Concepts_ (<<concept-definition>>) are not necessarily bound to particula
 model that defines _concepts_ (<<concept-definition>>) of a universe of discourse
 
 [.source]
-<<ISO19101-1,clause 4.1.5>>
+<<ISO19101-1,ISO 19101-1 clause 4.1.5>>
 
 [[conformance-class-definition]]
 === conformance class::
@@ -53,7 +55,7 @@ abstraction of real-world phenomena
 NOTE: A _feature_ (<<feature-definition>>) may occur as a type or an instance. In this document, _feature_ (<<feature-definition>>) instance is meant unless otherwise specified.
 
 [.source]
-<<ISO19101-1,clause 4.1.11>>, Note 1 to entry has been added from ISO 19156, 4.6
+<<ISO19101-1,ISO 19101 clause 4.1.11>>, Note 1 to entry has been added from ISO 19156, 4.6
 
 [[feature-type-definition]]
 === feature type::
@@ -61,7 +63,7 @@ NOTE: A _feature_ (<<feature-definition>>) may occur as a type or an instance. I
 _class_ (<<class-definition>>) of _features_ (<<feature-definition>>) having common characteristics
 
 [.source]
-<<ISO19156,clause 4.7>>
+<<ISO19156,ISO 19156 clause 4.7>>
 
 [[implementation-specification-definition]]
 === implementation Standard::

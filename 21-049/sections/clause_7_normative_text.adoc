@@ -4,7 +4,8 @@ include::../requirements/Req_Core.adoc[]
 
 === ISO Foundation
 
-The POI Standard builds on a base of ISO Standards maintained by ISO Technical Committee 211 (TC211). These Standards are widely implemented in both proprietary and open source software. Reuse of this software can greatly simplify the development of POI software and systems.   
+The POI Standard builds on a base of ISO Standards maintained by ISO Technical Committee 211 (TC211). The relevant portions of those Standards are described below.   
+In addition, ISO Technical Committee 211 provides a harmonized UML model which encompasses all of the ISO Standards used by this POI Conceputal Model. That UML model is available from the ISO TC211 <<Harmonized Model Maintenance Group,HMMG>>.
 
 ==== ISO Feature Model
 
@@ -79,7 +80,7 @@ The following classes form the core of the POI model. These classes are the same
 .POI UML Model - Core
 image::./images/POI.png[align="center"]
 
-* <<AbstractPOI-section,AbstractPOI:>> The abstract model for a Point of Interest. All POI instances will contain these attributes.
+* <<AbstractPOI-section,AbstractPOI:>> The abstract model for a Point of Interest.
 * <<POI-section,POI:>> A POI instance. 
 * <<FeatureOfInterest-section,FeatureOfInterest:>> This is an OGC Feature which has been defined independently from the POI. Conceptually, the purpose of the POI is to provide a user friendly synopsis of this Feature.
 
