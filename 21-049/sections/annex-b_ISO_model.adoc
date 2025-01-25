@@ -557,7 +557,7 @@ Not all methods for NameSpaces need to be made publicly accessible.
 |*TypeName* 
 |[cols="1,4",frame=none,grid=none]
 !===
-!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A TypeName is a LocalName that references either a recordType or object type in some form of schema. The stored value "aName" is the returned value for the "aName()" operation. This is the types name. 
+!{nbsp}{nbsp}{nbsp}{nbsp}Definition: ! A TypeName is a LocalName that references either a recordType or object type in some form of schema. The stored value "aName" is the returned value for the "aName()" operation. This is the name of the data type represented by an instance of this class. 
 !{nbsp}{nbsp}{nbsp}{nbsp}Subclass Of: ! <<LocalName-section,LocalName>> 
 !{nbsp}{nbsp}{nbsp}{nbsp}StereoType: ! interface 
 !===
