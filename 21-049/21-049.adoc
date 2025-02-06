@@ -7,7 +7,7 @@
 :draft: 0.1.1
 :external-id: http://www.opengis.net/doc/is/poi/1.0
 :docnumber: 21-049
-:received-date: 2025-01-25
+:received-date: 2025-02-05
 :issued-date: xxxx-xx-xx
 :published-date: xxxx-xx-xx
 :fullname: Charles Heazel

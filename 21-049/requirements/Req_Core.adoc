@@ -43,7 +43,7 @@ requirement:: /req/core/featurewithlifespan-terminationdate
 requirement:: /req/core/featurewithlifespan-validfrom
 requirement:: /req/core/featurewithlifespan-validto
 requirement:: /req/core/abstract-poi
-requirement:: /req/core/poi-contactinfo
+requirement:: /req/core/poi-contactInfo
 requirement:: /req/core/poi-featureofinterest
 requirement:: /req/core/poi-metadata
 requirement:: /req/core/poi-keywords
