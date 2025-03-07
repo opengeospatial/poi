@@ -101,7 +101,7 @@ In the current practices, there were three broad groups:
 |Separate Per-Language Attributes
 |Multiple attribute names that have the language as a suffix (e.g., "name", "name:fr", "name:en", ...) with the unsuffixed version representing a default langauge.
 |Complex Attributes
-|Names are sequences or objects, not character strings. Each element of the sequence is an object has a character string (the name itself) along with an attribute that says what language it is in. If the name is an object, then it has a default-language string and optional other-language strings in a sequence as described previously.
+|Names are sequences or objects, not character strings. Each element of the sequence is an object that has a character string (the name itself) along with an attribute that says what language it is in. If the name is an object, then it has a default-language string and optional other-language strings in a sequence as described previously.
 |===
 
 There are several variants of the Complex Attribute method:
@@ -153,7 +153,7 @@ Adapted to JSON, it might look something like this:
          },
          "character_encoding" : {
             "code_list" : "resources/codelist/gmxcodelists.xml#MD_CharacterSetCode",
-            "code_list_value" : "utf8">UTF 8</MD_CharacterSetCode>,
+            "code_list_value" : "utf8",
             "name" : "UTF8"          
          }
       },
@@ -166,7 +166,7 @@ Adapted to JSON, it might look something like this:
          },
          "character_encoding" : {
             "code_list" : "resources/codelist/gmxcodelists.xml#MD_CharacterSetCode",
-            "code_list_value" : "utf8">UTF 8</MD_CharacterSetCode>,
+            "code_list_value" : "utf8">,
             "name" : "UTF8"          
          }
       }
@@ -238,13 +238,27 @@ and in the case of a Complex attribute, use the Sequence Only submethod.
 
 ==== Address ====
 
-TBD
+Truly modeling all of the world's addresses in great structured detail is a very hard task.
+We recommend the simple approach of using the *CI_Address* class from the
+ISO 19115 Geographic Metadata standard.
+The schema in JSON looks like this:
 
-// _TODO: check out ISO 19160:1 A conceptual model for addressing_
+.CI_Address Schema
+[source,JSON]
+----
+    "CI_Address": {
+        "deliveryPoint": "CharacterString" [0..1],
+        "city": "CharacterString" [0..1],
+        "administrativeArea": "CharacterString" [0..1],
+        "postalCode": "CharacterString" [0..1],
+        "country": "CharacterString" [0..1],
+        }
+----
+
 
 ==== Telephone Number
 
-The telephone number is the number to use to contact the POI to ask questions, get service, etc. The recommendation here is to use the *CI_Telephone* class from other OGC standards [TODO: cite]:
+The telephone number is the number to use to contact the POI to ask questions, get service, etc. The recommendation here is to use the *CI_Telephone* class from other OGC standards:
 
 .CI_Telephone Schema
 [source,JSON]
