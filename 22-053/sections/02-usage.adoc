@@ -3,7 +3,7 @@
 
 The Best Practices Guide to the POI Conceptual Model (POI-CM) Standard is not intended to be read from start to finish. Rather, it is a resource structured to provide quick answers to questions that an implementer may have about the POI-CM Standard. 
 
-The POI-CM Standard includes hyperlinks that can be used to navigate directly to relevant sections of the User Guide. 
+The POI-CM Standard includes hyperlinks that can be used to navigate directly to relevant sections of the Best Practices Guide. 
 
-Some content in the User Guide has been copied from the POI Conceptual Model Standard to make the content more accessible to the user. In order to make clear which content in the User Guide has been copied, the copied text is provided within grey boxes.
+Some content in the Best Practices Guide has been copied from the POI Conceptual Model Standard to make the content more accessible to the user. In order to make clear which content in the Best Practices Guide has been copied, the copied text is provided within grey boxes.
 

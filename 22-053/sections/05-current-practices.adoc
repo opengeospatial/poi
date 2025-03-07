@@ -171,7 +171,7 @@ where the local-fr referred to in the example is specified elsewhere in the file
          <languageCode>
            <LanguageCode
              codeList="http://www.loc.gov/standards/iso639-2/"
-             codeListValue="fre"> French </LanguageCode>
+             codeListValue="en"> French </LanguageCode>
          </languageCode>
          <characterEncoding>
            <MD_CharacterSetCode
@@ -208,7 +208,6 @@ https://www.iso.org/iso-3166-country-codes.html[ISO 3166]
 * _postal_code_vanity_ : mail sorting code extension associated with the postal code
 
 There is nothing said about expressing the _address_ or
-CityGML appears not to have addressed the issue of internationalized names.
  _locality_ in different languages,
 so presumably the local language is expected for those.
 By using ISO standards for _province_ and _country_, those can be tranlated into other languages
@@ -266,6 +265,42 @@ An example is:
 
 The note that they loosely followed the ideas of https://openaddresses.io/[OpenAddresses].
 It appear that they do not explicitly address the issue of multilingual address components.
+
+In *CityGML*, there is an *Address* type that has a property _xalAddress_ whose type is *XALAddress*. An XALAddress contains data according to the OASIS extensible Address Language (xAL) part of their https://www.oasis-open.org/committees/ciq/ciq.html[CIQ standard]. That is a flexible XML format that offers a range of possibilities from a simple list of unstructured address lines to something more structured and formal, such as this:
+
+```
+<xAL>
+ <AddressDetails AddressType="Residential">
+  <Country>
+   <CountryName>Australia</CountryName>
+    <Locality>
+     <LocalityName>NSW</LocalityName>
+     <DependentLocality>
+      <DependentLocalityName>Chatswood</DependentLocalityName>
+      <Thoroughfare>
+       <ThoroughfareName>23 Archer Street</ThoroughfareName>
+      </Thoroughfare>
+     </DependentLocality>
+     <PostalCode>
+      <PostalCodeNumber>2067</PostalCodeNumber>
+     </PostalCode>
+    </Locality>
+  </Country>
+ </AddressDetails>
+</xAL> 
+```
+
+The *ISO 19115* Geographic Metadata standard defines a *CI_Address* type. It has character string values for _deliveryPoint_ ("delivery point", an address line), _city_, _administrativeArea (state or province), _postalCode_ (zip or other postal code), and _country_. An example:
+
+```
+"address" : {
+  "deliveryPoint" : "123 Main Street",
+  "city" : "Albany",
+  "administrativeArea" : "New York",
+  "postalCode" : "12201",
+  "country" : "USA"
+}
+```
 
 === Categories ===
 
