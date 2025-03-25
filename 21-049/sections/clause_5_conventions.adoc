@@ -23,7 +23,7 @@ Aggregations are a form of association where the Component Class is treated as a
 
 Compositions are a form of association where the Component Class is treated as an attribute of the Composite Class. Component Classes are an integral part of the Composite Class and cannot be shared by multiple Composite Classes. No Compositions are used in this Standard.  
 
-The following stereotypes are used in this model:
+The following stereotypes are used in this model.
 
 * &#171;__Abstract__&#187; a class that doesn't include a complete implementation. Therefore, abstract classes can't be directly instantiated; they have to be specialized (inherited).
 * &#171;__DataType__&#187; defines a set of properties that lack identity. A data type is a classifier with no operations, whose primary purpose is to hold information.
@@ -54,11 +54,11 @@ image::images/UMLNotation_Example.png[align="center"]
 
 === International Text
 
-Not all users will speak the same language. Therefore a POI Standard should support international text. While internationalization techniques are specific to the implementing technology, this Conceptual Standard should provide some guidence on the desired characteristics of such an implementation.
+Not all users will speak the same language. Therefore a POI Standard should support international text. While internationalization techniques are specific to the implementing technology, this Conceptual Standard should provide some guidance on the desired characteristics of such an implementation.
 
 To that end, this Standard recommends the following conventions for implementing internationalized text in an Implementation Standard:
 
-* All text strings should have cardinality greater than one.
-* Text strings can have an associated language attribute.
+* All text strings should have cardinality greater than one;
+* Text strings can have an associated language attribute; and
 * These language attributes should be populated with an international language code.
 

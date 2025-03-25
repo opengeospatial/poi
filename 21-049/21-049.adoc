@@ -2,13 +2,13 @@
 :doctype: standard
 :encoding: utf-8
 :lang: en
-:status: draft
+:status: approved
 :committee: technical
 :draft: 0.1.1
 :external-id: http://www.opengis.net/doc/is/poi/1.0
 :docnumber: 21-049
-:received-date: 2025-02-05
-:issued-date: xxxx-xx-xx
+:received-date: 2024-03-26
+:issued-date: 2025-01-30
 :published-date: xxxx-xx-xx
 :fullname: Charles Heazel
 :fullname_2: Matthew Purss

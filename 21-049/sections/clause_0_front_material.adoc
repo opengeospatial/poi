@@ -27,7 +27,7 @@ Attention is drawn to the possibility that some of the elements of this document
 The OGC Points of Interest (POI) Conceptual Model is an open data model for representing information about POI. 
 The model is defined using a Unified Modeling Language (UML) object model. 
 This UML model extends the ISO Technical Committee 211 (TC211) conceptual model standards for spatial and temporal data. 
-Building on the ISO foundation assures that the features described in the POI Model share the same spatiotemporal universe as described by related standards (e.g. <<citygml,CityGML>>).
+Building on the ISO foundation assures that the features described in the POI Model share the same spatiotemporal universe as described by related standards (e.g., <<citygml,CityGML>>).
 
 The goal for developing the OGC POI Conceptual Model is to reach a common definition of the basic entities, attributes, and relations of “points of interest.” 
 In the broadest terms, a POI is a location about which information of general interest is available. 

@@ -76,7 +76,7 @@ guidance for software engineers that is so specific that any two independent sof
 [[requirements-class-definition]]
 === requirements class::
 
-a class of requirements, comprising a logical grouping of normative statements that shall be satisfied as a group in conformant implementations. May have dependencies on other _requirements classes_ (<<requirements-class-definition>>) , but there should be no circular dependencies else the classes must always be satisfied together so are functionally one class.
+a class of requirements, comprising a logical grouping of normative statements that shall be satisfied as a group in conformant implementations. May have dependencies on other _requirements classes_ (<<requirements-class-definition>>), but there should be no circular dependencies else the classes must always be satisfied together so are functionally one class.
 
 [.source]
 <<ogcdr,OGC Definitions Register>>

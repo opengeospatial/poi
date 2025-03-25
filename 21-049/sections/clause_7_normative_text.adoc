@@ -5,7 +5,7 @@ include::../requirements/Req_Core.adoc[]
 === ISO Foundation
 
 The POI Standard builds on a base of ISO Standards maintained by ISO Technical Committee 211 (TC211). The relevant portions of those Standards are described below.   
-In addition, ISO Technical Committee 211 provides a harmonized UML model which encompasses all of the ISO Standards used by this POI Conceputal Model. That UML model is available from the ISO TC211 <<Harmonized Model Maintenance Group,HMMG>>.
+In addition, ISO Technical Committee 211 provides a harmonized UML model which encompasses all of the ISO Standards used by this POI Conceptual Model. That UML model is available from the ISO TC211 <<Harmonized Model Maintenance Group,HMMG>>.
 
 ==== ISO Feature Model
 
@@ -17,7 +17,7 @@ The ISO TC211 Feature Model is defined in <<ISO19109>>. A UML model showing appl
 .Feature Model
 image::./images/Features.png[align="center"]
 
-The most relevant classes defined by this model are described below:
+The most relevant classes defined by this model are described below.
 
 *FeatureType:* This class describes how a feature class shall be constructed in an <<application_schema-definition,Application Schema>>. In accordance with the conformance clause of the standard, instances of this class are instantiated as feature classes in an <<application_schema-definition,Application Schema>>.
 
