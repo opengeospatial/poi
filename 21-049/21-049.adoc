@@ -1,4 +1,4 @@
-= OGC Points of Interest (POI) Conceptual Model Standard
+= OGC Points of Interest (POI) Conceptual Model Standard 1.0
 :doctype: standard
 :encoding: utf-8
 :lang: en
