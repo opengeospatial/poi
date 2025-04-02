@@ -9,7 +9,7 @@
 :docnumber: 21-049
 :received-date: 2024-03-26
 :issued-date: 2025-01-30
-:published-date: xxxx-xx-xx
+:published-date: 2025-04-02
 :fullname: Charles Heazel
 :fullname_2: Matthew Purss
 :fullname_3: Howard Trickey
@@ -18,13 +18,13 @@
 :keywords: ogcdoc, OGC document, Point of Interest, POI, Feature 
 :submitting-organizations:  Digital Flanders; Google; HeazelTech; Pangaea Innovations; PEREY Research and Consulting; US Army Geospatial Center
 :mn-document-class: ogc
-:mn-output-extensions: xml,html,doc,pdf
+:mn-output-extensions: xml,html,pdf
 :local-cache-only:
 :data-uri-image:
 :pdf-uri: ./21-049.pdf
-:xml-uri: ./21-049.xml
-:doc-uri: ./21-049.doc
-:edition: 1.1
+//:xml-uri: ./21-049.xml
+//:doc-uri: ./21-049.doc
+:edition: 1.0
 
 include::./sections/clause_0_front_material.adoc[]
 
