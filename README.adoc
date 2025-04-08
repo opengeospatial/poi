@@ -2,7 +2,7 @@
 
 *NOTICE:* An analysis of alternatives for internationalized text is available for review and comment in https://htmlpreview.github.io/?https://github.com/opengeospatial/poi/blob/main/21-049/Internationalized_Text.html[HTML] and https://github.com/opengeospatial/poi/blob/main/21-049/Internationalized_Text.pdf[PDF]  
 
-This repository is the development space for the draft OGC Point of Interest (POI) Part 1: Conceptual Model Standard. Development of this Standard is taking place in the 21-049 directory. The current draft is available in https://docs.ogc.org/DRAFTS/21-049.html[HTML] and https://docs.ogc.org/DRAFTS/21-049.pdf[PDF] formats.
+This repository is the development space for the future versions of the OGC Point of Interest (POI) Part 1: Conceptual Model Standard. Future development of this Standard is taking place in the 21-049 directory. The PUBLISHED VERSION is available in https://docs.ogc.org/is/21-049/21-049.html[HTML] and https://docs.ogc.org/is/21-049/21-049.pdf[PDF] formats.
 
 This Standard is accompanied by a POI Best Practices document. Development of the Best Practices is taking place in the 22-053 directory. The current draft is available in https://docs.ogc.org/DRAFTS/22-053.html[HTML] and https://docs.ogc.org/DRAFTS/22-053.pdf[PDF] formats.
 
