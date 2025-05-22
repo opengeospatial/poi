@@ -1,0 +1,247 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated from EA model",
+  "description": "JSON Schema generated from Enterprise Architect XMI export",
+  "definitions": {
+    "Associated Class": {
+      "type": "object",
+      "title": "Associated Class",
+      "description": "",
+      "properties": {}
+    },
+    "ISO Class": {
+      "type": "object",
+      "title": "ISO Class",
+      "description": "",
+      "properties": {}
+    },
+    "POI Class": {
+      "type": "object",
+      "title": "POI Class",
+      "description": "",
+      "properties": {
+        "targetRole": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "POI Subclass": {
+      "type": "object",
+      "title": "POI Subclass",
+      "description": "",
+      "properties": {}
+    },
+    "AbstractFeature": {
+      "type": "object",
+      "title": "AbstractFeature",
+      "description": "",
+      "properties": {
+        "description": {
+          "description": "",
+          "type": "string"
+        },
+        "featureID": {
+          "description": "",
+          "type": "string"
+        },
+        "identifer": {
+          "description": "",
+          "type": "string"
+        },
+        "name": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "AbstractFeatureWithLifespan": {
+      "type": "object",
+      "title": "AbstractFeatureWithLifespan",
+      "description": "",
+      "properties": {
+        "creationDate": {
+          "description": "",
+          "type": "string"
+        },
+        "terminationDate": {
+          "description": "",
+          "type": "string"
+        },
+        "validFrom": {
+          "description": "",
+          "type": "string"
+        },
+        "validTo": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "AbstractPOI": {
+      "type": "object",
+      "title": "AbstractPOI",
+      "description": "",
+      "properties": {
+        "contactInfo": {
+          "description": "",
+          "type": "string"
+        },
+        "hasMetadata": {
+          "description": "",
+          "type": "string"
+        },
+        "keywords": {
+          "description": "",
+          "type": "string"
+        },
+        "rights": {
+          "description": "",
+          "type": "string"
+        },
+        "symbology": {
+          "description": "",
+          "type": "string"
+        },
+        "hasPayload": {
+          "description": "",
+          "type": "string"
+        },
+        "hasFeatureOfInterest": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "FeatureOfInterest": {
+      "type": "object",
+      "title": "FeatureOfInterest",
+      "description": "",
+      "properties": {}
+    },
+    "PayloadDefinition": {
+      "type": "object",
+      "title": "PayloadDefinition",
+      "description": "",
+      "properties": {}
+    },
+    "PayloadSchema": {
+      "type": "object",
+      "title": "PayloadSchema",
+      "description": "",
+      "properties": {}
+    },
+    "POI": {
+      "type": "object",
+      "title": "POI",
+      "description": "",
+      "properties": {}
+    },
+    "POI_Payload": {
+      "type": "object",
+      "title": "POI_Payload",
+      "description": "",
+      "properties": {
+        "hasFeatureOfInterest": {
+          "description": "",
+          "type": "string"
+        },
+        "usesSchema": {
+          "description": "",
+          "type": "string"
+        },
+        "hasDefinition": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "CharacterString": {
+      "type": "object",
+      "title": "CharacterString",
+      "description": "",
+      "properties": {}
+    },
+    "Integer": {
+      "type": "object",
+      "title": "Integer",
+      "description": "",
+      "properties": {}
+    },
+    "Link": {
+      "type": "object",
+      "title": "Link",
+      "description": "",
+      "properties": {
+        "href": {
+          "description": "",
+          "type": "string"
+        },
+        "hreflang": {
+          "description": "",
+          "type": "string"
+        },
+        "rel": {
+          "description": "",
+          "type": "string"
+        },
+        "title": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "Associated Class": {
+      "$ref": "#/definitions/Associated Class"
+    },
+    "ISO Class": {
+      "$ref": "#/definitions/ISO Class"
+    },
+    "POI Class": {
+      "$ref": "#/definitions/POI Class"
+    },
+    "POI Subclass": {
+      "$ref": "#/definitions/POI Subclass"
+    },
+    "AbstractFeature": {
+      "$ref": "#/definitions/AbstractFeature"
+    },
+    "AbstractFeatureWithLifespan": {
+      "$ref": "#/definitions/AbstractFeatureWithLifespan"
+    },
+    "AbstractPOI": {
+      "$ref": "#/definitions/AbstractPOI"
+    },
+    "FeatureOfInterest": {
+      "$ref": "#/definitions/FeatureOfInterest"
+    },
+    "PayloadDefinition": {
+      "$ref": "#/definitions/PayloadDefinition"
+    },
+    "PayloadSchema": {
+      "$ref": "#/definitions/PayloadSchema"
+    },
+    "POI": {
+      "$ref": "#/definitions/POI"
+    },
+    "POI_Payload": {
+      "$ref": "#/definitions/POI_Payload"
+    },
+    "CharacterString": {
+      "$ref": "#/definitions/CharacterString"
+    },
+    "Integer": {
+      "$ref": "#/definitions/Integer"
+    },
+    "Link": {
+      "$ref": "#/definitions/Link"
+    }
+  }
+}
