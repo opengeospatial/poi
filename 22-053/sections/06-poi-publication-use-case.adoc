@@ -2,168 +2,68 @@
 
 == POI Publication Use Case
 
-## Introduction
+=== Digitaal Vlaanderen (DV) POI Service
 
-The Digitaal Vlaanderen (DV) POI Service is a comprehensive initiative designed to standardize and publish location-based information collected by various Flemish government organizations. Different government bodies gather valuable data across diverse domains such as education, sports, tourism, and public health, which are of significant interest to both public and private organizations. These datasets often vary in format, content, and quality, posing challenges for integration and usability. The Digitaal Vlaanderen POI Service addresses these challenges by collecting these disparate datasets, standardizing them into a common POI data model, and ensuring consistency and interoperability.
+==== Introduction
 
-## Key Statistics of the Digitaal Vlaanderen POI Service (2024)
+The **Digitaal Vlaanderen (DV) POI Service** is a strategic initiative that standardizes and publishes location-based information collected by various Flemish government entities. These organizations collect valuable data across sectors such as education, sports, tourism, and public health, which are of great interest to both public institutions and private enterprises. However, the diversity in formats, content, and quality often complicates integration and reuse. The DV POI Service addresses these challenges by aggregating the data, converting it into a unified structure, and publishing it through standardized channels to ensure consistency, quality, and interoperability.
 
-- Over 10 years of active service.
-- 21 datasets from 8 government organizations.
-- Data input in 5 different formats (shp, csv, wfs, xml, json).
-- Organized into 8 themes, 17 categories, and 154 POI types.
-- As of 2024, over 199,000 POIs collected for the Flanders region.
+==== Key Statistics of the DV POI Service (2024)
 
-By transforming heterogeneous data into a unified POI data model, Digitaal Vlaanderen not only enhances the accessibility and usability of the information but also facilitates seamless data sharing and integration across different platforms and applications. This standardized approach enables organizations to leverage high-quality, reliable data for various purposes, including urban planning, service delivery, and innovative technological applications such as augmented reality and geospatial analytics, thereby contributing to smarter, more efficient, and more connected communities.
+- Over 10 years of continuous service.
+- 21 datasets from 8 government agencies.
+- Data received in 5 different formats (shp, csv, wfs, xml, json).
+- Structured into 8 themes, 17 categories, and 154 POI types.
+- More than 199,000 POIs collected for the Flanders region.
 
-## Standardized POI Data Model for Central Storage
+By converting heterogeneous data into a harmonized POI data model, Digitaal Vlaanderen improves data accessibility and usability while enabling seamless integration across platforms and systems. This standardization empowers organizations to use reliable, high-quality geospatial data for a wide range of purposes, including urban planning, public service delivery, and emerging applications such as augmented reality (AR), the Internet of Things (IoT), and geospatial analytics—contributing to smarter, more efficient, and data-driven public services.
 
-A standardized relational POI data model, such as the one developed by Digitaal Vlaanderen, is essential for ensuring consistency and reliability in representing POI data collected from various government organizations. This model translates diverse datasets into a uniform format, effectively representing locations on maps with basic information such as the name, address, coordinates, and a link to more details. By adhering to this standardized model, Digitaal Vlaanderen can integrate and manage data from multiple sources, maintaining high data quality and facilitating seamless data sharing and usage across different platforms and applications.
+==== Standardized POI Data Model for Central Storage
 
-## POI Service Product Development
+A standardized relational POI data model, such as the one established by Digitaal Vlaanderen, is vital to ensuring consistent and accurate representation of POI data from multiple sources. This model translates diverse inputs into a uniform structure that captures essential details such as names, addresses, geographic coordinates, and links to supplementary information. Adopting a standardized model helps streamline integration, supports data quality, and promotes interoperability across platforms and applications. It serves as the foundation for reliable publication, transformation, and reuse of POI data.
 
-### Analysis
-- Assess the information in the different datasets for content and use, focusing on relevance to users.
-- Ensure accurate completion of the POI model and proper documentation.
+==== Implementation Workflow in FME
 
-### Modeling
-- Collaborate with data managers to define the POI data model mapping.
-- Determine georeferencing based on address or coordinates.
-- Link addresses to central databases to obtain coordinates if necessary.
-- Transform the supplied information into the POI product model, performing necessary checks and describing the data through metadata.
+The POI Service is operationalized through an automated FME (Feature Manipulation Engine) workflow. Key workflow steps include:
 
-### Public Access
-- Select the appropriate channel for the product.
-- Establish arrangements for access, use, and reuse.
+- Ingesting source data in supported formats (shp, csv, wfs, xml, json).
+- Mapping data to the Digitaal Vlaanderen POI model.
+- Enriching and validating geographic coordinates and addresses.
+- Encoding records in the OGC-compliant POI JSON format.
+- Publishing the final output to target platforms and endpoints.
 
-### Updating
-- Implement a 'production line' approach during product development to process all subsequent versions efficiently.
-- Manage maintenance, communication, and support.
+This robust setup supports large-scale data ingestion from multiple sources, ensuring data consistency, quality, and reusability.
 
-## Translating the Digitaal Vlaanderen POI Data Model into a POI JSON Template Following the OGC Conceptual Model
+=== Implementation of the OGC POI Conceptual Model
 
-Translating the Digitaal Vlaanderen POI data model into a POI JSON template involves aligning the data structure with the OGC (Open Geospatial Consortium) Conceptual Model as outlined in the OGC POI Standard. This process ensures that the data is interoperable, consistent, and adheres to international standards. The OGC Conceptual Model provides a comprehensive framework that defines the attributes, relationships, and semantics necessary for accurately representing POIs. By following this model, the POI JSON template incorporates standardized elements such as geometric data, feature identification, contact information, metadata, rights, and payload attributes.
+==== Comparing the DV POI Model and the OGC POI Conceptual Model
 
-The template should be designed to serve as both an input and output format. As an input format, it ensures that data collected from various sources adheres to a common structure, facilitating seamless integration and processing. As an output format, it ensures that the published data is consistent and usable across different applications and platforms. This dual functionality not only facilitates seamless data integration and exchange between different systems and applications but also enhances the quality and reliability of the data. The result is a robust, flexible, and scalable template that supports various use cases, including smart city applications, augmented reality, and geospatial analytics, thereby maximizing the utility and impact of the published POI data.
+The **Digitaal Vlaanderen (DV) POI data model** is specifically tailored to the Flemish context, focusing on the structured representation of POIs as collected from regional government organizations. It emphasizes practical usability, data availability, and alignment with local administrative and thematic classifications.
 
-## Benefits for Data Publishers and Developers
+In contrast, the **OGC Points of Interest (POI) Conceptual Model** provides an internationally recognized, abstract framework that defines the core structure, semantics, and relationships needed to represent POIs in a consistent and interoperable way across domains and countries.
 
-- **Consistency and Interoperability**: Ensures consistency across datasets, facilitating easier integration and use of diverse data sources.
-- **Efficiency and Reduced Costs**: Streamlines processes by adhering to common standards, reducing the need for custom solutions.
-- **Enhanced Data Quality**: Enforces uniform formats and definitions, leading to more accurate and reliable data.
-- **Simplified Data Sharing**: Facilitates collaboration and information exchange between organizations.
-- **Broader Reach and Impact**: Easier dissemination and access to data, increasing its utility and impact.
-- **Support for Advanced Technologies**: Enables the development of smart city applications, AR, and IoT technologies.
+While the DV POI model ensures operational efficiency and regional relevance, the OGC model ensures semantic clarity and cross-border interoperability. By aligning the DV POI model with the OGC conceptual model, Digitaal Vlaanderen bridges local implementation needs with global interoperability standards—resulting in a robust, scalable, and internationally compatible POI framework.
 
-## Example JSON Schema Used by Digitaal Vlaanderen
+==== Translating the DV POI Model into a POI JSON Template
 
-```json
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [51.19391876816891, 5.1644166129636519]
-  },
-  "featureID": "c3bf1a5e-df00-4c93-89de-6b0e44e97806",
-  "name": {
-    "name": "AGC Glass Europe Mol"
-  },
-  "contactInfo": [{
-    "role": "owner",
-    "party": {
-      "contactInfo": {
-        "OnlineResource": "https://omgeving.vlaanderen.be/gpbv-installaties"
-      },
-      "name": "Afdeling Gebiedsontwikkeling, Omgevingsplanning en -projecten (GOP)"
-    }
-  }],
-  "hasMetadata": {
-    "href": "https://www.vlaanderen.be/datavindplaats/catalogus/gpbv-installaties-in-vlaanderen-in-het-kader-van-de-richtlijn-industriele-emissies-rie-via-poi-service",
-    "rel": "about"
-  },
-  "rights": [{
-    "otherConstraints": "Modellicentie_Gratis_Hergebruik"
-  }],
-  "hasPayload": {
-    "usesSchema": [{
-      "href": "https://genpoijson.org/schema/publicationpoi.json",
-      "rel": "describedby"
-    }],
-    "onlineResources": [{
-      "description": "Meer info over de installatie, waaronder de vergunningsbesluiten",
-      "linkage": "https://gpbv.omgeving.vlaanderen.be/gpbv-register-beheer/installatiefiche/BE.VL.000000002.INSTALLATION"
-    }],
-    "locationInfo": [{
-      "address": {
-        "country": "Belgium",
-        "deliveryPoint": "Voortstraat 27, 2400 Mol",
-        "electronicMailAddress": "NA"
-      },
-      "phone": {
-        "number": "NA"
-      }
-    }],
-    "alternateName": {
-      "name": "BE.VL.000000002.INSTALLATION"
-    },
-    "note": "Toeristische regio: Kust",
-    "categories": [{
-      "categoryType": "Type",
-      "value": "MineraleIndustrie"
-    }, {
-      "categoryType": "Category",
-      "value": "GPBVInstallatiesIndustrie"
-    }, {
-      "categoryType": "Theme",
-      "value": "NatuurEnMilieu"
-    }]
-  }
-}
-```
-## POI Attributes Used
+Key implementation steps include:
 
-### Standard POI Attributes
-- **type**: "Feature"
-- **geometry**:
-  - **type**: "Point"
-  - **coordinates**: [51.19391876816891, 5.1644166129636519]
-- **featureID**: "c3bf1a5e-df00-4c93-89de-6b0e44e97806"
-- **name**:
-  - **name**: "AGC Glass Europe Mol"
-- **contactInfo**:
-  - **role**: "owner"
-  - **party**:
-    - **contactInfo**:
-      - **OnlineResource**: "https://omgeving.vlaanderen.be/gpbv-installaties"
-    - **name**: "Afdeling Gebiedsontwikkeling, Omgevingsplanning en -projecten (GOP)"
-- **hasMetadata**:
-  - **href**: "https://www.vlaanderen.be/datavindplaats/catalogus/gpbv-installaties-in-vlaanderen-in-het-kader-van-de-richtlijn-industriele-emissies-rie-via-poi-service"
-  - **rel**: "about"
-- **rights**:
-  - **otherConstraints**: "Modellicentie_Gratis_Hergebruik"
+- Aligning the DV POI model with the OGC conceptual model.
+- Generating a reusable POI JSON schema.
+- Encoding POIs according to this schema.
+- Identifying and resolving transformation issues during encoding.
 
-### Payload Attributes
-- **hasPayload**:
-  - **usesSchema**:
-    - **href**: "https://genpoijson.org/schema/publicationpoi.json"
-    - **rel**: "describedby"
-  - **onlineResources**:
-    - **description**: "Meer info over de installatie, waaronder de vergunningsbesluiten"
-    - **linkage**: "https://gpbv.omgeving.vlaanderen.be/gpbv-register-beheer/installatiefiche/BE.VL.000000002.INSTALLATION"
-  - **locationInfo**:
-    - **address**:
-      - **country**: "Belgium"
-      - **deliveryPoint**: "Voortstraat 27, 2400 Mol"
-      - **electronicMailAddress**: "NA"
-    - **phone**:
-      - **number**: "NA"
-  - **alternateName**:
-    - **name**: "BE.VL.000000002.INSTALLATION"
-  - **note**: "Toeristische regio: Kust"
-  - **categories**:
-    - **categoryType**: "Type"
-      - **value**: "MineraleIndustrie"
-    - **categoryType**: "Category"
-      - **value**: "GPBVInstallatiesIndustrie"
-    - **categoryType**: "Theme"
-      - **value**: "NatuurEnMilieu"
+The encoding process is supported by a modular FME workflow. Each component in the pipeline performs a distinct function, contributing to efficient and reliable POI data publication:
+
+- **Reader**: Loads source data already structured in the DV POI model.
+- **Reprojector**: Reprojects spatial data into the WGS84 coordinate system, as required by the OGC standard.
+- **Attribute Mapper**: Maps internal field names to the OGC POI Conceptual Model attributes.
+- **JSON Templater**: Applies the predefined POI JSON structure, ensuring consistency and completeness.
+- **JSON Formatter**: Serializes the structured data into well-formed POI JSON.
+- **Writer**: Outputs the final product to the publication platform or endpoint.
+
+This modular design supports batch processing, version control, and incremental updates, making it well-suited for long-term, large-scale data maintenance.
+
+=== Conclusion
+
+The Digitaal Vlaanderen POI Service provides a proven, scalable framework for harmonizing geospatial data across diverse public sector domains. Through implementation of the OGC POI Conceptual Model and automated workflows in FME, the initiative delivers reliable, reusable, and standards-compliant POI data that supports both operational needs and innovation across the data ecosystem.
