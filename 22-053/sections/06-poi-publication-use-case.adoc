@@ -64,6 +64,119 @@ The encoding process is supported by a modular FME workflow. Each component in t
 
 This modular design supports batch processing, version control, and incremental updates, making it well-suited for long-term, large-scale data maintenance.
 
+==== Example JSON Schema Used by Digitaal Vlaanderen
+
+json
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [51.19391876816891, 5.1644166129636519]
+  },
+  "featureID": "c3bf1a5e-df00-4c93-89de-6b0e44e97806",
+  "name": {
+    "name": "AGC Glass Europe Mol"
+  },
+  "contactInfo": [{
+    "role": "owner",
+    "party": {
+      "contactInfo": {
+        "OnlineResource": "https://omgeving.vlaanderen.be/gpbv-installaties"
+      },
+      "name": "Afdeling Gebiedsontwikkeling, Omgevingsplanning en -projecten (GOP)"
+    }
+  }],
+  "hasMetadata": {
+    "href": "https://www.vlaanderen.be/datavindplaats/catalogus/gpbv-installaties-in-vlaanderen-in-het-kader-van-de-richtlijn-industriele-emissies-rie-via-poi-service",
+    "rel": "about"
+  },
+  "rights": [{
+    "otherConstraints": "Modellicentie_Gratis_Hergebruik"
+  }],
+  "hasPayload": {
+    "usesSchema": [{
+      "href": "https://genpoijson.org/schema/publicationpoi.json",
+      "rel": "describedby"
+    }],
+    "onlineResources": [{
+      "description": "Meer info over de installatie, waaronder de vergunningsbesluiten",
+      "linkage": "https://gpbv.omgeving.vlaanderen.be/gpbv-register-beheer/installatiefiche/BE.VL.000000002.INSTALLATION"
+    }],
+    "locationInfo": [{
+      "address": {
+        "country": "Belgium",
+        "deliveryPoint": "Voortstraat 27, 2400 Mol",
+        "electronicMailAddress": "NA"
+      },
+      "phone": {
+        "number": "NA"
+      }
+    }],
+    "alternateName": {
+      "name": "BE.VL.000000002.INSTALLATION"
+    },
+    "note": "Toeristische regio: Kust",
+    "categories": [{
+      "categoryType": "Type",
+      "value": "MineraleIndustrie"
+    }, {
+      "categoryType": "Category",
+      "value": "GPBVInstallatiesIndustrie"
+    }, {
+      "categoryType": "Theme",
+      "value": "NatuurEnMilieu"
+    }]
+  }
+}
+
+==== POI Attributes Used
+
+===== Standard POI Attributes
+- **type**: "Feature"
+- **geometry**:
+  - **type**: "Point"
+  - **coordinates**: [51.19391876816891, 5.1644166129636519]
+- **featureID**: "c3bf1a5e-df00-4c93-89de-6b0e44e97806"
+- **name**:
+  - **name**: "AGC Glass Europe Mol"
+- **contactInfo**:
+  - **role**: "owner"
+  - **party**:
+    - **contactInfo**:
+      - **OnlineResource**: "https://omgeving.vlaanderen.be/gpbv-installaties"
+    - **name**: "Afdeling Gebiedsontwikkeling, Omgevingsplanning en -projecten (GOP)"
+- **hasMetadata**:
+  - **href**: "https://www.vlaanderen.be/datavindplaats/catalogus/gpbv-installaties-in-vlaanderen-in-het-kader-van-de-richtlijn-industriele-emissies-rie-via-poi-service"
+  - **rel**: "about"
+- **rights**:
+  - **otherConstraints**: "Modellicentie_Gratis_Hergebruik"
+
+===== Payload Attributes
+- **hasPayload**:
+  - **usesSchema**:
+    - **href**: "https://genpoijson.org/schema/publicationpoi.json"
+    - **rel**: "describedby"
+  - **onlineResources**:
+    - **description**: "Meer info over de installatie, waaronder de vergunningsbesluiten"
+    - **linkage**: "https://gpbv.omgeving.vlaanderen.be/gpbv-register-beheer/installatiefiche/BE.VL.000000002.INSTALLATION"
+  - **locationInfo**:
+    - **address**:
+      - **country**: "Belgium"
+      - **deliveryPoint**: "Voortstraat 27, 2400 Mol"
+      - **electronicMailAddress**: "NA"
+    - **phone**:
+      - **number**: "NA"
+  - **alternateName**:
+    - **name**: "BE.VL.000000002.INSTALLATION"
+  - **note**: "Toeristische regio: Kust"
+  - **categories**:
+    - **categoryType**: "Type"
+      - **value**: "MineraleIndustrie"
+    - **categoryType**: "Category"
+      - **value**: "GPBVInstallatiesIndustrie"
+    - **categoryType**: "Theme"
+      - **value**: "NatuurEnMilieu"
+
 === Conclusion
 
 The Digitaal Vlaanderen POI Service provides a proven, scalable framework for harmonizing geospatial data across diverse public sector domains. Through implementation of the OGC POI Conceptual Model and automated workflows in FME, the initiative delivers reliable, reusable, and standards-compliant POI data that supports both operational needs and innovation across the data ecosystem.
